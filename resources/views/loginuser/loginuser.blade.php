@@ -47,8 +47,8 @@
 				<div class="fxt-header">
 					<a style="width: 200px" href="login" class="fxt-logo"><img src="{{ asset('loginuser/affixtheme.com/html/xmee/demo/img/logo.png') }}" alt="Logo"></a>
 					<div class="fxt-page-switcher">
-						<a href="login" class="switcher-text switcher-text1 active">Login</a>
-						<a href="register" class="switcher-text switcher-text2">Register</a>
+						<a href="" class="switcher-text switcher-text1 active">Login</a>
+						<a href="" class="switcher-text switcher-text2">Register</a>
 					</div>
 				</div>
 				<div class="fxt-form">
