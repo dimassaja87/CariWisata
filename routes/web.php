@@ -20,9 +20,12 @@ Route::get('/', function () {
 
 
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');
+Route::post('/loginadmindua',[LoginController::class, 'loginadmindua'])->name('loginadmindua');
 
 Route::get('/registeradmin',[LoginController::class, 'registeradmin'])->name('registeradmin');
 Route::post('/registeradmindua',[LoginController::class, 'registeradmindua'])->name('registeradmindua');
+
+Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logoutadmin');
 
 
 Route::get('/adminn', function () {
