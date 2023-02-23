@@ -10,7 +10,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
                 <meta name="mobile-web-app-capable" content="yes">
                 <meta name="apple-mobile-web-app-capable" content="yes">
-                <title>Travelicious Main Demo &#8211; Exclusive Travels, Great Experiences!</title>
+                <title>Home &#8211; Cari Wisata!</title>
                 <meta name='robots' content='max-image-preview:large' />
 
                 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
@@ -3746,7 +3746,1065 @@
                                                                         </div><!-- cell -->
                                                                 </div><!-- port -->
                                                         </section>
+<<<<<<< HEAD
                                                       
+=======
+                                                        <!-- <section id="bt_bb_section63dcd796ae046"
+                                                                class="bt_bb_section bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_top_spacing_extra_large bt_bb_bottom_spacing_medium"
+                                                                data-bt-override-class="null">
+                                                                <div class="bt_bb_port">
+                                                                        <div class="bt_bb_cell">
+                                                                                <div class="bt_bb_cell_inner">
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_left bt_bb_padding_normal"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_move_up animate"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_dash_none bt_bb_superheadline bt_bb_subheadline bt_bb_size_large bt_bb_align_inherit"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <h2
+                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                <span
+                                                                                                                                                        class="bt_bb_headline_superheadline">TEMPAT YANG SANGAT BAIK UNTUK PERGI</span><span
+                                                                                                                                                        class="bt_bb_headline_content"><span><s><b>Nikmati </b></s>
+                                                                                                                                                                kebebasan!</span></span>
+                                                                                                                                        </h2>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_headline_subheadline">
+                                                                                                                                                Matriks unik nilai ekonomi yang sehat melalui teknologi kooperatif. Tugas paralel yang kompeten sepenuhnya meneliti data dan perbaikan proses perusahaan.
+                                                                                                                                        </div>
+                                                                                                                                </header>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_left bt_bb_padding_normal"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </section> -->
+                                                        <!-- <section id="bt_bb_section63dcd796ae2f9"
+                                                                class="bt_bb_section bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_hidden_xs bt_bb_hidden_ms bt_bb_hidden_sm"
+                                                                style="margin-right: 20px; margin-left: 20px;"
+                                                                data-bt-override-class="null">
+                                                                <div class="bt_bb_port">
+                                                                        <div class="bt_bb_cell">
+                                                                                <div class="bt_bb_cell_inner">
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row bt_bb_column_gap_10"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/netherlands/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-netherlands-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-netherlands-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://turisian.com/wp-content/uploads/2022/10/Kawah-Ijen.jpg"
+                                                                                                                                                        title="destination-netherlands-01"
+                                                                                                                                                        srcset="https://asset.kompas.com/crops/xPx5UsR4nFLQJ5eh5LrrqCRbhZc=/1x0:1080x719/750x500/data/photo/2022/05/31/629560e9280fe.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/netherlands/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Netherlands">Bandung</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_left bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_tour_tag btColumnTag bt_bb_color_alternate bt_bb_horizontal_position_left bt_bb_vertical_position_top"
+                                                                                                                                        style="">
+                                                                                                                                        <span>NEW
+                                                                                                                                                DESTINATION</span>
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_image btLargeInnerContentPadding bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/reykjavik/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="bgn-image-box-gray"><img
+                                                                                                                                                        width="1200"
+                                                                                                                                                        height="1200"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/bgn-image-box-gray.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray.jpg"
+                                                                                                                                                        title="bgn-image-box-gray"
+                                                                                                                                                        srcset="https://asset.kompas.com/crops/-eAr_QVORkUGZrpECsnrWAXEP_Y=/0x335:1080x1055/750x500/data/photo/2022/03/29/624322b42d6f8.jpg 1200w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-768x768.jpg 768w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-800x800.jpg 800w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-300x300.jpg 300w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-600x600.jpg 600w"
+                                                                                                                                                        sizes="(max-width: 1200px) 100vw, 1200px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/reykjavik/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Reykjavik">Jogja</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                                <div class="bt_bb_separator bt_bb_border_style_none bt_bb_bottom_spacing_small bt_bb_hidden_xs bt_bb_hidden_md"
+                                                                                                                                                                        data-bt-override-class="null">
+                                                                                                                                                                </div>
+                                                                                                                                                                <!-- <div
+                                                                                                                                                                        class="bt_bb_text bt_bb_hidden_xs bt_bb_hidden_md">
+                                                                                                                                                                        <p>The world’s
+                                                                                                                                                                                most
+                                                                                                                                                                                northerly
+                                                                                                                                                                                capital
+                                                                                                                                                                                combines
+                                                                                                                                                                                colourful
+                                                                                                                                                                                buildings,
+                                                                                                                                                                                wild
+                                                                                                                                                                                nightlife
+                                                                                                                                                                                and
+                                                                                                                                                                                a
+                                                                                                                                                                                capricious
+                                                                                                                                                                                soul.
+                                                                                                                                                                        </p>
+                                                                                                                                                                </div> -->
+                                                                                                                                                                <!-- <div class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_right bt_bb_style_clean bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit"
+                                                                                                                                                                        style="; --primary-color:#1976bc; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <a href="destinations/reykjavik/index.html"
+                                                                                                                                                                                target="_self"
+                                                                                                                                                                                class="bt_bb_link"
+                                                                                                                                                                                title="Discover Iceland"><span
+                                                                                                                                                                                        class="bt_bb_button_text">Discover
+                                                                                                                                                                                        Iceland</span><span
+                                                                                                                                                                                        data-ico-fontawesome="&#xf105;"
+                                                                                                                                                                                        class="bt_bb_icon_holder"></span></a>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/athens/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-athens-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-athens-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01.jpg"
+                                                                                                                                                        title="destination-athens-01"
+                                                                                                                                                        srcset="https://www.wargajogja.com/attachments/coba-5-tempat-wisata-di-semarang-yang-sangat-indah-ini-jpg.3393/ 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/athens/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Athens">Semarang</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_tour_tag btColumnTag bt_bb_color_alternate bt_bb_horizontal_position_left bt_bb_vertical_position_top"
+                                                                                                                                        style="">
+                                                                                                                                        <span>SEA
+                                                                                                                                                CRUISES</span>
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/puerto-rico/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-puerto-rico-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01.jpg"
+                                                                                                                                                        title="destination-puerto-rico-01"
+                                                                                                                                                        srcset="https://wisatapendidikan.com/wp-content/uploads/2022/01/kebun-teh-wonosari.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/puerto-rico/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Puerto Rico">Wonosari</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row bt_bb_column_gap_10"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/kyoto/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-kyoto-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-kyoto-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01.jpg"
+                                                                                                                                                        title="destination-kyoto-01"
+                                                                                                                                                        srcset="https://asset.kompas.com/crops/q125kCE3AGtWFUiX4tnb7z8t9-Q=/0x0:844x563/750x500/data/photo/2020/03/03/5e5e5f39bf7eb.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/kyoto/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Kyoto">Bali</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/mumbai/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="post_india_01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/07/post_india_01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01.jpg"
+                                                                                                                                                        title="post_india_01"
+                                                                                                                                                        srcset="https://asset.kompas.com/crops/Jk79hGCVMKe8Huydi6OAIovXHo8=/0x83:1024x766/750x500/data/photo/2019/05/06/196528664.jpeg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/mumbai/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Mumbai">Banyuwangi</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_left bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_tour_tag btColumnTag bt_bb_color_alternate bt_bb_horizontal_position_left bt_bb_vertical_position_top"
+                                                                                                                                        style="">
+                                                                                                                                        <span>POPULAR</span>
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_image btDarkSkin btLargeInnerContentPadding bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/moscow/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="bgn-image-box-gradient"><img
+                                                                                                                                                        width="1200"
+                                                                                                                                                        height="1200"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient.jpg"
+                                                                                                                                                        title="bgn-image-box-gradient"
+                                                                                                                                                        srcset="https://asset.kompas.com/crops/sOPKMEJXt4qBVbJn8lN6ybEyKKU=/889x308:4583x2770/750x500/data/photo/2019/08/05/5d4837db1d13b.jpg 1200w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-768x768.jpg 768w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-800x800.jpg 800w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-300x300.jpg 300w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-600x600.jpg 600w"
+                                                                                                                                                        sizes="(max-width: 1200px) 100vw, 1200px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/moscow/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Moscow">Lombok</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                                <div class="bt_bb_separator bt_bb_border_style_none bt_bb_bottom_spacing_small bt_bb_hidden_xs bt_bb_hidden_md"
+                                                                                                                                                                        data-bt-override-class="null">
+                                                                                                                                                                </div>
+                                                                                                                                                                <!-- <div
+                                                                                                                                                                        class="bt_bb_text bt_bb_hidden_xs bt_bb_hidden_md">
+                                                                                                                                                                        <p>Moscow
+                                                                                                                                                                                will
+                                                                                                                                                                                move
+                                                                                                                                                                                you.
+                                                                                                                                                                                It
+                                                                                                                                                                                will
+                                                                                                                                                                                tantalise
+                                                                                                                                                                                your
+                                                                                                                                                                                senses,
+                                                                                                                                                                                soothe
+                                                                                                                                                                                your
+                                                                                                                                                                                spirit
+                                                                                                                                                                                and
+                                                                                                                                                                                boggle
+                                                                                                                                                                                your
+                                                                                                                                                                                mind.
+                                                                                                                                                                        </p>
+                                                                                                                                                                </div>
+                                                                                                                                                                <div class="bt_bb_button bt_bb_color_scheme_10 bt_bb_icon_position_right bt_bb_style_clean bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit"
+                                                                                                                                                                        style="; --primary-color:#ffffff; --secondary-color:#8dc645;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <a href="destinations/moscow/index.html"
+                                                                                                                                                                                target="_self"
+                                                                                                                                                                                class="bt_bb_link"
+                                                                                                                                                                                title="Discover Russia"><span
+                                                                                                                                                                                        class="bt_bb_button_text">Discover
+                                                                                                                                                                                        Russia</span><span
+                                                                                                                                                                                        data-ico-fontawesome="&#xf105;"
+                                                                                                                                                                                        class="bt_bb_icon_holder"></span></a>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-3 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="3"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/istanbul/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-istanbul-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-istanbul-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01.jpg"
+                                                                                                                                                        title="destination-istanbul-01"
+                                                                                                                                                        srcset="https://asset.kompas.com/crops/2iFWZyxFcuU_-Krjg__PMl2s-BQ=/0x0:780x520/750x500/data/photo/2019/08/26/5d63c95234404.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/istanbul/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Istanbul">Dieng</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </section> --
+                                                        <section id="bt_bb_section63dcd796b1412"
+                                                                class="bt_bb_section bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_hidden_md bt_bb_hidden_lg"
+                                                                style="margin-right: 20px; margin-left: 20px;"
+                                                                data-bt-override-class="null">
+                                                                <div class="bt_bb_port">
+                                                                        <div class="bt_bb_cell">
+                                                                                <div class="bt_bb_cell_inner">
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row bt_bb_column_gap_10"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/netherlands/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-netherlands-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-netherlands-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01.jpg"
+                                                                                                                                                        title="destination-netherlands-01"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-netherlands-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/netherlands/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Netherlands">Netherlands</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_left bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_tour_tag btColumnTag bt_bb_color_alternate bt_bb_horizontal_position_left bt_bb_vertical_position_top"
+                                                                                                                                        style="">
+                                                                                                                                        <span>NEW
+                                                                                                                                                DESTINATION</span>
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_image btLargeInnerContentPadding bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/reykjavik/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="bgn-image-box-gray"><img
+                                                                                                                                                        width="1200"
+                                                                                                                                                        height="1200"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/bgn-image-box-gray.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray.jpg"
+                                                                                                                                                        title="bgn-image-box-gray"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray.jpg 1200w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-768x768.jpg 768w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-800x800.jpg 800w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-300x300.jpg 300w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gray-600x600.jpg 600w"
+                                                                                                                                                        sizes="(max-width: 1200px) 100vw, 1200px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/reykjavik/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Reykjavik">Reykjavik</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                                <div class="bt_bb_separator bt_bb_border_style_none bt_bb_bottom_spacing_small bt_bb_hidden_md"
+                                                                                                                                                                        data-bt-override-class="null">
+                                                                                                                                                                </div>
+                                                                                                                                                                <div
+                                                                                                                                                                        class="bt_bb_text bt_bb_hidden_md">
+                                                                                                                                                                        <p>The world’s
+                                                                                                                                                                                most
+                                                                                                                                                                                northerly
+                                                                                                                                                                                capital
+                                                                                                                                                                                combines
+                                                                                                                                                                                colourful
+                                                                                                                                                                                buildings,
+                                                                                                                                                                                wild
+                                                                                                                                                                                nightlife
+                                                                                                                                                                                and
+                                                                                                                                                                                a
+                                                                                                                                                                                capricious
+                                                                                                                                                                                soul.
+                                                                                                                                                                        </p>
+                                                                                                                                                                </div>
+                                                                                                                                                                <div class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_right bt_bb_style_clean bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit"
+                                                                                                                                                                        style="; --primary-color:#1976bc; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <a href="destinations/reykjavik/index.html"
+                                                                                                                                                                                target="_self"
+                                                                                                                                                                                class="bt_bb_link"
+                                                                                                                                                                                title="Discover Iceland"><span
+                                                                                                                                                                                        class="bt_bb_button_text">Discover
+                                                                                                                                                                                        Iceland</span><span
+                                                                                                                                                                                        data-ico-fontawesome="&#xf105;"
+                                                                                                                                                                                        class="bt_bb_icon_holder"></span></a>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row bt_bb_column_gap_10"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/athens/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-athens-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-athens-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01.jpg"
+                                                                                                                                                        title="destination-athens-01"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-athens-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/athens/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Athens">Athens</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_tour_tag btColumnTag bt_bb_color_alternate bt_bb_horizontal_position_left bt_bb_vertical_position_top"
+                                                                                                                                        style="">
+                                                                                                                                        <span>SEA
+                                                                                                                                                CRUISES</span>
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/puerto-rico/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-puerto-rico-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01.jpg"
+                                                                                                                                                        title="destination-puerto-rico-01"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-puerto-rico-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/puerto-rico/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Puerto Rico">Puerto
+                                                                                                                                                                                                        Rico</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row bt_bb_column_gap_10"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/kyoto/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-kyoto-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-kyoto-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01.jpg"
+                                                                                                                                                        title="destination-kyoto-01"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-kyoto-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/kyoto/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Kyoto">Kyoto</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/mumbai/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="post_india_01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/07/post_india_01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01.jpg"
+                                                                                                                                                        title="post_india_01"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/07/post_india_01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/mumbai/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Mumbai">Mumbai</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row bt_bb_column_gap_10"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_left bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_tour_tag btColumnTag bt_bb_color_alternate bt_bb_horizontal_position_left bt_bb_vertical_position_top"
+                                                                                                                                        style="">
+                                                                                                                                        <span>POPULAR</span>
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_image btDarkSkin btLargeInnerContentPadding bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/moscow/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="bgn-image-box-gradient"><img
+                                                                                                                                                        width="1200"
+                                                                                                                                                        height="1200"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient.jpg"
+                                                                                                                                                        title="bgn-image-box-gradient"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient.jpg 1200w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-768x768.jpg 768w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-800x800.jpg 800w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-300x300.jpg 300w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-image-box-gradient-600x600.jpg 600w"
+                                                                                                                                                        sizes="(max-width: 1200px) 100vw, 1200px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/moscow/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Moscow">Moscow</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                                <div class="bt_bb_separator bt_bb_border_style_none bt_bb_bottom_spacing_small bt_bb_hidden_md"
+                                                                                                                                                                        data-bt-override-class="null">
+                                                                                                                                                                </div>
+                                                                                                                                                                <div
+                                                                                                                                                                        class="bt_bb_text bt_bb_hidden_md">
+                                                                                                                                                                        <p>Moscow
+                                                                                                                                                                                will
+                                                                                                                                                                                move
+                                                                                                                                                                                you.
+                                                                                                                                                                                It
+                                                                                                                                                                                will
+                                                                                                                                                                                tantalise
+                                                                                                                                                                                your
+                                                                                                                                                                                senses,
+                                                                                                                                                                                soothe
+                                                                                                                                                                                your
+                                                                                                                                                                                spirit
+                                                                                                                                                                                and
+                                                                                                                                                                                boggle
+                                                                                                                                                                                your
+                                                                                                                                                                                mind.
+                                                                                                                                                                        </p>
+                                                                                                                                                                </div>
+                                                                                                                                                                <div class="bt_bb_button bt_bb_color_scheme_10 bt_bb_icon_position_right bt_bb_style_clean bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit"
+                                                                                                                                                                        style="; --primary-color:#ffffff; --secondary-color:#8dc645;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <a href="destinations/moscow/index.html"
+                                                                                                                                                                                target="_self"
+                                                                                                                                                                                class="bt_bb_link"
+                                                                                                                                                                                title="Discover Russia"><span
+                                                                                                                                                                                        class="bt_bb_button_text">Discover
+                                                                                                                                                                                        Russia</span><span
+                                                                                                                                                                                        data-ico-fontawesome="&#xf105;"
+                                                                                                                                                                                        class="bt_bb_icon_holder"></span></a>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                        <div class="bt_bb_column col-xl-6 bt_bb_vertical_align_top bt_bb_align_center bt_bb_padding_normal bt_bb_animation_fade_in bt_bb_animation_zoom_out animate"
+                                                                                                                style="margin-bottom: 20px; position: relative;"
+                                                                                                                data-width="6"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle bt_bb_content_exists"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <a href="destinations/istanbul/index.html"
+                                                                                                                                                target="_self"
+                                                                                                                                                title="destination-istanbul-01"><img
+                                                                                                                                                        width="1280"
+                                                                                                                                                        height="1280"
+                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-istanbul-01-1280x1280.jpg"
+                                                                                                                                                        class="attachment-boldthemes_large_square size-boldthemes_large_square"
+                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-1280x1280.jpg"
+                                                                                                                                                        decoding="async"
+                                                                                                                                                        loading="lazy"
+                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01.jpg"
+                                                                                                                                                        title="destination-istanbul-01"
+                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-istanbul-01-300x300.jpg 300w"
+                                                                                                                                                        sizes="(max-width: 1280px) 100vw, 1280px" /></a>
+                                                                                                                                        <div
+                                                                                                                                                class="bt_bb_image_content">
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_image_content_flex">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_image_content_inner">
+                                                                                                                                                                <header class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_medium bt_bb_align_inherit"
+                                                                                                                                                                        style="text-shadow: 0 2px 5px rgba(24,24,24,.75);; --primary-color:#ffffff; --secondary-color:#181818;"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <h3
+                                                                                                                                                                                class="bt_bb_headline_tag">
+                                                                                                                                                                                <span
+                                                                                                                                                                                        class="bt_bb_headline_content"><span><a
+                                                                                                                                                                                                        href="destinations/istanbul/index.html"
+                                                                                                                                                                                                        target="_self"
+                                                                                                                                                                                                        title="Istanbul">Istanbul</a></span></span>
+                                                                                                                                                                        </h3>
+                                                                                                                                                                </header>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div><!-- cell_inner --
+                                                                        </div><!-- cell
+                                                                </div><!-- port --
+                                                        </section>  -->
+>>>>>>> 19f227ab1c119f9bbc780d3457b45e49f2dd6f46
                                                         <section id="bt_bb_section63dcd796b3a08"
                                                                 class="bt_bb_section bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_top_spacing_extra_large bt_bb_bottom_spacing_large"
                                                                 data-bt-override-class="null">
@@ -5379,7 +6437,227 @@
                                                                 </div><!-- port -->
                                                         </section>
 
+<<<<<<< HEAD
                                                      
+=======
+                                                        <!-- <section id="bt_bb_section63dcd796c8211"
+                                                                class="bt_bb_section bt_bb_layout_wide bt_bb_vertical_align_top"
+                                                                data-bt-override-class="null">
+                                                                <div class="bt_bb_port">
+                                                                        <div class="bt_bb_cell">
+                                                                                <div class="bt_bb_cell_inner">
+                                                                                        <div class="bt_bb_row_wrapper">
+                                                                                                <div class="bt_bb_row bt_bb_column_gap_5"
+                                                                                                        data-bt-override-class="{}">
+                                                                                                        <div class="bt_bb_column col-xl-12 bt_bb_vertical_align_top bt_bb_align_left bt_bb_padding_double bt_bb_animation_fade_in animate"
+                                                                                                                data-width="12"
+                                                                                                                data-bt-override-class="{}">
+                                                                                                                <div
+                                                                                                                        class="bt_bb_column_content">
+                                                                                                                        <div
+                                                                                                                                class="bt_bb_column_content_inner">
+                                                                                                                                <div class="bt_bb_separator bt_bb_border_style_none bt_bb_bottom_spacing_small"
+                                                                                                                                        data-bt-override-class="null">
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_content_slider bt_bb_full_width bt_bb_gap_normal bt_bb_arrows_size_no_arrows bt_bb_show_dots_below bt_bb_height_auto bt_bb_animation_slide bt_bb_multiple_slides bt_bb_animation_slide animate"
+                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                        <div class="slick-slider"
+                                                                                                                                                data-slick='{ "lazyLoad": "progressive", "cssEase": "ease-out", "speed": "600", "accessibility": false, "arrows": false, "adaptiveHeight": true, "dots": true,"slidesToShow": 6,"autoplay": true, "autoplaySpeed": 3500, "responsive": [{ "breakpoint": 480, "settings": { "slidesToShow": 1, "slidesToScroll": 1 } },{ "breakpoint": 768, "settings": { "slidesToShow": 2, "slidesToScroll": 2 } },{ "breakpoint": 920, "settings": { "slidesToShow": 3, "slidesToScroll": 3 } },{ "breakpoint": 1024, "settings": { "slidesToShow": 3, "slidesToScroll": 3 } }]}'>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/rome_01-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01.jpg"
+                                                                                                                                                                                        title="rome_01"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/rome_01-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-london-01-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01.jpg"
+                                                                                                                                                                                        title="destination-london-01"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-london-01-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-belgrade-06-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06.jpg"
+                                                                                                                                                                                        title="destination-belgrade-06"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-belgrade-06-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-sydney-01-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01.jpg"
+                                                                                                                                                                                        title="destination-sydney-01"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-sydney-01-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-moscow-01-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01.jpg"
+                                                                                                                                                                                        title="destination-moscow-01"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-moscow-01-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/destination-new-york-01-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01.jpg"
+                                                                                                                                                                                        title="destination-new-york-01"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/destination-new-york-01-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/08/bgn-heading-07-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07.jpg"
+                                                                                                                                                                                        title="bgn-heading-07"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/08/bgn-heading-07-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2015/04/post_09-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09.jpg"
+                                                                                                                                                                                        title="post_09"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2015/04/post_09-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                        class="bt_bb_content_slider_item">
+                                                                                                                                                        <div
+                                                                                                                                                                class="bt_bb_content_slider_item_content content">
+                                                                                                                                                                <div class="bt_bb_image bt_bb_shape_square bt_bb_target_self bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle"
+                                                                                                                                                                        data-bt-override-class="{}">
+                                                                                                                                                                        <span><img width="640"
+                                                                                                                                                                                        height="640"
+                                                                                                                                                                                        src="wp-content/uploads/sites/2/2018/09/japan_01-640x640.jpg"
+                                                                                                                                                                                        class="attachment-boldthemes_medium_square size-boldthemes_medium_square"
+                                                                                                                                                                                        alt="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-640x640.jpg"
+                                                                                                                                                                                        decoding="async"
+                                                                                                                                                                                        loading="lazy"
+                                                                                                                                                                                        data-full_image_src="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01.jpg"
+                                                                                                                                                                                        title="japan_01"
+                                                                                                                                                                                        srcset="https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-640x640.jpg 640w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-160x160.jpg 160w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-320x320.jpg 320w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-1280x1280.jpg 1280w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-400x400.jpg 400w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-100x100.jpg 100w, https://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/japan_01-300x300.jpg 300w"
+                                                                                                                                                                                        sizes="(max-width: 640px) 100vw, 640px" /></span>
+                                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                </div>
+                                                                                                                                        </div>
+                                                                                                                                </div>
+                                                                                                                                <div class="bt_bb_separator bt_bb_border_style_none bt_bb_bottom_spacing_medium"
+                                                                                                                                        data-bt-override-class="null">
+                                                                                                                                </div>
+                                                                                                                        </div>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </section> -->
+>>>>>>> 19f227ab1c119f9bbc780d3457b45e49f2dd6f46
                                                 </div>
                                         </div><!-- /boldthemes_content -->
 
@@ -6860,7 +8138,11 @@
                 <script type='text/javascript' src="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content/themes/travelicious/framework/js/fancySelect6a4d.js?ver=6.1.1') }}"
                         id='fancySelect-js'></script>
                 <script type='text/javascript' id='travelicious-header-js-before'>
+<<<<<<< HEAD
                         window.BoldThemesURI = "https://travelicious.bold-themes.com/{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content') }}/themes/travelicious/"; window.BoldThemesAJAXURL = "wp-admin/admin-ajax.html"; window.boldthemes_text = []; window.boldthemes_text.previous = 'previous
+=======
+                        window.BoldThemesURI = "https://travelicious.bold-themes.com/wp-content/themes/travelicious/"; window.BoldThemesAJAXURL = "wp-admin/admin-ajax.html"; window.boldthemes_text = []; window.boldthemes_text.previous = 'previous
+>>>>>>> 19f227ab1c119f9bbc780d3457b45e49f2dd6f46
 
                         '; window.boldthemes_text.next = 'next';
                 </script>
