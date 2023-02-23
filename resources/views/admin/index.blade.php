@@ -13,25 +13,25 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ asset('admin/assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/favicon.ico') }}">
 
     <!-- jsvectormap css -->
-    <link href="{{ asset('admin/assets/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet"
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet"
         type="text/css" />
 
     <!--Swiper slider css-->
-    <link href="{{ asset('admin/assets/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
 
     <!-- Layout config Js -->
-    <script src="{{ asset('admin/assets/js/layout.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/layout.js') }}"></script>
     <!-- Bootstrap Css -->
-    <link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
-    <link href="{{ asset('admin/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link href="{{ asset('admin/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
-    <link href="{{ asset('admin/assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset("admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css") }}" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -48,22 +48,22 @@
                         <div class="navbar-brand-box horizontal-logo">
                             <a href="index.html" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="{{ asset('admin/assets/images/logo-sm.png') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt=""
                                         height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="{{ asset('admin/assets/images/logo-sm.png') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt=""
                                         height="17">
                                 </span>
                             </a>
 
                             <a href="index.html" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="{{ asset('admin/assets/images/logo-sm.png') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt=""
                                         height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="{{ asset('admin/assets/images/logo-light.png') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}" alt=""
                                         height="17">
                                 </span>
                             </a>
@@ -131,7 +131,7 @@
                                         <!-- item -->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
                                             <div class="d-flex">
-                                                <img src="{{ asset('admin/assets/images/users/avatar-2.jpg') }}"
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
                                                     class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                 <div class="flex-1">
                                                     <h6 class="m-0">Angela Bernier</h6>
@@ -142,7 +142,7 @@
                                         <!-- item -->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
                                             <div class="d-flex">
-                                                <img src="{{ asset('admin/assets/images/users/avatar-3.jpg') }}"
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
                                                     class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                 <div class="flex-1">
                                                     <h6 class="m-0">David Grasso</h6>
@@ -153,7 +153,7 @@
                                         <!-- item -->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
                                             <div class="d-flex">
-                                                <img src="{{ asset('admin/assets/images/users/avatar-5.jpg') }}"
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-5.jpg') }}"
                                                     class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                 <div class="flex-1">
                                                     <h6 class="m-0">Mike Bunch</h6>
@@ -300,7 +300,7 @@
                                             <div
                                                 class="text-reset notification-item d-block dropdown-item position-relative">
                                                 <div class="d-flex">
-                                                    <img src="{{ asset('admin/assets/images/users/avatar-2.jpg') }}"
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
                                                         class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
@@ -362,7 +362,7 @@
                                             <div
                                                 class="text-reset notification-item d-block dropdown-item position-relative">
                                                 <div class="d-flex">
-                                                    <img src="{{ asset('admin/assets/images/users/avatar-8.jpg') }}"
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-8.jpg') }}"
                                                         class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
@@ -403,7 +403,7 @@
                                         <div data-simplebar style="max-height: 300px;" class="pe-2">
                                             <div class="text-reset notification-item d-block dropdown-item">
                                                 <div class="d-flex">
-                                                    <img src="{{ asset('admin/assets/images/users/avatar-3.jpg') }}"
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
                                                         class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
@@ -431,7 +431,7 @@
 
                                             <div class="text-reset notification-item d-block dropdown-item">
                                                 <div class="d-flex">
-                                                    <img src="{{ asset('admin/assets/images/users/avatar-2.jpg') }}"
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
                                                         class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
@@ -460,7 +460,7 @@
 
                                             <div class="text-reset notification-item d-block dropdown-item">
                                                 <div class="d-flex">
-                                                    <img src="{{ asset('admin/assets/images/users/avatar-6.jpg') }}"
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-6.jpg') }}"
                                                         class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
@@ -489,7 +489,7 @@
 
                                             <div class="text-reset notification-item d-block dropdown-item">
                                                 <div class="d-flex">
-                                                    <img src="{{ asset('admin/assets/images/users/avatar-8.jpg') }}"
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-8.jpg') }}"
                                                         class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                                     <div class="flex-1">
                                                         <a href="#!" class="stretched-link">
@@ -611,19 +611,19 @@
                 <!-- Dark Logo-->
                 <a href="index.html" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/assets/images/logo-sm.png') }}" alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/assets/images/logo-dark.png') }}" alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}" alt="" height="17">
                     </span>
                 </a>
                 <!-- Light Logo-->
                 <a href="index.html" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/assets/images/logo-sm.png') }}" alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/assets/images/logo-dark.png') }}" alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}" alt="" height="17">
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -934,7 +934,7 @@
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0 avatar-sm">
                                                         <div class="avatar-title bg-light rounded">
-                                                            <img src="{{ asset('admin/assets/images/companies/img-1.png') }}"
+                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/companies/img-1.png') }}"
                                                                 alt="" height="30">
                                                         </div>
                                                     </div>
@@ -964,7 +964,7 @@
                                             <div class="card-body">
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0">
-                                                        <img src="{{ asset('admin/assets/images/users/avatar-3.jpg') }}"
+                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
                                                             alt="" class="avatar-sm rounded">
                                                     </div>
                                                     <div class="flex-grow-1 ms-3">
@@ -995,7 +995,7 @@
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0 avatar-sm">
                                                         <div class="avatar-title bg-light rounded">
-                                                            <img src="{{ asset('admin/assets/images/companies/img-8.png') }}"
+                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/companies/img-8.png') }}"
                                                                 alt="" height="30">
                                                         </div>
                                                     </div>
@@ -1026,7 +1026,7 @@
                                             <div class="card-body">
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0">
-                                                        <img src="{{ asset('admin/assets/images/users/avatar-2.jpg') }}"
+                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
                                                             alt="" class="avatar-sm rounded">
                                                     </div>
                                                     <div class="flex-grow-1 ms-3">
@@ -1196,7 +1196,7 @@
 
                         <div class="card sidebar-alert bg-light border-0 text-center mx-4 mb-0 mt-3">
                             <div class="card-body">
-                                <img src="{{ asset('admin/assets/images/giftbox.png') }}" alt="">
+                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/giftbox.png') }}" alt="">
                                 <div class="mt-4">
                                     <h5>Invite New Seller</h5>
                                     <p class="text-muted lh-base">Refer a new seller to us and earn $100 per refer.
@@ -1269,7 +1269,7 @@
     <!-- Theme Settings -->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
         <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
-            <h5 class="m-0 me-2 text-white">Pengaturan Tema</h5>
+            <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
 
             <button type="button" class="btn-close btn-close-white ms-auto" id="customizerclose-btn"
                 data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1277,8 +1277,8 @@
         <div class="offcanvas-body p-0">
             <div data-simplebar class="h-100">
                 <div class="p-4">
-                    <h6 class="mb-0 fw-semibold text-uppercase">Tampilan</h6>
-                    <p class="text-muted">Pilih tampilan kamu</p>
+                    <h6 class="mb-0 fw-semibold text-uppercase">Layout</h6>
+                    <p class="text-muted">Choose your layout</p>
 
                     <div class="row">
                         <div class="col-4">
@@ -1868,7 +1868,7 @@
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-01" value="img-1">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-01">
-                                    <img src="{{ asset('admin/assets/images/sidebar/img-1.jpg') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-1.jpg') }}" alt=""
                                         class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
@@ -1877,7 +1877,7 @@
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-02" value="img-2">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-02">
-                                    <img src="{{ asset('admin/assets/images/sidebar/img-2.jpg') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-2.jpg') }}" alt=""
                                         class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
@@ -1885,7 +1885,7 @@
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-03" value="img-3">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-03">
-                                    <img src="{{ asset('admin/assets/images/sidebar/img-3.jpg') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-3.jpg') }}" alt=""
                                         class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
@@ -1893,7 +1893,7 @@
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-04" value="img-4">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-04">
-                                    <img src="{{ asset('admin/assets/images/sidebar/img-4.jpg') }}" alt=""
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-4.jpg') }}" alt=""
                                         class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
@@ -1980,36 +1980,33 @@
                 <div class="col-6">
                     <button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
                 </div>
-                <!-- <div class="col-6">
-                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary w-100">Buy Now</a>
-                </div> -->
             </div>
         </div>
     </div>
 
     <!-- JAVASCRIPT -->
-    <script src="{{ asset('admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/libs/simplebar/simplebar.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/libs/node-waves/waves.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/libs/feather-icons/feather.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/js/pages/plugins/lord-icon-2.1.0.js') }}"></script>
-    <script src="{{ asset('admin/assets/js/plugins.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
 
     <!-- apexcharts -->
-    <script src="{{ asset('admin/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
 
     <!-- Vector map-->
-    <script src="{{ asset('admin/assets/libs/jsvectormap/js/jsvectormap.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/libs/jsvectormap/maps/world-merc.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/js/jsvectormap.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/maps/world-merc.js') }}"></script>
 
     <!--Swiper slider js-->
-    <script src="{{ asset('admin/assets/libs/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/swiper/swiper-bundle.min.js') }}"></script>
 
     <!-- Dashboard init -->
-    <script src="{{ asset('admin/assets/js/pages/dashboard-ecommerce.init.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/dashboard-ecommerce.init.js') }}"></script>
 
     <!-- App js -->
-    <script src="{{ asset('admin/assets/js/app.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
 </body>
 
 <!-- Mirrored from themesbrand.com/velzon/html/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:42:18 GMT -->
