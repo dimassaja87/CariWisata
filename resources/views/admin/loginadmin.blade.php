@@ -67,11 +67,11 @@
                                     <p class="text-muted">Silahkan login!</p>
                                 </div>
                                 <div class="p-2 mt-4">
-                                    <form action="index.html">
-
+                                    <form action="/loginadmindua" method="post">
+                                        @csrf
                                         <div class="mb-3">
                                             <label for="username" class="form-label">Username</label>
-                                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                            <input type="text" class="form-control" id="username" name="name" placeholder="Enter username">
                                         </div>
 
                                         <div class="mb-3">
@@ -80,7 +80,7 @@
                                             </div>
                                             <label class="form-label" for="password-input">Password</label>
                                             <div class="position-relative auth-pass-inputgroup mb-3">
-                                                <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" id="password-input">
+                                                <input type="password" class="form-control pe-5 password-input" name="password" placeholder="Enter password" id="password-input">
                                                 <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
                                             </div>
                                         </div>
