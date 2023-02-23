@@ -17,6 +17,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/user', function () {
     return view('user.index');
 });
+
+Route::get('/adminn', function () {
+    return view('admin.index');
+});
+
+
+Route::get('/login', function () {
+    return view('loginuser.login');
+});
+
+Route::get('/register', function () {
+    return view('loginuser.register');
+});
+
