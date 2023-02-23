@@ -10,7 +10,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
                 <meta name="mobile-web-app-capable" content="yes">
                 <meta name="apple-mobile-web-app-capable" content="yes">
-                <title>Travelicious Main Demo &#8211; Exclusive Travels, Great Experiences!</title>
+                <title>Home &#8211; Cari Wisata!</title>
                 <meta name='robots' content='max-image-preview:large' />
 
                 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
@@ -3890,7 +3890,7 @@
                                                                                                                                                                                                                         class="bt_bb_button_text">Temukan
                                                                                                                                                                                                                         banyuwangi</span></a>
                                                                                                                                                                                                 </div>
-                                                                                                                                                                                               
+
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
@@ -3960,7 +3960,7 @@
                                                                                                                                                                                                                 target="_self"
                                                                                                                                                                                                                 class="bt_bb_link"
                                                                                                                                                                                                                 title="Discover New York"><span
-                                                                                                                                                                                                                        class="bt_bb_button_text">Temukan 
+                                                                                                                                                                                                                        class="bt_bb_button_text">Temukan
                                                                                                                                                                                                                         Yogyakarta
                                                                                                                                                                                                                         </span></a>
                                                                                                                                                                                                 </div>
@@ -4213,7 +4213,7 @@
                                                                                                                                                 class="bt_bb_headline_tag">
                                                                                                                                                 <span
                                                                                                                                                         class="bt_bb_headline_superheadline">TEMPAT YANG BAGUS UNTUK DIKUNJUNGI</span><span
-                                                                                                                                                        class="bt_bb_headline_content"><span>Cari  
+                                                                                                                                                        class="bt_bb_headline_content"><span>Cari
                                                                                                                                                                 <s><b>dan
                                                                                                                                                                         Nikmati!</b></s></span></span>
                                                                                                                                         </h2>
@@ -4304,7 +4304,7 @@
                                                                                                                                                                                                 class="btSingleTourHeadline">
                                                                                                                                                                                                 <a
                                                                                                                                                                                                         href="tours/a-weekend-in-london/index.html">
-                                                                                                                                                                                                        
+
                                                                                                                                                                                                         Bandung</a>
                                                                                                                                                                                         </div>
                                                                                                                                                                                         <div
@@ -5059,7 +5059,7 @@
                                                                                                                                                                                         Iceland</span><span
                                                                                                                                                                                         data-ico-fontawesome="&#xf105;"
                                                                                                                                                                                         class="bt_bb_icon_holder"></span></a>
-                                                                                                                                                                </div> 
+                                                                                                                                                                </div>
                                                                                                                                                         </div>
                                                                                                                                                 </div>
                                                                                                                                         </div>
@@ -5340,7 +5340,7 @@
                                                                                                                                                                                 your
                                                                                                                                                                                 mind.
                                                                                                                                                                         </p>
-                                                                                                                                                                </div> 
+                                                                                                                                                                </div>
                                                                                                                                                                 <div class="bt_bb_button bt_bb_color_scheme_10 bt_bb_icon_position_right bt_bb_style_clean bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit"
                                                                                                                                                                         style="; --primary-color:#ffffff; --secondary-color:#8dc645;"
                                                                                                                                                                         data-bt-override-class="{}">
@@ -6383,7 +6383,7 @@
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="bt_bb_text">
                                                                                                                                                                                                         <blockquote>
-                                                                                                                                                                                                                <p>“Bhinneka Tunggal Ika” yang bermakna “beraneka ragam tetapi satu” merupakan logo nasional Repulik Indonesia. Logo ini menggambarkan masyarakat Indonesia yang majemuk namun tetap satu, juga menjadi pegangan hidup masyarakat Indonesia. 
+                                                                                                                                                                                                                <p>“Bhinneka Tunggal Ika” yang bermakna “beraneka ragam tetapi satu” merupakan logo nasional Repulik Indonesia. Logo ini menggambarkan masyarakat Indonesia yang majemuk namun tetap satu, juga menjadi pegangan hidup masyarakat Indonesia.
                                                                                                                                                                                                                 </p>
                                                                                                                                                                                                         </blockquote>
                                                                                                                                                                                                 </div>
@@ -7762,7 +7762,7 @@
                                                                                                                                                                                 class="bt_bb_headline_tag">
                                                                                                                                                                                 <span
                                                                                                                                                                                         class="bt_bb_headline_content"><span>Datang dan
-                                                                                                                                                                                                
+
                                                                                                                                                                                                 <b> kunjungi kami</b></span></span>
                                                                                                                                                                         </h5>
                                                                                                                                                                         <div
@@ -7856,7 +7856,7 @@
                                                                         </div><!-- cell -->
                                                                 </div><!-- port -->
                                                         </section>
-                                                
+
                                                         <!-- <section id="bt_bb_section63dcd796c8211"
                                                                 class="bt_bb_section bt_bb_layout_wide bt_bb_vertical_align_top"
                                                                 data-bt-override-class="null">
@@ -9555,7 +9555,7 @@
                         id='fancySelect-js'></script>
                 <script type='text/javascript' id='travelicious-header-js-before'>
                         window.BoldThemesURI = "https://travelicious.bold-themes.com/wp-content/themes/travelicious/"; window.BoldThemesAJAXURL = "wp-admin/admin-ajax.html"; window.boldthemes_text = []; window.boldthemes_text.previous = 'previous
-                        
+
                         '; window.boldthemes_text.next = 'next';
                 </script>
                 <script type='text/javascript' src='wp-content/themes/travelicious/framework/js/header.misc6a4d.js?ver=6.1.1'
