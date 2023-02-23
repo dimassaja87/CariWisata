@@ -22,7 +22,7 @@ class LoginController extends Controller
     {
         User::create([
             'email' => $request->email,
-            'username' => $request->username,
+            'name' => $request->name,
             'password' => bcrypt($request->password),
             'remember_token' => Str::random(60),
 
