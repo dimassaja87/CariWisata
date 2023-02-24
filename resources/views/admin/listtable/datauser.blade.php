@@ -199,7 +199,7 @@
                         <!-- item-->
                         <h6 class="dropdown-header">Hello Admin!</h6>
                         <a class="dropdown-item" href="lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
-                        <a class="dropdown-item" href="logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                        <a class="dropdown-item" href="/logoutadmin"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
                 </div>
             </div>
@@ -366,13 +366,13 @@
                                                                 <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
                                                             </div>
                                                         </th>
-                                                        <td class="id" style="display:none;">{{ $row->id }}</></td>
+                                                        <th scope="row" class="id">{{ $row->id }}</></th>
                                                         <td class="nama">{{ $row->nama }}</td>
                                                         <td class="email">{{ $row->email }}</td>
                                                         <td class="foto">
                                                             <img src="{{ asset('fotopengguna/' . $row->foto) }}" alt="">
                                                         </td>
-                                                        <td class="tanggal"></td>
+                                                        <td class="tanggal">{{ $row->created_at->format('d M, Y') }}</td>
                                                         <td>
                                                             <div class="d-flex gap-2">
                                                                 <div class="edit">
@@ -433,6 +433,10 @@
                                 <form action="/insertpengguna" method="POST" enctype="multipart/form-data" class="tablelist-form">
                                     @csrf
                                     <div class="modal-body">
+                                        <div class="mb-3" id="modal-id" style="display: none;">
+                                            <label for="id-field" class="form-label">ID</label>
+                                            <input type="text" id="id-field" class="form-control" placeholder="ID" readonly />
+                                        </div>
 
                                         <div class="mb-3">
                                             <label for="customername-field" class="form-label">Nama User</label>

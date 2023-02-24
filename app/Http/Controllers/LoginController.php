@@ -19,7 +19,7 @@ class LoginController extends Controller
 
     public function loginadmindua(Request $request)
     {
-        if (FacadesAuth::attempt($request->only('name', 'password'))){
+        if (FacadesAuth::attempt($request->only('email', 'password'))){
             return redirect('/adminn');
         }
 

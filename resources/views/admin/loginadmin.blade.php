@@ -70,25 +70,25 @@
                                     <form action="/loginadmindua" method="post">
                                         @csrf
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">Username</label>
-                                            <input type="text" class="form-control" id="username" name="name" placeholder="Enter username">
+                                            <label for="username" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="username" name="email" placeholder="Masukkan Email">
                                         </div>
 
                                         <div class="mb-3">
-                                            <div class="float-end">
+                                            {{-- <div class="float-end">
                                                 <a href="pass-reset-basic.html" class="text-muted">Forgot password?</a>
-                                            </div>
+                                            </div> --}}
                                             <label class="form-label" for="password-input">Password</label>
                                             <div class="position-relative auth-pass-inputgroup mb-3">
-                                                <input type="password" class="form-control pe-5 password-input" name="password" placeholder="Enter password" id="password-input">
-                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                <input type="password" class="form-control pe-5 password-input" name="password" placeholder="Masukkan Password" id="password-input">
+                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"></button>
                                             </div>
                                         </div>
 
-                                        <div class="form-check">
+                                        {{-- <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="auth-remember-check">
                                             <label class="form-check-label" for="auth-remember-check">Remember me</label>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="mt-4">
                                             <button class="btn btn-success w-100" type="submit">Login</button>
@@ -100,9 +100,9 @@
                         </div>
                         <!-- end card -->
 
-                        <div class="mt-4 text-center">
+                        {{-- <div class="mt-4 text-center">
                             <p class="mb-0">Belum punya akun ? <a href="/registeradmin" class="fw-semibold text-primary text-decoration-underline"> Register </a> </p>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>
