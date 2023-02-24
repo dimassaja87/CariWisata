@@ -45,14 +45,14 @@
                         }
                 </style>
                 <link rel='stylesheet' id='wp-block-library-css'
-                        href='wp-includes/css/dist/block-library/style.min6a4d.css?ver=6.1.1' type='text/css' media='all' />
+                        href="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-includes/css/dist/block-library/style.min6a4d.css?ver=6.1.1') }}" type='text/css' media='all' />
                 <link rel='stylesheet' id='wc-blocks-vendors-style-css'
                         href="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style42c6.css?ver=6.1.0') }}"
                         type='text/css' media='all' />
                 <link rel='stylesheet' id='wc-blocks-style-css'
                         href="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style42c6.css?ver=6.1.0') }}"
                         type='text/css' media='all' />
-                <link rel='stylesheet' id='classic-theme-styles-css' href='wp-includes/css/classic-themes.min68b3.css?ver=1'
+                <link rel='stylesheet' id='classic-theme-styles-css' href="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-includes/css/classic-themes.min68b3.css?ver=1') }}"
                         type='text/css' media='all' />
                 <style id='global-styles-inline-css' type='text/css'>
                         body {
@@ -411,7 +411,7 @@
                         }
                 </style>
                 <link rel='stylesheet' id='tour-jquery-ui-css-css'
-                        href='../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui6a4d.css?ver=6.1.1' type='text/css'
+                        href="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content/plugins/travelicious/assets/css/code.jquery.com/ui/1.12.1/themes/base/jquery-ui6a4d.css?ver=6.1.1') }}" type='text/css'
                         media='screen' />
                 <link rel='stylesheet' id='date_dropdowns_css-css'
                         href="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content/plugins/travelicious/assets/css/jquery.date-dropdowns6a4d.css?ver=6.1.1') }}"
@@ -691,9 +691,9 @@
                 <link rel='stylesheet' id='jquery-ui-smoothness-css'
                         href="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content/plugins/contact-form-7/includes/js/jquery-ui/themes/smoothness/jquery-ui.min35d0.css?ver=1.12.1') }}"
                         type='text/css' media='screen' />
-                <script type='text/javascript' src='wp-includes/js/jquery/jquery.mina7a0.js?ver=3.6.1'
+                <script type='text/javascript' src="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-includes/js/jquery/jquery.mina7a0.js?ver=3.6.1') }}"
                         id='jquery-core-js'></script>
-                <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2'
+                <script type='text/javascript' src="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2') }}"
                         id='jquery-migrate-js'></script>
                 <script type='text/javascript' src="{{ asset('travelicious/travelicious.bold-themes.com/main-demo/wp-content/plugins/bold-page-builder/slick/slick.min8686.js?ver=4.5.1') }}"
                         id='bt_bb_slick-js'></script>
@@ -2854,18 +2854,18 @@
                                                                                         <a href="index.html"
                                                                                                 aria-current="page">Beranda</a>
                                                                                         <ul class="sub-menu">
-                                                                                            
+
                                                                                         </ul>
                                                                                 </li>
                                                                                 <li id="menu-item-3810"
                                                                                         class="menu-item menu-item-type-post_type_archive menu-item-object-tour menu-item-has-children menu-item-3810">
                                                                                         <a href="tours/index.html">Destinasi</a>
                                                                                         <ul class="sub-menu">
-                                                                                               
+
                                                                                                 </li>
                                                                                         </ul>
                                                                                 </li>
-                                                                              
+
                                                                                  <li id="menu-item-93"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-93">
                                                                                         <a href="about-us/index.html">Pages</a>
@@ -2880,17 +2880,17 @@
                                                                                                         <a
                                                                                                                 href="about-us/contact-us/index.html">Contact
                                                                                                                 us</a></li>
-                                                                                             
+
                                                                                 </ul>
                                                                                 <li id="menu-item-133"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-133">
                                                                                         <a href="blog/index.html">Berita</a>
                                                                                         <ul class="sub-menu">
-                                                                                               
+
                                                                                                 </li>
                                                                                         </ul>
                                                                                 </li>
-                                                                               
+
                                                                                 </li>
                                                                         </ul>
                                                                 </nav>
@@ -2976,7 +2976,7 @@
                                                                                                                                                                                                                         class="bt_bb_button_text">Temukan
                                                                                                                                                                                                                         Bali</span></a>
                                                                                                                                                                                                 </div>
-                                                                                                                                                                                               
+
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
@@ -3039,7 +3039,7 @@
                                                                                                                                                                                                                         class="bt_bb_button_text">Temukan
                                                                                                                                                                                                                         Malang</span></a>
                                                                                                                                                                                                 </div>
-                                                                                                                                                                                               
+
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
@@ -3177,7 +3177,7 @@
                                                                                                                                                                                                                         Yogyakarta
                                                                                                                                                                                                                         </span></a>
                                                                                                                                                                                                 </div>
-                                                                                                                                                                                               
+
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
@@ -3201,7 +3201,7 @@
                                                                         </div><!-- cell -->
                                                                 </div><!-- port -->
                                                         </section>
-                                                       
+
                                                         <section id="bt_bb_section63dcd7968b57d"
                                                                 class="bt_bb_section bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_top_spacing_large bt_bb_bottom_spacing_medium"
                                                                 data-bt-override-class="null">
@@ -3306,8 +3306,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                     
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3327,8 +3327,8 @@
                                                                                                                                                                                                         Minute</a><a
                                                                                                                                                                                                         href="tour_category/weekend/index.html">Weekend</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3352,8 +3352,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                      
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3373,8 +3373,8 @@
                                                                                                                                                                                                         href="tour_category/new-year/index.html">New
                                                                                                                                                                                                         Year</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3398,8 +3398,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3418,8 +3418,8 @@
                                                                                                                                                                                                         href="tour_category/faraway-travels/index.html">Faraway
                                                                                                                                                                                                         Travels</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3443,8 +3443,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                      
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3462,8 +3462,8 @@
                                                                                                                                                                                                         href="tour_category/new-year/index.html">New
                                                                                                                                                                                                         Year</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3487,8 +3487,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3506,8 +3506,8 @@
                                                                                                                                                                                                         href="tour_category/faraway-travels/index.html">Faraway
                                                                                                                                                                                                         Travels</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3531,8 +3531,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                      
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3549,8 +3549,8 @@
                                                                                                                                                                                                         href="tour_category/budget-travels/index.html">Budget
                                                                                                                                                                                                         Travels</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3574,8 +3574,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                      
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3595,8 +3595,8 @@
                                                                                                                                                                                                         and
                                                                                                                                                                                                         Romancing</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                     
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3620,8 +3620,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                     
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3639,8 +3639,8 @@
                                                                                                                                                                                                         and
                                                                                                                                                                                                         Romancing</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                        
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3664,8 +3664,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                     
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3682,8 +3682,8 @@
                                                                                                                                                                                                         Travels</a><a
                                                                                                                                                                                                         href="tour_category/weekend/index.html">Weekend</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                       
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3707,8 +3707,8 @@
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                     
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                                 <div
                                                                                                                                                                                         class="btSingleTourContent">
@@ -3728,8 +3728,8 @@
                                                                                                                                                                                                         and
                                                                                                                                                                                                         Romancing</a>
                                                                                                                                                                                         </div>
-                                                                                                                                                                                      
-                                                                                                                                                                                        
+
+
                                                                                                                                                                                 </div>
                                                                                                                                                                         </div>
                                                                                                                                                                 </div>
@@ -3747,7 +3747,7 @@
                                                                 </div><!-- port -->
                                                         </section>
 <<<<<<< HEAD
-                                                      
+
 =======
                                                         <!-- <section id="bt_bb_section63dcd796ae046"
                                                                 class="bt_bb_section bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_top_spacing_extra_large bt_bb_bottom_spacing_medium"
@@ -5080,7 +5080,7 @@
                                                                                                                                 <div class="bt_bb_separator bt_bb_border_style_none bt_bb_bottom_spacing_medium"
                                                                                                                                         data-bt-override-class="null">
                                                                                                                                 </div>
-                                                                                                                              
+
                                                                                                                         </div>
                                                                                                                 </div>
                                                                                                         </div>
@@ -5745,7 +5745,7 @@
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                  <div
                                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                                    
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourContent">
@@ -5754,7 +5754,7 @@
                                                                                                                                                                                                                 <a
                                                                                                                                                                                                                         href="tours/magnificent-seville/index.html">ubud</a>
                                                                                                                                                                                                         </div>
-                                                                                                                                                                                                      
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
@@ -5790,7 +5790,7 @@
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                  <div
                                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                                     
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourContent">
@@ -5799,7 +5799,7 @@
                                                                                                                                                                                                                 <a
                                                                                                                                                                                                                         href="tours/vacation-in-portugal/index.html">Pandawa</a>
                                                                                                                                                                                                         </div>
-                                                                                                                                                                                                        
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
@@ -5835,7 +5835,7 @@
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                                       
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourContent">
@@ -5844,7 +5844,7 @@
                                                                                                                                                                                                                 <a
                                                                                                                                                                                                                         href="tours/weekend-in-oslo/index.html">pulau dreamland</a>
                                                                                                                                                                                                         </div>
-                                                                                                                                                                                                        
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
@@ -5880,7 +5880,7 @@
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                                       
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourContent">
@@ -5889,7 +5889,7 @@
                                                                                                                                                                                                                 <a
                                                                                                                                                                                                                         href="tours/tasteful-mauritius/index.html">ijen resort & villa</a>
                                                                                                                                                                                                         </div>
-                                                                                                                                                                                                    
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
@@ -5925,7 +5925,7 @@
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                                        
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourContent">
@@ -5934,7 +5934,7 @@
                                                                                                                                                                                                                 <a
                                                                                                                                                                                                                         href="tours/kaohsiung-taiwan/index.html">pantai plengkung G-land</a>
                                                                                                                                                                                                         </div>
-                                                                                                                                                                                                       
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
@@ -5970,7 +5970,7 @@
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourPrice">
-                                                                                                                                                                                                       
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                                 <div
                                                                                                                                                                                                         class="btSingleTourContent">
@@ -5979,7 +5979,7 @@
                                                                                                                                                                                                                 <a
                                                                                                                                                                                                                         href="tours/a-weekend-in-london/index.html">Pantai pulau merah</a>
                                                                                                                                                                                                         </div>
-                                                                                                                                                                                                        
+
                                                                                                                                                                                                 </div>
                                                                                                                                                                                         </div>
                                                                                                                                                                                 </div>
@@ -6001,7 +6001,7 @@
                                                                         </div><!-- cell -->
                                                                 </div><!-- port -->
                                                         </section>
-                                                     
+
                                                         <section id="bt_bb_section63dcd796c6aea"
                                                                 class="bt_bb_section bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_top_spacing_extra_large bt_bb_bottom_spacing_medium"
                                                                 data-bt-override-class="null">
@@ -6438,7 +6438,7 @@
                                                         </section>
 
 <<<<<<< HEAD
-                                                     
+
 =======
                                                         <!-- <section id="bt_bb_section63dcd796c8211"
                                                                 class="bt_bb_section bt_bb_layout_wide bt_bb_vertical_align_top"
