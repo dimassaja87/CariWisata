@@ -106,40 +106,18 @@
                     <ul class="navbar-nav" id="navbar-nav">
                         <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarDashboards" role="button"
+                            <a class="nav-link menu-link" href="/adminn" role="button"
                                 aria-expanded="false" aria-controls="sidebarDashboards">
                                 <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboards</span>
                             </a>
 
                         <li class="menu-title"><i class="ri-more-fill"></i> <span
                                 data-key="t-components">Components</span></li>
-
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="tablewisata.html">
-                                <i class="ri-table-line"></i> <span data-key="t-tables">Data Wisata</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="tableuser.html">
+                            <a class="nav-link menu-link" href="/pengguna">
                                 <i class="ri-table-line"></i> <span data-key="t-tables">Data User</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="tablelokasi.html">
-                                <i class="ri-table-line"></i> <span data-key="t-tables">Data Lokasi</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="tableulasan.html">
-                                <i class="ri-table-line"></i> <span data-key="t-tables">Data Ulasan</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="tableblog.html">
-                                <i class="ri-table-line"></i> <span data-key="t-tables">Data Blog</span>
-                            </a>
-                        </li>
-
                     </ul>
                 </div>
                 <!-- Sidebar -->

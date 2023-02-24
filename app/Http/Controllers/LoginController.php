@@ -46,7 +46,6 @@ class LoginController extends Controller
 
     public function logoutadmin()
     {
-        FacadesAuth::logout();
-        return \redirect('loginadmin');
+        return view('admin.logoutadmin');
     }
 }
