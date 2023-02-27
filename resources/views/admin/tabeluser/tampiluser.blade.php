@@ -3,35 +3,36 @@
     data-sidebar-image="none" data-preloader="disable">
 
 
-<!-- Mirrored from themesbrand.com/velzon/html/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:41:11 GMT -->
+<!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
 
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon</title>
+    <title>Data User | Velzon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/favicon.ico') }}">
 
-    <!-- jsvectormap css -->
-    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet"
-        type="text/css" />
-
-    <!--Swiper slider css-->
-    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Sweet Alert css-->
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/sweetalert2/sweetalert2.min.css') }}"
+        rel="stylesheet" type="text/css" />
 
     <!-- Layout config Js -->
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/layout.js') }}"></script>
     <!-- Bootstrap Css -->
-    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet"
+        type="text/css" />
     <!-- Icons Css -->
-    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet"
+        type="text/css" />
     <!-- App Css-->
-    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet"
+        type="text/css" />
     <!-- custom Css-->
-    <link href="{{ asset("admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css") }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet"
+        type="text/css" />
 
 </head>
 
@@ -40,7 +41,208 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
 
-        @include('admin.header')
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box horizontal-logo">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                                        alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
+                                        alt="" height="17">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                                        alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
+                                        alt="" height="17">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button"
+                            class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                            id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-md-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                    id="search-options" value="">
+                                <span class="mdi mdi-magnify search-widget-icon"></span>
+                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                                    id="search-close-options"></span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
+                                <div data-simplebar style="max-height: 320px;">
+                                    <!-- item-->
+                                    <div class="dropdown-header">
+                                        <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
+                                    </div>
+
+                                    <div class="dropdown-item bg-transparent text-wrap">
+                                        <a href="index.html" class="btn btn-soft-secondary btn-sm btn-rounded">how to
+                                            setup <i class="mdi mdi-magnify ms-1"></i></a>
+                                        <a href="index.html" class="btn btn-soft-secondary btn-sm btn-rounded">buttons
+                                            <i class="mdi mdi-magnify ms-1"></i></a>
+                                    </div>
+                                    <!-- item-->
+                                    <div class="dropdown-header mt-2">
+                                        <h6 class="text-overflow text-muted mb-1 text-uppercase">Pages</h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"></i>
+                                        <span>Analytics Dashboard</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></i>
+                                        <span>Help Center</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="ri-user-settings-line align-middle fs-18 text-muted me-2"></i>
+                                        <span>My account settings</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <div class="dropdown-header mt-2">
+                                        <h6 class="text-overflow text-muted mb-2 text-uppercase">Members</h6>
+                                    </div>
+
+                                    <div class="notification-list">
+                                        <!-- item -->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                            <div class="d-flex">
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
+                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                <div class="flex-1">
+                                                    <h6 class="m-0">Angela Bernier</h6>
+                                                    <span class="fs-11 mb-0 text-muted">Manager</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- item -->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                            <div class="d-flex">
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
+                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                <div class="flex-1">
+                                                    <h6 class="m-0">David Grasso</h6>
+                                                    <span class="fs-11 mb-0 text-muted">Web Designer</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- item -->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                            <div class="d-flex">
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-5.jpg') }}"
+                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                <div class="flex-1">
+                                                    <h6 class="m-0">Mike Bunch</h6>
+                                                    <span class="fs-11 mb-0 text-muted">React Developer</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="text-center pt-3 pb-1">
+                                    <a href="pages-search-results.html" class="btn btn-primary btn-sm">View All
+                                        Results <i class="ri-arrow-right-line ms-1"></i></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+
+                        <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="bx bx-search fs-22"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Recipient's username">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                data-toggle="fullscreen">
+                                <i class='bx bx-fullscreen fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                                <i class='bx bx-moon fs-22'></i>
+                            </button>
+                        </div>
+
+
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user"
+                                        src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-1.jpg') }}"
+                                        alt="Header Avatar">
+                                    <span class="text-start ms-xl-2">
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Admin
+                                            Web</span>
+                                        <span
+                                            class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Admin</span>
+                                    </span>
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <h6 class="dropdown-header">Hello Admin!</h6>
+                                <a class="dropdown-item" href="lockscreen-basic.html"><i
+                                        class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span
+                                        class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="/logoutadmin"><i
+                                        class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
+                                        class="align-middle" data-key="t-logout">Logout</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <!-- removeNotificationModal -->
         <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
@@ -77,19 +279,23 @@
                 <!-- Dark Logo-->
                 <a href="index.html" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                            alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}" alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
+                            alt="" height="17">
                     </span>
                 </a>
                 <!-- Light Logo-->
                 <a href="index.html" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                            alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}" alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
+                            alt="" height="17">
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -106,16 +312,18 @@
                     <ul class="navbar-nav" id="navbar-nav">
                         <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/adminn" role="button"
-                                aria-expanded="false" aria-controls="sidebarDashboards">
+                            <a class="nav-link menu-link" href="/adminn" role="button" aria-expanded="false"
+                                aria-controls="sidebarDashboards">
                                 <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboards</span>
                             </a>
+                        </li> <!-- end Dashboard Menu -->
 
                         <li class="menu-title"><i class="ri-more-fill"></i> <span
                                 data-key="t-components">Components</span></li>
+
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/pengguna">
-                                <i class="ri-table-line"></i> <span data-key="t-tables">Data User</span>
+                                <i class="ri-user-line"></i> <span data-key="t-tables">Data User</span>
                             </a>
                         </li>
                     </ul>
@@ -137,549 +345,83 @@
             <div class="page-content">
                 <div class="container-fluid">
 
+                    <!-- start page title -->
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">DATA USER</h4>
 
-                            <div class="h-100">
-                                <div class="row mb-3 pb-1">
-                                    <div class="col-12">
-                                        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
-                                            <div class="flex-grow-1">
-                                                <h4 class="fs-16 mb-1">Selamat Datang, Admin</h4>
-                                                <p class="text-muted mb-0">Inilah yang terjadi dengan web Anda hari
-                                                    ini.</p>
-                                            </div>
-                                            <div class="mt-3 mt-lg-0">
-                                                <form action="javascript:void(0);">
-                                                    <div class="row g-3 mb-0 align-items-center">
-                                                        <div class="col-sm-auto">
-                                                        </div>
-                                                    </div>
-                                                    <!--end row-->
-                                                </form>
-                                            </div>
-                                        </div><!-- end card header -->
-                                    </div>
-                                    <!--end col-->
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                                        <li class="breadcrumb-item active">Listjs</li>
+                                    </ol>
                                 </div>
-                                <!--end row-->
 
-                                <div class="row">
-                                    <div class="col-xl-3 col-md-6">
-                                        <!-- card -->
-                                        <div class="card card-animate">
-                                            <div class="card-body">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p
-                                                            class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                                            Total Wisata</p>
-                                                    </div>
-
-                                                </div>
-                                                <div class="d-flex align-items-end justify-content-between mt-4">
-                                                    <div>
-                                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
-                                                                class="counter-value" data-target="999">0</span>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-soft-success rounded fs-3">
-                                                            <i class="bx bx bx-landscape text-success"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div><!-- end card body -->
-                                        </div><!-- end card -->
-                                    </div><!-- end col -->
-
-                                    <div class="col-xl-3 col-md-6">
-                                        <!-- card -->
-                                        <div class="card card-animate">
-                                            <div class="card-body">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p
-                                                            class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                                            User</p>
-                                                    </div>
-
-                                                </div>
-                                                <div class="d-flex align-items-end justify-content-between mt-4">
-                                                    <div>
-                                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
-                                                                class="counter-value" data-target="999">0</span>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-soft-warning rounded fs-3">
-                                                            <i class="bx bx-user-circle text-warning"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div><!-- end card body -->
-                                        </div><!-- end card -->
-                                    </div><!-- end col -->
-
-                                    <div class="col-xl-3 col-md-6">
-                                        <!-- card -->
-                                        <div class="card card-animate">
-                                            <div class="card-body">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p
-                                                            class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                                            Komentar</p>
-                                                    </div>
-
-                                                </div>
-                                                <div class="d-flex align-items-end justify-content-between mt-4">
-                                                    <div>
-                                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
-                                                                class="counter-value" data-target="999">0</span>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-soft-info rounded fs-3">
-                                                            <i class="bx ri-message-line text-info"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div><!-- end card body -->
-                                        </div><!-- end card -->
-                                    </div><!-- end col -->
-
-                                    <div class="col-xl-3 col-md-6">
-                                        <!-- card -->
-                                        <div class="card card-animate">
-                                            <div class="card-body">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p
-                                                            class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                                            Blog</p>
-                                                    </div>
-
-                                                </div>
-                                                <div class="d-flex align-items-end justify-content-between mt-4">
-                                                    <div>
-                                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
-                                                                class="counter-value" data-target="999">0</span>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-soft-primary rounded fs-3">
-                                                            <i class="bx ri-calendar-event-fill text-primary"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div><!-- end card body -->
-                                        </div><!-- end card -->
-                                    </div><!-- end col -->
-                                </div> <!-- end row-->
-
-                                <div class="row">
-                                    <div class="col-xl-8">
-                                        <div class="card">
-                                            <div class="card-header border-0 align-items-center d-flex">
-                                                <h4 class="card-title mb-0 flex-grow-1">Grafik</h4>
-                                                <div>
-                                                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                        ALL
-                                                    </button>
-                                                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                        1M
-                                                    </button>
-                                                    <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                        1M
-                                                    </button>
-                                                    <button type="button" class="btn btn-soft-primary btn-sm">
-                                                        1Y
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <!-- end card header -->
-
-                                            <div class="card-header p-0 border-0 bg-soft-light">
-                                                <div class="row g-0 text-center">
-                                                    <div class="col-6 col-sm-3">
-                                                        <div class="p-3 border border-dashed border-start-0">
-                                                            <h5 class="mb-1"><span class="counter-value"
-                                                                    data-target="999">0</span></h5>
-                                                            <p class="text-muted mb-0">User</p>
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-6 col-sm-3">
-                                                        <div class="p-3 border border-dashed border-start-0">
-                                                            <h5 class="mb-1"><span class="counter-value"
-                                                                    data-target="999">0</span></h5>
-                                                            <p class="text-muted mb-0">Wisata</p>
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-6 col-sm-3">
-                                                        <div class="p-3 border border-dashed border-start-0">
-                                                            <h5 class="mb-1"><span class="counter-value"
-                                                                    data-target="999">0</span></h5>
-                                                            <p class="text-muted mb-0">Komentar</p>
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-6 col-sm-3">
-                                                        <div
-                                                            class="p-3 border border-dashed border-start-0 border-end-0">
-                                                            <h5 class="mb-1 text-success"><span
-                                                                    class="counter-value" data-target="999">0</span>
-                                                            </h5>
-                                                            <p class="text-muted mb-0">Guest Ratio</p>
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                </div>
-                                            </div><!-- end card header -->
-
-                                            <div class="card-body p-0 pb-2">
-                                                <!-- <div class="w-100">
-                                                    <div id="customer_impression_charts" data-colors='["--vz-primary", "--vz-success", "--vz-danger"]' class="apex-charts" dir="ltr"></div>
-                                                </div> -->
-                                            </div><!-- end card body -->
-                                        </div><!-- end card -->
-                                    </div><!-- end col -->
-                                    </tbody><!-- end tbody -->
-                                    </table><!-- end table -->
-                                </div>
                             </div>
-                        </div> <!-- .card-->
+                        </div>
                     </div>
-                    <!-- .col-->
-                </div> <!-- end row-->
 
-            </div> <!-- end .h-100-->
-
-        </div> <!-- end col -->
-
-        <div class="col-auto layout-rightside-col">
-            <div class="overlay"></div>
-            <div class="layout-rightside">
-                <div class="card h-100 rounded-0">
-                    <div class="card-body p-0">
-                        <div class="p-3">
-                            <h6 class="text-muted mb-0 text-uppercase fw-semibold">Recent Activity</h6>
-                        </div>
-                        <div class="p-3">
-                            <h6 class="text-muted mb-3 text-uppercase fw-semibold">Products Reviews</h6>
-                            <!-- Swiper -->
-                            <div class="swiper vertical-swiper" style="height: 250px;">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card border border-dashed shadow-none">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 avatar-sm">
-                                                        <div class="avatar-title bg-light rounded">
-                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/companies/img-1.png') }}"
-                                                                alt="" height="30">
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 ms-3">
-                                                        <div>
-                                                            <p
-                                                                class="text-muted mb-1 fst-italic text-truncate-two-lines">
-                                                                " Great product and looks great, lots of features. "</p>
-                                                            <div class="fs-11 align-middle text-warning">
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-end mb-0 text-muted">
-                                                            - by <cite title="Source Title">Force Medicines</cite>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card border border-dashed shadow-none">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0">
-                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
-                                                            alt="" class="avatar-sm rounded">
-                                                    </div>
-                                                    <div class="flex-grow-1 ms-3">
-                                                        <div>
-                                                            <p
-                                                                class="text-muted mb-1 fst-italic text-truncate-two-lines">
-                                                                " Amazing template, very easy to understand and
-                                                                manipulate. "</p>
-                                                            <div class="fs-11 align-middle text-warning">
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-half-fill"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-end mb-0 text-muted">
-                                                            - by <cite title="Source Title">Henry Baird</cite>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card border border-dashed shadow-none">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 avatar-sm">
-                                                        <div class="avatar-title bg-light rounded">
-                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/companies/img-8.png') }}"
-                                                                alt="" height="30">
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 ms-3">
-                                                        <div>
-                                                            <p
-                                                                class="text-muted mb-1 fst-italic text-truncate-two-lines">
-                                                                "Very beautiful product and Very helpful customer
-                                                                service."</p>
-                                                            <div class="fs-11 align-middle text-warning">
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-line"></i>
-                                                                <i class="ri-star-line"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-end mb-0 text-muted">
-                                                            - by <cite title="Source Title">Zoetic Fashion</cite>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card border border-dashed shadow-none">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0">
-                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
-                                                            alt="" class="avatar-sm rounded">
-                                                    </div>
-                                                    <div class="flex-grow-1 ms-3">
-                                                        <div>
-                                                            <p
-                                                                class="text-muted mb-1 fst-italic text-truncate-two-lines">
-                                                                " The product is very beautiful. I like it. "</p>
-                                                            <div class="fs-11 align-middle text-warning">
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-fill"></i>
-                                                                <i class="ri-star-half-fill"></i>
-                                                                <i class="ri-star-line"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-end mb-0 text-muted">
-                                                            - by <cite title="Source Title">Nancy Martino</cite>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-3">
-                            <h6 class="text-muted mb-3 text-uppercase fw-semibold">Customer Reviews</h6>
-                            <div class="bg-light px-3 py-2 rounded-2 mb-2">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <div class="fs-16 align-middle text-warning">
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-half-fill"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <h6 class="mb-0">4.5 out of 5</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-muted">Total <span class="fw-medium">5.50k</span> reviews</div>
-                            </div>
-
-                            <div class="mt-3">
-                                <div class="row align-items-center g-2">
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0">5 star</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1">
-                                            <div class="progress animated-progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar"
-                                                    style="width: 50.16%" aria-valuenow="50.16" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0 text-muted">2758</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-
-                                <div class="row align-items-center g-2">
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0">4 star</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1">
-                                            <div class="progress animated-progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar"
-                                                    style="width: 29.32%" aria-valuenow="29.32" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0 text-muted">1063</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-
-                                <div class="row align-items-center g-2">
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0">3 star</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1">
-                                            <div class="progress animated-progress progress-sm">
-                                                <div class="progress-bar bg-warning" role="progressbar"
-                                                    style="width: 18.12%" aria-valuenow="18.12" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0 text-muted">997</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-
-                                <div class="row align-items-center g-2">
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0">2 star</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1">
-                                            <div class="progress animated-progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar"
-                                                    style="width: 4.98%" aria-valuenow="4.98" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0 text-muted">227</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-
-                                <div class="row align-items-center g-2">
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0">1 star</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="p-1">
-                                            <div class="progress animated-progress progress-sm">
-                                                <div class="progress-bar bg-danger" role="progressbar"
-                                                    style="width: 7.42%" aria-valuenow="7.42" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="p-1">
-                                            <h6 class="mb-0 text-muted">408</h6>
-                                        </div>
-                                    </div>
-                                </div><!-- end row -->
-                            </div>
-                        </div>
-
-                        <div class="card sidebar-alert bg-light border-0 text-center mx-4 mb-0 mt-3">
-                            <div class="card-body">
-                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/giftbox.png') }}" alt="">
-                                <div class="mt-4">
-                                    <h5>Invite New Seller</h5>
-                                    <p class="text-muted lh-base">Refer a new seller to us and earn $100 per refer.
-                                    </p>
-                                    <button type="button" class="btn btn-primary btn-label rounded-pill"><i
-                                            class="ri-mail-fill label-icon align-middle rounded-pill fs-16 me-2"></i>
-                                        Invite Now</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> <!-- end card-->
-            </div> <!-- end .rightbar-->
-
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end col -->
         </div>
-    </div>
+        <!-- end row -->
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="/updatepengguna/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <div class="mb-3">
+                                    <label for="customername-field" class="form-label">Nama
+                                        User</label>
+                                    <input type="text" id="customername-field" name="nama"
+                                        class="form-control" placeholder="Enter Name" value="{{ $data->nama }}" required />
+                                    <div class="invalid-feedback">Masukkan nama user.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email-field" class="form-label">Email User</label>
+                                    <input type="email" id="email-field" name="email" class="form-control"
+                                        placeholder="Enter Email" value="{{ $data->email }}" required />
+                                    <div class="invalid-feedback">Masukkan email user.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="date-field" class="form-label">Foto Profil</label>
+                                    <br><img class="img mb-3"src="{{ asset('fotopengguna/' . $data->foto) }}"
+                                                alt="" style="width: 90px" alt="">
+                                                <br>
+                                    <input type="file" id="date-field" name="foto" class="form-control"
+                                        placeholder="Select Photo"  />
+                                    <div class="invalid-feedback">Pilih Foto.</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="hstack gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-success" id="edit-btn">Add
+                                            User</button>
+                                        <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <!-- container-fluid -->
     </div>
     <!-- End Page-content -->
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> © Velzon.
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-end d-none d-sm-block">
-                        Design & Develop by Themesbrand
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     </div>
     <!-- end main content-->
 
@@ -727,8 +469,8 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="form-check card-radio">
-                                <input id="customizer-layout01" name="data-layout" type="radio"
-                                    value="vertical" class="form-check-input">
+                                <input id="customizer-layout01" name="data-layout" type="radio" value="vertical"
+                                    class="form-check-input">
                                 <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout01">
                                     <span class="d-flex gap-1 h-100">
                                         <span class="flex-shrink-0">
@@ -752,8 +494,8 @@
                         </div>
                         <div class="col-4">
                             <div class="form-check card-radio">
-                                <input id="customizer-layout02" name="data-layout" type="radio"
-                                    value="horizontal" class="form-check-input">
+                                <input id="customizer-layout02" name="data-layout" type="radio" value="horizontal"
+                                    class="form-check-input">
                                 <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout02">
                                     <span class="d-flex h-100 flex-column gap-1">
                                         <span class="bg-light d-flex p-1 gap-1 align-items-center">
@@ -770,8 +512,8 @@
                         </div>
                         <div class="col-4">
                             <div class="form-check card-radio">
-                                <input id="customizer-layout03" name="data-layout" type="radio"
-                                    value="twocolumn" class="form-check-input">
+                                <input id="customizer-layout03" name="data-layout" type="radio" value="twocolumn"
+                                    class="form-check-input">
                                 <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout03">
                                     <span class="d-flex gap-1 h-100">
                                         <span class="flex-shrink-0">
@@ -817,8 +559,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -878,8 +619,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -900,13 +640,11 @@
                                 <div class="form-check card-radio">
                                     <input class="form-check-input" type="radio" name="data-layout-width"
                                         id="layout-width-boxed" value="boxed">
-                                    <label class="form-check-label p-0 avatar-md w-100 px-2"
-                                        for="layout-width-boxed">
+                                    <label class="form-check-label p-0 avatar-md w-100 px-2" for="layout-width-boxed">
                                         <span class="d-flex gap-1 h-100 border-start border-end">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -937,8 +675,7 @@
 
                             <input type="radio" class="btn-check" name="data-layout-position"
                                 id="layout-position-scrollable" value="scrollable">
-                            <label class="btn btn-light w-sm ms-0"
-                                for="layout-position-scrollable">Scrollable</label>
+                            <label class="btn btn-light w-sm ms-0" for="layout-position-scrollable">Scrollable</label>
                         </div>
                     </div>
                     <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Topbar Color</h6>
@@ -1010,8 +747,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -1123,8 +859,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -1183,8 +918,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-white border-end d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -1312,8 +1046,8 @@
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-01" value="img-1">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-01">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-1.jpg') }}" alt=""
-                                        class="avatar-md w-auto object-cover">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-1.jpg') }}"
+                                        alt="" class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
 
@@ -1321,24 +1055,24 @@
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-02" value="img-2">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-02">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-2.jpg') }}" alt=""
-                                        class="avatar-md w-auto object-cover">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-2.jpg') }}"
+                                        alt="" class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
                             <div class="form-check sidebar-setting card-radio">
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-03" value="img-3">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-03">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-3.jpg') }}" alt=""
-                                        class="avatar-md w-auto object-cover">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-3.jpg') }}"
+                                        alt="" class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
                             <div class="form-check sidebar-setting card-radio">
                                 <input class="form-check-input" type="radio" name="data-sidebar-image"
                                     id="sidebarimg-04" value="img-4">
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-04">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-4.jpg') }}" alt=""
-                                        class="avatar-md w-auto object-cover">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/sidebar/img-4.jpg') }}"
+                                        alt="" class="avatar-md w-auto object-cover">
                                 </label>
                             </div>
                         </div>
@@ -1357,8 +1091,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -1372,10 +1105,8 @@
                                             </span>
                                         </span>
                                         <!-- <div id="preloader"> -->
-                                        <div id="status"
-                                            class="d-flex align-items-center justify-content-center">
-                                            <div class="spinner-border text-primary avatar-xxs m-auto"
-                                                role="status">
+                                        <div id="status" class="d-flex align-items-center justify-content-center">
+                                            <div class="spinner-border text-primary avatar-xxs m-auto" role="status">
                                                 <span class="visually-hidden">Loading...</span>
                                             </div>
                                         </div>
@@ -1392,8 +1123,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -1429,30 +1159,36 @@
     </div>
 
     <!-- JAVASCRIPT -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script
+        src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+    </script>
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}">
+    </script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}">
+    </script>
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
+    <!-- prismjs plugin -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/prismjs/prism.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/list.js/list.min.js') }}"></script>
+    <script
+        src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/list.pagination.js/list.pagination.min.js') }}">
+    </script>
 
-    <!-- apexcharts -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
+    <!-- listjs init -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/listjs.init.js') }}"></script>
 
-    <!-- Vector map-->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/js/jsvectormap.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/maps/world-merc.js') }}"></script>
-
-    <!--Swiper slider js-->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/swiper/swiper-bundle.min.js') }}"></script>
-
-    <!-- Dashboard init -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/dashboard-ecommerce.init.js') }}"></script>
+    <!-- Sweet Alerts js -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/sweetalert2/sweetalert2.min.js') }}">
+    </script>
 
     <!-- App js -->
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
 </body>
 
-<!-- Mirrored from themesbrand.com/velzon/html/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:42:18 GMT -->
+
+<!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
 
 </html>
+
