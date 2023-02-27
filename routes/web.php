@@ -23,6 +23,30 @@ Route::get('/adminn', function () {
     return view('admin.index');
 })->middleware('auth');
 
+Route::get('/destinasi', function () {
+    return view('user.destinasi');
+});
+
+Route::get('/aboutus', function () {
+    return view('user.aboutus');
+});
+
+Route::get('/contactus', function () {
+    return view('user.contactus');
+});
+
+Route::get('/login', function () {
+    return view('user.login');
+});
+
+Route::get('/bandung', function () {
+    return view('user.tujuan.bandung');
+});
+
+Route::get('/bali', function () {
+    return view('user.tujuan.bali');
+});
+
 //Data User
 Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
 
