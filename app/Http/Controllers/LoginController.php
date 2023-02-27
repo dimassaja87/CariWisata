@@ -23,7 +23,7 @@ class LoginController extends Controller
             return redirect('/adminn');
         }
 
-        return \redirect('admin.loginadmin');
+        return \redirect('loginadmin');
     }
 
     public function registeradmin()
