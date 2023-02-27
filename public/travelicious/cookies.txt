@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-travelicious.bold-themes.com	TRUE	/	FALSE	1999999999	woocommerce_items_in_cart	1
-travelicious.bold-themes.com	TRUE	/	FALSE	1999999999	wp_woocommerce_session_f9e7db1173b9328711135f0080b51342	c867333d5ee61dcb3c36dc8fa662b54d%7C%7C1676080261%7C%7C1676076661%7C%7C61418347d1e866472ef13c6f12b0b917
-travelicious.bold-themes.com	TRUE	/	FALSE	1999999999	woocommerce_cart_hash	d951991eb2f54681a7f013aef884e6d6
-
