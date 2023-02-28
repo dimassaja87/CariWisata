@@ -354,7 +354,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA USER</h4>
+                                <h4 class="mb-sm-0">DATA DESTINASI</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -436,9 +436,10 @@
                                                             <td class="htm">{{ $row->htm }}</td>
                                                             <td class="foto_wisata">
                                                                 <img src="{{ asset('fotowisata/' . $row->foto_wisata) }}"
-                                                                alt="" width="150">
+                                                                    alt="" width="150">
                                                             </td>
-                                                            <td class="email">{{ $row->htm }}</td>
+                                                            <td class="deskripsi">{{ $row->deskripsi }}</td>
+                                                            <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
                                                                         <a href="/tampildestinasi/{{ $row->id }}"

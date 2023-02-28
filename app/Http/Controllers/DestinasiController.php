@@ -23,7 +23,7 @@ class DestinasiController extends Controller
     {
         $data = Destinasi::create($request->all());
         if ($request->hasFile('foto')) {
-            $request->file('foto')->move('fotodestinasi/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('fotowisata/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
 

@@ -379,32 +379,47 @@
                 <div class="col-sm-8">
                     <div class="card">
                         <div class="card-body">
-                            <form action="/updatepengguna/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                            <form action="/updatedestinasi/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="customername-field" class="form-label">Nama
-                                        User</label>
-                                    <input type="text" id="customername-field" name="nama"
-                                        class="form-control" placeholder="Enter Name" value="{{ $data->nama }}" required />
-                                    <div class="invalid-feedback">Masukkan nama user.</div>
+                                        Wisata</label>
+                                    <input type="text" id="customername-field" name="nama_wisata"
+                                        class="form-control" placeholder="Enter Name" value="{{ $data->nama_wisata }}" required />
+                                    <div class="invalid-feedback">Masukkan nama wisata.</div>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="email-field" class="form-label">Email User</label>
-                                    <input type="email" id="email-field" name="email" class="form-control"
-                                        placeholder="Enter Email" value="{{ $data->email }}" required />
-                                    <div class="invalid-feedback">Masukkan email user.</div>
+                                    <label for="email-field" class="form-label">Lokasi</label>
+                                    <input type="text" id="email-field" name="lokasi" class="form-control"
+                                        placeholder="Enter Email" value="{{ $data->lokasi }}" required />
+                                    <div class="invalid-feedback">Masukkan lokasi.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email-field" class="form-label">HTM</label>
+                                    <input type="text" id="email-field" name="htm" class="form-control"
+                                        placeholder="Enter Email" value="{{ $data->htm }}" required />
+                                    <div class="invalid-feedback">Masukkan HTM.</div>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="date-field" class="form-label">Foto Profil</label>
-                                    <br><img class="img mb-3"src="{{ asset('fotopengguna/' . $data->foto) }}"
+                                    <br><img class="img mb-3"src="{{ asset('fotowisata/' . $data->foto_wisata) }}"
                                                 alt="" style="width: 90px" alt="">
                                                 <br>
                                     <input type="file" id="date-field" name="foto" class="form-control"
                                         placeholder="Select Photo"  />
                                     <div class="invalid-feedback">Pilih Foto.</div>
                                 </div>
+
+                                <div class="mb-3">
+                                    <label for="email-field" class="form-label">Deskripsi</label>
+                                    <input type="text" id="email-field" name="deskripsi" class="form-control"
+                                        placeholder="Enter Deskripsi" value="{{ $data->htm }}" required />
+                                    <div class="invalid-feedback">Masukkan deskripsi.</div>
+                                </div>
+
                                 <div class="modal-footer">
                                     <div class="hstack gap-2 justify-content-end">
                                         <button type="button" class="btn btn-light"
