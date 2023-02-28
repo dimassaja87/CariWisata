@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Author: HiBootstrap, Category: Tourism, Multipurpose, HTML, SASS, Bootstrap" />
 
-    <title>Jaunt - Travel & Tour Booking HTML Template</title>
+    <title>Pulau Bali</title>
 
     <link rel="stylesheet" href="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/css/bootstrap.min.css') }}" />
 
@@ -174,14 +174,13 @@
             <div class="page-title-content">
                 <h1>Bali</h1>
                 <ul>
-                    <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="destination-details.html"><i class='bx bx-chevrons-right'></i>Destinations
-                            Details</a></li>
+                    <li class="item"><a href="/">Beranda</a></li>
+                    <li class="item"><a href="/destinasi"><i class='bx bx-chevrons-right'></i>Destinatsi</a></li>
                 </ul>
             </div>
         </div>
         <div class="bg-image">
-            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/page-title-area/destination-details.jpg') }}" alt="Demo Image">
+            <img src="https://wallpapercave.com/wp/wp4037127.jpg" alt="Demo Image">
         </div>
     </div>
 
@@ -189,7 +188,7 @@
     <section id="destination" class="destination-section ptb-100 bg-light">
         <div class="container">
             <div class="section-title">
-                <h2>Kota Bali</h2>
+                <h2>Pulau Bali</h2>
                 <p>Pulau Bali adalah bagian dari Kepulauan Sunda Kecil sepanjang 153 km dan selebar 112 km sekitar 3,2
                     km dari Pulau Jawa. Secara geografis, Bali terletak di 8°25′23″ Lintang Selatan dan 115°14′55″ Bujur
                     Timur yang membuatnya beriklim tropis seperti bagian Indonesia yang lain.</p>
@@ -238,25 +237,25 @@
                         <div class="tours-slider owl-carousel mb-30">
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOd0EfTM3VFHh13nRhGOycGkwg0WDBX6J7Q&usqp=CAU"
+                                    <img src="https://th.bing.com/th/id/OIP.RYAcF42OFzxJmZ00QPl2CgHaEK?pid=ImgDet&rs=1"
                                         alt="Demo Image" />
                                 </div>
                             </div>
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOd0EfTM3VFHh13nRhGOycGkwg0WDBX6J7Q&usqp=CAU"
+                                    <img src="https://i.pinimg.com/originals/c9/66/d0/c966d0004fa0ffc05d55b50d63b1f189.jpg"
                                         alt="Demo Image" />
                                 </div>
                             </div>
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOd0EfTM3VFHh13nRhGOycGkwg0WDBX6J7Q&usqp=CAU"
+                                    <img src="https://wallpapercave.com/wp/wp4037127.jpg"
                                         alt="Demo Image" />
                                 </div>
                             </div>
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOd0EfTM3VFHh13nRhGOycGkwg0WDBX6J7Q&usqp=CAU"
+                                    <img src="https://wallpapercave.com/wp/wp6301066.jpg"
                                         alt="Demo Image" />
                                 </div>
                             </div>
@@ -367,122 +366,115 @@
 
     <footer class="footer-area">
         <div class="container">
-            <div class="footer-top pt-100 pb-70">
-                <div class="row">
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <div class="navbar-brand">
-                                <a href="index.html">
-                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo2.png') }}" alt="Logo" />
-                                </a>
-                            </div>
-                            <p>You can dream, create, design, and build the most wonderful place.</p>
-                            <div class="contact-info">
-                                <div class="content">
-                                    <a href="tel:+0123456987"><i class='bx bx-phone'></i>+0123 456 987</a>
-                                </div>
-                                <div class="content">
-                                    <a
-                                        href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#d2bab7bebebd92b8b3a7bca6fcb1bdbf"><i
-                                            class='bx bx-envelope'></i><span class="__cf_email__"
-                                            data-cfemail="a6cec3cacac9e6ccc7d3c8d288c5c9cb">[email&#160;protected]</span></a>
-                                </div>
-                                <div class="content">
-                                    <a href="#"><i class='bx bx-map'></i>Mon-Fri: 8 AM – 7 PM</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Latest News</h5>
-                            <ul class="footer-news">
-                                <li class="content">
-                                    <a href="blog-details.html">Surrounded by the peaceful waters of Lake Victoria.</a>
-                                    <span>October 05, 2021</span>
-                                    <hr>
-                                </li>
-                                <li class="content">
-                                    <a href="blog-details.html">Morning came very early today. The alarm went off at 4
-                                        am</a>
-                                    <span>October 05, 2021</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Quick Links</h5>
-                            <ul class="footer-links">
-                                <li>
-                                    <a href="about-us.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="destinations.html">Destinations</a>
-                                </li>
-                                <li>
-                                    <a href="blog-style-1.html">Latest Blog</a>
-                                </li>
-                                <li>
-                                    <a href="team.html">Our Team</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-5 col-sm-6 col-12">
-                        <div class="footer-widget">
-                            <h5>Instagram Post</h5>
-                            <ul class="instagram-post">
-                                <li>
-                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/instagram1.jpg') }}" alt="Demo Image">
-                                    <i class='bx bxl-instagram'></i>
-                                </li>
-                                <li>
-                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/instagram2.jpg') }}" alt="Demo Image">
-                                    <i class='bx bxl-instagram'></i>
-                                </li>
-                                <li>
-                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/instagram3.jpg') }}" alt="Demo Image">
-                                    <i class='bx bxl-instagram'></i>
-                                </li>
-                                <li>
-                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/instagram4.jpg') }}" alt="Demo Image">
-                                    <i class='bx bxl-instagram'></i>
-                                </li>
-                                <li>
-                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/instagram5.jpg') }}" alt="Demo Image">
-                                    <i class='bx bxl-instagram'></i>
-                                </li>
-                                <li>
-                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/instagram6.jpg') }}" alt="Demo Image">
-                                    <i class='bx bxl-instagram'></i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="copy-right-area">
-                <div class="container">
-                    <div class="copy-right-content">
-                        <p>
-                            Copyright @
-                            <script data-cfasync="false"
-                                src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                            <script>document.write(new Date().getFullYear())</script> Jaunt. Designed By
-                            <a href="https://hibootstrap.com/" target="_blank">
-                                HiBootstrap.com
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-top pt-100 pb-70">
+        <div class="row">
+        <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+        <div class="footer-widget">
+        <div class="navbar-brand">
+        <a href="index.html">
+        <img src="{{ asset('user/templates.hibootstrap.com/jaunt/semarang/assets/img/logo.png') }}" width="200px" alt="Logo" />
+        </a>
         </div>
-    </footer>
+        <p>Anda dapat bermimpi, membuat, mendesain, dan membangun tempat yang paling indah.</p>
+        <div class="contact-info">
+        <div class="content">
+        <a href="tel:+0123456987"><i class='bx bx-phone'></i>+62 0123 456 987</a>
+        </div>
+        <div class="content">
+        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#59313c3535361933382c372d773a3634"><i class='bx bx-envelope'></i><span class="__cf_email__" data-cfemail="8de5e8e1e1e2cde7ecf8e3f9a3eee2e0">[email&#160;protected]</span></a>
+        </div>
+        <div class="content">
+        <a href="#"><i class='bx bx-map'></i>Senin-Jumat: 08.00 – 19.00</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+        <div class="footer-widget">
+        <h5>Latest News</h5>
+        <ul class="footer-news">
+        <li class="content">
+        <a href="blog-details.html">Surrounded by the peaceful waters of Lake Victoria.</a>
+        <span>October 05, 2021</span>
+        <hr>
+        </li>
+        <li class="content">
+        <a href="blog-details.html">Morning came very early today. The alarm went off at 4 am</a>
+        <span>October 05, 2021</span>
+        </li>
+        </ul>
+        </div>
+        </div> -->
+        <div class="col-lg-2 col-md-5 col-sm-6 col-12">
+        <div class="footer-widget">
+        <h5>Selengkapnya</h5>
+        <ul class="footer-links">
+        <li>
+        <a href="about-us.html">Tentang Kami</a>
+        </li>
+        <li>
+        <a href="destinations.html">Destinasi</a>
+        </li>
+        <!-- <li>
+        <a href="blog-style-1.html">Latest Blog</a>
+        </li> -->
+        <li>
+        <a href="team.html">Tim Kami</a>
+        </li>
+        <li>
+        <a href="contact.html">Hubungi Kami</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+        <div class="footer-widget">
+        <h5>Postingan Instagram</h5>
+        <ul class="instagram-post">
+        <li>
+        <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/Kya-Kya-Kembang-Jepun.jpg" alt="Demo Image">
+        <i class='bx bxl-instagram'></i>
+        </li>
+        <li>
+        <img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt="Demo Image">
+        <i class='bx bxl-instagram'></i>
+        </li>
+        <li>
+        <img src="https://storage.googleapis.com/allindonesiatoursim/2017/05/Batu.jpg" alt="Demo Image">
+        <i class='bx bxl-instagram'></i>
+        </li>
+        <li>
+        <img src="https://www.biggigjersey.com/wp-content/uploads/2020/10/jodipan-malang-warna-1536x1025.jpg" alt="Demo Image">
+         <i class='bx bxl-instagram'></i>
+        </li>
+        <li>
+        <img src="https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_431660431.jpg?tr=dpr-2,w-675" alt="Demo Image">
+        <i class='bx bxl-instagram'></i>
+        </li>
+        <li>
+        <img src="https://2.bp.blogspot.com/-GlsJlQ6q2u4/VB0Dt-BC3UI/AAAAAAABc0g/5emV7v_1ii8/s1600/Borobudur%2BTime%2BTravel%2BBells%2BDie%2BGlocke%2BDawn%2Bsunlight%2Bbreaks%2Bthrough%2Bthe%2Bclouds%2Bat%2Bthe%2BBorobudur%2BBuddhist%2Btemple%2Bin%2BJava%2C%2BIndonesia%2BTrevThompson%2Bflickr%2B8665832932_545d1ba0c7.jpg" alt="Demo Image">
+        <i class='bx bxl-instagram'></i>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+        <!-- <div class="copy-right-area">
+        <div class="container">
+        <div class="copy-right-content">
+        <p>
+        Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Jaunt. Designed By
+        <a href="https://hibootstrap.com/" target="_blank">
+        HiBootstrap.com
+        </a>
+        </p>
+        </div>
+        </div>
+        </div> -->
+        </div>
+        </footer>
 
 
     <script src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/js/jquery.min.js') }}"></script>
