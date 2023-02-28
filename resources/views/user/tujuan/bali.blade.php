@@ -319,8 +319,14 @@
                             </a>
                         </div>
                     </div>
-
-                    
+                    <div class="col-lg-12 col-md-12">
+<div class="pagination text-center">
+<span class="page-numbers current" aria-current="page">1</span>
+<a href="#" class="page-numbers">2</a>
+<a href="#" class="page-numbers">3</a>
+<a href="#" class="page-numbers">Next</a>
+</div>
+</div>
                     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
