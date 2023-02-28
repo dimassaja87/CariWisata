@@ -125,15 +125,12 @@
             <div class="main-responsive-nav">
                 <div class="container">
                     <div class="main-responsive-menu">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo1.png') }}" class="logo1" alt="Logo">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo2.png') }}" class="logo2" alt="Logo">
-                            </a>
-                        </div>
-                        <div class="cart responsive">
-                            <a href="#" class="cart-btn"><i class='bx bx-cart'></i>
-                                <span class="badge">0</span>
+                    <div class="logo">
+                            <a href="index-2.html">
+                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
+                                    width="50px" class="logo1" alt="Logo">
+                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
+                                    width="50px" class="logo2" alt="Logo">
                             </a>
                         </div>
                     </div>
@@ -142,109 +139,27 @@
             <div class="main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo1.png') }}" class="logo1" alt="Logo">
-                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo2.png') }}" class="logo2" alt="Logo">
+                        <a class="navbar-brand" href="index-2.html">
+                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
+                                width="50px" class="logo1" alt="Logo">
+                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
+                                width="50px" class="logo2" alt="Logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="../default/index-2.html" class="nav-link toggle">Home</a>
+                                    <a href="/" class="nav-link active toggle">Beranda</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link toggle">Pages<i class='bx bxs-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="team.html" class="nav-link">Team</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="testimonials.html" class="nav-link">Testimonials</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="booking.html" class="nav-link">Booking</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="cart.html" class="nav-link">Cart</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">FAQ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="error-404.html" class="nav-link">404 Error</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="coming-soon.html" class="nav-link">Coming Soon</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="login.html" class="nav-link">Login</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="register.html" class="nav-link">Register</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="terms-of-service.html" class="nav-link">Terms of Service</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="forgot-password.html" class="nav-link">Forgot Password</a>
-                                        </li>
-                                    </ul>
+                                    <a href="/destinasi" class="nav-link toggle">Destinasi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active toggle">Destinations<i
-                                            class='bx bxs-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="destinations.html" class="nav-link">Destinations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="destination-details.html" class="nav-link active">Destinations
-                                                Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a href="#" class="nav-link toggle">Tours<i
-                                            class='bx bxs-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="tours.html" class="nav-link">Tours</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="special-offers.html" class="nav-link">Trip Offers</a>
-                                        </li>
-                                    </ul>
+                                    <a href="/aboutus" class="nav-link">Tentang Kami</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about-us.html" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item"><a href="#" class="nav-link toggle">Blog<i
-                                            class='bx bxs-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blog-style-1.html" class="nav-link">Blog Style One</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="blog-style-2.html" class="nav-link">Blog Style Two</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="blog-style-3.html" class="nav-link">Blog Style Three</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Blog Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
+                                    <a href="/contactus" class="nav-link">Hubungi Kami</a>
                                 </li>
                             </ul>
-                            <div class="cart">
-                                <a href="#" class="cart-btn"><i class='bx bx-cart'></i>
-                                    <span class="badge">0</span>
-                                </a>
-                            </div>
                         </div>
                     </nav>
                 </div>
@@ -405,6 +320,7 @@
                         </div>
                     </div>
 
+                    
                     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />

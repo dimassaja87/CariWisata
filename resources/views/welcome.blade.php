@@ -279,7 +279,7 @@
                                     </div>
                                     <div class="title">
                                         <h3>
-                                            <a href="tours.html">Kota Bandung</a>
+                                            <a href="/bandung">Kota Bandung</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -302,7 +302,7 @@
                                     </div>
                                     <div class="title">
                                         <h3>
-                                            <a href="tours.html">Kota Semarang</a>
+                                            <a href="">Kota Semarang</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -325,7 +325,7 @@
                                     </div>
                                     <div class="title">
                                         <h3>
-                                            <a href="tours.html">Kota Bali</a>
+                                            <a href="/bali">Kota Bali</a>
                                         </h3>
                                     </div>
                                 </div>
