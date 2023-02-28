@@ -237,7 +237,7 @@
                         <div class="tours-slider owl-carousel mb-30">
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://th.bing.com/th/id/OIP.RYAcF42OFzxJmZ00QPl2CgHaEK?pid=ImgDet&rs=1 "
+                                    <img src="https://th.bing.com/th/id/OIP.RYAcF42OFzxJmZ00QPl2CgHaEK?pid=ImgDet&rs=1"
                                         alt="Demo Image" />
                                 </div>
                             </div>
