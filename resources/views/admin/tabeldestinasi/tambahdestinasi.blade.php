@@ -409,12 +409,20 @@
                                         placeholder="Select Photo" required />
                                     <div class="invalid-feedback">Pilih Foto.</div>
                                 </div>
+
+                                <div class="mb-3">
+                                    <label for="email-field" class="form-label">Deskripsi Wisata</label>
+                                    <input type="text" id="email-field" name="deskripsi" class="form-control"
+                                        placeholder="Masukkan Deskripsi" required />
+                                    <div class="invalid-feedback">Masukkan deskripsi.</div>
+                                </div>
+
                                 <div class="modal-footer">
                                     <div class="hstack gap-2 justify-content-end">
                                         <button type="button" class="btn btn-light"
                                             data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success" id="edit-btn">Add
-                                            User</button>
+                                        <button type="submit" class="btn btn-success" id="edit-btn">Tambah
+                                            Wisata</button>
                                         <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                     </div>
                                 </div>
@@ -430,22 +438,6 @@
     </div>
     <!-- End Page-content -->
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> © Velzon.
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-end d-none d-sm-block">
-                        Design & Develop by Themesbrand
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     </div>
     <!-- end main content-->
 

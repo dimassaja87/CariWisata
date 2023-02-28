@@ -380,7 +380,7 @@
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
                                                 <div>
-                                                    <a href="/tambahpengguna" type="button"
+                                                    <a href="/tambahdestinasi" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
                                                     <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
