@@ -52,10 +52,7 @@
                             </div>
                             <div class="content">
                                 <i class='bx bx-envelope'></i>
-                                <a
-                                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#a2cac7cececde2c8c3d7ccd68cc1cdcf"><span
-                                        class="__cf_email__"
-                                        data-cfemail="f199949d9d9eb19b90849f85df929e9c">[email&#160;protected]</span></a>
+                                <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#a2cac7cececde2c8c3d7ccd68cc1cdcf"><span class="__cf_email__" data-cfemail="f199949d9d9eb19b90849f85df929e9c">[email&#160;protected]</span></a>
                             </div>
                             <div class="content">
                                 <i class='bx bx-map'></i>
@@ -125,12 +122,10 @@
             <div class="main-responsive-nav">
                 <div class="container">
                     <div class="main-responsive-menu">
-                    <div class="logo">
+                        <div class="logo">
                             <a href="index-2.html">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
-                                    width="50px" class="logo1" alt="Logo">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
-                                    width="50px" class="logo2" alt="Logo">
+                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}" width="50px" class="logo1" alt="Logo">
+                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}" width="50px" class="logo2" alt="Logo">
                             </a>
                         </div>
                     </div>
@@ -140,10 +135,8 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index-2.html">
-                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
-                                width="50px" class="logo1" alt="Logo">
-                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}"
-                                width="50px" class="logo2" alt="Logo">
+                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}" width="50px" class="logo1" alt="Logo">
+                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/img/logo.png') }}" width="50px" class="logo2" alt="Logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu">
                             <ul class="navbar-nav ms-auto">
@@ -237,26 +230,22 @@
                         <div class="tours-slider owl-carousel mb-30">
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://th.bing.com/th/id/OIP.RYAcF42OFzxJmZ00QPl2CgHaEK?pid=ImgDet&rs=1"
-                                        alt="Demo Image" />
+                                    <img src="https://th.bing.com/th/id/OIP.RYAcF42OFzxJmZ00QPl2CgHaEK?pid=ImgDet&rs=1" alt="Demo Image" />
                                 </div>
                             </div>
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://i.pinimg.com/originals/c9/66/d0/c966d0004fa0ffc05d55b50d63b1f189.jpg"
-                                        alt="Demo Image" />
+                                    <img src="https://i.pinimg.com/originals/c9/66/d0/c966d0004fa0ffc05d55b50d63b1f189.jpg" alt="Demo Image" />
                                 </div>
                             </div>
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://wallpapercave.com/wp/wp4037127.jpg"
-                                        alt="Demo Image" />
+                                    <img src="https://wallpapercave.com/wp/wp4037127.jpg" alt="Demo Image" />
                                 </div>
                             </div>
                             <div class="slider-item">
                                 <div class="image">
-                                    <img src="https://wallpapercave.com/wp/wp6301066.jpg"
-                                        alt="Demo Image" />
+                                    <img src="https://wallpapercave.com/wp/wp6301066.jpg" alt="Demo Image" />
                                 </div>
                             </div>
                         </div>
@@ -269,8 +258,7 @@
                                 betutu dan Babi guling.[38]</p>
                         </div>
                         <div>
-                            <img src="https://cdn.idntimes.com/content-images/post/20211013/169281280-1089824911494428-1782060517954355884-n-040be48167cb3571a99064b14f5294ab_600x400.jpg"
-                                alt="" width="100%">
+                            <img src="https://cdn.idntimes.com/content-images/post/20211013/169281280-1089824911494428-1782060517954355884-n-040be48167cb3571a99064b14f5294ab_600x400.jpg" alt="" width="100%">
                         </div>
                     </div>
                 </div>
@@ -279,12 +267,24 @@
                 <div class="tabs__content">
                     <br>
                     <br>
+
+
+                    <h3 class="form-label" for="form1">Search</h3>
+                    <div class="input-group">
+                        <div class="form-outline">
+                            <input type="search" id="form1" class="form-control" />
+                        </div>
+                        <button type="button" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                     <br>
+
+
                     <div class="card-group">
                         <div class="card mb-4 mx-3">
                             <a href="../bali/tg.html">
-                                <img src="https://www.befreetour.com/img/attraction/tirta-gangga20191015144107.jpg"
-                                    class="card-img-top" alt="...">
+                                <img src="https://www.befreetour.com/img/attraction/tirta-gangga20191015144107.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Tirta Gangga</h5>
                                 </div>
@@ -292,8 +292,7 @@
                         </div>
                         <div class="card mb-4 mx-3">
                             <a href="../bali/tntb.html">
-                                <img src="https://sweetrip.id/wp-content/uploads/2022/05/candi-gedong-songo.jpg"
-                                    class="card-img-top" alt="...">
+                                <img src="https://sweetrip.id/wp-content/uploads/2022/05/candi-gedong-songo.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Vanaprastha Gedong Songo Park</h5>
                                 </div>
@@ -301,8 +300,7 @@
                         </div>
                         <div class="card mb-4 mx-3">
                             <a href="">
-                                <img src="https://pmb.ittelkom-pwt.ac.id/wp-content/uploads/2021/07/coming-soon-2579123_1920.jpg"
-                                    class="card-img-top" alt="...">
+                                <img src="https://pmb.ittelkom-pwt.ac.id/wp-content/uploads/2021/07/coming-soon-2579123_1920.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Cooming soon</h5>
                                 </div>
@@ -310,8 +308,7 @@
                         </div>
                         <div class="card mb-4 mx-3">
                             <a href="">
-                                <img src="https://pmb.ittelkom-pwt.ac.id/wp-content/uploads/2021/07/coming-soon-2579123_1920.jpg"
-                                    class="card-img-top" alt="...">
+                                <img src="https://pmb.ittelkom-pwt.ac.id/wp-content/uploads/2021/07/coming-soon-2579123_1920.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Cooming soon</h5>
                                 </div>
@@ -319,19 +316,18 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12">
-<div class="pagination text-center">
-<span class="page-numbers current" aria-current="page">1</span>
-<a href="#" class="page-numbers">2</a>
-<a href="#" class="page-numbers">3</a>
-<a href="#" class="page-numbers">Next</a>
-</div>
-</div>
+                        <div class="pagination text-center">
+                            <span class="page-numbers current" aria-current="page">1</span>
+                            <a href="#" class="page-numbers">2</a>
+                            <a href="#" class="page-numbers">3</a>
+                            <a href="#" class="page-numbers">Next</a>
+                        </div>
+                    </div>
                     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-                        rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
                     <br>
                     <br>
                     <br>
@@ -353,8 +349,7 @@
                             var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                         }
                     </script>
-                    <script
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script>
                 </div>
             </div>
 
@@ -366,30 +361,30 @@
 
     <footer class="footer-area">
         <div class="container">
-        <div class="footer-top pt-100 pb-70">
-        <div class="row">
-        <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-        <div class="footer-widget">
-        <div class="navbar-brand">
-        <a href="index.html">
-        <img src="{{ asset('user/templates.hibootstrap.com/jaunt/semarang/assets/img/logo.png') }}" width="200px" alt="Logo" />
-        </a>
-        </div>
-        <p>Anda dapat bermimpi, membuat, mendesain, dan membangun tempat yang paling indah.</p>
-        <div class="contact-info">
-        <div class="content">
-        <a href="tel:+0123456987"><i class='bx bx-phone'></i>+62 0123 456 987</a>
-        </div>
-        <div class="content">
-        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#59313c3535361933382c372d773a3634"><i class='bx bx-envelope'></i><span class="__cf_email__" data-cfemail="8de5e8e1e1e2cde7ecf8e3f9a3eee2e0">[email&#160;protected]</span></a>
-        </div>
-        <div class="content">
-        <a href="#"><i class='bx bx-map'></i>Senin-Jumat: 08.00 – 19.00</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+            <div class="footer-top pt-100 pb-70">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-12">
+                        <div class="footer-widget">
+                            <div class="navbar-brand">
+                                <a href="index.html">
+                                    <img src="{{ asset('user/templates.hibootstrap.com/jaunt/semarang/assets/img/logo.png') }}" width="200px" alt="Logo" />
+                                </a>
+                            </div>
+                            <p>Anda dapat bermimpi, membuat, mendesain, dan membangun tempat yang paling indah.</p>
+                            <div class="contact-info">
+                                <div class="content">
+                                    <a href="tel:+0123456987"><i class='bx bx-phone'></i>+62 0123 456 987</a>
+                                </div>
+                                <div class="content">
+                                    <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#59313c3535361933382c372d773a3634"><i class='bx bx-envelope'></i><span class="__cf_email__" data-cfemail="8de5e8e1e1e2cde7ecf8e3f9a3eee2e0">[email&#160;protected]</span></a>
+                                </div>
+                                <div class="content">
+                                    <a href="#"><i class='bx bx-map'></i>Senin-Jumat: 08.00 – 19.00</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-5 col-sm-6 col-12">
         <div class="footer-widget">
         <h5>Latest News</h5>
         <ul class="footer-news">
@@ -405,63 +400,63 @@
         </ul>
         </div>
         </div> -->
-        <div class="col-lg-2 col-md-5 col-sm-6 col-12">
-        <div class="footer-widget">
-        <h5>Selengkapnya</h5>
-        <ul class="footer-links">
-        <li>
-        <a href="about-us.html">Tentang Kami</a>
-        </li>
-        <li>
-        <a href="destinations.html">Destinasi</a>
-        </li>
-        <!-- <li>
+                    <div class="col-lg-2 col-md-5 col-sm-6 col-12">
+                        <div class="footer-widget">
+                            <h5>Selengkapnya</h5>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="about-us.html">Tentang Kami</a>
+                                </li>
+                                <li>
+                                    <a href="destinations.html">Destinasi</a>
+                                </li>
+                                <!-- <li>
         <a href="blog-style-1.html">Latest Blog</a>
         </li> -->
-        <li>
-        <a href="team.html">Tim Kami</a>
-        </li>
-        <li>
-        <a href="contact.html">Hubungi Kami</a>
-        </li>
-        </ul>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-5 col-sm-6 col-12">
-        <div class="footer-widget">
-        <h5>Postingan Instagram</h5>
-        <ul class="instagram-post">
-        <li>
-        <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/Kya-Kya-Kembang-Jepun.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://storage.googleapis.com/allindonesiatoursim/2017/05/Batu.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://www.biggigjersey.com/wp-content/uploads/2020/10/jodipan-malang-warna-1536x1025.jpg" alt="Demo Image">
-         <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_431660431.jpg?tr=dpr-2,w-675" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://2.bp.blogspot.com/-GlsJlQ6q2u4/VB0Dt-BC3UI/AAAAAAABc0g/5emV7v_1ii8/s1600/Borobudur%2BTime%2BTravel%2BBells%2BDie%2BGlocke%2BDawn%2Bsunlight%2Bbreaks%2Bthrough%2Bthe%2Bclouds%2Bat%2Bthe%2BBorobudur%2BBuddhist%2Btemple%2Bin%2BJava%2C%2BIndonesia%2BTrevThompson%2Bflickr%2B8665832932_545d1ba0c7.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        </ul>
-        </div>
-        </div>
-        </div>
-        </div>
-        <hr>
-        <!-- <div class="copy-right-area">
+                                <li>
+                                    <a href="team.html">Tim Kami</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Hubungi Kami</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+                        <div class="footer-widget">
+                            <h5>Postingan Instagram</h5>
+                            <ul class="instagram-post">
+                                <li>
+                                    <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/Kya-Kya-Kembang-Jepun.jpg" alt="Demo Image">
+                                    <i class='bx bxl-instagram'></i>
+                                </li>
+                                <li>
+                                    <img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt="Demo Image">
+                                    <i class='bx bxl-instagram'></i>
+                                </li>
+                                <li>
+                                    <img src="https://storage.googleapis.com/allindonesiatoursim/2017/05/Batu.jpg" alt="Demo Image">
+                                    <i class='bx bxl-instagram'></i>
+                                </li>
+                                <li>
+                                    <img src="https://www.biggigjersey.com/wp-content/uploads/2020/10/jodipan-malang-warna-1536x1025.jpg" alt="Demo Image">
+                                    <i class='bx bxl-instagram'></i>
+                                </li>
+                                <li>
+                                    <img src="https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_431660431.jpg?tr=dpr-2,w-675" alt="Demo Image">
+                                    <i class='bx bxl-instagram'></i>
+                                </li>
+                                <li>
+                                    <img src="https://2.bp.blogspot.com/-GlsJlQ6q2u4/VB0Dt-BC3UI/AAAAAAABc0g/5emV7v_1ii8/s1600/Borobudur%2BTime%2BTravel%2BBells%2BDie%2BGlocke%2BDawn%2Bsunlight%2Bbreaks%2Bthrough%2Bthe%2Bclouds%2Bat%2Bthe%2BBorobudur%2BBuddhist%2Btemple%2Bin%2BJava%2C%2BIndonesia%2BTrevThompson%2Bflickr%2B8665832932_545d1ba0c7.jpg" alt="Demo Image">
+                                    <i class='bx bxl-instagram'></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- <div class="copy-right-area">
         <div class="container">
         <div class="copy-right-content">
         <p>
@@ -474,7 +469,7 @@
         </div>
         </div> -->
         </div>
-        </footer>
+    </footer>
 
 
     <script src="{{ asset('user/templates.hibootstrap.com/jaunt/bali/assets/js/jquery.min.js') }}"></script>
