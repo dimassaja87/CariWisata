@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data User | Admin</title>
+    <title>Data Destinasi | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -354,7 +354,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA USER</h4>
+                                <h4 class="mb-sm-0">Tambah Destinasi</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -379,26 +379,33 @@
                 <div class="col-sm-8">
                     <div class="card">
                         <div class="card-body">
-                            <form action="/insertpengguna" method="POST" enctype="multipart/form-data">
+                            <form action="/insertdestinasi" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="customername-field" class="form-label">Nama
-                                        User</label>
-                                    <input type="text" id="customername-field" name="nama"
-                                        class="form-control" placeholder="Enter Name" required />
-                                    <div class="invalid-feedback">Masukkan nama user.</div>
+                                        Wisata</label>
+                                    <input type="text" id="customername-field" name="nama_wisata"
+                                        class="form-control" placeholder="Masukkan nama wisata" required />
+                                    <div class="invalid-feedback">Masukkan nama wisata.</div>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="email-field" class="form-label">Email User</label>
-                                    <input type="email" id="email-field" name="email" class="form-control"
-                                        placeholder="Enter Email" required />
-                                    <div class="invalid-feedback">Masukkan email user.</div>
+                                    <label for="email-field" class="form-label">Lokasi Wisata</label>
+                                    <input type="text" id="email-field" name="lokasi" class="form-control"
+                                        placeholder="Masukkan lokasi wisata" required />
+                                    <div class="invalid-feedback">Masukkan lokasi wisata.</div>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="date-field" class="form-label">Foto Profil</label>
-                                    <input type="file" id="date-field" name="foto" class="form-control"
+                                    <label for="email-field" class="form-label">Harga Tiket Masuk</label>
+                                    <input type="text" id="email-field" name="htm" class="form-control"
+                                        placeholder="Masukkan htm" required />
+                                    <div class="invalid-feedback">Masukkan htm.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="date-field" class="form-label">Foto Wisata</label>
+                                    <input type="file" id="date-field" name="foto_wisata" class="form-control"
                                         placeholder="Select Photo" required />
                                     <div class="invalid-feedback">Pilih Foto.</div>
                                 </div>

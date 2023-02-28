@@ -354,7 +354,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA USER</h4>
+                                <h4 class="mb-sm-0">DATA DESTINASI</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -379,27 +379,30 @@
                 <div class="col-sm-8">
                     <div class="card">
                         <div class="card-body">
-                            <form action="/insertpengguna" method="POST" enctype="multipart/form-data">
+                            <form action="/updatepengguna/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="customername-field" class="form-label">Nama
                                         User</label>
                                     <input type="text" id="customername-field" name="nama"
-                                        class="form-control" placeholder="Enter Name" required />
+                                        class="form-control" placeholder="Enter Name" value="{{ $data->nama }}" required />
                                     <div class="invalid-feedback">Masukkan nama user.</div>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="email-field" class="form-label">Email User</label>
                                     <input type="email" id="email-field" name="email" class="form-control"
-                                        placeholder="Enter Email" required />
+                                        placeholder="Enter Email" value="{{ $data->email }}" required />
                                     <div class="invalid-feedback">Masukkan email user.</div>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="date-field" class="form-label">Foto Profil</label>
+                                    <br><img class="img mb-3"src="{{ asset('fotopengguna/' . $data->foto) }}"
+                                                alt="" style="width: 90px" alt="">
+                                                <br>
                                     <input type="file" id="date-field" name="foto" class="form-control"
-                                        placeholder="Select Photo" required />
+                                        placeholder="Select Photo"  />
                                     <div class="invalid-feedback">Pilih Foto.</div>
                                 </div>
                                 <div class="modal-footer">
@@ -423,22 +426,7 @@
     </div>
     <!-- End Page-content -->
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> © Velzon.
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-end d-none d-sm-block">
-                        Design & Develop by Themesbrand
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     </div>
     <!-- end main content-->
 
@@ -1208,3 +1196,4 @@
 <!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
 
 </html>
+

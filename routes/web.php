@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
 use Illuminate\Support\Facades\Route;
@@ -47,6 +48,10 @@ Route::get('/bali', function () {
     return view('user.tujuan.bali');
 });
 
+Route::get('/semarang', function () {
+    return view('user.tujuan.semarang');
+});
+
 //Data User
 Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
 
@@ -57,6 +62,17 @@ Route::get('/tampilpengguna/{id}',[PenggunaController::class, 'tampilpengguna'])
 Route::post('/updatepengguna',[PenggunaController::class, 'updatepengguna'])->name('updatepengguna');
 
 Route::get('/deletepengguna',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna');
+
+//Data User
+Route::get('/datadestinasi',[DestinasiController::class, 'datadestinasi'])->name('datadestinasi');
+
+Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
+Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
+
+Route::get('/tampildestinasi/{id}',[DestinasiController::class, 'tampildestinasi'])->name('tampildestinasi');
+Route::post('/updatedestinasi',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
+
+Route::get('/deletedestinasi',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
 
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');

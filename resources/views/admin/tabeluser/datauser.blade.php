@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data User | Velzon</title>
+    <title>Data User | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -47,7 +47,7 @@
                     <div class="d-flex">
                         <!-- LOGO -->
                         <div class="navbar-brand-box horizontal-logo">
-                            <a href="index.html" class="logo logo-dark">
+                            <a href="/adminn" class="logo logo-dark">
                                 <span class="logo-sm">
                                     <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
                                         alt="" height="22">
@@ -58,7 +58,7 @@
                                 </span>
                             </a>
 
-                            <a href="index.html" class="logo logo-light">
+                            <a href="/adminn" class="logo logo-light">
                                 <span class="logo-sm">
                                     <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
                                         alt="" height="22">
@@ -97,9 +97,9 @@
                                     </div>
 
                                     <div class="dropdown-item bg-transparent text-wrap">
-                                        <a href="index.html" class="btn btn-soft-secondary btn-sm btn-rounded">how to
+                                        <a href="/adminn" class="btn btn-soft-secondary btn-sm btn-rounded">how to
                                             setup <i class="mdi mdi-magnify ms-1"></i></a>
-                                        <a href="index.html" class="btn btn-soft-secondary btn-sm btn-rounded">buttons
+                                        <a href="/adminn" class="btn btn-soft-secondary btn-sm btn-rounded">buttons
                                             <i class="mdi mdi-magnify ms-1"></i></a>
                                     </div>
                                     <!-- item-->
@@ -277,7 +277,7 @@
             <!-- LOGO -->
             <div class="navbar-brand-box">
                 <!-- Dark Logo-->
-                <a href="index.html" class="logo logo-dark">
+                <a href="/adminn" class="logo logo-dark">
                     <span class="logo-sm">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
                             alt="" height="22">
@@ -288,7 +288,7 @@
                     </span>
                 </a>
                 <!-- Light Logo-->
-                <a href="index.html" class="logo logo-light">
+                <a href="/adminn" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
                             alt="" height="22">
@@ -324,6 +324,11 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/pengguna">
                                 <i class="ri-user-line"></i> <span data-key="t-tables">Data User</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/datadestinasi">
+                                <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
                             </a>
                         </li>
                     </ul>

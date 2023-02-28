@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data User | Admin</title>
+    <title>Data Destinasi | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -366,6 +366,125 @@
                             </div>
                         </div>
                     </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Add, Edit & Remove</h4>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <div id="customerList">
+                                        <div class="row g-4 mb-3">
+                                            <div class="col-sm-auto">
+                                                <div>
+                                                    <a href="/tambahpengguna" type="button"
+                                                        class="btn btn-success add-btn" id="create-btn"><i
+                                                            class="ri-add-line align-bottom me-1"></i> Add</a>
+                                                    <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
+                                                            class="ri-delete-bin-2-line"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="d-flex justify-content-sm-end">
+                                                    <div class="search-box ms-2">
+                                                        <input type="text" class="form-control search"
+                                                            placeholder="Search...">
+                                                        <i class="ri-search-line search-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="table-responsive table-card mt-3 mb-1">
+                                            <table class="table align-middle table-nowrap" id="customerTable">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" style="width: 50px;">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="checkAll" value="option">
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">ID</th>
+                                                        <th scope="col">Nama Wisata</th>
+                                                        <th scope="col">Lokasi</th>
+                                                        <th scope="col">HTM</th>
+                                                        <th scope="col">Foto Wisata</th>
+                                                        <th scope="col">Deskripsi Wisata</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list form-check-all">
+                                                    @php
+                                                        $no = 1;
+                                                    @endphp
+                                                    @foreach ($data as $row)
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        name="chk_child" value="option1">
+                                                                </div>
+                                                            </th>
+                                                            <th scope="row">{{ $no++ }}</>
+                                                            </th>
+                                                            <td class="nama">{{ $row->nama_wisata }}</td>
+                                                            <td class="lokasi">{{ $row->lokasi }}</td>
+                                                            <td class="htm">{{ $row->htm }}</td>
+                                                            <td class="foto_wisata">
+                                                                <img src="{{ asset('fotowisata/' . $row->foto_wisata) }}"
+                                                                alt="" width="150">
+                                                            </td>
+                                                            <td class="email">{{ $row->htm }}</td>
+                                                                <div class="d-flex gap-2">
+                                                                    <div class="edit">
+                                                                        <a href="/tampildestinasi/{{ $row->id }}"
+                                                                            class="btn btn-sm btn-success edit-item-btn">Edit</a>
+                                                                    </div>
+                                                                    <div class="remove">
+                                                                        <a href="/deletedestinasi/{{ $row->id }}"
+                                                                            class="btn btn-sm btn-danger remove-item-btn">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                            <div class="noresult" style="display: none">
+                                                <div class="text-center">
+                                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
+                                                        trigger="loop" colors="primary:#121331,secondary:#08a88a"
+                                                        style="width:75px;height:75px"></lord-icon>
+                                                    <h5 class="mt-2">Maaf! Tidak Ada Hasil Yang Ditemukan</h5>
+                                                    <p class="text-muted mb-0">Kami telah mencari lebih dari 99+
+                                                        Pengguna, Kami tidak menemukan data apa pun yang Anda cari.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <div class="pagination-wrap hstack gap-2">
+                                                <a class="page-item pagination-prev disabled" href="#">
+                                                    Previous
+                                                </a>
+                                                <ul class="pagination listjs-pagination mb-0"></ul>
+                                                <a class="page-item pagination-next" href="#">
+                                                    Next
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end card -->
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
 
                 </div>
                 <!-- end col -->
@@ -374,71 +493,11 @@
         </div>
         <!-- end row -->
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <form action="/insertpengguna" method="POST" enctype="multipart/form-data">
-                                @csrf
-                                <div class="mb-3">
-                                    <label for="customername-field" class="form-label">Nama
-                                        User</label>
-                                    <input type="text" id="customername-field" name="nama"
-                                        class="form-control" placeholder="Enter Name" required />
-                                    <div class="invalid-feedback">Masukkan nama user.</div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="email-field" class="form-label">Email User</label>
-                                    <input type="email" id="email-field" name="email" class="form-control"
-                                        placeholder="Enter Email" required />
-                                    <div class="invalid-feedback">Masukkan email user.</div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="date-field" class="form-label">Foto Profil</label>
-                                    <input type="file" id="date-field" name="foto" class="form-control"
-                                        placeholder="Select Photo" required />
-                                    <div class="invalid-feedback">Pilih Foto.</div>
-                                </div>
-                                <div class="modal-footer">
-                                    <div class="hstack gap-2 justify-content-end">
-                                        <button type="button" class="btn btn-light"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success" id="edit-btn">Add
-                                            User</button>
-                                        <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
     <!-- container-fluid -->
     </div>
     <!-- End Page-content -->
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> © Velzon.
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-end d-none d-sm-block">
-                        Design & Develop by Themesbrand
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     </div>
     <!-- end main content-->
 

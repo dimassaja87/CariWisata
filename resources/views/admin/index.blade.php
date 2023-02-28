@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon</title>
+    <title>Dashboard | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -75,7 +75,7 @@
             <!-- LOGO -->
             <div class="navbar-brand-box">
                 <!-- Dark Logo-->
-                <a href="index.html" class="logo logo-dark">
+                <a href="/adminn" class="logo logo-dark">
                     <span class="logo-sm">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt="" height="22">
                     </span>
@@ -84,7 +84,7 @@
                     </span>
                 </a>
                 <!-- Light Logo-->
-                <a href="index.html" class="logo logo-light">
+                <a href="/adminn" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}" alt="" height="22">
                     </span>
@@ -116,6 +116,11 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/pengguna">
                                 <i class="ri-user-line"></i> <span data-key="t-tables">Data User</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/datadestinasi">
+                                <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
                             </a>
                         </li>
                     </ul>
