@@ -165,7 +165,7 @@
                     <div class="container">
                         <!-- iqoniq Heading Start -->
                         <div class="mg_hotel_hd1">
-                            <h6>What are you in the Mood for.?</h6>
+                            <h6></h6>
                             <h4>Book hotels in top destinations</h4>
                         </div>
                         <!-- iqoniq Heading End -->
@@ -173,13 +173,13 @@
                         <div class="mg_hotel_destination_tab">
                             <!-- Nav tabs Start -->
                             <ul class="mg_hotel_nav2" role="tablist">
-                                <li role="presentation" class="active"><a href="#worldwide" aria-controls="worldwide" role="tab" data-toggle="tab">Worldwide</a></li>
-                                <li role="presentation"><a href="#usa" aria-controls="usa" role="tab" data-toggle="tab">USA & Canada</a></li>
-                                <li role="presentation"><a href="#mexico" aria-controls="mexico" role="tab" data-toggle="tab">Mexico & Caribbean </a></li>
-                                <li role="presentation"><a href="#central" aria-controls="central" role="tab" data-toggle="tab">Central & South America </a></li>
-                                <li role="presentation"><a href="#europe" aria-controls="europe" role="tab" data-toggle="tab">Europe</a></li>
-                                <li role="presentation"><a href="#asia" aria-controls="asia" role="tab" data-toggle="tab">Asia</a></li>
-                                <li role="presentation"><a href="#elsewhere" aria-controls="elsewhere" role="tab" data-toggle="tab">Elsewhere</a></li>
+                                <li role="presentation" class="active"><a href="#worldwide" aria-controls="worldwide" role="tab" data-toggle="tab">Bandung</a></li>
+                                <li role="presentation"><a href="#usa" aria-controls="usa" role="tab" data-toggle="tab">Semarang</a></li>
+                                <li role="presentation"><a href="#mexico" aria-controls="mexico" role="tab" data-toggle="tab">Bali</a></li>
+                                <li role="presentation"><a href="#central" aria-controls="central" role="tab" data-toggle="tab">Banyuwangi</a></li>
+                                <li role="presentation"><a href="#europe" aria-controls="europe" role="tab" data-toggle="tab">Malang</a></li>
+                                <li role="presentation"><a href="#asia" aria-controls="asia" role="tab" data-toggle="tab">Lombok</a></li>
+                                <li role="presentation"><a href="#elsewhere" aria-controls="elsewhere" role="tab" data-toggle="tab">Surabaya</a></li>
                             </ul>
                             <!-- Nav tabs End -->
                             <!-- Tab panes Start -->
@@ -199,8 +199,7 @@
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="#">London</a></h5>
-                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                            <h5><a href="#">Braga</a></h5>
                                                         </div>
                                                         <div class="mg_destination_review">
                                                             <p>Hotel 41</p>
