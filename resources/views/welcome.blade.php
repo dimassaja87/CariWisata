@@ -140,17 +140,17 @@
                 <div class="mg_slider1">
                     <div>
                         <figure>
-                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner1.jpg') }}" alt=""/>
+                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner4.jpg') }}" alt=""/>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner2.jpg') }}" alt=""/>
+                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner5.jpg') }}" alt=""/>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner3.jpg') }}" alt=""/>
+                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner6.jpg') }}" alt=""/>
                         </figure>
                     </div>
                 </div>
@@ -192,7 +192,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="extra-images/destination11.jpg" alt=""/>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination11.jpg') }}" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="#">view deal</a>
                                                         </figcaption>
@@ -382,7 +382,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="extra-images/usa1.jpg" alt=""/>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa1.jpg') }}" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="#">view deal</a>
                                                         </figcaption>
