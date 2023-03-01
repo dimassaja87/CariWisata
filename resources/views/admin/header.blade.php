@@ -173,13 +173,12 @@
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="d-flex align-items-center">
                             <img class="rounded-circle header-profile-user"
-                                src="https://th.bing.com/th/id/OIP.va8TQkhgHcB0OWHjlAkqegHaE7?pid=ImgDet&w=2429&h=1619&rs=1"
+                                src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/pp.jpg') }}"
                                 alt="Header Avatar">
                             <span class="text-start ms-xl-2">
-                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Admin
-                                    Web</span>
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
                                 <span
-                                    class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Admin</span>
+                                    class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Website</span>
                             </span>
                         </span>
                     </button>

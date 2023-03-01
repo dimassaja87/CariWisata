@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/adminn', function () {
-    return view('admin.index');
+    return view('admin.welcomeadmin');
 })->middleware('auth');
 
 Route::get('/destinasi', function () {
@@ -59,20 +59,31 @@ Route::get('/tambahpengguna',[PenggunaController::class, 'tambahpengguna'])->nam
 Route::post('/insertpengguna',[PenggunaController::class, 'insertpengguna'])->name('insertpengguna');
 
 Route::get('/tampilpengguna/{id}',[PenggunaController::class, 'tampilpengguna'])->name('tampilpengguna');
-Route::post('/updatepengguna',[PenggunaController::class, 'updatepengguna'])->name('updatepengguna');
+Route::post('/updatepengguna/{id}',[PenggunaController::class, 'updatepengguna'])->name('updatepengguna');
 
-Route::get('/deletepengguna',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna');
+Route::get('/deletepengguna/{id}',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna');
 
-//Data User
+//Data destinasi
 Route::get('/datadestinasi',[DestinasiController::class, 'datadestinasi'])->name('datadestinasi');
 
 Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
 Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
 
 Route::get('/tampildestinasi/{id}',[DestinasiController::class, 'tampildestinasi'])->name('tampildestinasi');
-Route::post('/updatedestinasi',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
+Route::post('/updatedestinasi{id}',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
 
-Route::get('/deletedestinasi',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
+Route::get('/deletedestinasi/{id}',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
+
+// //Data Ulasan
+// Route::get('/ulasan',[DestinasiController::class, 'ulasan'])->name('ulasan');
+
+// Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
+// Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
+
+// Route::get('/tampildestinasi/{id}',[DestinasiController::class, 'tampildestinasi'])->name('tampildestinasi');
+// Route::post('/updatedestinasi{id}',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
+
+// Route::get('/deletedestinasi/{id}',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
 
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');
