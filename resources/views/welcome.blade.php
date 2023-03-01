@@ -1,1075 +1,2290 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from templates.hibootstrap.com/jaunt/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Feb 2023 13:19:59 GMT -->
-
+<!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:25:53 GMT -->
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Author: HiBootstrap, Category: Tourism, Multipurpose, HTML, SASS, Bootstrap" />
-
-    <title>Jaunt - Travel & Tour Booking HTML Template</title>
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/bootstrap.min.css') }}" />
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/fontawesome.min.css') }}" />
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/boxicons.min.css') }}">
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/animate.min.css') }}" />
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/bootstrap-datepicker.min.css') }}">
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/nice-select.css') }}">
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/magnific-popup.min.css') }}" />
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/owl.carousel.min.css') }}" />
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/meanmenu.min.css') }}" />
-
-    <link rel="stylesheet" href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/style.css') }}" />
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/responsive.css') }}" />
-
-    <link rel="stylesheet"
-        href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/css/theme-dark.css') }}" />
-
-    <link rel="icon" href="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/favicon.png') }}"
-        type="image/png" />
-</head>
-
-<body>
-
-    <div id="loading">
-        <div class="loader"></div>
-    </div>
-
-
-    <header class="header-area">
-
-        <div class="top-header-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="contact-info">
-                            <div class="content">
-                                <i class='bx bx-phone'></i>
-                                <a href="tel:+0123456987">+0123 456 987</a>
-                            </div>
-                            <div class="content">
-                                <i class='bx bx-envelope'></i>
-                                <a
-                                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0f676a6363604f656e7a617b216c6062"><span
-                                        class="__cf_email__"
-                                        data-cfemail="f098959c9c9fb09a91859e84de939f9d">[email&#160;protected]</span></a>
-                            </div>
-                            <div class="content">
-                                <i class='bx bx-map'></i>
-                                <a href="#">Mon-Fri: 8 AM – 7 PM</a>
-                            </div>
-                        </div>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title> Home Iqoniq Travel</title>
+		<!-- Bootstrap -->
+		<link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
+        <!-- Typography CSS -->
+		<link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
+        <!-- DL Menu CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
+        <!-- Date And Time Picker CSS -->
+        <link rel="stylesheet" href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
+        <!-- FontAwesome Icon CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
+        <!-- Svg Icon CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/svg.css') }}" rel="stylesheet">
+        <!-- Slick Slider CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}" rel="stylesheet">
+        <!-- Widget CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
+        <!-- Short Code CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
+        <!-- Custom Style CSS -->
+		<link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
+        <!-- Color CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
+	</head>
+	<body>
+        <!-- iqoniq Wrapper Start-->
+		<div class="iqoniq_wrapper">
+            <!-- iqoniq Header Start-->
+			<header class="mg_header_1">
+                <!-- iqoniq Top Navigation Outr Wrap Start-->
+				<div class="mg_nav_wrapper">
+                    <!-- iqoniq Logo Start-->
+					<div class="mg_logo">
+                        <a href="#"><img src="images/logo.png" alt=""/></a>
                     </div>
-                    <div class="col-xl-6 col-lg-5">
-                        <div class="side-option">
-                            <div class="item">
-                                <div class="language">
-                                    <a href="#language" id="languageButton" class="btn-secondary">
-                                        Language <i class='bx bxs-chevron-down'></i>
-                                    </a>
-                                    <ul class="menu">
-                                        <li class="menu-item">
-                                            <a href="#" class="menu-link">
-                                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/flag-uk.png') }}"
-                                                    alt="flag">
-                                                English
-                                            </a>
-                                        </li>
-                                        <li class="menu-item"><a href="#" class="menu-link">
-                                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/flag-germany.png') }}"
-                                                    alt="flag">
-                                                Deutsch</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="#" class="menu-link">
-                                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/flag-jordan.png') }}"
-                                                    alt="flag">
-                                                العربية
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="#" class="menu-link">
-                                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/flag-china.png') }}"
-                                                    alt="flag">
-                                                中文
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a href="/login" class="btn-secondary">
-                                    Login <i class='bx bx-log-in-circle'></i>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#searchBox" id="searchButton" class="btn-search" data-effect="mfp-zoom-in">
-                                    <i class='bx bx-search-alt'></i>
-                                </a>
-                                <div id="searchBox" class="search-box mfp-with-anim mfp-hide">
-                                    <form class="search-form">
-                                        <input class="search-input" name="search" placeholder="Search" type="text">
-                                        <button class="btn-search">
-                                            <i class='bx bx-search-alt'></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="main-navbar-area">
-            <div class="main-responsive-nav">
-                <div class="container">
-                    <div class="main-responsive-menu">
-                        <div class="logo">
-                            <a href="index-2.html">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/logo.png') }}"
-                                    width="50px" class="logo1" alt="Logo">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/logo.png') }}"
-                                    width="50px" class="logo2" alt="Logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index-2.html">
-                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/logo.png') }}"
-                                width="50px" class="logo1" alt="Logo">
-                            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/logo.png') }}"
-                                width="50px" class="logo2" alt="Logo">
-                        </a>
-                        <div class="collapse navbar-collapse mean-menu">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a href="/" class="nav-link active toggle">Beranda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/destinasi" class="nav-link toggle">Destinasi</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/aboutus" class="nav-link">Tentang Kami</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/contactus" class="nav-link">Hubungi Kami</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-
-    <div id="home" class="home-banner-area home-style-two">
-        <div class="container-fluid p-0">
-            <div class="banner-slider-two owl-carousel">
-                <div class="slider-item">
-                    <div class="row">
-                        <div class="col-lg-5 align-self-end">
-                            <div class="banner-image">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/banner/banner1.png') }}"
-                                    alt="Demo Image">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="banner-content">
-                                <span class="sub-title">Tempat Yang Menakjukan</span>
-                                <h1>
-                                    Jelajahi negara <span>Indonesia</span> kemana saja yang anda inginkan
-                                </h1>
-                                <p>
-                                    Kami akan menyediakan wisata yang anda butuhkan.
-                                </p>
-                                <a href="destinations.html" class="btn-primary">Destinasi</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-shape">
-                        <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/banner/banner-bg.png') }}"
-                            alt="Demo Image">
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <div class="row">
-                        <div class="col-lg-5 align-self-end">
-                            <div class="banner-image">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/banner/banner2.png') }}"
-                                    alt="Demo Image">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="banner-content">
-                                <span class="sub-title">Tempat Yang Menakjukan</span>
-                                <h1>
-                                    Jelajahi negara <span>Indonesia</span> kemana saja yang anda inginkan
-                                </h1>
-                                <p>
-                                    Kami akan menyediakan wisata yang anda butuhkan.
-                                </p>
-                                <a href="destinations.html" class="btn-primary">Destinasi</a>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-        <section id="top-destination" class="top-destination-section pb-70">
-            <div class="container">
-                <div class="section-title">
-                    <br>
-                    <br>
-                    <h8>TEMPAT YANG BAGUS UNTUK DI KUNJUNGI</h8>
-                    <h1 class="fw-light">Cari <span class="fw-bold">Dan Nikmati</span></h1>
-                    <p>Secara paksa merangkul e-bisnis yang diberdayakan setelah modal intelektual yang ramah pengguna.
-                        Secara interaktif mengaktualisasikan proses front-end dengan konvergensi yang efektif.</p>
-                </div>
-            </div>
-
-            <section id="tours" class="tours-section tours-style-two ptb-100 bg-bold">
-                <div class="container">
-                    <div class="section-title"></div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item-single mb-30">
-                                <div class="image">
-                                    <img src="https://asset.kompas.com/crops/ASrd8SDELxvy5W746vwTgKyY52A=/0x0:780x520/750x500/data/photo/2021/09/29/6153ca424f2bc.jpg"
-                                        alt="Demo Image" />
-                                </div>
-                                <div class="content">
-                                    <div class="review">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <span>39 Review</span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>
-                                            <a href="/bandung">Kota Bandung</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item-single mb-30">
-                                <div class="image">
-                                    <img src="https://asset.kompas.com/crops/T2o0W94mqoZnRqMl0xRtoIo7FeM=/49x0:638x393/750x500/data/photo/2022/03/24/623c7f47e99c6.jpg"
-                                        alt="Demo Image" />
-                                </div>
-                                <div class="content">
-                                    <div class="review">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <span>69 Review</span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>
-                                            <a href="">Kota Semarang</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item-single mb-30">
-                                <div class="image">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3iVWMEzbuzV51BqJ-WsPFAwwBxNiukwQfg&usqp=CAU"
-                                        alt="Demo Image" />
-                                </div>
-                                <div class="content">
-                                    <div class="review">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <span>56 Review</span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>
-                                            <a href="/bali">Kota Bali</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item-single mb-30">
-                                <div class="image">
-                                    <img src="https://asset.kompas.com/crops/IsUlrgdbSo9jwwtI4TM2_a-KbKY=/0x0:960x640/750x500/data/photo/2021/08/12/6114b664ae31e.jpg"
-                                        alt="Demo Image" />
-                                </div>
-                                <div class="content">
-                                    <div class="review">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <span>69 Review</span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>
-                                            <a href="tours.html">Kota Banyuwangi</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item-single mb-30">
-                                <div class="image">
-                                    <img src="https://d3p0bla3numw14.cloudfront.net/news-content/img/2021/05/27095214/Tinggal-di-Malang.jpg"
-                                        alt="Demo Image" />
-                                </div>
-                                <div class="content">
-                                    <div class="review">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <span>39 Review</span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>
-                                            <a href="tours.html">Kota Malang</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="item-single mb-30">
-                                <div class="image">
-                                    <img src="https://asset.kompas.com/crops/GAuUyrwhmqnVAt7HRQnTw1s7K6g=/0x7:740x500/750x500/data/photo/2022/01/21/61ea96a857637.jpg"
-                                        alt="Demo Image" />
-                                </div>
-                                <div class="content">
-                                    <div class="review">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <span>39 Review</span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>
-                                            <a href="tours.html">Kota Surabaya</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </div>
-    </div>
-    </section>
-    </section>
-
-
-
-
-
-
-    <section id="destination" class="destination-section destination-style-two pt-100 pb-70 bg-bold">
-        <div class="container">
-            <div class="section-title">
-                <h5>Jenis Liburan Anda</h5>
-                <h2 class="fw-light">Duniamu,<span class="fw-bold"> Jalanmu</span></h2>
-                <p>Perjalanan telah membantu kita memahami arti hidup dan membantu kita menjadi orang yang lebih baik.
-                    Setiap kali kita bepergian, kita melihat dunia dengan mata baru.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-8 m-auto">
-                    <div class="filter-group">
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section id="tours" class="recent-tours-section pt-100 pb-70">
-        <div class="container">
-            <div class="section-title">
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="item-single mb-30">
-                        <div class="image">
-                            <img src="https://asset.kompas.com/crops/ZXmxhiXwfTv2aYF8_QlPdvMYADI=/0x0:720x480/750x500/data/photo/2021/10/31/617e75ab7283d.jpg"
-                                alt="Demo Image" />
-                        </div>
-                        <div class="content">
-                            <div class="content">
-                                <div class="review">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <span>39 Review</span>
-                                </div>
-                                <div class="title">
-                                    <h3>
-                                        <a href="#">Raja Ampat</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-content">
-                            <span class="location"><i class='bx bx-map'></i>Papua</span>
-                            <h3>
-                                <a href="tours.html">Raja Ampat</a>
-                            </h3>
-                            <div class="review mb-15">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span>25 Review</span>
-                            </div>
-                            <p>
-                                Raja Ampat merupakan salah satu objek wisata Indonesia yang mendunia dan diakui Unesco.
-                                Keindahan pemandangan bawah lautnya menjadi daya tarik utama Pulau yang ada di ujung
-                                timur Indonesia ini.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="item-single mb-30">
-                        <div class="image">
-                            <img src="https://asset.kompas.com/crops/QnQTE6gxIk2p6bL5pKGeYsFtwZc=/110x0:1094x656/750x500/data/photo/2022/07/30/62e4dedbd40d5.png"
-                                alt="Demo Image" />
-                        </div>
-                        <div class="content">
-                            <div class="content">
-                                <div class="review">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <span>27 Review</span>
-                                </div>
-                                <div class="title">
-                                    <h3>
-                                        <a href="#">Labuhan Bajo</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-content">
-                            <span class="location"><i class='bx bx-map'></i>Nusa Tenggara Barat</span>
-                            <h3>
-                                <a href="tours.html">Labuhan Bajo</a>
-                            </h3>
-                            <div class="review mb-15">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span>27 Review</span>
-                            </div>
-                            <p>
-                                Labuan Bajo dikenal sebagai surga tersembunyi di Indonesia bagian timur. Desa ini berada
-                                di Kecamatan Komodo, Kabupaten Manggarai Barat, Provinsi Nusa Tenggara Timur yang
-                                berbatasan dengan Nusa Tenggara Barat dan dipisahkan Selat Sape.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 m-auto">
-                    <div class="item-single mb-30">
-                        <div class="image">
-                            <img src="https://asset.kompas.com/crops/pSDkxMeCzYKRRlvHeXx5lpqCkr8=/0x41:1600x841/750x500/data/photo/2022/02/03/61fbee143eaca.jpg"
-                                alt="Demo Image" />
-                        </div>
-                        <div class="content">
-                            <div class="content">
-                                <div class="review">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <span>46 Review</span>
-                                </div>
-                                <div class="title">
-                                    <h3>
-                                        <a href="#">Bintan</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-content">
-                            <span class="location"><i class='bx bx-map'></i>Tanjung Pinang</span>
-                            <h3>
-                                <a href="tours.html">Bintan</a>
-                            </h3>
-                            <div class="review mb-15">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span>46 Review</span>
-                            </div>
-                            <p>
-                                Pulau Bintan menyimpan keindahan alam yang tak kalah apik dibandingkan pulau wisata
-                                lainnya di Indonesia.
-                            </p>
-                            <hr>
-                            <ul class="list">
-                                <li><i class='bx bx-time'></i>7 Days</li>
-                                <li><i class='bx bx-group'></i>160+</li>
-                                <li>$1090</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonial" class="testimonial-section ptb-100">
-        <div class="container">
-            <div class="section-title">
-                <h2>Apa Kata Klien Kami</h2>
-                <p>Perjalanan telah membantu kita memahami arti hidup dan membantu kita menjadi orang yang lebih baik.
-                    Setiap kali kita bepergian, kita melihat dunia dengan mata baru.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <div class="testimonial-slider owl-carousel">
-                        <div class="slider-item">
-                            <div class="client-img">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client1.jpg') }}"
-                                    alt="client-1" />
-                            </div>
-                            <div class="content">
-                                <div class="client-info">
-                                    <h3>Jordan Alin</h3>
-                                    <span>Bloger & Youtuber</span>
-                                </div>
-                                <div class="quote">
-                                    <i class='bx bxs-quote-left'></i>
-                                </div>
-                                <p>
-                                    Akademi Agen Perjalanan Pribadi adalah program pelatihan 12 bulan yang memungkinkan
-                                    siapa pun yang tidak memiliki pengalaman perjalanan sebelumnya untuk memulai bisnis
-                                    perjalanan mereka sendiri. Ini adalah kursus lanjutan untuk membantu membangun
-                                    pengetahuan dalam perjalanan dan mengembangkan keterampilan penjualan.
-                                </p>
-                                <div class="review">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="client-img">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client2.jpg') }}"
-                                    alt="client-1" />
-                            </div>
-                            <div class="content">
-                                <div class="client-info mb-30">
-                                    <h3>David Milan</h3>
-                                    <span>Photographer</span>
-                                </div>
-                                <div class="quote">
-                                    <i class='bx bxs-quote-left'></i>
-                                </div>
-                                <p>
-                                    Akademi Agen Perjalanan Pribadi adalah program pelatihan 12 bulan yang memungkinkan
-                                    siapa pun yang tidak memiliki pengalaman perjalanan sebelumnya untuk memulai bisnis
-                                    perjalanan mereka sendiri. Ini adalah kursus lanjutan untuk membantu membangun
-                                    pengetahuan dalam perjalanan dan mengembangkan keterampilan penjualan.
-                                </p>
-                                <div class="review mt-15">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="client-img">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client3.jpg') }}"
-                                    alt="client-1" />
-                            </div>
-                            <div class="content">
-                                <div class="client-info mb-30">
-                                    <h3>Thomas Alva</h3>
-                                    <span>Journalist</span>
-                                </div>
-                                <div class="quote">
-                                    <i class='bx bxs-quote-left'></i>
-                                </div>
-                                <p>
-                                    Akademi Agen Perjalanan Pribadi adalah program pelatihan 12 bulan yang memungkinkan
-                                    siapa pun yang tidak memiliki pengalaman perjalanan sebelumnya untuk memulai bisnis
-                                    perjalanan mereka sendiri. Ini adalah kursus lanjutan untuk membantu membangun
-                                    pengetahuan dalam perjalanan dan mengembangkan keterampilan penjualan.
-                                </p>
-                                <div class="review mt-15">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="client-img">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client4.jpg') }}"
-                                    alt="client-1" />
-                            </div>
-                            <div class="content">
-                                <div class="client-info mb-30">
-                                    <h3>Emma Watson</h3>
-                                    <span>Actress & Model</span>
-                                </div>
-                                <div class="quote">
-                                    <i class='bx bxs-quote-left'></i>
-                                </div>
-                                <p>
-                                    Akademi Agen Perjalanan Pribadi adalah program pelatihan 12 bulan yang memungkinkan
-                                    siapa pun yang tidak memiliki pengalaman perjalanan sebelumnya untuk memulai bisnis
-                                    perjalanan mereka sendiri. Ini adalah kursus lanjutan untuk membantu membangun
-                                    pengetahuan dalam perjalanan dan mengembangkan keterampilan penjualan.
-                                </p>
-                                <div class="review mt-15">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="client-img">
-                                <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client5.jpg') }}"
-                                    alt="client-1" />
-                            </div>
-                            <div class="content">
-                                <div class="client-info mb-30">
-                                    <h3>Jordan Alin</h3>
-                                    <span>Bloger & Youtuber</span>
-                                </div>
-                                <div class="quote">
-                                    <i class='bx bxs-quote-left'></i>
-                                </div>
-                                <p>
-                                    Akademi Agen Perjalanan Pribadi adalah program pelatihan 12 bulan yang memungkinkan
-                                    siapa pun yang tidak memiliki pengalaman perjalanan sebelumnya untuk memulai bisnis
-                                    perjalanan mereka sendiri. Ini adalah kursus lanjutan untuk membantu membangun
-                                    pengetahuan dalam perjalanan dan mengembangkan keterampilan penjualan.
-                                </p>
-                                <div class="review mt-15">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class='clients-img'>
-                <img class="image image-1"
-                    src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client1.jpg') }}"
-                    alt="Demo Image">
-                <img class="image image-2"
-                    src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client2.jpg') }}"
-                    alt="Demo Image">
-                <img class="image image-3"
-                    src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client3.jpg') }}"
-                    alt="Demo Image">
-                <img class="image image-4"
-                    src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client4.jpg') }}"
-                    alt="Demo Image">
-                <img class="image image-5"
-                    src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/client5.jpg') }}"
-                    alt="Demo Image">
-            </div>
-        </div>
-        <div class="shape">
-            <img src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/img/shape1.png') }}"
-                alt="Background Shape">
-        </div>
-    </section>
-
-
-    <div id="video" class="video-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="video-content">
-                        <i class='bx bx-right-arrow'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <section id="tours" class="recent-tours-section pt-100 pb-70">
-        <div class="container">
-            <div class="section-title">
-                <h2>Wisata Terbaru</h2>
-                <p>Wisata terbaru dan terupdate yang ada di Indonesia.jika ke Indonesia</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="item-single mb-30">
-                        <div class="image">
-                            <img src="https://asset.kompas.com/crops/Zjqh5aq2Rg2qxQ7C25m3etgxmoA=/0x39:1280x893/750x500/data/photo/2020/03/10/5e6756ed23145.jpg"
-                                alt="Demo Image" />
-                        </div>
-                        <div class="content">
-                            <div class="content">
-                                <div class="review">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <span>39 Review</span>
-                                </div>
-                                <div class="title">
-                                    <h3>
-                                        <a href="#">Pantai Pandawa</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-content">
-                            <span class="location"><i class='bx bx-map'></i>Bali</span>
-                            <h3>
-                                <a href="tours.html">Pantai Pandawa</a>
-                            </h3>
-                            <div class="review mb-15">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span>25 Review</span>
-                            </div>
-                            <p>
-                                Pantai Pandawa adalah pantai paling populer yang ada di bali.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="item-single mb-30">
-                        <div class="image">
-                            <img src="https://asset.kompas.com/crops/NwUxznt2nYwzDRPdEBOpXkkIUj4=/39x0:573x356/750x500/data/photo/2019/07/19/5d317cc27b36e.jpeg"
-                                alt="Demo Image" />
-                        </div>
-                        <div class="content">
-                            <div class="content">
-                                <div class="review">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <span>27 Review</span>
-                                </div>
-                                <div class="title">
-                                    <h3>
-                                        <a href="#">Kawah Ijen</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-content">
-                            <span class="location"><i class='bx bx-map'></i>Banyuwangi</span>
-                            <h3>
-                                <a href="tours.html">Kawah Ijen</a>
-                            </h3>
-                            <div class="review mb-15">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span>27 Review</span>
-                            </div>
-                            <p>
-                                Kawah Ijen adalah salah satu dari fenomena alam yang ada di indonesia.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 m-auto">
-                    <div class="item-single mb-30">
-                        <div class="image">
-                            <img src="https://asset.kompas.com/crops/jNJCw78jRpATerjMmadbBwqblkE=/0x0:1800x1200/750x500/data/photo/2021/05/10/6099375e04acb.jpg"
-                                alt="Demo Image" />
-                        </div>
-                        <div class="content">
-                            <div class="content">
-                                <div class="review">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <span>46 Review</span>
-                                </div>
-                                <div class="title">
-                                    <h3>
-                                        <a href="#">Gunung Bromo</a>
-                                    </h3>
-                                </div>
-                                <ul class="list">
-                                    <li><i class='bx bx-time'></i>7 Days</li>
-                                    <li><i class='bx bx-group'></i>160+</li>
-                                    <li>$1090</li>
+                    <!-- iqoniq Logo End-->
+                    <!-- iqoniq Navigation Start-->
+                    <div class="mg_nav">
+                        <ul class="mg_navigation">
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about-us.html">about us</a></li>
+                            <li>
+                                <a href="#">Rooms</a>
+                                <ul class="children">
+                                    <li><a href="our-rooms.html">our rooms</a></li>
+                                    <li><a href="room-detail.html">room detail</a></li>
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="#">blog</a>
+                                <ul class="children">
+                                    <li><a href="blog-medium-grid.html">blog medium</a></li>
+                                    <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
+                                    <li><a href="blog-listing.html">blog-listing</a></li>
+                                    <li><a href="blog-full.html">blog full</a></li>
+                                    <li><a href="blog-detail.html">blog detail</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="top-destinations.html">top destinations</a>
+                            </li>
+                            <li>
+                                <a href="#">pages</a>
+                                <ul class="children">
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="comingsoon.html">comingsoon</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">contact us</a>
+                                <ul class="children">
+                                    <li><a href="contact-us.html">contact-us</a></li>
+                                    <li><a href="contact-us2.html">contact-us2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--DL Menu Start-->
+                        <div id="mg-responsive-navigation" class="dl-menuwrapper">
+                            <button class="dl-trigger">Open Menu</button>
+                            <ul class="dl-menu">
+                                <li class="menu-item mg-parent-menu">
+                                    <a href="index.html">home</a>
+                                </li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li class="menu-item mg-parent-menu"><a href="#">Rooms</a>
+                                    <ul class="dl-submenu">
+                                       <li><a href="our-rooms.html">our rooms</a></li>
+                                        <li><a href="room-detail.html">room detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="#">Blog</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="blog-medium-grid.html">blog medium</a></li>
+                                        <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
+                                        <li><a href="blog-listing.html">blog-listing</a></li>
+                                        <li><a href="blog-full.html">blog full</a></li>
+                                        <li><a href="blog-detail.html">blog detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="top-destinations.html">top destinations</a>
+                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="#">pages</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="comingsoon.html">comingsoon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="#">contact us</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="contact-us.html">contact-us</a></li>
+                                        <li><a href="contact-us2.html">contact-us2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--DL Menu END-->
+                        <div class="mg_login">
+                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                            <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login Or Register</span></a>
+                        </div>
+                    </div>
+                    <!-- iqoniq Navigation End-->
+				</div>
+                <!-- iqoniq Top Navigation Outr Wrap End-->
+			</header>
+            <!-- iqoniq Header End-->
+            <!-- iqoniq Mina Banner Start-->
+            <div class="mg_hotel_banner">
+                <div class="mg_slider1">
+                    <div>
+                        <figure>
+                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner1.jpg') }}" alt=""/>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner2.jpg') }}" alt=""/>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner3.jpg') }}" alt=""/>
+                        </figure>
+                    </div>
+                </div>
+                <!-- iqoniq Search Wrapper Start-->
+                
+                <!-- iqoniq Search Wrapper End-->
+            </div>
+            <!-- iqoniq Mina Banner End-->
+            <!-- iqoniq Contant Wrapper Start-->
+            <div class="iqoniq_contant_wrapper">
+                <section>
+                    <div class="container">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1">
+                            <h6>What are you in the Mood for.?</h6>
+                            <h4>Book hotels in top destinations</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <!-- Destination Start -->
+                        <div class="mg_hotel_destination_tab">
+                            <!-- Nav tabs Start -->
+                            <ul class="mg_hotel_nav2" role="tablist">
+                                <li role="presentation" class="active"><a href="#worldwide" aria-controls="worldwide" role="tab" data-toggle="tab">Worldwide</a></li>
+                                <li role="presentation"><a href="#usa" aria-controls="usa" role="tab" data-toggle="tab">USA & Canada</a></li>
+                                <li role="presentation"><a href="#mexico" aria-controls="mexico" role="tab" data-toggle="tab">Mexico & Caribbean </a></li>
+                                <li role="presentation"><a href="#central" aria-controls="central" role="tab" data-toggle="tab">Central & South America </a></li>
+                                <li role="presentation"><a href="#europe" aria-controls="europe" role="tab" data-toggle="tab">Europe</a></li>
+                                <li role="presentation"><a href="#asia" aria-controls="asia" role="tab" data-toggle="tab">Asia</a></li>
+                                <li role="presentation"><a href="#elsewhere" aria-controls="elsewhere" role="tab" data-toggle="tab">Elsewhere</a></li>
+                            </ul>
+                            <!-- Nav tabs End -->
+                            <!-- Tab panes Start -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="worldwide">
+                                    <!-- Destination Tab Wrap Start -->
+                                    <div class="mg_hotel_destination_wrapper">
+                                        <div class="row">
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="extra-images/destination11.jpg" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">London</a></h5>
+                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination12.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Thailand</a></h5>
+                                                            <a class="no_hotel" href="#">1206 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination13.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">France</a></h5>
+                                                            <a class="no_hotel" href="#">1476 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination14.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Dubai UAE</a></h5>
+                                                            <a class="no_hotel" href="#">156 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination15.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Germany</a></h5>
+                                                            <a class="no_hotel" href="#">126 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination16.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Cyprus</a></h5>
+                                                            <a class="no_hotel" href="#">1996 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:40%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="iqoniq_rating">
+                                                                <div class="rating_down">
+                                                                    <div class="rating_up" style="width:40%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                        </div>
+                                    </div>
+                                    <!-- Destination Tab Wrap End -->
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="usa">
+                                    <!-- Destination Tab Wrap Start -->
+                                    <div class="mg_hotel_destination_wrapper">
+                                        <div class="row">
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="extra-images/usa1.jpg" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">New York City</a></h5>
+                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa2.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Maui, Hawaii</a></h5>
+                                                            <a class="no_hotel" href="#">1206 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa3.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Island of Hawaii</a></h5>
+                                                            <a class="no_hotel" href="#">1476 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa4.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Oahu, Hawaii</a></h5>
+                                                            <a class="no_hotel" href="#">156 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa5.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Las Vegas, Nevada</a></h5>
+                                                            <a class="no_hotel" href="#">126 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa6.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Orlando, Florida</a></h5>
+                                                            <a class="no_hotel" href="#">1996 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:40%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="iqoniq_rating">
+                                                                <div class="rating_down">
+                                                                    <div class="rating_up" style="width:40%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                        </div>
+                                    </div>
+                                    <!-- Destination Tab Wrap End -->
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="mexico">
+                                    <!-- Destination Tab Wrap Start -->
+                                    <div class="mg_hotel_destination_wrapper">
+                                        <div class="row">
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/mexico1.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Jamaica</a></h5>
+                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/mexico2.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">St. Maarten-St</a></h5>
+                                                            <a class="no_hotel" href="#">1206 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/mexico3.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Grand Cayman</a></h5>
+                                                            <a class="no_hotel" href="#">1476 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/mexico4.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Puerto Rico</a></h5>
+                                                            <a class="no_hotel" href="#">156 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/mexico5.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Barbados</a></h5>
+                                                            <a class="no_hotel" href="#">126 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/mexico6.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Aruba</a></h5>
+                                                            <a class="no_hotel" href="#">1996 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:40%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="iqoniq_rating">
+                                                                <div class="rating_down">
+                                                                    <div class="rating_up" style="width:40%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                        </div>
+                                    </div>
+                                    <!-- Destination Tab Wrap End -->
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="central">
+                                    <!-- Destination Tab Wrap Start -->
+                                    <div class="mg_hotel_destination_wrapper">
+                                        <div class="row">
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central1.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Rio de Janeiro</a></h5>
+                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/ extra-images/central2.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Cusco, Peru</a></h5>
+                                                            <a class="no_hotel" href="#">1206 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central3.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Buenos Aires</a></h5>
+                                                            <a class="no_hotel" href="#">1476 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central4.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Sao Paulo, Brazil</a></h5>
+                                                            <a class="no_hotel" href="#">156 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central5.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Urubamba, Peru</a></h5>
+                                                            <a class="no_hotel" href="#">126 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="extra-images/central6.jpg" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Jijoca , Brazil</a></h5>
+                                                            <a class="no_hotel" href="#">1996 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:40%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="iqoniq_rating">
+                                                                <div class="rating_down">
+                                                                    <div class="rating_up" style="width:40%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                        </div>
+                                    </div>
+                                    <!-- Destination Tab Wrap End -->
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="europe">
+                                    <!-- Destination Tab Wrap Start -->
+                                    <div class="mg_hotel_destination_wrapper">
+                                        <div class="row">
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe1.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Rio de Janeiro, Brazil</a></h5>
+                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe2.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Cusco, Peru</a></h5>
+                                                            <a class="no_hotel" href="#">1206 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe3.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Buenos Aires</a></h5>
+                                                            <a class="no_hotel" href="#">1476 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe4.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Sao Paulo, Brazil</a></h5>
+                                                            <a class="no_hotel" href="#">156 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe5.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Urubamba, Peru</a></h5>
+                                                            <a class="no_hotel" href="#">126 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe6.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Jijoca, Brazil</a></h5>
+                                                            <a class="no_hotel" href="#">1996 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:40%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="iqoniq_rating">
+                                                                <div class="rating_down">
+                                                                    <div class="rating_up" style="width:40%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                        </div>
+                                    </div>
+                                    <!-- Destination Tab Wrap End -->
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="asia">
+                                    <!-- Destination Tab Wrap Start -->
+                                    <div class="mg_hotel_destination_wrapper">
+                                        <div class="row">
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia1.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Bali, Indonesia</a></h5>
+                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia2.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Siem Reap, Cambodia</a></h5>
+                                                            <a class="no_hotel" href="#">1206 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia3.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Phuket, Thailand</a></h5>
+                                                            <a class="no_hotel" href="#">1476 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia4.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Hoi An, Vietnam</a></h5>
+                                                            <a class="no_hotel" href="#">156 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia5.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Kathmandu, Nepal</a></h5>
+                                                            <a class="no_hotel" href="#">126 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia6.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Hanoi, Vietnam</a></h5>
+                                                            <a class="no_hotel" href="#">1996 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:40%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="iqoniq_rating">
+                                                                <div class="rating_down">
+                                                                    <div class="rating_up" style="width:40%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                        </div>
+                                    </div>
+                                    <!-- Destination Tab Wrap End -->
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="elsewhere">
+                                    <!-- Destination Tab Wrap Start -->
+                                    <div class="mg_hotel_destination_wrapper">
+                                        <div class="row">
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere1.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Excellence Mujeres</a></h5>
+                                                            <a class="no_hotel" href="#">1500 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:90%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere2.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Ikos Resorts</a></h5>
+                                                            <a class="no_hotel" href="#">1206 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:80%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere3.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Tamassa</a></h5>
+                                                            <a class="no_hotel" href="#">1476 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere4.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Kurumba Maldives</a></h5>
+                                                            <a class="no_hotel" href="#">156 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:60%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere5.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Grand Velas Riviera</a></h5>
+                                                            <a class="no_hotel" href="#">126 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                            <!-- Hotel Destination Start -->
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere6.jpg') }}" alt=""/>
+                                                        <figcaption>
+                                                            <a class="view_btn" href="#">view deal</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="#">Ikos Oceania</a></h5>
+                                                            <a class="no_hotel" href="#">1996 Hotels</a>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Hotel 41</p>
+                                                            <div class="rating_down">
+                                                                <div class="rating_up" style="width:40%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Egerton House Hotel</p>
+                                                            <div class="iqoniq_rating">
+                                                                <div class="rating_down">
+                                                                    <div class="rating_up" style="width:40%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hotel Destination End -->
+                                        </div>
+                                    </div>
+                                    <!-- Destination Tab Wrap End -->
+                                </div>
+                            </div>
+                            <!-- Tab panes End -->
+                        </div>
+                        <!-- Destination End -->
+                    </div>
+                </section>
+                <!-- Why Chooses us Section Start -->
+                <section class="why_chooseus">
+                    <div class="container-fluid">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1 white">
+                            <h6>Chosen by Millions of Travelers</h6>
+                            <h4>Why choose iqoniq Travel</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <div class="row">
+                            <!-- Chooseus Slider Start -->
+                            <div class="chooseus_slider">
+                                <!-- Chooseus Thumb Start -->
+                                <div class="col-md-4">
+                                    <div class="mg_chooseus fancy-overlay">
+                                        <figure>
+                                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_1.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="text">
+                                            <h5><a href="#">Booking</a></h5>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Chooseus Thumb End -->
+                                <!-- Chooseus Thumb Start -->
+                                <div class="col-md-4">
+                                    <div class="mg_chooseus fancy-overlay">
+                                        <figure>
+                                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_2.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="text">
+                                            <h5><a href="#">Ticket Ordering</a></h5>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Chooseus Thumb End -->
+                                <!-- Chooseus Thumb Start -->
+                                <div class="col-md-4">
+                                    <div class="mg_chooseus fancy-overlay">
+                                        <figure>
+                                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_3.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="text">
+                                            <h5><a href="#">handpicked hotels</a></h5>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Chooseus Thumb End -->
+                                <!-- Chooseus Thumb Start -->
+                                <div class="col-md-4">
+                                    <div class="mg_chooseus fancy-overlay">
+                                        <figure>
+                                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_4.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="text">
+                                            <h5><a href="#">rent a car</a></h5>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Chooseus Thumb End -->
+                                <!-- Chooseus Thumb Start -->
+                                <div class="col-md-4">
+                                    <div class="mg_chooseus fancy-overlay">
+                                        <figure>
+                                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_5.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="text">
+                                            <h5><a href="#">dance club</a></h5>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Chooseus Thumb End -->
+                                <!-- Chooseus Thumb Start -->
+                                <div class="col-md-4">
+                                    <div class="mg_chooseus fancy-overlay">
+                                        <figure>
+                                            <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_6.jpg') }}" alt="">
+                                        </figure>
+                                        <div class="text">
+                                            <h5><a href="#">Booking</a></h5>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Chooseus Thumb End -->
+                            </div>
+                            <!-- Chooseus Slider Ens -->
+                        </div>
+                    </div>
+                </section>
+                <!-- Why Chooses us Section End -->
+                <!-- Destination Section Start -->
+                <section class="mg_destination_bg">
+                    <div class="container">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1">
+                            <h6>The Very Best of Travel, Chosen by Millions of Travelers</h6>
+                            <h4>Travelers' Choice Award Winners</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <div class="row">
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination1.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">Hotels</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination2.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">Islands</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination3.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">All-inclusive resorts</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination4.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">Attractions</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_theme_logo">
+                                    <figure>
+                                        <a href="#"><img src="images/web_logo.png" alt=""></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination5.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">Landmarks</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination7.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">Resturants</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination8.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">Beach</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                            <!-- Hotel Destination Start -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination6.jpg') }}" alt=""/>
+                                        <figcaption>
+                                            <a class="view_btn" href="#">Destinations</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Hotel Destination End -->
+                        </div>
+                    </div>
+                </section>
+                <!-- Destination Section End -->
+                <!-- Services Section Start -->
+                <section>
+                    <div class="container">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1">
+                            <h6>Know More About Hotel</h6>
+                            <h4>See How it works?</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <div class="row">
+                            <!-- iqoniq Travel Services Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_services">
+                                    <i class="icon-bus blue-icon"></i>
+                                    <h5><a href="#">Transpotation</a></h5>
+                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                    <a class="mg_btn1" href="#">More</a>
+                                </div>
+                            </div>
+                            <!-- iqoniq Travel Services End -->
+                            <!-- iqoniq Travel Services Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_services">
+                                    <i class="icon-sedan-car-front pink-icon"></i>
+                                    <h5><a href="#">Rent a car</a></h5>
+                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                    <a class="mg_btn1" href="#">More</a>
+                                </div>
+                            </div>
+                            <!-- iqoniq Travel Services End -->
+                            <!-- iqoniq Travel Services Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_services">
+                                    <i class="icon-house orange-icon"></i>
+                                    <h5><a href="#">Accomodation</a></h5>
+                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                    <a class="mg_btn1" href="#">More</a>
+                                </div>
+                            </div>
+                            <!-- iqoniq Travel Services End -->
+                            <!-- iqoniq Travel Services Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_services">
+                                    <i class="icon-cooker skyblue-icon"></i>
+                                    <h5><a href="#">restaurant</a></h5>
+                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                    <a class="mg_btn1" href="#">More</a>
+                                </div>
+                            </div>
+                            <!-- iqoniq Travel Services End -->
+                            <!-- iqoniq Travel Services Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_services">
+                                    <i class="icon-restaurant lightred-icon"></i>
+                                    <h5><a href="#">shopping centers</a></h5>
+                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                    <a class="mg_btn1" href="#">More</a>
+                                </div>
+                            </div>
+                            <!-- iqoniq Travel Services End -->
+                            <!-- iqoniq Travel Services Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_services">
+                                    <i class="icon-ferris-wheel lightgreen-icon"></i>
+                                    <h5><a href="#">Attractions</a></h5>
+                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                    <a class="mg_btn1" href="#">More</a>
+                                </div>
+                            </div>
+                            <!-- iqoniq Travel Services End -->
+                        </div>
+                    </div>
+                </section>
+                <!-- Services Section End -->
+                <!-- Call to Action Section Start-->
+                <section class="mg_travelplan">
+                    <div class="container">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1 white">
+                            <h6>Create a Custom Plan based on your Taste</h6>
+                            <h4>Start making your Travel Plans</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <!-- Caption Start -->
+                        <div class="mg_plan_caption">
+                            <p>ducate, aid, criteria catalyst John Lennon. Life-saving diversity necessities elevate worldwide carbon rights empowerment. Pursue these aspirations leverage, accessibility UNICEF, reduce child mortality collaborative cities safeguards. Informal economies non-partisan; evolution transformative climate change local benefit.</p>
+                            <a class="mg_btn1" href="#">Creat a package</a>
+                        </div>
+                        <!-- Caption End -->
+                    </div>
+                </section>
+                <!-- Call to Action Section End-->
+                <!-- Masonry Gallery Section Start-->
+                <section class="gray-bg">
+                    <div class="container-fluid">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1">
+                            <h6>Right Now</h6>
+                            <h4>Photo gallery</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <!-- Masonry Grid Start -->
+                        <div class="masonry-2 grid">
+                            <div class="row masonry masonryFlyIn">
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item">
+                                    <h4 class="text-link item-height100 green">
+                                        <a href="#"><span>Nature & Adventure</span></a>
+                                    </h4>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/1.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/2.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/3.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item">
+                                    <h4 class="text-link item-height130 green"><a href="#">Nature & Adventure</a></h4>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/4.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/5.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item">
+                                    <h4 class="text-link item-height130 pink"><a href="#">Nature & Adventure</a></h4>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/6.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item">
+                                    <h4 class="text-link item-height130"><a href="#">Nature sss& Adventure</a></h4>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/7.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/8.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/9.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/10.jpg') }}" alt=""></figure>
+                                </div>
+                                <!-- Masonry Item End -->
+                                <!-- Masonry Item Start -->
+                                <div class="masonry-item">
+                                    <h4 class="text-link item-height184 peach"><a href="#">Nature & Adventure</a></h4>
+                                </div>
+                                <!-- Masonry Item End -->
                             </div>
                         </div>
-                        <div class="flip-content">
-                            <span class="location"><i class='bx bx-map'></i>Lumajang</span>
-                            <h3>
-                                <a href="tours.html">Gunung Bromo</a>
-                            </h3>
-                            <div class="review mb-15">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <span>46 Review</span>
+                        <!-- Masonry Grid Start -->
+                    </div>
+                </section>
+                <!-- Masonry Gallery Section End-->
+                <!-- Blog Section Start-->
+                <section>
+                    <div class="container">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1">
+                            <h6>Right Now</h6>
+                            <h4>Our Latest Blog</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <div class="row">
+                            <!-- iqoniq Blog Medium Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_blog_medium fancy-overlay">
+                                    <h6><a href="#">Its A Brillaint city to visit</a></h6>
+                                    <figure>
+                                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/blog_medium1.jpg') }}" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <ul class="blog-meta-list">
+                                            <li><a href="#"><i class="fa fa-calendar"></i><span>24 Aug 2016</span></a></li>
+                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>24 comments</span></a></li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
+                                        <a class="mg_readmore" href="#">Read more</a>
+                                    </div>
+                                </div>
                             </div>
-                            <p>
-                                Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut Kaldera Tengger,
-                                adalah sebuah gunung berapi aktif di Jawa
-                            </p>
-                            <hr>
-                            <ul class="list">
-                                <li><i class='bx bx-time'></i>7 Days</li>
-                                <li><i class='bx bx-group'></i>160+</li>
-                                <li>$1090</li>
+                            <!-- iqoniq Blog Medium End -->
+                            <!-- iqoniq Blog Medium Start -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mg_blog_medium fancy-overlay">
+                                    <h6><a href="#">Its A Brillaint city to visit</a></h6>
+                                    <figure>
+                                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/blog_medium2.jpg') }}" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <ul class="blog-meta-list">
+                                            <li><a href="#"><i class="fa fa-calendar"></i><span>24 Aug 2016</span></a></li>
+                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>24 comments</span></a></li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
+                                        <a class="mg_readmore" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- iqoniq Blog Medium End -->
+                            <!-- iqoniq Blog Medium Start -->
+                            <div class="col-md-4 hidden-sm">
+                                <div class="mg_blog_medium fancy-overlay">
+                                    <h6><a href="#">Its A Brillaint city to visit</a></h6>
+                                    <figure>
+                                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/blog_medium3.jpg') }}" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <ul class="blog-meta-list">
+                                            <li><a href="#"><i class="fa fa-calendar"></i><span>24 Aug 2016</span></a></li>
+                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>24 comments</span></a></li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
+                                        <a class="mg_readmore" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- iqoniq Blog Medium End -->
+                        </div>
+                    </div>
+                </section>
+                <!-- Blog Section End-->
+                <!-- Pricing Table Section Start-->
+                <section class="pricing_wrap">
+                    <div class="container">
+                        <!-- iqoniq Heading Start -->
+                        <div class="mg_hotel_hd1">
+                            <h6>Right Now</h6>
+                            <h4>flight information</h4>
+                        </div>
+                        <!-- iqoniq Heading End -->
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <!-- iqoniq Pricing Table Start -->
+                                <div class="mg_pricing fancy-overlay">
+                                    <span class="fa fa-plane"></span>
+                                    <div class="thumb">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price1.jpg') }}" alt="">
+                                        <div class="caption">
+                                            <div class="rating_down">
+                                                <div class="rating_up" style="width:50%;"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <p>Starting from</p>
+                                            <strong>$559</strong>
+                                            <h6>london</h6>
+                                            <b>30 Places</b>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="#">Air Flight</a></h6>
+                                        <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <a class="mg_btn1" href="#">Explore Now</a>
+                                    </div>
+                                </div>
+                                <!-- iqoniq Pricing Table End -->
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <!-- iqoniq Pricing Table Start -->
+                                <div class="mg_pricing fancy-overlay">
+                                    <span class="fa fa-plane"></span>
+                                    <div class="thumb">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price2.jpg') }}" alt="">
+                                        <div class="caption">
+                                            <div class="rating_down">
+                                                <div class="rating_up" style="width:50%;"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <p>Starting from</p>
+                                            <strong>$666</strong>
+                                            <h6>cape town</h6>
+                                            <b>10 Places</b>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="#">Go ways </a></h6>
+                                        <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <a class="mg_btn1" href="#">Explore Now</a>
+                                    </div>
+                                </div>
+                                <!-- iqoniq Pricing Table End -->
+                            </div>
+                            <div class="col-md-4 hidden-sm">
+                                <!-- iqoniq Pricing Table Start -->
+                                <div class="mg_pricing fancy-overlay">
+                                    <span class="fa fa-plane"></span>
+                                    <div class="thumb">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price3.jpg') }}" alt="">
+                                        <div class="caption">
+                                            <div class="rating_down">
+                                                <div class="rating_up" style="width:50%;"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <p>Starting from</p>
+                                            <strong>$999</strong>
+                                            <h6>los angeles</h6>
+                                            <b>15 Places</b>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="#">flightbus </a></h6>
+                                        <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                                        <a class="mg_btn1" href="#">Explore Now</a>
+                                    </div>
+                                </div>
+                                <!-- iqoniq Pricing Table End -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Pricing Table Section End-->
+                <!-- Bottom Bar Start-->
+                <div class="mg_bottom_bar">
+                    <div class="container">
+                        <div class="text">
+                            <h6>Submit newsletters</h6>
+                            <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <!-- Input Start-->
+                        <div class="mg_input_1">
+                            <input placeholder="Your E-mail ID" type="text">
+                            <label class="search_icon"><input type="submit"></label>
+                        </div>
+                        <!-- Input End-->
+                    </div>
+                </div>
+                <!-- Bottom Bar End-->
+            </div>
+            <!-- iqoniq Contant Wrapper End-->
+            <!-- iqoniq Footer Start-->
+            <footer class="mg_footer1">
+                <div class="container">
+                    <!-- Widget Text Start-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_text">
+                            <div class="logo">
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/ft-logo.png') }}" alt=""/></a>
+                            </div>
+                            <div class="text">
+                                <p>
+                                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+92-1234567689</span></div>
+                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>iqoniqthemes@gmail.com</span></div>
+                            </div>
+                            <ul class="mg_social">
+                               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
+                        </div>
+                    </div>
+                    <!-- Widget Text End-->
+                    <!-- Widget Archives Start-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_archives">
+                            <h6 class="widget-title">Our Services</h6>
+                            <ul>
+                                <li><a href="#">Etiam ullamcorper</a></li>
+                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
+                                <li><a href="#">Pellentesque dui non felis</a></li>
+                                <li><a href="#">Non felis. Maecenas malesuada</a></li>
+                                <li><a href="#">Etiam ullamcorper</a></li>
+                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
+                                <li><a href="#">Pellentesque dui non felis</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Widget Archives End-->
+                    <!-- Widget Flicker Start-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_flicker">
+                            <h6 class="widget-title">Photo gallery</h6>
+                            <ul>
+                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Widget Flicker End-->
+                    <!-- Widget Search Start-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget widget_search">
+                            <h6 class="widget-title">keep in touch</h6>
+                            <form>
+                                <div class="mg_input_1">
+                                   <input type="text" placeholder="Your E-mail ID">
+                                </div>
+                                <div class="mg_input_1">
+                                    <textarea placeholder="Your Message"></textarea>
+                                </div>
+                                <p><input type="button" value="Send message"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Widget Search End-->
+                </div>
+            </footer>
+            <!-- iqoniq Footer End-->
+            <!-- iqoniq Copyright Start-->
+            <div class="mg_copyright">
+                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ THEMES</a></p>
+            </div>
+            <!-- iqoniq Copyright End-->
+            <!-- register Modal -->
+            <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+                <div class="modal-dialog login1 login5 login5-1">
+                    <div class="modal-tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#sign-In1" aria-controls="sign-In1" role="tab" data-toggle="tab">Sign In</a></li>
+                            <li role="presentation"><a href="#sign-up2" aria-controls="sign-up2" role="tab" data-toggle="tab">Sign Up</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="sign-In1">
+                                <div class="modal-content">
+                                    <div class="user-box">
+                                        <!--FORM FIELD START-->
+                                        <form>
+                                            <div class="mg_input_1">
+                                                <input type="text" placeholder="E-mail">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </div>
+                                            <div class="mg_input_1">
+                                                <input type="text" placeholder="Password">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                            <div class="dialog-footer">
+                                                <div class="input-container">
+                                                    <label>
+                                                        <span class="radio">
+                                                            <input type="checkbox" name="foo" value="1" checked>
+                                                            <span class="radio-value" aria-hidden="true"></span>
+                                                        </span>
+                                                        <span>Remember me</span>
+                                                    </label>
+                                                    <a href="#">Forgot Password<i class="fa fa-question-circle"></i></a>
+                                                </div>
+                                                <button class="mg_btn1">Login</button>
+                                            </div>
+                                        </form>
+                                        <!--FORM FIELD END-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="sign-up2">
+                                <div class="modal-content">
+                                    <div class="user-box">
+                                       <!--FORM FIELD START-->
+                                        <form>
+                                            <div class="mg_input_1">
+                                                <input type="text" placeholder="E-mail">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </div>
+                                            <div class="mg_input_1">
+                                                <input type="text" placeholder="Password">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                            <div class="dialog-footer">
+                                                <div class="input-container">
+                                                    <label>
+                                                        <span class="radio">
+                                                            <input type="checkbox" name="foo" value="1" checked>
+                                                            <span class="radio-value" aria-hidden="true"></span>
+                                                        </span>
+                                                        <span>Remember me</span>
+                                                    </label>
+                                                </div>
+                                                <button class="mg_btn1">Register</button>
+                                            </div>
+                                        </form>
+                                        <!--FORM FIELD END-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- register Modal end-->
+            <!-- register Modal -->
+            <div class="modal fade" id="search" tabindex="-1" role="dialog">
+                <div class="modal-dialog login1 login5 login5-1">
+                    <div class="modal-tab">
+                        <div class="mg_input_1">
+                            <input placeholder="Search keyword" type="text">
+                            <label class="search_icon"><input type="submit"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- register Modal end-->
+		</div>
+        <!-- iqoniq Wrapper End-->
+    	<!-- jQuery -->
+    	<script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
+    	<!-- bootstrap -->
+    	<script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
+        <!-- Slick Slider -->
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
+        <!-- Masonry -->
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/masonry.min.js') }}"></script>
+        <!-- Date Time Picker -->
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
+        <!--Dl Menu Script-->
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
+        <!--Custom Script-->
+    	<script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
+	</body>
 
-
-
-
-    <br>
-    <br>
-    <footer class="footer-area">
-        <div class="container">
-        <div class="footer-top pt-100 pb-70">
-        <div class="row">
-        <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-        <div class="footer-widget">
-        <div class="navbar-brand">
-        <a href="index.html">
-        <img src="{{ asset('user/templates.hibootstrap.com/jaunt/Bandung/assets/img/logo.png') }}" width="200px" alt="Logo" />
-        </a>
-        </div>
-        <p>Anda dapat bermimpi, membuat, mendesain, dan membangun tempat yang paling indah.</p>
-        <div class="contact-info">
-        <div class="content">
-        <a href="tel:+0123456987"><i class='bx bx-phone'></i>+62 0123 456 987</a>
-        </div>
-        <div class="content">
-        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#59313c3535361933382c372d773a3634"><i class='bx bx-envelope'></i><span class="__cf_email__" data-cfemail="8de5e8e1e1e2cde7ecf8e3f9a3eee2e0">[email&#160;protected]</span></a>
-        </div>
-        <div class="content">
-        <a href="#"><i class='bx bx-map'></i>Senin-Jumat: 08.00 – 19.00</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-        <div class="footer-widget">
-        <h5>Latest News</h5>
-        <ul class="footer-news">
-        <li class="content">
-        <a href="blog-details.html">Surrounded by the peaceful waters of Lake Victoria.</a>
-        <span>October 05, 2021</span>
-        <hr>
-        </li>
-        <li class="content">
-        <a href="blog-details.html">Morning came very early today. The alarm went off at 4 am</a>
-        <span>October 05, 2021</span>
-        </li>
-        </ul>
-        </div>
-        </div> -->
-        <div class="col-lg-2 col-md-5 col-sm-6 col-12">
-        <div class="footer-widget">
-        <h5>Selengkapnya</h5>
-        <ul class="footer-links">
-        <li>
-        <a href="about-us.html">Tentang Kami</a>
-        </li>
-        <li>
-        <a href="destinations.html">Destinasi</a>
-        </li>
-        <!-- <li>
-        <a href="blog-style-1.html">Latest Blog</a>
-        </li> -->
-        <li>
-        <a href="team.html">Tim Kami</a>
-        </li>
-        <li>
-        <a href="contact.html">Hubungi Kami</a>
-        </li>
-        </ul>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-5 col-sm-6 col-12">
-        <div class="footer-widget">
-        <h5>Postingan Instagram</h5>
-        <ul class="instagram-post">
-        <li>
-        <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/Kya-Kya-Kembang-Jepun.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://storage.googleapis.com/allindonesiatoursim/2017/05/Batu.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://www.biggigjersey.com/wp-content/uploads/2020/10/jodipan-malang-warna-1536x1025.jpg" alt="Demo Image">
-         <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_431660431.jpg?tr=dpr-2,w-675" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        <li>
-        <img src="https://2.bp.blogspot.com/-GlsJlQ6q2u4/VB0Dt-BC3UI/AAAAAAABc0g/5emV7v_1ii8/s1600/Borobudur%2BTime%2BTravel%2BBells%2BDie%2BGlocke%2BDawn%2Bsunlight%2Bbreaks%2Bthrough%2Bthe%2Bclouds%2Bat%2Bthe%2BBorobudur%2BBuddhist%2Btemple%2Bin%2BJava%2C%2BIndonesia%2BTrevThompson%2Bflickr%2B8665832932_545d1ba0c7.jpg" alt="Demo Image">
-        <i class='bx bxl-instagram'></i>
-        </li>
-        </ul>
-        </div>
-        </div>
-        </div>
-        </div>
-        <hr>
-        <!-- <div class="copy-right-area">
-        <div class="container">
-        <div class="copy-right-content">
-        <p>
-        Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Jaunt. Designed By
-        <a href="https://hibootstrap.com/" target="_blank">
-        HiBootstrap.com
-        </a>
-        </p>
-        </div>
-        </div>
-        </div> -->
-        </div>
-        </footer>
-
-    <script src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/jquery.min.js') }}"></script>
-
-    <script
-        src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/bootstrap.bundle.min.js') }}"></script>
-
-    <script
-        src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/bootstrap-datepicker.min.js') }}"></script>
-
-    <script
-        src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/jquery.nice-select.min.js') }}"></script>
-
-    <script
-        src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/jquery.magnific-popup.min.js') }}"></script>
-
-    <script
-        src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/jquery.filterizr.min.js') }}"></script>
-
-    <script src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/owl.carousel.min.js') }}"></script>
-
-    <script src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/meanmenu.min.js') }}"></script>
-
-    <script src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/form-validator.min.js') }}"></script>
-
-    <script src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/contact-form-script.js') }}"></script>
-
-    <script
-        src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/jquery.ajaxchimp.min.js') }}"></script>
-
-    <script src="{{ asset('user/templates.hibootstrap.com/jaunt/default/assets/js/script.js') }}"></script>
-</body>
-
-<!-- Mirrored from templates.hibootstrap.com/jaunt/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Feb 2023 13:20:26 GMT -->
-
+<!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:29:18 GMT -->
 </html>
