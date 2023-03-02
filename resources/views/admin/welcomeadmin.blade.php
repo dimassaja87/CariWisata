@@ -151,7 +151,7 @@
                                 <div class="col-xl-8">
                                     <div class="card">
                                         <div class="card-header border-0 align-items-center d-flex">
-                                            <h4 class="card-title mb-0 flex-grow-1">Revenue</h4>
+                                            <h4 class="card-title mb-0 flex-grow-1">Charts</h4>
                                             <div>
                                                 <button type="button" class="btn btn-soft-secondary btn-sm">
                                                     ALL
@@ -174,30 +174,30 @@
                                                     <div class="p-3 border border-dashed border-start-0">
                                                         <h5 class="mb-1"><span class="counter-value"
                                                                 data-target="9999">0</span></h5>
-                                                        <p class="text-muted mb-0">Orders</p>
-                                                    </div>
-                                                </div>
-                                                <!--end col-->
-                                                <div class="col-6 col-sm-3">
-                                                    <div class="p-3 border border-dashed border-start-0">
-                                                        <h5 class="mb-1">$<span class="counter-value"
-                                                                data-target="22.89">0</span>k</h5>
-                                                        <p class="text-muted mb-0">Earnings</p>
+                                                        <p class="text-muted mb-0">Destinasi</p>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-6 col-sm-3">
                                                     <div class="p-3 border border-dashed border-start-0">
                                                         <h5 class="mb-1"><span class="counter-value"
-                                                                data-target="367">0</span></h5>
-                                                        <p class="text-muted mb-0">Refunds</p>
+                                                                data-target="9999">0</span></h5>
+                                                        <p class="text-muted mb-0">User</p>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-6 col-sm-3">
+                                                    <div class="p-3 border border-dashed border-start-0">
+                                                        <h5 class="mb-1"><span class="counter-value"
+                                                                data-target="9999"></span></h5>
+                                                        <p class="text-muted mb-0">Ulasan</p>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-6 col-sm-3">
                                                     <div class="p-3 border border-dashed border-start-0 border-end-0">
                                                         <h5 class="mb-1 text-success"><span class="counter-value"
-                                                                data-target="18.92">0</span>%</h5>
+                                                                data-target="9999"></span></h5>
                                                         <p class="text-muted mb-0">Conversation Ratio</p>
                                                     </div>
                                                 </div>
@@ -256,17 +256,17 @@
                                                     <div class="d-inline-flex gap-2 border border-dashed p-2 mb-2">
                                                         <a href="apps-ecommerce-product-details.html"
                                                             class="bg-light rounded p-1">
-                                                            <img src="assets/images/products/img-8.png" alt=""
+                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/products/img-8.png') }}" alt=""
                                                                 class="img-fluid d-block" />
                                                         </a>
                                                         <a href="apps-ecommerce-product-details.html"
                                                             class="bg-light rounded p-1">
-                                                            <img src="assets/images/products/img-2.png" alt=""
+                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/products/img-2.png') }}" alt=""
                                                                 class="img-fluid d-block" />
                                                         </a>
                                                         <a href="apps-ecommerce-product-details.html"
                                                             class="bg-light rounded p-1">
-                                                            <img src="assets/images/products/img-10.png" alt=""
+                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/products/img-10.png') }}" alt=""
                                                                 class="img-fluid d-block" />
                                                         </a>
                                                     </div>
@@ -275,7 +275,7 @@
                                             </div>
                                             <div class="acitivity-item py-3 d-flex">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}" alt=""
                                                         class="avatar-xs rounded-circle acitivity-avatar">
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
@@ -355,7 +355,7 @@
                                             </div>
                                             <div class="acitivity-item d-flex">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}" alt=""
                                                         class="avatar-xs rounded-circle acitivity-avatar" />
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
@@ -432,7 +432,7 @@
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0 avatar-sm">
                                                                     <div class="avatar-title bg-light rounded">
-                                                                        <img src="assets/images/companies/img-1.png"
+                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/companies/img-1.png') }}"
                                                                             alt="" height="30">
                                                                     </div>
                                                                 </div>
@@ -464,7 +464,7 @@
                                                         <div class="card-body">
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/users/avatar-3.jpg"
+                                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
                                                                         alt="" class="avatar-sm rounded">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-3">
@@ -496,7 +496,7 @@
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0 avatar-sm">
                                                                     <div class="avatar-title bg-light rounded">
-                                                                        <img src="assets/images/companies/img-8.png"
+                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/companies/img-8.png') }}"
                                                                             alt="" height="30">
                                                                     </div>
                                                                 </div>
@@ -528,7 +528,7 @@
                                                         <div class="card-body">
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/users/avatar-2.jpg"
+                                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
                                                                         alt="" class="avatar-sm rounded">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-3">
@@ -702,7 +702,7 @@
 
                                     <div class="card sidebar-alert bg-light border-0 text-center mx-4 mb-0 mt-3">
                                         <div class="card-body">
-                                            <img src="assets/images/giftbox.png" alt="">
+                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/giftbox.png') }}" alt="">
                                             <div class="mt-4">
                                                 <h5>Invite New Seller</h5>
                                                 <p class="text-muted lh-base">Refer a new seller to us and earn

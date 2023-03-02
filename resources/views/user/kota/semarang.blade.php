@@ -7,29 +7,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Surabaya</title>
+		<title>Semarang</title>
 		<!-- Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="css/typography.css" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
         <!-- DL Menu CSS -->
-        <link href="js/dl-menu/component.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- Date And Time Picker CSS -->
-        <link rel="stylesheet" href="css/datetimepicker.css">
+        <link rel="stylesheet" href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
         <!-- FontAwesome Icon CSS -->
-        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
         <!-- Slick Slider CSS -->
-        <link href="css/slick.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}" rel="stylesheet">
         <!-- Widget CSS -->
-        <link href="css/widget.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
         <!-- Short Code CSS -->
-        <link href="css/shortcode.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
         <!-- Custom Style CSS -->
-        <link href="style.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
         <!-- Color CSS -->
-        <link href="css/color.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
         <!-- Responsive CSS -->
-        <link href="css/responsive.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
 	</head>
 	<body>
 		<div class="iqoniq_wrapper">
@@ -39,19 +39,19 @@
 				<div class="mg_nav_wrapper">
                     <!-- iqoniq Logo Start-->
 					<div class="mg_logo">
-                        <a href="#"><img src="images/logo.png" width="220" alt=""/></a>
+                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220" alt=""/></a>
                     </div>
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                         <ul class="mg_navigation">
-                            <li><a href="../index.html">Beranda</a></li>
-                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
                             <li>
-                                <a href="../top-destinations.html">Destinasi</a>
+                                <a href="/destinasi">Destinasi</a>
                             </li>
                             <li>
-                                <a href="../contact-us.html">Contact Us</a>
+                                <a href="/contactus">Contact Us</a>
                                 <!-- <ul class="children">
                                     <li><a href="contact-us.html">contact-us</a></li>
                                     <li><a href="contact-us2.html">contact-us2</a></li>
@@ -63,17 +63,13 @@
                             <button class="dl-trigger">Open Menu</button>
                             <ul class="dl-menu">
                                 <li class="menu-item mg-parent-menu">
-                                    <a href="../index.html">Beranda</a>
+                                    <a href="/">Beranda</a>
                                 </li>
-                                <li><a href="../about-us.html">About Us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="../style.css">Destinasi</a>
+                                <li><a href="/aboutus">About Us</a></li>
+                                <li class="menu-item mg-parent-menu"><a href="/destinasi">Destinasi</a>
                                 </li>
-                                <li class="menu-item mg-parent-menu"><a href="../contact-us.html">Contact Us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="/contactus">Contact Us</a>
+                                    </li>
                             </ul>
                         </div>
                         <!--DL Menu END-->
@@ -90,7 +86,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Surabaya</h2>
+                    <h2>Semarang</h2>
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>
@@ -118,7 +114,24 @@
                                             <div class="mg_room_detail_wrap">
                                                 <!-- Room Slider Start -->
                                                 <div class="room-slider-wrap">
-                                                    
+                                                    <div class="room-slider"> 
+                                                        <figure><img src="https://melampa.com/wp-content/uploads/2019/10/The-great-mosque-of-Semarang-on-sunset.jpg" alt=""></figure>
+                                                        <figure><img src="https://melampa.com/wp-content/uploads/2019/10/Close-view-of-Avalokitesvara-Pagoda-in-Semarang.jpg" alt=""></figure>
+                                                        <figure><img src="https://javasoltours.com/wp-content/uploads/2018/04/masjid-sem.jpg" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/R.1d0c6dc3217b82f5792345f8a2f35a40?rik=44VC%2bigpq4d%2bvg&riu=http%3a%2f%2fblog.redbus.id%2fwp-content%2fuploads%2f2019%2f02%2fshutterstock_1059609203.jpg&ehk=9z48SF6OdRuh48ZB%2fgREe1G%2fngAtO0A1dIU8GrONU8M%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.-5xzfgXTbvRwCX1ceuDkggHaE7?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.xowNxbJY-h_fvLRtitVApQHaE7?pid=ImgDet&rs=1" alt=""></figure>
+                                                    </div>
+                                                    <!-- Room Slider Start -->
+                                                    <!-- Room Slider Nav Start -->
+                                                    <div class="room-slider-nav">
+                                                        <figure><img src="https://melampa.com/wp-content/uploads/2019/10/The-great-mosque-of-Semarang-on-sunset.jpg" alt=""></figure>
+                                                        <figure><img src="https://melampa.com/wp-content/uploads/2019/10/Close-view-of-Avalokitesvara-Pagoda-in-Semarang.jpg" alt=""></figure>
+                                                        <figure><img src="https://javasoltours.com/wp-content/uploads/2018/04/masjid-sem.jpg" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/R.1d0c6dc3217b82f5792345f8a2f35a40?rik=44VC%2bigpq4d%2bvg&riu=http%3a%2f%2fblog.redbus.id%2fwp-content%2fuploads%2f2019%2f02%2fshutterstock_1059609203.jpg&ehk=9z48SF6OdRuh48ZB%2fgREe1G%2fngAtO0A1dIU8GrONU8M%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.-5xzfgXTbvRwCX1ceuDkggHaE7?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.xowNxbJY-h_fvLRtitVApQHaE7?pid=ImgDet&rs=1" alt=""></figure>
+                                                    </div>
                                                     <!-- Room Slider Nav End -->
                                                 </div>
                                                 <!-- Room Slider End -->
@@ -128,23 +141,26 @@
                                             <div class="room-detail-contant">
                                                 <div class="row">
                                                     <div class="mg_blog_full">
-                                                        <div class="thumb">
-                                                        <h3 class="blog_title"><a>Surabaya Berkesan</a></h3>
+                                                        <h5 class="blog_title"><a>Ibu
+                                                            Kota Jawa
+                                                                            Tengah</a></h5>
                                                         <div class="mg_blog_contant">
-                                                            <p> Kota Surabaya adalah ibu kota Provinsi Jawa Timur yang menjadi pusat pemerintahan dan perekonomian dari Provinsi Jawa Timur sekaligus kota metropolitan terbesar di provinsi tersebut. Surabaya juga merupakan sebuah kota yang terletak di Provinsi Jawa Timur, Indonesia. Surabaya juga merupakan kota terbesar kedua di Indonesia setelah Jakarta.</p>
-                                                            <img src="https://th.bing.com/th/id/R.1740f171985a3cbe515838dea75feb75?rik=q6oSoptpXa5x7A&riu=http%3a%2f%2finformazone.com%2fwp-content%2fuploads%2f2020%2f01%2fjejakpiknikcom-1-scaled.jpg&ehk=%2fpSPJbbEe9W8BvjnuCdFDridDZ6Lvbd7ZoIH2V1rBzA%3d&risl=&pid=ImgRaw&r=0" alt="">
-
-                                                        </div>
+                                                            <div class="thumb">
+                                                            <p> Semarang adalah ibu kota Provinsi Jawa Tengah, Indonesia yang sekaligus menjadi pusat pemerintahan dan perekonomian dari Provinsi Jawa Tengah, Indonesia. Kota ini adalah kota metropolitan terbesar kelima di Indonesia setelah Jakarta, Surabaya, Bandung, dan Medan.</p>
+                                                            <br><h5>Kota Penghubung</h5></br>
+                                                            <p>Kota Semarang adalah salah satu kota penting yang terletak di pesisir utara Jawa dan sebagai hub utama penghubung Jakarta–Surabaya dan kota–kota di pedalaman selatan Jawa (Surakarta dan Yogyakarta). Kota Semarang memiliki ketinggian dari 2 meter bawah permukaan laut hingga 340 meter di atas permukaan laut dengan kemiringan lereng 0%–45%. Kota Semarang merupakan kota yang memiliki kondisi topografi yang unik berupa wilayah dataran rendah yang sempit dan wilayah perbukitan yang memanjang dari sisi barat hingga sisi timur Kota Semarang. Wilayah dataran rendah di Kota Semarang sangat sempit.                                                            </p>
+                                                        <img src="https://th.bing.com/th/id/R.1d0c6dc3217b82f5792345f8a2f35a40?rik=44VC%2bigpq4d%2bvg&riu=http%3a%2f%2fblog.redbus.id%2fwp-content%2fuploads%2f2019%2f02%2fshutterstock_1059609203.jpg&ehk=9z48SF6OdRuh48ZB%2fgREe1G%2fngAtO0A1dIU8GrONU8M%3d&risl=&pid=ImgRaw&r=0" alt="">
+                                                            </div>
                                                         <h5 class="blog_main_title"></h5>
                                                         <div class="thumb">
-                                                        <br><h4>Wisata Surabaya</h4></br>
-                                                        <h5><p>Sebagai kota terbesar kedua di Indonesia, Surabaya memiliki segudang tempat wisata yang menarik untuk didatangi. Kota Surabaya cocok untuk dikunjungi bersama keluarga,teman,ataupun sendirian.</p></h5>
-                                                    <img src="https://anekatempatwisata.com/wp-content/uploads/2014/03/Jl.-Kembang-Jepun-Surabaya-bamsatya_.jpg" alt="">
+                                                        <br><h5>Destinasi</h5></br>
+                                                        <p>Kota Semarang merupakan kota yang menarik untuk dikunjungi bersama keluarga, sahabat, atau bahkan solo travelling. Kota lumpia ini menawarkan berbagai macam destinasi wisata dari wisata kota, alam, kuliner, religi, sejarah, hingga budaya.</p>
+                                                    <img src="https://melampa.com/wp-content/uploads/2019/10/The-great-mosque-of-Semarang-on-sunset.jpg" alt="">
                                                         </div>
                                                         <div class="thumb">
-                                                        <br><h4>Kuliner</h4></br>
-                                                        <h5><p>Sebagai salah satu kota besar di Indonesia, Surabaya dikenal memiliki beraneka ragam kuliner yang lezat dan bikin ketagihan. Asyiknya lagi, kamu bisa menemukan kuliner enak 24 jam di Surabaya.                                                        </p></h5>
-                                                    <img src="https://d99i6ad9lbm5v.cloudfront.net/uploads/image/file/6660/lontong-balap-pak-gendut.jpg" alt="">
+                                                        <br><h5>Kuliner</h5></br>
+                                                        <p>Semarang merupakan salah satu kota terbesar di Jawa Tengah, yang memiliki berbagai macam kuliner yang khas. Wisata kuliner Semarang, Jawa Tengah juga termasuk bagian makanan yang mungkin tidak bisa ditemukan di kota lain, meskipun ada, tapi olahan rasanya pasti berbeda dari kuliner Semarang.</p>
+                                                    <img src="https://www.sepulsa.com/blog/wp-content/uploads/2017/06/shutterstock_374774596.jpg" alt="">
                                                         </div>  
                                         </div>
                                                     </div>
@@ -264,18 +280,17 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/Kya-Kya-Kembang-Jepun.jpg" alt=""/>
+                                                        <img src="https://bisniswisata.co.id/wp-content/uploads/2019/06/lawang-sewu-1068x712.jpg" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="../destinasi/kya.html">Selengkapnya</a>
+                                                            <a class="view_btn" href="../destinasi/lawang.html">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="../destinasi/kya.html">Kembang Jepun</a></h5>
+                                                            <h5><a href="../destinasi/lawang.html">Lawang Sewu</a></h5>
                                                         </div>
                                                         <div class="mg_destination_review">
-                                                            <p>Wisata Kembang Jepun cocok untuk kamu yang ingin merasakan nuansa seperti di Luar Negri yaitu Jepang.
-                                                            </p>
+                                                            <p>Wisata Lawang Sewu cocok untuk Anda yang suka berwisata ke tempat bersejarah.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -285,18 +300,18 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="extra-images/usa3.jpg" alt=""/>
+                                                        <img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="#">Selengkapnya</a>
+                                                            <a class="view_btn" href="../destinasi/ayana.html">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="#">Coming Soon</a></h5>
+                                                            <h5><a href="../destinasi/ayana.html">Ayana Gedong Songo</a></h5>
                                                         </div>
-                                                        <!-- <div class="mg_destination_review">
+                                                        <div class="mg_destination_review">
                                                             <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.</p>
-                                                        </div> -->
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -305,7 +320,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="extra-images/usa3.jpg" alt=""/>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa3.jpg') }}" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="#">Selengkapnya</a>
                                                         </figcaption>
@@ -357,7 +372,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="widget widget_text">
                             <div class="logo">
-                                <a href="#"><img src="images/logo.png" alt="" /></a>
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" alt="" /></a>
                             </div>
                             <div class="text">
                                 <p>
@@ -502,21 +517,21 @@
             <!-- register Modal end-->
 		</div>
         <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
         <!-- bootstrap -->
-        <script src="js/bootstrap.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
         <!-- Slick Slider -->
-        <script src="js/slick.min.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
         <!--Dl Menu Script-->
-        <script src="js/dl-menu/modernizr.custom.js"></script>
-        <script src="js/dl-menu/jquery.dlmenu.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
         <!-- Accordian -->
-        <script src="js/jquery.accordion.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.accordion.js') }}"></script>
         <!-- Date Time Picker -->
-        <script src="js/jquery.datetimepicker.full.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
         <!--Custom Script-->
-        <script src="js/custom.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 	</body>
 
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:37:17 GMT -->

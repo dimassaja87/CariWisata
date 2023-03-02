@@ -4,6 +4,7 @@ use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\RatingController;
 use App\Models\Destinasi;
 use App\Models\User;
 use App\Models\Ulasan;
@@ -48,16 +49,55 @@ Route::get('/login', function () {
     return view('user.login');
 });
 
+//kota
+
 Route::get('/bandung', function () {
-    return view('user.tujuan.bandung');
+    return view('user.kota.bandung');
 });
 
 Route::get('/bali', function () {
-    return view('user.tujuan.bali');
+    return view('user.kota.bali');
 });
 
 Route::get('/semarang', function () {
-    return view('user.tujuan.semarang');
+    return view('user.kota.semarang');
+});
+
+Route::get('/surabaya', function () {
+    return view('user.kota.surabaya');
+});
+
+Route::get('/banten', function () {
+    return view('user.kota.banten');
+});
+
+Route::get('/batu', function () {
+    return view('user.kota.batu');
+});
+
+//wisata
+Route::get('/kawah', function () {
+    return view('user.wisata.kawah');
+});
+
+Route::get('/lembang', function () {
+    return view('user.wisata.lembang');
+});
+
+Route::get('/lawang', function () {
+    return view('user.wisata.lawang');
+});
+
+Route::get('/ayana', function () {
+    return view('user.wisata.ayana');
+});
+
+Route::get('/peuncang', function () {
+    return view('user.wisata.peuncang');
+});
+
+Route::get('/kya', function () {
+    return view('user.wisata.kya');
 });
 
 //Data User
@@ -92,6 +132,17 @@ Route::get('/tampilkota/{id}',[KotaController::class, 'tampilkota'])->name('tamp
 Route::post('/updatekota{id}',[KotaController::class, 'updatekota'])->name('updatekota');
 
 Route::get('/deletekota/{id}',[KotaController::class, 'deletekota'])->name('deletekota');
+
+//Data Rating
+Route::get('/rating',[RatingController::class, 'rating'])->name('rating');
+
+Route::get('/tambahrating',[RatingController::class, 'tambahrating'])->name('tambahrating');
+Route::post('/insertrating',[RatingController::class, 'insertrating'])->name('insertrating');
+
+Route::get('/tampilrating/{id}',[RatingController::class, 'tampilrating'])->name('tampilrating');
+Route::post('/updaterating{id}',[RatingController::class, 'updaterating'])->name('updaterating');
+
+Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating');
 
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');

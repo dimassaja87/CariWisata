@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Kota | Admin</title>
+    <title>Data Rating | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -335,12 +335,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA KOTA</h4>
+                                <h4 class="mb-sm-0">DATA RATING</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Kota</li>
+                                        <li class="breadcrumb-item active">Data Rating</li>
                                     </ol>
                                 </div>
 
@@ -361,7 +361,7 @@
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
                                                 <div>
-                                                    <a href="/tambahkota" type="button"
+                                                    <a href="/tambahrating" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
                                                     <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
@@ -390,7 +390,8 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">ID</th>
-                                                        <th scope="col">Nama Kota</th>
+                                                        <th scope="col">Nama Wisata</th>
+                                                        <th scope="col">Rating</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -408,15 +409,16 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td class="nama_kota">{{ $row->nama_kota }}</td>
+                                                            <td class="id_wisata">{{ $row->id_wisata }}</td>
+                                                            <td class="rating">{{ $row->rating }}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
-                                                                        <a href="/tampilkota/{{ $row->id }}"
+                                                                        <a href="/tampilrating/{{ $row->id }}"
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
-                                                                        <a href="/deletekota/{{ $row->id }}" data-id="{{ $row->id }}" data-nama="{{ $row->nama_kota }}"
+                                                                        <a href="/deleterating/{{ $row->id }}" data-id="{{ $row->id }}" data-nama="{{ $row->rating }}"
                                                                             class="btn btn-sm btn-danger remove-item-btn">Remove</a>
                                                                     </div>
                                                                 </div>
@@ -1243,7 +1245,7 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var kotaid = $(this).attr('data-id');
+        var ratingid = $(this).attr('data-id');
         var nama_wisata = $(this).attr('data-nama');
 
 
@@ -1256,7 +1258,7 @@
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletekota/" + kotaid + ""
+                    window.location = "/deleterating/" + ratingid + ""
                     swal("Data berhasil dihapus!", {
                         icon: "success",
                     });

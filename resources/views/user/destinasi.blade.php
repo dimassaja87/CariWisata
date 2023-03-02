@@ -9,23 +9,23 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Top Destinasi</title>
 		<!-- Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="css/typography.css" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
         <!-- DL Menu CSS -->
-        <link href="js/dl-menu/component.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
-        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
         <!-- Widget CSS -->
-        <link href="css/widget.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
         <!-- Short Code CSS -->
-        <link href="css/shortcode.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
         <!-- Custom Style CSS -->
-        <link href="style.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
         <!-- Color CSS -->
-        <link href="css/color.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
         <!-- Responsive CSS -->
-        <link href="css/responsive.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
 	</head>
 	<body>
 		<div class="iqoniq_wrapper">
@@ -35,19 +35,19 @@
 				<div class="mg_nav_wrapper">
                     <!-- iqoniq Logo Start-->
 					<div class="mg_logo">
-                        <a href="#"><img src="images/logo.png" width="220" alt=""/></a>
+                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220" alt=""/></a>
                     </div>
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                         <ul class="mg_navigation">
-                            <li><a href="index.html">Beranda</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
                             <li>
-                                <a href="top-destinations.html">Destinasi</a>
+                                <a href="/destinasi">Destinasi</a>
                             </li>
                             <li>
-                                <a href="contact-us.html">Contact Us</a>
+                                <a href="/contactus">Contact Us</a>
                                 <!-- <ul class="children">
                                     <li><a href="contact-us.html">contact-us</a></li>
                                     <li><a href="contact-us2.html">contact-us2</a></li>
@@ -59,17 +59,13 @@
                             <button class="dl-trigger">Open Menu</button>
                             <ul class="dl-menu">
                                 <li class="menu-item mg-parent-menu">
-                                    <a href="index.html">Beranda</a>
+                                    <a href="/">Beranda</a>
                                 </li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="top-destinations.html">Destinasi</a>
+                                <li><a href="/aboutus">About Us</a></li>
+                                <li class="menu-item mg-parent-menu"><a href="/destinasi">Destinasi</a>
                                 </li>
-                                <li class="menu-item mg-parent-menu"><a href="contact-us.html">Contact Us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="/contactus">Contact Us</a>
+                                    </li>
                             </ul>
                         </div>
                         <!--DL Menu END-->
@@ -88,7 +84,7 @@
                 <div class="container">
                     <h2>Destinasi</h2>
                     <ul class="breadcrumb">
-                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="/">Beranda</a></li>
                         <li class="active"><span>Destinasi</span></li>
                     </ul>
                 </div>
@@ -105,12 +101,12 @@
                                     <figure>
                                         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1601460678/blog/fn6axuxtktmf0qhgykmc.webp" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="../iqoniq-travel-light/kota/bdg.html">Selengkapnya</a>
+                                            <a class="view_btn" href="/bandung">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="../iqoniq-travel-light/kota/bdg.html">Akhir Pekan di Bandung</a></h5>
+                                            <h5><a href="/bandung">Akhir Pekan di Bandung</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
                                             <p>Liburan akhir pekan yang menyenangkan di Bandung.
@@ -127,12 +123,12 @@
                                     <figure>
                                         <img src="https://melampa.com/wp-content/uploads/2019/10/Close-view-of-Avalokitesvara-Pagoda-in-Semarang.jpg" alt=""/>
                                         <figcaption>
-                                            <a class="view_btn" href="../iqoniq-travel-light/destinasi/lembang.html">Selengkapnya</a>
+                                            <a class="view_btn" href="/semarang">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="../iqoniq-travel-light/kota/semarang.html  ">Jelajah Semarang</a></h5>                                        
+                                            <h5><a href="/semarang">Jelajah Semarang</a></h5>                                        
                                         </div>
                                         <div class="mg_destination_review">
                                             <p>Menjelajahi Ibu Kota Jawa Tengah dengan seksama dan seru tentunya!</p>
@@ -147,12 +143,12 @@
                                     <figure>
                                         <img src="https://th.bing.com/th/id/OIP.mN23HLOGt1z6XjSULZeGLwHaE7?pid=ImgDet&rs=1" alt=""/>
                                         <figcaption>
-                                            <a class="view_btn" href="../iqoniq-travel-light/kota/surabaya.html">Selengkapnya</a>
+                                            <a class="view_btn" href="/surabaya">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="../iqoniq-travel-light/kota/surabaya.html">Surabaya</a></h5>
+                                            <h5><a href="/surabaya">Surabaya</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
                                             <p> Nikmati Akhir Pekan Anda di Kota Surabaya Pusat Jawa Timur!
@@ -194,7 +190,6 @@
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="../iqoniq-travel-light/kota/banten.html">Banten</a></h5>
                                             <h5><a href="../iqoniq-travel-light/destinasi/banten.html">Banten</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
@@ -211,12 +206,12 @@
                                     <figure>
                                         <img src="https://storage.googleapis.com/allindonesiatoursim/2017/05/Batu.jpg" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="../iqoniq-travel-light/kota/batu.html">Selengkapnya</a>
+                                            <a class="view_btn" href="../iqoniq-travel-light/destinasi/kya.html">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="../iqoniq-travel-light/kota/batu.html">Cerita di Kota Batu</a></h5>
+                                            <h5><a href="../iqoniq-travel-light/destinasi/kya.html">Cerita di Kota Batu</a></h5>
                                         </div>
                                          <div class="mg_destination_review">
                                             <p>Wisata di Kota Batu cocok untuk Anda yang ingin merasakan nuansa dinginnya Kota Batu.
@@ -253,7 +248,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="widget widget_text">
                             <div class="logo">
-                                <a href="#"><img src="images/logo.png" alt="" /></a>
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" alt="" /></a>
                             </div>
                             <div class="text">
                                 <p>
@@ -398,14 +393,14 @@
             <!-- register Modal end-->
 		</div>
     	<!-- jQuery -->
-        <script src="js/jquery.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
         <!-- bootstrap -->
-        <script src="js/bootstrap.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
         <!--Dl Menu Script-->
-        <script src="js/dl-menu/modernizr.custom.js"></script>
-        <script src="js/dl-menu/jquery.dlmenu.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
         <!--Custom Script-->
-        <script src="js/custom.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 	</body>
 
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/top-destinations.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:40:59 GMT -->
