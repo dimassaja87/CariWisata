@@ -71,68 +71,26 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0">Edit Data Destinasi</h5>
+                                    <h5 class="card-title mb-0">Tambah Data Kota</h5>
 
                                 </div>
                                 <div class="card-body">
-                                    <form action="/updatedestinasi/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                                    <form action="/insertkota" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         <div class="mb-3">
                                             <label for="customername-field" class="form-label">Nama
-                                                Wisata</label>
-                                            <input type="text" id="customername-field" name="nama_wisata"
-                                                class="form-control" placeholder="Enter Name" value="{{ $data->nama_wisata }}" required />
-                                            <div class="invalid-feedback">Masukkan nama wisata.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">Lokasi</label>
-                                            <input type="text" id="email-field" name="lokasi" class="form-control"
-                                                placeholder="Enter Email" value="{{ $data->lokasi }}" required />
-                                            <div class="invalid-feedback">Masukkan lokasi.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">Kota</label>
-                                            <select class="form-select form-control" aria-label="Default select example"
-                                                name="id_kota" required>
-                                                <option selected>Mata Kuliah</option>
-                                                @foreach ($kota as $p)
-                                                    <option value="{{ $p->id }}" <?php if($data->id_kota == $p->id) {echo 'selected'; } ?>>{{ $p->nama_kota }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">HTM</label>
-                                            <input type="text" id="email-field" name="htm" class="form-control"
-                                                placeholder="Enter Email" value="{{ $data->htm }}" required />
-                                            <div class="invalid-feedback">Masukkan HTM.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="date-field" class="form-label">Foto Profil</label>
-                                            <br><img class="img mb-3"src="{{ asset('fotowisata/' . $data->foto_wisata) }}"
-                                                        alt="" style="width: 90px" alt="">
-                                                        <br>
-                                            <input type="file" id="date-field" name="foto" class="form-control"
-                                                placeholder="Select Photo"  />
-                                            <div class="invalid-feedback">Pilih Foto.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">Deskripsi</label>
-                                            <input type="text" id="email-field" name="deskripsi" class="form-control"
-                                                placeholder="Enter Deskripsi" value="{{ $data->deskripsi }}" required />
-                                            <div class="invalid-feedback">Masukkan deskripsi.</div>
+                                                Kota</label>
+                                            <input type="text" id="customername-field" name="nama_kota"
+                                                class="form-control" placeholder="Masukkan nama wisata" required />
+                                            <div class="invalid-feedback">Masukkan nama kota.</div>
                                         </div>
 
                                         <div class="modal-footer">
                                             <div class="hstack gap-2 justify-content-end">
                                                 <button type="button" class="btn btn-light"
                                                     data-bs-dismiss="modal">Close</button>
-                                                <button type="submit" class="btn btn-success" id="edit-btn">Edit
-                                                    Destinasi</button>
+                                                <button type="submit" class="btn btn-success" id="edit-btn">Tambah
+                                                    Kota</button>
                                                 <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                             </div>
                                         </div>

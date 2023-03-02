@@ -133,6 +133,11 @@
                                 <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/kota">
+                                <i class=" bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->

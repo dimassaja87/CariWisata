@@ -93,6 +93,19 @@
                                         </div>
 
                                         <div class="mb-3">
+                                            <label for="email-field" class="form-label">Nama Kota</label>
+                                            <select class="form-select form-control" aria-label="Default select example"
+                                                    name="id_kota" required>
+                                                    <option selected>Tidak ada yang dipilih</option>
+                                                    @foreach ($kota as $data)
+                                                        <option value="{{ $data->id }}">{{ $data->nama_kota }}</option>
+                                                    @endforeach
+                                                </select>
+                                            <div class="invalid-feedback">Masukkan kota.</div>
+                                        </div>
+
+
+                                        <div class="mb-3">
                                             <label for="email-field" class="form-label">Harga Tiket Masuk</label>
                                             <input type="text" id="email-field" name="htm" class="form-control"
                                                 placeholder="Masukkan htm" required />
