@@ -302,6 +302,11 @@
                                 <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/kota">
+                                <i class=" bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -382,6 +387,7 @@
                                                         <th scope="col">ID</th>
                                                         <th scope="col">Nama Wisata</th>
                                                         <th scope="col">Lokasi</th>
+                                                        <th scope="col">Nama Kota</th>
                                                         <th scope="col">HTM</th>
                                                         <th scope="col">Foto Wisata</th>
                                                         <th scope="col">Deskripsi Wisata</th>
@@ -404,6 +410,7 @@
                                                             </th>
                                                             <td class="nama">{{ $row->nama_wisata }}</td>
                                                             <td class="lokasi">{{ $row->lokasi }}</td>
+                                                            <td>{{ $row->kotas->nama_kota }}</td>
                                                             <td class="htm">{{ $row->htm }}</td>
                                                             <td class="foto_wisata">
                                                                 <img src="{{ asset('fotowisata/' . $row->foto_wisata) }}"
