@@ -10,29 +10,41 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>About Us - Cari Wisata</title>
     <!-- Bootstrap -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}"
+        rel="stylesheet">
     <!-- Typography CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}"
+        rel="stylesheet">
     <!-- DL Menu CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}"
+        rel="stylesheet">
     <!-- Date And Time Picker CSS -->
-    <link rel="stylesheet" href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
     <!-- FontAwesome Icon CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}"
+        rel="stylesheet">
     <!-- Svg Icon CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/svg.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/svg.css') }}"
+        rel="stylesheet">
     <!-- Slick Slider CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}"
+        rel="stylesheet">
     <!-- Widget CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}"
+        rel="stylesheet">
     <!-- Short Code CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}"
+        rel="stylesheet">
     <!-- Custom Style CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}"
+        rel="stylesheet">
     <!-- Color CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}"
+        rel="stylesheet">
     <!-- Responsive CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -44,7 +56,9 @@
             <div class="mg_nav_wrapper">
                 <!-- iqoniq Logo Start-->
                 <div class="mg_logo">
-                    <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}" alt="" width="220" /></a>
+                    <a href="#"><img
+                            src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}"
+                            alt="" width="220" /></a>
                 </div>
                 <!-- iqoniq Logo End-->
                 <!-- iqoniq Navigation Start-->
@@ -107,7 +121,8 @@
                                 </div>
                                 <!-- iqoniq Heading End -->
                                 <div class="text">
-                                    <p>Dengan membuat website ini kami bertujuan untuk menyediakan informasi tentang pariwisata yang ada di
+                                    <p>Dengan membuat website ini kami bertujuan untuk menyediakan informasi tentang
+                                        pariwisata yang ada di
                                         Indonesia, agar memudahkan seseorang saat ingin mencari referensi wisata. Dan
                                         website kami juga menyediakan ulasan/komentar dari beberapa pengguna/user
                                         tentang wisata tersebut. Kami juga menyediakan halaman yang bertujuan untuk
@@ -117,7 +132,8 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="thumb">
-                                <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/aboutus.jpg') }}" alt="">
+                                <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/aboutus.jpg') }}"
+                                    alt="">
                             </div>
                         </div>
                     </div>
@@ -137,13 +153,16 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Team Thumb Start -->
-                        <div class="col-md-4 col-sm-6">
+                        <div style="margin-left: 400px;" class="col-md-4 col-sm-6">
                             <div class="iq-team fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/gembesaja.jfif') }}" alt="">
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/gembesaja.jfif') }}"
+                                        alt="">
                                 </figure>
                                 <div class="text">
-                                    <h5 class="team-heading"><a href="https://www.instagram.com/rdtya_prt/?hl=id">Raditya Adi Pratama</a></h5>
+                                    <h5 class="team-heading"><a
+                                            href="https://www.instagram.com/rdtya_prt/?hl=id">Raditya Adi Pratama</a>
+                                    </h5>
                                     <span class="designation">Ketua</span>
                                     <ul class="mg_social">
                                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -152,27 +171,32 @@
                             </div>
                         </div>
                         <!-- Team Thumb End -->
+                    </div>
+                    <div class="row">
                         <!-- Team Thumb Start -->
-                        <div class="col-md-4 col-sm-6">
+                        <div  class="col-md-4 hidden-sm">
                             <div class="iq-team fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/gembes2.jfif') }}" alt="">
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/gembes4.jfif') }}"
+                                        alt="">
                                 </figure>
                                 <div class="text">
-                                    <h5 class="team-heading"><a href="#">Theresia Regina Herrich</a></h5>
+                                    <h5 class="team-heading"><a href="#">Zulfa</a></h5>
                                     <span class="designation">Anggota</span>
                                     <ul class="mg_social">
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i
+                                                    class="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- Team Thumb End -->
                         <!-- Team Thumb Start -->
-                        <div class="col-md-4 hidden-sm">
+                        <div class="col-md-4 col-sm-6">
                             <div class="iq-team fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/gembes3.jfif') }}" alt="">
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/gembes3.jfif') }}"
+                                        alt="">
                                 </figure>
                                 <div class="text">
                                     <h5 class="team-heading"><a href="#">Muhamad Dimas Juliansyah</a></h5>
@@ -185,9 +209,27 @@
                             </div>
                         </div>
                         <!-- Team Thumb End -->
+                        <!-- Team Thumb Start -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="iq-team fancy-overlay">
+                                <figure>
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/gembes2.jfif') }}"
+                                        alt="">
+                                </figure>
+                                <div class="text">
+                                    <h5 class="team-heading"><a href="#">Theresia Regina Herrich</a></h5>
+                                    <span class="designation">Anggota</span>
+                                    <ul class="mg_social">
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Thumb End -->
                     </div>
                 </div>
             </section>
+
             <!-- Team Section End -->
             <!-- Call to Action Section Start-->
 
@@ -207,7 +249,8 @@
                             <div class="mg_pricing fancy-overlay">
                                 <span class="fa fa-cab"></span>
                                 <div class="thumb">
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price1.jpg') }}" alt="">
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price1.jpg') }}"
+                                        alt="">
                                     <div class="caption">
                                         <div class="rating_down">
                                             <div class="rating_up" style="width:50%;"></div>
@@ -231,7 +274,8 @@
                             <div class="mg_pricing fancy-overlay">
                                 <span class="fa fa-train"></span>
                                 <div class="thumb">
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price2.jpg') }}" alt="">
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price2.jpg') }}"
+                                        alt="">
                                     <div class="caption">
                                         <div class="rating_down">
                                             <div class="rating_up" style="width:50%;"></div>
@@ -255,7 +299,8 @@
                             <div class="mg_pricing fancy-overlay">
                                 <span class="fa fa-plane"></span>
                                 <div class="thumb">
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price3.jpg') }}" alt="">
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price3.jpg') }}"
+                                        alt="">
                                     <div class="caption">
                                         <div class="rating_down">
                                             <div class="rating_up" style="width:50%;"></div>
@@ -286,13 +331,13 @@
                         <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
                             elitr, sed diam nonumy sanctus est Lorem ipsum dolor sit amet.</p>
                     </div> -->
-                    <!-- Input Start-->
-                    <!-- <div class="mg_input_1">
+            <!-- Input Start-->
+            <!-- <div class="mg_input_1">
                         <input placeholder="Your E-mail" type="text">
                         <label class="search_icon"><input type="submit"></label>
                     </div> -->
-                    <!-- Input End-->
-                <!-- </div>
+            <!-- Input End-->
+            <!-- </div>
             </div> -->
             <!-- Bottom Bar End-->
         </div>
@@ -304,7 +349,9 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="widget widget_text">
                         <div class="logo">
-                            <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}" alt="" /></a>
+                            <a href="#"><img
+                                    src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}"
+                                    alt="" /></a>
                         </div>
                         <div class="text">
                             <p>
@@ -322,16 +369,16 @@
                 </div>
                 <!-- Widget Text End-->
                 <!-- Widget Archives Start-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="widget widget_archives">
-                            <h6 class="widget-title">Our Service</h6>
-                            <ul>
-                                <li><a href="#">Beranda</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Destinasi</a></li>
-                            </ul>
-                        </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget widget_archives">
+                        <h6 class="widget-title">Our Service</h6>
+                        <ul>
+                            <li><a href="#">Beranda</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Destinasi</a></li>
+                        </ul>
                     </div>
+                </div>
                 <!-- Widget Archives End-->
                 <!-- Widget Flicker Start-->
                 <!-- Widget Flicker End-->
@@ -365,8 +412,8 @@
             <div class="modal-dialog login1 login5 login5-1">
                 <div class="modal-tab">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#sign-In1" aria-controls="sign-In1" role="tab"
-                                data-toggle="tab">Sign In</a></li>
+                        <li role="presentation" class="active"><a href="#sign-In1" aria-controls="sign-In1"
+                                role="tab" data-toggle="tab">Sign In</a></li>
                         <li role="presentation"><a href="#sign-up2" aria-controls="sign-up2" role="tab"
                                 data-toggle="tab">Sign Up</a></li>
                     </ul>
@@ -457,8 +504,12 @@
     <!-- Slick Slider -->
     <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
     <!--Dl Menu Script-->
-    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
-    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
+    <script
+        src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}">
+    </script>
+    <script
+        src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}">
+    </script>
     <!--Custom Script-->
     <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 </body>
