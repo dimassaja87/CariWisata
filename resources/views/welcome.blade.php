@@ -196,7 +196,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lembang.png') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -213,7 +213,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/kawah putih.webp') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -230,7 +230,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/teh.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -247,7 +247,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sunrise.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -264,7 +264,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/dago.webp') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -281,7 +281,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lodge.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -306,7 +306,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sewu.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -323,7 +323,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/saloka.webp') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -340,7 +340,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/koma.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -357,7 +357,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/goda.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -374,7 +374,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pelangi.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -391,7 +391,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/museum.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -416,7 +416,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lot.jpeg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -433,7 +433,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/kuta.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -450,7 +450,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pura.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -467,7 +467,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/balizoo.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -484,7 +484,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pandawa.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -501,7 +501,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/enua.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -526,7 +526,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central1.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -556,7 +556,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/ extra-images/central2.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -586,7 +586,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central3.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -616,7 +616,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central4.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -646,7 +646,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central5.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -676,7 +676,7 @@
                                                 <figure>
                                                     <img src="extra-images/central6.jpg" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -716,7 +716,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe1.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -746,7 +746,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe2.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -776,7 +776,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe3.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -806,7 +806,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe4.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -836,7 +836,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe5.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -866,7 +866,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe6.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -906,7 +906,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia1.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -936,7 +936,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia2.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -966,7 +966,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia3.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -996,7 +996,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia4.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1026,7 +1026,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia5.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1056,7 +1056,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia6.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1096,7 +1096,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere1.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1126,7 +1126,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere2.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1156,7 +1156,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere3.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1186,7 +1186,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere4.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1216,7 +1216,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere5.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1246,7 +1246,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere6.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">view deal</a>
+                                                        <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -1455,9 +1455,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination7.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lombok.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">Resturants</a>
+                                        <a class="view_btn" href="#">Lombok</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1467,9 +1467,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination8.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/surabaya.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">Beach</a>
+                                        <a class="view_btn" href="#">Surabaya</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1479,9 +1479,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination6.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banten.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">Destinations</a>
+                                        <a class="view_btn" href="#">Banten</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1492,92 +1492,19 @@
             </section>
             <!-- Destination Section End -->
             <!-- Services Section Start -->
-            <section>
-                <div class="container">
-                    <!-- iqoniq Heading Start -->
-                    <div class="mg_hotel_hd1">
-                        <h6>Know More About Hotel</h6>
-                        <h4>See How it works?</h4>
-                    </div>
-                    <!-- iqoniq Heading End -->
-                    <div class="row">
-                        <!-- iqoniq Travel Services Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_services">
-                                <i class="icon-bus blue-icon"></i>
-                                <h5><a href="#">Transpotation</a></h5>
-                                <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                <a class="mg_btn1" href="#">More</a>
-                            </div>
-                        </div>
-                        <!-- iqoniq Travel Services End -->
-                        <!-- iqoniq Travel Services Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_services">
-                                <i class="icon-sedan-car-front pink-icon"></i>
-                                <h5><a href="#">Rent a car</a></h5>
-                                <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                <a class="mg_btn1" href="#">More</a>
-                            </div>
-                        </div>
-                        <!-- iqoniq Travel Services End -->
-                        <!-- iqoniq Travel Services Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_services">
-                                <i class="icon-house orange-icon"></i>
-                                <h5><a href="#">Accomodation</a></h5>
-                                <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                <a class="mg_btn1" href="#">More</a>
-                            </div>
-                        </div>
-                        <!-- iqoniq Travel Services End -->
-                        <!-- iqoniq Travel Services Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_services">
-                                <i class="icon-cooker skyblue-icon"></i>
-                                <h5><a href="#">restaurant</a></h5>
-                                <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                <a class="mg_btn1" href="#">More</a>
-                            </div>
-                        </div>
-                        <!-- iqoniq Travel Services End -->
-                        <!-- iqoniq Travel Services Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_services">
-                                <i class="icon-restaurant lightred-icon"></i>
-                                <h5><a href="#">shopping centers</a></h5>
-                                <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                <a class="mg_btn1" href="#">More</a>
-                            </div>
-                        </div>
-                        <!-- iqoniq Travel Services End -->
-                        <!-- iqoniq Travel Services Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_services">
-                                <i class="icon-ferris-wheel lightgreen-icon"></i>
-                                <h5><a href="#">Attractions</a></h5>
-                                <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                <a class="mg_btn1" href="#">More</a>
-                            </div>
-                        </div>
-                        <!-- iqoniq Travel Services End -->
-                    </div>
-                </div>
-            </section>
             <!-- Services Section End -->
             <!-- Call to Action Section Start-->
             <section class="mg_travelplan">
                 <div class="container">
                     <!-- iqoniq Heading Start -->
                     <div class="mg_hotel_hd1 white">
-                        <h6>Create a Custom Plan based on your Taste</h6>
-                        <h4>Start making your Travel Plans</h4>
+                        <h6>Buat liburan berdasarkan Selera Anda</h6>
+                        <h4>Mulailah membuat Rencana Perjalanan Anda</h4>
                     </div>
                     <!-- iqoniq Heading End -->
                     <!-- Caption Start -->
                     <div class="mg_plan_caption">
-                        <p>ducate, aid, criteria catalyst John Lennon. Life-saving diversity necessities elevate worldwide carbon rights empowerment. Pursue these aspirations leverage, accessibility UNICEF, reduce child mortality collaborative cities safeguards. Informal economies non-partisan; evolution transformative climate change local benefit.</p>
-                        <a class="mg_btn1" href="#">Creat a package</a>
+                        <p>ducate, aid, kriteria katalisator John Lennon. Kebutuhan keanekaragaman yang menyelamatkan jiwa meningkatkan pemberdayaan hak karbon di seluruh dunia. Mengejar aspirasi ini memanfaatkan, aksesibilitas UNICEF, mengurangi perlindungan kota kolaboratif kematian anak. ekonomi informal non-partisan; evolusi transformatif perubahan iklim manfaat lokal.</p>
                     </div>
                     <!-- Caption End -->
                 </div>
@@ -1604,17 +1531,17 @@
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
                             <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/1.jpg') }}" alt=""></figure>
+                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/1a.jpg') }}" alt=""></figure>
                             </div>
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
                             <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/2.jpg') }}" alt=""></figure>
+                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/2a.jpg') }}" alt=""></figure>
                             </div>
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
                             <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/3.jpg') }}" alt=""></figure>
+                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/3a.jpg') }}" alt=""></figure>
                             </div>
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
@@ -1624,12 +1551,12 @@
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
                             <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/4.jpg') }}" alt=""></figure>
+                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/4a.jpg') }}" alt=""></figure>
                             </div>
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
                             <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/5.jpg') }}" alt=""></figure>
+                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/5a.jpg') }}" alt=""></figure>
                             </div>
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
@@ -1679,75 +1606,6 @@
             </section>
             <!-- Masonry Gallery Section End-->
             <!-- Blog Section Start-->
-            <section>
-                <div class="container">
-                    <!-- iqoniq Heading Start -->
-                    <div class="mg_hotel_hd1">
-                        <h6>Right Now</h6>
-                        <h4>Our Latest Blog</h4>
-                    </div>
-                    <!-- iqoniq Heading End -->
-                    <div class="row">
-                        <!-- iqoniq Blog Medium Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_blog_medium fancy-overlay">
-                                <h6><a href="#">Its A Brillaint city to visit</a></h6>
-                                <figure>
-                                    <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/blog_medium1.jpg') }}" alt=""></a>
-                                </figure>
-                                <div class="text">
-                                    <ul class="blog-meta-list">
-                                        <li><a href="#"><i class="fa fa-calendar"></i><span>24 Aug 2016</span></a></li>
-                                        <li><a href="#"><i class="fa fa-comments-o"></i><span>24 comments</span></a></li>
-                                    </ul>
-                                    <div class="clear"></div>
-                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
-                                    <a class="mg_readmore" href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- iqoniq Blog Medium End -->
-                        <!-- iqoniq Blog Medium Start -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="mg_blog_medium fancy-overlay">
-                                <h6><a href="#">Its A Brillaint city to visit</a></h6>
-                                <figure>
-                                    <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/blog_medium2.jpg') }}" alt=""></a>
-                                </figure>
-                                <div class="text">
-                                    <ul class="blog-meta-list">
-                                        <li><a href="#"><i class="fa fa-calendar"></i><span>24 Aug 2016</span></a></li>
-                                        <li><a href="#"><i class="fa fa-comments-o"></i><span>24 comments</span></a></li>
-                                    </ul>
-                                    <div class="clear"></div>
-                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
-                                    <a class="mg_readmore" href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- iqoniq Blog Medium End -->
-                        <!-- iqoniq Blog Medium Start -->
-                        <div class="col-md-4 hidden-sm">
-                            <div class="mg_blog_medium fancy-overlay">
-                                <h6><a href="#">Its A Brillaint city to visit</a></h6>
-                                <figure>
-                                    <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/blog_medium3.jpg') }}" alt=""></a>
-                                </figure>
-                                <div class="text">
-                                    <ul class="blog-meta-list">
-                                        <li><a href="#"><i class="fa fa-calendar"></i><span>24 Aug 2016</span></a></li>
-                                        <li><a href="#"><i class="fa fa-comments-o"></i><span>24 comments</span></a></li>
-                                    </ul>
-                                    <div class="clear"></div>
-                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
-                                    <a class="mg_readmore" href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- iqoniq Blog Medium End -->
-                    </div>
-                </div>
-            </section>
             <!-- Blog Section End-->
             <!-- Pricing Table Section Start-->
             <section class="pricing_wrap">
@@ -1766,20 +1624,14 @@
                                 <div class="thumb">
                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price1.jpg') }}" alt="">
                                     <div class="caption">
-                                        <div class="rating_down">
-                                            <div class="rating_up" style="width:50%;"></div>
-                                        </div>
                                         <div class="clear"></div>
-                                        <p>Starting from</p>
-                                        <strong>$559</strong>
-                                        <h6>london</h6>
-                                        <b>30 Places</b>
+                                        <h6>Bandara Indonesia</h6>
+                                        <b>22 Bandara</b>
                                     </div>
                                 </div>
                                 <div class="text">
-                                    <h6><a href="#">Air Flight</a></h6>
-                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                    <a class="mg_btn1" href="#">Explore Now</a>
+                                    <h6><a href="#">penerbangan</a></h6>
+                                    <p>Penerbangan di Indonesia merupakan sarana penting untuk menghubungkan ribuan pulau di Nusantara. </p>
                                 </div>
                             </div>
                             <!-- iqoniq Pricing Table End -->
@@ -1787,24 +1639,18 @@
                         <div class="col-md-4 col-sm-6">
                             <!-- iqoniq Pricing Table Start -->
                             <div class="mg_pricing fancy-overlay">
-                                <span class="fa fa-plane"></span>
+                                <span class="fa fa-train"></span>
                                 <div class="thumb">
                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price2.jpg') }}" alt="">
                                     <div class="caption">
-                                        <div class="rating_down">
-                                            <div class="rating_up" style="width:50%;"></div>
-                                        </div>
                                         <div class="clear"></div>
-                                        <p>Starting from</p>
-                                        <strong>$666</strong>
-                                        <h6>cape town</h6>
-                                        <b>10 Places</b>
+                                        <h6>Stasiun Indonesia</h6>
+                                        <b>143 stasiun</b>
                                     </div>
                                 </div>
                                 <div class="text">
-                                    <h6><a href="#">Go ways </a></h6>
-                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                    <a class="mg_btn1" href="#">Explore Now</a>
+                                    <h6><a href="#">Stasiun </a></h6>
+                                    <p>sStasiun kereta api adalah fasilitas operasi kereta api atau tempat kereta api berhenti secara teratur untuk menaikturunkan penumpang atau membongkar-muat barang.</p>
                                 </div>
                             </div>
                             <!-- iqoniq Pricing Table End -->
@@ -1812,24 +1658,18 @@
                         <div class="col-md-4 hidden-sm">
                             <!-- iqoniq Pricing Table Start -->
                             <div class="mg_pricing fancy-overlay">
-                                <span class="fa fa-plane"></span>
+                                <span class="fa fa-ship"></span>
                                 <div class="thumb">
                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/price3.jpg') }}" alt="">
                                     <div class="caption">
-                                        <div class="rating_down">
-                                            <div class="rating_up" style="width:50%;"></div>
-                                        </div>
                                         <div class="clear"></div>
-                                        <p>Starting from</p>
-                                        <strong>$999</strong>
-                                        <h6>los angeles</h6>
-                                        <b>15 Places</b>
+                                        <h6>Pelabuhan Indonesia</h6>
+                                        <b>28 Pelabuhan</b>
                                     </div>
                                 </div>
                                 <div class="text">
-                                    <h6><a href="#">flightbus </a></h6>
-                                    <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-                                    <a class="mg_btn1" href="#">Explore Now</a>
+                                    <h6><a href="#">Pelabuhan </a></h6>
+                                    <p>Sebagai negara maritim, keberadaan infrastruktur pelabuhan di Tanah Air berperan penting sebagai pintu masuk orang dan logistik. </p>
                                 </div>
                             </div>
                             <!-- iqoniq Pricing Table End -->
@@ -1839,20 +1679,6 @@
             </section>
             <!-- Pricing Table Section End-->
             <!-- Bottom Bar Start-->
-            <div class="mg_bottom_bar">
-                <div class="container">
-                    <div class="text">
-                        <h6>Submit newsletters</h6>
-                        <p>sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy sanctus est Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <!-- Input Start-->
-                    <div class="mg_input_1">
-                        <input placeholder="Your E-mail ID" type="text">
-                        <label class="search_icon"><input type="submit"></label>
-                    </div>
-                    <!-- Input End-->
-                </div>
-            </div>
             <!-- Bottom Bar End-->
         </div>
         <!-- iqoniq Contant Wrapper End-->
