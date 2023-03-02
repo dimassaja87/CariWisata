@@ -151,7 +151,7 @@
                                 <div class="col-xl-8">
                                     <div class="card">
                                         <div class="card-header border-0 align-items-center d-flex">
-                                            <h4 class="card-title mb-0 flex-grow-1">Revenue</h4>
+                                            <h4 class="card-title mb-0 flex-grow-1">Charts</h4>
                                             <div>
                                                 <button type="button" class="btn btn-soft-secondary btn-sm">
                                                     ALL
@@ -174,7 +174,7 @@
                                                     <div class="p-3 border border-dashed border-start-0">
                                                         <h5 class="mb-1"><span class="counter-value"
                                                                 data-target="9999">0</span></h5>
-                                                        <p class="text-muted mb-0">Orders</p>
+                                                        <p class="text-muted mb-0">Destinasi</p>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
@@ -182,7 +182,7 @@
                                                     <div class="p-3 border border-dashed border-start-0">
                                                         <h5 class="mb-1"><span class="counter-value"
                                                                 data-target="9999">0</span></h5>
-                                                        <p class="text-muted mb-0">Earnings</p>
+                                                        <p class="text-muted mb-0">User</p>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
@@ -190,7 +190,7 @@
                                                     <div class="p-3 border border-dashed border-start-0">
                                                         <h5 class="mb-1"><span class="counter-value"
                                                                 data-target="9999"></span></h5>
-                                                        <p class="text-muted mb-0">Refunds</p>
+                                                        <p class="text-muted mb-0">Ulasan</p>
                                                     </div>
                                                 </div>
                                                 <!--end col-->

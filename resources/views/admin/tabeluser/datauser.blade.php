@@ -335,6 +335,11 @@
                                 <i class=" bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/rating">
+                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Rating</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
