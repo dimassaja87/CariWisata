@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Destinasi;
+use App\Models\Kota;
 use Illuminate\Http\Request;
 
 class DestinasiController extends Controller
@@ -16,7 +17,9 @@ class DestinasiController extends Controller
     public function tambahdestinasi()
     {
         $data = Destinasi::all();
-        return view('admin.tabeldestinasi.tambahdestinasi', compact('data'));
+        $kota = Kota::all();
+
+        return view('admin.tabeldestinasi.tambahdestinasi', compact('data', 'kota'));
     }
 
     public function insertdestinasi(Request $request)
@@ -34,7 +37,8 @@ class DestinasiController extends Controller
     public function tampildestinasi($id)
     {
         $data = Destinasi::find($id);
-        return view('admin.tabeldestinasi.tampildestinasi', compact('data'));
+        $kota = Kota::all();
+        return view('admin.tabeldestinasi.tampildestinasi', compact('data', 'kota'));
     }
 
     public function updatedestinasi(Request $request, $id)
