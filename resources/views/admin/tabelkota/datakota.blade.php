@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Destinasi | Admin</title>
+    <title>Data Kota | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -302,6 +302,11 @@
                                 <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/kota">
+                                <i class=" bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -325,12 +330,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA DESTINASI</h4>
+                                <h4 class="mb-sm-0">DATA KOTA</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Destinasi</li>
+                                        <li class="breadcrumb-item active">Data Kota</li>
                                     </ol>
                                 </div>
 
@@ -351,7 +356,7 @@
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
                                                 <div>
-                                                    <a href="/tambahdestinasi" type="button"
+                                                    <a href="/tambahkota" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
                                                     <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
@@ -380,11 +385,7 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">ID</th>
-                                                        <th scope="col">Nama Wisata</th>
-                                                        <th scope="col">Lokasi</th>
-                                                        <th scope="col">HTM</th>
-                                                        <th scope="col">Foto Wisata</th>
-                                                        <th scope="col">Deskripsi Wisata</th>
+                                                        <th scope="col">Nama Kota</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -402,22 +403,15 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td class="nama">{{ $row->nama_wisata }}</td>
-                                                            <td class="lokasi">{{ $row->lokasi }}</td>
-                                                            <td class="htm">{{ $row->htm }}</td>
-                                                            <td class="foto_wisata">
-                                                                <img src="{{ asset('fotowisata/' . $row->foto_wisata) }}"
-                                                                    alt="" width="150">
-                                                            </td>
-                                                            <td class="deskripsi">{{ $row->deskripsi }}</td>
+                                                            <td class="nama_kota">{{ $row->nama_kota }}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
-                                                                        <a href="/tampildestinasi/{{ $row->id }}"
+                                                                        <a href="/tampilkota/{{ $row->id }}"
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
-                                                                        <a href="/deletedestinasi" data-id="{{ $row->id }}" data-nama="{{ $row->nama_wisata }}"
+                                                                        <a href="/deletekota/{{ $row->id }}" data-id="{{ $row->id }}" data-nama="{{ $row->nama_kota }}"
                                                                             class="btn btn-sm btn-danger remove-item-btn">Remove</a>
                                                                     </div>
                                                                 </div>
@@ -1244,7 +1238,7 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var destinasiid = $(this).attr('data-id');
+        var kotaid = $(this).attr('data-id');
         var nama_wisata = $(this).attr('data-nama');
 
 
@@ -1257,7 +1251,7 @@
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletedestinasi/" + destinasiid + ""
+                    window.location = "/deletekota/" + kotaid + ""
                     swal("Data berhasil dihapus!", {
                         icon: "success",
                     });

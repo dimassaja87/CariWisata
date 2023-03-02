@@ -52,12 +52,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Data Destinasi</h4>
+                                <h4 class="mb-sm-0">Data Kota</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Data Destinasi</a></li>
-                                        <li class="breadcrumb-item active">Tambah Data Destinasi</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a></li>
+                                        <li class="breadcrumb-item active">Edit Data Kota</li>
                                     </ol>
                                 </div>
 
@@ -71,60 +71,18 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0">Edit Data Destinasi</h5>
+                                    <h5 class="card-title mb-0">Edit Data Kota</h5>
 
                                 </div>
                                 <div class="card-body">
-                                    <form action="/updatedestinasi/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                                    <form action="/updatekota/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         <div class="mb-3">
                                             <label for="customername-field" class="form-label">Nama
-                                                Wisata</label>
+                                                Kota</label>
                                             <input type="text" id="customername-field" name="nama_wisata"
-                                                class="form-control" placeholder="Enter Name" value="{{ $data->nama_wisata }}" required />
-                                            <div class="invalid-feedback">Masukkan nama wisata.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">Lokasi</label>
-                                            <input type="text" id="email-field" name="lokasi" class="form-control"
-                                                placeholder="Enter Email" value="{{ $data->lokasi }}" required />
-                                            <div class="invalid-feedback">Masukkan lokasi.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">Kota</label>
-                                            <select class="form-select form-control" aria-label="Default select example"
-                                                name="id_kota" required>
-                                                <option selected>Mata Kuliah</option>
-                                                @foreach ($kota as $p)
-                                                    <option value="{{ $p->id }}" <?php if($data->id_kota == $p->id) {echo 'selected'; } ?>>{{ $p->nama_kota }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">HTM</label>
-                                            <input type="text" id="email-field" name="htm" class="form-control"
-                                                placeholder="Enter Email" value="{{ $data->htm }}" required />
-                                            <div class="invalid-feedback">Masukkan HTM.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="date-field" class="form-label">Foto Profil</label>
-                                            <br><img class="img mb-3"src="{{ asset('fotowisata/' . $data->foto_wisata) }}"
-                                                        alt="" style="width: 90px" alt="">
-                                                        <br>
-                                            <input type="file" id="date-field" name="foto" class="form-control"
-                                                placeholder="Select Photo"  />
-                                            <div class="invalid-feedback">Pilih Foto.</div>
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="email-field" class="form-label">Deskripsi</label>
-                                            <input type="text" id="email-field" name="deskripsi" class="form-control"
-                                                placeholder="Enter Deskripsi" value="{{ $data->deskripsi }}" required />
-                                            <div class="invalid-feedback">Masukkan deskripsi.</div>
+                                                class="form-control" placeholder="Enter Name" value="{{ $data->nama_kota }}" required />
+                                            <div class="invalid-feedback">Masukkan nama kota.</div>
                                         </div>
 
                                         <div class="modal-footer">
@@ -132,7 +90,7 @@
                                                 <button type="button" class="btn btn-light"
                                                     data-bs-dismiss="modal">Close</button>
                                                 <button type="submit" class="btn btn-success" id="edit-btn">Edit
-                                                    Destinasi</button>
+                                                    Kota</button>
                                                 <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                             </div>
                                         </div>

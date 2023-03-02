@@ -1,8 +1,12 @@
 <?php
 
 use App\Http\Controllers\DestinasiController;
+use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
+use App\Models\Destinasi;
+use App\Models\User;
+use App\Models\Ulasan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,8 +25,12 @@ Route::get('/', function () {
 });
 
 Route::get('/adminn', function () {
-    return view('admin.welcomeadmin');
-})->middleware('auth');
+    $jumlahdestinasi = Destinasi::count();
+    $jumlahuser = User::count();
+    // $jumlahulasan = Ulasan::count();
+    // $jumlahulasan = Ulasan::count();
+    return view('admin.welcomeadmin', compact('jumlahdestinasi', 'jumlahuser'));
+});
 
 Route::get('/destinasi', function () {
     return view('user.destinasi');
@@ -74,16 +82,16 @@ Route::post('/updatedestinasi{id}',[DestinasiController::class, 'updatedestinasi
 
 Route::get('/deletedestinasi/{id}',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
 
-// //Data Ulasan
-// Route::get('/ulasan',[DestinasiController::class, 'ulasan'])->name('ulasan');
+//Data Kota Relasi
+Route::get('/kota',[KotaController::class, 'kota'])->name('kota');
 
-// Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
-// Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
+Route::get('/tambahkota',[KotaController::class, 'tambahkota'])->name('tambahkota');
+Route::post('/insertkota',[KotaController::class, 'insertkota'])->name('insertkota');
 
-// Route::get('/tampildestinasi/{id}',[DestinasiController::class, 'tampildestinasi'])->name('tampildestinasi');
-// Route::post('/updatedestinasi{id}',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
+Route::get('/tampilkota/{id}',[KotaController::class, 'tampilkota'])->name('tampilkota');
+Route::post('/updatekota{id}',[KotaController::class, 'updatekota'])->name('updatekota');
 
-// Route::get('/deletedestinasi/{id}',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
+Route::get('/deletekota/{id}',[KotaController::class, 'deletekota'])->name('deletekota');
 
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');
