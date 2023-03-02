@@ -48,16 +48,55 @@ Route::get('/login', function () {
     return view('user.login');
 });
 
+//kota
+
 Route::get('/bandung', function () {
-    return view('user.tujuan.bandung');
+    return view('user.kota.bandung');
 });
 
 Route::get('/bali', function () {
-    return view('user.tujuan.bali');
+    return view('user.kota.bali');
 });
 
 Route::get('/semarang', function () {
-    return view('user.tujuan.semarang');
+    return view('user.kota.semarang');
+});
+
+Route::get('/surabaya', function () {
+    return view('user.kota.surabaya');
+});
+
+Route::get('/banten', function () {
+    return view('user.kota.banten');
+});
+
+Route::get('/batu', function () {
+    return view('user.kota.batu');
+});
+
+//wisata
+Route::get('/kawah', function () {
+    return view('user.wisata.kawah');
+});
+
+Route::get('/lembang', function () {
+    return view('user.wisata.lembang');
+});
+
+Route::get('/lawang', function () {
+    return view('user.wisata.lawang');
+});
+
+Route::get('/ayana', function () {
+    return view('user.wisata.ayana');
+});
+
+Route::get('/peuncang', function () {
+    return view('user.wisata.peuncang');
+});
+
+Route::get('/kya', function () {
+    return view('user.wisata.kya');
 });
 
 //Data User
