@@ -1298,11 +1298,10 @@
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_1.jpg') }}" alt="">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lembang.png') }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">Booking</a></h5>
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        <h5><a href="#">LEMBANG PARK & ZOO</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1311,11 +1310,10 @@
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_2.jpg') }}" alt="">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sewu.jpg') }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">Ticket Ordering</a></h5>
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        <h5><a href="#">TLAWANG SEWU</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1324,11 +1322,10 @@
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_3.jpg') }}" alt="">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/balizoo.jpg') }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">handpicked hotels</a></h5>
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        <h5><a href="#">BALI SAFARI MARINE</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1337,11 +1334,10 @@
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_4.jpg') }}" alt="">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/ijen.jpeg') }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">rent a car</a></h5>
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        <h5><a href="#">KAWAH IJEN</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1350,11 +1346,10 @@
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_5.jpg') }}" alt="">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/jatim1.jpg') }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">dance club</a></h5>
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        <h5><a href="#">JATIM PARK 1</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1363,11 +1358,10 @@
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/choose_6.jpg') }}" alt="">
+                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lmbk.jpg') }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">Booking</a></h5>
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proi auctor aliquet. </p>
+                                        <h5><a href="#">LOMBOK</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1392,9 +1386,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination1.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/semarang1.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">Hotels</a>
+                                        <a class="view_btn" href="#">Semarang</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1404,9 +1398,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination2.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/bandung.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">Islands</a>
+                                        <a class="view_btn" href="#">Bandung</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1416,9 +1410,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination3.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/bali.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">All-inclusive resorts</a>
+                                        <a class="view_btn" href="#">Bali</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1428,9 +1422,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination4.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banyuwangi.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">Attractions</a>
+                                        <a class="view_btn" href="#">Banyuwangi</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1440,7 +1434,7 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_theme_logo">
                                 <figure>
-                                    <a href="#"><img src="images/web_logo.png" alt=""></a>
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logoaja.jpg') }}" alt=""></a>
                                 </figure>
                             </div>
                         </div>
@@ -1449,9 +1443,9 @@
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
-                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/destination5.jpg') }}" alt="" />
+                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/malangkota.jpg') }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="#">Landmarks</a>
+                                        <a class="view_btn" href="#">Malang</a>
                                     </figcaption>
                                 </figure>
                             </div>
