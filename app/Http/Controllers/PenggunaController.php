@@ -10,7 +10,7 @@ class PenggunaController extends Controller
 {
     public function pengguna()
     {
-        $data = Pengguna::all();
+        $data = Pengguna::paginate(5);
         return view('admin.tabeluser.datauser', compact('data'));
     }
 

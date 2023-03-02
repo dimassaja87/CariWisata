@@ -9,7 +9,7 @@ class DestinasiController extends Controller
 {
     public function datadestinasi()
     {
-        $data = Destinasi::all();
+        $data = Destinasi::paginate(5);
         return view('admin.tabeldestinasi.datadestinasi', compact('data'));
     }
 
@@ -22,12 +22,12 @@ class DestinasiController extends Controller
     public function insertdestinasi(Request $request)
     {
         $data = Destinasi::create($request->all());
-        if ($request->hasFile('foto')) {
-            $request->file('foto')->move('fotowisata/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
+        if ($request->hasFile('foto_wisata')) {
+            $request->file('foto_wisata')->move('fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
+            $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->save();
 
-            return redirect()->route('datadestinasi');
+            return redirect()->route('datadestinasi')->with('success', 'Data Behasil Ditambahkan!');
         }
     }
 
@@ -41,13 +41,13 @@ class DestinasiController extends Controller
     {
         $data = Destinasi::find($id);
         $data->update($request->all());
-        return redirect()->route('datadestinasi');
+        return redirect()->route('datadestinasi')->with('success', 'Data Behasil Di Ubah!');
     }
 
     public function deletedestinasi($id)
     {
         $data = Destinasi::find($id);
         $data->delete();
-        return redirect()->route('datadestinasi');
+        return redirect()->route('datadestinasi')->with('success', 'Data Behasil Di Hapus!');
     }
 }
