@@ -7,29 +7,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Banten</title>
+		<title>Bandung</title>
 		<!-- Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="css/typography.css" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
         <!-- DL Menu CSS -->
-        <link href="js/dl-menu/component.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- Date And Time Picker CSS -->
-        <link rel="stylesheet" href="css/datetimepicker.css">
+        <link rel="stylesheet" href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
         <!-- FontAwesome Icon CSS -->
-        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
         <!-- Slick Slider CSS -->
-        <link href="css/slick.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}" rel="stylesheet">
         <!-- Widget CSS -->
-        <link href="css/widget.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
         <!-- Short Code CSS -->
-        <link href="css/shortcode.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
         <!-- Custom Style CSS -->
-        <link href="style.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
         <!-- Color CSS -->
-        <link href="css/color.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
         <!-- Responsive CSS -->
-        <link href="css/responsive.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
 	</head>
 	<body>
 		<div class="iqoniq_wrapper">
@@ -39,19 +39,19 @@
 				<div class="mg_nav_wrapper">
                     <!-- iqoniq Logo Start-->
 					<div class="mg_logo">
-                        <a href="#"><img src="images/logo.png" width="220" alt=""/></a>
+                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220" alt=""/></a>
                     </div>
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                         <ul class="mg_navigation">
-                            <li><a href="../index.html">Beranda</a></li>
-                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
                             <li>
-                                <a href="../top-destinations.html">Destinasi</a>
+                                <a href="/destinasi">Destinasi</a>
                             </li>
                             <li>
-                                <a href="../contact-us.html">Contact Us</a>
+                                <a href="/contactus">Contact Us</a>
                                 <!-- <ul class="children">
                                     <li><a href="contact-us.html">contact-us</a></li>
                                     <li><a href="contact-us2.html">contact-us2</a></li>
@@ -63,17 +63,13 @@
                             <button class="dl-trigger">Open Menu</button>
                             <ul class="dl-menu">
                                 <li class="menu-item mg-parent-menu">
-                                    <a href="../index.html">Beranda</a>
+                                    <a href="/">Beranda</a>
                                 </li>
-                                <li><a href="../about-us.html">About Us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="../style.css">Destinasi</a>
+                                <li><a href="/aboutus">About Us</a></li>
+                                <li class="menu-item mg-parent-menu"><a href="/destinasi">Destinasi</a>
                                 </li>
-                                <li class="menu-item mg-parent-menu"><a href="../contact-us.html">Contact Us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="/contactus">Contact Us</a>
+                                    </li>
                             </ul>
                         </div>
                         <!--DL Menu END-->
@@ -90,7 +86,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Banten</h2>
+                    <h2>Bandung</h2>
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>
@@ -118,23 +114,23 @@
                                             <div class="mg_room_detail_wrap">
                                                 <!-- Room Slider Start -->
                                                 <div class="room-slider-wrap">
-                                                    <div class="room-slider"> 
-                                                        <figure><img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.WCOzuIETo7rGSGmHryMyeQHaE7?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://3.bp.blogspot.com/-YkTuDxaVwO4/VcyzLd11O4I/AAAAAAAACrM/MlyPHAABNk4/s1600/Pantai-Sawarna.jpg" alt=""></figure>
-                                                        <figure><img src="https://www.reservasiku.com/wp-content/uploads/2018/12/20170305_083854.jpg" alt=""></figure>
-                                                        <figure><img src="https://1.bp.blogspot.com/-TeftdRvoYZI/X6wJTW0TZdI/AAAAAAAATBo/0o0c5uWjs8AjSOqriDDeEia8pPD4ZNc3ACLcBGAsYHQ/s2048/Masjid-Banten-Lama-Blue.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.6WJQEuJfw1izSs8iG-WSYwHaE9?pid=ImgDet&rs=1" alt=""></figure>
+                                                <div class="room-slider"> 
+                                                        <figure><img src="https://digstraksi.com/wp-content/uploads/2020/07/Tempat-Wisata-Bernuansa-Alam-Di-Bandung-1024x682.jpg" alt=""></figure>
+                                                        <figure><img src="https://1.bp.blogspot.com/-AG1q_Q_vhDY/UgttAVSnIuI/AAAAAAAAAWQ/jZAcNHIn9_Q/s1600/tempat-wisata-di-bandung.jpg" alt=""></figure>
+                                                        <figure><img src="https://i0.wp.com/cdn.idntimes.com/content-images/post/20180321/orchidforestcikole-36dfcfa7c66c8b3542ccfa195ace9e9d.jpg" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.tMwvXCI1MQtAP-6pYKa-zQHaE6?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://www.destinasibandung.co.id/wp-content/uploads/2021/01/133965811_398810531235068_8306890096091222484_n.jpg" alt=""></figure>
+                                                        <figure><img src="https://www.arwini.com/wp-content/uploads/2016/07/Tempat-Wisata-Favorit-di-Bandung.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Start -->
                                                     <!-- Room Slider Nav Start -->
                                                     <div class="room-slider-nav">
-                                                        <figure><img src="https://th.bing.com/th/id/R.49aa83684085078dabe47178e10b6cb0?rik=fEMiO7bHo2AIsg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-8AUO702HkVU%2fViMRoAF7upI%2fAAAAAAAAAaQ%2fzToFJbZEf78%2fs1600%2fanyer1.JPG&ehk=0MArMVr0J2xhirB88gTM3LM%2b9%2frh3uCHRcNJKJLDx9E%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.57YYxm3h0VYrJw26DuRIxwHaEb?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/R.cee2b89fc9bfca29b53f96a94badc7f2?rik=MYZ1qupoB5PIJA&riu=http%3a%2f%2fanekatempatwisata.com%2fwp-content%2fuploads%2f2015%2f06%2fwisata-Tanjung-Lesung.jpg&ehk=yw%2b4DvZE5J8nqpm0xZoBTN8%2bMpEjbWX0FW%2f%2fvSf9PP8%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
-                                                        <figure><img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/07/09/pantai-tanjung-lesung-bantengjp-20210709121442.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/R.d5b8dd3c24c457ed6ce83d7871958cca?rik=BcDtsYIcK%2fyiDw&riu=http%3a%2f%2fblog.reservasi.com%2fwp-content%2fuploads%2f2017%2f01%2frawa-danau-1024x677.jpg&ehk=gLqPlyk2qaBD7IIP8V8Z%2bcx2FZg1C9EvS0lNFYXR0Ok%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/R.08df633c822e4f8b49fb46e3243ec622?rik=gY2n3eBNI%2bLM8g&riu=http%3a%2f%2ffotowisata.com%2fwp-content%2fuploads%2f2014%2f08%2ftempat-wisata-pulau-dua-banten.jpg&ehk=Zr54mFfxUHtNzTBfxXq%2bcHUCYkcI8taVXg76Lq0YTjQ%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
+                                                        <figure><img src="https://digstraksi.com/wp-content/uploads/2020/07/Tempat-Wisata-Bernuansa-Alam-Di-Bandung-1024x682.jpg" alt=""></figure>
+                                                        <figure><img src="https://1.bp.blogspot.com/-AG1q_Q_vhDY/UgttAVSnIuI/AAAAAAAAAWQ/jZAcNHIn9_Q/s1600/tempat-wisata-di-bandung.jpg" alt=""></figure>
+                                                        <figure><img src="https://i0.wp.com/cdn.idntimes.com/content-images/post/20180321/orchidforestcikole-36dfcfa7c66c8b3542ccfa195ace9e9d.jpg" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.tMwvXCI1MQtAP-6pYKa-zQHaE6?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://www.destinasibandung.co.id/wp-content/uploads/2021/01/133965811_398810531235068_8306890096091222484_n.jpg" alt=""></figure>
+                                                        <figure><img src="https://www.arwini.com/wp-content/uploads/2016/07/Tempat-Wisata-Favorit-di-Bandung.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Nav End -->
                                                 </div>
@@ -145,43 +141,28 @@
                                             <div class="room-detail-contant">
                                                 <div class="row">
                                                     <div class="mg_blog_full">
-                                                        <h5 class="blog_title"><a>Banten</a></h5>
+                                                        <div class="thumb">
+                                                        <h3 class="blog_title"><a>Akhir Pekan di Bandung</a></h3>
                                                         <div class="mg_blog_contant">
-                                                            <div class="thumb">
-                                                            
-                                                            <p>Banten adalah sebuah provinsi di Indonesia yang penuh dengan berbagai pesona alam yang indah dan cocok untuk segala usia.</p>
-                                                            <br><h5></h5></br>
-                                                            <p>Kawasan Banten Lama di Kabupaten Serang banyak meninggalkan bangunan yang memiliki nilai sejarah tinggi. Salah satu bangunan yang masih tersisa adalah Keraton Kaibon yang terletak di Kampung Kroya, Kelurahan Kasunyatan, Kecamatan Kasemen.</p>
-                                                        
-                                                            </div>
+                                                        <p>Kota Bandung adalah ibu kota Provinsi Jawa Barat yang sekaligus menjadi pusat pemerintahan dan perekonomian dari Provinsi Jawa Barat, Indonesia. Kota Bandung juga merupakan kota terbesar ketiga di Indonesia setelah Jakarta dan Surabaya.</p>
+                                                            <br><h5>Peninggalan
+                                                                Belanda</h5></br>
+                                                            <p>Diantaranya Gedung Sate sekarang berfungsi sebagai kantor pemerintah provinsi Jawa Barat, Gedung Pakuan yang sekarang menjadi tempat tinggal resmi gubernur provinsi Jawa Barat, Gedung Dwi Warna atau Indische Pensioenfonds sekarang digunakan oleh Kementerian Keuangan Republik Indonesia untuk Kantor Wilayah XII Ditjen Pembendaharaan Bandung, Villa Isola sekarang digunakan Universitas Pendidikan Indonesia, Stasiun Hall atau Stasiun Bandung dan Gedung Kantor Pos Besar Kota Bandung.</p>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Gedung-Sate-Trees.jpg/1280px-Gedung-Sate-Trees.jpg" alt="">
+
+                                                        </div>
                                                         <h5 class="blog_main_title"></h5>
                                                         <div class="thumb">
                                                         <br><h5>Seni & Budaya</h5></br>
-                                                        <p>Banten sendiri memiliki banyak jenis kesenian Tradisional seperti tari adat tradisional dan alat musik tradisional khas Banten dan masih banyak lainnya</p>
-                                                    <img src="https://th.bing.com/th/id/R.c43eeea651ef1a4af1e5bb1e70663e65?rik=Lw3M7ZAU2%2bxgig&riu=http%3a%2f%2f4.bp.blogspot.com%2f-sMvKcPuvEKI%2fTXhZBIhh2iI%2fAAAAAAAAAf0%2f4Y_xEeljI-I%2fs1600%2fDSCF1016v.jpg&ehk=ndlS8oCZqfi0R6j0%2biiAvQVr4bDR588Tqjcwv1ov%2b0E%3d&risl=&pid=ImgRaw&r=0" alt="">
+                                                        <p>Kota Bandung juga memiliki beberapa ruang publik seni seperti museum, gedung pertunjukan dan galeri diantaranya Gedung Merdeka, tempat berlangsungnya Konferensi Tingkat Tinggi Asia-Afrika pada tahun 1955, Museum Sri Baduga, yang didirikan pada tahun 1974 dengan menggunakan bangunan lama bekas Kawedanan Tegallega, Museum Geologi Bandung, Museum Wangsit Mandala Siliwangi, Museum Barli, Museum Kota Bandung, Gedung Yayasan Pusat Kebudayaan, Gedung Indonesia Menggugat dahulunya menjadi tempat Ir. Soekarno menyampaikan pledoinya yang fenomenal (Indonesia Menggugat) pada masa penjajahan Belanda, Taman Budaya Jawa Barat (TBJB) dan Rumentang Siang.</p>
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sri_Baduga_Museum.JPG/1024px-Sri_Baduga_Museum.JPG" alt="">
                                                         </div>
                                                         <div class="thumb">
                                                         <br><h5>Kuliner</h5></br>
-                                                        <p>Selain tempat wisata nya di Banten juga terdapat kuliner yang menggoda, Kulinernya merupakan percampuran antara budaya Sunda dan Betawi yang memang kental di Banten. Selain enak, harganya juga ramah di kantong.</p>
-                                                    <img src="https://img.okezone.com/content/2017/09/02/298/1768155/okezone-week-end-lebih-mengenal-rabeg-kuliner-khas-banten-yang-selalu-hadir-saat-idul-adha-oPTAgg9K9F.jpg" alt="">
-                                             </div>  
-                                         </div>
-                                        </div>  
-                                    </div>
-                        
-                
-                                    </div>
-                                    <!-- Blog Full End -->
-                                    <!-- Blog Comment Wrap Start -->
-                                    <div class="mg_comment_wrap">
-                                        <h5 class="blog_main_title">132 Ulasan</h5>
-                                        <ul>
-                                            <li>
-                                                <div class="mg_comment_dec">
-                                                    <figure><img src="extra-images/comment_user1.jpg" alt=""></figure>
-                                                    <div class="overflow_text">
-                                                        <h6><a href="#">john doe</a><span>( JUNE 20, 2014 )</span></h6>
-                                                        <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
+                                                        <p>Kota Bandung memiliki banyak ragam kuliner, mulai dari kuliner khas sunda di rumah makan, hingga jajanan aci di pinggir jalan. Uniknya, kuliner-kuliner yang dijajakan di Bandung memiliki cita rasa yang menggugah selera, meskipun harganya ramah di kantong.</p>
+                                                    <img src="https://pergiyuk.com/wp-content/uploads/2020/11/batagor-1024x768.jpg" alt="">
+                                                        </div>  
+                                        </div>
                                                     </div>
                                                     <!-- Room Reservation End -->
                                                 </div>
@@ -197,6 +178,7 @@
                                                             <input type="text" placeholder="Cari Wisatamu!">
                                                             <label class="search_icon"><input type="submit"></label>
                                                         </div>
+                                                    </div>
                                                 </div>
                                                 <!-- Widget Search End-->
                                                 <!-- Widget Contant Start-->
@@ -298,7 +280,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""/>
+                                                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="../destinasi/lembang.html">Selengkapnya</a>
                                                         </figcaption>
@@ -318,7 +300,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://th.bing.com/th/id/OIP.bu8EqSN2pVRobAmc-LhMOgHaE8?pid=ImgDet&w=1600&h=1067&rs=1" alt=""/>
+                                                    <img src="https://th.bing.com/th/id/OIP.bu8EqSN2pVRobAmc-LhMOgHaE8?pid=ImgDet&w=1600&h=1067&rs=1" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="../destinasi/kawah.html">Selengkapnya</a>
                                                         </figcaption>
@@ -330,6 +312,9 @@
                                                         <div class="mg_destination_review">
                                                             <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
                                                         </div>
+                                                        <!-- <div class="mg_destination_review">
+                                                            <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.</p>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -338,7 +323,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="extra-images/usa3.jpg" alt=""/>
+                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa3.jpg') }}" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="#">Selengkapnya</a>
                                                         </figcaption>
@@ -390,7 +375,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="widget widget_text">
                             <div class="logo">
-                                <a href="#"><img src="images/logo.png" alt="" /></a>
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" alt="" /></a>
                             </div>
                             <div class="text">
                                 <p>
@@ -535,21 +520,21 @@
             <!-- register Modal end-->
 		</div>
         <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
         <!-- bootstrap -->
-        <script src="js/bootstrap.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
         <!-- Slick Slider -->
-        <script src="js/slick.min.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
         <!--Dl Menu Script-->
-        <script src="js/dl-menu/modernizr.custom.js"></script>
-        <script src="js/dl-menu/jquery.dlmenu.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
         <!-- Accordian -->
-        <script src="js/jquery.accordion.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.accordion.js') }}"></script>
         <!-- Date Time Picker -->
-        <script src="js/jquery.datetimepicker.full.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
         <!--Custom Script-->
-        <script src="js/custom.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 	</body>
 
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:37:17 GMT -->
