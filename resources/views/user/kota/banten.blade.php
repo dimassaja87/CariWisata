@@ -40,7 +40,7 @@
 				<div class="mg_nav_wrapper">
                     <!-- iqoniq Logo Start-->
 					<div class="mg_logo">
-                        <a href="#"><img src="images/logo.png" width="220" alt=""/></a>
+                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220" alt=""/></a>
                     </div>
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
