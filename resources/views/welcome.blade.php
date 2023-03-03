@@ -44,47 +44,19 @@
             <div class="mg_nav_wrapper">
                 <!-- iqoniq Logo Start-->
                 <div class="mg_logo">
-                    <a href="#"><img src="images/logo.png" alt="" /></a>
+                    <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220px" alt="" /></a>
                 </div>
                 <!-- iqoniq Logo End-->
                 <!-- iqoniq Navigation Start-->
                 <div class="mg_nav">
                     <ul class="mg_navigation">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about-us.html">about us</a></li>
+                        <li><a href="/">Beranda</a></li>
+                        <li><a href="/aboutus">about us</a></li>
                         <li>
-                            <a href="#">Rooms</a>
-                            <ul class="children">
-                                <li><a href="our-rooms.html">our rooms</a></li>
-                                <li><a href="room-detail.html">room detail</a></li>
-                            </ul>
+                            <a href="/destinasi">Destinasi</a>
                         </li>
                         <li>
-                            <a href="#">blog</a>
-                            <ul class="children">
-                                <li><a href="blog-medium-grid.html">blog medium</a></li>
-                                <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
-                                <li><a href="blog-listing.html">blog-listing</a></li>
-                                <li><a href="blog-full.html">blog full</a></li>
-                                <li><a href="blog-detail.html">blog detail</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="top-destinations.html">top destinations</a>
-                        </li>
-                        <li>
-                            <a href="#">pages</a>
-                            <ul class="children">
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="comingsoon.html">comingsoon</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">contact us</a>
-                            <ul class="children">
-                                <li><a href="contact-us.html">contact-us</a></li>
-                                <li><a href="contact-us2.html">contact-us2</a></li>
-                            </ul>
+                            <a href="/hubungi">contact us</a>
                         </li>
                     </ul>
                     <!--DL Menu Start-->
@@ -92,37 +64,12 @@
                         <button class="dl-trigger">Open Menu</button>
                         <ul class="dl-menu">
                             <li class="menu-item mg-parent-menu">
-                                <a href="index.html">home</a>
+                                <a href="/">Beranda</a>
                             </li>
-                            <li><a href="about-us.html">About us</a></li>
-                            <li class="menu-item mg-parent-menu"><a href="#">Rooms</a>
-                                <ul class="dl-submenu">
-                                    <li><a href="our-rooms.html">our rooms</a></li>
-                                    <li><a href="room-detail.html">room detail</a></li>
-                                </ul>
+                            <li><a href="/aboutus">About us</a></li>
+                            <li class="menu-item mg-parent-menu"><a href="/destinasi">destinasi</a>
                             </li>
-                            <li class="menu-item mg-parent-menu"><a href="#">Blog</a>
-                                <ul class="dl-submenu">
-                                    <li><a href="blog-medium-grid.html">blog medium</a></li>
-                                    <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
-                                    <li><a href="blog-listing.html">blog-listing</a></li>
-                                    <li><a href="blog-full.html">blog full</a></li>
-                                    <li><a href="blog-detail.html">blog detail</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item mg-parent-menu"><a href="top-destinations.html">top destinations</a>
-                            </li>
-                            <li class="menu-item mg-parent-menu"><a href="#">pages</a>
-                                <ul class="dl-submenu">
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="comingsoon.html">comingsoon</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item mg-parent-menu"><a href="#">contact us</a>
-                                <ul class="dl-submenu">
-                                    <li><a href="contact-us.html">contact-us</a></li>
-                                    <li><a href="contact-us2.html">contact-us2</a></li>
-                                </ul>
+                            <li class="menu-item mg-parent-menu"><a href="/hubungi">contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -168,7 +115,7 @@
                     <!-- iqoniq Heading Start -->
                     <div class="mg_hotel_hd1">
                         <h6></h6>
-                        <h4>Book hotels in top destinations</h4>
+                        <h4>Cari dan Nikmati</h4>
                     </div>
                     <!-- iqoniq Heading End -->
                     <!-- Destination Start -->
@@ -196,7 +143,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lembang.png') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">selengkapnya</a>
+                                                        <a class="view_btn" href="/lembang">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -213,7 +160,7 @@
                                                 <figure>
                                                     <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/kawah putih.webp') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">selengkapnya</a>
+                                                        <a class="view_btn" href="/kawah">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
@@ -311,7 +258,7 @@
                                                 </figure>
                                                 <div class="text">
                                                     <div class="mg_destination_hd">
-                                                        <h5><a href="#">Lawang Sewu</a></h5>
+                                                        <h5><a href="/lawang">Lawang Sewu</a></h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -321,14 +268,14 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/saloka.webp') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/ayana.jpg') }}" alt="" />
                                                     <figcaption>
-                                                        <a class="view_btn" href="#">selengkapnya</a>
+                                                        <a class="view_btn" href="/ayana">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
                                                     <div class="mg_destination_hd">
-                                                        <h5><a href="#">Saloka Theme Park</a></h5>
+                                                        <h5><a href="#">Ayana Gedong Songo</a></h5>
                                                     </div>
                                                 </div>
                                             </div>
