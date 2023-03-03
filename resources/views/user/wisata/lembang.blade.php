@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:40:59 GMT -->
 <head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
@@ -35,7 +35,7 @@
 				<div class="mg_nav_wrapper">
                     <!-- iqoniq Logo Start-->
 					<div class="mg_logo">
-                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220" alt=""/></a>
+                        <a href="/"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220" alt=""/></a>
                     </div>
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
@@ -78,13 +78,13 @@
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
 			</header>
-            <!-- iqoniq Header End-->    
+            <!-- iqoniq Header End-->
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
                     <h2>Lembang Park & Zoo</h2>
                     <ul class="breadcrumb">
-                        <li><a href="../iqoniq-travel-light/index.html">Beranda</a></li>
+                        <li><a href="/">Beranda</a></li>
                     </ul>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                                             <br><h5>Tips Berkunjung</h5></br>
                                             <P>-Tinggi badan di bawah 80 cm bebas biaya tiket masuk.
                                             </P>
-                                            <p>-Mematuhi protokol kesehatan ketika ada di area LPZ.</p> 
+                                            <p>-Mematuhi protokol kesehatan ketika ada di area LPZ.</p>
                                         <img src="https://www.bobocantik.com/wp-content/uploads/2020/10/lembang-park-and-zoo-1024x768.jpg" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk Wahana dan Fasilitas</h5></br>
@@ -157,7 +157,7 @@
 
                                                 <p>Selain berbagai wahana wisata, fasilitas di sini sangat lengkap dan memadai. Anda juga bisa menggunakan scooter jika tidak ingin kelelahan menjelajahi areanya yang sangat luas. Di area Lembang Park & Zoo ada banyak kios makanan dan minuman. Lalu ada toko oleh-oleh khas, termasuk t-shirt, dan banyak lagi yang lainnya.</p>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
@@ -339,7 +339,7 @@
                     </div>
                 </section>
             </div>
-            <!-- iqoniq Footer Start-->  
+            <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
                 <div class="container">
                     <!-- Widget Text Start-->
@@ -440,7 +440,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sign-up2">
                                 <div class="modal-content">
@@ -470,7 +470,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>

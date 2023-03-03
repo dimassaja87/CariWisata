@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:36:29 GMT -->
 <head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- Date And Time Picker CSS -->
@@ -82,7 +82,7 @@
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
 			</header>
-            <!-- iqoniq Header End-->    
+            <!-- iqoniq Header End-->
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
@@ -114,7 +114,7 @@
                                             <div class="mg_room_detail_wrap">
                                                 <!-- Room Slider Start -->
                                                 <div class="room-slider-wrap">
-                                                    <div class="room-slider"> 
+                                                    <div class="room-slider">
                                                         <figure><img src="https://i.pinimg.com/originals/07/be/4f/07be4f2abd4b3fa8bb1e5c05abb3692b.jpg" alt=""></figure>
                                                         <figure><img src="https://th.bing.com/th/id/OIP.w-aMRwtFGaRJptsXNaZgvQAAAA?pid=ImgDet&rs=1" alt=""></figure>
                                                         <figure><img src="https://i.pinimg.com/originals/90/03/f1/9003f1629a40e7fa3d7e574913a395b6.jpg" alt=""></figure>
@@ -151,19 +151,19 @@
                                                             <img src="https://th.bing.com/th/id/R.f516635129afbef97411a1fed42c2ad1?rik=DqiRlSmMgD77sQ&riu=http%3a%2f%2ffasrglow967.weebly.com%2fuploads%2f1%2f2%2f4%2f2%2f124261824%2f599552257.jpg&ehk=VD9D90wYJQF2zjIa2l07HLxGOBpupP518TKI2Jqf5XM%3d&risl=&pid=ImgRaw&r=0" alt="">
                                                                 </div>
                                                         <h5 class="blog_main_title"></h5>
-                                                        <div class="thumb">  
+                                                        <div class="thumb">
                                                                 <br><h5>Seni dan Budaya</h5></br>
                                                                 <p>Bali tidak hanya dianugerahi keindahan alam yang mempesona, tapi juga kekayaan seni dan budaya yang melimpah. Kekayaan seni dan budaya tersebut direpresentasikan oleh adanya Taman Budaya Bali sebagai wadah untuk menampung kreativitas dan seniman Bali. Pembangunan taman budaya ini terencana dengan sangat matang dan serius. </p>
                                                                 <img src="https://3.bp.blogspot.com/-CvUb5tVHzAc/WOkpfmeBx1I/AAAAAAAACJc/uJ3nAPNS8-Y0_ey2yl9219Tq94uMXhq6wCLcB/s1600/Taman%2BBudaya%2BBali.jpg" alt="">
-                                                                </div> 
+                                                                </div>
                                                         <div class="thumb">
                                                             <br><h5>Kuliner</h5></br>
                                                             <p>Pulau bali memiliki berbagai macam kuliner yang nikmat dan harganya juga cukup murah.
-                                                            Bagi kalian yang berlibur ke bali dan ingin mencicipi makanan khas bali yang mendunia & terkenal tentu ini bisa di agendakan terlebih dahulu.   
+                                                            Bagi kalian yang berlibur ke bali dan ingin mencicipi makanan khas bali yang mendunia & terkenal tentu ini bisa di agendakan terlebih dahulu.
                                                             Mau pergi ke bali bersama keluarga atau bersama teman-teman untuk mengisi waktu liburan akhir sekolah.</p>
                                                         <img src="https://th.bing.com/th/id/R.3c4aa202ea6a774209d0b332e4098042?rik=kjP%2f3Eud9Arc2w&riu=http%3a%2f%2fwww.balipost.com%2fwp-content%2fuploads%2f2017%2f10%2fbalipostcom_ingin-rasakan-kuliner-khas-bali-coba-bali-rijsttafel-ala-jempiring-restaurant_01.jpg&ehk=WWYO1wRBJYaOpIakVD1C%2ft%2fLEPinjf29GfnTb%2b6kwP4%3d&risl=&pid=ImgRaw&r=0" alt="">
                                                             </div>
-                                                </div>  
+                                                </div>
                                         </div>
                             </div>
                                     </div>
@@ -376,11 +376,11 @@
                             </div>
                             <!-- Tab panes End -->
                         </div>
-                        
+
                     </div>
                 </section>
             </div>
-            <!-- iqoniq Footer Start-->  
+            <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
                 <div class="container">
                     <!-- Widget Text Start-->
@@ -481,7 +481,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sign-up2">
                                 <div class="modal-content">
@@ -511,7 +511,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>
