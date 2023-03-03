@@ -409,7 +409,7 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td class="id_wisata">{{ $row->id_wisata }}</td>
+                                                            <td class="id_wisata">{{ $row->destinasis->nama_wisata }}</td>
                                                             <td class="rating">{{ $row->rating }}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">

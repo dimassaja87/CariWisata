@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Destinasi;
 use App\Models\Rating;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -24,8 +25,8 @@ class RatingController extends Controller
     {
         $data = Rating::all();
         // $jurusan = Jurusan::all();
-        // $destinasi = Destinasi::all();
-        return view('admin.tabelrating.tambahrating', compact('data'));
+        $destinasi = Destinasi::all();
+        return view('admin.tabelrating.tambahrating', compact('data', 'destinasi'));
     }
 
     public function insertrating(Request $request)
@@ -48,10 +49,10 @@ class RatingController extends Controller
     {
         $data = Rating::find($id);
         // $jurusan = Jurusan::all();
-        // $destinasi = Destinasi::all();
+        $destinasi = Destinasi::all();
         // dd($data);
 
-        return view('admin.tabelrating.tampilrating', compact('data'));
+        return view('admin.tabelrating.tampilrating', compact('data', 'destinasi'));
     }
 
     public function updaterating(Request $request, $id)

@@ -60,13 +60,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Data Destinasi</h4>
+                                    <h4 class="mb-sm-0">Data Rating</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Destinasi</a>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Rating</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Tambah Data Destinasi</li>
+                                            <li class="breadcrumb-item active">Tambah Data Rating</li>
                                         </ol>
                                     </div>
 
@@ -92,7 +92,7 @@
                                                 <select class="form-select form-control" aria-label="Default select example"
                                                     name="id_wisata" required>
                                                     <option selected>Tidak ada yang dipilih</option>
-                                                    @foreach ($rating as $data)
+                                                    @foreach ($destinasi as $data)
                                                         <option value="{{ $data->id }}">{{ $data->nama_wisata }}</option>
                                                     @endforeach
                                                 </select>
@@ -111,7 +111,7 @@
                                                     <button type="button" class="btn btn-light"
                                                         data-bs-dismiss="modal">Close</button>
                                                     <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                                        rating</button>
+                                                        Rating</button>
                                                     <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                 </div>
                                             </div>
