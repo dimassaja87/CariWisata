@@ -106,6 +106,14 @@ Route::get('/kya', function () {
     return view('user.wisata.kya');
 });
 
+Route::get('/tanahlot', function () {
+    return view('user.wisata.tanahlot');
+});
+
+Route::get('/jatim', function () {
+    return view('user.wisata.jatim');
+});
+
 //Data User
 Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
 

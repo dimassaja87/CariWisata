@@ -98,9 +98,9 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Jawa Timur PArk 3</a></h5>
+                                        <h5 class="blog_title"><a>Jawa Timur Park 3</a></h5>
                                         <div class="thumb">
-                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
+                                            <img src="https://s2.bukalapak.com/bukalapak-kontenz-production/content_attachments/51502/original/jt_3.jpg" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
@@ -190,6 +190,11 @@
                                                         <input placeholder="No Telp" type="text">
                                                     </div>
                                                 </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="mg_input_1">
+                                                        <input placeholder="Foto" type="file">
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
                                                         <input placeholder="E-mail" type="text">
@@ -233,7 +238,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1601460678/blog/fn6axuxtktmf0qhgykmc.webp" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/kawah.html">Kawah Putih Ciwidey</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/kawah">Kawah Putih Ciwidey</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
                                                 </div>
                                             </div>
@@ -242,7 +247,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/lembang.html">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/lembang">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Lembang Park & Zoo cocok untuk Anda yang ingin berlibur bersama keluarga dan anak-anak.</p>
                                                 </div>
                                             </div>
@@ -251,7 +256,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://bisniswisata.co.id/wp-content/uploads/2019/06/lawang-sewu-1068x712.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/lawang.html">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/lawang">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Wisata Lawang Sewu cocok untuk Anda yang suka berwisata ke tempat bersejarah.</p>
                                                 </div>
                                             </div>
@@ -260,7 +265,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/ayana.html">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/ayana">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.
                                                     </p>
                                                 </div>
@@ -305,6 +310,7 @@
                                             <a class="tag" href="#">Akhirpekan</a>
                                         </div>
                                     </div>
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                                     <!-- Widget Tags End-->
                                 </div>
                             </div>

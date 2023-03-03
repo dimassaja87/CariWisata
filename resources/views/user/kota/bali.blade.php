@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:36:29 GMT -->
 <head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- Date And Time Picker CSS -->
@@ -82,13 +82,13 @@
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
 			</header>
-            <!-- iqoniq Header End-->    
+            <!-- iqoniq Header End-->
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
                     <h2>Bali</h2>
                     <ul class="breadcrumb">
-                        <li><a href="../top-destinations.html">Destinasi</a></li>
+                        <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                                             <div class="mg_room_detail_wrap">
                                                 <!-- Room Slider Start -->
                                                 <div class="room-slider-wrap">
-                                                    <div class="room-slider"> 
+                                                    <div class="room-slider">
                                                         <figure><img src="https://i.pinimg.com/originals/07/be/4f/07be4f2abd4b3fa8bb1e5c05abb3692b.jpg" alt=""></figure>
                                                         <figure><img src="https://th.bing.com/th/id/OIP.w-aMRwtFGaRJptsXNaZgvQAAAA?pid=ImgDet&rs=1" alt=""></figure>
                                                         <figure><img src="https://i.pinimg.com/originals/90/03/f1/9003f1629a40e7fa3d7e574913a395b6.jpg" alt=""></figure>
@@ -151,36 +151,29 @@
                                                             <img src="https://th.bing.com/th/id/R.f516635129afbef97411a1fed42c2ad1?rik=DqiRlSmMgD77sQ&riu=http%3a%2f%2ffasrglow967.weebly.com%2fuploads%2f1%2f2%2f4%2f2%2f124261824%2f599552257.jpg&ehk=VD9D90wYJQF2zjIa2l07HLxGOBpupP518TKI2Jqf5XM%3d&risl=&pid=ImgRaw&r=0" alt="">
                                                                 </div>
                                                         <h5 class="blog_main_title"></h5>
-                                                        <div class="thumb">  
+                                                        <div class="thumb">
                                                                 <br><h5>Seni dan Budaya</h5></br>
                                                                 <p>Bali tidak hanya dianugerahi keindahan alam yang mempesona, tapi juga kekayaan seni dan budaya yang melimpah. Kekayaan seni dan budaya tersebut direpresentasikan oleh adanya Taman Budaya Bali sebagai wadah untuk menampung kreativitas dan seniman Bali. Pembangunan taman budaya ini terencana dengan sangat matang dan serius. </p>
                                                                 <img src="https://3.bp.blogspot.com/-CvUb5tVHzAc/WOkpfmeBx1I/AAAAAAAACJc/uJ3nAPNS8-Y0_ey2yl9219Tq94uMXhq6wCLcB/s1600/Taman%2BBudaya%2BBali.jpg" alt="">
-                                                                </div> 
+                                                                </div>
                                                         <div class="thumb">
                                                             <br><h5>Kuliner</h5></br>
                                                             <p>Pulau bali memiliki berbagai macam kuliner yang nikmat dan harganya juga cukup murah.
-                                                            Bagi kalian yang berlibur ke bali dan ingin mencicipi makanan khas bali yang mendunia & terkenal tentu ini bisa di agendakan terlebih dahulu.   
+                                                            Bagi kalian yang berlibur ke bali dan ingin mencicipi makanan khas bali yang mendunia & terkenal tentu ini bisa di agendakan terlebih dahulu.
                                                             Mau pergi ke bali bersama keluarga atau bersama teman-teman untuk mengisi waktu liburan akhir sekolah.</p>
                                                         <img src="https://th.bing.com/th/id/R.3c4aa202ea6a774209d0b332e4098042?rik=kjP%2f3Eud9Arc2w&riu=http%3a%2f%2fwww.balipost.com%2fwp-content%2fuploads%2f2017%2f10%2fbalipostcom_ingin-rasakan-kuliner-khas-bali-coba-bali-rijsttafel-ala-jempiring-restaurant_01.jpg&ehk=WWYO1wRBJYaOpIakVD1C%2ft%2fLEPinjf29GfnTb%2b6kwP4%3d&risl=&pid=ImgRaw&r=0" alt="">
                                                             </div>
-                                                </div>  
+                                                </div>
                                         </div>
                             </div>
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
                                     <div class="mg_comment_wrap">
-                                        <h5 class="blog_main_title">132 Ulasan</h5>
+                                        <h5 class="blog_main_title"></h5>
                                         <ul>
                                             <li>
-                                                <div class="mg_comment_dec">
-                                                    <figure><img src="extra-images/comment_user1.jpg" alt=""></figure>
-                                                    <div class="overflow_text">
-                                                        <h6><a href="#">john doe</a><span>( JUNE 20, 2014 )</span></h6>
-                                                        <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
-                                                    </div>
-                                                    <!-- Room Reservation End -->
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <!-- Sidebar Start-->
@@ -207,7 +200,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://bisniswisata.co.id/wp-content/uploads/2019/06/lawang-sewu-1068x712.jpg" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/lawang.html">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/lawang">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Wisata Lawang Sewu cocok untuk Anda yang suka berwisata ke tempat bersejarah.</p>
                                                             </div>
                                                         </div>
@@ -216,7 +209,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/lembang.html">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/lembang">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Lembang Park & Zoo cocok untuk Anda yang ingin berlibur bersama keluarga dan anak-anak.</p>
                                                             </div>
                                                         </div>
@@ -225,7 +218,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/ayana.html">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/ayana">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.</p>
                                                             </div>
                                                         </div>
@@ -234,7 +227,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/peuncang.html">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/peuncang">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Wisata Pantai Peuncang cocok untuk Anda yang ingin berlibur akhir pekan sejenak dari hiruk-piruk kehidupan di kota.
                                                                 </p>
                                                             </div>
@@ -295,17 +288,17 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""/>
+                                                        <img src="https://th.bing.com/th/id/OIP.UGwSYObE6JCngXKaXo4I8AHaE8?pid=ImgDet&rs=1" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="../destinasi/lembang.html">Selengkapnya</a>
+                                                            <a class="view_btn" href="/tanahlot">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="../destinasi/lembang.html">Lembang Park & Zoo</a></h5>
+                                                            <h5><a href="/tanahlot">Tanah Lot Bali</a></h5>
                                                         </div>
                                                         <div class="mg_destination_review">
-                                                            <p>Lembang Park & Zoo cocok untuk Anda yang ingin berlibur bersama keluarga dan anak-anak.</p>
+                                                            <p>Tanah Lot merupakan salah satu tempat wisata pantai yang ada di Bali cocok untuk Anda yang suka ke Pantai dan Berbelanja</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -315,18 +308,18 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://th.bing.com/th/id/OIP.bu8EqSN2pVRobAmc-LhMOgHaE8?pid=ImgDet&w=1600&h=1067&rs=1" alt=""/>
+                                                        <img src="extra-images/usa3.jpg" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="../destinasi/kawah.html">Selengkapnya</a>
+                                                            <a class="view_btn" href="#">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="../destinasi/kawah.html">Kawah Putih Ciwidey</a></h5>
+                                                            <h5><a href="#">Coming Soon</a></h5>
                                                         </div>
-                                                        <div class="mg_destination_review">
+                                                        <!-- <div class="mg_destination_review">
                                                             <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -368,19 +361,17 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="mexico">
                                     <!-- Destination Tab Wrap Start -->
-                                    <div class="mg-map">
-                                        <div id="map-canvas"></div>
-                                    </div>
+                                    <br><div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div></br>
                                     <!-- Destination Tab Wrap End -->
                                 </div>
                             </div>
                             <!-- Tab panes End -->
                         </div>
-                        
+
                     </div>
                 </section>
             </div>
-            <!-- iqoniq Footer Start-->  
+            <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
                 <div class="container">
                     <!-- Widget Text Start-->
@@ -481,7 +472,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sign-up2">
                                 <div class="modal-content">
@@ -511,7 +502,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>

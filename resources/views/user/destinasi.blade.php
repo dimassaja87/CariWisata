@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/top-destinations.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:40:59 GMT -->
 <head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
@@ -78,7 +78,7 @@
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
 			</header>
-            <!-- iqoniq Header End-->    
+            <!-- iqoniq Header End-->
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
@@ -99,7 +99,7 @@
                             <div class="col-md-4 col-sm-6">
                                 <div class="mg_hotel_destination fancy-overlay">
                                     <figure>
-                                        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1601460678/blog/fn6axuxtktmf0qhgykmc.webp" alt="" />
+                                        <img src="https://asset.kompas.com/crops/ASrd8SDELxvy5W746vwTgKyY52A=/0x0:780x520/750x500/data/photo/2021/09/29/6153ca424f2bc.jpg" alt="" />
                                         <figcaption>
                                             <a class="view_btn" href="/bandung">Selengkapnya</a>
                                         </figcaption>
@@ -109,10 +109,10 @@
                                             <h5><a href="/bandung">Akhir Pekan di Bandung</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
-                                            <p>Liburan akhir pekan yang menyenangkan di Bandung.
+                                            <p>Liburan yang menyenangkan di Bandung.
                                             </p>
                                         </div>
-                                    
+
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="/semarang">Jelajah Semarang</a></h5>                                        
+                                            <h5><a href="/semarang">Jelajah Semarang</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
                                             <p>Menjelajahi Ibu Kota Jawa Tengah dengan seksama dan seru tentunya!</p>
@@ -241,7 +241,7 @@
                 </section>
             </div>
             <!-- Main Contant Wrap End -->
-            <!-- iqoniq Footer Start-->  
+            <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
                 <div class="container">
                     <!-- Widget Text Start-->
@@ -342,7 +342,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sign-up2">
                                 <div class="modal-content">
@@ -372,7 +372,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>

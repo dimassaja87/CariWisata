@@ -40,89 +40,36 @@
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
-                        <ul class="mg_navigation">
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="about-us.html">about us</a></li>
-                            <li>
-                                <a href="#">Rooms</a>
-                                <ul class="children">
-                                    <li><a href="our-rooms.html">our rooms</a></li>
-                                    <li><a href="room-detail.html">room detail</a></li>
-                                </ul>
+                    <ul class="mg_navigation">
+                        <li><a href="/">Beranda</a></li>
+                        <li><a href="/aboutus">about us</a></li>
+                        <li>
+                            <a href="/destinasi">Destinasi</a>
+                        </li>
+                        <li>
+                            <a href="/contactus">contact us</a>
+                        </li>
+                    </ul>
+                    <!--DL Menu Start-->
+                    <div id="mg-responsive-navigation" class="dl-menuwrapper">
+                        <button class="dl-trigger">Open Menu</button>
+                        <ul class="dl-menu">
+                            <li class="menu-item mg-parent-menu">
+                                <a href="/">Beranda</a>
                             </li>
-                            <li>
-                                <a href="#">blog</a>
-                                <ul class="children">
-                                    <li><a href="blog-medium-grid.html">blog medium</a></li>
-                                    <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
-                                    <li><a href="blog-listing.html">blog-listing</a></li>
-                                    <li><a href="blog-full.html">blog full</a></li>
-                                    <li><a href="blog-detail.html">blog detail</a></li>
-                                </ul>
+                            <li><a href="/aboutus">About us</a></li>
+                            <li class="menu-item mg-parent-menu"><a href="/destinasi">destinasi</a>
                             </li>
-                            <li>
-                                <a href="top-destinations.html">top destinations</a>
-                            </li>
-                            <li>
-                                <a href="#">pages</a>
-                                <ul class="children">
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="comingsoon.html">comingsoon</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">contact us</a>
-                                <ul class="children">
-                                    <li><a href="contact-us.html">contact-us</a></li>
-                                    <li><a href="contact-us2.html">contact-us2</a></li>
-                                </ul>
+                            <li class="menu-item mg-parent-menu"><a href="/hubungi">contact us</a>
                             </li>
                         </ul>
-                        <!--DL Menu Start-->
-                        <div id="mg-responsive-navigation" class="dl-menuwrapper">
-                            <button class="dl-trigger">Open Menu</button>
-                            <ul class="dl-menu">
-                                <li class="menu-item mg-parent-menu">
-                                    <a href="index.html">home</a>
-                                </li>
-                                <li><a href="about-us.html">About us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="#">Rooms</a>
-                                    <ul class="dl-submenu">
-                                       <li><a href="our-rooms.html">our rooms</a></li>
-                                        <li><a href="room-detail.html">room detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="#">Blog</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-medium-grid.html">blog medium</a></li>
-                                        <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
-                                        <li><a href="blog-listing.html">blog-listing</a></li>
-                                        <li><a href="blog-full.html">blog full</a></li>
-                                        <li><a href="blog-detail.html">blog detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="top-destinations.html">top destinations</a>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="#">pages</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="404.html">404</a></li>
-                                        <li><a href="comingsoon.html">comingsoon</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="#">contact us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--DL Menu END-->
-                        <div class="mg_login">
-                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                            <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login Or Register</span></a>
-                        </div>
                     </div>
+                    <!--DL Menu END-->
+                    <div class="mg_login">
+                        <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                        <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login Or Register</span></a>
+                    </div>
+                </div>
                     <!-- iqoniq Navigation End-->
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
@@ -230,77 +177,62 @@
             <!-- Main Contant Wrap End-->
             <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
-                <div class="container">
-                    <!-- Widget Text Start-->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_text">
-                            <div class="logo">
-                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/ft-logo.png') }}" alt=""/></a>
+            <div class="container">
+                <!-- Widget Text Start-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget widget_text">
+                        <div class="logo">
+                            <a href="#"><img
+                                    src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}"
+                                    alt="" /></a>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Cariwisata adalah website penyedia informasi tentang pariwisata yang ada di Indonesia.
+                            </p>
+                            <div class="mg_contact"><i class="fa fa-phone"></i><span>+62 678 837 817</span></div>
+                            <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>cariwisata@gmail.com</span>
                             </div>
-                            <div class="text">
-                                <p>
-                                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sanctus est Lorem ipsum dolor sit amet.
-                                </p>
-                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+92-1234567689</span></div>
-                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>iqoniqthemes@gmail.com</span></div>
-                            </div>
-                            <ul class="mg_social">
-                               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
                         </div>
+                        <ul class="mg_social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
                     </div>
-                    <!-- Widget Text End-->
-                    <!-- Widget Archives Start-->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_archives">
-                            <h6 class="widget-title">Our Services</h6>
-                            <ul>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                                <li><a href="#">Non felis. Maecenas malesuada</a></li>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Widget Archives End-->
-                    <!-- Widget Flicker Start-->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_flicker">
-                            <h6 class="widget-title">Photo gallery</h6>
-                            <ul>
-                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/flicker-1.jpg') }}" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Widget Flicker End-->
-                    <!-- Widget Search Start-->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_search">
-                            <h6 class="widget-title">keep in touch</h6>
-                            <form>
-                                <div class="mg_input_1">
-                                   <input type="text" placeholder="Your E-mail ID">
-                                </div>
-                                <div class="mg_input_1">
-                                    <textarea placeholder="Your Message"></textarea>
-                                </div>
-                                <p><input type="button" value="Send message"></p>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- Widget Search End-->
                 </div>
-            </footer>
+                <!-- Widget Text End-->
+                <!-- Widget Archives Start-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget widget_archives">
+                        <h6 class="widget-title">Our Service</h6>
+                        <ul>
+                            <li><a href="#">Beranda</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Destinasi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Widget Archives End-->
+                <!-- Widget Flicker Start-->
+                <!-- Widget Flicker End-->
+                <!-- Widget Search Start-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget widget_search">
+                        <h6 class="widget-title">keep in touch</h6>
+                        <form>
+                            <div class="mg_input_1">
+                                <input type="text" placeholder="Your E-mail">
+                            </div>
+                            <div class="mg_input_1">
+                                <textarea placeholder="Your Message"></textarea>
+                            </div>
+                            <p><input type="button" value="Kirim pesan"></p>
+                        </form>
+                    </div>
+                </div>
+                <!-- Widget Search End-->
+            </div>
+        </footer>
             <!-- iqoniq Footer End-->
             <!-- iqoniq Copyright Start-->
             <div class="mg_copyright">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:40:59 GMT -->
 <head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
@@ -78,7 +78,7 @@
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
 			</header>
-            <!-- iqoniq Header End-->    
+            <!-- iqoniq Header End-->
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
@@ -113,7 +113,7 @@
                                                 <p>-Karena sering ada hujan bawalah payung atau jas hujan</p>
                                                 <p>-Jangan terlalu lama berada di kawah karena membuat pernafasan Anda terganggu, Anda dapat naik sebentar ke atas dan kemudian kembali lagi ke Kawah bila masih ingin melihat pemandangan Kawah Putih Ciwidey, atau Anda bisa melihat dari lokasi view Cantigi ke bawah kawah</p>
                                                 <p>-Bila rombongan Anda terdiri dari sedikit orang, sebaiknya memarkir kendaraan di gerbang dan kemudian lanjut menggunakan angkutan wisata ontang-anting karena bisa lebih menikmati pemandangan hutan pegunungan dengan jelas saat menuju kawah</p>
-                                        </p>  
+                                        </p>
                                         <img src="https://th.bing.com/th/id/R.2fb81f7288e0f756736fd4a5f1b367f2?rik=EVfjrYeGTbS4eA&riu=http%3a%2f%2fanekatempatwisata.com%2fwp-content%2fuploads%2f2014%2f08%2fKawah-Putih-Ciwidey-Bandung.jpg&ehk=6iU8YYCWe%2bmDXgNbTpg5hA1ApsZ26BI3xsKWrUg0W1k%3d&risl=&pid=ImgRaw&r=0g" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
@@ -156,7 +156,7 @@
 
                                                 <p>Di daerah sekitar kawah juga terdapat pedagang yang menjual abu belerang dan bebatuan khas kawah. Cinderamata tersebut berkhasiat menyembuhkan penyakit kulit hingga menghilangkan jerawat.</p>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
@@ -330,6 +330,7 @@
                                             <a class="tag" href="#">Akhirpekan</a>
                                         </div>
                                     </div>
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                                     <!-- Widget Tags End-->
                                 </div>
                             </div>
@@ -338,7 +339,7 @@
                     </div>
                 </section>
             </div>
-            <!-- iqoniq Footer Start-->  
+            <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
                 <div class="container">
                     <!-- Widget Text Start-->
@@ -439,7 +440,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sign-up2">
                                 <div class="modal-content">
@@ -469,7 +470,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>

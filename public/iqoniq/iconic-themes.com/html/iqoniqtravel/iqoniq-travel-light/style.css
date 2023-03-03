@@ -24,12 +24,12 @@
         * 2.13 - Footer Css Start #Footer
     * 3.0 - Blog Full CSS START #Blog Full
     * 4.0 - Our Room CSS START #Our Room
-    * 5.0 - Blog Detail CSS START #Blog Detail 
+    * 5.0 - Blog Detail CSS START #Blog Detail
     * 6.0 - Contact Us Page CSS START #Contact Us
     * 7.0 - Room Detail Page CSS START #Room Detail
     * 8.0 - Error Page Start #Error Page
     * 9.0 - Coming Soon Page Start #comingsoon
-    * 10.0 - 
+    * 10.0 -
 
     [Color codes]
 
@@ -44,7 +44,7 @@
     a (active): #999999 (light black)
 
     [Typography]
-      
+
     Body copy:  14px/ "PT Sans",sans-serif
     Headers:  "Open Sans",sans-serif
     Input, textarea: "Open Sans",sans-serif
@@ -366,7 +366,7 @@ section{
     padding: 68px 0 75px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(extra-images/sub_banner.jpg);
+    background-image: url(extra-images/sip_banner.jpg);
 }
 .mg_sub_banner:before{
     top: 0;
@@ -1167,7 +1167,7 @@ footer .mg_contact,
 }
 /*
       ============================================================
-        Footer Css End #Footer 
+        Footer Css End #Footer
       ============================================================
 */
 /*
@@ -1293,7 +1293,7 @@ footer .mg_contact,
     padding-bottom: 10px;
 }
 .our-room .overflow_text{
-    padding:0 30px; 
+    padding:0 30px;
 }
 .room-feature{
     float: left;
@@ -1329,7 +1329,7 @@ footer .mg_contact,
     width: 100%;
 }
 .mg_blog_detail_wrap .mg_blog_full{
-    margin:0 0 23px; 
+    margin:0 0 23px;
 }
 .mg_blog_detail_wrap .mg_blog_full .blog_title{
     margin: 0 0 016px;
@@ -1351,9 +1351,9 @@ blockquote{
     float: left;
     width: 100%;
     margin: 7px 0 23px;
-    padding:36px 50px 37px; 
+    padding:36px 50px 37px;
     border:1px solid #eeeef6;
-    box-shadow: 0 10px 5px 0 rgba(0,0,0,0.1); 
+    box-shadow: 0 10px 5px 0 rgba(0,0,0,0.1);
 }
 blockquote p{
     width: 100%;
@@ -1361,7 +1361,7 @@ blockquote p{
     color: #7d8386;
     font-size: 24px;
     font-weight: 500;
-    font-style:italic; 
+    font-style:italic;
     position: relative;
     margin: 0 !important;
     display: -webkit-flex;
@@ -1374,7 +1374,7 @@ blockquote p:before{
     float: left;
     left: -29px;
     content: "\f10d";
-    font-style:normal; 
+    font-style:normal;
     position: absolute;
     margin: 0 10px 0 0;
     color: currentColor;
@@ -1485,7 +1485,7 @@ blockquote p:after{
 .mg_comment_dec h6{
     float: left;
     width: 100%;
-    margin:0 0 3px; 
+    margin:0 0 3px;
 }
 .mg_comment_dec h6 a{
     float: left;
@@ -1512,7 +1512,7 @@ blockquote p:after{
     position: absolute;
 }
 .mg_comment_dec p{
-    margin:0; 
+    margin:0;
     float: left;
     width: 100%;
 }
@@ -1806,7 +1806,7 @@ blockquote p:after{
     color: #fff;
 }
 .room-detail-tab .our-room{
-    border:none; 
+    border:none;
 }
 .room-detail-tab .our-room .text{
     padding-top: 0;
@@ -2273,7 +2273,7 @@ blockquote p:after{
     background-repeat: no-repeat;
     background-position: center center;
 }
-input:checked + .radio-value {    
+input:checked + .radio-value {
     border-color: #f0512e;
     background-color: #f0512e;
     background-image: url("images/tick.png");
@@ -2296,7 +2296,7 @@ input:checked + .radio-value {
     text-align: center;
     border:none !important;
     text-transform: capitalize;
-    border-radius: 0 !important; 
+    border-radius: 0 !important;
     background-color: transparent;
 }
 .login1 .nav-tabs li.active a{
@@ -2309,7 +2309,7 @@ input:checked + .radio-value {
     background-color: #fff;
 }
 #search .modal-dialog {
-    margin: 0px auto 0;  
+    margin: 0px auto 0;
     padding: 0 15%;
     top: 50%;
     transform: translateY(-50%);
