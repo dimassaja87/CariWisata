@@ -56,7 +56,7 @@
                             <a href="/destinasi">Destinasi</a>
                         </li>
                         <li>
-                            <a href="/hubungi">contact us</a>
+                            <a href="/contactus">contact us</a>
                         </li>
                     </ul>
                     <!--DL Menu Start-->
@@ -1260,7 +1260,7 @@
                                         <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sewu.jpg') }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">TLAWANG SEWU</a></h5>
+                                        <h5><a href="#">LAWANG SEWU</a></h5>
                                     </div>
                                 </div>
                             </div>
