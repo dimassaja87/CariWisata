@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 	
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:36:29 GMT -->
 <head>
@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Bandung</title>
+		<title>Kota Batu</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -86,7 +86,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Bandung</h2>
+                    <h2>Kota Batu</h2>
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>
@@ -115,22 +115,22 @@
                                                 <!-- Room Slider Start -->
                                                 <div class="room-slider-wrap">
                                                     <div class="room-slider"> 
-                                                        <figure><img src="https://digstraksi.com/wp-content/uploads/2020/07/Tempat-Wisata-Bernuansa-Alam-Di-Bandung-1024x682.jpg" alt=""></figure>
-                                                        <figure><img src="https://1.bp.blogspot.com/-AG1q_Q_vhDY/UgttAVSnIuI/AAAAAAAAAWQ/jZAcNHIn9_Q/s1600/tempat-wisata-di-bandung.jpg" alt=""></figure>
-                                                        <figure><img src="https://i0.wp.com/cdn.idntimes.com/content-images/post/20180321/orchidforestcikole-36dfcfa7c66c8b3542ccfa195ace9e9d.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.tMwvXCI1MQtAP-6pYKa-zQHaE6?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://www.destinasibandung.co.id/wp-content/uploads/2021/01/133965811_398810531235068_8306890096091222484_n.jpg" alt=""></figure>
-                                                        <figure><img src="https://www.arwini.com/wp-content/uploads/2016/07/Tempat-Wisata-Favorit-di-Bandung.jpg" alt=""></figure>
+                                                        <figure><img src="https://s2.bukalapak.com/bukalapak-kontenz-production/content_attachments/51502/original/jt_3.jpg" alt=""></figure>
+                                                        <figure><img src="https://seru.co.id/wp-content/uploads/2020/12/Ilsutrasi-obyek-wisata-di-Kota-Batu-diperkirakan-sepi-pengunjung-pada-akhir-tahun-ini.jpg" alt=""></figure>
+                                                        <figure><img src="https://www.villahotelbatu.com/wp-content/uploads/2017/07/omah-kayu-paralayang-batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://sikidang.com/wp-content/uploads/Harga-Tiket-Masuk-Batu-Wonderland-Waterpark.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Start -->
                                                     <!-- Room Slider Nav Start -->
                                                     <div class="room-slider-nav">
-                                                        <figure><img src="https://digstraksi.com/wp-content/uploads/2020/07/Tempat-Wisata-Bernuansa-Alam-Di-Bandung-1024x682.jpg" alt=""></figure>
-                                                        <figure><img src="https://1.bp.blogspot.com/-AG1q_Q_vhDY/UgttAVSnIuI/AAAAAAAAAWQ/jZAcNHIn9_Q/s1600/tempat-wisata-di-bandung.jpg" alt=""></figure>
-                                                        <figure><img src="https://i0.wp.com/cdn.idntimes.com/content-images/post/20180321/orchidforestcikole-36dfcfa7c66c8b3542ccfa195ace9e9d.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.tMwvXCI1MQtAP-6pYKa-zQHaE6?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://www.destinasibandung.co.id/wp-content/uploads/2021/01/133965811_398810531235068_8306890096091222484_n.jpg" alt=""></figure>
-                                                        <figure><img src="https://www.arwini.com/wp-content/uploads/2016/07/Tempat-Wisata-Favorit-di-Bandung.jpg" alt=""></figure>
+                                                        <figure><img src="https://s2.bukalapak.com/bukalapak-kontenz-production/content_attachments/51502/original/jt_3.jpg" alt=""></figure>
+                                                        <figure><img src="https://seru.co.id/wp-content/uploads/2020/12/Ilsutrasi-obyek-wisata-di-Kota-Batu-diperkirakan-sepi-pengunjung-pada-akhir-tahun-ini.jpg" alt=""></figure>
+                                                        <figure><img src="https://www.villahotelbatu.com/wp-content/uploads/2017/07/omah-kayu-paralayang-batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://sikidang.com/wp-content/uploads/Harga-Tiket-Masuk-Batu-Wonderland-Waterpark.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Nav End -->
                                                 </div>
@@ -141,36 +141,46 @@
                                             <div class="room-detail-contant">
                                                 <div class="row">
                                                     <div class="mg_blog_full">
-                                                        <h5 class="blog_title"><a>Akhir Pekan di Bandung</a></h5>
+                                                        <h5 class="blog_title"><a>Cerita di Kota Batu</a></h5>
                                                         <div class="mg_blog_contant">
                                                             <div class="thumb">
-                                                            <p>Kota Bandung adalah ibu kota Provinsi Jawa Barat yang sekaligus menjadi pusat pemerintahan dan perekonomian dari Provinsi Jawa Barat, Indonesia. Kota Bandung juga merupakan kota terbesar ketiga di Indonesia setelah Jakarta dan Surabaya.</p>
-                                                            <br><h5>Peninggalan
-                                                                Belanda</h5></br>
-                                                            <p>Diantaranya Gedung Sate sekarang berfungsi sebagai kantor pemerintah provinsi Jawa Barat, Gedung Pakuan yang sekarang menjadi tempat tinggal resmi gubernur provinsi Jawa Barat, Gedung Dwi Warna atau Indische Pensioenfonds sekarang digunakan oleh Kementerian Keuangan Republik Indonesia untuk Kantor Wilayah XII Ditjen Pembendaharaan Bandung, Villa Isola sekarang digunakan Universitas Pendidikan Indonesia, Stasiun Hall atau Stasiun Bandung dan Gedung Kantor Pos Besar Kota Bandung.</p>
-                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Gedung-Sate-Trees.jpg/1280px-Gedung-Sate-Trees.jpg" alt="">
-                                                            </div>
-                                                        <h5 class="blog_main_title"></h5>
-                                                        <div class="thumb">
-                                                        <br><h5>Seni & Budaya</h5></br>
-                                                        <p>Kota Bandung juga memiliki beberapa ruang publik seni seperti museum, gedung pertunjukan dan galeri diantaranya Gedung Merdeka, tempat berlangsungnya Konferensi Tingkat Tinggi Asia-Afrika pada tahun 1955, Museum Sri Baduga, yang didirikan pada tahun 1974 dengan menggunakan bangunan lama bekas Kawedanan Tegallega, Museum Geologi Bandung, Museum Wangsit Mandala Siliwangi, Museum Barli, Museum Kota Bandung, Gedung Yayasan Pusat Kebudayaan, Gedung Indonesia Menggugat dahulunya menjadi tempat Ir. Soekarno menyampaikan pledoinya yang fenomenal (Indonesia Menggugat) pada masa penjajahan Belanda, Taman Budaya Jawa Barat (TBJB) dan Rumentang Siang.</p>
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sri_Baduga_Museum.JPG/1024px-Sri_Baduga_Museum.JPG" alt="">
-                                                        </div>
-                                                        <div class="thumb">
-                                                        <br><h5>Kuliner</h5></br>
-                                                        <p>Kota Bandung memiliki banyak ragam kuliner, mulai dari kuliner khas sunda di rumah makan, hingga jajanan aci di pinggir jalan. Uniknya, kuliner-kuliner yang dijajakan di Bandung memiliki cita rasa yang menggugah selera, meskipun harganya ramah di kantong.</p>
-                                                    <img src="https://pergiyuk.com/wp-content/uploads/2020/11/batagor-1024x768.jpg" alt="">
-                                                        </div>  
-                                        </div> 
+                                                                <p> Batu, kota berhawa sejuk yang bertetangga dengan Malang dan Kediri dikenal sebagai gudangnya objek wisata. Kota yang dulunya merupakan bagian dari Kabupaten Malang dan lalu berstatus kota administratif itu kini sudah menjadi kota otonom.
+                                                                    Sejak berdiri sendiri, Batu telah berbenah mengembangkan potensi wisatanya. Hasilnya, sebagian besar wisata populer dan kekinian yang ada di Malang Raya saat ini merupakan 'produk' kota Batu.</p>
+                                                                <br><h5>Peninggalan</h5></br>
+                                                                <p> Candi Songgoriti merupakan situs bersejarah yang berlokasi areal Songgoriti, Desa Songgokerto, Kota Wisata Batu, sekitar 22 km arah barat daya Kota Malang. Candi Songgoriti memiliki mata air panas yang di masa lalu diyakini dapat digunakan untuk menyembuhkan berbagai macam penyakit.</p>
+                                                            <img src="https://th.bing.com/th/id/R.f43bbad08b82f595a9f6cf2250f3b1c1?rik=5VbzsDG46adG3g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-a3Gx88dbPM4%2fT10Sp-x76yI%2fAAAAAAAAA1k%2fktsJVSQ87AU%2fs1600%2fsonggoriti%2brecreation%2bwith%2bhot%2bwater%2bbath%252527s%2bpool%2bmalang%2bindonesia.jpg&ehk=%2bnIOgE0sCAH7rB9IRbV2R6SJVgGbaHV25IFlzxkGX1Q%3d&risl=&pid=ImgRaw&r=0" alt="">
+                                                                </div>
+                                                                <h5 class="blog_main_title"></h5>
+                                                                <div class="thumb">
+                                                                <br><h5>Seni dan Budaya</h5></br>
+                                                                <p> Eksistensi Kesenian Menjadi Kekayaan Budaya Kota Batu, salah satu kesenian yang ada di kota Batu adalah Bantengan,Bantengan sendiri merupakan salah satu pertunjukan seni yang menggabungkan, seni musik, seni tari, bela diri dan syair .</p>
+                                                            <img src= "https://video-images.vice.com/test-uploads/articles/5e4e576b905b27009b432590/lede/1582193852818-Untitled-design-97.jpeg?image-resize-opts=Y3JvcD0xeHc6MXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq" alt="">
+                                                                </div>
+                                                                <div class="thumb">
+                                                                    <br><h5>Kuliner</h5></br>
+                                                                    <p>Kota Batu, selain menyimpan banyak tempat asyik buat berwisata, kota ini juga memiliki banyak makanan khas. Selain tempat wisata makanan khas di Batu mempunyai daya tarik tersendiri, makanan ini bahkan sudah menjadi kuliner legendaris yang diburu pengunjung saat singgah di kota ini, makanan tersebut diantaranya sate kelinci, mie soden, lok-lok satay, Putu lanang celaket,sate hotplate dan lain-lain.  Jadi, Kota Batu memang tepat menjadi tempat memburu kuliner lezat.</p>
+                                                                <img src="https://jelajahnesia.com/wp-content/uploads/2016/07/74713842_203582053982940_713935692611179857_n-1024x1024.jpg" alt="">
+                                                                    </div> 
+                        </div>  
                         </div>
-</div>
-</div>
-                
+                            </div>
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
                                     <div class="mg_comment_wrap">
-                                        
+                                        <h5 class="blog_main_title">132 Ulasan</h5>
+                                        <ul>
+                                            <li>
+                                                <div class="mg_comment_dec">
+                                                    <figure><img src="extra-images/comment_user1.jpg" alt=""></figure>
+                                                    <div class="overflow_text">
+                                                        <h6><a href="#">john doe</a><span>( JUNE 20, 2014 )</span></h6>
+                                                        <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
+                                                    </div>
+                                                    <!-- Room Reservation End -->
+                                                </div>
+                                            </div>
+                                        </div>
                                         <!-- Sidebar Start-->
                                         <div class="col-md-4">
                                             <div class="mg_sidebar">
@@ -272,6 +282,7 @@
                                         </div>
                                         <!-- Side Bar End-->
                                     </div>
+                                    </div>
                                     <!-- Destination Tab Wrap End -->
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="usa">
@@ -322,7 +333,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa3.jpg') }}" alt=""/>
+                                                        <img src="extra-images/usa3.jpg" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="#">Selengkapnya</a>
                                                         </figcaption>
@@ -396,9 +407,9 @@
                             <div class="widget widget_archives">
                                 <h6 class="widget-title">Our Service</h6>
                                 <ul>
-                                    <li><a href="#">Beranda</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Destinasi</a></li>
+                                    <li><a href="/">Beranda</a></li>
+                                    <li><a href="/contactus">Contact us</a></li>
+                                    <li><a href="/destinasi">Destinasi</a></li>
                                 </ul>
                             </div>
                         </div>

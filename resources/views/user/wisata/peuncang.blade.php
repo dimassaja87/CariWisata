@@ -84,7 +84,7 @@
                 <div class="container">
                     <h2>Pulau Peuncang</h2>
                     <ul class="breadcrumb">
-                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
                 </div>
             </div>
@@ -188,6 +188,11 @@
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="mg_input_1">
                                                         <input placeholder="No Telp" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="mg_input_1">
+                                                        <input placeholder="Foto" type="file">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -342,9 +347,9 @@
                             <div class="widget widget_archives">
                                 <h6 class="widget-title">Our Service</h6>
                                 <ul>
-                                    <li><a href="#">Beranda</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Destinasi</a></li>
+                                    <li><a href="/">Beranda</a></li>
+                                    <li><a href="/contactus">Contact us</a></li>
+                                    <li><a href="/destinasi">Destinasi</a></li>
                                 </ul>
                             </div>
                         </div>

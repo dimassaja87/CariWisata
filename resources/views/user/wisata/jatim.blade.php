@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Kembang Jepun Surabaya</title>
+		<title>Jawa Timur Park 3</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -82,7 +82,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Kembang Jepun Surabaya</h2>
+                    <h2>Jawa Timur Park 3</h2>
                     <ul class="breadcrumb">
                         <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
@@ -98,26 +98,44 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Kembang Jepun atau Kya-Kya Surabya</a></h5>
+                                        <h5 class="blog_title"><a>Jawa Timur PArk 3</a></h5>
                                         <div class="thumb">
-                                            <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/Kya-Kya-Kembang-Jepun.jpg" alt="">
+                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
-                                            <p>Kya-Kya merupakan salah satu alternatif tujuan wisata di Kota Surabaya, seperti Tunjungan Romansa dan Wisata Air Perahu Kalimas.</p>
-                                            <p>Jalan Kembang Jepun Surabaya adalah kawasan sepanjang 750 m dan lebar 20 m. Kawasan ini merupakan kawasan kota lama yang padat dan sibuk dengan orang-orang yang berlalu lalang dengan kegiatan perdagangannya.
-
-                                                Kawasan ini merupakan kawasan tersibuk di Surabaya, dimana menjadi pusat perdagangan di siang hari dan tetap ramai di malam hari karena banyak penjual makanan yang bisa dipilih.</p>
-                                            <br><h5>Tips Berkunjung</h5></br>
-                                            <p>Bagi Anda yang masih tertarik untuk berkunjung ke Wisata Pecinan Surabaya ini, berikut ada beberapa tips wisata yang perlu diperhatikan jika ingin berwisata ke sana.</p>
-                                            <p>- Walau kawasan ini sudah menjadi seperti kota mati di malam hari, suasana siang hari akan menjadi suasana yang menarik untuk dieksplorasi. Anda bisa berkunjung ke sana di siang hari. Selain itu di siang hari, kegiatan di Pecinan masih cukup normal sehingga Anda bisa melihat kegiatan-kegiatan yang ada di sana.</p>
-                                            <p>- Ada beberapa bangunan kuno di sana yang masih berdiri hingga saat ini. Jika Anda menyukai wisata sejarah dan wisata budaya, maka lokasi ini adalah lokasi yang cocok untuk dikunjungi.</p>
-                                            <p>- Anda yang hobi fotografi bangunan tua pun bisa berkunjung ke sana untuk mengesplorasi kawasan tersebut karena banyak Spot Foto Di Surabaya berupa bangunan kuno yang menarik dan unik.</p>
-                                            <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/bangunan-berarsitektur-klasik.jpg" alt="">
-                                            </div>
-                                        
+                                            <p>Taman hiburan bertema dinosaurus pertama dan terbesar di Indonesia yang dilengkapi museum dengan pembelajaran tentang dinosaurus.</p>
+                                            <br><h5>Cara Ke Tanah Lot</h5></br>
+                                            <p>Rute yang perjalanan sebenarnya sangat mudah karena letak Jatim Park 3 sangatlah strategis. Jika menggunakan angkutan umum, pengunjung dari Malang bisa menuju Terminal Batu kemudian naik angkot jurusan BL. Angkot berwarna ungu muda ini memiliki rute dari Terminal hingga melewati Jatim Park 3.</p>
                                             
-                                        </div>
+                                        <img src="https://travelspromo.com/wp-content/uploads/2021/01/Zona-dinosaurus-Jatim-Park-3-1024x768.jpg.webp" alt="">
+                                            </div>
+                                        <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
+                                            <div class="mg_table">
+                                                <ul class="mg_table_head">
+                                                    <li>Jenis Tiket</li>
+                                                    <li>Domestik</li>
+                                                    <li>International</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Weekday</li>
+                                                    <li>Rp150.000</li>
+                                                    <li>Rp170.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Weekend</li>
+                                                    <li>Rp160.000</li>
+                                                    <li>Rp180.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Open Trip Jawa Timur Park 3</li>
+                                                    <li>mulai dari Rp650.000</li>
+                                                </ul>
+                                            </div>
+                                            <br><h5>Keunikan dan daya tarik</h5></br>
+                                            <p>idak hanya satu tema melainkan terdapat beberapa pilihan tema dan “rasa”. Misalnya saja wahana wisata purbakala di Dino Park, atau “bermain cahaya” di Infinite World hingga merasakan sensasi adrenalin menegangkan di Rumah Zombie.</p>
+                                  </div>
+                        
                                     
                                     </div>
                                     <!-- Blog Full End -->
@@ -172,11 +190,6 @@
                                                         <input placeholder="No Telp" type="text">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="mg_input_1">
-                                                        <input placeholder="Foto" type="file">
-                                                    </div>
-                                                </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
                                                         <input placeholder="E-mail" type="text">
@@ -220,7 +233,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1601460678/blog/fn6axuxtktmf0qhgykmc.webp" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="/kawah">Kawah Putih Ciwidey</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="../destinasi/kawah.html">Kawah Putih Ciwidey</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
                                                 </div>
                                             </div>
@@ -229,7 +242,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="/lembang">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="../destinasi/lembang.html">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Lembang Park & Zoo cocok untuk Anda yang ingin berlibur bersama keluarga dan anak-anak.</p>
                                                 </div>
                                             </div>
@@ -238,17 +251,17 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://bisniswisata.co.id/wp-content/uploads/2019/06/lawang-sewu-1068x712.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="/lawang">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="../destinasi/lawang.html">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Wisata Lawang Sewu cocok untuk Anda yang suka berwisata ke tempat bersejarah.</p>
                                                 </div>
                                             </div>
                                             <!-- Recent Post End -->
                                             <!-- Recent Post Start -->
                                             <div class="recent_post fancy-overlay">
-                                                <figure><img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""></figure>
+                                                <figure><img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="/peuncang">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
-                                                    <p>Wisata Pantai Peuncang cocok untuk Anda yang ingin berlibur akhir pekan sejenak dari hiruk-piruk kehidupan di kota.
+                                                    <h5><a href="../destinasi/ayana.html">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.
                                                     </p>
                                                 </div>
                                             </div>

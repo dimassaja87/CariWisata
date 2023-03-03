@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 	
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:36:29 GMT -->
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Kota Batu</title>
+		<title>Banten</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -45,13 +46,13 @@
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                         <ul class="mg_navigation">
-                            <li><a href="../index.html">Beranda</a></li>
-                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
                             <li>
-                                <a href="../top-destinations.html">Destinasi</a>
+                                <a href="/destinasi">Destinasi</a>
                             </li>
                             <li>
-                                <a href="../contact-us.html">Contact Us</a>
+                                <a href="/contactus">Contact Us</a>
                                 <!-- <ul class="children">
                                     <li><a href="contact-us.html">contact-us</a></li>
                                     <li><a href="contact-us2.html">contact-us2</a></li>
@@ -63,17 +64,13 @@
                             <button class="dl-trigger">Open Menu</button>
                             <ul class="dl-menu">
                                 <li class="menu-item mg-parent-menu">
-                                    <a href="../index.html">Beranda</a>
+                                    <a href="/">Beranda</a>
                                 </li>
-                                <li><a href="../about-us.html">About Us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="../style.css">Destinasi</a>
+                                <li><a href="/aboutus">About Us</a></li>
+                                <li class="menu-item mg-parent-menu"><a href="/destinasi">Destinasi</a>
                                 </li>
-                                <li class="menu-item mg-parent-menu"><a href="../contact-us.html">Contact Us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="/contactus">Contact Us</a>
+                                    </li>
                             </ul>
                         </div>
                         <!--DL Menu END-->
@@ -90,7 +87,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Kota Batu</h2>
+                    <h2>Banten</h2>
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>
@@ -119,22 +116,22 @@
                                                 <!-- Room Slider Start -->
                                                 <div class="room-slider-wrap">
                                                     <div class="room-slider"> 
-                                                        <figure><img src="https://www.travelz.xyz/wp-content/uploads/2020/05/tempat-wisata-di-batu-malang.jpg" alt=""></figure>
-                                                        <figure><img src="https://seru.co.id/wp-content/uploads/2020/12/Ilsutrasi-obyek-wisata-di-Kota-Batu-diperkirakan-sepi-pengunjung-pada-akhir-tahun-ini.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/R.ee472ad0478b3df751eeccdb4f5a5a2c?rik=uVWbJRJ%2fauIzPA&riu=http%3a%2f%2fwww.saveseva.com%2fwp-content%2fuploads%2f2015%2f08%2fWisata-Kota-Batu-3.jpg&ehk=mq7bcclF0O9H%2f9FiaIDwjqxh1HUVaJ0y9%2bliCZi%2fBlM%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
-                                                        <figure><img src="https://i.pinimg.com/originals/64/16/83/641683656550bac1b52ec590cde2e96d.jpg" alt=""></figure>
-                                                        <figure><img src="https://i2.wp.com/penginapan.net/wp-content/uploads/wisata-di-batu.jpg?resize=610%2C381&ssl=1" alt=""></figure>
-                                                        <figure><img src="https://assets-a1.kompasiana.com/items/album/2020/09/11/7696-5f5ae88ee8095b01d7080422.jpg?t=o&v=1200" alt=""></figure>
+                                                        <figure><img src="https://i2.wp.com/anyerpedia.com/wp-content/uploads/2016/03/Anyer.jpg?resize=800%2C533" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.tFD3Pnfl5z792t03WURABgHaE6?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/R.2769388cab31e6d31adfdba7bf9fa0a8?rik=WUMub%2fPoZQaCtQ&riu=http%3a%2f%2flechaudrondevulcain.com%2fwp-content%2fuploads%2f2019%2f12%2f78660013_3031315690426059_1669589315648225280_o.jpg&ehk=gmktFkfxXUX8FsPBwiX2%2fIpqFWkDwn2ByqDj2Vei44A%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
+                                                        <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
+                                                        <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
+                                                        <figure><img src="https://1.bp.blogspot.com/-vHyP7vdX3C4/X3RcS6-fFCI/AAAAAAAAT90/9JDqhsLqpsAre2ivJ9q4qHQ5QNDnCo4OwCLcBGAsYHQ/s1280/Urang%2BKanekes%252C%2BPenguasa%2BPedalaman%2BPerkampungan%2BSuku%2BBaduy%2B2.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Start -->
                                                     <!-- Room Slider Nav Start -->
                                                     <div class="room-slider-nav">
-                                                        <figure><img src="https://www.travelz.xyz/wp-content/uploads/2020/05/tempat-wisata-di-batu-malang.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/R.e3e5304674f397b011cb7b27689c3871?rik=i%2fMzRfsj4RRZuw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-HZTWTEVJkI0%2fUk1NlI8jf6I%2fAAAAAAAAACk%2fvsXSFrcfqac%2fs1600%2f209660_20110531_123137.jpg&ehk=DCzPEt58W2hdHOncUeQInKGq0qjmvFhOC506HMbmiKI%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/R.ee472ad0478b3df751eeccdb4f5a5a2c?rik=uVWbJRJ%2fauIzPA&riu=http%3a%2f%2fwww.saveseva.com%2fwp-content%2fuploads%2f2015%2f08%2fWisata-Kota-Batu-3.jpg&ehk=mq7bcclF0O9H%2f9FiaIDwjqxh1HUVaJ0y9%2bliCZi%2fBlM%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
-                                                        <figure><img src="https://i.pinimg.com/originals/64/16/83/641683656550bac1b52ec590cde2e96d.jpg" alt=""></figure>
-                                                        <figure><img src="https://i2.wp.com/penginapan.net/wp-content/uploads/wisata-di-batu.jpg?resize=610%2C381&ssl=1" alt=""></figure>
-                                                        <figure><img src="https://assets-a1.kompasiana.com/items/album/2020/09/11/7696-5f5ae88ee8095b01d7080422.jpg?t=o&v=1200" alt=""></figure>
+                                                        <figure><img src="https://i2.wp.com/anyerpedia.com/wp-content/uploads/2016/03/Anyer.jpg?resize=800%2C533" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/OIP.tFD3Pnfl5z792t03WURABgHaE6?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/R.2769388cab31e6d31adfdba7bf9fa0a8?rik=WUMub%2fPoZQaCtQ&riu=http%3a%2f%2flechaudrondevulcain.com%2fwp-content%2fuploads%2f2019%2f12%2f78660013_3031315690426059_1669589315648225280_o.jpg&ehk=gmktFkfxXUX8FsPBwiX2%2fIpqFWkDwn2ByqDj2Vei44A%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
+                                                        <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
+                                                        <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
+                                                        <figure><img src="https://1.bp.blogspot.com/-vHyP7vdX3C4/X3RcS6-fFCI/AAAAAAAAT90/9JDqhsLqpsAre2ivJ9q4qHQ5QNDnCo4OwCLcBGAsYHQ/s1280/Urang%2BKanekes%252C%2BPenguasa%2BPedalaman%2BPerkampungan%2BSuku%2BBaduy%2B2.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Nav End -->
                                                 </div>
@@ -145,27 +142,25 @@
                                             <div class="room-detail-contant">
                                                 <div class="row">
                                                     <div class="mg_blog_full">
-                                                        <h5 class="blog_title"><a>Cerita di Kota Batu</a></h5>
+                                                        <h5 class="blog_title"><a>Banten</a></h5>
                                                         <div class="mg_blog_contant">
                                                             <div class="thumb">
-                                                            <p> Kota Batu adalah sebuah kota di Provinsi Jawa Timur, Indonesia.Kota Batu terkenal sebagai salah satu tujuan wisata unggulan, objek wisata di dalamnya memiliki ragam daya tarik. Mulai dari keindahan alamnya hingga wahana bermain yang menambah serunya suasana berlibur.</p>
-                                                            <br><h5>Peninggalan</h5></br>
-                                                            <p> Candi Songgoriti merupakan situs bersejarah yang berlokasi areal Songgoriti, Desa Songgokerto, Kota Wisata Batu, sekitar 22 km arah barat daya Kota Malang. Candi Songgoriti memiliki mata air panas yang di masa lalu diyakini dapat digunakan untuk menyembuhkan berbagai macam penyakit.</p>
-                                                        <img src="https://th.bing.com/th/id/R.f43bbad08b82f595a9f6cf2250f3b1c1?rik=5VbzsDG46adG3g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-a3Gx88dbPM4%2fT10Sp-x76yI%2fAAAAAAAAA1k%2fktsJVSQ87AU%2fs1600%2fsonggoriti%2brecreation%2bwith%2bhot%2bwater%2bbath%252527s%2bpool%2bmalang%2bindonesia.jpg&ehk=%2bnIOgE0sCAH7rB9IRbV2R6SJVgGbaHV25IFlzxkGX1Q%3d&risl=&pid=ImgRaw&r=0" alt="">
+                                                                <p>Banten adalah sebuah provinsi di Pulau Jawa, Indonesia. Ibu kota dan pusat pemerintahannya berada di Kota Serang. Provinsi ini merupakan provinsi yang paling barat di Pulau Jawa. Banten adalah salah satu provinsi di Indonesia yang penuh dengan berbagai pesona alam yang indah dan cocok untuk segala usia.</p>
+                                                                <br><h5>Peninggalan</h5></br>
+                                                                <p> Ada banyak peninggalan bersejarah yang ada di Banten salah satunya adalah Masjid Agung Banten. Masjid Agung Banten adalah salah satu masjid tertua di Indonesia yang penuh dengan nilai sejarah. Masjid ini terletak di Banten Lama, Kota Serang, Provinsi Banten, Indonesia. Masjid ini adalah salah satu dari sedikit peninggalan yang tersisa dari bekas Kota Kuno Banten—pusat perdagangan paling makmur di Indonesia—setelah jatuhnya Kesultanan Demak pada pertengahan abad ke-16.</p>  
+                                                                <img src="https://www.javatravel.net/wp-content/uploads/2020/07/Sejarah-Berdirinya-Masjid-Agung-Banten.jpg" alt="">
                                                             </div>
-                                                        <h5 class="blog_main_title"></h5>
-                                                        <div class="thumb">
-                                                        <br><h5>Kesenian</h5></br>
-                                                        <p> Eksistensi Kesenian Menjadi Kekayaan Budaya Kota Batu, salah satu kesenian yang ada di kota Batu adalah Bantengan,Bantengan sendiri merupakan salah satu pertunjukan seni yang menggabungkan, seni musik, seni tari, bela diri dan syair .</p>
-                                                    <img src= "https://video-images.vice.com/test-uploads/articles/5e4e576b905b27009b432590/lede/1582193852818-Untitled-design-97.jpeg?image-resize-opts=Y3JvcD0xeHc6MXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq" alt="">
+                                                            <br><h5>Seni & Budaya</h5></br>
+                                                        <p>Banten sendiri memiliki banyak jenis kesenian Tradisional seperti tari adat tradisional dan alat musik tradisional khas Banten dan masih banyak lainnya</p>
+                                                    <img src="https://th.bing.com/th/id/R.c43eeea651ef1a4af1e5bb1e70663e65?rik=Lw3M7ZAU2%2bxgig&riu=http%3a%2f%2f4.bp.blogspot.com%2f-sMvKcPuvEKI%2fTXhZBIhh2iI%2fAAAAAAAAAf0%2f4Y_xEeljI-I%2fs1600%2fDSCF1016v.jpg&ehk=ndlS8oCZqfi0R6j0%2biiAvQVr4bDR588Tqjcwv1ov%2b0E%3d&risl=&pid=ImgRaw&r=0" alt="">
                                                         </div>
                                                         <div class="thumb">
                                                         <br><h5>Kuliner</h5></br>
-                                                        <p>Kota Batu, selain menyimpan banyak tempat asyik buat berwisata, kota ini juga memiliki banyak makanan khas. Jadi, Kota Batu memang tepat menjadi tempat memburu kuliner lezat.</p>
-                                                    <img src="https://jelajahnesia.com/wp-content/uploads/2016/07/74713842_203582053982940_713935692611179857_n-1024x1024.jpg" alt="">
+                                                        <p>Selain tempat wisata nya di Banten juga terdapat kuliner yang menggoda, Kulinernya merupakan percampuran antara budaya Sunda dan Betawi yang memang kental di Banten. Selain enak, harganya juga ramah di kantong.</p>
+                                                        <img src="https://img.okezone.com/content/2017/09/02/298/1768155/okezone-week-end-lebih-mengenal-rabeg-kuliner-khas-banten-yang-selalu-hadir-saat-idul-adha-oPTAgg9K9F.jpg" alt="">
                                                         </div>  
                                         
-                        </div>  
+                                  
                         </div>
                             </div>
                                     </div>
@@ -385,70 +380,53 @@
             <!-- iqoniq Footer Start-->  
             <footer class="mg_footer1">
                 <div class="container">
-                    <!-- Widget Text Start--> 
-                    <div class="col-md-3 col-sm-6">
+                    <!-- Widget Text Start-->
+                    <div class="col-md-4 col-sm-6">
                         <div class="widget widget_text">
                             <div class="logo">
-                                <a href="#"><img src="images/ft-logo.png" alt=""/></a>
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" alt="" /></a>
                             </div>
                             <div class="text">
                                 <p>
-                                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sanctus est Lorem ipsum dolor sit amet.
+                                    Cariwisata adalah website penyedia informasi tentang pariwisata yang ada di Indonesia.
                                 </p>
-                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+92-1234567689</span></div>
-                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>iqoniqthemes@gmail.com</span></div>
+                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+62 678 837 817</span></div>
+                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>cariwisata@gmail.com</span>
+                                </div>
                             </div>
                             <ul class="mg_social">
-                               <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
-                               <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Widget Text End--> 
-                    <!-- Widget Archives Start--> 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_archives">
-                            <h6 class="widget-title">Our Services</h6>
-                            <ul>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                                <li><a href="#">Non felis. Maecenas malesuada</a></li>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                            </ul>
+                    <!-- Widget Text End-->
+                    <!-- Widget Archives Start-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget_archives">
+                                <h6 class="widget-title">Our Service</h6>
+                                <ul>
+                                    <li><a href="/">Beranda</a></li>
+                                    <li><a href="/contactus">Contact us</a></li>
+                                    <li><a href="/destinasi">Destinasi</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>  
-                    <!-- Widget Archives End--> 
-                    <!-- Widget Flicker Start--> 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_flicker">
-                            <h6 class="widget-title">Photo gallery</h6>
-                            <ul>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- Widget Archives End-->
+                    <!-- Widget Flicker Start-->
                     <!-- Widget Flicker End-->
                     <!-- Widget Search Start-->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="widget widget_search">
                             <h6 class="widget-title">keep in touch</h6>
                             <form>
                                 <div class="mg_input_1">
-                                   <input type="text" placeholder="Your E-mail ID">
+                                    <input type="text" placeholder="Your E-mail">
                                 </div>
                                 <div class="mg_input_1">
                                     <textarea placeholder="Your Message"></textarea>
                                 </div>
-                                <p><input type="button" value="Send message"></p>
+                                <p><input type="button" value="Kirim pesan"></p>
                             </form>
                         </div>
                     </div>
@@ -458,7 +436,8 @@
             <!-- iqoniq Footer End-->
             <!-- iqoniq Copyright Start-->
             <div class="mg_copyright">
-                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ THEMES</a></p>
+                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="#"> TADIKA
+                        MESRA</a></p>
             </div>
             <!-- iqoniq Copyright End-->
             <!-- register Modal -->
@@ -550,21 +529,21 @@
             <!-- register Modal end-->
 		</div>
         <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
         <!-- bootstrap -->
-        <script src="js/bootstrap.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
         <!-- Slick Slider -->
-        <script src="js/slick.min.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
         <!--Dl Menu Script-->
-        <script src="js/dl-menu/modernizr.custom.js"></script>
-        <script src="js/dl-menu/jquery.dlmenu.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
         <!-- Accordian -->
-        <script src="js/jquery.accordion.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light//jquery.accordion.js') }}"></script>
         <!-- Date Time Picker -->
-        <script src="js/jquery.datetimepicker.full.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
         <!--Custom Script-->
-        <script src="js/custom.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 	</body>
 
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:37:17 GMT -->
