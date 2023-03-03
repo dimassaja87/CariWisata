@@ -40,89 +40,36 @@
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
-                        <ul class="mg_navigation">
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="about-us.html">about us</a></li>
-                            <li>
-                                <a href="#">Rooms</a>
-                                <ul class="children">
-                                    <li><a href="our-rooms.html">our rooms</a></li>
-                                    <li><a href="room-detail.html">room detail</a></li>
-                                </ul>
+                    <ul class="mg_navigation">
+                        <li><a href="/">Beranda</a></li>
+                        <li><a href="/aboutus">about us</a></li>
+                        <li>
+                            <a href="/destinasi">Destinasi</a>
+                        </li>
+                        <li>
+                            <a href="/contactus">contact us</a>
+                        </li>
+                    </ul>
+                    <!--DL Menu Start-->
+                    <div id="mg-responsive-navigation" class="dl-menuwrapper">
+                        <button class="dl-trigger">Open Menu</button>
+                        <ul class="dl-menu">
+                            <li class="menu-item mg-parent-menu">
+                                <a href="/">Beranda</a>
                             </li>
-                            <li>
-                                <a href="#">blog</a>
-                                <ul class="children">
-                                    <li><a href="blog-medium-grid.html">blog medium</a></li>
-                                    <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
-                                    <li><a href="blog-listing.html">blog-listing</a></li>
-                                    <li><a href="blog-full.html">blog full</a></li>
-                                    <li><a href="blog-detail.html">blog detail</a></li>
-                                </ul>
+                            <li><a href="/aboutus">About us</a></li>
+                            <li class="menu-item mg-parent-menu"><a href="/destinasi">destinasi</a>
                             </li>
-                            <li>
-                                <a href="top-destinations.html">top destinations</a>
-                            </li>
-                            <li>
-                                <a href="#">pages</a>
-                                <ul class="children">
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="comingsoon.html">comingsoon</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">contact us</a>
-                                <ul class="children">
-                                    <li><a href="contact-us.html">contact-us</a></li>
-                                    <li><a href="contact-us2.html">contact-us2</a></li>
-                                </ul>
+                            <li class="menu-item mg-parent-menu"><a href="/hubungi">contact us</a>
                             </li>
                         </ul>
-                        <!--DL Menu Start-->
-                        <div id="mg-responsive-navigation" class="dl-menuwrapper">
-                            <button class="dl-trigger">Open Menu</button>
-                            <ul class="dl-menu">
-                                <li class="menu-item mg-parent-menu">
-                                    <a href="index.html">home</a>
-                                </li>
-                                <li><a href="about-us.html">About us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="#">Rooms</a>
-                                    <ul class="dl-submenu">
-                                       <li><a href="our-rooms.html">our rooms</a></li>
-                                        <li><a href="room-detail.html">room detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="#">Blog</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-medium-grid.html">blog medium</a></li>
-                                        <li><a href="blog-medium-grid3.html">blog medium 3</a></li>
-                                        <li><a href="blog-listing.html">blog-listing</a></li>
-                                        <li><a href="blog-full.html">blog full</a></li>
-                                        <li><a href="blog-detail.html">blog detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="top-destinations.html">top destinations</a>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="#">pages</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="404.html">404</a></li>
-                                        <li><a href="comingsoon.html">comingsoon</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item mg-parent-menu"><a href="#">contact us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--DL Menu END-->
-                        <div class="mg_login">
-                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                            <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login Or Register</span></a>
-                        </div>
                     </div>
+                    <!--DL Menu END-->
+                    <div class="mg_login">
+                        <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                        <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login Or Register</span></a>
+                    </div>
+                </div>
                     <!-- iqoniq Navigation End-->
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
