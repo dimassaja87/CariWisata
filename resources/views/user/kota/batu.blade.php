@@ -7,29 +7,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Perjalanan ke Pulau Bali </title>
+		<title>Kota Batu</title>
 		<!-- Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="css/typography.css" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
         <!-- DL Menu CSS -->
-        <link href="js/dl-menu/component.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- Date And Time Picker CSS -->
-        <link rel="stylesheet" href="css/datetimepicker.css">
+        <link rel="stylesheet" href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
         <!-- FontAwesome Icon CSS -->
-        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
         <!-- Slick Slider CSS -->
-        <link href="css/slick.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}" rel="stylesheet">
         <!-- Widget CSS -->
-        <link href="css/widget.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
         <!-- Short Code CSS -->
-        <link href="css/shortcode.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
         <!-- Custom Style CSS -->
-        <link href="style.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
         <!-- Color CSS -->
-        <link href="css/color.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
         <!-- Responsive CSS -->
-        <link href="css/responsive.css" rel="stylesheet">
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
 	</head>
 	<body>
 		<div class="iqoniq_wrapper">
@@ -39,19 +39,19 @@
 				<div class="mg_nav_wrapper">
                     <!-- iqoniq Logo Start-->
 					<div class="mg_logo">
-                        <a href="#"><img src="images/logo.png" width="220" alt=""/></a>
+                        <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220" alt=""/></a>
                     </div>
                     <!-- iqoniq Logo End-->
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                         <ul class="mg_navigation">
-                            <li><a href="../index.html">Beranda</a></li>
-                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
                             <li>
-                                <a href="../top-destinations.html">Destinasi</a>
-                            </li>
+                                <a href="/destinasi">Destinasi</a>
+                            </li> 
                             <li>
-                                <a href="../contact-us.html">Contact Us</a>
+                                <a href="/contactus">Contact Us</a>
                                 <!-- <ul class="children">
                                     <li><a href="contact-us.html">contact-us</a></li>
                                     <li><a href="contact-us2.html">contact-us2</a></li>
@@ -63,17 +63,13 @@
                             <button class="dl-trigger">Open Menu</button>
                             <ul class="dl-menu">
                                 <li class="menu-item mg-parent-menu">
-                                    <a href="../index.html">Beranda</a>
+                                    <a href="/">Beranda</a>
                                 </li>
-                                <li><a href="../about-us.html">About Us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="../style.css">Destinasi</a>
+                                <li><a href="/aboutus">About Us</a></li>
+                                <li class="menu-item mg-parent-menu"><a href="/destinasi">Destinasi</a>
                                 </li>
-                                <li class="menu-item mg-parent-menu"><a href="../contact-us.html">Contact Us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="/contactus">Contact Us</a>
+                                    </li>
                             </ul>
                         </div>
                         <!--DL Menu END-->
@@ -90,7 +86,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Bali</h2>
+                    <h2>Kota Batu</h2>
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>
@@ -119,22 +115,22 @@
                                                 <!-- Room Slider Start -->
                                                 <div class="room-slider-wrap">
                                                     <div class="room-slider"> 
-                                                        <figure><img src="https://i.pinimg.com/originals/07/be/4f/07be4f2abd4b3fa8bb1e5c05abb3692b.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.w-aMRwtFGaRJptsXNaZgvQAAAA?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://i.pinimg.com/originals/90/03/f1/9003f1629a40e7fa3d7e574913a395b6.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://akhyanavillage-jimbaran.com/wp-content/uploads/2020/11/Villa-Akhyana-Views-GWK-0597-600x400.jpg" alt=""></figure>
+                                                        <figure><img src="https://s2.bukalapak.com/bukalapak-kontenz-production/content_attachments/51502/original/jt_3.jpg" alt=""></figure>
+                                                        <figure><img src="https://seru.co.id/wp-content/uploads/2020/12/Ilsutrasi-obyek-wisata-di-Kota-Batu-diperkirakan-sepi-pengunjung-pada-akhir-tahun-ini.jpg" alt=""></figure>
+                                                        <figure><img src="https://www.villahotelbatu.com/wp-content/uploads/2017/07/omah-kayu-paralayang-batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://sikidang.com/wp-content/uploads/Harga-Tiket-Masuk-Batu-Wonderland-Waterpark.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Start -->
                                                     <!-- Room Slider Nav Start -->
                                                     <div class="room-slider-nav">
-                                                        <figure><img src="https://i.pinimg.com/originals/07/be/4f/07be4f2abd4b3fa8bb1e5c05abb3692b.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.w-aMRwtFGaRJptsXNaZgvQAAAA?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://i.pinimg.com/originals/90/03/f1/9003f1629a40e7fa3d7e574913a395b6.jpg" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://akhyanavillage-jimbaran.com/wp-content/uploads/2020/11/Villa-Akhyana-Views-GWK-0597-600x400.jpg" alt=""></figure>
+                                                        <figure><img src="https://s2.bukalapak.com/bukalapak-kontenz-production/content_attachments/51502/original/jt_3.jpg" alt=""></figure>
+                                                        <figure><img src="https://seru.co.id/wp-content/uploads/2020/12/Ilsutrasi-obyek-wisata-di-Kota-Batu-diperkirakan-sepi-pengunjung-pada-akhir-tahun-ini.jpg" alt=""></figure>
+                                                        <figure><img src="https://www.villahotelbatu.com/wp-content/uploads/2017/07/omah-kayu-paralayang-batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://sikidang.com/wp-content/uploads/Harga-Tiket-Masuk-Batu-Wonderland-Waterpark.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Nav End -->
                                                 </div>
@@ -145,30 +141,28 @@
                                             <div class="room-detail-contant">
                                                 <div class="row">
                                                     <div class="mg_blog_full">
-                                                        <h5 class="blog_title"><a>Perjalanan ke Pulau Bali</a></h5>
+                                                        <h5 class="blog_title"><a>Cerita di Kota Batu</a></h5>
                                                         <div class="mg_blog_contant">
                                                             <div class="thumb">
-                                                                <p>Pulau Bali adalah salah satu pulau yang ada di Indonesia, pulau yang sangat indah dengan panjang garis pantai sekitar 633,35 km. Di pulau Bali terdapat destinasi wisata yang menjadi kebanggan dari Indonesia karena cukup populer dengan keindahan di dalamnya yang cukup mempesona yang membuatnya banyak dikunjungi, baik wisatawan domestic hingga wisatawan asing.</p>
+                                                                <p> Batu, kota berhawa sejuk yang bertetangga dengan Malang dan Kediri dikenal sebagai gudangnya objek wisata. Kota yang dulunya merupakan bagian dari Kabupaten Malang dan lalu berstatus kota administratif itu kini sudah menjadi kota otonom.
+                                                                    Sejak berdiri sendiri, Batu telah berbenah mengembangkan potensi wisatanya. Hasilnya, sebagian besar wisata populer dan kekinian yang ada di Malang Raya saat ini merupakan 'produk' kota Batu.</p>
                                                                 <br><h5>Peninggalan</h5></br>
-                                                                <p>Salah satu peninggalan Kerajaan Bali yang bisa ditemukan oleh masyarakat tanah air adalah Prasasti Panglapuan. Prasasti ini bercerita mengenai para penguasa yang memimpin kerajaan dan berkuasa pada masa itu seperti Udayana, Jayapangus , Jayasakti, dan Anak Wungsu.</p>
-                                                                <p>Prasasti Panglapuan sendiri merupakan sisa peninggalan sejarah yang cukup penting. Mengingat isi yang terdapat di dalamnya memberikan informasi mengenai sejarah kepemimpinan para penguasa Kerajaan Bali hingga akhir masa kejayaannya.</p>
-                                                            <img src="https://th.bing.com/th/id/R.f516635129afbef97411a1fed42c2ad1?rik=DqiRlSmMgD77sQ&riu=http%3a%2f%2ffasrglow967.weebly.com%2fuploads%2f1%2f2%2f4%2f2%2f124261824%2f599552257.jpg&ehk=VD9D90wYJQF2zjIa2l07HLxGOBpupP518TKI2Jqf5XM%3d&risl=&pid=ImgRaw&r=0" alt="">
+                                                                <p> Candi Songgoriti merupakan situs bersejarah yang berlokasi areal Songgoriti, Desa Songgokerto, Kota Wisata Batu, sekitar 22 km arah barat daya Kota Malang. Candi Songgoriti memiliki mata air panas yang di masa lalu diyakini dapat digunakan untuk menyembuhkan berbagai macam penyakit.</p>
+                                                            <img src="https://th.bing.com/th/id/R.f43bbad08b82f595a9f6cf2250f3b1c1?rik=5VbzsDG46adG3g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-a3Gx88dbPM4%2fT10Sp-x76yI%2fAAAAAAAAA1k%2fktsJVSQ87AU%2fs1600%2fsonggoriti%2brecreation%2bwith%2bhot%2bwater%2bbath%252527s%2bpool%2bmalang%2bindonesia.jpg&ehk=%2bnIOgE0sCAH7rB9IRbV2R6SJVgGbaHV25IFlzxkGX1Q%3d&risl=&pid=ImgRaw&r=0" alt="">
                                                                 </div>
-                                                        <h5 class="blog_main_title"></h5>
-                                                        <div class="thumb">  
+                                                                <h5 class="blog_main_title"></h5>
+                                                                <div class="thumb">
                                                                 <br><h5>Seni dan Budaya</h5></br>
-                                                                <p>Bali tidak hanya dianugerahi keindahan alam yang mempesona, tapi juga kekayaan seni dan budaya yang melimpah. Kekayaan seni dan budaya tersebut direpresentasikan oleh adanya Taman Budaya Bali sebagai wadah untuk menampung kreativitas dan seniman Bali. Pembangunan taman budaya ini terencana dengan sangat matang dan serius. </p>
-                                                                <img src="https://3.bp.blogspot.com/-CvUb5tVHzAc/WOkpfmeBx1I/AAAAAAAACJc/uJ3nAPNS8-Y0_ey2yl9219Tq94uMXhq6wCLcB/s1600/Taman%2BBudaya%2BBali.jpg" alt="">
-                                                                </div> 
-                                                        <div class="thumb">
-                                                            <br><h5>Kuliner</h5></br>
-                                                            <p>Pulau bali memiliki berbagai macam kuliner yang nikmat dan harganya juga cukup murah.
-                                                            Bagi kalian yang berlibur ke bali dan ingin mencicipi makanan khas bali yang mendunia & terkenal tentu ini bisa di agendakan terlebih dahulu.   
-                                                            Mau pergi ke bali bersama keluarga atau bersama teman-teman untuk mengisi waktu liburan akhir sekolah.</p>
-                                                        <img src="https://th.bing.com/th/id/R.3c4aa202ea6a774209d0b332e4098042?rik=kjP%2f3Eud9Arc2w&riu=http%3a%2f%2fwww.balipost.com%2fwp-content%2fuploads%2f2017%2f10%2fbalipostcom_ingin-rasakan-kuliner-khas-bali-coba-bali-rijsttafel-ala-jempiring-restaurant_01.jpg&ehk=WWYO1wRBJYaOpIakVD1C%2ft%2fLEPinjf29GfnTb%2b6kwP4%3d&risl=&pid=ImgRaw&r=0" alt="">
-                                                            </div>
-                                                </div>  
-                                        </div>
+                                                                <p> Eksistensi Kesenian Menjadi Kekayaan Budaya Kota Batu, salah satu kesenian yang ada di kota Batu adalah Bantengan,Bantengan sendiri merupakan salah satu pertunjukan seni yang menggabungkan, seni musik, seni tari, bela diri dan syair .</p>
+                                                            <img src= "https://video-images.vice.com/test-uploads/articles/5e4e576b905b27009b432590/lede/1582193852818-Untitled-design-97.jpeg?image-resize-opts=Y3JvcD0xeHc6MXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq" alt="">
+                                                                </div>
+                                                                <div class="thumb">
+                                                                    <br><h5>Kuliner</h5></br>
+                                                                    <p>Kota Batu, selain menyimpan banyak tempat asyik buat berwisata, kota ini juga memiliki banyak makanan khas. Selain tempat wisata makanan khas di Batu mempunyai daya tarik tersendiri, makanan ini bahkan sudah menjadi kuliner legendaris yang diburu pengunjung saat singgah di kota ini, makanan tersebut diantaranya sate kelinci, mie soden, lok-lok satay, Putu lanang celaket,sate hotplate dan lain-lain.  Jadi, Kota Batu memang tepat menjadi tempat memburu kuliner lezat.</p>
+                                                                <img src="https://jelajahnesia.com/wp-content/uploads/2016/07/74713842_203582053982940_713935692611179857_n-1024x1024.jpg" alt="">
+                                                                    </div> 
+                        </div>  
+                        </div>
                             </div>
                                     </div>
                                     <!-- Blog Full End -->
@@ -385,83 +379,7 @@
                 </section>
             </div>
             <!-- iqoniq Footer Start-->  
-            <footer class="mg_footer1">
-                <div class="container">
-                    <!-- Widget Text Start--> 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_text">
-                            <div class="logo">
-                                <a href="#"><img src="images/ft-logo.png" alt=""/></a>
-                            </div>
-                            <div class="text">
-                                <p>
-                                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sanctus est Lorem ipsum dolor sit amet.
-                                </p>
-                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+92-1234567689</span></div>
-                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>iqoniqthemes@gmail.com</span></div>
-                            </div>
-                            <ul class="mg_social">
-                               <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
-                               <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Widget Text End--> 
-                    <!-- Widget Archives Start--> 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_archives">
-                            <h6 class="widget-title">Our Services</h6>
-                            <ul>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                                <li><a href="#">Non felis. Maecenas malesuada</a></li>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                            </ul>
-                        </div>
-                    </div>  
-                    <!-- Widget Archives End--> 
-                    <!-- Widget Flicker Start--> 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_flicker">
-                            <h6 class="widget-title">Photo gallery</h6>
-                            <ul>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Widget Flicker End-->
-                    <!-- Widget Search Start-->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_search">
-                            <h6 class="widget-title">keep in touch</h6>
-                            <form>
-                                <div class="mg_input_1">
-                                   <input type="text" placeholder="Your E-mail ID">
-                                </div>
-                                <div class="mg_input_1">
-                                    <textarea placeholder="Your Message"></textarea>
-                                </div>
-                                <p><input type="button" value="Send message"></p>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- Widget Search End-->
-                </div>
-            </footer>
-            <!-- iqoniq Footer End-->
-            <!-- iqoniq Copyright Start-->
-            <div class="mg_copyright">
-                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ THEMES</a></p>
-            </div>
+              
             <!-- iqoniq Copyright End-->
             <!-- register Modal -->
             <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
@@ -552,21 +470,21 @@
             <!-- register Modal end-->
 		</div>
         <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
         <!-- bootstrap -->
-        <script src="js/bootstrap.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
         <!-- Slick Slider -->
-        <script src="js/slick.min.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
         <!--Dl Menu Script-->
-        <script src="js/dl-menu/modernizr.custom.js"></script>
-        <script src="js/dl-menu/jquery.dlmenu.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
         <!-- Accordian -->
-        <script src="js/jquery.accordion.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.accordion.js') }}"></script>
         <!-- Date Time Picker -->
-        <script src="js/jquery.datetimepicker.full.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js"></script>
         <!--Custom Script-->
-        <script src="js/custom.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 	</body>
 
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:37:17 GMT -->
