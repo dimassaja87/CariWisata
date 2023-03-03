@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Destinasi;
 use App\Models\Kota;
+use App\Models\Rating;
 use Illuminate\Http\Request;
 
 class DestinasiController extends Controller
@@ -18,8 +19,9 @@ class DestinasiController extends Controller
     {
         $data = Destinasi::all();
         $kota = Kota::all();
+        $rating = Rating::all();
 
-        return view('admin.tabeldestinasi.tambahdestinasi', compact('data', 'kota'));
+        return view('admin.tabeldestinasi.tambahdestinasi', compact('data', 'kota', 'rating'));
     }
 
     public function insertdestinasi(Request $request)
@@ -38,7 +40,8 @@ class DestinasiController extends Controller
     {
         $data = Destinasi::find($id);
         $kota = Kota::all();
-        return view('admin.tabeldestinasi.tampildestinasi', compact('data', 'kota'));
+        $rating = Rating::all();
+        return view('admin.tabeldestinasi.tampildestinasi', compact('data', 'kota', 'rating'));
     }
 
     public function updatedestinasi(Request $request, $id)

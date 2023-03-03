@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Rating extends Model
 {
     use HasFactory;
+    protected $guarded = [];
+    protected $date = ['created_at'];
+
+    public function destinasis()
+    {
+        return $this->belongsTo(Destinasi::class, 'id_wisata', 'id');
+    }
 }
