@@ -75,7 +75,7 @@
 
                                 </div>
                                 <div class="card-body">
-                                    <form action="/updaterating/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('updaterating', $data->id) }}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         <div class="mb-3">
                                             <label for="customername-field" class="form-label">Nama
@@ -83,7 +83,7 @@
                                                 <select class="form-select form-control" aria-label="Default select example"
                                                 name="id_wisata" required>
                                                 <option selected>Pilih nama wisata</option>
-                                                @foreach ($wisata as $x)
+                                                @foreach ($destinasi as $x)
                                                     <option value="{{ $x->id }}" <?php if($data->id_wisata == $x->id) {echo 'selected'; } ?>>{{ $x->nama_wisata }}</option>
                                                 @endforeach
                                             </select>

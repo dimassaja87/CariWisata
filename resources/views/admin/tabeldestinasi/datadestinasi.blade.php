@@ -221,18 +221,18 @@
                                         src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/pp.jpg') }}"
                                         alt="Header Avatar">
                                     <span class="text-start ms-xl-2">
-                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
                                         <span
-                                            class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Cari wisata</span>
+                                            class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Cari
+                                            wisata</span>
                                     </span>
                                 </span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
-                                <h6 class="dropdown-header">Hello Admin!</h6>
-                                <a class="dropdown-item" href="lockscreen-basic.html"><i
-                                        class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span
-                                        class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="/"><i
+                                    class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle" data-key="t-logout">Landing Page</span></a>
                                 <a class="dropdown-item" href="/logoutadmin"><i
                                         class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle" data-key="t-logout">Logout</span></a>
@@ -429,8 +429,10 @@
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
-                                                                        <a href="/deletedestinasi" data-id="{{ $row->id }}" data-nama="{{ $row->nama_wisata }}"
-                                                                            class="btn btn-sm btn-danger remove-item-btn">Remove</a>
+                                                                        <a href="#"
+                                                                            data-id="{{ $row->id }}"
+                                                                            data-nama="{{ $row->nama_wisata }}"
+                                                                            class="btn btn-sm btn-danger deletedestinasi">Remove</a>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -1251,11 +1253,15 @@
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        {{-- JavaScript --}}
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    {{-- JavaScript --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
-    $('.delete').click(function() {
+    $('.deletedestinasib').click(function() {
         var destinasiid = $(this).attr('data-id');
         var nama_wisata = $(this).attr('data-nama');
 

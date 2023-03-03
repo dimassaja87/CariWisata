@@ -123,7 +123,7 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-grow-1 overflow-hidden">
                                                     <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                                        My Balance</p>
+                                                        Kota</p>
                                                 </div>
                                                 <div class="flex-shrink-0">
                                                     <h5 class="ri-arrow-right-up-line fs-14 mb-0">
@@ -133,12 +133,12 @@
                                             <div class="d-flex align-items-end justify-content-between mt-4">
                                                 <div>
                                                     <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
-                                                            class="counter-value" data-target="999">0</span>
+                                                            class="counter-value" data-target="{{ $jumlahkota }}">0</span>
                                                     </h4>
                                                 </div>
                                                 <div class="avatar-sm flex-shrink-0">
                                                     <span class="avatar-title bg-soft-primary rounded fs-3">
-                                                        <i class="bx bx-wallet text-primary"></i>
+                                                        <i class="bx bxs-city text-primary"></i>
                                                     </span>
                                                 </div>
                                             </div>
@@ -148,7 +148,7 @@
                             </div> <!-- end row-->
 
                             <div class="row">
-                                <div class="col-xl-8">
+                                <div class="col-xl-12">
                                     <div class="card">
                                         <div class="card-header border-0 align-items-center d-flex">
                                             <h4 class="card-title mb-0 flex-grow-1">Charts</h4>
@@ -198,7 +198,7 @@
                                                     <div class="p-3 border border-dashed border-start-0 border-end-0">
                                                         <h5 class="mb-1 text-success"><span class="counter-value"
                                                                 data-target="9999"></span></h5>
-                                                        <p class="text-muted mb-0">Conversation Ratio</p>
+                                                        <p class="text-muted mb-0">Views Ratio</p>
                                                     </div>
                                                 </div>
                                                 <!--end col-->

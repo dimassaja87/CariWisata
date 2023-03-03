@@ -229,10 +229,9 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
-                                <h6 class="dropdown-header">Hello Admin!</h6>
-                                <a class="dropdown-item" href="lockscreen-basic.html"><i
-                                        class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span
-                                        class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="/"><i
+                                    class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle" data-key="t-logout">Landing Page</span></a>
                                 <a class="dropdown-item" href="/logoutadmin"><i
                                         class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle" data-key="t-logout">Logout</span></a>
@@ -418,8 +417,8 @@
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
-                                                                        <a href="/deleterating/{{ $row->id }}" data-id="{{ $row->id }}" data-nama="{{ $row->rating }}"
-                                                                            class="btn btn-sm btn-danger remove-item-btn">Remove</a>
+                                                                        <a href="#" data-id="{{ $row->id }}" data-nama="{{ $row->rating }}"
+                                                                            class="btn btn-sm btn-danger deleterating">Remove</a>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -1240,18 +1239,22 @@
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
         {{-- JavaScript --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
-    $('.delete').click(function() {
+    $('.deleterating').click(function() {
         var ratingid = $(this).attr('data-id');
-        var nama_wisata = $(this).attr('data-nama');
+        var rating = $(this).attr('data-nama');
 
 
         swal({
                 title: "Anda yakin?!",
-                text: "Ingin menghapus data dengan nama " + nama_wisata + " ",
+                text: "Ingin menghapus data dengan nama " + rating + " ",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,

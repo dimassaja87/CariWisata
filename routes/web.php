@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\RatingController;
 use App\Models\Destinasi;
+use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
 use Illuminate\Support\Facades\Route;
@@ -28,9 +29,10 @@ Route::get('/', function () {
 Route::get('/adminn', function () {
     $jumlahdestinasi = Destinasi::count();
     $jumlahuser = User::count();
+    $jumlahkota = Kota::count();
     // $jumlahulasan = Ulasan::count();
     // $jumlahulasan = Ulasan::count();
-    return view('admin.welcomeadmin', compact('jumlahdestinasi', 'jumlahuser'));
+    return view('admin.welcomeadmin', compact('jumlahdestinasi', 'jumlahuser', 'jumlahkota'));
 });
 
 Route::get('/destinasi', function () {

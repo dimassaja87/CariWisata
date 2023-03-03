@@ -221,18 +221,18 @@
                                         src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/pp.jpg') }}"
                                         alt="Header Avatar">
                                     <span class="text-start ms-xl-2">
-                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
                                         <span
-                                            class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Cari wisata</span>
+                                            class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Cari
+                                            wisata</span>
                                     </span>
                                 </span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
-                                <h6 class="dropdown-header">Hello Admin!</h6>
-                                <a class="dropdown-item" href="lockscreen-basic.html"><i
-                                        class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span
-                                        class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="/"><i
+                                    class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle" data-key="t-logout">Landing Page</span></a>
                                 <a class="dropdown-item" href="/logoutadmin"><i
                                         class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle" data-key="t-logout">Logout</span></a>
@@ -454,8 +454,10 @@
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
-                                                                        <a href="/deletepengguna/{{ $row->id }}"
-                                                                            class="btn btn-sm btn-danger remove-item-btn">Remove</a>
+                                                                        <a href="#"
+                                                                            data-id="{{ $row->id }}"
+                                                                            data-nama="{{ $row->nama }}"
+                                                                            class="btn btn-sm btn-danger deletepengguna">Remove</a>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -1270,8 +1272,49 @@
 
     <!-- App js -->
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
-</body>
 
+    {{-- Toastr --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    {{-- JavaScript --}}
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+<script>
+    $('.deletepengguna').click(function() {
+        var penggunaid = $(this).attr('data-id');
+        var nama = $(this).attr('data-nama');
+        swal({
+                title: "Anda yakin?!",
+                text: "Ingin menghapus data dengan nama " + nama + " ",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location = "/deletepengguna/" + penggunaid + ""
+                    swal("Data berhasil dihapus!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Batal menghapus Data!");
+                }
+            });
+    });
+</script>
+
+{{-- Toastr --}}
+<script>
+    @if (Session::has('success'))
+        toastr.success("{{ Session::get('success') }}")
+    @endif
+</script>
 
 <!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
 

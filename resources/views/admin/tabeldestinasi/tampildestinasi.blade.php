@@ -75,7 +75,7 @@
 
                                 </div>
                                 <div class="card-body">
-                                    <form action="/updatedestinasi/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('updatedestinasi', $data->id) }}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         <div class="mb-3">
                                             <label for="customername-field" class="form-label">Nama
