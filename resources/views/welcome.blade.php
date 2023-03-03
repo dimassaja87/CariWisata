@@ -152,7 +152,7 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner6.jpg') }}" alt="" />
+                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner7.jpg') }}" alt="" />
                     </figure>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                                                 </figure>
                                                 <div class="text">
                                                     <div class="mg_destination_hd">
-                                                        <h5><a href="#">Lembang Park & Zoo</a></h5>
+                                                        <h5><a href="">Lembang Park & Zoo</a></h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1287,8 +1287,8 @@
                 <div class="container-fluid">
                     <!-- iqoniq Heading Start -->
                     <div class="mg_hotel_hd1 white">
-                        <h6>Chosen by Millions of Travelers</h6>
-                        <h4>Why choose iqoniq Travel</h4>
+                        <h6>Dipilih oleh Jutaan Wisatawan</h6>
+                        <h4>Mengapa memilih iqoniq Travel</h4>
                     </div>
                     <!-- iqoniq Heading End -->
                     <div class="row">
@@ -1377,8 +1377,8 @@
                 <div class="container">
                     <!-- iqoniq Heading Start -->
                     <div class="mg_hotel_hd1">
-                        <h6>The Very Best of Travel, Chosen by Millions of Travelers</h6>
-                        <h4>Travelers' Choice Award Winners</h4>
+                        <h6>Perjalanan Terbaik, Dipilih oleh Jutaan Wisatawan</h6>
+                        <h4>Pemenang Penghargaan Travellers' Choice</h4>
                     </div>
                     <!-- iqoniq Heading End -->
                     <div class="row">
@@ -1515,8 +1515,8 @@
                 <div class="container-fluid">
                     <!-- iqoniq Heading Start -->
                     <div class="mg_hotel_hd1">
-                        <h6>Right Now</h6>
-                        <h4>Photo gallery</h4>
+                        <h6></h6>
+                        <h4>Galeri foto</h4>
                     </div>
                     <!-- iqoniq Heading End -->
                     <!-- Masonry Grid Start -->
@@ -1612,8 +1612,8 @@
                 <div class="container">
                     <!-- iqoniq Heading Start -->
                     <div class="mg_hotel_hd1">
-                        <h6>Right Now</h6>
-                        <h4>flight information</h4>
+                        <h6>Sekarang</h6>
+                        <h4>Informasi transpor      t </h4>
                     </div>
                     <!-- iqoniq Heading End -->
                     <div class="row">

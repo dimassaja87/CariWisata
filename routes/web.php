@@ -45,6 +45,10 @@ Route::get('/contactus', function () {
     return view('user.contactus');
 });
 
+Route::get('/hubungi', function () {
+    return view('user.hubungi');
+});
+
 Route::get('/login', function () {
     return view('user.login');
 });
