@@ -88,7 +88,7 @@
                 <div class="container">
                     <h2>Bali</h2>
                     <ul class="breadcrumb">
-                        <li><a href="../top-destinations.html">Destinasi</a></li>
+                        <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
                 </div>
             </div>
@@ -207,7 +207,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://bisniswisata.co.id/wp-content/uploads/2019/06/lawang-sewu-1068x712.jpg" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/lawang.html">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/lawang">Lawang Sewu</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Wisata Lawang Sewu cocok untuk Anda yang suka berwisata ke tempat bersejarah.</p>
                                                             </div>
                                                         </div>
@@ -216,7 +216,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/lembang.html">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/lembang">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Lembang Park & Zoo cocok untuk Anda yang ingin berlibur bersama keluarga dan anak-anak.</p>
                                                             </div>
                                                         </div>
@@ -225,7 +225,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/ayana.html">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/ayana">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.</p>
                                                             </div>
                                                         </div>
@@ -234,7 +234,7 @@
                                                         <div class="recent_post fancy-overlay">
                                                             <figure><img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""></figure>
                                                             <div class="overflow_text">
-                                                                <h5><a href="../destinasi/peuncang.html">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                                <h5><a href="/peuncang">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
                                                                 <p>Wisata Pantai Peuncang cocok untuk Anda yang ingin berlibur akhir pekan sejenak dari hiruk-piruk kehidupan di kota.
                                                                 </p>
                                                             </div>
@@ -295,17 +295,17 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""/>
+                                                        <img src="https://th.bing.com/th/id/OIP.UGwSYObE6JCngXKaXo4I8AHaE8?pid=ImgDet&rs=1" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="../destinasi/lembang.html">Selengkapnya</a>
+                                                            <a class="view_btn" href="/tanahlot">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="../destinasi/lembang.html">Lembang Park & Zoo</a></h5>
+                                                            <h5><a href="/tanahlot">Tanah Lot Bali</a></h5>
                                                         </div>
                                                         <div class="mg_destination_review">
-                                                            <p>Lembang Park & Zoo cocok untuk Anda yang ingin berlibur bersama keluarga dan anak-anak.</p>
+                                                            <p>Tanah Lot merupakan salah satu tempat wisata pantai yang ada di Bali cocok untuk Anda yang suka ke Pantai dan Berbelanja</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -315,18 +315,18 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://th.bing.com/th/id/OIP.bu8EqSN2pVRobAmc-LhMOgHaE8?pid=ImgDet&w=1600&h=1067&rs=1" alt=""/>
+                                                        <img src="extra-images/usa3.jpg" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="../destinasi/kawah.html">Selengkapnya</a>
+                                                            <a class="view_btn" href="#">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="../destinasi/kawah.html">Kawah Putih Ciwidey</a></h5>
+                                                            <h5><a href="#">Coming Soon</a></h5>
                                                         </div>
-                                                        <div class="mg_destination_review">
+                                                        <!-- <div class="mg_destination_review">
                                                             <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>

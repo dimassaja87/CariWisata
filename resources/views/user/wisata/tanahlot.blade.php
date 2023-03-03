@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Kembang Jepun Surabaya</title>
+		<title>Pulau Peuncang Banten</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -82,7 +82,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Kembang Jepun Surabaya</h2>
+                    <h2>Tanah Lot</h2>
                     <ul class="breadcrumb">
                         <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
@@ -98,26 +98,44 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Kembang Jepun atau Kya-Kya Surabya</a></h5>
+                                        <h5 class="blog_title"><a>Tanah Lot</a></h5>
                                         <div class="thumb">
-                                            <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/Kya-Kya-Kembang-Jepun.jpg" alt="">
+                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
-                                            <p>Kya-Kya merupakan salah satu alternatif tujuan wisata di Kota Surabaya, seperti Tunjungan Romansa dan Wisata Air Perahu Kalimas.</p>
-                                            <p>Jalan Kembang Jepun Surabaya adalah kawasan sepanjang 750 m dan lebar 20 m. Kawasan ini merupakan kawasan kota lama yang padat dan sibuk dengan orang-orang yang berlalu lalang dengan kegiatan perdagangannya.
-
-                                                Kawasan ini merupakan kawasan tersibuk di Surabaya, dimana menjadi pusat perdagangan di siang hari dan tetap ramai di malam hari karena banyak penjual makanan yang bisa dipilih.</p>
-                                            <br><h5>Tips Berkunjung</h5></br>
-                                            <p>Bagi Anda yang masih tertarik untuk berkunjung ke Wisata Pecinan Surabaya ini, berikut ada beberapa tips wisata yang perlu diperhatikan jika ingin berwisata ke sana.</p>
-                                            <p>- Walau kawasan ini sudah menjadi seperti kota mati di malam hari, suasana siang hari akan menjadi suasana yang menarik untuk dieksplorasi. Anda bisa berkunjung ke sana di siang hari. Selain itu di siang hari, kegiatan di Pecinan masih cukup normal sehingga Anda bisa melihat kegiatan-kegiatan yang ada di sana.</p>
-                                            <p>- Ada beberapa bangunan kuno di sana yang masih berdiri hingga saat ini. Jika Anda menyukai wisata sejarah dan wisata budaya, maka lokasi ini adalah lokasi yang cocok untuk dikunjungi.</p>
-                                            <p>- Anda yang hobi fotografi bangunan tua pun bisa berkunjung ke sana untuk mengesplorasi kawasan tersebut karena banyak Spot Foto Di Surabaya berupa bangunan kuno yang menarik dan unik.</p>
-                                            <img src="https://www.surabayarollcake.com/wp-content/uploads/2018/10/bangunan-berarsitektur-klasik.jpg" alt="">
+                                            <p>Pura Tanah Lot adalah salah satu Pura yang sangat disucikan di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu. Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut. Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam, sehingga bisa digunakan tempat wisata juga.</p>
+                                            <br><h5>Cara Ke Tanah Lot</h5></br>
+                                            <p>Jarak dari bandara Internasional Ngurah Rai sektar 27 km dengan waktu tempuh 1,5 jam. pengunjung bisa ambil rute ke Jl. Bandara Ngurah Rai-Jl. By Pass Ngurah Rai-Jl. Sunset Road-Jl. Raya Canggu- Jl. By Pass Tanah Lot-Jl.Raya Tanah Lot di Beraban, kemudian Anda akan sampai di Tanah Lot.</p>
+                                            <p>Berkunjung ke Pura Tanah Lot lebih nyaman menggunakan kendaraan pribadi, transportasi online atau sewa kendaraan, mengingat terbatasnya transportasi umum di Bali.</p>
+                                        <img src="https://tourisonn.com/wp-content/uploads/2019/12/TANAH-LOT-TEMPLE-1024x683.jpg" alt="">
                                             </div>
-                                        
-                                            
-                                        </div>
+                                        <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
+                                            <div class="mg_table">
+                                                <ul class="mg_table_head">
+                                                    <li>Jenis Tiket</li>
+                                                    <li>Domestik</li>
+                                                    <li>International</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Weekday</li>
+                                                    <li>Rp20.000</li>
+                                                    <li>Rp60.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Weekend</li>
+                                                    <li>Rp25.000</li>
+                                                    <li>Rp80.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Open Trip Tanah Lot</li>
+                                                    <li>mulai dari Rp650.000</li>
+                                                </ul>
+                                            </div>
+                                            <br><h5>Keunikan dan daya tarik</h5></br>
+                                            <p>Pura Tanah Lot memiliki beragam keunikan dan daya tarik,diantaranya memiliki banyak pura, gua air suci dan gua ular suci. Di tanah lot juga cocok digunakan sebagai spot foto, melihat matahari tenggelam dan bermain air</p>
+                                  </div>
+                        
                                     
                                     </div>
                                     <!-- Blog Full End -->
@@ -245,10 +263,10 @@
                                             <!-- Recent Post End -->
                                             <!-- Recent Post Start -->
                                             <div class="recent_post fancy-overlay">
-                                                <figure><img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""></figure>
+                                                <figure><img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="/peuncang">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
-                                                    <p>Wisata Pantai Peuncang cocok untuk Anda yang ingin berlibur akhir pekan sejenak dari hiruk-piruk kehidupan di kota.
+                                                    <h5><a href="/ayana">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.
                                                     </p>
                                                 </div>
                                             </div>

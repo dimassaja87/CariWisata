@@ -16,4 +16,9 @@ class Destinasi extends Model
     {
         return $this->belongsTo(Kota::class, 'id_kota', 'id');
     }
+
+    public function Rating()
+    {
+        return $this->hasMany(Rating::class, 'nama_wisata'.'id');
+    }
 }

@@ -195,6 +195,11 @@
                                                         <input placeholder="No Telp" type="text">
                                                     </div>
                                                 </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="mg_input_1">
+                                                        <input placeholder="Foto" type="file">
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
                                                         <input placeholder="E-mail" type="text">
