@@ -170,17 +170,10 @@
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
                                     <div class="mg_comment_wrap">
-                                        <h5 class="blog_main_title">132 Ulasan</h5>
+                                        <h5 class="blog_main_title"></h5>
                                         <ul>
                                             <li>
-                                                <div class="mg_comment_dec">
-                                                    <figure><img src="extra-images/comment_user1.jpg" alt=""></figure>
-                                                    <div class="overflow_text">
-                                                        <h6><a href="#">john doe</a><span>( JUNE 20, 2014 )</span></h6>
-                                                        <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
-                                                    </div>
-                                                    <!-- Room Reservation End -->
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <!-- Sidebar Start-->
@@ -368,9 +361,7 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="mexico">
                                     <!-- Destination Tab Wrap Start -->
-                                    <div class="mg-map">
-                                        <div id="map-canvas"></div>
-                                    </div>
+                                    <br><div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div></br>
                                     <!-- Destination Tab Wrap End -->
                                 </div>
                             </div>
