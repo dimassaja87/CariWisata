@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 	
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:36:29 GMT -->
 <head>
@@ -46,13 +46,13 @@
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                         <ul class="mg_navigation">
-                            <li><a href="../index.html">Beranda</a></li>
-                            <li><a href="../about-us.html">About Us</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
                             <li>
-                                <a href="../top-destinations.html">Destinasi</a>
+                                <a href="/destinasi">Destinasi</a>
                             </li>
                             <li>
-                                <a href="../contact-us.html">Contact Us</a>
+                                <a href="/contactus">Contact Us</a>
                                 <!-- <ul class="children">
                                     <li><a href="contact-us.html">contact-us</a></li>
                                     <li><a href="contact-us2.html">contact-us2</a></li>
@@ -64,17 +64,13 @@
                             <button class="dl-trigger">Open Menu</button>
                             <ul class="dl-menu">
                                 <li class="menu-item mg-parent-menu">
-                                    <a href="../index.html">Beranda</a>
+                                    <a href="/">Beranda</a>
                                 </li>
-                                <li><a href="../about-us.html">About Us</a></li>
-                                <li class="menu-item mg-parent-menu"><a href="../style.css">Destinasi</a>
+                                <li><a href="/aboutus">About Us</a></li>
+                                <li class="menu-item mg-parent-menu"><a href="/destinasi">Destinasi</a>
                                 </li>
-                                <li class="menu-item mg-parent-menu"><a href="../contact-us.html">Contact Us</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="contact-us.html">contact-us</a></li>
-                                        <li><a href="contact-us2.html">contact-us2</a></li>
-                                    </ul>
-                                </li>
+                                <li class="menu-item mg-parent-menu"><a href="/contactus">Contact Us</a>
+                                    </li>
                             </ul>
                         </div>
                         <!--DL Menu END-->
@@ -384,70 +380,53 @@
             <!-- iqoniq Footer Start-->  
             <footer class="mg_footer1">
                 <div class="container">
-                    <!-- Widget Text Start--> 
-                    <div class="col-md-3 col-sm-6">
+                    <!-- Widget Text Start-->
+                    <div class="col-md-4 col-sm-6">
                         <div class="widget widget_text">
                             <div class="logo">
-                                <a href="#"><img src="images/ft-logo.png" alt=""/></a>
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" alt="" /></a>
                             </div>
                             <div class="text">
                                 <p>
-                                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sanctus est Lorem ipsum dolor sit amet.
+                                    Cariwisata adalah website penyedia informasi tentang pariwisata yang ada di Indonesia.
                                 </p>
-                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+92-1234567689</span></div>
-                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>iqoniqthemes@gmail.com</span></div>
+                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+62 678 837 817</span></div>
+                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>cariwisata@gmail.com</span>
+                                </div>
                             </div>
                             <ul class="mg_social">
-                               <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
-                               <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Widget Text End--> 
-                    <!-- Widget Archives Start--> 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_archives">
-                            <h6 class="widget-title">Our Services</h6>
-                            <ul>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                                <li><a href="#">Non felis. Maecenas malesuada</a></li>
-                                <li><a href="#">Etiam ullamcorper</a></li>
-                                <li><a href="#">Suspendisse a pellentesque dui</a></li>
-                                <li><a href="#">Pellentesque dui non felis</a></li>
-                            </ul>
+                    <!-- Widget Text End-->
+                    <!-- Widget Archives Start-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget_archives">
+                                <h6 class="widget-title">Our Service</h6>
+                                <ul>
+                                    <li><a href="/">Beranda</a></li>
+                                    <li><a href="/contactus">Contact us</a></li>
+                                    <li><a href="/destinasi">Destinasi</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>  
-                    <!-- Widget Archives End--> 
-                    <!-- Widget Flicker Start--> 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget widget_flicker">
-                            <h6 class="widget-title">Photo gallery</h6>
-                            <ul>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="extra-images/flicker-1.jpg" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- Widget Archives End-->
+                    <!-- Widget Flicker Start-->
                     <!-- Widget Flicker End-->
                     <!-- Widget Search Start-->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="widget widget_search">
                             <h6 class="widget-title">keep in touch</h6>
                             <form>
                                 <div class="mg_input_1">
-                                   <input type="text" placeholder="Your E-mail ID">
+                                    <input type="text" placeholder="Your E-mail">
                                 </div>
                                 <div class="mg_input_1">
                                     <textarea placeholder="Your Message"></textarea>
                                 </div>
-                                <p><input type="button" value="Send message"></p>
+                                <p><input type="button" value="Kirim pesan"></p>
                             </form>
                         </div>
                     </div>
@@ -457,7 +436,8 @@
             <!-- iqoniq Footer End-->
             <!-- iqoniq Copyright Start-->
             <div class="mg_copyright">
-                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ THEMES</a></p>
+                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="#"> TADIKA
+                        MESRA</a></p>
             </div>
             <!-- iqoniq Copyright End-->
             <!-- register Modal -->

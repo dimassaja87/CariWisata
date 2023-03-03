@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 	
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/room-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:36:29 GMT -->
 <head>
@@ -49,7 +49,7 @@
                             <li><a href="/aboutus">About Us</a></li>
                             <li>
                                 <a href="/destinasi">Destinasi</a>
-                            </li> 
+                            </li>
                             <li>
                                 <a href="/contactus">Contact Us</a>
                                 <!-- <ul class="children">
@@ -379,7 +379,67 @@
                 </section>
             </div>
             <!-- iqoniq Footer Start-->  
-              
+            <footer class="mg_footer1">
+                <div class="container">
+                    <!-- Widget Text Start-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_text">
+                            <div class="logo">
+                                <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" alt="" /></a>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    Cariwisata adalah website penyedia informasi tentang pariwisata yang ada di Indonesia.
+                                </p>
+                                <div class="mg_contact"><i class="fa fa-phone"></i><span>+62 678 837 817</span></div>
+                                <div class="mg_contact"><i class="fa fa-envelope-o"></i><span>cariwisata@gmail.com</span>
+                                </div>
+                            </div>
+                            <ul class="mg_social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Widget Text End-->
+                    <!-- Widget Archives Start-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget_archives">
+                                <h6 class="widget-title">Our Service</h6>
+                                <ul>
+                                    <li><a href="/">Beranda</a></li>
+                                    <li><a href="/contactus">Contact us</a></li>
+                                    <li><a href="/destinasi">Destinasi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- Widget Archives End-->
+                    <!-- Widget Flicker Start-->
+                    <!-- Widget Flicker End-->
+                    <!-- Widget Search Start-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget_search">
+                            <h6 class="widget-title">keep in touch</h6>
+                            <form>
+                                <div class="mg_input_1">
+                                    <input type="text" placeholder="Your E-mail">
+                                </div>
+                                <div class="mg_input_1">
+                                    <textarea placeholder="Your Message"></textarea>
+                                </div>
+                                <p><input type="button" value="Kirim pesan"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Widget Search End-->
+                </div>
+            </footer>
+            <!-- iqoniq Footer End-->
+            <!-- iqoniq Copyright Start-->
+            <div class="mg_copyright">
+                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="#"> TADIKA
+                        MESRA</a></p>
+            </div>
             <!-- iqoniq Copyright End-->
             <!-- register Modal -->
             <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
@@ -482,7 +542,7 @@
         <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.accordion.js') }}"></script>
         <!-- Date Time Picker -->
         <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
-        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js"></script>
+        <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
         <!--Custom Script-->
         <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 	</body>
