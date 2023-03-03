@@ -84,7 +84,7 @@
                 <div class="container">
                     <h2>Lawang Sewu</h2>
                     <ul class="breadcrumb">
-                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
                 </div>
             </div>
@@ -238,7 +238,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1601460678/blog/fn6axuxtktmf0qhgykmc.webp" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/kawah.html">Kawah Putih Ciwidey</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/kawah">Kawah Putih Ciwidey</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
                                                 </div>
                                             </div>
@@ -247,7 +247,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1604304682/blog/ywholpnn3tydffdo1vql.webp" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/lembang.html">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/lembang">Lembang Park & Zoo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Lembang Park & Zoo cocok untuk Anda yang ingin berlibur bersama keluarga dan anak-anak.</p>
                                                 </div>
                                             </div>
@@ -256,7 +256,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/ayana.html">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/ayana">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.</p>
                                                 </div>
                                             </div>
@@ -265,7 +265,7 @@
                                             <div class="recent_post fancy-overlay">
                                                 <figure><img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="../destinasi/peuncang.html">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <h5><a href="/peuncang">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
                                                     <p>Wisata Pantai Peuncang cocok untuk Anda yang ingin berlibur akhir pekan sejenak dari hiruk-piruk kehidupan di kota.
                                                     </p>
                                                 </div>
@@ -347,9 +347,9 @@
                             <div class="widget widget_archives">
                                 <h6 class="widget-title">Our Service</h6>
                                 <ul>
-                                    <li><a href="#">Beranda</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Destinasi</a></li>
+                                    <li><a href="/">Beranda</a></li>
+                                    <li><a href="/contactus">Contact us</a></li>
+                                    <li><a href="/destinasi">Destinasi</a></li>
                                 </ul>
                             </div>
                         </div>
