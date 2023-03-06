@@ -75,7 +75,7 @@
 
                                 </div>
                                 <div class="card-body">
-                                    <form action="/updatepengguna/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('updatepengguna', $data->id) }}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         <div class="mb-3">
                                             <label for="customername-field" class="form-label">Nama
@@ -105,7 +105,7 @@
                                             <div class="hstack gap-2 justify-content-end">
                                                 <button type="button" class="btn btn-light"
                                                     data-bs-dismiss="modal">Close</button>
-                                                <button type="submit" class="btn btn-success" id="edit-btn">Add
+                                                <button type="submit" class="btn btn-success" id="edit-btn">Edit
                                                     User</button>
                                                 <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                             </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use view;
 use App\Models\Destinasi;
 use App\Models\Kota;
 use Illuminate\Http\Request;
@@ -58,10 +59,10 @@ class KotaController extends Controller
     public function updatekota(Request $request, $id)
     {
         $data = Kota::find($id);
-        $data->update($request->all());
-        if (session('halaman_url')) {
-            return Redirect(session('halaman_url'))->with('success', 'Data Behasil Di Ubah!');
-        }
+        $data->update([
+            'nama_kota' => $request->nama_kota,
+        ]);
+
         return redirect()->route('kota')->with('success', 'Data Behasil Di Ubah!');
     }
 

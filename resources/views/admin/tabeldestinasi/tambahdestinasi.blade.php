@@ -128,8 +128,7 @@
 
                                         <div class="modal-footer">
                                             <div class="hstack gap-2 justify-content-end">
-                                                <button type="button" class="btn btn-light"
-                                                    data-bs-dismiss="modal">Close</button>
+                                                <a href="/kota" type="button" class="btn btn-light">Close</a>
                                                 <button type="submit" class="btn btn-success" id="edit-btn">Tambah
                                                     Wisata</button>
                                                 <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->

@@ -28,7 +28,7 @@ class PenggunaController extends Controller
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
 
-            return redirect()->route('pengguna');
+            return redirect()->route('pengguna')->with('success', 'Data Behasil Ditambahkan!');
         }
     }
 
@@ -42,13 +42,13 @@ class PenggunaController extends Controller
     {
         $data = Pengguna::find($id);
         $data->update($request->all());
-        return redirect()->route('pengguna');
+        return redirect()->route('pengguna')->with('success', 'Data Behasil Di Ubah!');
     }
 
     public function deletepengguna($id)
     {
         $data = Pengguna::find($id);
         $data->delete();
-        return redirect()->route('pengguna');
+        return redirect()->route('pengguna')->with('success', 'Data Behasil Di Hapus!');
     }
 }
