@@ -19,7 +19,7 @@ class LoginController extends Controller
 
     public function loginadmindua(Request $request)
     {
-        if (FacadesAuth::attempt($request->only('email', 'password'))){
+        if (FacadesAuth::attempt($request->only('email', 'password'))) {
             return redirect('/adminn');
         }
 
@@ -31,7 +31,7 @@ class LoginController extends Controller
         return view('admin.loginadmin');
     }
 
-    public function registeradminrdua(Request $request)
+    public function registeradmindua(Request $request)
     {
         User::create([
             'email' => $request->email,
@@ -41,49 +41,51 @@ class LoginController extends Controller
 
         ]);
 
-        return redirect('/loginuser');
+        return redirect('/loginadmin');
     }
 
-    public function logoutuser()
+    public function logoutadmin()
     {
-        return view('user.logoutuser');
+        return view('admin.logoutadmin');
     }
 
-        public function loginuser()
-        {
-            return view('user.loginuser');
+    //user
+    public function login()
+    {
+        return view('user.login');
+    }
+
+    public function loginuserdua(Request $request)
+    {
+        if (FacadesAuth::attempt($request->only('email', 'password'))) {
+            return redirect('/u');
         }
 
-        public function loginuserdua(Request $request)
-        {
-            if (FacadesAuth::attempt($request->only('email', 'password'))){
-                return redirect('/user');
-            }
+        return redirect('login');
+    }
 
-            return \redirect('loginuser');
-        }
+    public function register()
+    {
+        return view('user.register');
+    }
 
-        public function registeruser()
-        {
-            return view('user.registeruser');
-        }
+    public function registeruser(Request $request)
+    {
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'role' => 'user',
+            'password' => bcrypt($request->password),
+            'remember_token' => Str::random(60),
 
-        public function registeruserdua(Request $request)
-        {
-            User::create([
-                'email' => $request->email,
-                'name' => $request->name,
-                'password' => bcrypt($request->password),
-                'remember_token' => Str::random(60),
+        ]);
 
-            ]);
+        return redirect('/login');
+    }
 
-            return redirect('/loginuser');
-        }
-
-        // public function logoutuser()
-        // {
-        //     return view('user.logoutuser');
-        // }
+    // public function logoutuser()
+    // {
+    //     return view('user.logoutuser');
+    // }
 
 }

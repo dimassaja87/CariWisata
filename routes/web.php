@@ -28,7 +28,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user', function () {
+Route::get('/u', function () {
     return view('user.welcomeuser');
 });
 
@@ -200,21 +200,18 @@ Route::get('/deletekomentar/{id}',[KomentarController::class, 'deletekomentar'])
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');
 Route::post('/loginadmindua',[LoginController::class, 'loginadmindua'])->name('loginadmindua');
 
-Route::get('/registeradmin',[LoginController::class, 'registeradmin'])->name('registeradmin');
-Route::post('/registeradmindua',[LoginController::class, 'registeradmindua'])->name('registeradmindua');
-
 Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logoutadmin');
 //Akhir login admin
 
-//Login Admin
-Route::get('/loginuser',[LoginController::class, 'loginuser'])->name('loginuser');
+//Login User
+Route::get('/login',[LoginController::class, 'login'])->name('login');
 Route::post('/loginuserdua',[LoginController::class, 'loginuserdua'])->name('loginuserdua');
 
-Route::get('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
-Route::post('/registeruserdua',[LoginController::class, 'registeruserdua'])->name('registeruserdua');
+Route::get('/register',[LoginController::class, 'register'])->name('register');
+Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
 
 Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
-//Akhir login admin
+//Akhir login user
 
 
 //komentar wisata
