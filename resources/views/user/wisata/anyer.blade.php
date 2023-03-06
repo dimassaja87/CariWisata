@@ -151,13 +151,16 @@
                                     <!-- Blog Comment Wrap Start -->
                                     <div class="mg_comment_wrap">
                                         <h5 class="blog_main_title">132 Ulasan</h5>
+
+                                        @foreach ($komen as $row)
                                         <ul>
                                             <li>
                                                 <div class="mg_comment_dec">
-                                                    <figure><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/comment_user1.jpg') }}" alt=""></figure>
+                                                    <figure><img src="{{ asset('$row->profile') }}" alt=""></figure>
                                                     <div class="overflow_text">
-                                                        <h6><a href="#">john doe</a><span>( JUNE 20, 2014 )</span></h6>
-                                                        <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
+                                                        <h6>{{$row->nama}}<span>( JUNE 20, 2014 )</span></h6>
+                                                        <p>{{$row->pesan}}</p>
+                                                        <img src="{{ asset('foto/' . $row->foto) }}" alt="" style="width: 100px">
                                                     </div>
                                                 </div>
                                                 <ul class="children">
@@ -183,37 +186,34 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    @endforeach
                                     <!-- Blog Comment Wrap End -->
                                     <!-- Blog Comment Form Start -->
                                     <div class="mg_comment_form">
                                         <h5 class="blog_main_title">Berikan Ulasanmu!</h5>
-                                        <form>
+                                        <form action="/insertkomen" method="post" enctype="multipart/form-data">
+                                            @csrf
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="mg_input_1">
-                                                        <input placeholder="Nama" type="text">
+                                                        <input type="hidden" class="form-control" name="user_id" value="{{ auth()->user()->nama }}" placeholder="nama">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="mg_input_1">
-                                                        <input placeholder="No Telp" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="mg_input_1">
-                                                        <input placeholder="Foto" type="file">
+                                                        <input type="file" class="form-control" id="foto" placeholder="Foto">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
-                                                        <input placeholder="E-mail" type="text">
+                                                        <input type="text" class="form-control" id="email" placeholder="E-mail" >
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
-                                                        <textarea placeholder="Isi Ulasanmu"></textarea>
+                                                        <textarea class="form-control" name="pesan" id="pesan" placeholder="Isi Ulasanmu"></textarea>
                                                     </div>
-                                                    <input class="mg_btn1" type="submit" value="Kirim Ulasan">
+                                                    <input type="submit" class="mg_btn1" value="Kirim Ulasan">
                                                 </div>
                                             </div>
                                         </form>

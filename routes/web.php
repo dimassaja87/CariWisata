@@ -5,6 +5,7 @@ use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\KomenController;
 use App\Http\Controllers\RatingController;
 use App\Models\Destinasi;
 use App\Models\Kota;
@@ -216,3 +217,6 @@ Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutus
 //Akhir login admin
 
 
+//komentar wisata
+Route::get('/anyer',[KomenController::class, 'komen'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
