@@ -105,7 +105,7 @@
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
                                             <p>Taman hiburan bertema dinosaurus pertama dan terbesar di Indonesia yang dilengkapi museum dengan pembelajaran tentang dinosaurus.</p>
-                                            <br><h5>Cara Ke Tanah Lot</h5></br>
+                                            <br><h5>Cara Ke Jawa Timur Park 3</h5></br>
                                             <p>Rute yang perjalanan sebenarnya sangat mudah karena letak Jatim Park 3 sangatlah strategis. Jika menggunakan angkutan umum, pengunjung dari Malang bisa menuju Terminal Batu kemudian naik angkot jurusan BL. Angkot berwarna ungu muda ini memiliki rute dari Terminal hingga melewati Jatim Park 3.</p>
                                             
                                         <img src="https://travelspromo.com/wp-content/uploads/2021/01/Zona-dinosaurus-Jatim-Park-3-1024x768.jpg.webp" alt="">
@@ -114,22 +114,63 @@
                                             <div class="mg_table">
                                                 <ul class="mg_table_head">
                                                     <li>Jenis Tiket</li>
-                                                    <li>Domestik</li>
-                                                    <li>International</li>
+                                                    <li>Weekday</li>
+                                                    <li>Weekend</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Weekday</li>
+                                                    <li>Tiket masuk The Legend Stars Park</li>
+                                                    <li>Rp70.000</li>
+                                                    <li>Rp90.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket masuk FunTech Plaza</li>
+                                                    <li>Rp30.000</li>
+                                                    <li>Rp55.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket masuk museum musik dunia</li>
+                                                    <li>Rp40.000</li>
+                                                    <li>Rp55.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Milenial Glow Garden</li>
+                                                    <li>Rp80.000</li>
+                                                    <li>Rp100.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Terusan Dino Park + Milenial Glow Garden</li>
+                                                    <li>Rp140.000</li>
+                                                    <li>Rp170.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Terusan Dino Park + The Legend Stars</li>
+                                                    <li>Rp140.000</li>
+                                                    <li>Rp160.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Terusan The Legend Stars + Milenial Glow Garden </li>
+                                                    <li>Rp120.000</li>
+                                                    <li>Rp140.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Milenial Glow Garden + FunTech Plaza + Museum Musik Dunia</li>
+                                                    <li>Rp120.000</li>
+                                                    <li>Rp140.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Dino Park + FunTech Plaza + Museum Musik Dunia + Circus Magic +Secret Journey</li>
                                                     <li>Rp150.000</li>
                                                     <li>Rp170.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Weekend</li>
+                                                    <li>Tiket Masuk Dino  Park + Predator Fun Park</li>
+                                                    <li>Rp125.000</li>
                                                     <li>Rp160.000</li>
-                                                    <li>Rp180.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Open Trip Jawa Timur Park 3</li>
-                                                    <li>mulai dari Rp650.000</li>
+                                                    <li>Tiket Masuk Happy Kids</li>
+                                                    <li>Rp50.000</li>
+                                                    <li>Rp50.000</li>
                                                 </ul>
                                             </div>
                                             <br><h5>Keunikan dan daya tarik</h5></br>

@@ -114,6 +114,27 @@ Route::get('/jatim', function () {
     return view('user.wisata.jatim');
 });
 
+Route::get('/santerra', function () {
+    return view('user.wisata.santerra');
+});
+
+Route::get('/anyer', function () {
+    return view('user.wisata.anyer');
+});
+
+Route::get('/museumangkut', function () {
+    return view('user.wisata.museumangkut');
+});
+
+Route::get('/pandawa', function () {
+    return view('user.wisata.pandawa');
+});
+
+Route::get('/panglipuran', function () {
+    return view('user.wisata.panglipuran');
+});
+
+
 //Data User
 Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
 

@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Tanah Lot Bali</title>
+		<title>FLORA WISATA Santerra De Laponte </title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -82,7 +82,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Tanah Lot</h2>
+                    <h2>FLORA WISATA Santerra De Laponte </h2>
                     <ul class="breadcrumb">
                         <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
@@ -98,44 +98,38 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Tanah Lot</a></h5>
+                                        <h5 class="blog_title"><a>FLORA WISATA Santerra De Laponte </a></h5>
                                         <div class="thumb">
-                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
+                                            <img src="https://pingpoint.co.id/media/images/cov_MMWkrD9.original.jpg" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
-                                            <p>Pura Tanah Lot adalah salah satu Pura yang sangat disucikan di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu. Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut. Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam, sehingga bisa digunakan tempat wisata juga.</p>
-                                            <br><h5>Cara Ke Tanah Lot</h5></br>
-                                            <p>Jarak dari bandara Internasional Ngurah Rai sektar 27 km dengan waktu tempuh 1,5 jam. pengunjung bisa ambil rute ke Jl. Bandara Ngurah Rai-Jl. By Pass Ngurah Rai-Jl. Sunset Road-Jl. Raya Canggu- Jl. By Pass Tanah Lot-Jl.Raya Tanah Lot di Beraban, kemudian Anda akan sampai di Tanah Lot.</p>
-                                            <p>Berkunjung ke Pura Tanah Lot lebih nyaman menggunakan kendaraan pribadi, transportasi online atau sewa kendaraan, mengingat terbatasnya transportasi umum di Bali.</p>
-                                        <img src="https://tourisonn.com/wp-content/uploads/2019/12/TANAH-LOT-TEMPLE-1024x683.jpg" alt="">
+                                            <p>FLORA WISATA Santerra De Laponte merupakan salah satu tempat wisata di Batu yang terdapat berbagai macam bunga untuk dinikmati keindahannya. Selain itu, di tempat wisata ini terdapat sejumlah replika bangunan ala luar negeri. Wisata ini juga menawarkan hamparan taman bunga yang begitu cantik. Pengunjung bisa menyaksikan beraneka ragam jenis bunga yang tumbuh di tempat wisata ini. Tak heran jika taman bunga yang satu ini cocok dijadikan sebagai wisata edukasi.</p>
+                                            <br><h5>Jam Buka Flora Wisata Santerra De Laponte</h5></br>
+                                            <p>Tempat wisata ini memiliki jadwal buka dan tutup yang telah ditentukan yaitu dari pukul 08.00-17.00. Waktu yang paling tepat untuk berkunjung tentu saja pada pagi hari. Selain itu, ada baiknya untuk datang saat sinar matahari tidak terik..</p>
+                                            
+                                        <img src="https://setapaklangkah.com/wp-content/uploads/2022/03/FLORA-WISATA-Santerra-De-Laponte.png" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
                                             <div class="mg_table">
                                                 <ul class="mg_table_head">
-                                                    <li>Kategori</li>
-                                                    <li>Harga Tiket Masuk</li>
+                                                    <li>Jenis Tiket</li>
+                                                    <li>Weekday</li>
+                                                    <li>Weekend</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Dewasa WNI</li>
+                                                    <li>Tiket Masuk Anak 3 & 4 tahun</li>
                                                     <li>Rp20.000</li>
+                                                    <li>Rp25.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Anak WNI (5-10 tahun)</li>
-                                                    <li>R15.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Dewasa WNA</li>
-                                                    <li>Rp60.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Anak WNA (5-10 tahun)</li>
+                                                    <li>Tiket Masuk Dewasa</li>
                                                     <li>Rp30.000</li>
+                                                    <li>Rp35.000</li>
                                                 </ul>
-                                                
-                                            </div>
-                                            <br><h5>Keunikan dan daya tarik</h5></br>
-                                            <p>Pura Tanah Lot memiliki beragam keunikan dan daya tarik,diantaranya memiliki banyak pura, gua air suci dan gua ular suci. Di tanah lot juga cocok digunakan sebagai spot foto, melihat matahari tenggelam dan bermain air</p>
+                                               
+                                            <br><h5>Fasilitas Yang di Sediakan</h5></br>
+                                            <p>Pihak pengelola tempat wisata apik ini tak lupa menyediakan fasilitas yang cukup memadai. Pengunjung bisa menggunakan sejumlah fasilitas mulai dari tempat parkir, toilet, hingga musala. Di objek wisata ini juga terdapat warung hingga cafe yang menyediakan hidangan lezat.</p>
                                   </div>
                         
                                     

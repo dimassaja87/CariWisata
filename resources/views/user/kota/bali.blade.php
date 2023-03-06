@@ -119,7 +119,7 @@
                                                         <figure><img src="https://th.bing.com/th/id/OIP.w-aMRwtFGaRJptsXNaZgvQAAAA?pid=ImgDet&rs=1" alt=""></figure>
                                                         <figure><img src="https://i.pinimg.com/originals/90/03/f1/9003f1629a40e7fa3d7e574913a395b6.jpg" alt=""></figure>
                                                         <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://a.cdn-hotels.com/gdcs/production64/d972/4788985c-c026-4137-9619-56f60c967eae.jpg" alt=""></figure>
                                                         <figure><img src="https://akhyanavillage-jimbaran.com/wp-content/uploads/2020/11/Villa-Akhyana-Views-GWK-0597-600x400.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Start -->
@@ -129,7 +129,7 @@
                                                         <figure><img src="https://th.bing.com/th/id/OIP.w-aMRwtFGaRJptsXNaZgvQAAAA?pid=ImgDet&rs=1" alt=""></figure>
                                                         <figure><img src="https://i.pinimg.com/originals/90/03/f1/9003f1629a40e7fa3d7e574913a395b6.jpg" alt=""></figure>
                                                         <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
-                                                        <figure><img src="https://th.bing.com/th/id/OIP.fHJ1Okvp8GvgYJj8SVMmqgHaE9?pid=ImgDet&rs=1" alt=""></figure>
+                                                        <figure><img src="https://a.cdn-hotels.com/gdcs/production64/d972/4788985c-c026-4137-9619-56f60c967eae.jpg" alt=""></figure>
                                                         <figure><img src="https://akhyanavillage-jimbaran.com/wp-content/uploads/2020/11/Villa-Akhyana-Views-GWK-0597-600x400.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Nav End -->
@@ -288,7 +288,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="https://th.bing.com/th/id/OIP.UGwSYObE6JCngXKaXo4I8AHaE8?pid=ImgDet&rs=1" alt=""/>
+                                                        <img src="https://th.bing.com/th/id/R.66aba4f38e2b83d6b767e9397bea6daf?rik=xmCWE%2ftvJ5suBA&riu=http%3a%2f%2ftraveldigg.com%2fwp-content%2fuploads%2f2016%2f07%2fTanah-Lot-Bali-Temple.jpg&ehk=5dIFB7vYb8G23x%2bIqDoV5TOd3GXyhnzp1eErUJYsN1M%3d&risl=&pid=ImgRaw&r=0" alt=""/>
                                                         <figcaption>
                                                             <a class="view_btn" href="/tanahlot">Selengkapnya</a>
                                                         </figcaption>
@@ -308,18 +308,18 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="extra-images/usa3.jpg" alt=""/>
+                                                        <img src="https://www.hargatiket.net/wp-content/uploads/2020/02/sejarah-pantai-pandawa-dan-gambarnya.jpg" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="#">Selengkapnya</a>
+                                                            <a class="view_btn" href="/pandawa">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="#">Coming Soon</a></h5>
+                                                            <h5><a href="/pandawa">Pantai Pandawa</a></h5>
                                                         </div>
-                                                        <!-- <div class="mg_destination_review">
-                                                            <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
-                                                        </div> -->
+                                                        <div class="mg_destination_review">
+                                                            <p>Pantai Pandawa salah satu pantai di Bali yang memiliki pesona yang indah cocok untuk pengunjung berlibur dan berburu spot foto menarik.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -328,14 +328,17 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="extra-images/usa3.jpg" alt=""/>
+                                                        <img src="https://th.bing.com/th/id/R.7c72753a4be9f06be06098fc495326aa?rik=X3zwWg93zHAYwA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-dWmJ4YRvVVA%2fUGZXsr21quI%2fAAAAAAAAACE%2f_zlHiijoJnI%2fs1600%2fPande%2bKadek%2bHeryana%2bsaputra%2b-%2bApel%2bPhotography%2b-%2bDesa%2bPENGLIPURAN%2bVilage%2bBangli%2bBali%2bIndonesia%2b(1).jpg&ehk=Xeu5f6GlpBsIyskrrUVWTOJa2knfUDjZh0pJw2gcBPY%3d&risl=&pid=ImgRaw&r=0" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="#">Selengkapnya</a>
+                                                            <a class="view_btn" href="/panglipuran">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="#">Coming Soon</a></h5>
+                                                            <h5><a href="/panglipuran">Desa Wisata Panglipuran</a></h5>
+                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Salah satu desa wisata di Bali yang masih bersifat tradisional, Cocok untuk anda yang ingin mengenali lebih dalam ke tradisional an desa di Bali</p>
                                                         </div>
                                                         </div>
                                                 </div>

@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Tanah Lot Bali</title>
+		<title>Pantai Anyer</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -82,7 +82,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Tanah Lot</h2>
+                    <h2>Pantai Anyer</h2>
                     <ul class="breadcrumb">
                         <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
@@ -98,47 +98,54 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Tanah Lot</a></h5>
+                                        <h5 class="blog_title"><a>Pantai Anyer</a></h5>
                                         <div class="thumb">
-                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
+                                            <img src="https://th.bing.com/th/id/R.13725860367e7af8b605373decc215b7?rik=Y%2bSGT5PcFIwATg&riu=http%3a%2f%2fblog.reservasi.com%2fwp-content%2fuploads%2f2016%2f12%2fPantai-Sambolo-Anyer-1.jpg&ehk=M%2fOtil2RAjKk9VNmtjKzskqnZrysRYyxq7v%2bYlH%2fPfQ%3d&risl=&pid=ImgRaw&r=0" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
-                                            <p>Pura Tanah Lot adalah salah satu Pura yang sangat disucikan di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu. Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut. Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam, sehingga bisa digunakan tempat wisata juga.</p>
-                                            <br><h5>Cara Ke Tanah Lot</h5></br>
-                                            <p>Jarak dari bandara Internasional Ngurah Rai sektar 27 km dengan waktu tempuh 1,5 jam. pengunjung bisa ambil rute ke Jl. Bandara Ngurah Rai-Jl. By Pass Ngurah Rai-Jl. Sunset Road-Jl. Raya Canggu- Jl. By Pass Tanah Lot-Jl.Raya Tanah Lot di Beraban, kemudian Anda akan sampai di Tanah Lot.</p>
-                                            <p>Berkunjung ke Pura Tanah Lot lebih nyaman menggunakan kendaraan pribadi, transportasi online atau sewa kendaraan, mengingat terbatasnya transportasi umum di Bali.</p>
-                                        <img src="https://tourisonn.com/wp-content/uploads/2019/12/TANAH-LOT-TEMPLE-1024x683.jpg" alt="">
+                                            <p>Pantai Anyer merupakan obyek wisata tepi laut yang terletak di sisi timur provinsi Banten. Pasir pantainya bersih dengan panorama laut menjadi daya tariknya. Selain itu berbagai wahana serta fasilitas mendukung beragam aktivitas wisata.</p>
+                                            <br><h5>Event Wisata</h5></br>
+                                            <p>Pada saat periode puncak kunjungan wisatawan, kawasan wisata sekitar pantai acap kali menggelar kegiatan dan pertunjukan. Sejumlah acara kesenian dan budaya tradisional Banten ditampilkan untuk menyambut wisatawan. Diantaranya Rampak Bedug, Debus, dan tari-tarian Banten dan ”jamaican beach party’ serta band lokal.</p>
+                                        <img src="https://i2.wp.com/anyerpedia.com/wp-content/uploads/2016/03/Anyer.jpg?resize=800%2C533" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
                                             <div class="mg_table">
                                                 <ul class="mg_table_head">
-                                                    <li>Kategori</li>
-                                                    <li>Harga Tiket Masuk</li>
+                                                    <li>Jenis Tiket</li>
+                                                    <li>Harga</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Dewasa WNI</li>
-                                                    <li>Rp20.000</li>
+                                                    <li>Tiket Masuk Tanpa Kendaraan per orang</li>
+                                                    <li>Rp10.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Anak WNI (5-10 tahun)</li>
-                                                    <li>R15.000</li>
+                                                    <li>Tiket Masuk Sepeda Motor Termasuk Orang</li>
+                                                    <li>Rp25.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Dewasa WNA</li>
-                                                    <li>Rp60.000</li>
+                                                    <li>Tiket Masuk Sedan/Kijang Termasuk Orang</li>
+                                                    <li>Rp100.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Anak WNA (5-10 tahun)</li>
-                                                    <li>Rp30.000</li>
+                                                    <li>Tiket Masuk Elf Termasuk Orang</li>
+                                                    <li>Rp250.000</li>
                                                 </ul>
-                                                
-                                            </div>
-                                            <br><h5>Keunikan dan daya tarik</h5></br>
-                                            <p>Pura Tanah Lot memiliki beragam keunikan dan daya tarik,diantaranya memiliki banyak pura, gua air suci dan gua ular suci. Di tanah lot juga cocok digunakan sebagai spot foto, melihat matahari tenggelam dan bermain air</p>
+                                                <ul>
+                                                    <li>Tiket Masuk Bis Kecil Termasuk Orang</li>
+                                                    <li>Rp500.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Bis Long Medium Termasuk Orang</li>
+                                                    <li>Rp600.000</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Tiket Masuk Bis Besar Termasuk Orang</li>
+                                                    <li>Rp800.000</li>
+                                                </ul>
+                                            <br><h5>Fasilitas</h5></br>
+                                            <p>Karena merupakan destinasi wisata populer, Pantai Anyer telah melengkapi berbagai fasilitas penunjang keamanan dan kenyamanan bagi wisatawan. Beberapa diantaranya seperti Pusat Informasi, area parkir, bumi perkemahan, pondok wisata, restoran, dan toko cinderamata.</p>
                                   </div>
-                        
-                                    
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->

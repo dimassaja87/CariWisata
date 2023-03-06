@@ -119,7 +119,7 @@
                                                         <figure><img src="https://seru.co.id/wp-content/uploads/2020/12/Ilsutrasi-obyek-wisata-di-Kota-Batu-diperkirakan-sepi-pengunjung-pada-akhir-tahun-ini.jpg" alt=""></figure>
                                                         <figure><img src="https://www.villahotelbatu.com/wp-content/uploads/2017/07/omah-kayu-paralayang-batu.jpg" alt=""></figure>
                                                         <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
-                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://i.pinimg.com/originals/64/16/83/641683656550bac1b52ec590cde2e96d.jpg" alt=""></figure>
                                                         <figure><img src="https://sikidang.com/wp-content/uploads/Harga-Tiket-Masuk-Batu-Wonderland-Waterpark.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Start -->
@@ -129,7 +129,7 @@
                                                         <figure><img src="https://seru.co.id/wp-content/uploads/2020/12/Ilsutrasi-obyek-wisata-di-Kota-Batu-diperkirakan-sepi-pengunjung-pada-akhir-tahun-ini.jpg" alt=""></figure>
                                                         <figure><img src="https://www.villahotelbatu.com/wp-content/uploads/2017/07/omah-kayu-paralayang-batu.jpg" alt=""></figure>
                                                         <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
-                                                        <figure><img src="https://givernyhome.net/wp-content/uploads/2020/08/Tips-Destinasi-Wisata-Selecta-di-Kota-Batu.jpg" alt=""></figure>
+                                                        <figure><img src="https://i.pinimg.com/originals/64/16/83/641683656550bac1b52ec590cde2e96d.jpg" alt=""></figure>
                                                         <figure><img src="https://sikidang.com/wp-content/uploads/Harga-Tiket-Masuk-Batu-Wonderland-Waterpark.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Nav End -->
@@ -303,18 +303,18 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa3.jpg') }}" alt=""/>
+                                                        <img src="https://th.bing.com/th/id/R.2683bb32b8ac1089d1c30cb5c74b305c?rik=GfdVoQwjjruQHQ&riu=http%3a%2f%2fwww.malang-guidance.com%2fwp-content%2fuploads%2f2014%2f08%2fMuseum-Angkut-Malang.jpg&ehk=uhsOqqVapkSQnXLidmbEGAo%2fDZbSCIy0ZHytNJtxUvg%3d&risl=&pid=ImgRaw&r=0" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="#">Selengkapnya</a>
+                                                            <a class="view_btn" href="/museumangkut">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="#">Coming Soon</a></h5>
+                                                            <h5><a href="/museumangkut">Museum Angkut Batu</a></h5>
                                                         </div>
-                                                        <!-- <div class="mg_destination_review">
-                                                            <p>Wisata Kawah Putih Ciwidey cocok untuk kalian yang suka berswafoto dan cuci mata.</p>
-                                                        </div> -->
+                                                        <div class="mg_destination_review">
+                                                            <p>Museum Angkut merupakan sebuah tempat wisata museum transportasi di Batu yang memiliki konsep unik.</p>
+                                                        </div> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,16 +323,19 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                     <figure>
-                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa3.jpg') }}" alt=""/>
+                                                        <img src="https://asset.kompas.com/crops/56xcin4T7hu7uIHo-5imglRAQsE=/0x237:1080x957/750x500/data/photo/2022/02/26/6219d5de3fe6a.jpg" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="#">Selengkapnya</a>
+                                                            <a class="view_btn" href="/santerra">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="#">Coming Soon</a></h5>
+                                                            <h5><a href="/santerra">FLORA WISATA Santerra</a></h5>
                                                         </div>
-                                                        </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>FLORA WISATA Santerra De Laponte cocok untuk para pengunjung mendapatkan spot foto yang instagramable.</p>
+                                                        </div> 
+                                                  </div>
                                                 </div>
                                             </div>
                                             <!-- Hotel Destination End -->
