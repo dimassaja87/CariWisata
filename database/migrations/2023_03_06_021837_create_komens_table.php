@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('komens', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            
+            $table->string('foto');
+            $table->string('email');
             $table->string('pesan');
             $table->timestamps();
         });

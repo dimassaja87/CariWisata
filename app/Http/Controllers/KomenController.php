@@ -16,6 +16,8 @@ class KomenController extends Controller
     {
         $data = Komen::create([
             'nama' => $request->nama,
+            'foto' => $request->foto,
+            'email' => $request->email,
             'pesan' => $request->pesan,
         ]);
         if ($request->hasFile('foto')) {
@@ -23,7 +25,7 @@ class KomenController extends Controller
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
 
-            return redirect()->route('anyer')->with('success', 'Data Behasil Ditambahkan!');
+            return redirect()->route('komen')->with('success', 'Data Behasil Ditambahkan!');
         }
     }
 }
