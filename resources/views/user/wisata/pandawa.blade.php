@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Tanah Lot Bali</title>
+		<title>Pantai Pandawa</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -82,7 +82,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Tanah Lot</h2>
+                    <h2>Pantai Pandawa</h2>
                     <ul class="breadcrumb">
                         <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
@@ -98,44 +98,41 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Tanah Lot</a></h5>
+                                        <h5 class="blog_title"><a>Pantai Pandawa</a></h5>
                                         <div class="thumb">
-                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
+                                            <img src="https://4.bp.blogspot.com/-X3AIfOeNXac/WBgKUdjxNII/AAAAAAAABYI/gV6vZB5XArEWjdcQ4XHbckhb79sv7NlUACLcB/s1600/20150106_124646.jpg" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
-                                            <p>Pura Tanah Lot adalah salah satu Pura yang sangat disucikan di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu. Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut. Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam, sehingga bisa digunakan tempat wisata juga.</p>
-                                            <br><h5>Cara Ke Tanah Lot</h5></br>
-                                            <p>Jarak dari bandara Internasional Ngurah Rai sektar 27 km dengan waktu tempuh 1,5 jam. pengunjung bisa ambil rute ke Jl. Bandara Ngurah Rai-Jl. By Pass Ngurah Rai-Jl. Sunset Road-Jl. Raya Canggu- Jl. By Pass Tanah Lot-Jl.Raya Tanah Lot di Beraban, kemudian Anda akan sampai di Tanah Lot.</p>
-                                            <p>Berkunjung ke Pura Tanah Lot lebih nyaman menggunakan kendaraan pribadi, transportasi online atau sewa kendaraan, mengingat terbatasnya transportasi umum di Bali.</p>
-                                        <img src="https://tourisonn.com/wp-content/uploads/2019/12/TANAH-LOT-TEMPLE-1024x683.jpg" alt="">
+                                            <p>Pantai Pandawa ini berlokasi di area Kuta Selatan, Kabupaten Badung, Bali. Pantai Pandawa mempunyai pemandangan alam yang sangat indah sebagai spot foto tempat bermain dan bersenang-senang untuk wisatawan yang ingin berkunjung bersama keluarga</p>
+                                            <br><h5>Fasilitas Pantai Pandawa</h5></br>
+                                            <p>Selain lokasinya yang cukup menarik dan sangat cantik, Pantai Pandawa juga menyiapkan beberapa fasilitas untuk memanjakan pengunjung yang datang ke pantai ini. Banyak hal menarik yang dapat dilakukan di pantai ini seperti berselancar, bermain kano, dan bersantai di pinggir pantai</p>
+                                        <img src="https://tempatwisataseru.com/wp-content/uploads/2017/02/Pesona-Pantai-Pandawa-di-Bali.jpg" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
                                             <div class="mg_table">
                                                 <ul class="mg_table_head">
-                                                    <li>Kategori</li>
-                                                    <li>Harga Tiket Masuk</li>
+                                                    <li>Jenis Tiket</li>
+                                                    <li>Domestik</li>
+                                                    <li>International</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Dewasa WNI</li>
-                                                    <li>Rp20.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Anak WNI (5-10 tahun)</li>
-                                                    <li>R15.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Dewasa WNA</li>
+                                                    <li>Weekday</li>
+                                                    <li>Rp45.000</li>
                                                     <li>Rp60.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Anak WNA (5-10 tahun)</li>
-                                                    <li>Rp30.000</li>
+                                                    <li>Weekend</li>
+                                                    <li>Rp50.000</li>
+                                                    <li>Rp80.000</li>
                                                 </ul>
-                                                
+                                                <ul>
+                                                    <li>Open Trip Pantai Pandawa</li>
+                                                    <li>mulai dari Rp650.000</li>
+                                                </ul>
                                             </div>
-                                            <br><h5>Keunikan dan daya tarik</h5></br>
-                                            <p>Pura Tanah Lot memiliki beragam keunikan dan daya tarik,diantaranya memiliki banyak pura, gua air suci dan gua ular suci. Di tanah lot juga cocok digunakan sebagai spot foto, melihat matahari tenggelam dan bermain air</p>
+                                            <br><h5>Daya Tarik</h5></br>
+                                            <p>Di PAntai Pandawa ini memiliki daya tarik tersendiri karena terdapat patung lima ksatria pandawa yang menampilkan 5 tokoh dalam cerita wayang kulit yaitu BIma, Arjuna, Nakula, Sadewa, dan Yudistira</p>
                                   </div>
                         
                                     

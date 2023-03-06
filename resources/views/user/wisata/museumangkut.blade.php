@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Tanah Lot Bali</title>
+		<title>Museum Angkut</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -82,7 +82,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Tanah Lot</h2>
+                    <h2>Museum Angkut Batu</h2>
                     <ul class="breadcrumb">
                         <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
@@ -98,44 +98,39 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Tanah Lot</a></h5>
+                                        <h5 class="blog_title"><a>Museum Angkut Batu</a></h5>
                                         <div class="thumb">
-                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
+                                            <img src="https://th.bing.com/th/id/R.45b67fb3267f3f3564481f0d0f74e4a2?rik=kIpe6otgruaD%2bw&riu=http%3a%2f%2fanekatempatwisata.com%2fwp-content%2fuploads%2f2014%2f12%2fMuseum-Angkut-4.jpg&ehk=WPUQlXHVC%2bIKtGsairEbxT4Rumgl9tcpCm%2br7PaMpKs%3d&risl=&pid=ImgRaw&r=0" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
-                                            <p>Pura Tanah Lot adalah salah satu Pura yang sangat disucikan di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu. Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut. Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam, sehingga bisa digunakan tempat wisata juga.</p>
-                                            <br><h5>Cara Ke Tanah Lot</h5></br>
-                                            <p>Jarak dari bandara Internasional Ngurah Rai sektar 27 km dengan waktu tempuh 1,5 jam. pengunjung bisa ambil rute ke Jl. Bandara Ngurah Rai-Jl. By Pass Ngurah Rai-Jl. Sunset Road-Jl. Raya Canggu- Jl. By Pass Tanah Lot-Jl.Raya Tanah Lot di Beraban, kemudian Anda akan sampai di Tanah Lot.</p>
-                                            <p>Berkunjung ke Pura Tanah Lot lebih nyaman menggunakan kendaraan pribadi, transportasi online atau sewa kendaraan, mengingat terbatasnya transportasi umum di Bali.</p>
-                                        <img src="https://tourisonn.com/wp-content/uploads/2019/12/TANAH-LOT-TEMPLE-1024x683.jpg" alt="">
+                                            <p>Museum Angkut merupakan museum transportasi dan tempat wisata modern yang terletak di Kota Batu, Jawa Timur,sekitar 20 km dari Kota Malang. Museum ini terletak di kawasan seluas 3,8 hektar di lereng Gunung Panderman dan memiliki lebih dari 300 koleksi jenis angkutan tradisional hingga modern. Museum ini terbagi dalam beberapa zona yang didekorasi dengan setting landscape model bangunan dari benua Asia, Eropa hingga Amerika.</p>
+                                            <br><h5>Jam Buka Museum Angkut</h5></br>
+                                            <p>Kalau ingin berkunjung ke tempat rekreasi keluarga yang satu ini bisa mulai datang agak siangan. Karena Museum Angkut Batu Malang buka mulai pukul 12:00 Siang.</p>
+                                            
+                                        <img src="https://www.gotravelly.com/assets/img/review/gallery/54/dc43ae7237b548662407908d8d753597.jpg" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
                                             <div class="mg_table">
                                                 <ul class="mg_table_head">
-                                                    <li>Kategori</li>
-                                                    <li>Harga Tiket Masuk</li>
+                                                    <li>Jenis Tiket</li>
+                                                    <li>Weekday</li>
+                                                    <li>Weekend</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Dewasa WNI</li>
-                                                    <li>Rp20.000</li>
+                                                    <li>Tiket Masuk Reguler</li>
+                                                    <li>Rp100.000</li>
+                                                    <li>Rp120.000</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Anak WNI (5-10 tahun)</li>
-                                                    <li>R15.000</li>
+                                                    <li>Tiket Masuk Jatim Park 1 + Museum Angkut</li>
+                                                    <li>Rp140.000</li>
+                                                    <li>Rp170.000</li>
                                                 </ul>
-                                                <ul>
-                                                    <li>Dewasa WNA</li>
-                                                    <li>Rp60.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Anak WNA (5-10 tahun)</li>
-                                                    <li>Rp30.000</li>
-                                                </ul>
-                                                
-                                            </div>
-                                            <br><h5>Keunikan dan daya tarik</h5></br>
-                                            <p>Pura Tanah Lot memiliki beragam keunikan dan daya tarik,diantaranya memiliki banyak pura, gua air suci dan gua ular suci. Di tanah lot juga cocok digunakan sebagai spot foto, melihat matahari tenggelam dan bermain air</p>
+                                               
+                                            <br><h5>Fasilitas Yang di Sediakan</h5></br>
+                                            <p>Museum Angkut Malang memiliki fasilitas yang lengkap. Ada area parkir yang lumayan luas dekat pintu masuk bagi pengunjung yang datang membawa kendaraan pribadi.
+                                                Ada juga tempat makan lengkap seperti di zona Pasar Apung atau Food Court bagi pengunjung yang ingin makan. Selain itu, ATM Center, loker, toilet serta lift juga akan memudahkan pengunjung ketika berekreasi. Ada juga alternatif Shuttle Car bagi pengunjung yang tidak mau lelah berjalan kaki mengelilingi museum..</p>
                                   </div>
                         
                                     

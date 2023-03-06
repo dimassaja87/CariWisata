@@ -112,6 +112,11 @@ Route::get('/jatim', function () {
     return view('user.wisata.jatim');
 });
 
+Route::get('/santerra', function () {
+    return view('user.wisata.santerra');
+});
+
+
 //Data User
 Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
 

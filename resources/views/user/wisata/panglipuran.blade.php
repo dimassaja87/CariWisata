@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Tanah Lot Bali</title>
+		<title>Desa Wisata Panglipuran Bali</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -82,7 +82,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>Tanah Lot</h2>
+                    <h2>Desa Wisata Panglipuran Bali</h2>
                     <ul class="breadcrumb">
                         <li><a href="/destinasi">Destinasi</a></li>
                     </ul>
@@ -98,44 +98,41 @@
                                 <div class="mg_blog_detail_wrap">
                                     <!-- Blog Full Strat -->
                                     <div class="mg_blog_full">
-                                        <h5 class="blog_title"><a>Tanah Lot</a></h5>
+                                        <h5 class="blog_title"><a>Desa Wisata Panglipuran Bali</a></h5>
                                         <div class="thumb">
-                                            <img src="https://travelspromo.com/wp-content/uploads/2021/09/Pulau-Peucang-Andini-Maheswari.jpg" alt="">
+                                            <img src="https://disparda.baliprov.go.id/wp-content/uploads/2022/06/Desa-Wisata-Penglipuran.jpg" alt="">
                                         </div>
                                         <div class="mg_blog_contant">
                                             <div class="thumb">
-                                            <p>Pura Tanah Lot adalah salah satu Pura yang sangat disucikan di Bali, Indonesia. Di sini ada dua pura yang terletak di atas batu besar. Satu terletak di atas bongkahan batu dan satunya terletak di atas tebing mirip dengan Pura Uluwatu. Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut. Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam, sehingga bisa digunakan tempat wisata juga.</p>
-                                            <br><h5>Cara Ke Tanah Lot</h5></br>
-                                            <p>Jarak dari bandara Internasional Ngurah Rai sektar 27 km dengan waktu tempuh 1,5 jam. pengunjung bisa ambil rute ke Jl. Bandara Ngurah Rai-Jl. By Pass Ngurah Rai-Jl. Sunset Road-Jl. Raya Canggu- Jl. By Pass Tanah Lot-Jl.Raya Tanah Lot di Beraban, kemudian Anda akan sampai di Tanah Lot.</p>
-                                            <p>Berkunjung ke Pura Tanah Lot lebih nyaman menggunakan kendaraan pribadi, transportasi online atau sewa kendaraan, mengingat terbatasnya transportasi umum di Bali.</p>
-                                        <img src="https://tourisonn.com/wp-content/uploads/2019/12/TANAH-LOT-TEMPLE-1024x683.jpg" alt="">
+                                            <p>Desa Penglipuran merupakan salah satu desa adat dari Kabupaten Bangli, Provinsi Bali. Sejak 1993 desa ini ditetapkan oleh Pemerintah Kabupaten Bangli sebagai desa wisata. Masyarakat desa ini masih menjalankan dan melestarikan budaya tradisional Bali di kehidupan mereka sehari-hari. Suasana desa seluas 112 hektar ini bersih, asri, nyaman , dan jauh dari modernisasi.</p>
+                                            <br><h5>Singkat Sejarah</h5></br>
+                                            <p>Pada jaman kerajaan, raja-raja sengaja untuk datang ke objek wisata ini untuk beristirahat. Dari sinilah muncul nama Penglipuran yang berarti penghibur. Suasanya yang tenang dan damai cocok untuk tempat relaksasi dan melepas penat.</p>
+                                            <p>Nama Penglipuran juga berasal dari Pengeling Pura, tempat suci untuk mengingat para leluhur. Masyarakat di desa ini sangat menjaga tradisi dan budaya warisan para tetua. Dengan sekitar 13.000 orang pengunjung pada 2019, pendapatan wisata Desa Penglipuran terus meningkat.</p>
+                                            
+                                        <img src="https://travelspromo.com/wp-content/uploads/2020/03/Jajaran-rumah-tradisional-Desa-Penglipuran-Bangli-Bali-Abdur-Rahman-1536x1031.jpg" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
                                             <div class="mg_table">
                                                 <ul class="mg_table_head">
-                                                    <li>Kategori</li>
-                                                    <li>Harga Tiket Masuk</li>
+                                                    <li>Jenis Tiket</li>
+                                                    <li>Domestik</li>
+                                                    <li>Mancanegara</li>
                                                 </ul>
                                                 <ul>
-                                                    <li>Dewasa WNI</li>
-                                                    <li>Rp20.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Anak WNI (5-10 tahun)</li>
-                                                    <li>R15.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Dewasa WNA</li>
-                                                    <li>Rp60.000</li>
-                                                </ul>
-                                                <ul>
-                                                    <li>Anak WNA (5-10 tahun)</li>
+                                                    <li>Tiket Masuk Orang Dewasa</li>
+                                                    <li>Rp15.000</li>
                                                     <li>Rp30.000</li>
                                                 </ul>
-                                                
-                                            </div>
-                                            <br><h5>Keunikan dan daya tarik</h5></br>
-                                            <p>Pura Tanah Lot memiliki beragam keunikan dan daya tarik,diantaranya memiliki banyak pura, gua air suci dan gua ular suci. Di tanah lot juga cocok digunakan sebagai spot foto, melihat matahari tenggelam dan bermain air</p>
+                                                <ul>
+                                                    <li>Tiket Masuk Anak-anak</li>
+                                                    <li>Rp10.000</li>
+                                                    <li>Rp25.000</li>
+                                                </ul>
+                                               
+                                            <br><h5>Lokasi Desa Wisata Panglipuran</h5></br>
+                                            <p>Desa Adat ini terletak sekitar 45 Km dari pusat kota Denpasar. Jarak tempuhnya dua jam dari Bandara Internasional Ngurah Rai. Akses ke lokasi cukup mudah berada pada jalur utama Bangli dan Kintamani. Tepatnya di Jl. Penglipuran, Kubu, Kec. Bangli, Kabupaten Bangli, Bali 80661
+
+                                            </p>
                                   </div>
                         
                                     

@@ -120,7 +120,7 @@
                                                         <figure><img src="https://th.bing.com/th/id/OIP.tFD3Pnfl5z792t03WURABgHaE6?pid=ImgDet&rs=1" alt=""></figure>
                                                         <figure><img src="https://th.bing.com/th/id/R.2769388cab31e6d31adfdba7bf9fa0a8?rik=WUMub%2fPoZQaCtQ&riu=http%3a%2f%2flechaudrondevulcain.com%2fwp-content%2fuploads%2f2019%2f12%2f78660013_3031315690426059_1669589315648225280_o.jpg&ehk=gmktFkfxXUX8FsPBwiX2%2fIpqFWkDwn2ByqDj2Vei44A%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
                                                         <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
-                                                        <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/R.cee2b89fc9bfca29b53f96a94badc7f2?rik=MYZ1qupoB5PIJA&riu=http%3a%2f%2fanekatempatwisata.com%2fwp-content%2fuploads%2f2015%2f06%2fwisata-Tanjung-Lesung.jpg&ehk=yw%2b4DvZE5J8nqpm0xZoBTN8%2bMpEjbWX0FW%2f%2fvSf9PP8%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
                                                         <figure><img src="https://1.bp.blogspot.com/-vHyP7vdX3C4/X3RcS6-fFCI/AAAAAAAAT90/9JDqhsLqpsAre2ivJ9q4qHQ5QNDnCo4OwCLcBGAsYHQ/s1280/Urang%2BKanekes%252C%2BPenguasa%2BPedalaman%2BPerkampungan%2BSuku%2BBaduy%2B2.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Start -->
@@ -130,7 +130,7 @@
                                                         <figure><img src="https://th.bing.com/th/id/OIP.tFD3Pnfl5z792t03WURABgHaE6?pid=ImgDet&rs=1" alt=""></figure>
                                                         <figure><img src="https://th.bing.com/th/id/R.2769388cab31e6d31adfdba7bf9fa0a8?rik=WUMub%2fPoZQaCtQ&riu=http%3a%2f%2flechaudrondevulcain.com%2fwp-content%2fuploads%2f2019%2f12%2f78660013_3031315690426059_1669589315648225280_o.jpg&ehk=gmktFkfxXUX8FsPBwiX2%2fIpqFWkDwn2ByqDj2Vei44A%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
                                                         <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
-                                                        <figure><img src="https://indonesiatraveler.id/wp-content/uploads/2020/06/Ujung-Kulon-Taman-Nasional-Ujung-Kulon.jpg" alt=""></figure>
+                                                        <figure><img src="https://th.bing.com/th/id/R.cee2b89fc9bfca29b53f96a94badc7f2?rik=MYZ1qupoB5PIJA&riu=http%3a%2f%2fanekatempatwisata.com%2fwp-content%2fuploads%2f2015%2f06%2fwisata-Tanjung-Lesung.jpg&ehk=yw%2b4DvZE5J8nqpm0xZoBTN8%2bMpEjbWX0FW%2f%2fvSf9PP8%3d&risl=&pid=ImgRaw&r=0" alt=""></figure>
                                                         <figure><img src="https://1.bp.blogspot.com/-vHyP7vdX3C4/X3RcS6-fFCI/AAAAAAAAT90/9JDqhsLqpsAre2ivJ9q4qHQ5QNDnCo4OwCLcBGAsYHQ/s1280/Urang%2BKanekes%252C%2BPenguasa%2BPedalaman%2BPerkampungan%2BSuku%2BBaduy%2B2.jpg" alt=""></figure>
                                                     </div>
                                                     <!-- Room Slider Nav End -->
@@ -294,7 +294,7 @@
                                                     <figure>
                                                         <img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="/peuncang.html">Selengkapnya</a>
+                                                            <a class="view_btn" href="/peuncang">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
@@ -312,17 +312,19 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/usa3.jpg') }}" alt=""/>
+                                                        <img src="https://th.bing.com/th/id/R.bf6c87667a7d2b936b6540a3337d2ca4?rik=BYt8YRl7olITjA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-23v_Ycz8gcY%2fUWyBQ2kmawI%2fAAAAAAAAAT0%2f6QsmiZ7ERjo%2fs1600%2fpantai-anyer.jpg&ehk=n2LUp%2fpT0yJROuqNgWkZbcqkZHl0s7liYPRJzj8kHRk%3d&risl=&pid=ImgRaw&r=0" alt=""/>
                                                         <figcaption>
-                                                            <a class="view_btn" href="#">Selengkapnya</a>
+                                                            <a class="view_btn" href="/anyer">Selengkapnya</a>
                                                         </figcaption>
                                                     </figure>
                                                     <div class="text">
                                                         <div class="mg_destination_hd">
-                                                            <h5><a href="#">Coming Soon</a></h5>
+                                                            <h5><a href="/anyer">Pantai Anyer</a></h5>
                                                         </div>
+                                                        <div class="mg_destination_review">
+                                                            <p>Pantai Anyer merupakan sebuah lokasi wisata bahari yang begitu popular di Serang, Banten. Cocok bagi pengunjung untuk bermain, melihat sunset, berselancar, ataupun hanya untuk bersantai</p>
                                                         </div>
-                                                </div>
+                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- Hotel Destination End -->
