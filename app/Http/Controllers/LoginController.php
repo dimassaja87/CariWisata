@@ -19,7 +19,7 @@ class LoginController extends Controller
 
     public function loginadmindua(Request $request)
     {
-        if (FacadesAuth::attempt($request->only('email', 'password'))){
+        if (FacadesAuth::attempt($request->only('email', 'password'))) {
             return redirect('/adminn');
         }
 
@@ -28,7 +28,7 @@ class LoginController extends Controller
 
     public function registeradmin()
     {
-        return view('admin.registeradmin');
+        return view('admin.loginadmin');
     }
 
     public function registeradmindua(Request $request)
@@ -48,4 +48,44 @@ class LoginController extends Controller
     {
         return view('admin.logoutadmin');
     }
+
+    //user
+    public function login()
+    {
+        return view('user.login');
+    }
+
+    public function loginuserdua(Request $request)
+    {
+        if (FacadesAuth::attempt($request->only('email', 'password'))) {
+            return redirect('/u');
+        }
+
+        return redirect('login');
+    }
+
+    public function register()
+    {
+        return view('user.register');
+    }
+
+    public function registeruser(Request $request)
+    {
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'role' => 'user',
+            'password' => bcrypt($request->password),
+            'remember_token' => Str::random(60),
+
+        ]);
+
+        return redirect('/login');
+    }
+
+    // public function logoutuser()
+    // {
+    //     return view('user.logoutuser');
+    // }
+
 }
