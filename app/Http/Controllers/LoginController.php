@@ -28,10 +28,10 @@ class LoginController extends Controller
 
     public function registeradmin()
     {
-        return view('admin.registeradmin');
+        return view('admin.loginadmin');
     }
 
-    public function registeradmindua(Request $request)
+    public function registeradminrdua(Request $request)
     {
         User::create([
             'email' => $request->email,
@@ -41,11 +41,49 @@ class LoginController extends Controller
 
         ]);
 
-        return redirect('/loginadmin');
+        return redirect('/loginuser');
     }
 
-    public function logoutadmin()
+    public function logoutuser()
     {
-        return view('admin.logoutadmin');
+        return view('user.logoutuser');
     }
+
+        public function loginuser()
+        {
+            return view('user.loginuser');
+        }
+
+        public function loginuserdua(Request $request)
+        {
+            if (FacadesAuth::attempt($request->only('email', 'password'))){
+                return redirect('/user');
+            }
+
+            return \redirect('loginuser');
+        }
+
+        public function registeruser()
+        {
+            return view('user.registeruser');
+        }
+
+        public function registeruserdua(Request $request)
+        {
+            User::create([
+                'email' => $request->email,
+                'name' => $request->name,
+                'password' => bcrypt($request->password),
+                'remember_token' => Str::random(60),
+
+            ]);
+
+            return redirect('/loginuser');
+        }
+
+        // public function logoutuser()
+        // {
+        //     return view('user.logoutuser');
+        // }
+
 }

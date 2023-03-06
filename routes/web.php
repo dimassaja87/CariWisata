@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DestinasiController;
+use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
@@ -24,6 +25,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/user', function () {
+    return view('user.welcomeuser');
 });
 
 Route::get('/adminn', function () {
@@ -179,6 +184,17 @@ Route::post('/updaterating{id}',[RatingController::class, 'updaterating'])->name
 
 Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating');
 
+//Data Komentar
+Route::get('/komentar',[KomentarController::class, 'komentar'])->name('komentar');
+
+Route::get('/tambahkomentar',[KomentarController::class, 'tambahkomentar'])->name('tambahkomentar');
+Route::post('/insertkomentar',[KomentarController::class, 'insertkomentar'])->name('insertkomentar');
+
+Route::get('/tampilkomentar/{id}',[KomentarController::class, 'tampilkomentar'])->name('tampilkomentar');
+Route::post('/updatekomentar{id}',[KomentarController::class, 'updatekomentar'])->name('updatekomentar');
+
+Route::get('/deletekomentar/{id}',[KomentarController::class, 'deletekomentar'])->name('deletekomentar');
+
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');
 Route::post('/loginadmindua',[LoginController::class, 'loginadmindua'])->name('loginadmindua');
@@ -187,6 +203,16 @@ Route::get('/registeradmin',[LoginController::class, 'registeradmin'])->name('re
 Route::post('/registeradmindua',[LoginController::class, 'registeradmindua'])->name('registeradmindua');
 
 Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logoutadmin');
+//Akhir login admin
+
+//Login Admin
+Route::get('/loginuser',[LoginController::class, 'loginuser'])->name('loginuser');
+Route::post('/loginuserdua',[LoginController::class, 'loginuserdua'])->name('loginuserdua');
+
+Route::get('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
+Route::post('/registeruserdua',[LoginController::class, 'registeruserdua'])->name('registeruserdua');
+
+Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
 //Akhir login admin
 
 
