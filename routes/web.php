@@ -6,13 +6,16 @@ use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\KomenController;
-use App\Http\Controllers\RatingController;
 use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KotaController;
+use App\Http\Controllers\RatingController;
+use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KontakController;
 
 /*
@@ -47,6 +50,10 @@ Route::get('/destinasi', function () {
     return view('user.destinasi');
 });
 
+Route::get('/profil', function () {
+    return view('profile.profile');
+});
+
 Route::get('/aboutus', function () {
     return view('user.aboutus');
 });
@@ -60,10 +67,6 @@ Route::post('/insertkontak', [KontakController::class, 'insertkontak'])->name('i
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');
-});
-
-Route::get('/profile', function () {
-    return view('user.profile');
 });
 
 Route::get('/login', function () {

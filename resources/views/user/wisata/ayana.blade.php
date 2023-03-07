@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:40:59 GMT -->
 <head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
@@ -77,7 +77,7 @@
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
 			</header>
-            <!-- iqoniq Header End-->    
+            <!-- iqoniq Header End-->
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
@@ -119,7 +119,7 @@
                                             <p>Liburan di obyek wisata Ayana Gedong Songo Semarang, anda tidak perlu merogoh kocek
                                                 terlalu dalam. Karena harga tiket masuk Ayana Gedong Songo yang masih terjangkau,
                                                 berikut daftarnya:
-                
+
                                                 Agar perjalanan liburan anda dan keluarga di Ayana Gedong Songo semakin menyenangkan,
                                                 ada beberapa tips wisata dari Sikidang berikut ini. Waktu terbaik untuk menikmati spot
                                                 wisata yang disajikan Ayana Gedong Songo yaitu di pagi hari. Datang ketika cerah untuk
@@ -173,7 +173,7 @@
 
                                 Jika kamu ingin menginap di hotel, kamu bisa datang ke Melva Balemong, Red Doorz Ungaran, Susan Spa & Resort yang memiliki fasilitas lengkap dan mewah. Harga permalam di hotel-hotel tersebut mulai dari Rp 250.000,00/ malam.</p>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
@@ -392,7 +392,7 @@
                     </div>
                 </section>
             </div>
-            <!-- iqoniq Footer Start-->  
+            <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
                 <div class="container">
                     <!-- Widget Text Start-->
@@ -493,7 +493,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sign-up2">
                                 <div class="modal-content">
@@ -523,7 +523,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>
