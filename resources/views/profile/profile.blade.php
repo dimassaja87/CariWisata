@@ -119,7 +119,7 @@
                     <a href="#"><img src="http://demo.flexy-codes.com/mzcard/images/profile_img.jpg" width="122" height="122" alt="Logo"></a>
                 </div>
 
-                <h4 class="tagline"></h4>
+
 
 
                 <!-- .navigation -->
@@ -212,7 +212,7 @@
 
                                     <div class="col-md-12 home-profile">
                                         <div class="home-profile-image">
-                                            <img src="http://demo.flexy-codes.com/mzcard/images/profile_img.jpg" alt="">
+                                            <img src="https://asset.kompas.com/crops/acC819PXae_-W3BnMkf4AaywNbs=/34x40:1894x1280/750x500/data/photo/2022/08/22/63032395211ef.jpg" alt="">
                                         </div>
 
                                     </div><div class="col-md-12 home-details">
@@ -271,7 +271,7 @@
 
                                 <div class="col-xs-12 col-md-6 no-padd image_profile_resp">
                                     <div class="home_profile_resp">
-                                        <img src="{{ asset('profile/demo.flexy-codes.com/mzcard/image/1.jpg') }}" alt="">
+                                        <img src="https://asset.kompas.com/crops/acC819PXae_-W3BnMkf4AaywNbs=/34x40:1894x1280/750x500/data/photo/2022/08/22/63032395211ef.jpg" alt="">
                                     </div>
                                 </div>
 
@@ -352,7 +352,7 @@
 					<h2 style="display:none">service</h2>
 
 					<!-- .page_content -->
-					
+
 					<!-- End .page_content -->
 
 				</section>
@@ -363,7 +363,7 @@
 					<h2 style="display:none">resume</h2>
 
 					<!-- page_content -->
-					
+
 					<!-- End page_content -->
 
 				</section>
@@ -373,7 +373,7 @@
                 <section id="portfolio" class="layers">
                     <h2 style="display:none">portfolio</h2>
                     <!-- .page_content -->
-                  
+
                     <!-- .page_content -->
 
 
@@ -382,7 +382,7 @@
                 <!-- End #portfolio -->
 
                 <!-- #portfolio_single -->
-               
+
                 <!-- End #portfolio_single -->
 
 				<!-- #blog -->
@@ -398,7 +398,7 @@
                     <h2 style="display:none">contact</h2>
 
                     <!-- .page_content -->
-                    
+
                     <!-- .page_content -->
 
                 </section>
@@ -447,4 +447,3 @@
 
 <!-- Mirrored from demo.flexy-codes.com/mzcard/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 02:24:42 GMT -->
 </html>
- 
