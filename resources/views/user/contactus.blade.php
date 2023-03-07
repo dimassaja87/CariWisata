@@ -96,26 +96,27 @@
                                 <!-- iqoniq Contact Form Start-->
                                 <div class="mg_contact_form">
                                     <h5 class="blog_main_title">Formulir Pengisian</h5>
-                                    <form>
+                                    <form method="post" action="/insertkontak">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <!-- Input Start-->
                                                 <div class="mg_input_1">
-                                                    <input placeholder="Nama Kamu " type="text">
+                                                    <input name="nama" id="nama" placeholder="Nama Kamu " type="text">
                                                 </div>
                                                 <!-- Input End-->
                                             </div>
                                             <div class="col-md-12">
                                                 <!-- Input Start-->
                                                 <div class="mg_input_1">
-                                                    <input placeholder="Email " type="text">
+                                                    <input name="email" id="email" placeholder="Email " type="text">
                                                 </div>
                                                 <!-- Input End-->
                                             </div>
                                             <div class="col-md-12">
                                                 <!-- Input Start-->
                                                 <div class="mg_input_1">
-                                                    <textarea placeholder="Pesan Kamu"></textarea>
+                                                    <textarea name="pesan" id="pesan" placeholder="Pesan Kamu"></textarea>
                                                 </div>
                                                 <!-- Input End-->
                                                 <input class="mg_btn1" type="submit" value="Kirim">
