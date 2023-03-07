@@ -178,8 +178,10 @@
                                                 <div class="widget widget_search">
                                                     <div class="border-bottom">
                                                         <div class="mg_input_1">
-                                                            <input type="text" placeholder="Cari Wisatamu!">
-                                                            <label class="search_icon"><input type="submit"></label>
+                                                            <form action="/search" class="form-inline" method="GET">
+                                                                <input type="search" placeholder="Cari Wisatamu!">
+                                                                <label class="search_icon"><input type="submit"></label>
+                                                            </form>
                                                         </div>
                                                 </div>
                                                 <!-- Widget Search End-->

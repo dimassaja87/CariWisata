@@ -74,7 +74,7 @@
                         </div>
                         <!--DL Menu END-->
                         <div class="mg_login">
-                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="/search"><i class="fa fa-search"></i></a>
                             <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login / Register</span></a>
                         </div>
                     </div>
@@ -183,8 +183,10 @@
                                                 <div class="widget widget_search">
                                                     <div class="border-bottom">
                                                         <div class="mg_input_1">
-                                                            <input type="text" placeholder="Cari Wisatamu!">
+                                                            <form action="/kota/search" class="form-inline" method="GET">
+                                                            <input type="search" placeholder="Cari Wisatamu!">
                                                             <label class="search_icon"><input type="submit"></label>
+                                                            </form>
                                                         </div>
                                                 </div>
                                                 <!-- Widget Search End-->

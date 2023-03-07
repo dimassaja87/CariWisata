@@ -11,7 +11,15 @@ use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
+use App\Models\Destinasi;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KotaController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RatingController;
+use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\DestinasiController;
+use App\Http\Controllers\KontakController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,9 +61,12 @@ Route::get('/aboutus', function () {
     return view('user.aboutus');
 });
 
-Route::get('/contactus', function () {
-    return view('user.contactus');
-});
+ Route::get('/contactus', function () {
+     return view('user.contactus');
+ });
+
+Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
+Route::post('/insertkontak', [KontakController::class, 'insertkontak'])->name('insertkontak');
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');
@@ -210,6 +221,13 @@ Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logout
 //Login User
 Route::get('/login',[LoginController::class, 'login'])->name('login');
 Route::post('/loginuserdua',[LoginController::class, 'loginuserdua'])->name('loginuserdua');
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('nama_kota/search',[KotaController::class,'search']);
+
+Route::get('nama_kota/search',[HomeController::class,'search']);
 
 Route::get('/register',[LoginController::class, 'register'])->name('register');
 Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');

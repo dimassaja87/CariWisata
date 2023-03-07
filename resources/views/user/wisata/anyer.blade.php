@@ -239,7 +239,21 @@
                                                     <div class="mg_input_1">
                                                         <textarea class="form-control" name="pesan" id="pesan" placeholder="Isi Ulasanmu"></textarea>
                                                     </div>
+                                                    @if (Route::has('login'))
+
+                                                    @auth
+                                                    <a href="{{url('anyer')}}">
                                                     <input type="submit" class="mg_btn1"  value="Kirim Ulasan">
+                                                    </a>
+                                                    {{-- <input type="submit" class="mg_btn1"  value="Kirim Ulasan">--}}                    
+                                                    </from>
+                                                    @else
+                                                    <div class="">
+                                                        <a href="/register" class="is-btn header-element"><span>
+                                                            Registrasi</span>
+                                                    </a>
+                                                    @endauth
+                                                    @endif
                                                 </div>
                                             </div>
                                         </form>

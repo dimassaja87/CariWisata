@@ -72,4 +72,13 @@ class KotaController extends Controller
         $data->delete();
         return redirect()->route('kota')->with('success', 'Data Behasil Di Hapus!');
     }
+
+    public function search(Request $request){
+        if($request->has('search')) {
+            $kota = Kota::where('nama','LIKE','%'.$request->search. '%')->get();
+        }else{
+            $kota = Kota::all();
+        }
+        return view('user.kota.bali',['kota' => $kota]);
+    }
 }
