@@ -67,7 +67,6 @@
                     <!--DL Menu END-->
                     <div class="mg_login">
                         <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                        <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login Or Register</span></a>
                     </div>
                 </div>
                     <!-- iqoniq Navigation End-->

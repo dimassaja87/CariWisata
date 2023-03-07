@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('komens', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('komentar_id');
             $table->string('nama');
             $table->string('foto');
             $table->string('email');

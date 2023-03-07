@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:40:59 GMT -->
 <head>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
-        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">   
+        <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
@@ -71,14 +71,13 @@
                         <!--DL Menu END-->
                         <div class="mg_login">
                             <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                            <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login / Register</span></a>
                         </div>
                     </div>
                     <!-- iqoniq Navigation End-->
 				</div>
                 <!-- iqoniq Top Navigation Outr Wrap End-->
 			</header>
-            <!-- iqoniq Header End-->    
+            <!-- iqoniq Header End-->
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
@@ -120,7 +119,7 @@
                                             <p>Liburan di obyek wisata Ayana Gedong Songo Semarang, anda tidak perlu merogoh kocek
                                                 terlalu dalam. Karena harga tiket masuk Ayana Gedong Songo yang masih terjangkau,
                                                 berikut daftarnya:
-                
+
                                                 Agar perjalanan liburan anda dan keluarga di Ayana Gedong Songo semakin menyenangkan,
                                                 ada beberapa tips wisata dari Sikidang berikut ini. Waktu terbaik untuk menikmati spot
                                                 wisata yang disajikan Ayana Gedong Songo yaitu di pagi hari. Datang ketika cerah untuk
@@ -174,20 +173,41 @@
 
                                 Jika kamu ingin menginap di hotel, kamu bisa datang ke Melva Balemong, Red Doorz Ungaran, Susan Spa & Resort yang memiliki fasilitas lengkap dan mewah. Harga permalam di hotel-hotel tersebut mulai dari Rp 250.000,00/ malam.</p>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
                                     <div class="mg_comment_wrap">
                                         <h5 class="blog_main_title">132 Ulasan</h5>
+                                        @foreach ($komen as $row)
                                         <ul>
                                             <li>
                                                 <div class="mg_comment_dec">
-                                                    <figure><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/comment_user1.jpg') }}" alt=""></figure>
+                                                    <figure><img src="{{asset('$row->profile') }}" alt=""></figure>
                                                     <div class="overflow_text">
-                                                        <h6><a href="#">john doe</a><span>( JUNE 20, 2014 )</span></h6>
-                                                        <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
-                                                    </div>
+                                                        <h6>{{$row->nama}}</h6>
+                                                        <p>{{$row->email}}</p>
+                                                        <img src="{{ asset('fotokomen/' . $row->foto) }}"  alt="..." style="width: 100px"> 
+                                                        <p>{{$row->pesan}}</p>
+                                                        <p>
+                                                        <a class="btn-default" href="#">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                            </svg>
+                                                            
+                                                        </a>
+                                                        <a class="btn-default" href="#">
+                                                            <i class="bi bi-reply-all-fill">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-reply-all-fill" viewBox="0 0 16 16">
+                                                            <path d="M8.021 11.9 3.453 8.62a.719.719 0 0 1 0-1.238L8.021 4.1a.716.716 0 0 1 1.079.619V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+                                                            <path d="M5.232 4.293a.5.5 0 0 1-.106.7L1.114 7.945a.5.5 0 0 1-.042.028.147.147 0 0 0 0 .252.503.503 0 0 1 .042.028l4.012 2.954a.5.5 0 1 1-.593.805L.539 9.073a1.147 1.147 0 0 1 0-1.946l3.994-2.94a.5.5 0 0 1 .699.106z"/>
+                                                            </svg>
+                                                            
+                                                        </a>
+</p>
+                                                                                                       </div>
+                                                                                                       
                                                 </div>
                                                 <ul class="children">
                                                     <li>
@@ -201,7 +221,7 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li>
+                                            <!-- <li>
                                                 <div class="mg_comment_dec">
                                                     <figure><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/comment_user1.jpg') }}" alt=""></figure>
                                                     <div class="overflow_text">
@@ -209,40 +229,55 @@
                                                         <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </li> -->
                                         </ul>
+                                        @endforeach
                                     </div>
+                                    
                                     <!-- Blog Comment Wrap End -->
                                     <!-- Blog Comment Form Start -->
                                     <div class="mg_comment_form">
                                         <h5 class="blog_main_title">Berikan Ulasanmu!</h5>
-                                        <form>
+                                        <form action="/insertkomen" method="post" enctype="multipart/form-data">
+                                        @csrf
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="mg_input_1">
-                                                        <input placeholder="Nama" type="text">
+                                                    <input type="text" class="form-control" name="nama" id="nama"
+                                                placeholder="Nama">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="mg_input_1">
-                                                        <input placeholder="No Telp" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="mg_input_1">
-                                                        <input placeholder="Foto" type="file">
+                                                    <input type="file" class="form-control" name="foto" id="foto"
+                                                        placeholder="foto">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
-                                                        <input placeholder="E-mail" type="text">
+                                                    <input type="text" class="form-control" name="email" id="email"
+                                                placeholder="email">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
-                                                        <textarea placeholder="Isi Ulasanmu"></textarea>
+                                                        <textarea class="form-control" name="pesan" id="pesan" placeholder="Isi Ulasanmu"></textarea>
                                                     </div>
-                                                    <input class="mg_btn1" type="submit" value="Kirim Ulasan">
+                                                    @if (Route::has('login'))
+
+                                                    @auth
+                                                    <a href="{{url('anyer')}}">
+                                                    <input type="submit" class="mg_btn1"  value="Kirim Ulasan">
+                                                    </a>
+                                                    {{-- <input type="submit" class="mg_btn1"  value="Kirim Ulasan">--}}                    
+                                                    </from>
+                                                    @else
+                                                    <div class="">
+                                                        <a href="/register" class="mg_btn1"><span>
+                                                            Registrasi</span>
+                                                    </a>
+                                                    @endauth
+                                                    @endif
                                                 </div>
                                             </div>
                                         </form>
@@ -357,7 +392,7 @@
                     </div>
                 </section>
             </div>
-            <!-- iqoniq Footer Start-->  
+            <!-- iqoniq Footer Start-->
             <footer class="mg_footer1">
                 <div class="container">
                     <!-- Widget Text Start-->
@@ -458,7 +493,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sign-up2">
                                 <div class="modal-content">
@@ -488,7 +523,7 @@
                                         </form>
                                         <!--FORM FIELD END-->
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>

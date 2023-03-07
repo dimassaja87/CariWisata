@@ -138,6 +138,7 @@
                                 <div class="mg_hotel_destination_wrapper">
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
+                                        @foreach($data as $alihfla)
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
@@ -153,6 +154,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
                                         <!-- Hotel Destination End -->
                                         <!-- Hotel Destination Start -->
                                         <div class="col-md-4 col-sm-6">
