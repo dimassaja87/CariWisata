@@ -11,14 +11,8 @@ use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
-use App\Models\Destinasi;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KotaController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RatingController;
-use App\Http\Controllers\PenggunaController;
-use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KontakController;
 
 /*
@@ -237,5 +231,41 @@ Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutus
 
 
 //komentar wisata
-Route::get('/anyer',[KomenController::class, 'komen'])->name('komen');
+Route::get('/anyer',[KomenController::class, 'komenanyer'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/ayana',[KomenController::class, 'komenayana'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/jatim',[KomenController::class, 'komenjatim'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/kawah',[KomenController::class, 'komenkawah'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/kya',[KomenController::class, 'komenkya'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/lawang',[KomenController::class, 'komenlawang'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/lembang',[KomenController::class, 'komenlembang'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/museumangkut',[KomenController::class, 'komenmuseum'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/pandawa',[KomenController::class, 'komenpandawa'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/panglipuran',[KomenController::class, 'komenpanglipuran'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/peuncang',[KomenController::class, 'komenpeuncang'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/santerra',[KomenController::class, 'komensanterra'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
