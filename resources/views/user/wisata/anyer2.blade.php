@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
 		<title>Pantai Anyer</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
@@ -143,47 +143,22 @@
                                                     <li>Tiket Masuk Bis Besar Termasuk Orang</li>
                                                     <li>Rp800.000</li>
                                                 </ul>
-                                            </div>
                                             <br><h5>Fasilitas</h5></br>
                                             <p>Karena merupakan destinasi wisata populer, Pantai Anyer telah melengkapi berbagai fasilitas penunjang keamanan dan kenyamanan bagi wisatawan. Beberapa diantaranya seperti Pusat Informasi, area parkir, bumi perkemahan, pondok wisata, restoran, dan toko cinderamata.</p>
-                        </div>
-                        <div class="mb-3">
-                            </div>
-                                    
+                                  </div>
                                     </div>
                                     <!-- Blog Full End -->
                                     <!-- Blog Comment Wrap Start -->
                                     <div class="mg_comment_wrap">
                                         <h5 class="blog_main_title">132 Ulasan</h5>
-                                        @foreach ($komen as $row)
                                         <ul>
                                             <li>
                                                 <div class="mg_comment_dec">
-                                                    <figure><img src="{{asset('$row->profile') }}" alt=""></figure>
+                                                    <figure><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/comment_user1.jpg') }}" alt=""></figure>
                                                     <div class="overflow_text">
-                                                        <h6>{{$row->nama}}</h6>
-                                                        <p>{{$row->email}}</p>
-                                                        <img src="{{ asset('fotokomen/' . $row->foto) }}"  alt="..." style="width: 100px"> 
-                                                        <p>{{$row->pesan}}</p>
-                                                        <p>
-                                                        <a class="btn-default" href="#">
-                                                            <i class="bi bi-heart-fill"></i>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                                            </svg>
-                                                            
-                                                        </a>
-                                                        <a class="btn-default" href="#">
-                                                            <i class="bi bi-reply-all-fill">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-reply-all-fill" viewBox="0 0 16 16">
-                                                            <path d="M8.021 11.9 3.453 8.62a.719.719 0 0 1 0-1.238L8.021 4.1a.716.716 0 0 1 1.079.619V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
-                                                            <path d="M5.232 4.293a.5.5 0 0 1-.106.7L1.114 7.945a.5.5 0 0 1-.042.028.147.147 0 0 0 0 .252.503.503 0 0 1 .042.028l4.012 2.954a.5.5 0 1 1-.593.805L.539 9.073a1.147 1.147 0 0 1 0-1.946l3.994-2.94a.5.5 0 0 1 .699.106z"/>
-                                                            </svg>
-                                                            
-                                                        </a>
-</p>
-                                                                                                       </div>
-                                                                                                       
+                                                        <h6><a href="#">john doe</a><span>( JUNE 20, 2014 )</span></h6>
+                                                        <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
+                                                    </div>
                                                 </div>
                                                 <ul class="children">
                                                     <li>
@@ -197,7 +172,7 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <!-- <li>
+                                            <li>
                                                 <div class="mg_comment_dec">
                                                     <figure><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/comment_user1.jpg') }}" alt=""></figure>
                                                     <div class="overflow_text">
@@ -205,55 +180,40 @@
                                                         <p>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Non equidem invideo, miror magis posuere velit aliquet. Qui ipsorum lingua Celtae, nostra Galli appellantur. Prima luce, cum quibus mons aliud consensu ab eo. </p>
                                                     </div>
                                                 </div>
-                                            </li> -->
+                                            </li>
                                         </ul>
-                                        @endforeach
                                     </div>
-                                    
                                     <!-- Blog Comment Wrap End -->
                                     <!-- Blog Comment Form Start -->
                                     <div class="mg_comment_form">
                                         <h5 class="blog_main_title">Berikan Ulasanmu!</h5>
-                                        <form action="/insertkomen" method="post" enctype="multipart/form-data">
-                                        @csrf
+                                        <form>
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="mg_input_1">
-                                                    <input type="text" class="form-control" name="nama" id="nama"
-                                                placeholder="Nama">
+                                                        <input placeholder="Nama" type="text">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="mg_input_1">
-                                                    <input type="file" class="form-control" name="foto" id="foto"
-                                                        placeholder="foto">
+                                                        <input placeholder="No Telp" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="mg_input_1">
+                                                        <input placeholder="Foto" type="file">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
-                                                    <input type="text" class="form-control" name="email" id="email"
-                                                placeholder="email">
+                                                        <input placeholder="E-mail" type="text">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="mg_input_1">
-                                                        <textarea class="form-control" name="pesan" id="pesan" placeholder="Isi Ulasanmu"></textarea>
+                                                        <textarea placeholder="Isi Ulasanmu"></textarea>
                                                     </div>
-                                                    @if (Route::has('login'))
-
-                                                    @auth
-                                                    <a href="{{url('anyer')}}">
-                                                    <input type="submit" class="mg_btn1"  value="Kirim Ulasan">
-                                                    </a>
-                                                    {{-- <input type="submit" class="mg_btn1"  value="Kirim Ulasan">--}}                    
-                                                    </from>
-                                                    @else
-                                                    <div class="">
-                                                        <a href="/register" class="is-btn header-element"><span>
-                                                            Registrasi</span>
-                                                    </a>
-                                                    @endauth
-                                                    @endif
+                                                    <input class="mg_btn1" type="submit" value="Kirim Ulasan">
                                                 </div>
                                             </div>
                                         </form>
@@ -312,10 +272,10 @@
                                             <!-- Recent Post End -->
                                             <!-- Recent Post Start -->
                                             <div class="recent_post fancy-overlay">
-                                                <figure><img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt=""></figure>
+                                                <figure><img src="https://1.bp.blogspot.com/-qU4HzJrCT7U/XTNzgkd3O8I/AAAAAAAAB40/upKm38Sf6gQCp7p0hfKvQqnCEYuqPqOnwCEwYBhgL/s1600/Wisata-Ayana-Gedongsongo-Semarang-Jawa-Tengah.jpg" alt=""></figure>
                                                 <div class="overflow_text">
-                                                    <h5><a href="/peuncang">Pulau Peucang Banten</a> <span><i class="fa fa-clock"></i></span></h5>
-                                                    <p>Wisata Pantai Peuncang cocok untuk Anda yang ingin berlibur akhir pekan sejenak dari hiruk-piruk kehidupan di kota.
+                                                    <h5><a href="/ayana">Ayana Gedong Songo</a> <span><i class="fa fa-clock"></i></span></h5>
+                                                    <p>Ayana Gedong Songo cocok untuk Anda yang ingin berakhir pekan dengan banyak spot foto dan instagramable.
                                                     </p>
                                                 </div>
                                             </div>

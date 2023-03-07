@@ -122,8 +122,7 @@
 
                                         <div class="mb-3">
                                             <label for="email-field" class="form-label">Deskripsi</label>
-                                            <input type="text" id="email-field" name="deskripsi" class="form-control"
-                                                placeholder="Enter Deskripsi" value="{{ $data->deskripsi }}" required />
+                                                <textarea class="form-control" name="deskripsi" placeholder="{{ $data->deskripsi }}" id="floatingTextarea" value="{{ $data->deskripsi }}" required></textarea>
                                             <div class="invalid-feedback">Masukkan deskripsi.</div>
                                         </div>
 

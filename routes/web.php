@@ -1,5 +1,13 @@
 <?php
 
+use App\Http\Controllers\DestinasiController;
+use App\Http\Controllers\KomentarController;
+use App\Http\Controllers\KotaController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\KomenController;
+use App\Http\Controllers\RatingController;
+use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
@@ -28,6 +36,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/u', function () {
+    return view('user.welcomeuser');
+});
+
 Route::get('/adminn', function () {
     $jumlahdestinasi = Destinasi::count();
     $jumlahuser = User::count();
@@ -54,6 +66,10 @@ Route::post('/insertkontak', [KontakController::class, 'insertkontak'])->name('i
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');
+});
+
+Route::get('/profile', function () {
+    return view('user.profile');
 });
 
 Route::get('/login', function () {
@@ -184,17 +200,27 @@ Route::post('/updaterating{id}',[RatingController::class, 'updaterating'])->name
 
 Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating');
 
+//Data Komentar
+Route::get('/komentar',[KomentarController::class, 'komentar'])->name('komentar');
+
+Route::get('/tambahkomentar',[KomentarController::class, 'tambahkomentar'])->name('tambahkomentar');
+Route::post('/insertkomentar',[KomentarController::class, 'insertkomentar'])->name('insertkomentar');
+
+Route::get('/tampilkomentar/{id}',[KomentarController::class, 'tampilkomentar'])->name('tampilkomentar');
+Route::post('/updatekomentar{id}',[KomentarController::class, 'updatekomentar'])->name('updatekomentar');
+
+Route::get('/deletekomentar/{id}',[KomentarController::class, 'deletekomentar'])->name('deletekomentar');
+
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');
 Route::post('/loginadmindua',[LoginController::class, 'loginadmindua'])->name('loginadmindua');
 
-Route::get('/registeradmin',[LoginController::class, 'registeradmin'])->name('registeradmin');
-Route::post('/registeradmindua',[LoginController::class, 'registeradmindua'])->name('registeradmindua');
-
 Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logoutadmin');
 //Akhir login admin
 
-
+//Login User
+Route::get('/login',[LoginController::class, 'login'])->name('login');
+Route::post('/loginuserdua',[LoginController::class, 'loginuserdua'])->name('loginuserdua');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -202,3 +228,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('nama_kota/search',[KotaController::class,'search']);
 
 Route::get('nama_kota/search',[HomeController::class,'search']);
+
+Route::get('/register',[LoginController::class, 'register'])->name('register');
+Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
+
+Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
+//Akhir login user
+
+
+//komentar wisata
+Route::get('/anyer',[KomenController::class, 'komen'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
