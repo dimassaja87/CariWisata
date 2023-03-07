@@ -45,6 +45,10 @@ Route::get('/destinasi', function () {
     return view('user.destinasi');
 });
 
+Route::get('/profile', function () {
+    return view('admin.profile');
+});
+
 Route::get('/aboutus', function () {
     return view('user.aboutus');
 });
@@ -55,10 +59,6 @@ Route::get('/contactus', function () {
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');
-});
-
-Route::get('/profile', function () {
-    return view('user.profile');
 });
 
 Route::get('/login', function () {
