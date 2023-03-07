@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChartController;
 use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\KotaController;
@@ -183,6 +184,8 @@ Route::post('/updatekota{id}',[KotaController::class, 'updatekota'])->name('upda
 
 Route::get('/deletekota/{id}',[KotaController::class, 'deletekota'])->name('deletekota');
 
+Route::get('/multidelete',[KotaController::class, 'multidelete'])->name('multidelete');
+
 //Data Rating
 Route::get('/rating',[RatingController::class, 'rating'])->name('rating');
 
@@ -229,11 +232,14 @@ Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('reg
 Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
 //Akhir login user
 
-
 //komentar wisata
 Route::get('/anyer',[KomenController::class, 'komenanyer'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
 
+//Chart
+Route::get('/chartuser',[ChartController::class, 'index']);
+
+Route::get('/barchart',[ChartController::class, 'barChart']);
 Route::get('/ayana',[KomenController::class, 'komenayana'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
 
