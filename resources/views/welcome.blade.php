@@ -74,9 +74,28 @@
                         </ul>
                     </div>
                     <!--DL Menu END-->
+
+                    
                     <div class="mg_login">
                         <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                        <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login</span></a>
+                        @if (Route::has('login'))
+
+                                                    @auth
+                                                    <a href="{{url('welcome')}}">
+                                                    <i><a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                                    </svg></i></a></i>
+                                                    </a>
+                                                    {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}                    
+                                                    </from>
+                                                    @else
+                                                    <div class="">
+                                                    <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login</span></a>
+                                                    </a>
+                                                    @endauth
+                                                    @endif
+                        
                     </div>
                 </div>
                 <!-- iqoniq Navigation End-->
@@ -138,7 +157,7 @@
                                 <div class="mg_hotel_destination_wrapper">
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
-                                        @foreach($data as $alihfla)
+                                        
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
@@ -154,7 +173,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        @endforeach
+                                       
                                         <!-- Hotel Destination End -->
                                         <!-- Hotel Destination Start -->
                                         <div class="col-md-4 col-sm-6">

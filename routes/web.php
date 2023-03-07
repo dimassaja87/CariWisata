@@ -12,10 +12,7 @@ use App\Models\User;
 use App\Models\Ulasan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KotaController;
 use App\Http\Controllers\RatingController;
-use App\Http\Controllers\PenggunaController;
-use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KontakController;
 
 /*
