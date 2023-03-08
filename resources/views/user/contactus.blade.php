@@ -206,9 +206,9 @@
                     <div class="widget widget_archives">
                         <h6 class="widget-title">Our Service</h6>
                         <ul>
-                            <li><a href="#">Beranda</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Destinasi</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/contactus">Contact us</a></li>
+                            <li><a href="/destinasi">Destinasi</a></li>
                         </ul>
                     </div>
                 </div>
@@ -219,14 +219,32 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="widget widget_search">
                         <h6 class="widget-title">keep in touch</h6>
-                        <form>
-                            <div class="mg_input_1">
-                                <input type="text" placeholder="Your E-mail">
+                        <form method="post" action="/insertkontak">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Input Start-->
+                                    <div class="mg_input_1">
+                                        <input type="hidden" name="nama" value="{{Auth::user()->name }}" class="form-control" id="nama" placeholder="Nama Kamu " >
+                                    </div>
+                                    <!-- Input End-->
+                                </div>
+                                <div class="col-md-12">
+                                    <!-- Input Start-->
+                                    <div class="mg_input_1">
+                                        <input type="hidden" name="email" value="{{Auth::user()->email }}" class="form-control" id="email" placeholder="Email " >
+                                    </div>
+                                    <!-- Input End-->
+                                </div>
+                                <div class="col-md-12">
+                                    <!-- Input Start-->
+                                    <div class="mg_input_1">
+                                        <textarea name="pesan" id="pesan" placeholder="Pesan Kamu"></textarea>
+                                    </div>
+                                    <!-- Input End-->
+                                    <input class="mg_btn1" type="submit" value="Kirim">
+                                </div>
                             </div>
-                            <div class="mg_input_1">
-                                <textarea placeholder="Your Message"></textarea>
-                            </div>
-                            <p><input type="button" value="Kirim pesan"></p>
                         </form>
                     </div>
                 </div>
