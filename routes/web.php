@@ -290,4 +290,3 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
 
-
