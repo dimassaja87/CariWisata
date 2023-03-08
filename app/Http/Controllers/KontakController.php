@@ -29,9 +29,9 @@ class KontakController extends Controller
         return view('admin.tabelcontactus.datakontak', compact('data'));
     }
 
-    public function delete($id){
+    public function deletekontak($id){
         $data = kontak::find($id);
         $data->delete();
-        return redirect()->route('index4');
+        return back() ->with('success', 'Data Behasil Di Hapus!');
     }
 }

@@ -60,11 +60,11 @@ Route::get('/aboutus', function () {
      return view('user.contactus');
  });
 
+ //contactus
 Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
-Route::post('/insertkontak', [KontakController::class, 'insertkontak'])->name('insertkontak');
+Route::post('/insertkontak', [kontakController::class, 'insertkontak'])->name('insertkontak');
 Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
-
-Route::get('/delete/{id}', [kontakController::class, 'index4'])->name('delete');
+Route::get('/deletekontak/{id}', [KontakController::class, 'deletekontak'])->name('deletekontak');
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');

@@ -415,9 +415,9 @@
 
                                                             <td>
                                                                     <div class="remove">
-                                                                        <a href="/delete/{{ $row->id }}"
-                                                                            {{-- data-id="{{ $row->id }}"
-                                                                            data-nama="{{ $row->nama_wisata }}" --}}
+                                                                        <a href="/deletekontak/{{ $row->id }}"
+                                                                            data-id="{{ $row->id }}"
+                                                                            data-nama="{{ $row->nama_wisata }}"
                                                                             class="btn btn-sm btn-danger deletedestinasi">Remove</a>
                                                                     </div>
                                                                 </div>
