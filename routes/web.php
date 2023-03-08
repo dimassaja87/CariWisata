@@ -31,7 +31,7 @@ Route::get('welcome', [welcomecontroller::class, 'welcome'])->name('welcome');
 
 
 
-Route::get('/u', function () {
+Route::get('/', function () {
     return view('user.welcomeuser');
 });
 
