@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pengguna;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Redirect;
 
 class PenggunaController extends Controller
@@ -42,6 +43,18 @@ class PenggunaController extends Controller
     {
         $data = Pengguna::find($id);
         $data->update($request->all());
+
+        if ($request->hasFile('foto'))
+        {
+            $destination = 'fotopengguna/'.$data->foto;
+            if(File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $request->file('foto')->move('fotopengguna/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->update();
+        }
         return redirect()->route('pengguna')->with('success', 'Data Behasil Di Ubah!');
     }
 
