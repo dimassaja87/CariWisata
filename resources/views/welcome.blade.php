@@ -75,7 +75,7 @@
                     </div>
                     <!--DL Menu END-->
 
-                    
+
                     <div class="mg_login">
                         <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
                         @if (Route::has('login'))
@@ -87,7 +87,7 @@
                                                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                                                     </svg></i></a></i>
                                                     </a>
-                                                    {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}                    
+                                                    {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}
                                                     </from>
                                                     @else
                                                     <div class="">
@@ -95,7 +95,7 @@
                                                     </a>
                                                     @endauth
                                                     @endif
-                        
+
                     </div>
                 </div>
                 <!-- iqoniq Navigation End-->
@@ -157,7 +157,6 @@
                                 <div class="mg_hotel_destination_wrapper">
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
-                                        
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
@@ -173,7 +172,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                       
+
                                         <!-- Hotel Destination End -->
                                         <!-- Hotel Destination Start -->
                                         <div class="col-md-4 col-sm-6">
