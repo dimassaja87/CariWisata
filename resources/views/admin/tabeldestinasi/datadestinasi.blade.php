@@ -313,10 +313,29 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/kontakadmin">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Contact Us</span>
+                                <i class="bx bx-phone"></i> <span data-key="t-tables">Data Contact Us</span>
                             </a>
                         </li>
-                       
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/datawisata">
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                                <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarCharts">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="/chartuser" class="nav-link" data-key="t-chartjs"> Chartjs </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/barchart" class="nav-link" data-key="t-echarts"> Echarts </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->

@@ -145,9 +145,15 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/kontakadmin">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Kontak</span>
+                                <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/datawisata">
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
+                            </a>
+                        </li>
+                        <li>
                             <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
                                 <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
                             </a>

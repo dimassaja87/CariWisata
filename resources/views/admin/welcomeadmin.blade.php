@@ -30,7 +30,7 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-grow-1 overflow-hidden">
                                                     <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
-                                                        Total Destinasi</p>
+                                                        Total Wisata</p>
                                                 </div>
                                                 <div class="flex-shrink-0">
                                                     <h5 class="text-success fs-14 mb-0">
@@ -41,7 +41,7 @@
                                             <div class="d-flex align-items-end justify-content-between mt-4">
                                                 <div>
                                                     <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
-                                                            class="counter-value" data-target="{{ $jumlahdestinasi }}">0</span>
+                                                            class="counter-value" data-target="{{ $jumlahwisata }}">0</span>
                                                     </h4>
                                                 </div>
                                                 <div class="avatar-sm flex-shrink-0">
@@ -147,7 +147,7 @@
                                 </div><!-- end col -->
                             </div> <!-- end row-->
 
-                            
+
 
                         </div> <!-- end .h-100-->
 
