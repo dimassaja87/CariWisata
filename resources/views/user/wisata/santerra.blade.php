@@ -107,7 +107,7 @@
                                             <p>FLORA WISATA Santerra De Laponte merupakan salah satu tempat wisata di Batu yang terdapat berbagai macam bunga untuk dinikmati keindahannya. Selain itu, di tempat wisata ini terdapat sejumlah replika bangunan ala luar negeri. Wisata ini juga menawarkan hamparan taman bunga yang begitu cantik. Pengunjung bisa menyaksikan beraneka ragam jenis bunga yang tumbuh di tempat wisata ini. Tak heran jika taman bunga yang satu ini cocok dijadikan sebagai wisata edukasi.</p>
                                             <br><h5>Jam Buka Flora Wisata Santerra De Laponte</h5></br>
                                             <p>Tempat wisata ini memiliki jadwal buka dan tutup yang telah ditentukan yaitu dari pukul 08.00-17.00. Waktu yang paling tepat untuk berkunjung tentu saja pada pagi hari. Selain itu, ada baiknya untuk datang saat sinar matahari tidak terik..</p>
-                                            
+                                            </div>
                                         <img src="https://setapaklangkah.com/wp-content/uploads/2022/03/FLORA-WISATA-Santerra-De-Laponte.png" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
@@ -306,7 +306,7 @@
                                             <a class="tag" href="#">Akhirpekan</a>
                                         </div>
                                     </div>
-                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q= flora wisata Santerra De Laponte batu&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                                     <!-- Widget Tags End-->
                                 </div>
                             </div>

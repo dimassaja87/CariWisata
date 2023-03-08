@@ -44,6 +44,10 @@ class User extends Authenticatable
     ];
     public function komens()
     {
-        return $this->hasMany(postingan::class,'user_id','id');
+        return $this->hasMany(Komen::class,'user_id','id');
+    }
+    public function contactus()
+    {
+        return $this->hasMany(kontak ::class,'user_id','id');
     }
 }

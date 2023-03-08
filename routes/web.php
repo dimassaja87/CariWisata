@@ -11,14 +11,8 @@ use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
-use App\Models\Destinasi;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KotaController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RatingController;
-use App\Http\Controllers\PenggunaController;
-use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KontakController;
 
 /*
@@ -63,6 +57,9 @@ Route::get('/aboutus', function () {
 
 Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
 Route::post('/insertkontak', [KontakController::class, 'insertkontak'])->name('insertkontak');
+Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
+
+Route::get('/delete/{id}', [kontakController::class, 'index4'])->name('delete');
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');
@@ -239,3 +236,5 @@ Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutus
 //komentar wisata
 Route::get('/anyer',[KomenController::class, 'komen'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+

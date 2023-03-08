@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Destinasi | Admin</title>
+    <title>Data Contact Us | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -314,10 +314,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/kontakadmin">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Contact Us</span>
+                                <i class="bx bx-star"></i> <span data-key="t-tables">Data contact us</span>
                             </a>
                         </li>
-                       
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -341,12 +340,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA DESTINASI</h4>
+                                <h4 class="mb-sm-0">DATA CONTACT US</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Destinasi</li>
+                                        <li class="breadcrumb-item active">Data Contact Us</li>
                                     </ol>
                                 </div>
 
@@ -359,20 +358,14 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title mb-0">Add, Edit & Remove</h4>
+                                    <h4 class="card-title mb-0">
+                                        Remove</h4>
                                 </div><!-- end card header -->
 
                                 <div class="card-body">
                                     <div id="customerList">
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
-                                                <div>
-                                                    <a href="/tambahdestinasi" type="button"
-                                                        class="btn btn-success add-btn" id="create-btn"><i
-                                                            class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
-                                                            class="ri-delete-bin-2-line"></i></button>
-                                                </div>
                                             </div>
                                             <div class="col-sm">
                                                 <div class="d-flex justify-content-sm-end">
@@ -396,12 +389,9 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">ID</th>
-                                                        <th scope="col">Nama Wisata</th>
-                                                        <th scope="col">Lokasi</th>
-                                                        <th scope="col">Nama Kota</th>
-                                                        <th scope="col">HTM</th>
-                                                        <th scope="col">Foto Wisata</th>
-                                                        <th scope="col">Deskripsi Wisata</th>
+                                                        <th scope="col">Nama</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Pesan </th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -419,25 +409,15 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td class="nama">{{ $row->nama_wisata }}</td>
-                                                            <td class="lokasi">{{ $row->lokasi }}</td>
-                                                            <td>{{ $row->kotas->nama_kota }}</td>
-                                                            <td class="htm">{{ $row->htm }}</td>
-                                                            <td class="foto_wisata">
-                                                                <img src="{{ asset('fotowisata/' . $row->foto_wisata) }}"
-                                                                    alt="" width="150">
-                                                            </td>
-                                                            <td class="deskripsi">{{ $row->deskripsi }}</td>
+                                                            <td class="nama">{{ $row->nama }}</td>
+                                                            <td class="email">{{ $row->email }}</td> 
+                                                            <td class="pesan">{{ $row->pesan }}</td>
+
                                                             <td>
-                                                                <div class="d-flex gap-2">
-                                                                    <div class="edit">
-                                                                        <a href="/tampildestinasi/{{ $row->id }}"
-                                                                            class="btn btn-sm btn-success edit-item-btn">Edit</a>
-                                                                    </div>
                                                                     <div class="remove">
-                                                                        <a href="#"
-                                                                            data-id="{{ $row->id }}"
-                                                                            data-nama="{{ $row->nama_wisata }}"
+                                                                        <a href="/delete/{{ $row->id }}"
+                                                                            {{-- data-id="{{ $row->id }}"
+                                                                            data-nama="{{ $row->nama_wisata }}" --}}
                                                                             class="btn btn-sm btn-danger deletedestinasi">Remove</a>
                                                                     </div>
                                                                 </div>

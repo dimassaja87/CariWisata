@@ -22,4 +22,16 @@ class KontakController extends Controller
         ]);
         return view ('user.contactus');
     }
+
+    public function index4()
+    {
+        $data = kontak::all();
+        return view('admin.tabelcontactus.datakontak', compact('data'));
+    }
+
+    public function delete($id){
+        $data = kontak::find($id);
+        $data->delete();
+        return redirect()->route('index4');
+    }
 }

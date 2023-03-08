@@ -340,6 +340,11 @@
                                 <i class="bx bx-star"></i> <span data-key="t-tables">Data Rating</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/kontakadmin">
+                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Contact us</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
