@@ -6,6 +6,7 @@ use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\Rating;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class DestinasiController extends Controller
 {
@@ -48,6 +49,19 @@ class DestinasiController extends Controller
     {
         $data = Destinasi::find($id);
         $data->update($request->all());
+
+        if ($request->hasFile('foto_wisata'))
+        {
+            $destination = 'fotowisata/'.$data->foto_sampul;
+            if(File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $request->file('foto_wisata')->move('fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
+            $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
+            $data->update();
+        }
+
         return redirect()->route('datadestinasi')->with('success', 'Data Behasil Di Ubah!');
     }
 
