@@ -107,8 +107,8 @@
                                             <br><h5>Singkat Sejarah</h5></br>
                                             <p>Pada jaman kerajaan, raja-raja sengaja untuk datang ke objek wisata ini untuk beristirahat. Dari sinilah muncul nama Penglipuran yang berarti penghibur. Suasanya yang tenang dan damai cocok untuk tempat relaksasi dan melepas penat.</p>
                                             <p>Nama Penglipuran juga berasal dari Pengeling Pura, tempat suci untuk mengingat para leluhur. Masyarakat di desa ini sangat menjaga tradisi dan budaya warisan para tetua. Dengan sekitar 13.000 orang pengunjung pada 2019, pendapatan wisata Desa Penglipuran terus meningkat.</p>
-                                            
-                                        <img src="https://travelspromo.com/wp-content/uploads/2020/03/Jajaran-rumah-tradisional-Desa-Penglipuran-Bangli-Bali-Abdur-Rahman-1536x1031.jpg" alt="">
+                                            </div>
+                                            <img src="https://travelspromo.com/wp-content/uploads/2020/03/Jajaran-rumah-tradisional-Desa-Penglipuran-Bangli-Bali-Abdur-Rahman-1536x1031.jpg" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
                                             <div class="mg_table">
@@ -344,7 +344,7 @@
                                             <a class="tag" href="#">Akhirpekan</a>
                                         </div>
                                     </div>
-                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=desa wisata panglipuran bali&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                                     <!-- Widget Tags End-->
                                 </div>
                             </div>

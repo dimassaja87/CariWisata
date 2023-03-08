@@ -80,7 +80,7 @@
                     <h2>Hubungi Kami</h2>
                     <ul class="breadcrumb">
                         <li><a href="#">Beranda</a></li>
-                        <li class="active"><span>Hunungi Kami</span></li>
+                        <li class="active"><span>Hubungi Kami</span></li>
                     </ul>
                 </div>
             </div>
@@ -101,14 +101,14 @@
                                             <div class="col-md-12">
                                                 <!-- Input Start-->
                                                 <div class="mg_input_1">
-                                                    <input name="nama" id="nama" placeholder="Nama Kamu " type="text">
+                                                    <input type="hidden" name="nama" value="{{Auth::user()->name }}" class="form-control" id="nama" placeholder="Nama Kamu " >
                                                 </div>
                                                 <!-- Input End-->
                                             </div>
                                             <div class="col-md-12">
                                                 <!-- Input Start-->
                                                 <div class="mg_input_1">
-                                                    <input name="email" id="email" placeholder="Email " type="text">
+                                                    <input type="hidden" name="email" value="{{Auth::user()->email }}" class="form-control" id="email" placeholder="Email " >
                                                 </div>
                                                 <!-- Input End-->
                                             </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kota;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -27,10 +28,5 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function search(Request $request)
-    {
-            $home = $request->search;
-            $home = kota::where('name', 'like', "%" . $request->$home. "%")->paginate(5);
-            return view('user.home', compact('users'))->with('i', (request()->input('page', 1) - 1) * 5);
-    }
+   
 }

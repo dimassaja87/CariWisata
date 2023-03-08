@@ -62,6 +62,9 @@ Route::get('/aboutus', function () {
 
 Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
 Route::post('/insertkontak', [KontakController::class, 'insertkontak'])->name('insertkontak');
+Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
+
+Route::get('/delete/{id}', [kontakController::class, 'index4'])->name('delete');
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');
@@ -275,3 +278,5 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+

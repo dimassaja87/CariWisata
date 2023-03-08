@@ -106,6 +106,8 @@
                                             <p>Pantai Pandawa ini berlokasi di area Kuta Selatan, Kabupaten Badung, Bali. Pantai Pandawa mempunyai pemandangan alam yang sangat indah sebagai spot foto tempat bermain dan bersenang-senang untuk wisatawan yang ingin berkunjung bersama keluarga</p>
                                             <br><h5>Fasilitas Pantai Pandawa</h5></br>
                                             <p>Selain lokasinya yang cukup menarik dan sangat cantik, Pantai Pandawa juga menyiapkan beberapa fasilitas untuk memanjakan pengunjung yang datang ke pantai ini. Banyak hal menarik yang dapat dilakukan di pantai ini seperti berselancar, bermain kano, dan bersantai di pinggir pantai</p>
+                                            </div>
+                                            <div>
                                         <img src="https://tempatwisataseru.com/wp-content/uploads/2017/02/Pesona-Pantai-Pandawa-di-Bali.jpg" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
@@ -132,7 +134,8 @@
                                             </div>
                                             <br><h5>Daya Tarik</h5></br>
                                             <p>Di PAntai Pandawa ini memiliki daya tarik tersendiri karena terdapat patung lima ksatria pandawa yang menampilkan 5 tokoh dalam cerita wayang kulit yaitu BIma, Arjuna, Nakula, Sadewa, dan Yudistira</p>
-                                  </div>
+                                     </div>
+                                
                         
                                     
                                     </div>
@@ -344,7 +347,7 @@
                                             <a class="tag" href="#">Akhirpekan</a>
                                         </div>
                                     </div>
-                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=pantai pandawa bali&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                                     <!-- Widget Tags End-->
                                 </div>
                             </div>
