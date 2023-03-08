@@ -1365,7 +1365,7 @@
 
                         <!-- Hotel Destination End -->
                         <!-- Hotel Destination Start -->
-                       
+
                         <!-- Hotel Destination End -->
                     </div>
                 </div>
