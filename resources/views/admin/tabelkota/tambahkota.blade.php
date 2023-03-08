@@ -94,6 +94,13 @@
                                                 <div class="invalid-feedback">Masukkan nama kota.</div>
                                             </div>
 
+                                            <div class="mb-3">
+                                                <label for="date-field" class="form-label">Foto Sampul</label>
+                                                <input type="file" id="date-field" name="foto_sampul" class="form-control"
+                                                    placeholder="Pilih Foto" required />
+                                                <div class="invalid-feedback">Pilih Foto.</div>
+                                            </div>
+
                                             <div class="modal-footer">
                                                 <div class="hstack gap-2 justify-content-end">
                                                     <button type="button" class="btn btn-light"

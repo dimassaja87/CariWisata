@@ -40,11 +40,11 @@ class KotaController extends Controller
         // ]);
         // dd('bb');
         $data = Kota::create($request->all());
-        // if ($request->hasFile('foto')) {
-        //     $request->file('foto')->move('fotoKota/', $request->file('foto')->getClientOriginalName());
-        //     $data->foto = $request->file('foto')->getClientOriginalName();
-        //     $data->save();
-        // }
+        if ($request->hasFile('foto_sampul')) {
+            $request->file('foto_sampul')->move('fotosampul/', $request->file('foto_sampul')->getClientOriginalName());
+            $data->foto_sampul = $request->file('foto_sampul')->getClientOriginalName();
+            $data->save();
+        }
         return redirect()->route('kota')->with('success', 'Data Behasil Ditambahkan!');
     }
 
