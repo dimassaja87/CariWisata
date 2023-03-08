@@ -94,6 +94,16 @@
                                                 <div class="invalid-feedback">Masukkan nama kota.</div>
                                             </div>
 
+                                            <div class="mb-3">
+                                                <label for="date-field" class="form-label">Foto Sampul</label>
+                                                <br><img class="img mb-3"src="{{ asset('fotosampul/' . $data->foto_sampul) }}"
+                                                            alt="" style="width: 90px" alt="">
+                                                            <br>
+                                                <input type="file" id="date-field" name="foto_sampul" class="form-control"
+                                                    placeholder="Select Photo"  />
+                                                <div class="invalid-feedback">Pilih Foto.</div>
+                                            </div>
+
                                             <div class="modal-footer">
                                                 <div class="hstack gap-2 justify-content-end">
                                                     <button type="button" class="btn btn-light"

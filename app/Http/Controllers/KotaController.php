@@ -6,6 +6,7 @@ use view;
 use App\Models\Destinasi;
 use App\Models\Kota;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
 use Yoeunes\Toastr\Toastr;
@@ -40,11 +41,11 @@ class KotaController extends Controller
         // ]);
         // dd('bb');
         $data = Kota::create($request->all());
-        // if ($request->hasFile('foto')) {
-        //     $request->file('foto')->move('fotoKota/', $request->file('foto')->getClientOriginalName());
-        //     $data->foto = $request->file('foto')->getClientOriginalName();
-        //     $data->save();
-        // }
+        if ($request->hasFile('foto_sampul')) {
+            $request->file('foto_sampul')->move('fotosampul/', $request->file('foto_sampul')->getClientOriginalName());
+            $data->foto_sampul = $request->file('foto_sampul')->getClientOriginalName();
+            $data->save();
+        }
         return redirect()->route('kota')->with('success', 'Data Behasil Ditambahkan!');
     }
 
@@ -64,6 +65,17 @@ class KotaController extends Controller
         $data->update([
             'nama_kota' => $request->nama_kota,
         ]);
+        if ($request->hasFile('foto_sampul'))
+        {
+            $destination = 'fotosampul/'.$data->foto_sampul;
+            if(File::exists($destination))
+            {
+                File::delete($destination);
+            }
+            $request->file('foto_sampul')->move('fotosampul/', $request->file('foto_sampul')->getClientOriginalName());
+            $data->foto_sampul = $request->file('foto_sampul')->getClientOriginalName();
+            $data->update();
+        }
 
         return redirect()->route('kota')->with('success', 'Data Behasil Di Ubah!');
     }

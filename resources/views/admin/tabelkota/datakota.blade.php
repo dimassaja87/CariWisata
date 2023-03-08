@@ -307,6 +307,7 @@
                                                         </th>
                                                         <th scope="col">ID</th>
                                                         <th scope="col">Nama Kota</th>
+                                                        <th scope="col">Foto Sampul</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -325,6 +326,10 @@
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
                                                             <td class="nama_kota">{{ $row->nama_kota }}</td>
+                                                            <td class="foto">
+                                                                <img src="{{ asset('fotosampul/' . $row->foto_sampul) }}"
+                                                                    alt="" width="150">
+                                                            </td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">

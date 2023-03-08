@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RatingController;
 use App\Http\Controllers\KontakController;
+use App\Http\Controllers\welcomecontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,10 +27,9 @@ use App\Http\Controllers\KontakController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('welcome', [welcomecontroller::class, 'welcome'])->name('welcome');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/u', function () {
     return view('user.welcomeuser');
