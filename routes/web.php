@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RatingController;
 use App\Http\Controllers\KontakController;
+use App\Http\Controllers\WisataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -175,6 +176,17 @@ Route::get('/tampildestinasi/{id}',[DestinasiController::class, 'tampildestinasi
 Route::post('/updatedestinasi{id}',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
 
 Route::get('/deletedestinasi/{id}',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
+
+//Data Wisata sampul
+Route::get('/datawisata',[WisataController::class, 'datawisata'])->name('datawisata');
+
+Route::get('/tambahwisata',[WisataController::class, 'tambahwisata'])->name('tambahwisata');
+Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('insertwisata');
+
+Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
+Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
+
+Route::get('/deletewisata/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
 
 //Data Kota Relasi
 Route::get('/kota',[KotaController::class, 'kota'])->name('kota');

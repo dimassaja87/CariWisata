@@ -60,13 +60,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Data Kota</h4>
+                                    <h4 class="mb-sm-0">Data Wisata</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Wisata</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Tambah Data Kota</li>
+                                            <li class="breadcrumb-item active">Tambah Data Wisata</li>
                                         </ol>
                                     </div>
 
@@ -84,19 +84,19 @@
 
                                     </div>
                                     <div class="card-body">
-                                        <form action="/insertkota" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertwisata" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="customername-field" class="form-label">Nama
-                                                    Kota</label>
-                                                <input type="text" id="customername-field" name="nama_kota"
+                                                    Wisata</label>
+                                                <input type="text" id="customername-field" name="judul_wisata"
                                                     class="form-control" placeholder="Masukkan nama wisata" required />
-                                                <div class="invalid-feedback">Masukkan nama kota.</div>
+                                                <div class="invalid-feedback">Masukkan nama wisata.</div>
                                             </div>
 
                                             <div class="mb-3">
                                                 <label for="date-field" class="form-label">Foto Sampul</label>
-                                                <input type="file" id="date-field" name="foto_sampul" class="form-control"
+                                                <input type="file" id="date-field" name="sampul_wisata" class="form-control"
                                                     placeholder="Pilih Foto" required />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
                                             </div>

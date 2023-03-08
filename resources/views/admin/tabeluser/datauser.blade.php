@@ -345,6 +345,11 @@
                                 <i class="bx bx-star"></i> <span data-key="t-tables">Data Contact us</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/datawisata">
+                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Wisata</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->

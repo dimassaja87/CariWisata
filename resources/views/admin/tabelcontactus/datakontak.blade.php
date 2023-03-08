@@ -317,6 +317,11 @@
                                 <i class="bx bx-star"></i> <span data-key="t-tables">Data contact us</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/datawisata">
+                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Wisata</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -410,7 +415,7 @@
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
                                                             <td class="nama">{{ $row->nama }}</td>
-                                                            <td class="email">{{ $row->email }}</td> 
+                                                            <td class="email">{{ $row->email }}</td>
                                                             <td class="pesan">{{ $row->pesan }}</td>
 
                                                             <td>

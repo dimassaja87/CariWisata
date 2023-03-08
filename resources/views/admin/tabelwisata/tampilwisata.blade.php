@@ -64,9 +64,8 @@
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a>
-                                            </li>
-                                            <li class="breadcrumb-item active">Tambah Data Kota</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a></li>
+                                            <li class="breadcrumb-item active">Edit Data Kota</li>
                                         </ol>
                                     </div>
 
@@ -80,24 +79,28 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5 class="card-title mb-0">Tambah Data Kota</h5>
+                                        <h5 class="card-title mb-0">Edit Data Kota</h5>
 
                                     </div>
                                     <div class="card-body">
-                                        <form action="/insertkota" method="POST" enctype="multipart/form-data">
+                                        <form action="{{ route('updatewisata', $data->id) }}" method="POST"
+                                            enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="customername-field" class="form-label">Nama
-                                                    Kota</label>
-                                                <input type="text" id="customername-field" name="nama_kota"
-                                                    class="form-control" placeholder="Masukkan nama wisata" required />
-                                                <div class="invalid-feedback">Masukkan nama kota.</div>
+                                                    Wisata</label>
+                                                <input type="text" id="judul_wisata" name="judul_wisata" class="form-control"
+                                                    placeholder="Massukan nama wisata" value="{{ $data->judul_wisata }}" required />
+                                                <div class="invalid-feedback">Masukkan nama wisata.</div>
                                             </div>
 
                                             <div class="mb-3">
                                                 <label for="date-field" class="form-label">Foto Sampul</label>
-                                                <input type="file" id="date-field" name="foto_sampul" class="form-control"
-                                                    placeholder="Pilih Foto" required />
+                                                <br><img class="img mb-3"src="{{ asset('fotosampul/' . $data->sampul_wisata) }}"
+                                                            alt="" style="width: 90px" alt="">
+                                                            <br>
+                                                <input type="file" id="date-field" name="sampul_wisata" class="form-control"
+                                                    placeholder="Select Photo"  />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
                                             </div>
 
@@ -105,7 +108,7 @@
                                                 <div class="hstack gap-2 justify-content-end">
                                                     <button type="button" class="btn btn-light"
                                                         data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="edit-btn">Tambah
+                                                    <button type="submit" class="btn btn-success" id="edit-btn">Edit
                                                         Kota</button>
                                                     <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                 </div>
