@@ -187,6 +187,17 @@ Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name
 
 Route::get('/deletewisata/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
 
+//Data Wisata detail
+// Route::get('/datawisata',[WisataController::class, 'datawisata'])->name('datawisata');
+
+// Route::get('/tambahwisata',[WisataController::class, 'tambahwisata'])->name('tambahwisata');
+// Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('insertwisata');
+
+// Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
+// Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
+
+// Route::get('/deletewisata/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+
 //Data Kota Relasi
 Route::get('/kota',[KotaController::class, 'kota'])->name('kota');
 
