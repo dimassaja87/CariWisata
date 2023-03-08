@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\DestinasiController;
+use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
@@ -187,16 +188,16 @@ Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name
 
 Route::get('/deletewisata/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
 
-//Data Wisata detail
-// Route::get('/datawisata',[WisataController::class, 'datawisata'])->name('datawisata');
+//Data Gallery
+Route::get('/galery',[GaleryController::class, 'galery'])->name('galery');
 
-// Route::get('/tambahwisata',[WisataController::class, 'tambahwisata'])->name('tambahwisata');
-// Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('insertwisata');
+Route::get('/tambahgalery',[GaleryController::class, 'tambahgalery'])->name('tambahgalery');
+Route::post('/insertgalery',[GaleryController::class, 'insertgalery'])->name('insertgalery');
 
-// Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
-// Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
+Route::get('/tampilgalery/{id}',[GaleryController::class, 'tampilgalery'])->name('tampilgalery');
+Route::post('/updategalery{id}',[GaleryController::class, 'updategalery'])->name('updategalery');
 
-// Route::get('/deletewisata/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+Route::get('/deletegalery/{id}',[GaleryController::class, 'deletegalery'])->name('deletegalery');
 
 //Data Kota Relasi
 Route::get('/kota',[KotaController::class, 'kota'])->name('kota');
