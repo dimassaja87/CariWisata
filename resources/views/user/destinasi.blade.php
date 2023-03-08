@@ -41,7 +41,7 @@
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                         <ul class="mg_navigation">
-                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/welcome">Beranda</a></li>
                             <li><a href="/aboutus">About Us</a></li>
                             <li>
                                 <a href="/destinasi">Destinasi</a>
@@ -59,7 +59,7 @@
                             <button class="dl-trigger">Open Menu</button>
                             <ul class="dl-menu">
                                 <li class="menu-item mg-parent-menu">
-                                    <a href="/">Beranda</a>
+                                    <a href="/welcome">Beranda</a>
                                 </li>
                                 <li><a href="/aboutus">About Us</a></li>
                                 <li class="menu-item mg-parent-menu"><a href="/destinasi">Destinasi</a>

@@ -49,7 +49,7 @@ Route::get('/destinasi', function () {
 });
 
 Route::get('/profil', function () {
-    return view('profile.profile');
+    return view('profile.profil');
 });
 
 Route::get('/aboutus', function () {
@@ -300,5 +300,4 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
 
