@@ -67,7 +67,6 @@
                     <!--DL Menu END-->
                     <div class="mg_login">
                         <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                        <a class="mg_login_btn" data-toggle="modal" data-target="#reg-box" href="#"><i class="fa fa-lock"></i><span>Login Or Register</span></a>
                     </div>
                 </div>
                     <!-- iqoniq Navigation End-->
@@ -81,7 +80,7 @@
                     <h2>Hubungi Kami</h2>
                     <ul class="breadcrumb">
                         <li><a href="#">Beranda</a></li>
-                        <li class="active"><span>Hunungi Kami</span></li>
+                        <li class="active"><span>Hubungi Kami</span></li>
                     </ul>
                 </div>
             </div>
@@ -102,14 +101,14 @@
                                             <div class="col-md-12">
                                                 <!-- Input Start-->
                                                 <div class="mg_input_1">
-                                                    <input name="nama" id="nama" placeholder="Nama Kamu " type="text">
+                                                    <input type="hidden" name="nama" value="{{Auth::user()->name }}" class="form-control" id="nama" placeholder="Nama Kamu " >
                                                 </div>
                                                 <!-- Input End-->
                                             </div>
                                             <div class="col-md-12">
                                                 <!-- Input Start-->
                                                 <div class="mg_input_1">
-                                                    <input name="email" id="email" placeholder="Email " type="text">
+                                                    <input type="hidden" name="email" value="{{Auth::user()->email }}" class="form-control" id="email" placeholder="Email " >
                                                 </div>
                                                 <!-- Input End-->
                                             </div>

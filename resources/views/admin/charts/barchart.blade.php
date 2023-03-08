@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     </head>
 
     <body>
@@ -77,44 +80,71 @@
 
 
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-xl-12">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-title mb-0">Tambah Data Kota</h5>
+                                    <div class="card-header border-0 align-items-center d-flex">
+                                        <h4 class="card-title mb-0 flex-grow-1">Charts</h4>
+                                        <div>
+                                            <button type="button" class="btn btn-soft-secondary btn-sm">
+                                                ALL
+                                            </button>
+                                            <button type="button" class="btn btn-soft-secondary btn-sm">
+                                                1M
+                                            </button>
+                                            <button type="button" class="btn btn-soft-secondary btn-sm">
+                                                6M
+                                            </button>
+                                            <button type="button" class="btn btn-soft-primary btn-sm">
+                                                1Y
+                                            </button>
+                                        </div>
+                                    </div><!-- end card header -->
 
-                                    </div>
-                                    <div class="card-body">
-                                        <form action="/insertkota" method="POST" enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="mb-3">
-                                                <label for="customername-field" class="form-label">Nama
-                                                    Kota</label>
-                                                <input type="text" id="customername-field" name="nama_kota"
-                                                    class="form-control" placeholder="Masukkan nama wisata" required />
-                                                <div class="invalid-feedback">Masukkan nama kota.</div>
+                                    <div class="card-header p-0 border-0 bg-soft-light">
+                                        <div class="row g-0 text-center">
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body p-0 pb-2">
+                                        <div class="w-100">
+                                            <div style="height:400px; width:900px; margin:auto;">
+                                                <canvas id="barChart"></canvas>
                                             </div>
-
-                                            <div class="mb-3">
-                                                <label for="date-field" class="form-label">Foto Sampul</label>
-                                                <input type="file" id="date-field" name="foto_sampul" class="form-control"
-                                                    placeholder="Pilih Foto" required />
-                                                <div class="invalid-feedback">Pilih Foto.</div>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <div class="hstack gap-2 justify-content-end">
-                                                    <button type="button" class="btn btn-light"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                                        Kota</button>
-                                                    <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end col-->
+                                            <script>
+                                                $(function() {
+                                                    var datas = <?php echo json_encode($datas); ?>;
+                                                    var barCanvas = $("#barChart");
+                                                    var barChart = new Chart(barCanvas, {
+                                                        type: 'bar',
+                                                        data: {
+                                                            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov',
+                                                                'Dec'
+                                                            ],
+                                                            datasets: [{
+                                                                label: 'New User Growth, 2023',
+                                                                data: datas,
+                                                                backgroundColor: ['red', 'orange', 'yellow', 'green', 'blue', 'violet',
+                                                                    'puple',
+                                                                    'pink', 'aqua', 'silver', 'violet', 'gold'
+                                                                ]
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            scales: {
+                                                                yAxes: [{
+                                                                    ticks: {
+                                                                        beginAtZero: true
+                                                                    }
+                                                                }]
+                                                            }
+                                                        }
+                                                    })
+                                                })
+                                            </script>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                            <!-- end col -->
                         </div>
                         <!--end row-->
 
@@ -160,6 +190,13 @@
         <script>
             $(document).ready(function() {
                 $('#Jurnal').DataTable();
+            });
+        </script>
+
+        <script>
+            // In your Javascript (external .js resource or <script> tag)
+            $(document).ready(function() {
+                $('.kota').select2();
             });
         </script>
 

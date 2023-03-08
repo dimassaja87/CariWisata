@@ -107,6 +107,7 @@
                                             <p>Pantai Anyer merupakan obyek wisata tepi laut yang terletak di sisi timur provinsi Banten. Pasir pantainya bersih dengan panorama laut menjadi daya tariknya. Selain itu berbagai wahana serta fasilitas mendukung beragam aktivitas wisata.</p>
                                             <br><h5>Event Wisata</h5></br>
                                             <p>Pada saat periode puncak kunjungan wisatawan, kawasan wisata sekitar pantai acap kali menggelar kegiatan dan pertunjukan. Sejumlah acara kesenian dan budaya tradisional Banten ditampilkan untuk menyambut wisatawan. Diantaranya Rampak Bedug, Debus, dan tari-tarian Banten dan ”jamaican beach party’ serta band lokal.</p>
+                                            </div>
                                         <img src="https://i2.wp.com/anyerpedia.com/wp-content/uploads/2016/03/Anyer.jpg?resize=800%2C533" alt="">
                                             </div>
                                         <br><h5 class="blog_main_title">Harga Tiket Masuk</h5></br>
@@ -319,7 +320,7 @@
                                             <a class="tag" href="#">Akhirpekan</a>
                                         </div>
                                     </div>
-                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+                                    <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=pantai anyer, banten&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
                                     <!-- Widget Tags End-->
                                 </div>
                             </div>
