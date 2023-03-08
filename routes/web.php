@@ -49,7 +49,7 @@ Route::get('/destinasi', function () {
 });
 
 Route::get('/profil', function () {
-    return view('profile.profile');
+    return view('profile.profil');
 });
 
 Route::get('/aboutus', function () {
