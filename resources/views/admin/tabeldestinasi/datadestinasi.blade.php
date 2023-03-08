@@ -79,12 +79,11 @@
                                 <span></span>
                             </span>
                         </button>
-
                         <!-- App Search-->
                         <form class="app-search d-none d-md-block">
                             <div class="position-relative">
                                 <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
-                                    id="search-options" value="">
+                                    id="search" value="">
                                 <span class="mdi mdi-magnify search-widget-icon"></span>
                                 <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
                                     id="search-close-options"></span>
@@ -446,7 +445,7 @@
                                                     @endforeach
                                                 </tbody>
                                             </table>
-                                            <div class="noresult" style="display: none">
+                                            {{-- <div class="noresult" style="display: none">
                                                 <div class="text-center">
                                                     <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
                                                         trigger="loop" colors="primary:#121331,secondary:#08a88a"
@@ -455,7 +454,7 @@
                                                     <p class="text-muted mb-0">Kami telah mencari lebih dari 99+
                                                         Pengguna, Kami tidak menemukan data apa pun yang Anda cari.</p>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                         </div>
 
                                         <div class="d-flex justify-content-end">

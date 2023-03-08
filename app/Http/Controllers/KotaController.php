@@ -6,7 +6,9 @@ use view;
 use App\Models\Destinasi;
 use App\Models\Kota;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
+use Yoeunes\Toastr\Toastr;
 
 class KotaController extends Controller
 {
@@ -14,7 +16,7 @@ class KotaController extends Controller
     {
 
         if ($request->has('search')) {
-            $data = Kota::where('nama', 'LIKE', '%' . $request->search)->paginate(5);
+            $data = Kota::where('nama_kota', 'LIKE', '%' . $request->search)->paginate(5);
         } else {
             $data = Kota::paginate(5);
             Session::put('halaman_url', request()->fullUrl());
@@ -81,4 +83,15 @@ class KotaController extends Controller
         }
         return view('user.kota.bali',['kota' => $kota]);
     }
+
+    //Multiple Delete
+    public function multidelete()
+        {
+            Schema::disableForeignKeyConstraints();
+            \App\Models\Kota::truncate();
+            Schema::enableForeignKeyConstraints();
+
+            toastr()->success('Seluruh Data Berhasil Di Hapus');
+            return redirect()->back()->with('success','Seluruh Data Berhasil Di Hapus');
+        }
 }

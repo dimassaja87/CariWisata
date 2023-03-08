@@ -68,7 +68,7 @@
                         </div>
                         <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
                             <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete
+                            <button type="button" class="btn w-sm btn-danger" id="deleteall">Yes, Delete
                                 It!</button>
                         </div>
                     </div>
@@ -148,8 +148,22 @@
                                 <i class="bx bx-star"></i> <span data-key="t-tables">Kontak</span>
                             </a>
                         </li>
-                       
+                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                                <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarCharts">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="/chartuser" class="nav-link" data-key="t-chartjs"> Chartjs </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/barchart" class="nav-link" data-key="t-echarts"> Echarts </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
+
                 </div>
                 <!-- Sidebar -->
             </div>
