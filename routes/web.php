@@ -17,6 +17,7 @@ use App\Http\Controllers\RatingController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
+use App\Models\Wisata;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,21 +29,19 @@ use App\Http\Controllers\welcomecontroller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('welcome', [welcomecontroller::class, 'welcome'])->name('welcome');
+Route::get('/welcome', [welcomecontroller::class, 'welcome'])->name('welcome');
 
-
-
-Route::get('/u', function () {
+Route::get('/', function () {
     return view('user.welcomeuser');
 });
 
 Route::get('/adminn', function () {
-    $jumlahdestinasi = Destinasi::count();
+    $jumlahwisata = Wisata::count();
     $jumlahuser = User::count();
     $jumlahkota = Kota::count();
     // $jumlahulasan = Ulasan::count();
     // $jumlahulasan = Ulasan::count();
-    return view('admin.welcomeadmin', compact('jumlahdestinasi', 'jumlahuser', 'jumlahkota'));
+    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota'));
 });
 
 Route::get('/destinasi', function () {
@@ -50,7 +49,7 @@ Route::get('/destinasi', function () {
 });
 
 Route::get('/profil', function () {
-    return view('profile.profile');
+    return view('profile.profil');
 });
 
 Route::get('/aboutus', function () {
@@ -290,5 +289,4 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
 

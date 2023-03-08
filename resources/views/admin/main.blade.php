@@ -145,12 +145,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/kontakadmin">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Kontak</span>
+                                <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/datawisata">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Wisata</span>
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
                             </a>
                         </li>
                         <li>

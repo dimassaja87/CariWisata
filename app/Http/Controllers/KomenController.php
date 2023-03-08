@@ -88,7 +88,7 @@ class KomenController extends Controller
     public function insertkomen(Request $request)
     {
         $data = Komen::create([
-            'komentar_id' => $request->komentar_id,
+            // 'komentar_id' => $request->komentar_id,
             'nama' => $request->nama,
             'foto' => $request->foto,
             'email' => $request->email,
