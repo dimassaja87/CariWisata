@@ -1325,81 +1325,22 @@
                     <div class="masonry-2 grid">
                         <div class="row masonry masonryFlyIn">
                             <!-- Masonry Item Start -->
-                            <div class="masonry-item">
+                            <!-- <div class="masonry-item">
                                 <h4 class="text-link item-height100 green">
                                     <a href="#"><span>Nature & Adventure</span></a>
                                 </h4>
-                            </div>
+                            </div> -->
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
+                            @foreach ($data2 as $Galery)
                             <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/1a.jpg') }}" alt=""></figure>
+                                <figure class="thumb-link"><img src="{{ asset('foto/fotogalery/'.$Galery->fotogalery) }}" alt=""></figure>
                             </div>
+                            @endforeach
+
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/2a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/3a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height130 green"><a href="#">Nature & Adventure</a></h4>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/4a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/5a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height130 pink"><a href="#">Nature & Adventure</a></h4>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/6.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height130"><a href="#">Nature sss& Adventure</a></h4>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/7.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/8.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/9.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/10.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height184 peach"><a href="#">Nature & Adventure</a></h4>
-                            </div>
+
                             <!-- Masonry Item End -->
                         </div>
                     </div>
