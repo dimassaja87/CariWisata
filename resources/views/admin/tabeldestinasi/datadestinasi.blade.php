@@ -1186,7 +1186,7 @@
                             <div class="col-4">
                                 <div class="form-check sidebar-setting card-radio">
                                     <input class="form-check-input" type="radio" name="data-preloader"
-                                        id="preloader-view-custom" value="enable">
+                                        id="preloader-view-custom" value="disable">
                                     <label class="form-check-label p-0 avatar-md w-100" for="preloader-view-custom">
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
@@ -1218,7 +1218,7 @@
                             <div class="col-4">
                                 <div class="form-check sidebar-setting card-radio">
                                     <input class="form-check-input" type="radio" name="data-preloader"
-                                        id="preloader-view-none" value="disable">
+                                        id="preloader-view-none" value="enable">
                                     <label class="form-check-label p-0 avatar-md w-100" for="preloader-view-none">
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">

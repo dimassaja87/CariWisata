@@ -104,8 +104,10 @@
                                             <div class="mb-3">
                                                 <label for="customername-field" class="form-label">Nama
                                                     Kota</label>
-                                                <input id="detail_kota" name="detail_kota" class="snow-editor form-control" style="height: 300px;"
-                                                    placeholder="Masukkan Detail Kota" value="{{ $data->detail_kota }}" required />
+                                                    <section>
+                                                        <input id="detail_kota" name="detail_kota" class="snow-editor form-control" style="height: 300px;"
+                                                            placeholder="Masukkan Detail Kota" value="" required />{!! $data->detail_kota !!}
+                                                    </section>
                                                 <div class="invalid-feedback">Masukkan detail kota.</div>
                                             </div>
 

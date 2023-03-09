@@ -38,9 +38,9 @@ class KotaDetailController extends Controller
         // ]);
         // dd('bb');
         $data = KotaDetail::create($request->all());
-        if ($request->hasFile('foto_sampul')) {
-            $request->file('foto_sampul')->move('fotosampul/', $request->file('foto_sampul')->getClientOriginalName());
-            $data->foto_sampul = $request->file('foto_sampul')->getClientOriginalName();
+        if ($request->hasFile('detail_kota')) {
+            $request->file('detail_kota')->move('foto/detailkota/', $request->file('detail_kota')->getClientOriginalName());
+            $data->detail_kota = $request->file('detail_kota')->getClientOriginalName();
             $data->save();
         }
         return redirect()->route('kotadetail')->with('success', 'Data Behasil Ditambahkan!');
@@ -59,18 +59,16 @@ class KotaDetailController extends Controller
     public function updatekotadetail(Request $request, $id)
     {
         $data = KotaDetail::find($id);
-        $data->update([
-            'nama_kota' => $request->nama_kota,
-        ]);
-        if ($request->hasFile('foto_sampul'))
+        $data->update('all');
+        if ($request->hasFile('detail_kota'))
         {
-            $destination = 'fotosampul/'.$data->foto_sampul;
-            if(File::exists($destination))
+            $detailkota = 'foto/detailkota/'.$data->detail_kota;
+            if(File::exists($detailkota))
             {
-                File::delete($destination);
+                File::delete($detailkota);
             }
-            $request->file('foto_sampul')->move('fotosampul/', $request->file('foto_sampul')->getClientOriginalName());
-            $data->foto_sampul = $request->file('foto_sampul')->getClientOriginalName();
+            $request->file('detail_kota')->move('foto/detailkota/', $request->file('detail_kota')->getClientOriginalName());
+            $data->detail_kota = $request->file('detail_kota')->getClientOriginalName();
             $data->update();
         }
 

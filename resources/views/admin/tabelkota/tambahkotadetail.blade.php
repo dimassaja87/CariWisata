@@ -103,7 +103,9 @@
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="customername-field" class="form-label">Detail Kota</label>
-                                                <textarea name="detail_kota"  class="snow-editor form-control" style="height: 300px;" placeholder="Masukkan nama wisata" required></textarea>
+                                                <section>
+                                                    <input name="detail_kota"  class="snow-editor form-control" style="height: 300px;" placeholder="Masukkan detail wisata" required/>
+                                                </section>
                                                 <div class="invalid-feedback">Masukkan detail kota.</div>
                                             </div>
 

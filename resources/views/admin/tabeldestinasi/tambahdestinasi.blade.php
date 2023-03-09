@@ -106,7 +106,7 @@
 
                                             <div class="mb-3">
                                                 <label for="email-field" class="form-label">Nama Kota</label>
-                                                <select class="kota form-select form-control"
+                                                <select class="js-example-basic-single form-select form-control"
                                                     aria-label="Default select example" name="id_kota" required>
                                                     <option selected>Tidak ada yang dipilih</option>
                                                     @foreach ($kota as $data)
@@ -204,11 +204,14 @@
                 $('.kota').select2();
             });
         </script>
+            <!--jquery cdn-->
+    <script src="../../../../code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--select2 cdn-->
+    <script src="../../../../cdn.jsdelivr.net/npm/select2%404.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="assets/js/pages/select2.init.js"></script>
 
     </body>
-
-
-
     </body>
 
 
