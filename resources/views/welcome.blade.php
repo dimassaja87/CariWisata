@@ -69,7 +69,7 @@
                             <li><a href="/aboutus">About us</a></li>
                             <li class="menu-item mg-parent-menu"><a href="/destinasi">destinasi</a>
                             </li>
-                            <li class="menu-item mg-parent-menu"><a href="/hubungi">contact us</a>
+                            <li class="menu-item mg-parent-menu"><a href="/contactus">contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -141,13 +141,9 @@
                     <div class="mg_hotel_destination_tab">
                         <!-- Nav tabs Start -->
                         <ul class="mg_hotel_nav2" role="tablist">
-                            <li role="presentation" class="active"><a href="#worldwide" aria-controls="worldwide" role="tab" data-toggle="tab">Bandung</a></li>
-                            <li role="presentation"><a href="#usa" aria-controls="usa" role="tab" data-toggle="tab">Semarang</a></li>
-                            <li role="presentation"><a href="#mexico" aria-controls="mexico" role="tab" data-toggle="tab">Bali</a></li>
-                            <li role="presentation"><a href="#central" aria-controls="central" role="tab" data-toggle="tab">Banyuwangi</a></li>
-                            <li role="presentation"><a href="#europe" aria-controls="europe" role="tab" data-toggle="tab">Malang</a></li>
-                            <li role="presentation"><a href="#asia" aria-controls="asia" role="tab" data-toggle="tab">Lombok</a></li>
-                            <li role="presentation"><a href="#elsewhere" aria-controls="elsewhere" role="tab" data-toggle="tab">Surabaya</a></li>
+                            @foreach ($data as $kota)
+                            <li role="presentation" class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}" ><a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide" role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a></li>
+                            @endforeach
                         </ul>
                         <!-- Nav tabs End -->
                         <!-- Tab panes Start -->
@@ -157,7 +153,7 @@
                                 <div class="mg_hotel_destination_wrapper">
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
-                                        @foreach ($data1 as $wisata)
+                                        @foreach ($data1->take(6) as $wisata)
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
@@ -1272,7 +1268,7 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-                        @foreach ($data as $kota )
+                        @foreach ($data->take(6) as $kota )
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
@@ -1332,7 +1328,7 @@
                             </div> -->
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
-                            @foreach ($data2 as $Galery)
+                            @foreach ($data2->take(15) as $Galery)
                             <div class="masonry-item fancy-overlay">
                                 <figure class="thumb-link"><img src="{{ asset('foto/fotogalery/'.$Galery->fotogalery) }}" alt=""></figure>
                             </div>
