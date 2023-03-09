@@ -302,19 +302,18 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
-                                <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Data Kota</span>
+                            <a class="nav-link menu-link" href="#sidebarKota" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                                <i class=" bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarCharts">
+                            <div class="collapse menu-dropdown" id="sidebarKota">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link menu-link" href="/kota">
-                                            <i class=" bx bxs-city"></i> <span data-key="t-tables">Kota</span>
+                                             <span data-key="t-tables">Kota</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link menu-link" href="/kotadetail">
-                                            <i class=" bx bxs-city"></i> <span data-key="t-tables">Kota Detail</span>
+                                        <a class="nav-link menu-link" href="/kotadetail"> <span data-key="t-tables">Kota Detail</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -333,6 +332,11 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/datawisata">
                                 <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/galery">
+                                <i class="bx bx-photo-album"></i> <span data-key="t-tables">Data Galery</span>
                             </a>
                         </li>
                         <li>
