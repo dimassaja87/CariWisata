@@ -83,9 +83,19 @@ class LoginController extends Controller
         return redirect('/login');
     }
 
-    // public function logoutuser()
-    // {
-    //     return view('user.logoutuser');
-    // }
+    public function profil()
+    {
+        return view('profile.editprofile');
+    }
+    public function updateprofil(Request $request,$id)
+    {
+        $data = User::find($id);
+        $data->update($request->all());
+        if ($request->hasFile('foto')){
+            $data->foto = $request->file('foto')->store('foto','public');
+        }
+        $data->save();
 
+        return redirect('profil')->with('sukses','Data Berhasil di Perbarui');
+    }
 }

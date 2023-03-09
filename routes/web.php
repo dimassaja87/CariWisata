@@ -53,6 +53,12 @@ Route::get('/destinasi', function () {
 Route::get('/profil', function () {
     return view('profile.profil');
 });
+// Route::get('/editprofil', function () {
+//     return view('profile.editprofile');
+// });
+Route::get('/editprofil', [LoginController::class, 'profil'])->name('profil');
+Route::put('/updateprofil/{id}', [LoginController::class, 'updateprofil'])->name('updateprofil');
+
 
 Route::get('/aboutus', function () {
     return view('user.aboutus');
