@@ -10,30 +10,25 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         {{-- Text Editor --}}
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.core.css') }}"
-            rel="stylesheet" type="text/css" />
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.bubble.css') }}"
-            rel="stylesheet" type="text/css" />
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.snow.css') }}"
-            rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.core.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.bubble.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.snow.css') }}" rel="stylesheet" type="text/css" />
 
         <!-- Layout config Js -->
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/layout.js') }}"></script>
         <!-- Bootstrap Css -->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet"
-            type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet"
-            type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- App Css-->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet"
-            type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- custom Css-->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet"
-            type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
 
-        <!-- include summernote css/js -->
-        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+        <!-- include libraries(jQuery, bootstrap) -->
+
+<!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
     <body>
 
@@ -85,13 +80,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Detail Kota</h4>
+                                    <h4 class="mb-sm-0">Detail Wisata</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Wisata</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Tambah Detail Kota</li>
+                                            <li class="breadcrumb-item active">Tambah Detail Wisata</li>
                                         </ol>
                                     </div>
 
@@ -105,22 +100,17 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5 class="card-title mb-0">Tambah Detail Kota</h5>
+                                        <h5 class="card-title mb-0">Tambah Detail Wisata</h5>
                                     </div>
                                     <div class="card-body">
-                                        <form action="/insertkotadetail" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertdetailwisata" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
-                                                <section>
-                                                    <div class="card">
-                                                        <div class="card-body">
-                                                            {{--  <form method="POST" enctype="multipart/form-data">  --}}
-                                                                <textarea  name="detail_kota" class="summernote form-control"
-                                                                placeholder="Masukkan detail wisata" id="summer" required ></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="invalid-feedback">Masukkan detail kota.</div>
+                                                <label for="customername-field" class="form-label">Detail Wisata</label>
+                                                <section id="summernote">
+                                                    <input  name="detail_wisata"  class="summernote form-control" style="height: 300px;" placeholder="Masukkan detail wisata" required/>
                                                 </section>
+                                                <div class="invalid-feedback">Masukkan detail wisata.</div>
                                             </div>
 
                                             <div class="modal-footer">
@@ -128,7 +118,7 @@
                                                     <button type="button" class="btn btn-light"
                                                         data-bs-dismiss="modal">Close</button>
                                                     <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                                        Kota</button>
+                                                        Detail Wisata</button>
                                                     <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                 </div>
                                             </div>
@@ -182,40 +172,34 @@
 
         <script>
             $(document).ready(function() {
-                $('#summer').summernote({
-                tabsize: 2,
-                height: 100
+                $('#summernote').summernote();
             });
-            });
-        </script>
+          </script>
         <!-- JAVASCRIPT -->
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
-        </script>
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}">
-        </script>
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}">
-        </script>
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
 
-        <!-- ckeditor -->
-        <script
-            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}">
-        </script>
+    <!-- ckeditor -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
 
-        <!-- quill js -->
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.min.js') }}"></script>
+    <!-- quill js -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.min.js') }}"></script>
 
-        <!-- init js -->
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
+    <!-- init js -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
 
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
 
     </body>
+
 
     <!-- Mirrored from wrappixel.com/demos/admin-templates/materialart/html/ltr/table-datatable-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Jan 2023 14:20:10 GMT -->
 

@@ -19,6 +19,7 @@ use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KotaDetailController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
+use App\Http\Controllers\WisataDetailController;
 use App\Models\Wisata;
 
 /*
@@ -31,6 +32,10 @@ use App\Models\Wisata;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/nyoba', function () {
+    return view('nyoba');
+});
+
 Route::get('/welcome', [welcomecontroller::class, 'welcome'])->name('welcome');
 
 Route::get('/', function () {
@@ -190,10 +195,21 @@ Route::get('/datawisata',[WisataController::class, 'datawisata'])->name('datawis
 Route::get('/tambahwisata',[WisataController::class, 'tambahwisata'])->name('tambahwisata');
 Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('insertwisata');
 
-Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
+Route::get('/tampildetail{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
 Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
 
-Route::get('/deletewisata/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+Route::get('/deletedetail{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+
+//Data Wisata detail
+Route::get('/detailwisata',[WisataDetailController::class, 'detailwisata'])->name('detailwisata');
+
+Route::get('/tambahdetailwisata',[WisataDetailController::class, 'tambahdetailwisata'])->name('tambahdetailwisata');
+Route::post('/insertdetailwisata',[WisataDetailController::class, 'insertdetailwisata'])->name('insertdetailwisata');
+
+Route::get('/tampildetailwisata/{id}',[WisataDetailController::class, 'tampildetailwisata'])->name('tampildetailwisata');
+Route::post('/updatedetailwisata{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata');
+
+Route::get('/deletedetailwisata{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata');
 
 //Data Gallery
 Route::get('/galery',[GaleryController::class, 'galery'])->name('galery');
