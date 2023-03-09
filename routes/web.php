@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RatingController;
 use App\Http\Controllers\KontakController;
+use App\Http\Controllers\KotaDetailController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
 use App\Models\Wisata;
@@ -211,6 +212,19 @@ Route::post('/updatekota{id}',[KotaController::class, 'updatekota'])->name('upda
 Route::get('/deletekota/{id}',[KotaController::class, 'deletekota'])->name('deletekota');
 
 Route::get('/multidelete',[KotaController::class, 'multidelete'])->name('multidelete');
+
+//Data Kota Detail
+Route::get('/kotadetail',[KotaDetailController::class, 'kotadetail'])->name('kotadetail');
+
+Route::get('/tambahkotadetail',[KotaDetailController::class, 'tambahkotadetail'])->name('tambahkotadetail');
+Route::post('/insertkotadetail',[KotaDetailController::class, 'insertkotadetail'])->name('insertkotadetail');
+
+Route::get('/tampilkotadetail/{id}',[KotaDetailController::class, 'tampilkotadetail'])->name('tampilkotadetail');
+Route::post('/updatekotadetail{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail');
+
+Route::get('/deletekotadetail/{id}',[KotaDetailController::class, 'deletekotadetail'])->name('deletekotadetail');
+
+Route::get('/multidelete',[KotaDetailController::class, 'multidelete'])->name('multidelete');
 
 //Data Rating
 Route::get('/rating',[RatingController::class, 'rating'])->name('rating');

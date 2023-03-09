@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Kota | Admin</title>
+    <title>Data Detail Kota | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -283,12 +283,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA KOTA</h4>
+                                <h4 class="mb-sm-0">DATA DETAIL KOTA</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Kota</li>
+                                        <li class="breadcrumb-item active">Data Detail Kota</li>
                                     </ol>
                                 </div>
 
@@ -309,7 +309,7 @@
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
                                                 <div>
-                                                    <a href="/tambahkota" type="button"
+                                                    <a href="/tambahkotadetail" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
                                                     <a href="/multidelete" method="GET" id="delete-notification" class="btn btn-soft-danger"><i
@@ -340,8 +340,7 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">ID</th>
-                                                        <th scope="col">Nama Kota</th>
-                                                        <th scope="col">Foto Sampul</th>
+                                                        <th scope="col">Detail Kota</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -359,21 +358,17 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td class="nama_kota">{{ $row->nama_kota }}</td>
-                                                            <td class="foto">
-                                                                <img src="{{ asset('fotosampul/' . $row->foto_sampul) }}"
-                                                                    alt="" width="150">
-                                                            </td>
+                                                            <td class="detail_kota">{{ $row->detail_kota }}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
-                                                                        <a href="/tampilkota/{{ $row->id }}"
+                                                                        <a href="/tampilkotadetail/{{ $row->id }}"
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
                                                                         <a href="#"
                                                                             data-id="{{ $row->id }}"
-                                                                            data-nama="{{ $row->nama_kota }}"
+                                                                            data-nama="{{ $row->detail_kota }}"
                                                                             class="btn btn-sm btn-danger deletekota">Remove</a>
                                                                     </div>
                                                                 </div>
@@ -1204,18 +1199,18 @@
 </body>
 <script>
     $('.deletekota').click(function() {
-        var kotaid = $(this).attr('data-id');
-        var nama_kota = $(this).attr('data-nama');
+        var kotadetailid = $(this).attr('data-id');
+        var detail_kota = $(this).attr('data-nama');
         swal({
                 title: "Anda yakin?!",
-                text: "Ingin menghapus data dengan nama " + nama_kota + " ",
+                text: "Ingin menghapus data dengan nama " + detail_kota + " ",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletekota/" + kotaid + ""
+                    window.location = "/deletekotadetail/" + kotadetailid + ""
                     swal("Data berhasil dihapus!", {
                         icon: "success",
                     });
