@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Profile Settings | Velzon - Admin & Dashboard Template</title>
+    <title>Profile Settings | User</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -72,9 +72,9 @@
                                             @method('put')
                                             @csrf
                                         <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
-                                            <img src="{{ asset('storage/'. Auth::user()->foto ?? 'profile.jpg')}}" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
+                                            <img src="{{ asset('foto/'. Auth::user()->foto)}}" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
                                             <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
-                                                <input id="profile-img-file-input" type="file" class="profile-img-file-input">
+                                                <input id="profile-img-file-input" type="file" class="profile-img-file-input" name="foto" value="{{Auth::user()->foto }}">
                                                 <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
                                                     <span class="avatar-title rounded-circle bg-light text-body">
                                                         <i class="ri-camera-fill"></i>
@@ -94,9 +94,7 @@
                                         </p>
                                         </center>
                                         <div class="modal-footer">
-                                        <p>
-                                            <button type="submit" class="btn-btn-primary">Edit Profil</button>
-                                        </p>
+                                        <button type="submit" class="btn btn-primary">Edit Profil</button>
                                         </div>
                                         </form>
                                     </div>

@@ -63,8 +63,8 @@
                     <div class="pt-4 mb-4 mb-lg-3 pb-lg-4">
                         <div class="row g-4">
                             <div class="col-auto">
-                                <div class="avatar-lg">
-                                    <img src="{{ asset('storage/'. Auth::user()->foto ?? 'profile.jpg')}}" alt="user-img" class="img-thumbnail rounded-circle"  />
+                                <div class="avatar-lg p-0 rounded-circle profile-photo-edit">
+                                    <img src="{{ asset('foto/'. Auth::user()->foto)}}" class="rounded-circle avatar-lg img-thumbnail user-profile-image" alt="user-profile-image"  />
                                 </div>
                             </div>
                             <!--end col-->
@@ -80,9 +80,6 @@
                                 </div>
                             </div>
                             <!--end col-->
-<<<<<<< HEAD
-                            
-=======
                             <div class="col-12 col-lg-auto order-last order-lg-0">
                                 <div class="row text text-white-50 text-center">
                                     <div class="col-lg-6 col-4">
@@ -91,19 +88,11 @@
                                             <p class="fs-14 mb-0">Followers</p>
 <<<<<<< Updated upstream
                                         </div> -->
-=======
-                                        </div>
->>>>>>> Stashed changes
-                                    </div>
-                                    <div class="col-lg-6 col-4">
-                                        <div class="p-2">
-                                            <h4 class="text-white mb-1">1.3K</h4>
-                                            <p class="fs-14 mb-0">Wisata</p>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
->>>>>>> 2fdb507b03908c69a2ba2e01ef538426adf91de2
                             <!--end col-->
 
                         </div>

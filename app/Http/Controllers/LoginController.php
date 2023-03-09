@@ -58,7 +58,7 @@ class LoginController extends Controller
     public function loginuserdua(Request $request)
     {
         if (FacadesAuth::attempt($request->only('email', 'password'))) {
-            return redirect('/');
+            return redirect('/welcome');
         }
 
         return redirect('login');
