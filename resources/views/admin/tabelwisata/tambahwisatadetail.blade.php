@@ -108,7 +108,7 @@
                                             <div class="mb-3">
                                                 <label for="customername-field" class="form-label">Detail Wisata</label>
                                                 <section id="summernote">
-                                                    <input  name="detail_wisata"  class="summernote form-control" style="height: 300px;" placeholder="Masukkan detail wisata" required/>
+                                                    <input  name="detail_wisata"  class="summernote form-control" height="" placeholder="Masukkan detail wisata" required/>
                                                 </section>
                                                 <div class="invalid-feedback">Masukkan detail wisata.</div>
                                             </div>
