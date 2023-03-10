@@ -147,7 +147,7 @@
                                 </div><!-- end col -->
                             </div> <!-- end row-->
 
-
+                            {{-- @include('admin.charts.chart') --}}
 
                         </div> <!-- end .h-100-->
 
