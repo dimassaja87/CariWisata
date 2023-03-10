@@ -9,7 +9,7 @@ class ProfileController extends Controller
     public function profile()
     {
         $profile=Profile::all();
-        return view('profile.profil',['profile'=>$profile]);
+        return view('profile.profil',compact('profile'));
     }
     public function updateprofile(Request $request)
     {

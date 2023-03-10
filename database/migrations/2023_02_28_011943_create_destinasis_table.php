@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('nama_wisata');
             $table->string('lokasi');
-            $table->bigInteger('id_kota');
+            $table->string('id_kota');
             $table->string('foto_wisata');
             $table->string('htm');
-            $table->string('deskripsi');
+            $table->longText('deskripsi')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

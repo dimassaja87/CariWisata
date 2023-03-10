@@ -58,7 +58,7 @@
                         <li>
                             <a href="/contactus">contact us</a>
                         </li>
-                    </ul>
+                        </ul>
                     <!--DL Menu Start-->
                     <div id="mg-responsive-navigation" class="dl-menuwrapper">
                         <button class="dl-trigger">Open Menu</button>
@@ -89,8 +89,7 @@
                         </a>
                         {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}
                         </from>
-                        @else
-                        <div class="">
+                        @else 
                             <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login</span></a>
                             </a>
                             @endauth
