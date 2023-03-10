@@ -8,9 +8,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     </head>
 
     <body>
@@ -63,13 +60,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Data Destinasi</h4>
+                                    <h4 class="mb-sm-0">Data Kota</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Destinasi</a>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Tambah Data Destinasi</li>
+                                            <li class="breadcrumb-item active">Tambah Data Kota</li>
                                         </ol>
                                     </div>
 
@@ -83,65 +80,26 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5 class="card-title mb-0">Tambah Data Destinasi</h5>
+                                        <h5 class="card-title mb-0">Tambah Data Kota</h5>
 
                                     </div>
                                     <div class="card-body">
-                                        <form action="/insertdestinasi" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertgalery" method="POST" enctype="multipart/form-data">
                                             @csrf
-                                            <div class="mb-3">
-                                                <label for="customername-field" class="form-label">Nama
-                                                    Wisata</label>
-                                                <input type="text" id="customername-field" name="nama_wisata"
-                                                    class="form-control" placeholder="Masukkan nama wisata" required />
-                                                <div class="invalid-feedback">Masukkan nama wisata.</div>
-                                            </div>
 
                                             <div class="mb-3">
-                                                <label for="email-field" class="form-label">Lokasi Wisata</label>
-                                                <input type="text" id="email-field" name="lokasi" class="form-control"
-                                                    placeholder="Masukkan lokasi wisata" required />
-                                                <div class="invalid-feedback">Masukkan lokasi wisata.</div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label for="email-field" class="form-label">Nama Kota</label>
-                                                <select class="js-example-basic-single form-select form-control"
-                                                    aria-label="Default select example" name="id_kota" required>
-                                                    <option selected>Tidak ada yang dipilih</option>
-                                                    @foreach ($kota as $data)
-                                                        <option value="{{ $data->id }}">{{ $data->nama_kota }}</option>
-                                                    @endforeach
-                                                </select>
-                                                <div class="invalid-feedback">Masukkan kota.</div>
-                                            </div>
-
-
-                                            <div class="mb-3">
-                                                <label for="email-field" class="form-label">Harga Tiket Masuk</label>
-                                                <input type="text" id="email-field" name="htm" class="form-control"
-                                                    placeholder="Masukkan htm" required />
-                                                <div class="invalid-feedback">Masukkan htm.</div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label for="date-field" class="form-label">Foto Wisata</label>
-                                                <input type="file" id="date-field" name="foto_wisata"
-                                                    class="form-control" placeholder="Select Photo" required />
+                                                <label for="date-field" class="form-label">Foto</label>
+                                                <input type="file" id="date-field" name="fotogalery" class="form-control"
+                                                    placeholder="Pilih Foto" required />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label for="email-field" class="form-label">Deskripsi Wisata</label>
-                                                <textarea class="form-control" name="deskripsi" placeholder="Masukkan Deskripsi" id="floatingTextarea" required></textarea>
-                                                <div class="invalid-feedback">Masukkan deskripsi.</div>
                                             </div>
 
                                             <div class="modal-footer">
                                                 <div class="hstack gap-2 justify-content-end">
-                                                    <a href="/kota" type="button" class="btn btn-light">Close</a>
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Close</button>
                                                     <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                                        Wisata</button>
+                                                        Kota</button>
                                                     <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                 </div>
                                             </div>
@@ -198,20 +156,10 @@
             });
         </script>
 
-        <script>
-            // In your Javascript (external .js resource or <script> tag)
-            $(document).ready(function() {
-                $('.kota').select2();
-            });
-        </script>
-            <!--jquery cdn-->
-    <script src="../../../../code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!--select2 cdn-->
-    <script src="../../../../cdn.jsdelivr.net/npm/select2%404.1.0-rc.0/dist/js/select2.min.js"></script>
-
-    <script src="assets/js/pages/select2.init.js"></script>
-
     </body>
+
+
+
     </body>
 
 

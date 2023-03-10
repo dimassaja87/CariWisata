@@ -69,7 +69,7 @@
                             <li><a href="/aboutus">About us</a></li>
                             <li class="menu-item mg-parent-menu"><a href="/destinasi">destinasi</a>
                             </li>
-                            <li class="menu-item mg-parent-menu"><a href="/hubungi">contact us</a>
+                            <li class="menu-item mg-parent-menu"><a href="/contactus">contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -82,7 +82,7 @@
 
                         @auth
                         <a href="{{url('welcome')}}">
-                            <i><a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <i><a class="mg_search_btn" data-toggle="modal" data-target="/profil" href="/profil"><i class=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                                         </svg></i></a></i>
@@ -141,13 +141,9 @@
                     <div class="mg_hotel_destination_tab">
                         <!-- Nav tabs Start -->
                         <ul class="mg_hotel_nav2" role="tablist">
-                            <li role="presentation" class="active"><a href="#worldwide" aria-controls="worldwide" role="tab" data-toggle="tab">Bandung</a></li>
-                            <li role="presentation"><a href="#usa" aria-controls="usa" role="tab" data-toggle="tab">Semarang</a></li>
-                            <li role="presentation"><a href="#mexico" aria-controls="mexico" role="tab" data-toggle="tab">Bali</a></li>
-                            <li role="presentation"><a href="#central" aria-controls="central" role="tab" data-toggle="tab">Banyuwangi</a></li>
-                            <li role="presentation"><a href="#europe" aria-controls="europe" role="tab" data-toggle="tab">Malang</a></li>
-                            <li role="presentation"><a href="#asia" aria-controls="asia" role="tab" data-toggle="tab">Lombok</a></li>
-                            <li role="presentation"><a href="#elsewhere" aria-controls="elsewhere" role="tab" data-toggle="tab">Surabaya</a></li>
+                            @foreach ($data as $kota)
+                            <li role="presentation" class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}" ><a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide" role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a></li>
+                            @endforeach
                         </ul>
                         <!-- Nav tabs End -->
                         <!-- Tab panes Start -->
@@ -157,107 +153,26 @@
                                 <div class="mg_hotel_destination_wrapper">
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
+                                        @foreach ($data1->take(6) as $wisata)
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lembang.png') }}" alt="" />
+                                                    <img src="{{ asset('fotosampul/'.$wisata->sampul_wisata) }}" alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="/lembang">selengkapnya</a>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="text">
                                                     <div class="mg_destination_hd">
-                                                        <h5><a href="">Lembang Park & Zoo</a></h5>
+                                                        <h5><a href="">{{$wisata->judul_wisata}}</a></h5>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        @endforeach
 
-                                        <!-- Hotel Destination End -->
-                                        <!-- Hotel Destination Start -->
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="mg_hotel_destination fancy-overlay">
-                                                <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/kawah putih.webp') }}" alt="" />
-                                                    <figcaption>
-                                                        <a class="view_btn" href="/kawah">selengkapnya</a>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="text">
-                                                    <div class="mg_destination_hd">
-                                                        <h5><a href="#">Kawah Putih Ciwidey</a></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Hotel Destination End -->
-                                        <!-- Hotel Destination Start -->
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="mg_hotel_destination fancy-overlay">
-                                                <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/teh.jpg') }}" alt="" />
-                                                    <figcaption>
-                                                        <a class="view_btn" href="#">selengkapnya</a>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="text">
-                                                    <div class="mg_destination_hd">
-                                                        <h5><a href="#">Kebun Teh Sukawana</a></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Hotel Destination End -->
-                                        <!-- Hotel Destination Start -->
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="mg_hotel_destination fancy-overlay">
-                                                <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sunrise.jpg') }}" alt="" />
-                                                    <figcaption>
-                                                        <a class="view_btn" href="#">selengkapnya</a>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="text">
-                                                    <div class="mg_destination_hd">
-                                                        <h5><a href="#">Sunrise Point Cukul</a></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Hotel Destination End -->
-                                        <!-- Hotel Destination Start -->
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="mg_hotel_destination fancy-overlay">
-                                                <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/dago.webp') }}" alt="" />
-                                                    <figcaption>
-                                                        <a class="view_btn" href="#">selengkapnya</a>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="text">
-                                                    <div class="mg_destination_hd">
-                                                        <h5><a href="#">Dago Dream Park</a></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Hotel Destination End -->
-                                        <!-- Hotel Destination Start -->
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="mg_hotel_destination fancy-overlay">
-                                                <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lodge.jpg') }}" alt="" />
-                                                    <figcaption>
-                                                        <a class="view_btn" href="#">selengkapnya</a>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="text">
-                                                    <div class="mg_destination_hd">
-                                                        <h5><a href="#">The Lodge Maribaya</a></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+
+
                                         <!-- Hotel Destination End -->
                                     </div>
                                 </div>
@@ -1262,16 +1177,19 @@
                         <!-- Chooseus Slider Start -->
                         <div class="chooseus_slider">
                             <!-- Chooseus Thumb Start -->
+                            @foreach ($data1 as $wisata)
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lembang.png') }}" alt="">
+                                        <img src="{{ asset('fotosampul/'.$wisata->sampul_wisata) }}" alt="">
                                     </figure>
                                     <div class="text">
-                                        <h5><a href="#">LEMBANG PARK & ZOO</a></h5>
+                                        <h5><a href="#">{{$wisata->judul_wisata}}</a></h5>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
+
                             <!-- Chooseus Thumb End -->
                             <!-- Chooseus Thumb Start -->
                             <div class="col-md-4">
@@ -1350,7 +1268,7 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-                        @foreach ($data as $kota )
+                        @foreach ($data->take(6) as $kota )
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
@@ -1403,81 +1321,22 @@
                     <div class="masonry-2 grid">
                         <div class="row masonry masonryFlyIn">
                             <!-- Masonry Item Start -->
-                            <div class="masonry-item">
+                            <!-- <div class="masonry-item">
                                 <h4 class="text-link item-height100 green">
                                     <a href="#"><span>Nature & Adventure</span></a>
                                 </h4>
-                            </div>
+                            </div> -->
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
+                            @foreach ($data2->take(15) as $Galery)
                             <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/1a.jpg') }}" alt=""></figure>
+                                <figure class="thumb-link"><img src="{{ asset('foto/fotogalery/'.$Galery->fotogalery) }}" alt=""></figure>
                             </div>
+                            @endforeach
+
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/2a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/3a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height130 green"><a href="#">Nature & Adventure</a></h4>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/4a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/5a.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height130 pink"><a href="#">Nature & Adventure</a></h4>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/6.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height130"><a href="#">Nature sss& Adventure</a></h4>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/7.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/8.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/9.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/10.jpg') }}" alt=""></figure>
-                            </div>
-                            <!-- Masonry Item End -->
-                            <!-- Masonry Item Start -->
-                            <div class="masonry-item">
-                                <h4 class="text-link item-height184 peach"><a href="#">Nature & Adventure</a></h4>
-                            </div>
+
                             <!-- Masonry Item End -->
                         </div>
                     </div>
@@ -1488,17 +1347,17 @@
             <!-- Blog Section Start-->
             <!-- Blog Section End-->
             <!-- Pricing Table Section Start-->
-            <section class="pricing_wrap">
+            <!-- <section class="pricing_wrap">
                 <div class="container">
-                    <!-- iqoniq Heading Start -->
+                    <!-- iqoniq Heading Start --
                     <div class="mg_hotel_hd1">
                         <h6>Sekarang</h6>
                         <h4>Informasi transpor t </h4>
                     </div>
-                    <!-- iqoniq Heading End -->
+
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
-                            <!-- iqoniq Pricing Table Start -->
+                            <!-- iqoniq Pricing Table Start --
                             <div class="mg_pricing fancy-overlay">
                                 <span class="fa fa-plane"></span>
                                 <div class="thumb">
@@ -1514,10 +1373,10 @@
                                     <p>Penerbangan di Indonesia merupakan sarana penting untuk menghubungkan ribuan pulau di Nusantara. </p>
                                 </div>
                             </div>
-                            <!-- iqoniq Pricing Table End -->
+                            <!-- iqoniq Pricing Table End --
                         </div>
                         <div class="col-md-4 col-sm-6">
-                            <!-- iqoniq Pricing Table Start -->
+                            <!-- iqoniq Pricing Table Start --
                             <div class="mg_pricing fancy-overlay">
                                 <span class="fa fa-train"></span>
                                 <div class="thumb">
@@ -1533,10 +1392,10 @@
                                     <p>sStasiun kereta api adalah fasilitas operasi kereta api atau tempat kereta api berhenti secara teratur untuk menaikturunkan penumpang atau membongkar-muat barang.</p>
                                 </div>
                             </div>
-                            <!-- iqoniq Pricing Table End -->
+                            <!-- iqoniq Pricing Table End --
                         </div>
                         <div class="col-md-4 hidden-sm">
-                            <!-- iqoniq Pricing Table Start -->
+                            <!-- iqoniq Pricing Table Start --
                             <div class="mg_pricing fancy-overlay">
                                 <span class="fa fa-ship"></span>
                                 <div class="thumb">
@@ -1552,11 +1411,11 @@
                                     <p>Sebagai negara maritim, keberadaan infrastruktur pelabuhan di Tanah Air berperan penting sebagai pintu masuk orang dan logistik. </p>
                                 </div>
                             </div>
-                            <!-- iqoniq Pricing Table End -->
+                            <!-- iqoniq Pricing Table End --
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- Pricing Table Section End-->
             <!-- Bottom Bar Start-->
             <!-- Bottom Bar End-->

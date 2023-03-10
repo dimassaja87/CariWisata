@@ -330,10 +330,23 @@
                                 <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="/kota">
-                                <i class=" bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarKota" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                                <i class=" bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
                             </a>
+                            <div class="collapse menu-dropdown" id="sidebarKota">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/kota">
+                                             <span data-key="t-tables">Kota</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/kotadetail"> <span data-key="t-tables">Kota Detail</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/rating">
@@ -348,6 +361,11 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/datawisata">
                                 <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/galery">
+                                <i class="bx bx-photo-album"></i> <span data-key="t-tables">Data Galery</span>
                             </a>
                         </li>
                         <li>
@@ -1198,7 +1216,7 @@
                             <div class="col-4">
                                 <div class="form-check sidebar-setting card-radio">
                                     <input class="form-check-input" type="radio" name="data-preloader"
-                                        id="preloader-view-custom" value="enable">
+                                        id="preloader-view-custom" value="disable">
                                     <label class="form-check-label p-0 avatar-md w-100" for="preloader-view-custom">
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
@@ -1230,7 +1248,7 @@
                             <div class="col-4">
                                 <div class="form-check sidebar-setting card-radio">
                                     <input class="form-check-input" type="radio" name="data-preloader"
-                                        id="preloader-view-none" value="disable">
+                                        id="preloader-view-none" value="enable">
                                     <label class="form-check-label p-0 avatar-md w-100" for="preloader-view-none">
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">

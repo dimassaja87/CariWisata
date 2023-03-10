@@ -3,25 +3,20 @@
     data-sidebar-image="none" data-preloader="disable">
 
 
-<!-- Mirrored from themesbrand.com/velzon/html/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:41:11 GMT -->
+<!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
 
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Admin</title>
+    <title>Data Galery | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/favicon.ico') }}">
 
-    <!-- jsvectormap css -->
-    <link
-        href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/css/jsvectormap.min.css') }}"
-        rel="stylesheet" type="text/css" />
-
-    <!--Swiper slider css-->
-    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/swiper/swiper-bundle.min.css') }}"
+    <!-- Sweet Alert css-->
+    <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/sweetalert2/sweetalert2.min.css') }}"
         rel="stylesheet" type="text/css" />
 
     <!-- Layout config Js -->
@@ -46,36 +41,117 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
 
-        @include('admin.header')
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box horizontal-logo">
+                            <a href="/adminn" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                                        alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
+                                        alt="" height="17">
+                                </span>
+                            </a>
 
-        <!-- removeNotificationModal -->
-        <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            id="NotificationModalbtn-close"></button>
+                            <a href="/adminn" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                                        alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
+                                        alt="" height="17">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button"
+                            class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                            id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+
+                        <!-- App Search-->
+
                     </div>
-                    <div class="modal-body">
-                        <div class="mt-2 text-center">
-                            <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop"
-                                colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px">
-                            </lord-icon>
-                            <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
-                                <h4>Are you sure ?</h4>
-                                <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+
+                    <div class="d-flex align-items-center">
+
+                        <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="bx bx-search fs-22"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Recipient's username">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-                            <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn w-sm btn-danger" id="deleteall">Yes, Delete
-                                It!</button>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                data-toggle="fullscreen">
+                                <i class='bx bx-fullscreen fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                                <i class='bx bx-moon fs-22'></i>
+                            </button>
+                        </div>
+
+
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user"
+                                        src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/pp.jpg') }}"
+                                        alt="Header Avatar">
+                                    <span class="text-start ms-xl-2">
+                                        <span
+                                            class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Cari
+                                            wisata</span>
+                                    </span>
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="/"><i
+                                    class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle" data-key="t-logout">Landing Page</span></a>
+                                <a class="dropdown-item" href="/logoutadmin"><i
+                                        class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
+                                        class="align-middle" data-key="t-logout">Logout</span></a>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </header>
 
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
         <div class="app-menu navbar-menu">
             <!-- LOGO -->
@@ -98,7 +174,7 @@
                             alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
                             alt="" height="17">
                     </span>
                 </a>
@@ -120,9 +196,11 @@
                                 aria-controls="sidebarDashboards">
                                 <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboards</span>
                             </a>
+                        </li> <!-- end Dashboard Menu -->
 
                         <li class="menu-title"><i class="ri-more-fill"></i> <span
                                 data-key="t-components">Components</span></li>
+
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/pengguna">
                                 <i class="ri-user-line"></i> <span data-key="t-tables">Data User</span>
@@ -158,7 +236,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/kontakadmin">
-                                <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
+                                <i class="bx bx-phone"></i> <span data-key="t-tables">Data Contact us</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -187,14 +265,12 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
                 <!-- Sidebar -->
             </div>
 
             <div class="sidebar-background"></div>
         </div>
-
         <!-- Left Sidebar End -->
         <!-- Vertical Overlay-->
         <div class="vertical-overlay"></div>
@@ -202,10 +278,163 @@
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
-        @yield('content')
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">DATA KOTA</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
+                                        <li class="breadcrumb-item active">Data Kota</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Add, Edit & Remove</h4>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <div id="customerList">
+                                        <div class="row g-4 mb-3">
+                                            <div class="col-sm-auto">
+                                                <div>
+                                                    <a href="/tambahgalery" type="button"
+                                                        class="btn btn-success add-btn" id="create-btn"><i
+                                                            class="ri-add-line align-bottom me-1"></i> Add</a>
+                                                    <a href="/multidelete" method="GET" id="delete-notification" class="btn btn-soft-danger"><i
+                                                            class="ri-delete-bin-2-line"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                    <form action="/kota" method="GET">
+                                                    <div class="d-flex justify-content-sm-end">
+                                                        <div class="search-box ms-2">
+                                                            <input type="search" class="form-control" id="search" name="search"
+                                                                placeholder="Search...">
+                                                            <i class="ri-search-line search-icon"></i>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="table-responsive table-card mt-3 mb-1">
+                                            <table class="table align-middle table-nowrap" id="customerTable">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col" style="width: 50px;">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="checkAll" value="option">
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">ID</th>
+                                                        <th scope="col">Foto</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list form-check-all">
+                                                    @php
+                                                        $no = 1;
+                                                    @endphp
+                                                    @foreach ($data as $row)
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        name="ids[{{ $row->id }}]" value="{{ $row->id }}">
+                                                                </div>
+                                                            </th>
+                                                            <th scope="row">{{ $no++ }}</>
+                                                            </th>
+                                                            <td class="foto">
+                                                                <img src="{{ asset('foto/fotogalery/' . $row->fotogalery) }}"
+                                                                    alt="" width="150">
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex gap-2">
+                                                                    <div class="edit">
+                                                                        <a href="/tampilgalery/{{ $row->id }}"
+                                                                            class="btn btn-sm btn-success edit-item-btn">Edit</a>
+                                                                    </div>
+                                                                    <div class="remove">
+                                                                        <a href="#"
+                                                                            data-id="{{ $row->id }}"
+                                                                            data-nama="{{ $row->nama_kota }}"
+                                                                            class="btn btn-sm btn-danger deletegalery">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                            {{-- <div class="noresult" style="display: none">
+                                                <div class="text-center">
+                                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
+                                                        trigger="loop" colors="primary:#121331,secondary:#08a88a"
+                                                        style="width:75px;height:75px"></lord-icon>
+                                                    <h5 class="mt-2">Maaf! Tidak Ada Hasil Yang Ditemukan</h5>
+                                                    <p class="text-muted mb-0">Kami telah mencari lebih dari 99+
+                                                        Pengguna, Kami tidak menemukan data apa pun yang Anda cari.</p>
+                                                </div>
+                                            </div> --}}
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <div class="pagination-wrap hstack gap-2">
+                                                <a class="page-item pagination-prev disabled" href="#">
+                                                    Previous
+                                                </a>
+                                                <ul class="pagination listjs-pagination mb-0"></ul>
+                                                <a class="page-item pagination-next" href="#">
+                                                    Next
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end card -->
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+
+    </div>
+    <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    </div>
+    <!-- end main content-->
 
     </div>
     <!-- END layout-wrapper -->
+
+
 
     <!--start back-to-top-->
     <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
@@ -246,8 +475,8 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="form-check card-radio">
-                                <input id="customizer-layout01" name="data-layout" type="radio"
-                                    value="vertical" class="form-check-input">
+                                <input id="customizer-layout01" name="data-layout" type="radio" value="vertical"
+                                    class="form-check-input">
                                 <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout01">
                                     <span class="d-flex gap-1 h-100">
                                         <span class="flex-shrink-0">
@@ -271,8 +500,8 @@
                         </div>
                         <div class="col-4">
                             <div class="form-check card-radio">
-                                <input id="customizer-layout02" name="data-layout" type="radio"
-                                    value="horizontal" class="form-check-input">
+                                <input id="customizer-layout02" name="data-layout" type="radio" value="horizontal"
+                                    class="form-check-input">
                                 <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout02">
                                     <span class="d-flex h-100 flex-column gap-1">
                                         <span class="bg-light d-flex p-1 gap-1 align-items-center">
@@ -289,8 +518,8 @@
                         </div>
                         <div class="col-4">
                             <div class="form-check card-radio">
-                                <input id="customizer-layout03" name="data-layout" type="radio"
-                                    value="twocolumn" class="form-check-input">
+                                <input id="customizer-layout03" name="data-layout" type="radio" value="twocolumn"
+                                    class="form-check-input">
                                 <label class="form-check-label p-0 avatar-md w-100" for="customizer-layout03">
                                     <span class="d-flex gap-1 h-100">
                                         <span class="flex-shrink-0">
@@ -336,8 +565,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -397,8 +625,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -419,13 +646,11 @@
                                 <div class="form-check card-radio">
                                     <input class="form-check-input" type="radio" name="data-layout-width"
                                         id="layout-width-boxed" value="boxed">
-                                    <label class="form-check-label p-0 avatar-md w-100 px-2"
-                                        for="layout-width-boxed">
+                                    <label class="form-check-label p-0 avatar-md w-100 px-2" for="layout-width-boxed">
                                         <span class="d-flex gap-1 h-100 border-start border-end">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -456,8 +681,7 @@
 
                             <input type="radio" class="btn-check" name="data-layout-position"
                                 id="layout-position-scrollable" value="scrollable">
-                            <label class="btn btn-light w-sm ms-0"
-                                for="layout-position-scrollable">Scrollable</label>
+                            <label class="btn btn-light w-sm ms-0" for="layout-position-scrollable">Scrollable</label>
                         </div>
                     </div>
                     <h6 class="mt-4 mb-0 fw-semibold text-uppercase">Topbar Color</h6>
@@ -529,8 +753,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -642,8 +865,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -702,8 +924,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-white border-end d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -876,8 +1097,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -891,10 +1111,8 @@
                                             </span>
                                         </span>
                                         <!-- <div id="preloader"> -->
-                                        <div id="status"
-                                            class="d-flex align-items-center justify-content-center">
-                                            <div class="spinner-border text-primary avatar-xxs m-auto"
-                                                role="status">
+                                        <div id="status" class="d-flex align-items-center justify-content-center">
+                                            <div class="spinner-border text-primary avatar-xxs m-auto" role="status">
                                                 <span class="visually-hidden">Loading...</span>
                                             </div>
                                         </div>
@@ -911,8 +1129,7 @@
                                         <span class="d-flex gap-1 h-100">
                                             <span class="flex-shrink-0">
                                                 <span class="bg-light d-flex h-100 flex-column gap-1 p-1">
-                                                    <span
-                                                        class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
+                                                    <span class="d-block p-1 px-2 bg-soft-primary rounded mb-2"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
                                                     <span class="d-block p-1 px-2 pb-0 bg-soft-primary"></span>
@@ -958,29 +1175,67 @@
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}">
     </script>
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
-
-    <!-- apexcharts -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/apexcharts/apexcharts.min.js') }}">
+    <!-- prismjs plugin -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/prismjs/prism.js') }}"></script>
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/list.js/list.min.js') }}"></script>
+    <script
+        src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/list.pagination.js/list.pagination.min.js') }}">
     </script>
 
-    <!-- Vector map-->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/js/jsvectormap.min.js') }}">
-    </script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/jsvectormap/maps/world-merc.js') }}">
-    </script>
+    <!-- listjs init -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/listjs.init.js') }}"></script>
 
-    <!--Swiper slider js-->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/swiper/swiper-bundle.min.js') }}">
-    </script>
-
-    <!-- Dashboard init -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/dashboard-ecommerce.init.js') }}">
+    <!-- Sweet Alerts js -->
+    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/sweetalert2/sweetalert2.min.js') }}">
     </script>
 
     <!-- App js -->
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
-</body>
 
-<!-- Mirrored from themesbrand.com/velzon/html/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:42:18 GMT -->
+    {{-- Toastr --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    {{-- JavaScript --}}
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+<script>
+    $('.deletegalery').click(function() {
+        var galeryid = $(this).attr('data-id');
+        var nama_kota = $(this).attr('data-nama');
+        swal({
+                title: "Anda yakin?!",
+                text: "Ingin menghapus data dengan nama " + nama_kota + " ",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location = "/deletegalery/" + galeryid + ""
+                    swal("Data berhasil dihapus!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Batal menghapus Data!");
+                }
+            });
+    });
+</script>
+
+{{-- Toastr --}}
+<script>
+    @if (Session::has('success'))
+        toastr.success("{{ Session::get('success') }}")
+    @endif
+</script>
+
+
+<!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
 
 </html>

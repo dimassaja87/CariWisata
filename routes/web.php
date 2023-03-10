@@ -1,24 +1,27 @@
 <?php
 
+use App\Http\Controllers\ChartController;
+use App\Http\Controllers\DestinasiController;
+use App\Http\Controllers\GaleryController;
+use App\Http\Controllers\KomentarController;
+use App\Http\Controllers\KotaController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\KomenController;
+use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
 use App\Models\Wisata;
-use App\Models\Destinasi;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KotaController;
-use App\Http\Controllers\ChartController;
-use App\Http\Controllers\KomenController;
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\RatingController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
-use App\Http\Controllers\KomentarController;
-use App\Http\Controllers\PenggunaController;
-use App\Http\Controllers\DestinasiController;
+use App\Http\Controllers\KotaDetailController;
+use App\Http\Controllers\WisataDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +33,10 @@ use App\Http\Controllers\DestinasiController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/nyoba', function () {
+    return view('nyoba');
+});
+
 Route::get('/welcome', [welcomecontroller::class, 'welcome'])->name('welcome');
 
 Route::get('/', function () {
@@ -52,6 +59,12 @@ Route::get('/destinasi', function () {
 Route::get('/profil', function () {
     return view('profile.profil');
 });
+// Route::get('/editprofil', function () {
+//     return view('profile.editprofile');
+// });
+Route::get('/editprofil', [LoginController::class, 'profil'])->name('profil');
+Route::put('/updateprofil/{id}', [LoginController::class, 'updateprofil'])->name('updateprofil');
+
 
 Route::get('/aboutus', function () {
     return view('user.aboutus');
@@ -183,10 +196,32 @@ Route::get('/datawisata',[WisataController::class, 'datawisata'])->name('datawis
 Route::get('/tambahwisata',[WisataController::class, 'tambahwisata'])->name('tambahwisata');
 Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('insertwisata');
 
-Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
+Route::get('/tampildetail{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
 Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
 
-Route::get('/deletewisata/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+Route::get('/deletedetail{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+
+//Data Wisata detail
+Route::get('/detailwisata',[WisataDetailController::class, 'detailwisata'])->name('detailwisata');
+
+Route::get('/tambahdetailwisata',[WisataDetailController::class, 'tambahdetailwisata'])->name('tambahdetailwisata');
+Route::post('/insertdetailwisata',[WisataDetailController::class, 'insertdetailwisata'])->name('insertdetailwisata');
+
+Route::get('/tampildetailwisata/{id}',[WisataDetailController::class, 'tampildetailwisata'])->name('tampildetailwisata');
+Route::post('/updatedetailwisata{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata');
+
+Route::get('/deletedetailwisata{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata');
+
+//Data Gallery
+Route::get('/galery',[GaleryController::class, 'galery'])->name('galery');
+
+Route::get('/tambahgalery',[GaleryController::class, 'tambahgalery'])->name('tambahgalery');
+Route::post('/insertgalery',[GaleryController::class, 'insertgalery'])->name('insertgalery');
+
+Route::get('/tampilgalery/{id}',[GaleryController::class, 'tampilgalery'])->name('tampilgalery');
+Route::post('/updategalery{id}',[GaleryController::class, 'updategalery'])->name('updategalery');
+
+Route::get('/deletegalery/{id}',[GaleryController::class, 'deletegalery'])->name('deletegalery');
 
 //Data Kota Relasi
 Route::get('/kota',[KotaController::class, 'kota'])->name('kota');
@@ -200,6 +235,19 @@ Route::post('/updatekota{id}',[KotaController::class, 'updatekota'])->name('upda
 Route::get('/deletekota/{id}',[KotaController::class, 'deletekota'])->name('deletekota');
 
 Route::get('/multidelete',[KotaController::class, 'multidelete'])->name('multidelete');
+
+//Data Kota Detail
+Route::get('/kotadetail',[KotaDetailController::class, 'kotadetail'])->name('kotadetail');
+
+Route::get('/tambahkotadetail',[KotaDetailController::class, 'tambahkotadetail'])->name('tambahkotadetail');
+Route::post('/insertkotadetail',[KotaDetailController::class, 'insertkotadetail'])->name('insertkotadetail');
+
+Route::get('/tampilkotadetail/{id}',[KotaDetailController::class, 'tampilkotadetail'])->name('tampilkotadetail');
+Route::post('/updatekotadetail{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail');
+
+Route::get('/deletekotadetail/{id}',[KotaDetailController::class, 'deletekotadetail'])->name('deletekotadetail');
+
+Route::get('/multidelete',[KotaDetailController::class, 'multidelete'])->name('multidelete');
 
 //Data Rating
 Route::get('/rating',[RatingController::class, 'rating'])->name('rating');
