@@ -300,6 +300,9 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 //Chart
 Route::get('/chartuser',[ChartController::class, 'index']);
+
+Route::get('bar-chart', [ChartController::class, 'showBarChart']);
+
 //akhir chart
 Route::get('/ayana',[KomenController::class, 'komenayana'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
