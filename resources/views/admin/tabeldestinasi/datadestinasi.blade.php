@@ -1303,7 +1303,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
-    $('.deletedestinasib').click(function() {
+    $('.deletedestinasi').click(function() {
         var destinasiid = $(this).attr('data-id');
         var nama_wisata = $(this).attr('data-nama');
 
