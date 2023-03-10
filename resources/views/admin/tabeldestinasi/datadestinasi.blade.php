@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
-    data-sidebar-image="none" data-preloader="disable">
+    data-sidebar-image="none" data-preloader="enable">
 
 
 <!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
@@ -1303,7 +1303,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
-    $('.deletedestinasib').click(function() {
+    $('.deletedestinasi').click(function() {
         var destinasiid = $(this).attr('data-id');
         var nama_wisata = $(this).attr('data-nama');
 

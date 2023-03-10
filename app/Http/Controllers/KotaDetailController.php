@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kota;
 use App\Models\KotaDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
+use toastr;
 
 class KotaDetailController extends Controller
 {
@@ -26,8 +28,8 @@ class KotaDetailController extends Controller
     {
         $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
-        // $destinasi = Destinasi::all();
-        return view('admin.tabelkota.tambahkotadetail', compact('data'));
+        $kota = Kota::all();
+        return view('admin.tabelkota.tambahkotadetail', compact('data', 'kota'));
     }
 
     public function insertkotadetail(Request $request)
@@ -38,9 +40,9 @@ class KotaDetailController extends Controller
         // ]);
         // dd('bb');
         $data = KotaDetail::create($request->all());
-        if ($request->hasFile('detail_kota')) {
-            $request->file('detail_kota')->move('foto/detailkota/', $request->file('detail_kota')->getClientOriginalName());
-            $data->detail_kota = $request->file('detail_kota')->getClientOriginalName();
+        if ($request->hasFile('foto_aja')) {
+            $request->file('foto_aja')->move('foto/fotoaja/', $request->file('foto_aja')->getClientOriginalName());
+            $data->foto_aja = $request->file('foto_aja')->getClientOriginalName();
             $data->save();
         }
         return redirect()->route('kotadetail')->with('success', 'Data Behasil Ditambahkan!');
@@ -48,27 +50,28 @@ class KotaDetailController extends Controller
 
     public function tampilkotadetail($id)
     {
-        $data = KotaDetail::find($id);
+        $kota = Kota::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
+        $kota = Kota::all();
         // dd($data);
 
-        return view('admin.tabelkota.tampilkotadetail', compact('data'));
+        return view('admin.tabelkota.tampilkotadetail', compact('data', 'kota'));
     }
 
     public function updatekotadetail(Request $request, $id)
     {
         $data = KotaDetail::find($id);
         $data->update('all');
-        if ($request->hasFile('detail_kota'))
+        if ($request->hasFile('foto_aja'))
         {
-            $detailkota = 'foto/detailkota/'.$data->detail_kota;
-            if(File::exists($detailkota))
+            $fotoaja = 'foto/fotoaja/'.$data->foto_aja;
+            if(File::exists($fotoaja))
             {
-                File::delete($detailkota);
+                File::delete($fotoaja);
             }
-            $request->file('detail_kota')->move('foto/detailkota/', $request->file('detail_kota')->getClientOriginalName());
-            $data->detail_kota = $request->file('detail_kota')->getClientOriginalName();
+            $request->file('foto_aja')->move('foto/fotoaja/', $request->file('foto_aja')->getClientOriginalName());
+            $data->foto_aja = $request->file('foto_aja')->getClientOriginalName();
             $data->update();
         }
 

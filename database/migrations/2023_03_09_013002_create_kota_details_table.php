@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('kota_details', function (Blueprint $table) {
             $table->id();
-            $table->string('detail_kota');
+            $table->foreignId('id_kota');
+            $table->string('foto_aja');
+            $table->longText('detail_kota')->nullable();
+            $table->longText('files')->nullable();
+            // $table->string('foto');
             $table->timestamps();
         });
     }
