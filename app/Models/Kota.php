@@ -15,4 +15,9 @@ class Kota extends Model
     {
         return $this->hasMany(Destinasi::class, 'nama_kota'.'id');
     }
+
+    public function KotaDetail()
+    {
+        return $this->hasMany(KotaDetail::class, 'nama_kota'.'id');
+    }
 }

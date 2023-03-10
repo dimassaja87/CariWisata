@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('kota_details', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('id_kota');
             $table->longText('detail_kota')->nullable();
             $table->longText('files')->nullable();
             // $table->string('foto');

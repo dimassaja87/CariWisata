@@ -62,9 +62,7 @@ class KotaController extends Controller
     public function updatekota(Request $request, $id)
     {
         $data = Kota::find($id);
-        $data->update([
-            'nama_kota' => $request->nama_kota,
-        ]);
+        $data->update('all');
         if ($request->hasFile('foto_sampul'))
         {
             $destination = 'fotosampul/'.$data->foto_sampul;
