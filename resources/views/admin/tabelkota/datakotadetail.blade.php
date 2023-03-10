@@ -361,8 +361,8 @@
                                                                 </div>
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
-                                                            </th>
-                                                            <td class="detail_kota">{{ $row->detail_kota }}</td>
+                                                            </th>   
+                                                            <td class="detail_kota">{!! $row->detail_kota !!}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">

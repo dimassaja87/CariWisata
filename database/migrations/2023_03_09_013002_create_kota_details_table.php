@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('kota_details', function (Blueprint $table) {
             $table->id();
-            $table->string('detail_kota');
-            $table->string('foto');
+            $table->longText('detail_kota')->nullable();
+            $table->longText('files')->nullable();
+            // $table->string('foto');
             $table->timestamps();
         });
     }
