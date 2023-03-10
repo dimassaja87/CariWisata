@@ -4,12 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\Destinasi;
 use App\Models\Kota;
+use App\Models\KotaDetail;
 use App\Models\Rating;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 class DestinasiController extends Controller
 {
+    public function destinasi()
+    {
+        $Kota = KotaDetail::all();
+        return view('welcome',compact('Kota'));
+    }
     public function datadestinasi()
     {
         $data = Destinasi::paginate(5);
