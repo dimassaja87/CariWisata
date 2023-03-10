@@ -124,6 +124,17 @@
                                                     </div>
 
                                                     <div class="mb-3">
+                                                        <label for="date-field" class="form-label">Foto Profil</label>
+                                                        <br><img class="img mb-3"src="{{ asset('foto/fotoaja/' . $data->foto_aja) }}"
+                                                                    alt="" style="width: 90px" alt="">
+                                                                    <br>
+                                                        <input type="file" id="date-field" name="foto" class="form-control"
+                                                            placeholder="Select Photo"  />
+                                                        <div class="invalid-feedback">Pilih Foto.</div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="email-field" class="form-label">Deskripsi</label>
                                                         <textarea id="summer" name="detail_kota" class="summer form-control" style="height: 300px;"
                                                             placeholder="Masukkan detail kota" value="" required>{!! $data->detail_kota !!}</textarea>
                                                     </div>

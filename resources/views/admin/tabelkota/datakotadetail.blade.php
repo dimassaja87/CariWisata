@@ -345,7 +345,8 @@
                                                         </th>
                                                         <th scope="col">ID</th>
                                                         <th scope="col">Nama Kota</th>
-                                                        <th scope="col">Detail Kota</th>
+                                                        <th scope="col">Foto</th>
+                                                        <th scope="col">Deskripsi</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -364,6 +365,10 @@
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
                                                             <td>{{ $row->kotas->nama_kota }}</td>
+                                                            <td class="foto_wisata">
+                                                                <img src="{{ asset('foto/fotoaja/' . $row->foto_aja) }}"
+                                                                    alt="" width="150">
+                                                            </td>
                                                             <td class="detail_kota">{!! $row->detail_kota !!}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">

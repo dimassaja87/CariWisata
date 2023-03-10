@@ -112,14 +112,25 @@
                                                             aria-label="Default select example" name="id_kota" required>
                                                             <option selected>Tidak ada yang dipilih</option>
                                                             @foreach ($kota as $data)
-                                                                <option value="{{ $data->id }}">{{ $data->nama_kota }}</option>
+                                                                <option value="{{ $data->id }}">{{ $data->nama_kota }}
+                                                                </option>
                                                             @endforeach
                                                         </select>
                                                         <div class="invalid-feedback">Masukkan kota.</div>
                                                     </div>
-                                                    
-                                                    <textarea name="detail_kota" class="summernote form-control" placeholder="Masukkan detail wisata" id="summer"
-                                                        required></textarea>
+
+                                                    <div class="mb-3">
+                                                        <label for="date-field" class="form-label">Foto</label>
+                                                        <input type="file" id="date-field" name="foto_aja"
+                                                            class="form-control" placeholder="Select Photo" required />
+                                                        <div class="invalid-feedback">Pilih Foto.</div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="email-field" class="form-label">Deskripsi</label>
+                                                        <textarea name="detail_kota" class="summernote form-control" placeholder="Masukkan detail wisata" id="summer"
+                                                            required></textarea>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
@@ -128,7 +139,7 @@
                         </section>
                         <div class="modal-footer">
                             <div class="hstack gap-2 justify-content-end">
-                                <a href= "/detailwisata" type="button" class="btn btn-light"
+                                <a href="/detailwisata" type="button" class="btn btn-light"
                                     data-bs-dismiss="modal">Close</a>
                                 <button type="submit" class="btn btn-success" id="edit-btn">Tambah
                                     Kota</button>
@@ -189,7 +200,8 @@
             });
         </script>
         <!-- JAVASCRIPT -->
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+        <script
+            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
         </script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
