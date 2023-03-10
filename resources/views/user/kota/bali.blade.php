@@ -289,11 +289,12 @@
 
                                             <div class="row g-6 align-items-center mt-5 mb-6">
                                                 <div class="col-auto">
-                                                <form action="/search" method="GET">
-                                                  <input type="search" id="inputPassword6" placeholder="cari wisata" class="form-control" aria-describedby="passwordHelpInline">
+                                                <form action="/bali#" method="GET">
+                                                  <input type="search" id="inputPassword6" name="search" placeholder="cari wisata" class="button btn btn-secodary" class="form-control" aria-describedby="passwordHelpInline">
                                                 </form>
                                                 </div>
                                             </div>
+
                                             <!-- Hotel Destination Start -->
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">

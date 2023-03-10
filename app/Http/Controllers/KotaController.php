@@ -106,4 +106,6 @@ class KotaController extends Controller
             toastr()->success('Seluruh Data Berhasil Di Hapus');
             return redirect()->back()->with('success','Seluruh Data Berhasil Di Hapus');
         }
+
+    
 }
