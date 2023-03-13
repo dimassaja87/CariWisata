@@ -20,7 +20,7 @@
                 text:'Source: Surfside Media'
             },
             xAxis:{
-                categories:['Jan','Feb','Mar','Apr','Mei','Jun','July','Aug','Sep','Okt','Nov','Des']
+                categories:['Jan','Feb','Mar','Apr','Mei','Jun','July','Aug','Sept','Oct','Nov','Dec']
             },
             yAxis:{
                 title:{
@@ -38,7 +38,7 @@
                 }
             },
             series:[{
-                name: 'New User',
+                name: 'new destinasi',
                 data:datas
             }],
             responsive:{
@@ -46,7 +46,7 @@
                     {
                         condition:{
                             maxWidth:500
-                        },
+                        }, 
                         chartOptions:{
                             legend:{
                                 layout:'horizontal',

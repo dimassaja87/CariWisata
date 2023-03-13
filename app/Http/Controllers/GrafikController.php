@@ -19,13 +19,13 @@ class GrafikController extends Controller
                 ->groupBy(DB::raw("Month(created_at)"))
                 ->pluck('month'); 
 
-        $datas = array(0,0,0,0,0,0,0,0,0,0,0,0);
+        $datas = array(10,9,2,4,6,7,8,9,3,2,8,0);
         foreach($months as $index => $month)
         {
             $datas[$month] = $coba[$index];
         }
 
         return view('grafik',compact('datas'));
-        
     }
+    
 }

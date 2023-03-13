@@ -289,7 +289,7 @@
 
                                             <div class="row g-6 align-items-center mt-5 mb-6">
                                                 <div class="col-auto">
-                                                <form action="/bali#" method="GET">
+                                                <form action="/bali" method="GET">
                                                   <input type="search" id="inputPassword6" name="search" placeholder="cari wisata" class="button btn btn-secodary" class="form-control" aria-describedby="passwordHelpInline">
                                                 </form>
                                                 </div>
