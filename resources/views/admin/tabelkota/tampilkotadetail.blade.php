@@ -9,20 +9,30 @@
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         {{-- Text Editor --}}
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.core.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.bubble.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.snow.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.core.css') }}"
+            rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.bubble.css') }}"
+            rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.snow.css') }}"
+            rel="stylesheet" type="text/css" />
 
         <!-- Layout config Js -->
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/layout.js') }}"></script>
         <!-- Bootstrap Css -->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet"
+            type="text/css" />
         <!-- Icons Css -->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet"
+            type="text/css" />
         <!-- App Css-->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet"
+            type="text/css" />
         <!-- custom Css-->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet"
+            type="text/css" />
+
+        <!-- include summernote css/js -->
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -90,52 +100,76 @@
                         <!-- end page title -->
 
 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-title mb-0">Edit Data Kota</h5>
-
-                                    </div>
-                                    <div class="card-body">
-                                        <form action="{{ route('updatekota', $data->id) }}" method="POST"
-                                            enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="mb-3">
-                                                <label for="customername-field" class="form-label">Nama
-                                                    Kota</label>
-                                                    <section>
-                                                        <input id="detail_kota" name="detail_kota" class="snow-editor form-control" style="height: 300px;"
-                                                            placeholder="Masukkan Detail Kota" value="" required />{!! $data->detail_kota !!}
-                                                    </section>
-                                                <div class="invalid-feedback">Masukkan detail kota.</div>
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="card-title mb-0">Edit Data Kota</h5>
                                             </div>
+                                            <div class="card-body">
+                                                <form action="{{ route('updatekotadetail', $data->id) }}" method="POST"
+                                                    enctype="multipart/form-data">
+                                                    @csrf
+                                                    <div class="mb-3">
+                                                        <label for="email-field" class="form-label">Kota</label>
+                                                        <select class="form-select form-control" aria-label="Default select example"
+                                                            name="id_kota" required>
+                                                            <option selected>Nama Kota</option>
+                                                            @foreach ($kota as $p)
+                                                                <option value="{{ $p->id }}" <?php if($data->id_kota == $p->id) {echo 'selected'; } ?>>{{ $p->nama_kota }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
 
-                                            <div class="modal-footer">
-                                                <div class="hstack gap-2 justify-content-end">
-                                                    <button type="button" class="btn btn-light"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="edit-btn">Edit
-                                                        Kota</button>
-                                                    <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                </div>
+                                                    <div class="mb-3">
+                                                        <label for="date-field" class="form-label">Foto Profil</label>
+                                                        <br><img class="img mb-3"src="{{ asset('foto/fotoaja/' . $data->foto_aja) }}"
+                                                                    alt="" style="width: 90px" alt="">
+                                                                    <br>
+                                                        <input type="file" id="date-field" name="foto" class="form-control"
+                                                            placeholder="Select Photo"  />
+                                                        <div class="invalid-feedback">Pilih Foto.</div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="email-field" class="form-label">Deskripsi</label>
+                                                        <textarea id="summer" name="detail_kota" class="summer form-control" style="height: 300px;"
+                                                            placeholder="Masukkan detail kota" value="" required>{!! $data->detail_kota !!}</textarea>
+                                                    </div>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--end col-->
+                        </section>
+
+                        <div class="modal-footer">
+                            <div class="hstack gap-2 justify-content-end">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success" id="edit-btn">Edit
+                                    Kota</button>
+                                <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                            </div>
                         </div>
-                        <!--end row-->
-
+                        </form>
                     </div>
-                    <!-- container-fluid -->
                 </div>
-                <!-- End Page-content -->
-
-
             </div>
-            <!-- end main content-->
+        </div>
+        <!--end col-->
+        </div>
+        <!--end row-->
+
+        </div>
+        <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+
+        </div>
+        <!-- end main content-->
 
         </div>
         <!-- END layout-wrapper -->
@@ -169,27 +203,34 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#Jurnal').DataTable();
+                $('#summer').DataTable();
             });
         </script>
-                <!-- JAVASCRIPT -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
+        <!-- JAVASCRIPT -->
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+        </script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}">
+        </script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}">
+        </script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
 
-    <!-- ckeditor -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
+        <!-- ckeditor -->
+        <script
+            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}">
+        </script>
 
-    <!-- quill js -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.min.js') }}"></script>
+        <!-- quill js -->
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.min.js') }}"></script>
 
-    <!-- init js -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
+        <!-- init js -->
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
 
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
     </body>
 

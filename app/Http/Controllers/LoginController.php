@@ -58,10 +58,14 @@ class LoginController extends Controller
     public function loginuserdua(Request $request)
     {
         if (FacadesAuth::attempt($request->only('email', 'password'))) {
-            return redirect('/welcome');
+            return redirect('/');
         }
 
         return redirect('login');
+    }
+    public function logoutuser()
+    {
+        return view('user.login');
     }
 
     public function register()
@@ -83,7 +87,8 @@ class LoginController extends Controller
         return redirect('/login');
     }
 
-    public function profil()
+   
+    public function editprofil()
     {
         return view('profile.editprofile');
     }

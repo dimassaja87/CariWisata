@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
-    data-sidebar-image="none" data-preloader="disable">
+    data-sidebar-image="none" data-preloader="enable">
 
 
 <!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
@@ -344,7 +344,9 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">ID</th>
-                                                        <th scope="col">Detail Kota</th>
+                                                        <th scope="col">Nama Kota</th>
+                                                        <th scope="col">Foto</th>
+                                                        <th scope="col">Deskripsi</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -362,7 +364,12 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td class="detail_kota">{{ $row->detail_kota }}</td>
+                                                            <td>{{ $row->kotas->nama_kota }}</td>
+                                                            <td class="foto_wisata">
+                                                                <img src="{{ asset('foto/fotoaja/' . $row->foto_aja) }}"
+                                                                    alt="" width="150">
+                                                            </td>
+                                                            <td class="detail_kota">{!! $row->detail_kota !!}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">

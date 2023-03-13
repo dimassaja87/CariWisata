@@ -39,7 +39,6 @@
 
         <!-- Begin page -->
         <div id="layout-wrapper">
-
             <!-- removeNotificationModal -->
             <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -63,7 +62,6 @@
                                     It!</button>
                             </div>
                         </div>
-
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
@@ -77,16 +75,13 @@
             <!-- Start right Content here -->
             <!-- ============================================================== -->
             <div class="main-content">
-
                 <div class="page-content">
                     <div class="container-fluid">
-
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                     <h4 class="mb-sm-0">Detail Kota</h4>
-
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a>
@@ -94,60 +89,79 @@
                                             <li class="breadcrumb-item active">Tambah Detail Kota</li>
                                         </ol>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <!-- end page title -->
 
-
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-title mb-0">Tambah Detail Kota</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <form action="/insertkotadetail" method="POST" enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="mb-3">
-                                                <section>
-                                                    <div class="card">
-                                                        <div class="card-body">
-                                                            {{--  <form method="POST" enctype="multipart/form-data">  --}}
-                                                                <textarea  name="detail_kota" class="summernote form-control"
-                                                                placeholder="Masukkan detail wisata" id="summer" required ></textarea>
-                                                        </div>
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="card-title mb-0">Tambah Detail Kota</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <form action="/insertkotadetail" method="POST"
+                                                    enctype="multipart/form-data">
+                                                    @csrf
+                                                    <div class="mb-3">
+                                                        <label for="email-field" class="form-label">Nama Kota</label>
+                                                        <select class="js-example-basic-single form-select form-control"
+                                                            aria-label="Default select example" name="id_kota" required>
+                                                            <option selected>Tidak ada yang dipilih</option>
+                                                            @foreach ($kota as $data)
+                                                                <option value="{{ $data->id }}">{{ $data->nama_kota }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                        <div class="invalid-feedback">Masukkan kota.</div>
                                                     </div>
-                                                    <div class="invalid-feedback">Masukkan detail kota.</div>
-                                                </section>
-                                            </div>
 
-                                            <div class="modal-footer">
-                                                <div class="hstack gap-2 justify-content-end">
-                                                    <button type="button" class="btn btn-light"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                                        Kota</button>
-                                                    <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                </div>
+                                                    <div class="mb-3">
+                                                        <label for="date-field" class="form-label">Foto</label>
+                                                        <input type="file" id="date-field" name="foto_aja"
+                                                            class="form-control" placeholder="Select Photo" required />
+                                                        <div class="invalid-feedback">Pilih Foto.</div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="email-field" class="form-label">Deskripsi</label>
+                                                        <textarea name="detail_kota" class="summernote form-control" placeholder="Masukkan detail wisata" id="summer"
+                                                            required></textarea>
+                                                    </div>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--end col-->
+                        </section>
+                        <div class="modal-footer">
+                            <div class="hstack gap-2 justify-content-end">
+                                <a href="/detailwisata" type="button" class="btn btn-light"
+                                    data-bs-dismiss="modal">Close</a>
+                                <button type="submit" class="btn btn-success" id="edit-btn">Tambah
+                                    Kota</button>
+                                <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                            </div>
                         </div>
-                        <!--end row-->
-
+                        </form>
                     </div>
-                    <!-- container-fluid -->
                 </div>
-                <!-- End Page-content -->
-
-
             </div>
-            <!-- end main content-->
+            <!--end col-->
+        </div>
+        <!--end row-->
+
+        </div>
+        <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+
+        </div>
+        <!-- end main content-->
 
         </div>
         <!-- END layout-wrapper -->
@@ -182,14 +196,12 @@
 
         <script>
             $(document).ready(function() {
-                $('#summer').summernote({
-                tabsize: 2,
-                height: 100
-            });
+                $('#summer').summernote({});
             });
         </script>
         <!-- JAVASCRIPT -->
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+        <script
+            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
         </script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>

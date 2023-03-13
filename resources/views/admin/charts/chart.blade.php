@@ -110,7 +110,7 @@
 
                                             <script src="https://code.highcharts.com/highcharts.js"></script>
                                             <script>
-                                                var datas = <?php echo json_encode($datas); ?>
+                                                var data = <?php echo json_encode($data); ?>
 
                                                 Highcharts.chart('chart-container', {
                                                     title: {
@@ -139,7 +139,7 @@
                                                     },
                                                     series: [{
                                                         name: 'New User',
-                                                        data: datas
+                                                        data: data
                                                     }],
                                                     responsive: {
                                                         rules: [{

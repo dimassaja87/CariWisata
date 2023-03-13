@@ -38,9 +38,9 @@ Route::get('/nyoba', function () {
     return view('nyoba');
 });
 
-Route::get('/welcome', [welcomecontroller::class, 'welcome'])->name('welcome');
+Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 
-Route::get('/', function () {
+Route::get('/u', function () {
     return view('user.welcomeuser');
 });
 
@@ -63,7 +63,7 @@ Route::get('/profil', function () {
 // Route::get('/editprofil', function () {
 //     return view('profile.editprofile');
 // });
-Route::get('/editprofil', [LoginController::class, 'profil'])->name('profil');
+Route::get('/editprofil', [LoginController::class, 'editprofil'])->name('editprofil');
 Route::put('/updateprofil/{id}', [LoginController::class, 'updateprofil'])->name('updateprofil');
 
 
@@ -182,7 +182,6 @@ Route::get('/deletepengguna/{id}',[PenggunaController::class, 'deletepengguna'])
 
 //Data destinasi
 Route::get('/datadestinasi',[DestinasiController::class, 'datadestinasi'])->name('datadestinasi');
-
 Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
 Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
 
@@ -303,7 +302,9 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 //Chart
 Route::get('/chartuser',[ChartController::class, 'index']);
 
-Route::get('/barchart',[ChartController::class, 'barChart']);
+Route::get('bar-chart', [ChartController::class, 'showBarChart']);
+
+//akhir chart
 Route::get('/ayana',[KomenController::class, 'komenayana'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
 

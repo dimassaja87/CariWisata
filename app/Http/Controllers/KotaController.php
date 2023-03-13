@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use view;
 use App\Models\Destinasi;
 use App\Models\Kota;
+use App\Models\KotaDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
@@ -30,7 +31,8 @@ class KotaController extends Controller
         $data = Kota::all();
         // $jurusan = Jurusan::all();
         $destinasi = Destinasi::all();
-        return view('admin.tabelkota.tambahkota', compact('data', 'destinasi'));
+        $kotadetail = KotaDetail::all();
+        return view('admin.tabelkota.tambahkota', compact('data', 'destinasi', 'kotadetail'));
     }
 
     public function insertkota(Request $request)
@@ -54,17 +56,16 @@ class KotaController extends Controller
         $data = Kota::find($id);
         // $jurusan = Jurusan::all();
         $destinasi = Destinasi::all();
+        $kotadetail = KotaDetail::all();
         // dd($data);
 
-        return view('admin.tabelkota.tampilkota', compact('data', 'destinasi'));
+        return view('admin.tabelkota.tampilkota', compact('data', 'destinasi', 'kotadetail'));
     }
 
     public function updatekota(Request $request, $id)
     {
         $data = Kota::find($id);
-        $data->update([
-            'nama_kota' => $request->nama_kota,
-        ]);
+        $data->update('all');
         if ($request->hasFile('foto_sampul'))
         {
             $destination = 'fotosampul/'.$data->foto_sampul;

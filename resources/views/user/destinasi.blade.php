@@ -95,6 +95,7 @@
                     <div class="container">
                         <div class="row">
                             <!-- Hotel Destination Start -->
+                            @foreach ($Kota as $destinasi)
                             <div class="col-md-4 col-sm-6">
                                 <div class="mg_hotel_destination fancy-overlay">
                                     <figure>
@@ -105,7 +106,7 @@
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="/bandung">Akhir Pekan di Bandung</a></h5>
+                                            <h5><a href="/bandung">{{$KotaDetail->}}</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
                                             <p>Liburan yang menyenangkan di Bandung.
@@ -115,6 +116,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                             <!-- Hotel Destination End -->
                             <!-- Hotel Destination Start -->
                             <div class="col-md-4 col-sm-6">
