@@ -8,6 +8,7 @@ use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\KomenController;
+use App\Http\Controllers\GrafikController;
 use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
@@ -341,7 +342,7 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 
 //grafik
-Route::get('/chartss',[ChartssController::class,'index'])->name('chartss');
+Route::get('/grafik',[GrafikController::class,'index']);
 
 //profil
 Route::get('/statistik', function(){

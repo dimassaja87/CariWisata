@@ -94,8 +94,7 @@
                                         <div class="p-2">
                                             <h4 class="text-white mb-1">1.3K</h4>
                                             <p class="fs-14 mb-0">Wisata</p>
-                                            <p class="fs-14 mb-0">Followers</p>
-                                        </div> -->
+                                        </div> 
                                         </div>
                                     </div>
                                     
@@ -114,9 +113,7 @@
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills animation-nav profile-nav gap-2 gap-lg-3 flex-grow-1" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link fs-14 active" data-bs-toggle="tab" href="{{ url('statistik') }}" role="tab">
-                                                <i class="ri-airplay-fill d-inline-block d-md-none"></i> <span class="d-none d-md-inline-block">Statistik</span>
-                                            </a>
+                                            <a href="/grafik" class="nav-link" data-key="t-echarts"> Statistik </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link fs-14" data-bs-toggle="tab" href="{{ url('tambah') }}" role="tab">
@@ -140,19 +137,21 @@
                                 </div>
                                 <!-- Tab panes -->
                                 
+                                
                                 <div class="tab-content pt-4 text-muted">
                                     <div class="tab-pane active" id="overview-tab" role="tabpanel">
                                         <div class="row">
                                             <div class="col-xxl-3">
                                                 <div class="col-xl-6">
-                                                    <div class="card">
+                                                    {{-- <div class="card">
                                                         <div class="card-header">
                                                             <h4 class="card-title mb-0">Line Chart</h4>
+                                                            
                                                         </div>
                                                         <div class="card-body">
-                                                            <canvas id="lineChart" class="chartjs-chart" data-colors='["--vz-primary-rgb, 0.2", "--vz-primary", "--vz-success-rgb, 0.2", "--vz-success"]'></canvas>
+                                                            <canvas id="lineChart" class="chartjs-chart" data-colors='["--vz-primary-rgb, 0.2", "--vz-primary", "--vz-success-rgb, 0.2", "--vz-success"]' width="622" height="310" style="display: block; box-sizing: border-box; height: 206. 667px; width: 414.667px;"></canvas>
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                                 <!--end card-->
                                             </div>
