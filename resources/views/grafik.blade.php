@@ -8,56 +8,54 @@
 </head>
 <body> 
     <div id="chart-container"></div>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script>
-        var datas = <?php echo json_encode($datas) ?>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script>
+    Highcharts.chart('chart-container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Daftar Wisata'
+    },
+    xAxis: {
+        categories: [
+            'Batu',
+            'Bali',
+            'Semarang',
+            'Bandung',
+            'Banten',
+            'Banyuwangi',
+            'Surabaya'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Jumlah'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} tempat</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [ {
+        name: 'wisata',
+        data: [83, 78, 98, 93, 106, 84, 105,]
 
-        Highcharts.chart('chart-container',{
-            title:{
-                text:'Daftar Wisata'
-            },
-            subtitle:{
-                text:'Source: Surfside Media'
-            },
-            xAxis:{
-                categories:['Jan','Feb','Mar','Apr','Mei','Jun','July','Aug','Sept','Oct','Nov','Dec']
-            },
-            yAxis:{
-                title:{
-                    text:'Jumlah Pertambahan Tempat Wisata'
-                }
-            },
-            legend:{
-                layout:'vertical',
-                align: 'right',
-                verticalAlign: 'middle'
-            },
-            plotOptions:{
-                series:{
-                    allowPointSelect:true
-                }
-            },
-            series:[{
-                name: 'new destinasi',
-                data:datas
-            }],
-            responsive:{
-                rules:[
-                    {
-                        condition:{
-                            maxWidth:500
-                        }, 
-                        chartOptions:{
-                            legend:{
-                                layout:'horizontal',
-                                align:'center',
-                                verticalAlign:'bottom'
-                            }
-                        }
-                    }
-                ]
-            }
-        })
-    </script>
+    }]
+});
+
+</script>            
 </body>
 </html>

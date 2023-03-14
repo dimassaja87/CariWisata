@@ -22,6 +22,7 @@ use App\Http\Controllers\RatingController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
 use App\Http\Controllers\KotaDetailController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
 
 /*
@@ -63,7 +64,6 @@ Route::get('/profil', function () {
 // Route::get('/editprofil', function () {
 //     return view('profile.editprofile');
 // });
-Route::get('/profil', [LoginController::class, 'profil'])->name('profil');
 Route::get('/editprofil', [LoginController::class, 'editprofil'])->name('editprofil');
 Route::put('/updateprofil/{id}', [LoginController::class, 'updateprofil'])->name('updateprofil');
 
