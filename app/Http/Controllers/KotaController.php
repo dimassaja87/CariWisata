@@ -65,7 +65,7 @@ class KotaController extends Controller
     public function updatekota(Request $request, $id)
     {
         $data = Kota::find($id);
-        $data->update('all');
+        $data->update($request->all());
         if ($request->hasFile('foto_sampul'))
         {
             $destination = 'fotosampul/'.$data->foto_sampul;
@@ -108,5 +108,5 @@ class KotaController extends Controller
             return redirect()->back()->with('success','Seluruh Data Berhasil Di Hapus');
         }
 
-    
+
 }

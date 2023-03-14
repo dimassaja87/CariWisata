@@ -36,6 +36,14 @@ use App\Models\Komen;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/adminn', function () {
+    $jumlahwisata = Wisata::count();
+    $jumlahuser = User::count();
+    $jumlahkota = Kota::count();
+    $jumlahkomentar = Komen::count();
+    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota', 'jumlahkomentar'));
+});
+
 Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
 
 
@@ -44,15 +52,6 @@ Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 Route::get('/u', function () {
     return view('user.welcomeuser');
 });
-
-Route::get('/adminn', function () {
-    $jumlahwisata = Wisata::count();
-    $jumlahuser = User::count();
-    $jumlahkota = Kota::count();
-    // $jumlahkomen = Komen::count();
-    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota'));
-});
-
 
 Route::get('/profil', function () {
     return view('profile.profil');
@@ -175,15 +174,15 @@ Route::get('/statistik', function(){
     return view('user.profil2.statistik.index');
 });
 
-Route::get('tambah', function(){
+Route::get('/tambah', function(){
     return view('user.profil2.tambah.index');
 });
 
-Route::get('wisata', function(){
+Route::get('/wisata', function(){
     return view('grafik.wisata');
 });
 
-Route::get('komentar', function(){
+Route::get('/komentar', function(){
     return view('grafik.komentar');
 });
 
@@ -286,15 +285,15 @@ Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name
  Route::get('/deletekontak/{id}', [KontakController::class, 'deletekontak'])->name('deletekontak');
 
 //Data Komentar
-Route::get('/komentar',[KomentarController::class, 'komentar'])->name('komentar');
+Route::get('/ulasan',[KomenController::class, 'ulasan'])->name('ulasan');
 
-Route::get('/tambahkomentar',[KomentarController::class, 'tambahkomentar'])->name('tambahkomentar');
-Route::post('/insertkomentar',[KomentarController::class, 'insertkomentar'])->name('insertkomentar');
+Route::get('/tambahulasan',[KomenController::class, 'tambahulasan'])->name('tambahulasan');
+Route::post('/insertulasan',[KomenController::class, 'insertulasan'])->name('insertulasan');
 
-Route::get('/tampilkomentar/{id}',[KomentarController::class, 'tampilkomentar'])->name('tampilkomentar');
-Route::post('/updatekomentar{id}',[KomentarController::class, 'updatekomentar'])->name('updatekomentar');
+Route::get('/tampilulasan/{id}',[KomenController::class, 'tampilulasan'])->name('tampilulasan');
+Route::post('/updateulasan/{id}',[KomenController::class, 'updateulasan'])->name('updateulasan');
 
-Route::get('/deletekomentar/{id}',[KomentarController::class, 'deletekomentar'])->name('deletekomentar');
+Route::get('/deleteulasan/{id}',[KomenController::class, 'deleteulasan'])->name('deleteulasan');
 
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');

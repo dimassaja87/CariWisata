@@ -13,7 +13,7 @@ class DestinasiController extends Controller
 {
     public function destinasi()
     {
-        $data1 = KotaDetail::all();
+        $data1 = KotaDetail::paginate(3);
         return view('user.destinasi',compact('data1'));
     }
 

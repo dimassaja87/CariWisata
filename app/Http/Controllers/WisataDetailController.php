@@ -61,7 +61,7 @@ class WisataDetailController extends Controller
     public function updatedetailwisata(Request $request, $id)
     {
         $data = WisataDetail::find($id);
-        $data->update('all');
+        $data->update($request->all());
         if ($request->hasFile('detail_wisata'))
         {
             $detailwisata = 'foto/detailwisata/'.$data->detail_wisata;

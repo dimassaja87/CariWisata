@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('kota_detaill', function (Blueprint $table) {
             $table->id();
-            $table->string('filename');
             $table->timestamps();
         });
     }

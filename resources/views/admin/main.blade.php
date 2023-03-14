@@ -168,7 +168,7 @@
                             <div class="collapse menu-dropdown" id="sidebarWisata">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link menu-link" href="/wisata">
+                                        <a class="nav-link menu-link" href="/datawisata">
                                             <span data-key="t-tables">Wisata</span>
                                         </a>
                                     </li>
@@ -183,6 +183,11 @@
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/galery">
                                 <i class="bx bx-photo-album"></i> <span data-key="t-tables">Data Galery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/ulasan">
+                                <i class="bx bx-message-dots"></i> <span data-key="t-tables">Data Ulasan</span>
                             </a>
                         </li>
                         <li>
