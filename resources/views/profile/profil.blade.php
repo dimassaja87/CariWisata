@@ -38,14 +38,14 @@
 
         <header id="page-topbar">
     <div class="layout-width">
-        
+
     </div>
 </header>
 
 <!-- removeNotificationModal -->
 <!-- /.modal -->
         <!-- ========== App Menu ========== -->
-        
+
         <!-- Left Sidebar End -->
         <!-- Vertical Overlay-->
         <div class="vertical-overlay"></div>
@@ -55,7 +55,7 @@
         <!-- ============================================================== -->
         <!-- <div class="main-content"> -->
 
-            <div class="page-content">
+            <div class="page-content" style="padding-top: 30px">
                 <div class="container-fluid">
                     <div class="profile-foreground position-relative mx-n4 mt-n4">
                         <div class="profile-wid-bg">
@@ -65,7 +65,7 @@
                     <div class="pt-4 mb-4 mb-lg-3 pb-lg-4">
                         <div class="row g-4">
                             <div class="col-auto">
-                                
+
                                 <div class="avatar-lg p-0 rounded-circle profile-photo-edit">
                                     <img src="{{ asset('storage/'. Auth::user()->foto)}}" class="rounded-circle avatar-lg img-thumbnail user-profile-image" alt="user-profile-image"  />
                                 </div>
@@ -73,7 +73,7 @@
                             <!--end col-->
                             <div class="col">
                                 <div class="p-2">
-                               
+
                                     <h3 class="text-white mb-1">
                                     {{Auth::user()->name }}
                                     </h3>
@@ -89,11 +89,10 @@
                                         <!-- <div class="p-2">
                                             <h4 class="text-white mb-1">24.3K</h4>
                                             <p class="fs-14 mb-0">Followers</p>
-<<<<<<< Updated upstream
                                         </div> -->
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <!--end col-->
@@ -136,11 +135,11 @@
                                     <div class="tab-pane active" id="overview-tab" role="tabpanel">
                                         <div class="row">
                                             <div class="col-xxl-3">
-                                                
+
                                                 <!--end card-->
                                             </div>
                                             <!--end col-->
-                                            
+
                                             <!--end col-->
                                         </div>
                                         <!--end row-->
@@ -217,7 +216,7 @@
                                     <!--end tab-pane-->
                                     <div class="tab-pane fade" id="projects" role="tabpanel">
                                         <div class="card">
-                                            
+
                                             <div class="card-body">
                                                 <h5 class="card-title mb-3">Activities</h5>
                                                 <div class="acitivity-timeline">
@@ -540,11 +539,11 @@
                                                         <!-- end card -->
                                                     </div>
                                                     <!--end col-->
-                                                    
+
                                                     <!--end col-->
                                                     <!--  -->
                                                     <!--end col-->
-                                                    
+
                                                     <!--end col-->
                                                     <!-- <div class="col-lg-12">
                                                         <div class="mt-4">
@@ -574,9 +573,9 @@
                                                         </div>
                                                     </div> -->
                                                 </div>
-                                            </div> 
+                                            </div>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -620,10 +619,10 @@
     <!--end back-to-top-->
 
     <!--preloader-->
-    
+
 
     <!-- Theme Settings -->
-    
+
 
     <!-- JAVASCRIPT -->
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -647,7 +646,7 @@
     <script>
             $(document).ready(function() {
                 $('#deskripsi').summernote({
-                    
+
                 });
             });
     </script>

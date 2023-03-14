@@ -24,6 +24,7 @@ use App\Http\Controllers\welcomecontroller;
 use App\Http\Controllers\KotaDetailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
+use App\Models\Komen;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,8 +50,7 @@ Route::get('/adminn', function () {
     $jumlahwisata = Wisata::count();
     $jumlahuser = User::count();
     $jumlahkota = Kota::count();
-    // $jumlahulasan = Ulasan::count();
-    // $jumlahulasan = Ulasan::count();
+    // $jumlahkomen = Komen::count();
     return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota'));
 });
 
@@ -60,7 +60,7 @@ Route::get('/destinasi', function () {
 
 Route::get('/profil', function () {
     return view('profile.profil');
-});
+})->name('profil');
 // Route::get('/editprofil', function () {
 //     return view('profile.editprofile');
 // });
@@ -76,12 +76,6 @@ Route::get('/aboutus', function () {
      return view('user.contactus');
  });
 
- //contactus
-Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
-Route::post('/insertkontak', [kontakController::class, 'insertkontak'])->name('insertkontak');
-Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
-Route::get('/deletekontak/{id}', [KontakController::class, 'deletekontak'])->name('deletekontak');
-
 Route::get('/hubungi', function () {
     return view('user.hubungi');
 });
@@ -91,7 +85,6 @@ Route::get('/login', function () {
 });
 
 //kota
-
 Route::get('/bandung', function () {
     return view('user.kota.bandung');
 });
@@ -169,6 +162,25 @@ Route::get('/panglipuran', function () {
     return view('user.wisata.panglipuran');
 });
 
+//grafik
+Route::get('/grafik',[GrafikController::class,'index']);
+
+//profil
+Route::get('/statistik', function(){
+    return view('user.profil2.statistik.index');
+});
+
+Route::get('tambah', function(){
+    return view('user.profil2.tambah.index');
+});
+
+Route::get('wisata', function(){
+    return view('grafik.wisata');
+});
+
+Route::get('komentar', function(){
+    return view('grafik.komentar');
+});
 
 //Data User
 Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
@@ -261,6 +273,12 @@ Route::post('/updaterating{id}',[RatingController::class, 'updaterating'])->name
 
 Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating');
 
+ //contactus
+ Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
+ Route::post('/insertkontak', [kontakController::class, 'insertkontak'])->name('insertkontak');
+ Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
+ Route::get('/deletekontak/{id}', [KontakController::class, 'deletekontak'])->name('deletekontak');
+
 //Data Komentar
 Route::get('/komentar',[KomentarController::class, 'komentar'])->name('komentar');
 
@@ -282,7 +300,6 @@ Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logout
 //Login User
 Route::get('/login',[LoginController::class, 'login'])->name('login');
 Route::post('/loginuserdua',[LoginController::class, 'loginuserdua'])->name('loginuserdua');
-
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -341,26 +358,3 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-
-//grafik
-Route::get('/grafik',[GrafikController::class,'index']);
-
-//profil
-Route::get('/statistik', function(){
-    return view('user.profil2.statistik.index');
-});
-
-Route::get('tambah', function(){
-    return view('user.profil2.tambah.index');
-});
-
-Route::get('wisata', function(){
-    return view('grafik.wisata');
-});
-
-Route::get('komentar', function(){
-    return view('grafik.komentar');
-});
-
-

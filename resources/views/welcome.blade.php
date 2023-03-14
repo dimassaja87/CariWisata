@@ -95,10 +95,10 @@
                                     @auth
                             Selamat datang {{Auth::user()->name}}
                             @endauth
-                                    
+
                         {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}
                         </from>
-                        @else 
+                        @else
                             <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login</span></a>
                             </a>
                             @endauth
