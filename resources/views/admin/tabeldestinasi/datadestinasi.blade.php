@@ -457,7 +457,7 @@
                                                             </th>
                                                             <td class="nama">{{ $row->nama_wisata }}</td>
                                                             <td class="lokasi">{{ $row->lokasi }}</td>
-                                                            <td>{{ $row->kotas->nama_kota }}</td>
+                                                            <td>{{ $row->id_kota }}</td>
                                                             <td class="htm">{{ $row->htm }}</td>
                                                             <td class="foto_wisata">
                                                                 <img src="{{ asset('fotowisata/' . $row->foto_wisata) }}"

@@ -61,6 +61,7 @@ Route::get('/profil', function () {
 // Route::get('/editprofil', function () {
 //     return view('profile.editprofile');
 // });
+Route::get('/profil', [LoginController::class, 'profil'])->name('profil');
 Route::get('/editprofil', [LoginController::class, 'editprofil'])->name('editprofil');
 Route::put('/updateprofil/{id}', [LoginController::class, 'updateprofil'])->name('updateprofil');
 

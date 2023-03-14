@@ -18,7 +18,7 @@ class DestinasiController extends Controller
     }
     public function datadestinasi()
     {
-        $data = Destinasi::paginate(5);
+        $data = Destinasi::all();
         return view('admin.tabeldestinasi.datadestinasi', compact('data'));
     }
 
@@ -48,7 +48,7 @@ class DestinasiController extends Controller
             $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->save();
 
-            return redirect()->route('datadestinasi')->with('success', 'Data Behasil Ditambahkan!');
+            return back()->with('success', 'Data Behasil Ditambahkan!');
         }
     }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Destinasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Http\Controllers\Auth;
@@ -103,4 +104,13 @@ class LoginController extends Controller
 
         return redirect('profil')->with('sukses','Data Berhasil di Perbarui');
     }
+
+    public function profil()
+    {
+        $data = Destinasi::all();
+
+        return view ('profile.profil',compact('data'));
+    }
 }
+
+

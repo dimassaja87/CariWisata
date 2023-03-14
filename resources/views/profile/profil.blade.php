@@ -65,8 +65,9 @@
                     <div class="pt-4 mb-4 mb-lg-3 pb-lg-4">
                         <div class="row g-4">
                             <div class="col-auto">
+                                
                                 <div class="avatar-lg p-0 rounded-circle profile-photo-edit">
-                                    <img src="{{ asset('foto/'. Auth::user()->foto)}}" class="rounded-circle avatar-lg img-thumbnail user-profile-image" alt="user-profile-image"  />
+                                    <img src="{{ asset('storage/'. Auth::user()->foto)}}" class="rounded-circle avatar-lg img-thumbnail user-profile-image" alt="user-profile-image"  />
                                 </div>
                             </div>
                             <!--end col-->
@@ -218,22 +219,26 @@
                                     <!--end tab-pane-->
                                     <div class="tab-pane fade" id="projects" role="tabpanel">
                                         <div class="card">
+                                            
                                             <div class="card-body">
+                                            
                                                 <div class="row">
-                                                    <div class="col-xxl-3 col-sm-6">
+                                                @foreach($data as $yolaa)
+                                                    <div class="col-xxl-3 col-sm-6" >
                                                         <div class="card profile-project-card shadow-none profile-project-warning">
                                                             <div class="card-body p-4">
                                                                 <div class="d-flex">
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
-                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">Chat App Update</a></h5>
-                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">2 year Ago</span></p>
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">{{$yolaa->nama_wisata}}</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Lokasi Wisata : <span class="fw-semibold text-dark">{{$yolaa->lokasi}}</span></p>
+                                                                        <p class="text-muted text-truncate mb-0">Deskripsi Destinasi : <span class="fw-semibold text-dark">{{$yolaa->deskripsi}}</span></p>
                                                                     </div>
                                                                     <div class="flex-shrink-0 ms-2">
                                                                         <div class="badge badge-soft-warning fs-10">Inprogress</div>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="d-flex mt-4">
+                                                                <!-- <div class="d-flex mt-4">
                                                                     <div class="flex-grow-1">
                                                                         <div class="d-flex align-items-center gap-2">
                                                                             <div>
@@ -260,13 +265,13 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                             <!-- end card body -->
                                                         </div>
                                                         <!-- end card -->
                                                     </div>
-                                                    
+                                                @endforeach
                                                     
                                                     <!--end col-->
                                                     
@@ -275,7 +280,7 @@
                                                     <!--end col-->
                                                     
                                                     <!--end col-->
-                                                    <div class="col-lg-12">
+                                                    <!-- <div class="col-lg-12">
                                                         <div class="mt-4">
                                                             <ul class="pagination pagination-separated justify-content-center mb-0">
                                                                 <li class="page-item disabled">
@@ -301,10 +306,12 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
+                                               
                                                 <!--end row-->
                                             </div>
+                                            
                                             <!--end card-body-->
                                         </div>
                                         <!--end card-->
