@@ -36,9 +36,8 @@ use App\Models\Komen;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/nyoba', function () {
-    return view('nyoba');
-});
+Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
+
 
 Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 
