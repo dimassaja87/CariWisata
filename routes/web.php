@@ -24,6 +24,7 @@ use App\Http\Controllers\welcomecontroller;
 use App\Http\Controllers\KotaDetailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
+use App\Models\Komen;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +36,8 @@ use App\Http\Controllers\WisataDetailController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/nyoba', function () {
-    return view('nyoba');
-});
+Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
+
 
 Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 
@@ -49,8 +49,7 @@ Route::get('/adminn', function () {
     $jumlahwisata = Wisata::count();
     $jumlahuser = User::count();
     $jumlahkota = Kota::count();
-    // $jumlahulasan = Ulasan::count();
-    // $jumlahulasan = Ulasan::count();
+    // $jumlahkomen = Komen::count();
     return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota'));
 });
 
@@ -91,7 +90,6 @@ Route::get('/login', function () {
 });
 
 //kota
-
 Route::get('/bandung', function () {
     return view('user.kota.bandung');
 });
@@ -169,6 +167,25 @@ Route::get('/panglipuran', function () {
     return view('user.wisata.panglipuran');
 });
 
+//grafik
+Route::get('/grafik',[GrafikController::class,'index']);
+
+//profil
+Route::get('/statistik', function(){
+    return view('user.profil2.statistik.index');
+});
+
+Route::get('tambah', function(){
+    return view('user.profil2.tambah.index');
+});
+
+Route::get('wisata', function(){
+    return view('grafik.wisata');
+});
+
+Route::get('komentar', function(){
+    return view('grafik.komentar');
+});
 
 //Data User
 Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
@@ -262,6 +279,12 @@ Route::post('/updaterating{id}',[RatingController::class, 'updaterating'])->name
 
 Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating');
 
+ //contactus
+ Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
+ Route::post('/insertkontak', [kontakController::class, 'insertkontak'])->name('insertkontak');
+ Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
+ Route::get('/deletekontak/{id}', [KontakController::class, 'deletekontak'])->name('deletekontak');
+
 //Data Komentar
 Route::get('/komentar',[KomentarController::class, 'komentar'])->name('komentar');
 
@@ -283,7 +306,6 @@ Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logout
 //Login User
 Route::get('/login',[LoginController::class, 'login'])->name('login');
 Route::post('/loginuserdua',[LoginController::class, 'loginuserdua'])->name('loginuserdua');
-
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -308,6 +330,38 @@ Route::get('bar-chart', [ChartController::class, 'showBarChart']);
 Route::get('/ayana',[KomenController::class, 'komenayana'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
 
+Route::get('/jatim',[KomenController::class, 'komenjatim'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/kawah',[KomenController::class, 'komenkawah'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/kya',[KomenController::class, 'komenkya'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/lawang',[KomenController::class, 'komenlawang'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/lembang',[KomenController::class, 'komenlembang'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/museumangkut',[KomenController::class, 'komenmuseum'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/pandawa',[KomenController::class, 'komenpandawa'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/panglipuran',[KomenController::class, 'komenpanglipuran'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/peuncang',[KomenController::class, 'komenpeuncang'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/santerra',[KomenController::class, 'komensanterra'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
+Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
 
 
 //grafik
@@ -329,5 +383,3 @@ Route::get('wisata', function(){
 Route::get('komentar', function(){
     return view('grafik.komentar');
 });
-
-
