@@ -132,6 +132,9 @@
                                     <div class="flex-shrink-0">
                                         <a href="/editprofil" class="btn btn-success"><i class="ri-edit-box-line align-bottom"></i> Edit Profile</a>
                                     </div>
+                                    <div class="flex-shrink-0">
+                                        <a href="/logoutuser" class="btn btn-success"><i class="ri-edit-box-line align-bottom"></i> Logout</a>
+                                    </div>
                                 </div>
                                 <!-- Tab panes -->
                                 <div class="tab-content pt-4 text-muted">
