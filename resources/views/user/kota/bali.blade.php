@@ -289,11 +289,12 @@
 
                                             <div class="row g-6 align-items-center mt-5 mb-6">
                                                 <div class="col-auto">
-                                                <form action="/search" method="GET">
-                                                  <input type="search" id="inputPassword6" placeholder="cari wisata" class="form-control" aria-describedby="passwordHelpInline">
+                                                <form action="/bali" method="GET">
+                                                  <input type="search" id="inputPassword6" name="search" placeholder="cari wisata" class="button btn btn-secodary" class="form-control" aria-describedby="passwordHelpInline">
                                                 </form>
                                                 </div>
                                             </div>
+
                                             <!-- Hotel Destination Start -->
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="mg_hotel_destination fancy-overlay">
@@ -427,14 +428,32 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="widget widget_search">
                             <h6 class="widget-title">keep in touch</h6>
-                            <form>
-                                <div class="mg_input_1">
-                                    <input type="text" placeholder="Your E-mail">
+                            <form method="post" action="/insertkontak">
+                                @csrf
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- Input Start-->
+                                        <div class="mg_input_1">
+                                            <input type="hidden" name="nama" value="{{Auth::user()->name }}" class="form-control" id="nama" placeholder="Nama Kamu " >
+                                        </div>
+                                        <!-- Input End-->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <!-- Input Start-->
+                                        <div class="mg_input_1">
+                                            <input type="hidden" name="email" value="{{Auth::user()->email }}" class="form-control" id="email" placeholder="Email " >
+                                        </div>
+                                        <!-- Input End-->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <!-- Input Start-->
+                                        <div class="mg_input_1">
+                                            <textarea name="pesan" id="pesan" placeholder="Pesan Kamu"></textarea>
+                                        </div>
+                                        <!-- Input End-->
+                                        <input class="mg_btn1" type="submit" value="Kirim">
+                                    </div>
                                 </div>
-                                <div class="mg_input_1">
-                                    <textarea placeholder="Your Message"></textarea>
-                                </div>
-                                <p><input type="button" value="Kirim pesan"></p>
                             </form>
                         </div>
                     </div>

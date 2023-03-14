@@ -8,19 +8,21 @@ use App\Http\Controllers\KotaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\KomenController;
+use App\Http\Controllers\GrafikController;
 use App\Models\Destinasi;
 use App\Models\Kota;
 use App\Models\User;
 use App\Models\Ulasan;
+use App\Models\Wisata;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RatingController;
+use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\KontakController;
-use App\Http\Controllers\KotaDetailController;
+use App\Http\Controllers\RatingController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
+use App\Http\Controllers\KotaDetailController;
 use App\Http\Controllers\WisataDetailController;
-use App\Models\Wisata;
 
 /*
 |--------------------------------------------------------------------------
@@ -339,4 +341,26 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+
+//grafik
+Route::get('/grafik',[GrafikController::class,'index']);
+
+//profil
+Route::get('/statistik', function(){
+    return view('user.profil2.statistik.index');
+});
+
+Route::get('tambah', function(){
+    return view('user.profil2.tambah.index');
+});
+
+Route::get('wisata', function(){
+    return view('grafik.wisata');
+});
+
+Route::get('komentar', function(){
+    return view('grafik.komentar');
+});
+
 

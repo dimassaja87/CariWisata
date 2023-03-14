@@ -41,7 +41,7 @@
                     <!-- iqoniq Navigation Start-->
                     <div class="mg_nav">
                     <ul class="mg_navigation">
-                        <li><a href="/welcome">Beranda</a></li>
+                        <li><a href="/">Beranda</a></li>
                         <li><a href="/aboutus">about us</a></li>
                         <li>
                             <a href="/destinasi">Destinasi</a>

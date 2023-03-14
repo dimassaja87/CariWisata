@@ -86,4 +86,15 @@ class DestinasiController extends Controller
         $data->delete();
         return redirect()->route('datadestinasi')->with('success', 'Data Behasil Di Hapus!');
     }
+
+    public function search(Request $request)
+	{
+		if($request->has('search')){
+            $search=$request->search;
+            $data = Kota::where('nama_wisata','LIKE','%' . $search .'%')->paginate(5);
+        }else{
+            $data = Kota::paginate(5);
+        }
+        return view('user.kota.bali', compact('data'));
+	}
 }
