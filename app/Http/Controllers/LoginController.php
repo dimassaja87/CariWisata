@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Destinasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Http\Controllers\Auth;
@@ -58,10 +59,14 @@ class LoginController extends Controller
     public function loginuserdua(Request $request)
     {
         if (FacadesAuth::attempt($request->only('email', 'password'))) {
-            return redirect('/welcome');
+            return redirect('/');
         }
 
         return redirect('login');
+    }
+    public function logoutuser()
+    {
+        return view('user.login');
     }
 
     public function register()
@@ -83,7 +88,8 @@ class LoginController extends Controller
         return redirect('/login');
     }
 
-    public function profil()
+   
+    public function editprofil()
     {
         return view('profile.editprofile');
     }
@@ -99,3 +105,5 @@ class LoginController extends Controller
         return redirect('profil')->with('sukses','Data Berhasil di Perbarui');
     }
 }
+
+

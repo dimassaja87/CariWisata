@@ -51,6 +51,7 @@ class KotaDetailController extends Controller
     public function tampilkotadetail(Request $request, $id)
     {
         $data = KotaDetail::findorfail($id);
+        $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
         $kota = Kota::all();

@@ -1658,12 +1658,12 @@
             <!-- Blog Section Start-->
             <!-- Blog Section End-->
             <!-- Pricing Table Section Start-->
-            <section class="pricing_wrap">
+            <section class="pricing_wrap"> 
                 <div class="container">
                     <!-- iqoniq Heading Start -->
                     <div class="mg_hotel_hd1">
                         <h6>Sekarang</h6>
-                        <h4>Informasi transpor t </h4>
+                        <h4>Informasi transport </h4>
                     </div>
                     <!-- iqoniq Heading End -->
                     <div class="row">

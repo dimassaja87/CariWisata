@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="enable">
 
 
 <!-- Mirrored from themesbrand.com/velzon/html/default/auth-logout-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 03:19:29 GMT -->
@@ -48,7 +48,7 @@
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
                                 <a href="index.html" class="d-inline-block auth-logo">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}" alt="" width="120">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}" alt="" width="200">
                                 </a>
                             </div>
                             <p class="mt-3 fs-15 fw-medium">Admin</p>

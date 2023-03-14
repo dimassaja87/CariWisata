@@ -86,10 +86,9 @@
                                     <div class="card-body">
                                         <form action="/insertgalery" method="POST" enctype="multipart/form-data">
                                             @csrf
-
                                             <div class="mb-3">
                                                 <label for="date-field" class="form-label">Foto</label>
-                                                <input type="file" id="date-field" name="fotogalery" class="form-control"
+                                                <input type="file" id="date-field" name="fotogalery" class="form-control" multiple
                                                     placeholder="Pilih Foto" required />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
                                             </div>

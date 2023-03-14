@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Destinasi;
+use App\Models\Profile;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
     public function profile()
     {
-        $profile=Profile::all();
-        return view('profile.profil',['profile'=>$profile]);
+        return view('profile.profil',compact('data'));
+    }
+    public function profil()
+    {
+        $data=Destinasi::all();
+        return view('profile.profil',compact('data'));
     }
     public function updateprofile(Request $request)
     {

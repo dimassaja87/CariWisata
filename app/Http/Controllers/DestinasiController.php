@@ -19,37 +19,46 @@ class DestinasiController extends Controller
 
     public function datadestinasi()
     {
-        $data = Destinasi::paginate(5);
+        $data = Destinasi::all();
         return view('admin.tabeldestinasi.datadestinasi', compact('data'));
     }
 
     public function tambahdestinasi()
     {
         $data = Destinasi::all();
-        $kota = Kota::all();
+        // $kota = Kota::all();
         $rating = Rating::all();
 
-        return view('admin.tabeldestinasi.tambahdestinasi', compact('data', 'kota', 'rating'));
+        return view('admin.tabeldestinasi.tambahdestinasi', compact('data', 'rating'));
     }
 
     public function insertdestinasi(Request $request)
     {
-        $data = Destinasi::create($request->all());
+        $data = Destinasi::create([
+            'nama_wisata' =>$request->nama_wisata,
+            'lokasi' =>$request->lokasi,
+            'id_kota' =>$request->id_kota,
+            'htm' =>$request->htm,
+            'foto_wisata' =>$request->foto_wisata,
+            'deskripsi' =>$request->deskripsi,
+            'status' =>'menunggu persetujuan',
+
+        ]);
         if ($request->hasFile('foto_wisata')) {
             $request->file('foto_wisata')->move('fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
             $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->save();
 
-            return redirect()->route('datadestinasi')->with('success', 'Data Behasil Ditambahkan!');
+            return back()->with('success', 'Data Behasil Ditambahkan!');
         }
     }
 
     public function tampildestinasi($id)
     {
         $data = Destinasi::find($id);
-        $kota = Kota::all();
+        // $kota = Kota::all();
         $rating = Rating::all();
-        return view('admin.tabeldestinasi.tampildestinasi', compact('data', 'kota', 'rating'));
+        return view('admin.tabeldestinasi.tampildestinasi', compact('data', 'rating'));
     }
 
     public function updatedestinasi(Request $request, $id)
@@ -78,4 +87,15 @@ class DestinasiController extends Controller
         $data->delete();
         return redirect()->route('datadestinasi')->with('success', 'Data Behasil Di Hapus!');
     }
+
+    public function search(Request $request)
+	{
+		if($request->has('search')){
+            $search=$request->search;
+            $data = Kota::where('nama_wisata','LIKE','%' . $search .'%')->paginate(5);
+        }else{
+            $data = Kota::paginate(5);
+        }
+        return view('user.kota.bali', compact('data'));
+	}
 }

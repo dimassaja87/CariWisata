@@ -253,8 +253,8 @@
                             alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <!-- Light Logo-->
@@ -264,8 +264,8 @@
                             alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -329,10 +329,24 @@
                                 <i class="bx bx-phone"></i> <span data-key="t-tables">Data Contact Us</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="/datawisata">
-                                <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarWisata" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarWisata">
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-charts">Data Wisata</span>
                             </a>
+                            <div class="collapse menu-dropdown" id="sidebarWisata">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/wisata">
+                                            <span data-key="t-tables">Wisata</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/detailwisata"> <span
+                                                data-key="t-tables">Wisata Detail</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/galery">
@@ -457,7 +471,7 @@
                                                             </th>
                                                             <td class="nama">{{ $row->nama_wisata }}</td>
                                                             <td class="lokasi">{{ $row->lokasi }}</td>
-                                                            <td>{{ $row->kotas->nama_kota }}</td>
+                                                            <td>{{ $row->id_kota }}</td>
                                                             <td class="htm">{{ $row->htm }}</td>
                                                             <td class="foto_wisata">
                                                                 <img src="{{ asset('fotowisata/' . $row->foto_wisata) }}"
