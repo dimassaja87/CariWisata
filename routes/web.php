@@ -54,9 +54,6 @@ Route::get('/adminn', function () {
     return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota'));
 });
 
-Route::get('/destinasi', function () {
-    return view('user.destinasi');
-});
 
 Route::get('/profil', function () {
     return view('profile.profil');
@@ -194,6 +191,7 @@ Route::post('/updatepengguna/{id}',[PenggunaController::class, 'updatepengguna']
 Route::get('/deletepengguna/{id}',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna');
 
 //Data destinasi
+Route::get('/destinasi',[DestinasiController::class, 'destinasi'])->name('destinasi');
 Route::get('/datadestinasi',[DestinasiController::class, 'datadestinasi'])->name('datadestinasi');
 Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
 Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
@@ -314,8 +312,6 @@ Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutus
 //Akhir login user
 
 //komentar wisata
-Route::get('/anyer',[KomenController::class, 'komenanyer'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
 
 //Chart
 Route::get('/chartuser',[ChartController::class, 'index']);
@@ -358,3 +354,24 @@ Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('inser
 
 Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
 Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
+
+
+//grafik
+Route::get('/grafik',[GrafikController::class,'index']);
+
+//profil
+Route::get('/statistik', function(){
+    return view('user.profil2.statistik.index');
+});
+
+Route::get('tambah', function(){
+    return view('user.profil2.tambah.index');
+});
+
+Route::get('wisata', function(){
+    return view('grafik.wisata');
+});
+
+Route::get('komentar', function(){
+    return view('grafik.komentar');
+});

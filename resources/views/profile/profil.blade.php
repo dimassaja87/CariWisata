@@ -108,7 +108,9 @@
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills animation-nav profile-nav gap-2 gap-lg-3 flex-grow-1" role="tablist">
                                         <li class="nav-item">
-                                            <a href="/grafik" class="nav-link" data-key="t-echarts"> Statistik </a>
+                                            <a class="nav-link fs-14 active" data-bs-toggle="tab" href="#overview-tab" role="tab">
+                                                <i class="ri-airplay-fill d-inline-block d-md-none"></i> <span class="d-none d-md-inline-block">Statistik</span>
+                                            </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link fs-14" data-bs-toggle="tab" href="#activities" role="tab">
@@ -128,6 +130,9 @@
                                     </ul>
                                     <div class="flex-shrink-0">
                                         <a href="/editprofil" class="btn btn-success"><i class="ri-edit-box-line align-bottom"></i> Edit Profile</a>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <a href="/logoutuser" class="btn btn-success"><i class="ri-edit-box-line align-bottom"></i> Logout</a>
                                     </div>
                                 </div>
                                 <!-- Tab panes -->
@@ -218,6 +223,10 @@
                                         <div class="card">
 
                                             <div class="card-body">
+
+                                                <div class="row">
+                                                @foreach($data as $yolaa)
+                                                    <div class="col-xxl-3 col-sm-6" >
                                                 <h5 class="card-title mb-3">Activities</h5>
                                                 <div class="acitivity-timeline">
                                                     <div class="acitivity-item d-flex">
@@ -497,6 +506,9 @@
                                                             <div class="card-body p-4">
                                                                 <div class="d-flex">
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">{{$yolaa->nama_wisata}}</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Lokasi Wisata : <span class="fw-semibold text-dark">{{$yolaa->lokasi}}</span></p>
+                                                                        <p class="text-muted text-truncate mb-0">Deskripsi Destinasi : <span class="fw-semibold text-dark">{{$yolaa->deskripsi}}</span></p>
                                                                         <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">Project Update</a></h5>
                                                                         <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">48 min Ago</span></p>
                                                                     </div>
@@ -538,6 +550,13 @@
                                                         </div>
                                                         <!-- end card -->
                                                     </div>
+                                                @endforeach
+
+                                                    <!--end col-->
+
+                                                    <!--end col-->
+                                                    <!--  -->
+                                                    <!--end col-->
                                                     <!--end col-->
 
                                                     <!--end col-->
@@ -573,6 +592,26 @@
                                                         </div>
                                                     </div> -->
                                                 </div>
+                                            </div>
+
+                                                <!--end row-->
+                                            </div>
+
+                                            <!--end card-body-->
+                                        </div>
+                                        <!--end card-->
+                                    </div>
+                                    <!--end tab-pane-->
+                                    <div class="tab-pane fade" id="documents" role="tabpanel">
+                                        <!-- <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center mb-4">
+                                                    <h5 class="card-title flex-grow-1 mb-0">Documents</h5>
+                                                    <div class="flex-shrink-0">
+                                                        <input class="form-control d-none" type="file" id="formFile">
+                                                        <label for="formFile" class="btn btn-danger"><i class="ri-upload-2-fill me-1 align-bottom"></i> Upload File</label>
+                                                    </div>
+                                                </div> -->
                                             </div>
                                                 </div>
 

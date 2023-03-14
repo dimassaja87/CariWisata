@@ -17,3 +17,4 @@ class welcomecontroller extends Controller
             return view('welcome',compact('data','data1','data2'));
      }
 }
+

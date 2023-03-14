@@ -1197,67 +1197,6 @@
                                 </div>
                             </div>
                             @endforeach
-
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sewu.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">LAWANG SEWU</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/balizoo.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">BALI SAFARI MARINE</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/ijen.jpeg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">KAWAH IJEN</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/jatim1.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">JATIM PARK 1</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lmbk.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">LOMBOK</a></h5>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- Chooseus Thumb End -->
                         </div>
                         <!-- Chooseus Slider Ens -->
