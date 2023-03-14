@@ -48,7 +48,7 @@ class DestinasiController extends Controller
             $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->save();
 
-            return redirect()->route('datadestinasi')->with('success', 'Data Behasil Ditambahkan!');
+            return back()->with('success', 'Data Behasil Ditambahkan!');
         }
     }
 
