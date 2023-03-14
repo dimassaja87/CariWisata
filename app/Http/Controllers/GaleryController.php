@@ -60,7 +60,7 @@ class GaleryController extends Controller
     public function updategalery(Request $request, $id)
     {
         $data = Galery::find($id);
-        $data->update('all');
+        $data->update($request->all());
         if ($request->hasFile('fotogalery'))
         {
             $destination = 'foto/fotogalery/'.$data->fotogalery;
