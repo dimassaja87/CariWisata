@@ -102,6 +102,16 @@
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
+                                                <label for="email-field" class="form-label">Nama Wisata</label>
+                                                <select class="form-select form-control" aria-label="Default select example"
+                                                    name="id_kota" required>
+                                                    @foreach ($kota as $x)
+                                                        <option value="{{ $x->id }}" <?php if($data->id_wisata == $x->id) {echo 'selected'; } ?>>{{ $x->judul_wisata }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+
+                                            <div class="mb-3">
                                                 <label for="customername-field" class="form-label">Nama
                                                     Kota</label>
                                                     <section>

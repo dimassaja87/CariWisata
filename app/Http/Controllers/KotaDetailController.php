@@ -50,7 +50,7 @@ class KotaDetailController extends Controller
 
     public function tampilkotadetail($id)
     {
-        $kota = Kota::all();
+        $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
         $kota = Kota::all();

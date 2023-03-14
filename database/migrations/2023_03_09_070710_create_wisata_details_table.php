@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('wisata_details', function (Blueprint $table) {
             $table->id();
-            $table->string('detail_wisata');
+            $table->foreignId('id_wisata');
+            $table->longText('detail_wisata');
             $table->timestamps();
         });
     }
