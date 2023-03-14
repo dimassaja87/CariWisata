@@ -145,7 +145,7 @@
                                         <ul>
                                             <li>
                                                 <div class="mg_comment_dec">
-                                                    <figure><img src="{{asset('$row->profile') }}" alt=""></figure>
+                                                    <figure><img src="{{asset('$row->profil') }}" alt=""></figure>
                                                     <div class="overflow_text">
                                                         <h6>{{$row->nama}}</h6>
                                                         <p>{{$row->email}}</p>

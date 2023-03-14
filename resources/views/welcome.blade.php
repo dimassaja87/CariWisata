@@ -81,25 +81,24 @@
                     </div>
 
                     <div class="mg_login">
+                    @if (Route::has('login'))
+                    @auth
                         <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                        @if (Route::has('login'))
-
-                        @auth
                         @if (Auth::user()->foto)
                         <a href="{{route('profil')}}">
                                     <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}" alt="User Avatar" style="width: 35px;height:35px;border-radius:50%">
                          </a>
                                     @else
-                                    <img class="user-avatar rounded-circle" src="{{ asset('profile.jpg') }}"alt="" style="width: 30px">
+                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}"alt="" style="width: 30px">
                                     @endif
                                     @auth
                             Selamat datang {{Auth::user()->name}}
                             @endauth
-                                    
+
                         {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}
                         </from>
-                        @else 
-                            <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login</span></a>
+                        @else
+                            <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login & Register</span></a>
                             </a>
                             @endauth
                             @endif
@@ -1197,67 +1196,6 @@
                                 </div>
                             </div>
                             @endforeach
-
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sewu.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">LAWANG SEWU</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/balizoo.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">BALI SAFARI MARINE</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/ijen.jpeg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">KAWAH IJEN</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/jatim1.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">JATIM PARK 1</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Chooseus Thumb End -->
-                            <!-- Chooseus Thumb Start -->
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lmbk.jpg') }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">LOMBOK</a></h5>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- Chooseus Thumb End -->
                         </div>
                         <!-- Chooseus Slider Ens -->
@@ -1492,6 +1430,17 @@
         </div>
         <!-- iqoniq Copyright End-->
         <!-- register Modal -->
+        <div class="modal fade" id="search" tabindex="-1" role="dialog">
+                <div class="modal-dialog login1 login5 login5-1">
+                    <div class="modal-tab">
+                        <form action="" method="get">
+                        <div class="mg_input_1">
+                            <input type="text" class="form-control" name="keyword" placeholder="Search keyword" >
+                            <label class="search_icon"><input type="submit"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- register Modal end-->
     </div>
     <!-- iqoniq Wrapper End-->

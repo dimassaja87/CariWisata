@@ -12,9 +12,9 @@ class Destinasi extends Model
     protected $guarded = [];
     protected $date = ['created_at'];
 
-    public function kotas()
+    public function Kotas()
     {
-        return $this->belongsTo(Kota::class, 'id_kota', 'id');
+        return $this->BelongsTo(Kota::class);
     }
 
     public function Rating()

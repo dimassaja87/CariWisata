@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     </head>
 
     <body>
@@ -60,13 +63,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Data Kota</h4>
+                                    <h4 class="mb-sm-0">Data Ulasan</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Kota</a>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Ulasan</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Tambah Data Kota</li>
+                                            <li class="breadcrumb-item active">Tambah Data Ulasan</li>
                                         </ol>
                                     </div>
 
@@ -80,25 +83,45 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5 class="card-title mb-0">Tambah Data Kota</h5>
+                                        <h5 class="card-title mb-0">Tambah Data Ulasan</h5>
 
                                     </div>
                                     <div class="card-body">
-                                        <form action="/insertgalery" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertulasan" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
+                                                <label for="customername-field" class="form-label">Nama
+                                                    User</label>
+                                                <input type="text" id="customername-field" name="nama"
+                                                    class="form-control" placeholder="Masukkan nama" required />
+                                                <div class="invalid-feedback">Masukkan nama user.</div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="email-field" class="form-label">Email</label>
+                                                <input type="text" id="email-field" name="email" class="form-control"
+                                                    placeholder="Masukkan email" required />
+                                                <div class="invalid-feedback">Masukkan email.</div>
+                                            </div>
+
+                                            <div class="mb-3">
                                                 <label for="date-field" class="form-label">Foto</label>
-                                                <input type="file" id="date-field" name="fotogalery" class="form-control" multiple
-                                                    placeholder="Pilih Foto" required />
+                                                <input type="file" id="date-field" name="foto" class="form-control"
+                                                    placeholder="Select Photo" required />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="email-field" class="form-label">Komentar</label>
+                                                <textarea class="form-control" name="pesan" placeholder="Masukkan komentar" id="floatingTextarea" required></textarea>
+                                                <div class="invalid-feedback">Masukkan Komentar.</div>
                                             </div>
 
                                             <div class="modal-footer">
                                                 <div class="hstack gap-2 justify-content-end">
-                                                    <button type="button" class="btn btn-light"
-                                                        data-bs-dismiss="modal">Close</button>
+                                                    <a href="/ulasan" type="button" class="btn btn-light">Close</a>
                                                     <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                                        Kota</button>
+                                                        Ulasan</button>
                                                     <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                 </div>
                                             </div>
@@ -151,14 +174,25 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#Jurnal').DataTable();
+                $('#komen').DataTable();
             });
         </script>
 
+        <script>
+            // In your Javascript (external .js resource or <script> tag)
+            $(document).ready(function() {
+                $('.komen').select2();
+            });
+        </script>
+        <!--jquery cdn-->
+        <script src="../../../../code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--select2 cdn-->
+        <script src="../../../../cdn.jsdelivr.net/npm/select2%404.1.0-rc.0/dist/js/select2.min.js"></script>
+
+        <script src="assets/js/pages/select2.init.js"></script>
+
     </body>
-
-
-
     </body>
 
 

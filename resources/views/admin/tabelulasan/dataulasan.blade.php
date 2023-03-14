@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Detail Kota | Admin</title>
+    <title>Data Ulasan | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -53,8 +53,8 @@
                                         alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
-                                        alt="" height="40">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
+                                        alt="" height="17">
                                 </span>
                             </a>
 
@@ -64,8 +64,8 @@
                                         alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
-                                        alt="" height="40">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
+                                        alt="" height="17">
                                 </span>
                             </a>
                         </div>
@@ -79,9 +79,99 @@
                                 <span></span>
                             </span>
                         </button>
-
                         <!-- App Search-->
+                        <form class="app-search d-none d-md-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                    id="search" value="">
+                                <span class="mdi mdi-magnify search-widget-icon"></span>
+                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                                    id="search-close-options"></span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
+                                <div data-simplebar style="max-height: 320px;">
+                                    <!-- item-->
+                                    <div class="dropdown-header">
+                                        <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
+                                    </div>
 
+                                    <div class="dropdown-item bg-transparent text-wrap">
+                                        <a href="/adminn" class="btn btn-soft-secondary btn-sm btn-rounded">how to
+                                            setup <i class="mdi mdi-magnify ms-1"></i></a>
+                                        <a href="/adminn" class="btn btn-soft-secondary btn-sm btn-rounded">buttons
+                                            <i class="mdi mdi-magnify ms-1"></i></a>
+                                    </div>
+                                    <!-- item-->
+                                    <div class="dropdown-header mt-2">
+                                        <h6 class="text-overflow text-muted mb-1 text-uppercase">Pages</h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"></i>
+                                        <span>Analytics Dashboard</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></i>
+                                        <span>Help Center</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="ri-user-settings-line align-middle fs-18 text-muted me-2"></i>
+                                        <span>My account settings</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <div class="dropdown-header mt-2">
+                                        <h6 class="text-overflow text-muted mb-2 text-uppercase">Members</h6>
+                                    </div>
+
+                                    <div class="notification-list">
+                                        <!-- item -->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                            <div class="d-flex">
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
+                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                <div class="flex-1">
+                                                    <h6 class="m-0">Angela Bernier</h6>
+                                                    <span class="fs-11 mb-0 text-muted">Manager</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- item -->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                            <div class="d-flex">
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
+                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                <div class="flex-1">
+                                                    <h6 class="m-0">David Grasso</h6>
+                                                    <span class="fs-11 mb-0 text-muted">Web Designer</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- item -->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                            <div class="d-flex">
+                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-5.jpg') }}"
+                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                <div class="flex-1">
+                                                    <h6 class="m-0">Mike Bunch</h6>
+                                                    <span class="fs-11 mb-0 text-muted">React Developer</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="text-center pt-3 pb-1">
+                                    <a href="pages-search-results.html" class="btn btn-primary btn-sm">View All
+                                        Results <i class="ri-arrow-right-line ms-1"></i></a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
                     <div class="d-flex align-items-center">
@@ -163,8 +253,8 @@
                             alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <!-- Light Logo-->
@@ -174,8 +264,8 @@
                             alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -305,12 +395,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA DETAIL KOTA</h4>
+                                <h4 class="mb-sm-0">DATA ULASAN</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Detail Kota</li>
+                                        <li class="breadcrumb-item active">Data Ulasan</li>
                                     </ol>
                                 </div>
 
@@ -331,23 +421,21 @@
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
                                                 <div>
-                                                    <a href="/tambahkotadetail" type="button"
+                                                    <a href="/tambahulasan" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <a href="/multidelete" method="GET" id="delete-notification" class="btn btn-soft-danger"><i
-                                                            class="ri-delete-bin-2-line"></i></a>
+                                                    <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
+                                                            class="ri-delete-bin-2-line"></i></button>
                                                 </div>
                                             </div>
                                             <div class="col-sm">
-                                                    <form action="/kota" method="GET">
-                                                    <div class="d-flex justify-content-sm-end">
-                                                        <div class="search-box ms-2">
-                                                            <input type="search" class="form-control" id="search" name="search"
-                                                                placeholder="Search...">
-                                                            <i class="ri-search-line search-icon"></i>
-                                                        </div>
+                                                <div class="d-flex justify-content-sm-end">
+                                                    <div class="search-box ms-2">
+                                                        <input type="text" class="form-control search"
+                                                            placeholder="Search...">
+                                                        <i class="ri-search-line search-icon"></i>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -362,9 +450,10 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">ID</th>
-                                                        <th scope="col">Nama Kota</th>
+                                                        <th scope="col">Nama User</th>
+                                                        <th scope="col">Email</th>
                                                         <th scope="col">Foto</th>
-                                                        <th scope="col">Deskripsi</th>
+                                                        <th scope="col">Komentar</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -377,28 +466,29 @@
                                                             <th scope="row">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="checkbox"
-                                                                        name="ids[{{ $row->id }}]" value="{{ $row->id }}">
+                                                                        name="chk_child" value="option1">
                                                                 </div>
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td>{{ $row->kotas->nama_kota }}</td>
-                                                            <td class="foto_wisata">
-                                                                <img src="{{ asset('foto/fotoaja/' . $row->foto_aja) }}"
+                                                            <td class="nama">{{ $row->nama }}</td>
+                                                            <td class="email">{{ $row->email }}</td>
+                                                            <td class="foto">
+                                                                <img src="{{ asset('foto/fotokomen/' . $row->foto) }}"
                                                                     alt="" width="150">
                                                             </td>
-                                                            <td class="detail_kota">{!! $row->detail_kota !!}</td>
+                                                            <td class="deskripsi">{{ $row->pesan }}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
-                                                                        <a href="/tampilkotadetail/{{ $row->id }}"
+                                                                        <a href="/tampilulasan/{{ $row->id }}"
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
                                                                         <a href="#"
                                                                             data-id="{{ $row->id }}"
-                                                                            data-nama="{{ $row->detail_kota }}"
-                                                                            class="btn btn-sm btn-danger deletekota">Remove</a>
+                                                                            data-nama="{{ $row->nama }}"
+                                                                            class="btn btn-sm btn-danger deleteulasan">Remove</a>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -1227,19 +1317,21 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
-    $('.deletekota').click(function() {
-        var kotadetailid = $(this).attr('data-id');
-        var detail_kota = $(this).attr('data-nama');
+    $('.deleteulasan').click(function() {
+        var komenid = $(this).attr('data-id');
+        var nama = $(this).attr('data-nama');
+
+
         swal({
                 title: "Anda yakin?!",
-                text: "Ingin menghapus data dengan nama " + detail_kota + " ",
+                text: "Ingin menghapus data dengan nama " + nama + " ",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletekotadetail/" + kotadetailid + ""
+                    window.location = "/deleteulasan/" + komenid + ""
                     swal("Data berhasil dihapus!", {
                         icon: "success",
                     });

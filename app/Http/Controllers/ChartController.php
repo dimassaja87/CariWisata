@@ -29,11 +29,15 @@ class ChartController extends Controller
 
     public function showBarChart()
     {
-        $chart = Charts::create('bar', 'highcharts')
+        $chart =  User::create('bar', 'highcharts')
             ->title('Bar Chart')
             ->labels(['Jan', 'Feb', 'Mar'])
             ->values([10, 20, 30]);
 
         return view('charts.bar', ['chart' => $chart]);
     }
+    public function nyoba()
+{
+    return view('nyoba');
+}
 }

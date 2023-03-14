@@ -34,7 +34,7 @@
 <!-- removeNotificationModal -->
 <!-- /.modal -->
         <!-- ========== App Menu ========== -->
-        
+
         <!-- Left Sidebar End -->
         <!-- Vertical Overlay-->
         <div class="vertical-overlay"></div>
@@ -44,7 +44,7 @@
         <!-- ============================================================== -->
         <!-- <div class="main-content"> -->
 
-            <div class="page-content">
+            <div class="page-content" style="padding-top: 30px">
                 <div class="container-fluid">
 
                     <div class="position-relative mx-n4 mt-n4">
@@ -72,7 +72,7 @@
                                             @method('put')
                                             @csrf
                                         <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
-                                            <img src="{{ asset('storage/'. Auth::user()->foto)}}" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
+                                            <img src="{{ asset('foto/'. Auth::user()->foto)}}" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
                                             <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
                                                 <input id="profile-img-file-input" type="file" class="profile-img-file-input" name="foto" value="{{Auth::user()->foto }}">
                                                 <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
@@ -101,11 +101,11 @@
                                 </div>
                             </div>
                             <!--end card-->
-                            
+
                             <!--end card-->
                         </div>
                         <!--end col-->
-                        
+
                         <!--end col-->
                     </div>
                     <!--end row-->
@@ -114,7 +114,7 @@
                 <!-- container-fluid -->
             </div><!-- End Page-content -->
 
-           
+
         </div>
         <!-- end main content-->
 
@@ -130,7 +130,7 @@
     <!--end back-to-top-->
 
     <!--preloader-->
-    
+
 
     <!-- JAVASCRIPT -->
     <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

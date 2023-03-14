@@ -13,6 +13,8 @@
         <!-- Typography CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
+        <link href="{{ asset('selengkapnya.css') }}" rel="stylesheet">
+        <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
@@ -95,22 +97,23 @@
                     <div class="container">
                         <div class="row">
                             <!-- Hotel Destination Start -->
-                            @foreach ($Kota as $destinasi)
+                            @foreach ($data1 as $destinasi)
                             <div class="col-md-4 col-sm-6">
                                 <div class="mg_hotel_destination fancy-overlay">
                                     <figure>
-                                        <img src="https://asset.kompas.com/crops/ASrd8SDELxvy5W746vwTgKyY52A=/0x0:780x520/750x500/data/photo/2021/09/29/6153ca424f2bc.jpg" alt="" />
+                                        <img src="{{ asset('foto/fotoaja/'.$destinasi->foto_aja) }}" alt="" />
                                         <figcaption>
                                             <a class="view_btn" href="/bandung">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="/bandung">{{$KotaDetail->}}</a></h5>
+                                            <h5><a href="/bandung">{{$destinasi->kotas->nama_kota}}</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
-                                            <p>Liburan yang menyenangkan di Bandung.
-                                            </p>
+                                            <div class="ellipsis">
+                                            {!!  $destinasi->detail_kota  !!}
+                                            </div>
                                         </div>
 
                                     </div>
@@ -119,121 +122,17 @@
                             @endforeach
                             <!-- Hotel Destination End -->
                             <!-- Hotel Destination Start -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="mg_hotel_destination fancy-overlay">
-                                    <figure>
-                                        <img src="https://melampa.com/wp-content/uploads/2019/10/Close-view-of-Avalokitesvara-Pagoda-in-Semarang.jpg" alt=""/>
-                                        <figcaption>
-                                            <a class="view_btn" href="/semarang">Selengkapnya</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="text">
-                                        <div class="mg_destination_hd">
-                                            <h5><a href="/semarang">Jelajah Semarang</a></h5>
-                                        </div>
-                                        <div class="mg_destination_review">
-                                            <p>Menjelajahi Ibu Kota Jawa Tengah dengan seksama dan seru tentunya!</p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- Hotel Destination End -->
                             <!-- Hotel Destination Start -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="mg_hotel_destination fancy-overlay">
-                                    <figure>
-                                        <img src="https://th.bing.com/th/id/OIP.mN23HLOGt1z6XjSULZeGLwHaE7?pid=ImgDet&rs=1" alt=""/>
-                                        <figcaption>
-                                            <a class="view_btn" href="/surabaya">Selengkapnya</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="text">
-                                        <div class="mg_destination_hd">
-                                            <h5><a href="/surabaya">Surabaya</a></h5>
-                                        </div>
-                                        <div class="mg_destination_review">
-                                            <p> Nikmati Akhir Pekan Anda di Kota Surabaya Pusat Jawa Timur!
-                                            </p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hotel Destination End -->
-                            <!-- Hotel Destination Start -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="mg_hotel_destination fancy-overlay">
-                                    <figure>
-                                        <img src="https://th.bing.com/th/id/OIP.buVL54em2caAkEc2d0C8ZQHaE-?pid=ImgDet&w=1200&h=806&rs=1" alt="" />
-                                        <figcaption>
-                                            <a class="view_btn" href="/bali">Selengkapnya</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="text">
-                                        <div class="mg_destination_hd">
-                                            <h5><a href="/bali">Perjalanan ke Pulau Bali</a></h5>
-                                        </div>
-                                        <div class="mg_destination_review">
-                                            <p>    Pulau Bali dapat memuaskan Anda di saat waktu liburan Anda, Anda tidak akan menyesal berliburan ke Pulau BALI.
-                                            </p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hotel Destination End -->
-                            <!-- Hotel Destination Start -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="mg_hotel_destination fancy-overlay">
-                                    <figure>
-                                        <img src="https://www.mindatour.com/wp-content/uploads/2016/12/WisataPulauPeucangBanten-1024x683.jpg" alt="" />
-                                        <figcaption>
-                                            <a class="view_btn" href="/banten">Selengkapnya</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="text">
-                                        <div class="mg_destination_hd">
-                                            <h5><a href="/banten">Banten</a></h5>
-                                        </div>
-                                        <div class="mg_destination_review">
-                                            <p>Wisata Banten di Pantai Peuncang cocok untuk Anda yang ingin berlibur akhir pekan sejenak dari hiruk-piruk kehidupan di kota.
-                                            </p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hotel Destination End -->
-                            <!-- Hotel Destination Start -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="mg_hotel_destination fancy-overlay">
-                                    <figure>
-                                        <img src="https://storage.googleapis.com/allindonesiatoursim/2017/05/Batu.jpg" alt="" />
-                                        <figcaption>
-                                            <a class="view_btn" href="/batu">Selengkapnya</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="text">
-                                        <div class="mg_destination_hd">
-                                            <h5><a href="/batu">Cerita di Kota Batu</a></h5>
-                                        </div>
-                                         <div class="mg_destination_review">
-                                            <p>Wisata di Kota Batu cocok untuk Anda yang ingin merasakan nuansa dinginnya Kota Batu.
-                                            </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- Hotel Destination End -->
                             <!-- Hotel Destination Start -->
                             <div class="col-md-12">
                                 <!-- Pagination Start-->
+
                                 <div class="mg_pagination text-center">
-                                    <span class="page-numbers current">1</span>
-                                    <a class="page-numbers" href="#">2</a>
-                                    <a class="page-numbers" href="#">3</a>
-                                    <a class="page-numbers border_none" href="#">...</a>
-                                    <a class="page-numbers" href="#">18</a>
-                                    <a class="page-numbers" href="#">19</a>
-                                    <a class="page-numbers" href="#">20</a>
+                                {{ $data1->links() }} 
                                 </div>
                                 <!-- Pagination End-->
                             </div>

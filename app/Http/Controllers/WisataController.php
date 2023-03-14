@@ -59,9 +59,7 @@ class WisataController extends Controller
     public function updatewisata(Request $request, $id)
     {
         $data = Wisata::find($id);
-        $data->update([
-            'judul_wisata' => $request->judul_wisata,
-        ]);
+        $data->update($request->all());
         if ($request->hasFile('sampul_wisata'))
         {
             $destination = 'fotosampul/'.$data->sampul_wisata;
