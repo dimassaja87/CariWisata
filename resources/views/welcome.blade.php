@@ -99,7 +99,7 @@
                         {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}
                         </from>
                         @else
-                            <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login</span></a>
+                            <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login & Register</span></a>
                             </a>
                             @endauth
                             @endif
