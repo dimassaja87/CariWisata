@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Wisata;
 use App\Models\WisataDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -12,7 +13,6 @@ class WisataDetailController extends Controller
 {
     public function detailwisata(Request $request)
     {
-
         if ($request->has('search')) {
             $data = WisataDetail::where('detail_wisata', 'LIKE', '%' . $request->search)->paginate(5);
         } else {
@@ -25,9 +25,10 @@ class WisataDetailController extends Controller
     public function tambahdetailwisata()
     {
         $data = WisataDetail::all();
+        $wisata = Wisata::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
-        return view('admin.tabelwisata.tambahwisatadetail', compact('data'));
+        return view('admin.tabelwisata.tambahwisatadetail', compact('data', 'wisata'));
     }
 
     public function insertdetailwisata(Request $request)
@@ -49,11 +50,12 @@ class WisataDetailController extends Controller
     public function tampildetailwisata($id)
     {
         $data = WisataDetail::find($id);
+        $wisata = Wisata::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
         // dd($data);
 
-        return view('admin.tabelwisata.tampilwisatadetail', compact('data'));
+        return view('admin.tabelwisata.tampilwisatadetail', compact('data', 'wisata'));
     }
 
     public function updatedetailwisata(Request $request, $id)
@@ -68,7 +70,7 @@ class WisataDetailController extends Controller
                 File::delete($detailwisata);
             }
             $request->file('detail_wisata')->move('foto/detailwisata/', $request->file('detail_wisata')->getClientOriginalName());
-            $data->detail_wisata = $request->file('detail_kota')->getClientOriginalName();
+            $data->detail_wisata = $request->file('detail_wisata')->getClientOriginalName();
             $data->update();
         }
 

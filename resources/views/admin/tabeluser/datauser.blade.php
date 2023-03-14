@@ -358,10 +358,24 @@
                                 <i class="bx bx-phone"></i> <span data-key="t-tables">Data Contact us</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="/datawisata">
-                                <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarWisata" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarWisata">
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-charts">Data Wisata</span>
                             </a>
+                            <div class="collapse menu-dropdown" id="sidebarWisata">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/wisata">
+                                            <span data-key="t-tables">Wisata</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/detailwisata"> <span
+                                                data-key="t-tables">Wisata Detail</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/galery">

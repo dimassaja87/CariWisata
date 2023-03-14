@@ -140,8 +140,8 @@
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
                                 <a class="dropdown-item" href="/"><i
-                                    class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
-                                    class="align-middle" data-key="t-logout">Landing Page</span></a>
+                                        class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
+                                        class="align-middle" data-key="t-logout">Landing Page</span></a>
                                 <a class="dropdown-item" href="/logoutadmin"><i
                                         class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle" data-key="t-logout">Logout</span></a>
@@ -212,18 +212,20 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link menu-link" href="#sidebarKota" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                            <a class="nav-link menu-link" href="#sidebarKota" data-bs-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="sidebarCharts">
                                 <i class=" bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarKota">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link menu-link" href="/kota">
-                                             <span data-key="t-tables">Kota</span>
+                                            <span data-key="t-tables">Kota</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link menu-link" href="/kotadetail"> <span data-key="t-tables">Kota Detail</span>
+                                        <a class="nav-link menu-link" href="/kotadetail"> <span
+                                                data-key="t-tables">Kota Detail</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -239,10 +241,24 @@
                                 <i class="bx bx-phone"></i> <span data-key="t-tables">Data Contact us</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="/datawisata">
-                                <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarWisata" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarWisata">
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-charts">Data Wisata</span>
                             </a>
+                            <div class="collapse menu-dropdown" id="sidebarWisata">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/wisata">
+                                            <span data-key="t-tables">Wisata</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/detailwisata"> <span
+                                                data-key="t-tables">Wisata Detail</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/galery">
@@ -250,7 +266,8 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="sidebarCharts">
                                 <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarCharts">
@@ -316,16 +333,17 @@
                                                     <a href="/tambahdetailwisata" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <a href="/multidelete" method="GET" id="delete-notification" class="btn btn-soft-danger"><i
+                                                    <a href="/multidelete" method="GET" id="delete-notification"
+                                                        class="btn btn-soft-danger"><i
                                                             class="ri-delete-bin-2-line"></i></a>
                                                 </div>
                                             </div>
                                             <div class="col-sm">
-                                                    <form action="/detailwisata" method="GET">
+                                                <form action="/detailwisata" method="GET">
                                                     <div class="d-flex justify-content-sm-end">
                                                         <div class="search-box ms-2">
-                                                            <input type="search" class="form-control" id="search" name="search"
-                                                                placeholder="Search...">
+                                                            <input type="search" class="form-control" id="search"
+                                                                name="search" placeholder="Search...">
                                                             <i class="ri-search-line search-icon"></i>
                                                         </div>
                                                     </div>
@@ -344,7 +362,8 @@
                                                             </div>
                                                         </th>
                                                         <th scope="col">ID</th>
-                                                        <th scope="col">Detail Wisata</th>
+                                                        <th scope="col">Nama Wisata</th>
+                                                        <th scope="col">Deskripsi Wisata</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -357,11 +376,12 @@
                                                             <th scope="row">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="checkbox"
-                                                                        name="ids[{{ $row->id }}]" value="{{ $row->id }}">
+                                                                        name="ids[{{ $row->id }}]"
+                                                                        value="{{ $row->id }}">
                                                                 </div>
                                                             </th>
-                                                            <th scope="row">{{ $no++ }}</>
-                                                            </th>
+                                                            <th scope="row">{{ $no++ }}</th>
+                                                            <td class="id_wisata">{{ $row->id_wisata }}</td>
                                                             <td class="detail_wisata">{{ $row->detail_wisata }}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">

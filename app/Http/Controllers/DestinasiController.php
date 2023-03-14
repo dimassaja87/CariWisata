@@ -18,7 +18,7 @@ class DestinasiController extends Controller
     }
     public function datadestinasi()
     {
-        $data = Destinasi::paginate(5);
+        $data = Destinasi::all();
         return view('admin.tabeldestinasi.datadestinasi', compact('data'));
     }
 

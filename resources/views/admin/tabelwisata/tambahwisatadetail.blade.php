@@ -115,7 +115,20 @@
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="mb-3">
-                                                        <label for="customername-field" class="form-label">Detail
+                                                        <label for="email-field" class="form-label">Nama Wisata</label>
+                                                        <select class="js-example-basic-single form-select form-control"
+                                                            aria-label="Default select example" name="id_kota" required>
+                                                            <option selected>Tidak ada yang dipilih</option>
+                                                            @foreach ($wisata as $data)
+                                                                <option value="{{ $data->id }}">{{ $data->judul_wisata }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+                                                        <div class="invalid-feedback">Masukkan wisata.</div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="customername-field" class="form-label">Deskripsi
                                                             Wisata</label>
                                                         <input id="summernote" name="detail_wisata"
                                                             class="summernote form-control" height=""

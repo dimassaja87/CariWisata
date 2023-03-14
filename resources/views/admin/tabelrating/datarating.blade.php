@@ -221,17 +221,18 @@
                                         src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/pp.jpg') }}"
                                         alt="Header Avatar">
                                     <span class="text-start ms-xl-2">
-                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
                                         <span
-                                            class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Cari wisata</span>
+                                            class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Administrator</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Cari
+                                            wisata</span>
                                     </span>
                                 </span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
                                 <a class="dropdown-item" href="/"><i
-                                    class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
-                                    class="align-middle" data-key="t-logout">Landing Page</span></a>
+                                        class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span
+                                        class="align-middle" data-key="t-logout">Landing Page</span></a>
                                 <a class="dropdown-item" href="/logoutadmin"><i
                                         class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle" data-key="t-logout">Logout</span></a>
@@ -301,10 +302,25 @@
                                 <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="/kota">
-                                <i class=" bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarKota" data-bs-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                                <i class=" bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
                             </a>
+                            <div class="collapse menu-dropdown" id="sidebarKota">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/kota">
+                                            <span data-key="t-tables">Kota</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/kotadetail"> <span
+                                                data-key="t-tables">Kota Detail</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/rating">
@@ -315,6 +331,46 @@
                             <a class="nav-link menu-link" href="/kontakadmin">
                                 <i class="bx bx-star"></i> <span data-key="t-tables">Data Contact us</span>
                             </a>
+                        </li>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarWisata" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarWisata">
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-charts">Data Wisata</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarWisata">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/wisata">
+                                            <span data-key="t-tables">Wisata</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link menu-link" href="/detailwisata"> <span
+                                                data-key="t-tables">Wisata Detail</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/galery">
+                                <i class="bx bx-photo-album"></i> <span data-key="t-tables">Data Galery</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse"
+                                role="button" aria-expanded="false" aria-controls="sidebarCharts">
+                                <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarCharts">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="/chartuser" class="nav-link" data-key="t-chartjs"> Chartjs </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/barchart" class="nav-link" data-key="t-echarts"> Echarts </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -413,7 +469,8 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td class="id_wisata">{{ $row->destinasis->nama_wisata }}</td>
+                                                            <td class="id_wisata">{{ $row->destinasis->nama_wisata }}
+                                                            </td>
                                                             <td class="rating">{{ $row->rating }}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
@@ -422,7 +479,9 @@
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
-                                                                        <a href="#" data-id="{{ $row->id }}" data-nama="{{ $row->rating }}"
+                                                                        <a href="#"
+                                                                            data-id="{{ $row->id }}"
+                                                                            data-nama="{{ $row->rating }}"
                                                                             class="btn btn-sm btn-danger deleterating">Remove</a>
                                                                     </div>
                                                                 </div>
@@ -1244,11 +1303,11 @@
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-        {{-- JavaScript --}}
+    {{-- JavaScript --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
