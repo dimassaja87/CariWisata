@@ -6,10 +6,9 @@ use App\Models\User;
 use App\Models\Destinasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use App\Http\Controllers\Auth;
-use Illuminate\Support\Facades\Auth as FacadesAuth;
+use Illuminate\Support\Facades\Auth;
 
-// use Illuminate\Support\Facades\Auth as FacadesAuth;
+ use Illuminate\Support\Facades\Auth as FacadesAuth;
 
 class LoginController extends Controller
 {
@@ -64,9 +63,12 @@ class LoginController extends Controller
 
         return redirect('login');
     }
-    public function logoutuser()
-    {
-        return view('user.login');
+    public function logoutuser(){
+        Auth::logout();
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+        return redirect('/');
+
     }
 
     public function register()
@@ -103,6 +105,13 @@ class LoginController extends Controller
         $data->save();
 
         return redirect('profil')->with('sukses','Data Berhasil di Perbarui');
+    }
+
+    public function profil()
+    {
+        $data = Destinasi::all();
+
+        return view ('profile.profil',compact('data'));
     }
 }
 

@@ -90,16 +90,16 @@
                                     <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}" alt="User Avatar" style="width: 35px;height:35px;border-radius:50%">
                          </a>
                                     @else
-                                    <img class="user-avatar rounded-circle" src="{{ asset('profile.jpg') }}"alt="" style="width: 30px">
+                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}"alt="" style="width: 30px">
                                     @endif
                                     @auth
                             Selamat datang {{Auth::user()->name}}
                             @endauth
-                                    
+
                         {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}
                         </from>
-                        @else 
-                            <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login</span></a>
+                        @else
+                            <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login & Register</span></a>
                             </a>
                             @endauth
                             @endif
