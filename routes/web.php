@@ -57,10 +57,11 @@ Route::get('/adminn', function () {
 
 Route::get('/profil', function () {
     return view('profile.profil');
-});
+})->name('profil');
 // Route::get('/editprofil', function () {
 //     return view('profile.editprofile');
 // });
+Route::get('/profil', [LoginController::class, 'profil'])->name('profil');
 Route::get('/editprofil', [LoginController::class, 'editprofil'])->name('editprofil');
 Route::put('/updateprofil/{id}', [LoginController::class, 'updateprofil'])->name('updateprofil');
 
@@ -78,6 +79,8 @@ Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
 Route::post('/insertkontak', [kontakController::class, 'insertkontak'])->name('insertkontak');
 Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
 Route::get('/deletekontak/{id}', [KontakController::class, 'deletekontak'])->name('deletekontak');
+
+Route::get('peuncang', [KomenController::class, 'komenpeuncang'])->name('peuncang');
 
 Route::get('/hubungi', function () {
     return view('user.hubungi');
@@ -130,9 +133,9 @@ Route::get('/ayana', function () {
     return view('user.wisata.ayana');
 });
 
-Route::get('/peuncang', function () {
-    return view('user.wisata.peuncang');
-});
+// Route::get('/peuncang', function () {
+//     return view('user.wisata.peuncang');
+// });
 
 Route::get('/kya', function () {
     return view('user.wisata.kya');
