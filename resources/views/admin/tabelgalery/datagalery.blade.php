@@ -53,8 +53,8 @@
                                         alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
-                                        alt="" height="17">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                                        alt="" height="40">
                                 </span>
                             </a>
 
@@ -64,8 +64,8 @@
                                         alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
-                                        alt="" height="17">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                                        alt="" height="40">
                                 </span>
                             </a>
                         </div>
