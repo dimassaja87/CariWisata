@@ -90,7 +90,7 @@
                                     <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}" alt="User Avatar" style="width: 35px;height:35px;border-radius:50%">
                          </a>
                                     @else
-                                    <img class="user-avatar rounded-circle" src="{{ asset('profile.jpg') }}"alt="" style="width: 30px">
+                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}"alt="" style="width: 30px">
                                     @endif
                                     @auth
                             Selamat datang {{Auth::user()->name}}
