@@ -18,15 +18,7 @@
         text: 'Daftar Wisata'
     },
     xAxis: {
-        categories: [
-            'Batu',
-            'Bali',
-            'Semarang',
-            'Bandung',
-            'Banten',
-            'Banyuwangi',
-            'Surabaya'
-        ],
+        categories: {!! json_encode($categories) !!},
         crosshair: true
     },
     yAxis: {

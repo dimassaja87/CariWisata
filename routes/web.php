@@ -60,7 +60,7 @@ Route::get('/destinasi', function () {
 
 Route::get('/profil', function () {
     return view('profile.profil');
-});
+})->name('profil');
 // Route::get('/editprofil', function () {
 //     return view('profile.editprofile');
 // });
