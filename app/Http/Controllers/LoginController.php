@@ -106,13 +106,6 @@ class LoginController extends Controller
 
         return redirect('profil')->with('sukses','Data Berhasil di Perbarui');
     }
-
-    public function profil()
-    {
-        $data = Destinasi::all();
-
-        return view ('profile.profil',compact('data'));
-    }
 }
 
 

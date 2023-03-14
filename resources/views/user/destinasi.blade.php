@@ -13,6 +13,8 @@
         <!-- Typography CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
         <!-- DL Menu CSS -->
+        <link href="{{ asset('selengkapnya.css') }}" rel="stylesheet">
+        <!-- DL Menu CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
         <!-- FontAwesome Icon CSS -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
@@ -95,22 +97,23 @@
                     <div class="container">
                         <div class="row">
                             <!-- Hotel Destination Start -->
-                            @foreach ($Kota as $destinasi)
+                            @foreach ($data1 as $destinasi)
                             <div class="col-md-4 col-sm-6">
                                 <div class="mg_hotel_destination fancy-overlay">
                                     <figure>
-                                        <img src="https://asset.kompas.com/crops/ASrd8SDELxvy5W746vwTgKyY52A=/0x0:780x520/750x500/data/photo/2021/09/29/6153ca424f2bc.jpg" alt="" />
+                                        <img src="{{ asset('foto/fotoaja/'.$destinasi->foto_aja) }}" alt="" />
                                         <figcaption>
                                             <a class="view_btn" href="/bandung">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="/bandung">{{$KotaDetail->}}</a></h5>
+                                            <h5><a href="/bandung">{{$destinasi->kotas->nama_kota}}</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
-                                            <p>Liburan yang menyenangkan di Bandung.
-                                            </p>
+                                            <div class="ellipsis">
+                                            {!!  $destinasi->detail_kota  !!}
+                                            </div>
                                         </div>
 
                                     </div>
@@ -119,24 +122,7 @@
                             @endforeach
                             <!-- Hotel Destination End -->
                             <!-- Hotel Destination Start -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="mg_hotel_destination fancy-overlay">
-                                    <figure>
-                                        <img src="https://melampa.com/wp-content/uploads/2019/10/Close-view-of-Avalokitesvara-Pagoda-in-Semarang.jpg" alt=""/>
-                                        <figcaption>
-                                            <a class="view_btn" href="/semarang">Selengkapnya</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="text">
-                                        <div class="mg_destination_hd">
-                                            <h5><a href="/semarang">Jelajah Semarang</a></h5>
-                                        </div>
-                                        <div class="mg_destination_review">
-                                            <p>Menjelajahi Ibu Kota Jawa Tengah dengan seksama dan seru tentunya!</p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- Hotel Destination End -->
                             <!-- Hotel Destination Start -->
                             <div class="col-md-4 col-sm-6">

@@ -89,7 +89,6 @@
                                         <!-- <div class="p-2">
                                             <h4 class="text-white mb-1">24.3K</h4>
                                             <p class="fs-14 mb-0">Followers</p>
-<<<<<<< Updated upstream
                                         </div> -->
                                         </div>
                                     </div>
@@ -228,6 +227,281 @@
                                                 <div class="row">
                                                 @foreach($data as $yolaa)
                                                     <div class="col-xxl-3 col-sm-6" >
+                                                <h5 class="card-title mb-3">Activities</h5>
+                                                <div class="acitivity-timeline">
+                                                    <div class="acitivity-item d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-1.jpg') }}" alt="" class="avatar-xs rounded-circle acitivity-avatar" />
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            <h6 class="mb-1">Oliver Phillips <span class="badge bg-soft-primary text-primary align-middle">New</span></h6>
+                                                            <p class="text-muted mb-2">We talked about a project on linkedin.</p>
+                                                            <small class="mb-0 text-muted">Today</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="acitivity-item py-3 d-flex">
+                                                        <div class="flex-shrink-0 avatar-xs acitivity-avatar">
+                                                            <div class="avatar-title bg-soft-success text-success rounded-circle">
+                                                                N
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            <h6 class="mb-1">Nancy Martino <span class="badge bg-soft-secondary text-secondary align-middle">In Progress</span></h6>
+                                                            <p class="text-muted mb-2"><i class="ri-file-text-line align-middle ms-2"></i> Create new project Buildng product</p>
+                                                            <div class="avatar-group mb-2">
+                                                                <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Christi">
+                                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-4.jpg') }}" alt="" class="rounded-circle avatar-xs" />
+                                                                </a>
+                                                                <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Frank Hook">
+                                                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}" alt="" class="rounded-circle avatar-xs" />
+                                                                </a>
+                                                                <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title=" Ruby">
+                                                                    <div class="avatar-xs">
+                                                                        <div class="avatar-title rounded-circle bg-light text-primary">
+                                                                            R
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end card body -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-xxl-3 col-sm-6">
+                                                        <div class="card profile-project-card shadow-none profile-project-success">
+                                                            <div class="card-body p-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-grow-1 text-muted overflow-hidden">
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">ABC Project Customization</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">2 month Ago</span></p>
+                                                                    </div>
+                                                                    <div class="flex-shrink-0 ms-2">
+                                                                        <div class="badge badge-soft-primary fs-10"> Progress</div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="d-flex mt-4">
+                                                                    <div class="flex-grow-1">
+                                                                        <div class="d-flex align-items-center gap-2">
+                                                                            <div>
+                                                                                <h5 class="fs-12 text-muted mb-0">Members :</h5>
+                                                                            </div>
+                                                                            <div class="avatar-group">
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-8.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-7.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-6.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <div class="avatar-title rounded-circle bg-primary">
+                                                                                            2+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end card body -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-xxl-3 col-sm-6">
+                                                        <div class="card profile-project-card shadow-none profile-project-info">
+                                                            <div class="card-body p-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-grow-1 text-muted overflow-hidden">
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">Client - Frank Hook</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">1 hr Ago</span></p>
+                                                                    </div>
+                                                                    <div class="flex-shrink-0 ms-2">
+                                                                        <div class="badge badge-soft-info fs-10">New</div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="d-flex mt-4">
+                                                                    <div class="flex-grow-1">
+                                                                        <div class="d-flex align-items-center gap-2">
+                                                                            <div>
+                                                                                <h5 class="fs-12 text-muted mb-0"> Members :</h5>
+                                                                            </div>
+                                                                            <div class="avatar-group">
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-4.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <div class="avatar-title rounded-circle bg-light text-primary">
+                                                                                            M
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end card body -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-xxl-3 col-sm-6">
+                                                        <div class="card profile-project-card shadow-none profile-project-primary">
+                                                            <div class="card-body p-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-grow-1 text-muted overflow-hidden">
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">Velzon Project</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">11 hr Ago</span></p>
+                                                                    </div>
+                                                                    <div class="flex-shrink-0 ms-2">
+                                                                        <div class="badge badge-soft-success fs-10">Completed</div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="d-flex mt-4">
+                                                                    <div class="flex-grow-1">
+                                                                        <div class="d-flex align-items-center gap-2">
+                                                                            <div>
+                                                                                <h5 class="fs-12 text-muted mb-0">Members :</h5>
+                                                                            </div>
+                                                                            <div class="avatar-group">
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-7.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-5.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end card body -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-xxl-3 col-sm-6">
+                                                        <div class="card profile-project-card shadow-none profile-project-danger">
+                                                            <div class="card-body p-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-grow-1 text-muted overflow-hidden">
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">Brand Logo Design</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">10 min Ago</span></p>
+                                                                    </div>
+                                                                    <div class="flex-shrink-0 ms-2">
+                                                                        <div class="badge badge-soft-info fs-10">New</div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="d-flex mt-4">
+                                                                    <div class="flex-grow-1">
+                                                                        <div class="d-flex align-items-center gap-2">
+                                                                            <div>
+                                                                                <h5 class="fs-12 text-muted mb-0">Members :</h5>
+                                                                            </div>
+                                                                            <div class="avatar-group">
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-7.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-6.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <div class="avatar-title rounded-circle bg-light text-primary">
+                                                                                            E
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end card body -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-xxl-3 col-sm-6">
+                                                        <div class="card profile-project-card shadow-none profile-project-primary">
+                                                            <div class="card-body p-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-grow-1 text-muted overflow-hidden">
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">Chat App</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">8 hr Ago</span></p>
+                                                                    </div>
+                                                                    <div class="flex-shrink-0 ms-2">
+                                                                        <div class="badge badge-soft-warning fs-10">Inprogress</div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="d-flex mt-4">
+                                                                    <div class="flex-grow-1">
+                                                                        <div class="d-flex align-items-center gap-2">
+                                                                            <div>
+                                                                                <h5 class="fs-12 text-muted mb-0">Members :</h5>
+                                                                            </div>
+                                                                            <div class="avatar-group">
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <div class="avatar-title rounded-circle bg-light text-primary">
+                                                                                            R
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-group-item">
+                                                                                    <div class="avatar-xs">
+                                                                                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-8.jpg') }}" alt="" class="rounded-circle img-fluid" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end card body -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-xxl-3 col-sm-6">
                                                         <div class="card profile-project-card shadow-none profile-project-warning">
                                                             <div class="card-body p-4">
                                                                 <div class="d-flex">
@@ -235,6 +509,8 @@
                                                                         <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">{{$yolaa->nama_wisata}}</a></h5>
                                                                         <p class="text-muted text-truncate mb-0">Lokasi Wisata : <span class="fw-semibold text-dark">{{$yolaa->lokasi}}</span></p>
                                                                         <p class="text-muted text-truncate mb-0">Deskripsi Destinasi : <span class="fw-semibold text-dark">{{$yolaa->deskripsi}}</span></p>
+                                                                        <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">Project Update</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">48 min Ago</span></p>
                                                                     </div>
                                                                     <div class="flex-shrink-0 ms-2">
                                                                         <div class="badge badge-soft-warning fs-10">Inprogress</div>
@@ -276,6 +552,11 @@
                                                     </div>
                                                 @endforeach
                                                     
+                                                    <!--end col-->
+                                                    
+                                                    <!--end col-->
+                                                    <!--  -->
+                                                    <!--end col-->
                                                     <!--end col-->
                                                     
                                                     <!--end col-->
@@ -330,6 +611,8 @@
                                                         <label for="formFile" class="btn btn-danger"><i class="ri-upload-2-fill me-1 align-bottom"></i> Upload File</label>
                                                     </div>
                                                 </div> -->
+                                            </div> 
+                                                </div>
                                                 
                                             </div>
                                         </div>

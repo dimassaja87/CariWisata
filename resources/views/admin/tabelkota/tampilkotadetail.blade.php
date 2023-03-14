@@ -116,7 +116,6 @@
                                                         <label for="email-field" class="form-label">Kota</label>
                                                         <select class="form-select form-control" aria-label="Default select example"
                                                             name="id_kota" required>
-                                                            <option selected>Nama Kota</option>
                                                             @foreach ($kota as $p)
                                                                 <option value="{{ $p->id }}" <?php if($data->id_kota == $p->id) {echo 'selected'; } ?>>{{ $p->nama_kota }}</option>
                                                             @endforeach

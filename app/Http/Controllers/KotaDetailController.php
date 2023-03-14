@@ -29,7 +29,7 @@ class KotaDetailController extends Controller
         $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
         $kota = Kota::all();
-        return view('admin.tabelkota.tambahkotadetail', compact('data', 'kota'));
+        return view('admin.tabelkota.tambahkotadetail', compact('data','kota'));
     }
 
     public function insertkotadetail(Request $request)
@@ -48,21 +48,26 @@ class KotaDetailController extends Controller
         return redirect()->route('kotadetail')->with('success', 'Data Behasil Ditambahkan!');
     }
 
-    public function tampilkotadetail($id)
+    public function tampilkotadetail(Request $request, $id)
     {
-        $kota = Kota::all();
+        $data = KotaDetail::findorfail($id);
+        $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
         $kota = Kota::all();
         // dd($data);
 
-        return view('admin.tabelkota.tampilkotadetail', compact('data', 'kota'));
+        return view('admin.tabelkota.tampilkotadetail', compact('data','kota'));
     }
 
     public function updatekotadetail(Request $request, $id)
     {
         $data = KotaDetail::find($id);
-        $data->update('all');
+        $data->update([
+            'id_kota' => $request->id_kota,
+            'foto_aja' => $request->foto_aja,
+            'detail_kota' => $request->detail_kota,
+        ]);
         if ($request->hasFile('foto_aja'))
         {
             $fotoaja = 'foto/fotoaja/'.$data->foto_aja;
