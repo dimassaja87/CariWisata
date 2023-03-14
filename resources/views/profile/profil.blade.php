@@ -74,7 +74,7 @@
                             <div class="col">
                                 <div class="p-2">
 
-                                    <h3 class="text-white mb-1">
+                                    <h3 class="text-white mb-1"> 
                                     {{Auth::user()->name }}
                                     </h3>
                                     <p class="text-white-75">
