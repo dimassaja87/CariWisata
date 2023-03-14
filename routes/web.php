@@ -36,6 +36,14 @@ use App\Models\Komen;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/adminn', function () {
+    $jumlahwisata = Wisata::count();
+    $jumlahuser = User::count();
+    $jumlahkota = Kota::count();
+    $jumlahkomentar = Komen::count();
+    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota', 'jumlahkomentar'));
+});
+
 Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
 
 
@@ -44,14 +52,6 @@ Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 Route::get('/u', function () {
     return view('user.welcomeuser');
 });
-
-Route::get('/adminn', function () {
-    $jumlahwisata = Wisata::count();
-    $jumlahuser = User::count();
-    $jumlahkota = Kota::count();
-    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota'));
-});
-
 
 Route::get('/profil', function () {
     return view('profile.profil');
