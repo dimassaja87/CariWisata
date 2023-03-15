@@ -334,9 +334,6 @@
                                                     <a href="/tambahdetailwisata" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <a href="/multidelete" method="GET" id="delete-notification"
-                                                        class="btn btn-soft-danger"><i
-                                                            class="ri-delete-bin-2-line"></i></a>
                                                 </div>
                                             </div>
                                             <div class="col-sm">
@@ -356,13 +353,7 @@
                                             <table class="table align-middle table-nowrap" id="customerTable">
                                                 <thead class="table-light">
                                                     <tr>
-                                                        <th scope="col" style="width: 50px;">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    id="checkAll" value="option">
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">ID</th>
+                                                        <th scope="col" style="width: 50px;">#</th>
                                                         <th scope="col">Nama Wisata</th>
                                                         <th scope="col">Deskripsi Wisata</th>
                                                         <th scope="col">Action</th>
@@ -374,16 +365,9 @@
                                                     @endphp
                                                     @foreach ($data as $row)
                                                         <tr>
-                                                            <th scope="row">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        name="ids[{{ $row->id }}]"
-                                                                        value="{{ $row->id }}">
-                                                                </div>
-                                                            </th>
                                                             <th scope="row">{{ $no++ }}</th>
-                                                            <td class="id_wisata">{{ $row->id_wisata }}</td>
-                                                            <td class="detail_wisata">{{ $row->detail_wisata }}</td>
+                                                            <td>{{ $row->wisatas->judul_wisata }}</td>
+                                                            <td class="detail_wisata">{!! $row->detail_wisata !!}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
@@ -402,16 +386,6 @@
                                                     @endforeach
                                                 </tbody>
                                             </table>
-                                            {{-- <div class="noresult" style="display: none">
-                                                <div class="text-center">
-                                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
-                                                        trigger="loop" colors="primary:#121331,secondary:#08a88a"
-                                                        style="width:75px;height:75px"></lord-icon>
-                                                    <h5 class="mt-2">Maaf! Tidak Ada Hasil Yang Ditemukan</h5>
-                                                    <p class="text-muted mb-0">Kami telah mencari lebih dari 99+
-                                                        Pengguna, Kami tidak menemukan data apa pun yang Anda cari.</p>
-                                                </div>
-                                            </div> --}}
                                         </div>
 
                                         <div class="d-flex justify-content-end">

@@ -33,6 +33,9 @@ class LoginController extends Controller
 
     public function registeradmindua(Request $request)
     {
+        $request->validate([
+            'email' => 'required|unique:users'
+        ]);
         User::create([
             'email' => $request->email,
             'name' => $request->name,
@@ -78,6 +81,9 @@ class LoginController extends Controller
 
     public function registeruser(Request $request)
     {
+        $request->validate([
+            'email' => 'required|unique:users'
+        ]);
         User::create([
             'name' => $request->name,
             'email' => $request->email,
