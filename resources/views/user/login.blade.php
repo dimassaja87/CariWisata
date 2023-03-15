@@ -40,7 +40,9 @@
 				<div class="fxt-intro">
 					<div class="sub-title">Welcome To</div>
 					<h1>CariWisata</h1>
-					<p>Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. Vesti ulum nec the dumm.</p>
+					<p>Silahkan Login untuk mencari wisata yang ingin kamu kunjungi dengan informasi yang detail.
+						Jika Anda belum mempunyai akun silahkan registrasi terlebih dahulu
+					</p>
 				</div>
 			</div>
 			<div class="fxt-bg-color">
@@ -65,10 +67,10 @@
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
 							<div class="fxt-content-between">
 								<button type="submit" class="fxt-btn-fill">Log in</button>
-								<div class="checkbox">
+								<!-- <div class="checkbox">
 									<input id="checkbox1" type="checkbox">
 									<label for="checkbox1">Keep me logged in</label>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</form>
