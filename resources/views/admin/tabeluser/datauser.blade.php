@@ -453,8 +453,6 @@
                                                     <a href="/tambahpengguna" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
-                                                            class="ri-delete-bin-2-line"></i></button>
                                                 </div>
                                             </div>
                                             <div class="col-sm">
@@ -472,13 +470,7 @@
                                             <table class="table align-middle table-nowrap" id="customerTable">
                                                 <thead class="table-light">
                                                     <tr>
-                                                        <th scope="col" style="width: 50px;">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    id="checkAll" value="option">
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">ID</th>
+                                                        <th scope="col" style="width: 50px;">#</th>
                                                         <th scope="col">Nama User</th>
                                                         <th scope="col">Email User</th>
                                                         <th scope="col">Foto Profil</th>
@@ -492,12 +484,6 @@
                                                     @endphp
                                                     @foreach ($data as $row)
                                                         <tr>
-                                                            <th scope="row">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        name="chk_child" value="option1">
-                                                                </div>
-                                                            </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
                                                             <td class="nama">{{ $row->nama }}</td>

@@ -10,35 +10,47 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title> Home</title>
     <!-- Bootstrap -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}"
+        rel="stylesheet">
     <!-- Typography CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}"
+        rel="stylesheet">
     <!-- DL Menu CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}"
+        rel="stylesheet">
     <!-- Date And Time Picker CSS -->
-    <link rel="stylesheet" href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
     <!-- FontAwesome Icon CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}"
+        rel="stylesheet">
     <!-- Svg Icon CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/svg.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/svg.css') }}"
+        rel="stylesheet">
     <!-- Slick Slider CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}"
+        rel="stylesheet">
     <!-- Widget CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}"
+        rel="stylesheet">
     <!-- Short Code CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}"
+        rel="stylesheet">
     <!-- Custom Style CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}"
+        rel="stylesheet">
     <!-- Color CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}"
+        rel="stylesheet">
     <!-- Responsive CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('owl.carousel.min.css') }}">
 
-<link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}">
 
-<link rel="stylesheet" href="{{ asset('style.css') }}">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 
 <body>
@@ -50,7 +62,9 @@
             <div class="mg_nav_wrapper">
                 <!-- iqoniq Logo Start-->
                 <div class="mg_logo">
-                    <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220px" alt="" /></a>
+                    <a href="#"><img
+                            src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}"
+                            width="220px" alt="" /></a>
                 </div>
                 <!-- iqoniq Logo End-->
                 <!-- iqoniq Navigation Start-->
@@ -64,7 +78,7 @@
                         <li>
                             <a href="/contactus">contact us</a>
                         </li>
-                        </ul>
+                    </ul>
                     <!--DL Menu Start-->
                     <div id="mg-responsive-navigation" class="dl-menuwrapper">
                         <button class="dl-trigger">Open Menu</button>
@@ -81,33 +95,38 @@
                     </div>
 
                     <div class="mg_login">
-                    @if (Route::has('login'))
-                    @auth
-                        <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                        @if (Auth::user()->foto)
-                        <a href="{{route('profil')}}">
-                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}" alt="User Avatar" style="width: 35px;height:35px;border-radius:50%">
-                         </a>
-                                    @else
-                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}"alt="" style="width: 30px">
-                                    @endif
-                                    @auth
-                            Selamat datang {{Auth::user()->name}}
-                            @endauth
+                        @if (Route::has('login'))
+                            @auth
+                                <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i
+                                        class="fa fa-search"></i></a>
+                                @if (Auth::user()->foto)
+                                    <a href="{{ route('profil') }}">
+                                        <img class="user-avatar rounded-circle"
+                                            src="{{ asset('storage/' . Auth::user()->foto) }}" alt="User Avatar"
+                                            style="width: 35px;height:35px;border-radius:50%">
+                                    </a>
+                                @else
+                                    <img class="user-avatar rounded-circle"
+                                        src="{{ asset('storage/' . Auth::user()->foto) }}"alt=""
+                                        style="width: 30px">
+                                @endif
+                                @auth
+                                    Selamat datang {{ Auth::user()->name }}
+                                @endauth
 
-                        {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a>--}}
-                        </from>
-                        @else
-                            <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login & Register</span></a>
-                            </a>
+                                {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a> --}}
+                            @else
+                                <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login &
+                                        Register</span></a>
+                                </a>
                             @endauth
-                            @endif
+                        @endif
 
-                        </div>
                     </div>
-                    <!-- iqoniq Navigation End-->
                 </div>
-                <!-- iqoniq Top Navigation Outr Wrap End-->
+                <!-- iqoniq Navigation End-->
+            </div>
+            <!-- iqoniq Top Navigation Outr Wrap End-->
         </header>
         <!-- iqoniq Header End-->
         <!-- iqoniq Mina Banner Start-->
@@ -115,17 +134,20 @@
             <div class="mg_slider1">
                 <div>
                     <figure>
-                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner4.jpg') }}" alt="" />
+                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner4.jpg') }}"
+                            alt="" />
                     </figure>
                 </div>
                 <div>
                     <figure>
-                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner5.jpg') }}" alt="" />
+                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner5.jpg') }}"
+                            alt="" />
                     </figure>
                 </div>
                 <div>
                     <figure>
-                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner7.jpg') }}" alt="" />
+                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner7.jpg') }}"
+                            alt="" />
                     </figure>
                 </div>
             </div>
@@ -149,7 +171,10 @@
                         <!-- Nav tabs Start -->
                         <ul class="mg_hotel_nav2" role="tablist">
                             @foreach ($data as $kota)
-                            <li role="presentation" class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}" ><a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide" role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a></li>
+                                <li role="presentation"
+                                    class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}">
+                                    <a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide"
+                                        role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a></li>
                             @endforeach
                         </ul>
                         <!-- Nav tabs End -->
@@ -161,21 +186,22 @@
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
                                         @foreach ($data1->take(6) as $wisata)
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="mg_hotel_destination fancy-overlay">
-                                                <figure>
-                                                    <img src="{{ asset('fotosampul/'.$wisata->sampul_wisata) }}" alt="" />
-                                                    <figcaption>
-                                                        <a class="view_btn" href="/lembang">selengkapnya</a>
-                                                    </figcaption>
-                                                </figure>
-                                                <div class="text">
-                                                    <div class="mg_destination_hd">
-                                                        <h5><a href="">{{$wisata->judul_wisata}}</a></h5>
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="mg_hotel_destination fancy-overlay">
+                                                    <figure>
+                                                        <img src="{{ asset('fotosampul/' . $wisata->sampul_wisata) }}"
+                                                            alt="" />
+                                                        <figcaption>
+                                                            <a class="view_btn" href="/lembang">selengkapnya</a>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="text">
+                                                        <div class="mg_destination_hd">
+                                                            <h5><a href="">{{ $wisata->judul_wisata }}</a></h5>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         @endforeach
 
 
@@ -193,7 +219,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sewu.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/sewu.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -210,7 +237,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/ayana.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/ayana.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="/ayana">selengkapnya</a>
                                                     </figcaption>
@@ -227,7 +255,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/koma.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/koma.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -244,7 +273,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/goda.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/goda.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -261,7 +291,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pelangi.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pelangi.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -278,7 +309,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/museum.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/museum.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -303,7 +335,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lot.jpeg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/lot.jpeg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -320,7 +353,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/kuta.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/kuta.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -337,7 +371,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pura.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pura.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -354,7 +389,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/balizoo.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/balizoo.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -371,7 +407,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pandawa.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/pandawa.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -388,7 +425,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/enua.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/enua.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -413,7 +451,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central1.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central1.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -443,7 +482,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/ extra-images/central2.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/ extra-images/central2.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -473,7 +513,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central3.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central3.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -503,7 +544,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central4.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central4.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -533,7 +575,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central5.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/central5.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -603,7 +646,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe1.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe1.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -633,7 +677,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe2.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe2.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -663,7 +708,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe3.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe3.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -693,7 +739,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe4.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe4.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -723,7 +770,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe5.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe5.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -753,7 +801,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe6.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/europe6.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -793,7 +842,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia1.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia1.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -823,7 +873,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia2.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia2.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -853,7 +904,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia3.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia3.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -883,7 +935,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia4.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia4.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -913,7 +966,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia5.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia5.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -943,7 +997,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia6.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/asia6.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -983,7 +1038,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere1.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere1.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -1013,7 +1069,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere2.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere2.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -1043,7 +1100,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere3.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere3.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -1073,7 +1131,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere4.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere4.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -1103,7 +1162,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere5.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere5.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -1133,7 +1193,8 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
-                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere6.jpg') }}" alt="" />
+                                                    <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/elsewhere6.jpg') }}"
+                                                        alt="" />
                                                     <figcaption>
                                                         <a class="view_btn" href="#">selengkapnya</a>
                                                     </figcaption>
@@ -1185,16 +1246,17 @@
                         <div class="chooseus_slider">
                             <!-- Chooseus Thumb Start -->
                             @foreach ($data1 as $wisata)
-                            <div class="col-md-4">
-                                <div class="mg_chooseus fancy-overlay">
-                                    <figure>
-                                        <img src="{{ asset('fotosampul/'.$wisata->sampul_wisata) }}" alt="">
-                                    </figure>
-                                    <div class="text">
-                                        <h5><a href="#">{{$wisata->judul_wisata}}</a></h5>
+                                <div class="col-md-4">
+                                    <div class="mg_chooseus fancy-overlay">
+                                        <figure>
+                                            <img src="{{ asset('fotosampul/' . $wisata->sampul_wisata) }}"
+                                                alt="">
+                                        </figure>
+                                        <div class="text">
+                                            <h5><a href="#">{{ $wisata->judul_wisata }}</a></h5>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             @endforeach
                             <!-- Chooseus Thumb End -->
                         </div>
@@ -1214,17 +1276,17 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-                        @foreach ($data->take(6) as $kota )
-                        <div class="col-md-4 col-sm-4">
-                            <div class="mg_hotel_destination fancy-overlay">
-                                <figure>
-                                    <img src="{{ asset('fotosampul/'.$kota->foto_sampul) }}" alt="" />
-                                    <figcaption>
-                                        <a class="view_btn" href="/semarang">{{$kota->nama_kota}}</a>
-                                    </figcaption>
-                                </figure>
+                        @foreach ($data->take(6) as $kota)
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('fotosampul/' . $kota->foto_sampul) }}" alt="" />
+                                        <figcaption>
+                                            <a class="view_btn" href="/semarang">{{ $kota->nama_kota }}</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
-                        </div>
                         @endforeach
 
                         <!-- Hotel Destination End -->
@@ -1248,7 +1310,10 @@
                     <!-- iqoniq Heading End -->
                     <!-- Caption Start -->
                     <div class="mg_plan_caption">
-                        <p>ducate, aid, kriteria katalisator John Lennon. Kebutuhan keanekaragaman yang menyelamatkan jiwa meningkatkan pemberdayaan hak karbon di seluruh dunia. Mengejar aspirasi ini memanfaatkan, aksesibilitas UNICEF, mengurangi perlindungan kota kolaboratif kematian anak. ekonomi informal non-partisan; evolusi transformatif perubahan iklim manfaat lokal.</p>
+                        <p>ducate, aid, kriteria katalisator John Lennon. Kebutuhan keanekaragaman yang menyelamatkan
+                            jiwa meningkatkan pemberdayaan hak karbon di seluruh dunia. Mengejar aspirasi ini
+                            memanfaatkan, aksesibilitas UNICEF, mengurangi perlindungan kota kolaboratif kematian anak.
+                            ekonomi informal non-partisan; evolusi transformatif perubahan iklim manfaat lokal.</p>
                     </div>
                     <!-- Caption End -->
                 </div>
@@ -1275,9 +1340,11 @@
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
                             @foreach ($data2->take(15) as $Galery)
-                            <div class="masonry-item fancy-overlay">
-                                <figure class="thumb-link"><img src="{{ asset('foto/fotogalery/'.$Galery->fotogalery) }}" alt=""></figure>
-                            </div>
+                                <div class="masonry-item fancy-overlay">
+                                    <figure class="thumb-link"><img
+                                            src="{{ asset('foto/fotogalery/' . $Galery->fotogalery) }}" alt="">
+                                    </figure>
+                                </div>
                             @endforeach
 
                             <!-- Masonry Item End -->
@@ -1374,7 +1441,9 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="widget widget_text">
                         <div class="logo">
-                            <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}" alt="" /></a>
+                            <a href="#"><img
+                                    src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}"
+                                    alt="" /></a>
                         </div>
                         <div class="text">
                             <p>
@@ -1426,21 +1495,22 @@
         <!-- iqoniq Footer End-->
         <!-- iqoniq Copyright Start-->
         <div class="mg_copyright">
-            <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ THEMES</a></p>
+            <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ
+                    THEMES</a></p>
         </div>
         <!-- iqoniq Copyright End-->
         <!-- register Modal -->
         <div class="modal fade" id="search" tabindex="-1" role="dialog">
-                <div class="modal-dialog login1 login5 login5-1">
-                    <div class="modal-tab">
-                        <form action="" method="get">
+            <div class="modal-dialog login1 login5 login5-1">
+                <div class="modal-tab">
+                    <form action="" method="get">
                         <div class="mg_input_1">
-                            <input type="text" class="form-control" name="keyword" placeholder="Search keyword" >
+                            <input type="text" class="form-control" name="keyword" placeholder="Search keyword">
                             <label class="search_icon"><input type="submit"></label>
                         </div>
-                    </div>
                 </div>
             </div>
+        </div>
         <!-- register Modal end-->
     </div>
     <!-- iqoniq Wrapper End-->
@@ -1454,10 +1524,16 @@
     <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/masonry.min.js') }}"></script>
     <!-- Date Time Picker -->
     <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
-    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
+    <script
+        src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}">
+    </script>
     <!--Dl Menu Script-->
-    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
-    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
+    <script
+        src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}">
+    </script>
+    <script
+        src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}">
+    </script>
     <!--Custom Script-->
     <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 </body>

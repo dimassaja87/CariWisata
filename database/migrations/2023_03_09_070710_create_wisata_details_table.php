@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('wisata_details', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_wisata');
-            $table->longText('detail_wisata');
+            $table->longText('detail_wisata')->nullable();
+            $table->string('files')->nullable();
             $table->timestamps();
         });
     }
