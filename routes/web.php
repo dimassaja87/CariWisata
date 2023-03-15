@@ -23,6 +23,7 @@ use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
 use App\Http\Controllers\KotaDetailController;
 use App\Http\Controllers\NyobaController;
+use App\Http\Controllers\SelengkapnyaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
 use App\Models\Komen;
@@ -72,6 +73,7 @@ Route::get('/aboutus', function () {
      return view('user.contactus');
  });
 
+
  //contactus
 Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
 Route::post('/insertkontak', [kontakController::class, 'insertkontak'])->name('insertkontak');
@@ -83,6 +85,8 @@ Route::get('peuncang', [KomenController::class, 'komenpeuncang'])->name('peuncan
 Route::get('/hubungi', function () {
     return view('user.hubungi');
 });
+
+Route::get('/selengkapnya/{id}', [SelengkapnyaController::class, 'selengkapnya'])->name('selengkapnya');
 
 Route::get('/login', function () {
     return view('user.login');
@@ -198,7 +202,7 @@ Route::post('/updatepengguna/{id}',[PenggunaController::class, 'updatepengguna']
 Route::get('/deletepengguna/{id}',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna');
 
 //Data destinasi
-Route::get('/destinasi/{id}',[DestinasiController::class, 'destinasi'])->name('destinasi');
+Route::get('/destinasi',[DestinasiController::class, 'destinasi'])->name('destinasi');
 Route::get('/datadestinasi',[DestinasiController::class, 'datadestinasi'])->name('datadestinasi');
 Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
 Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
@@ -326,42 +330,6 @@ Route::get('/chartuser',[ChartController::class, 'index']);
 Route::get('bar-chart', [ChartController::class, 'showBarChart']);
 
 //akhir chart
-Route::get('/ayana',[KomenController::class, 'komenayana'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/jatim',[KomenController::class, 'komenjatim'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/kawah',[KomenController::class, 'komenkawah'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/kya',[KomenController::class, 'komenkya'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/lawang',[KomenController::class, 'komenlawang'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/lembang',[KomenController::class, 'komenlembang'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/museumangkut',[KomenController::class, 'komenmuseum'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/pandawa',[KomenController::class, 'komenpandawa'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/panglipuran',[KomenController::class, 'komenpanglipuran'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/peuncang',[KomenController::class, 'komenpeuncang'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/santerra',[KomenController::class, 'komensanterra'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
-Route::get('/tanahlot',[KomenController::class, 'komentanahlot'])->name('komen');
-Route::post('/insertkomen',[KomenController::class, 'insertkomen'])->name('insert');
-
 
 //grafik
 Route::get('/grafik',[GrafikController::class,'index']);

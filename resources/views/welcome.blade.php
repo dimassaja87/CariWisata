@@ -170,11 +170,11 @@
                     <div class="mg_hotel_destination_tab">
                         <!-- Nav tabs Start -->
                         <ul class="mg_hotel_nav2" role="tablist">
-                            @foreach ($data as $kota)
+                        @foreach ($data->take(6) as $KotaDetail)
                                 <li role="presentation"
-                                    class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}">
-                                    <a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide"
-                                        role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a></li>
+                                    class="{{ strtolower($KotaDetail->id_kota) == strtolower(request()->KotaDetail) ? 'active' : '' }}">
+                                    <a href="  $KotaDetail->id_kota  }}/{{ $KotaDetail->id }} " aria-controls="worldwide"
+                                        role="tab" data-toggle="tab">{{ $KotaDetail->id_kota }}</a></li>
                             @endforeach
                         </ul>
                         <!-- Nav tabs End -->
@@ -1276,22 +1276,14 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-                        @foreach ($data->take(6) as $kota_detail )
-                        <div class="col-md-4 col-sm-4">
-                            <div class="mg_hotel_destination fancy-overlay">
-                                <figure>
-                                    <img src="{{ asset('fotosampul/'.$kota->foto_sampul) }}" alt="" />
-                                    <figcaption>
-                                        <a class="view_btn" href="/semarang">{{$kota->nama_kota_detail}}</a>
-                                    </figcaption>
-                                </figure>
-                        @foreach ($data->take(6) as $kota)
+
+                        @foreach ($data->take(6) as $KotaDetail)
                             <div class="col-md-4 col-sm-4">
                                 <div class="mg_hotel_destination fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('fotosampul/' . $kota->foto_sampul) }}" alt="" />
+                                        <img src="{{ asset('foto/fotoaja/'. $KotaDetail->foto_aja) }}" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="/semarang">{{ $kota->nama_kota }}</a>
+                                            <a class="view_btn" href="/semarang">{{ $KotaDetail->nama_kota }}</a>
                                         </figcaption>
                                     </figure>
                                 </div>

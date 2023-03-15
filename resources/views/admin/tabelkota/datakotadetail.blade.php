@@ -359,7 +359,6 @@
                                                                     id="checkAll" value="option">
                                                             </div>
                                                         </th>
-                                                        <th scope="col" style="width: 50px;">#</th>
                                                         <th scope="col">Nama Kota</th>
                                                         <th scope="col">Foto</th>
                                                         <th scope="col">Deskripsi</th>
@@ -374,7 +373,7 @@
                                                         <tr>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td>{{ $row->kotas->nama_kota }}</td>
+                                                            <td>{{ $row->nama_kota }}</td>
                                                             <td class="foto_wisata">
                                                                 <img src="{{ asset('foto/fotoaja/' . $row->foto_aja) }}"
                                                                     alt="" width="150">

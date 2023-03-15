@@ -108,13 +108,9 @@
                                                     @csrf
                                                     <div class="mb-3">
                                                         <label for="email-field" class="form-label">Nama Kota</label>
-                                                        <select class="js-example-basic-single form-select form-control"
-                                                            aria-label="Default select example" name="id_kota" required>
-                                                            <option selected>Tidak ada yang dipilih</option>
-                                                            @foreach ($kota as $data)
-                                                                <option value="{{ $data->id }}">{{ $data->nama_kota }}</option>
-                                                            @endforeach
-                                                        </select>
+                                                        <input class="js-example-basic-single form-select form-control"
+                                                            aria-label="Default select example" name="nama_kota" required>
+                                                        </input>
                                                         <div class="invalid-feedback">Masukkan kota.</div>
                                                     </div>
 

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('kota_details', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_kota');
+            $table->string('nama_kota');
             $table->string('foto_aja');
             $table->longText('detail_kota')->nullable();
             $table->longText('files')->nullable();
