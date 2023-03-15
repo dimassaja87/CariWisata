@@ -1215,13 +1215,13 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-                        @foreach ($data->take(6) as $kota )
+                        @foreach ($data->take(6) as $kota_detail )
                         <div class="col-md-4 col-sm-4">
                             <div class="mg_hotel_destination fancy-overlay">
                                 <figure>
                                     <img src="{{ asset('fotosampul/'.$kota->foto_sampul) }}" alt="" />
                                     <figcaption>
-                                        <a class="view_btn" href="/semarang">{{$kota->nama_kota}}</a>
+                                        <a class="view_btn" href="/semarang">{{$kota->nama_kota_detail}}</a>
                                     </figcaption>
                                 </figure>
                             </div>

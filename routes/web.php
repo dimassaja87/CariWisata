@@ -198,7 +198,7 @@ Route::post('/updatepengguna/{id}',[PenggunaController::class, 'updatepengguna']
 Route::get('/deletepengguna/{id}',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna');
 
 //Data destinasi
-Route::get('/destinasi',[DestinasiController::class, 'destinasi'])->name('destinasi');
+Route::get('/destinasi/{id}',[DestinasiController::class, 'destinasi'])->name('destinasi');
 Route::get('/datadestinasi',[DestinasiController::class, 'datadestinasi'])->name('datadestinasi');
 Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
 Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
