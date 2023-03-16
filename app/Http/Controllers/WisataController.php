@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Wisata;
-use App\Models\WisataDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
@@ -26,10 +25,9 @@ class WisataController extends Controller
     public function tambahwisata()
     {
         $data = Wisata::all();
-        $wisatadetail = WisataDetail::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
-        return view('admin.tabelwisata.tambahwisata', compact('data', 'wisatadetail'));
+        return view('admin.tabelwisata.tambahwisata', compact('data'));
     }
 
     public function insertwisata(Request $request)
@@ -51,12 +49,11 @@ class WisataController extends Controller
     public function tampilwisata($id)
     {
         $data = Wisata::find($id);
-        $wisatadetail = WisataDetail::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
         // dd($data);
 
-        return view('admin.tabelwisata.tampilwisata', compact('data', 'wisatadetail'));
+        return view('admin.tabelwisata.tampilwisata', compact('data'));
     }
 
     public function updatewisata(Request $request, $id)

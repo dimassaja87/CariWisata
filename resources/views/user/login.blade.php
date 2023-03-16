@@ -40,9 +40,7 @@
 				<div class="fxt-intro">
 					<div class="sub-title">Welcome To</div>
 					<h1>CariWisata</h1>
-					<p>Silahkan Login untuk mencari wisata yang ingin kamu kunjungi dengan informasi yang detail.
-						Jika Anda belum mempunyai akun silahkan registrasi terlebih dahulu
-					</p>
+					<p>Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. Vesti ulum nec the dumm.</p>
 				</div>
 			</div>
 			<div class="fxt-bg-color">
@@ -56,16 +54,8 @@
 				<div class="fxt-form">
 					<form action="/loginuserdua" method="POST">
                         @csrf
-						@if (session('sukses'))
-                        <p class="alert alert-success">{{ session('sukses') }}</p>
-						@endif
-						@if ($errors->any())
-						@foreach($errors->all() as $err)
-                        <p class="alert alert-danger">{{ $err }}</p>
-                        @endforeach	
-						@endif
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-1">
-							<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+							<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
 							<i class="flaticon-envelope"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
@@ -75,10 +65,10 @@
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
 							<div class="fxt-content-between">
 								<button type="submit" class="fxt-btn-fill">Log in</button>
-								<!-- <div class="checkbox">
+								<div class="checkbox">
 									<input id="checkbox1" type="checkbox">
 									<label for="checkbox1">Keep me logged in</label>
-								</div> -->
+								</div>
 							</div>
 						</div>
 					</form>

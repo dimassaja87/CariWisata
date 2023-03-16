@@ -48,10 +48,10 @@ class KotaDetailController extends Controller
         return redirect()->route('kotadetail')->with('success', 'Data Behasil Ditambahkan!');
     }
 
-    public function tampilkotadetail( $id)
+    public function tampilkotadetail(Request $request, $id)
     {
         $data = KotaDetail::findorfail($id);
-
+        $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
         $kota = Kota::all();

@@ -22,11 +22,13 @@ use App\Http\Controllers\RatingController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
 use App\Http\Controllers\KotaDetailController;
+<<<<<<< HEAD
 use App\Http\Controllers\NyobaController;
+=======
+>>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
 use App\Models\Komen;
-use App\Models\KotaDetail;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,12 +43,17 @@ use App\Models\KotaDetail;
 Route::get('/adminn', function () {
     $jumlahwisata = Wisata::count();
     $jumlahuser = User::count();
-    $jumlahkota = KotaDetail::count();
+    $jumlahkota = Kota::count();
     $jumlahkomentar = Komen::count();
     return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota', 'jumlahkomentar'));
 });
 
+<<<<<<< HEAD
 // Route::post('/nyoba', [NyobaController::class, 'nyoba'])->name('nyoba');
+=======
+Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
+
+>>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
 
 Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 
@@ -218,7 +225,7 @@ Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('in
 Route::get('/tampildetail{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
 Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
 
-Route::get('/deletedetail/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+Route::get('/deletedetail{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
 
 //Data Wisata detail
 Route::get('/detailwisata',[WisataDetailController::class, 'detailwisata'])->name('detailwisata');
@@ -227,9 +234,9 @@ Route::get('/tambahdetailwisata',[WisataDetailController::class, 'tambahdetailwi
 Route::post('/insertdetailwisata',[WisataDetailController::class, 'insertdetailwisata'])->name('insertdetailwisata');
 
 Route::get('/tampildetailwisata/{id}',[WisataDetailController::class, 'tampildetailwisata'])->name('tampildetailwisata');
-Route::post('/updatedetailwisata/{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata');
+Route::post('/updatedetailwisata{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata');
 
-Route::get('/deletedetailwisata/{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata');
+Route::get('/deletedetailwisata{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata');
 
 //Data Gallery
 Route::get('/galery',[GaleryController::class, 'galery'])->name('galery');
@@ -262,7 +269,7 @@ Route::get('/tambahkotadetail',[KotaDetailController::class, 'tambahkotadetail']
 Route::post('/insertkotadetail',[KotaDetailController::class, 'insertkotadetail'])->name('insertkotadetail');
 
 Route::get('/tampilkotadetail/{id}',[KotaDetailController::class, 'tampilkotadetail'])->name('tampilkotadetail');
-Route::post('/updatekotadetail/{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail');
+Route::post('/updatekotadetail{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail');
 
 Route::get('/deletekotadetail/{id}',[KotaDetailController::class, 'deletekotadetail'])->name('deletekotadetail');
 
@@ -315,9 +322,6 @@ Route::get('nama_kota/search',[HomeController::class,'search']);
 
 Route::get('/register',[LoginController::class, 'register'])->name('register');
 Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
-
-Route::get('/password',[LoginController::class, 'password'])->name('password');
-Route::post('/passworduser',[LoginController::class, 'passworduser'])->name('passworduser');
 
 Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
 //Akhir login user

@@ -180,6 +180,9 @@
                                     <li class="nav-item">
                                         <a href="/chartuser" class="nav-link" data-key="t-chartjs"> Chartjs </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="/barchart" class="nav-link" data-key="t-echarts"> Echarts </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
