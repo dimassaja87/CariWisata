@@ -17,8 +17,13 @@ class DestinasiController extends Controller
         $id_kota = KotaDetail::all();
         return view('user.destinasi',compact('data1','id_kota'));
     }
+    public function selengkapnya($id)
+    {
+        $data = KotaDetail::findorfail($id);
+        return view('user.selengkapnya',compact('data'));
+    }
 
-   
+
 
     public function datadestinasi()
     {

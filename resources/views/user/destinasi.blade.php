@@ -103,7 +103,7 @@
                                     <figure>
                                         <img src="{{ asset('foto/fotoaja/'.$destinasi->foto_aja) }}" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="/selengkapnya/{$}">Selengkapnya</a>
+                                            <a class="view_btn" href="/selengkapnya/{{$destinasi->id}}">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
