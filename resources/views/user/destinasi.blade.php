@@ -72,7 +72,7 @@
                         </div>
                         <!--DL Menu END-->
                         <div class="mg_login">
-                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#search"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <!-- iqoniq Navigation End-->
@@ -299,10 +299,11 @@
             <!-- register Modal end-->
             <!-- register Modal -->
             <div class="modal fade" id="search" tabindex="-1" role="dialog">
-                <div class="modal-dialog login1 login5 login5-1">
+                <div class="modal-dialog login1 login5 login5-1">   
                     <div class="modal-tab">
+                        <form action ="{{ route('destinasi') }}" method="get">
                         <div class="mg_input_1">
-                            <input placeholder="Search keyword" type="text">
+                            <input type="search" class="form-control" name="keyword" placeholder="Search keyword" >
                             <label class="search_icon"><input type="submit"></label>
                         </div>
                     </div>

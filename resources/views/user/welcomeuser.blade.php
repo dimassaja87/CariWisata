@@ -1701,7 +1701,7 @@
                                         <b>143 stasiun</b>
                                     </div>
                                 </div>
-                                <div class="text">
+                                <div class="text"> 
                                     <h6><a href="#">Stasiun </a></h6>
                                     <p>sStasiun kereta api adalah fasilitas operasi kereta api atau tempat kereta api
                                         berhenti secara teratur untuk menaikturunkan penumpang atau membongkar-muat

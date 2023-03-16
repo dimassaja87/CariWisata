@@ -9,5 +9,5 @@ class Grafik extends Model
 {
     use HasFactory;
 
-    protected $table ='coba';
+    protected $table ='destinasis';
 }

@@ -11,11 +11,10 @@ class welcomecontroller extends Controller
 {
      public function welcome(Request $request)
      {
-          $keyword = $request->keyword;
-          $data = KotaDetail::all();
-          $data1 = Wisata::all();
-          $data2 = Galery::all();
-          return view('welcome',compact('data','data1','data2'));
+        $data = kota::all();
+        $data1 = Wisata::all();
+        $data2 = Galery::all();
+            return view('welcome',compact('data','data1','data2'));
      }
 }
 

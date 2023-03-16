@@ -95,24 +95,19 @@
                     </div>
 
                     <div class="mg_login">
-                        @if (Route::has('login'))
-                            @auth
-                                <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i
-                                        class="fa fa-search"></i></a>
-                                @if (Auth::user()->foto)
-                                    <a href="{{ route('profil') }}">
-                                        <img class="user-avatar rounded-circle"
-                                            src="{{ asset('storage/' . Auth::user()->foto) }}" alt="User Avatar"
-                                            style="width: 35px;height:35px;border-radius:50%">
-                                    </a>
-                                @else
-                                    <img class="user-avatar rounded-circle"
-                                        src="{{ asset('storage/' . Auth::user()->foto) }}"alt=""
-                                        style="width: 30px">
-                                @endif
-                                @auth
-                                    Selamat datang {{ Auth::user()->name }}
-                                @endauth
+                    @if (Route::has('login'))
+                    @auth
+                        <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                        @if (Auth::user()->foto)
+                        <a href="{{route('profil')}}">
+                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}" alt="User Avatar" style="width: 35px;height:35px;border-radius:50%">
+                         </a>
+                                    @else
+                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}"alt="" style="width: 30px">
+                                    @endif
+                                    @auth
+                            Selamat datang {{Auth::user()->name}}
+                            @endauth
 
                                 {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a> --}}
                             @else
@@ -1502,11 +1497,11 @@
         <!-- iqoniq Copyright End-->
         <!-- register Modal -->
         <div class="modal fade" id="search" tabindex="-1" role="dialog">
-            <div class="modal-dialog login1 login5 login5-1">
-                <div class="modal-tab">
-                    <form action="" method="get">
+                <div class="modal-dialog login1 login5 login5-1">
+                    <div class="modal-tab">
+                        <form action="" method="get">
                         <div class="mg_input_1">
-                            <input type="text" class="form-control" name="keyword" placeholder="Search keyword">
+                            <input type="text" class="form-control" name="keyword" placeholder="Search keyword" >
                             <label class="search_icon"><input type="submit"></label>
                         </div>
                 </div>
