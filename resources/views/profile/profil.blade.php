@@ -148,7 +148,8 @@
                                 <a href="/editprofil" class="btn btn-success"><i
                                         class="ri-edit-box-line align-bottom"></i> Edit Profile</a>
                             </div>
-                            @nbt
+                            &nbsp;
+                            &nbsp;
                             <div class="flex-shrink-0">
                                 <a href="/logoutuser" class="btn btn-danger"><i
                                         class="ri-edit-box-line align-bottom"></i> Logout </a>

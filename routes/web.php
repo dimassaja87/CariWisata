@@ -320,6 +320,9 @@ Route::get('nama_kota/search',[HomeController::class,'search']);
 Route::get('/register',[LoginController::class, 'register'])->name('register');
 Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
 
+Route::get('/password',[LoginController::class, 'password'])->name('password');
+Route::post('/passworduser',[LoginController::class, 'passworduser'])->name('passworduser');
+
 Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
 //Akhir login user
 

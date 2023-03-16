@@ -54,11 +54,11 @@
 				<div class="fxt-form">
 					<form action="/registeruser" method="POST">
                         @csrf
-						@error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+						@if ($errors->any())
+						@foreach($errors->all() as $err)
+                        <p class="alert alert-danger">{{ $err }}</p>
+                        @endforeach	
+						@endif
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-1">
 							<input type="text" class="form-control" name="name" placeholder="Full Name" required="required">
 							<i class="flaticon-user"></i>
@@ -69,6 +69,10 @@
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
 							<input type="password" class="form-control" name="password" placeholder="Password" required="required">
+							<i class="flaticon-padlock"></i>
+						</div>
+						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
+							<input type="password" class="form-control" name="password_confirmation" placeholder="Confirmasi Password" required="required">
 							<i class="flaticon-padlock"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-4">

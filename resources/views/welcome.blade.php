@@ -85,7 +85,7 @@
                         <ul class="dl-menu">
                             <li class="menu-item mg-parent-menu">
                                 <a href="/">Beranda</a>
-                            </li>
+                            </li> 
                             <li><a href="/aboutus">About us</a></li>
                             <li class="menu-item mg-parent-menu"><a href="/destinasi">destinasi</a>
                             </li>
@@ -95,6 +95,20 @@
                     </div>
 
                     <div class="mg_login">
+                    @if (Route::has('login'))
+                    @auth
+                        <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                        @if (Auth::user()->foto)
+                        <a href="{{route('profil')}}">
+                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}" alt="User Avatar" style="width: 35px;height:35px;border-radius:50%">
+                         </a>
+                                    @else
+                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}"alt="" style="width: 30px">
+                                    @endif
+                                    @auth
+                                    
+                            Selamat datang {{Auth::user()->name}}
+                            @endauth
                         @if (Route::has('login'))
                             @auth
                                 <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i
@@ -113,7 +127,6 @@
                                 @auth
                                     Selamat datang {{ Auth::user()->name }}
                                 @endauth
-
                                 {{-- <a class="mg_login_btn" href="/logout"><i class="fa fa-lock"></i><span>Logout</span></a> --}}
                             @else
                                 <a class="mg_login_btn" href="/login"><i class="fa fa-lock"></i><span>Login &
