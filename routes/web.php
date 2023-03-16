@@ -381,4 +381,8 @@ Route::get('wisata', function(){
 
 Route::get('komentar', function(){
     return view('grafik.komentar');
-});
+}); 
+
+Route::get('/search', 'DestinasiController@search')->name('search');
+
+Route::get('/search', 'welcomecontroller@search')->name('search');

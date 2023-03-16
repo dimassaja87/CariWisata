@@ -83,6 +83,15 @@
                                         <h5 class="card-title mb-0">Tambah Data Kota</h5>
 
                                     </div>
+                                    @if ($errors->any())
+                                        <div class = "alert alert-danger">
+                                            <ul>
+                                                @foreach($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                     <div class="card-body">
                                         <form action="/insertkota" method="POST" enctype="multipart/form-data">
                                             @csrf
@@ -96,7 +105,7 @@
 
                                             <div class="mb-3">
                                                 <label for="date-field" class="form-label">Foto Sampul</label>
-                                                <input type="file" id="date-field" name="foto_sampul" class="form-control"
+                                                <input type="file" id="date-field" name="foto_sampul" class="form-control" accept="image/*"
                                                     placeholder="Pilih Foto" required />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
                                             </div>

@@ -11,9 +11,12 @@ use Illuminate\Support\Facades\File;
 
 class DestinasiController extends Controller
 {
-    public function destinasi()
+    public function destinasi(Request $request)
     {
-        $data1 = KotaDetail::paginate(3);
+        $keyword = $request->keyword;
+        // dd($keyword);
+        $data1 = KotaDetail::where('id_kota','LIKE','%'.$keyword.'%')
+                ->paginate(3);
         return view('user.destinasi',compact('data1'));
     }
 

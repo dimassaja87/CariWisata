@@ -37,6 +37,11 @@ class KotaController extends Controller
 
     public function insertkota(Request $request)
     {
+        $request->validate([
+            'foto_sampul' =>  'required|mimes:foto|file',
+        ],[
+            'foto_sampul.mimes' => 'foto wajib berformat gambar',
+        ]);
         // dd('aa');
         // $this->validate($request, [
         //     'nama' => 'required|min:5|max:30',
@@ -66,6 +71,10 @@ class KotaController extends Controller
     {
         $data = Kota::find($id);
         $data->update($request->all());
+        // $data->validate([
+        //     'foto_sampul' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        // ]);
+        
         if ($request->hasFile('foto_sampul'))
         {
             $destination = 'fotosampul/'.$data->foto_sampul;
@@ -88,7 +97,7 @@ class KotaController extends Controller
         return redirect()->route('kota')->with('success', 'Data Behasil Di Hapus!');
     }
 
-    public function search(Request $request){
+    public function search(Request $request){  
         if($request->has('search')) {
             $kota = Kota::where('nama','LIKE','%'.$request->search. '%')->get();
         }else{

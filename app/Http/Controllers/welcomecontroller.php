@@ -9,9 +9,12 @@ use App\Models\Wisata;
 
 class welcomecontroller extends Controller
 {
-     public function welcome()
+     public function welcome(Request $request)
      {
-        $data = kota::all();
+        $keyword = $request->keyword;
+     //    dd($keyword);
+        $data = kota::where('nama_kota','LIKE','%'.$keyword.'%')
+                    ->get();
         $data1 = Wisata::all();
         $data2 = Galery::all();
             return view('welcome',compact('data','data1','data2'));
