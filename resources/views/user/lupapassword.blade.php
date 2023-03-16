@@ -2,11 +2,11 @@
 <html class="no-js" lang="">
 
 
-<!-- Mirrored from affixtheme.com/html/xmee/demo/register-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Feb 2023 02:15:34 GMT -->
+<!-- Mirrored from affixtheme.com/html/xmee/demo/login-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Feb 2023 02:15:14 GMT -->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>User | Register</title>
+	<title>User | Lupa Password</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -40,59 +40,46 @@
 				<div class="fxt-intro">
 					<div class="sub-title">Welcome To</div>
 					<h1>CariWisata</h1>
-					<p>Silahkan Registrasi jika Anda belum mempunyai akun, jika sudah silahkan lewati halaman ini</p>
+					<p>Silahkan Kirimkan Email Anda!
+					</p>
 				</div>
 			</div>
 			<div class="fxt-bg-color">
 				<div class="fxt-header">
 					<a href="/login" class="fxt-logo"><img src="{{ asset('loginuser/affixtheme.com/html/xmee/demo/img/cariwisata.png') }}" width="250" alt="Logo"></a>
-					<div class="fxt-page-switcher">
-						<a href="/login" class="switcher-text switcher-text1">Login</a>
-						<a href="/register" class="switcher-text switcher-text2 active">Register</a>
-					</div>
 				</div>
 				<div class="fxt-form">
-					<form action="/registeruser" method="POST">
+					<form action="/lupapassword" method="POST">
                         @csrf
-						@if ($errors->any())
-						@foreach($errors->all() as $err)
-                        <p class="alert alert-danger">{{ $err }}</p>
-                        @endforeach	
-						@endif
+							@if (session('sukses'))
+							<p class="alert alert-success">{{ session('sukses') }}</p>
+							@endif
+							@if ($errors->any())
+							@foreach($errors->all() as $err)
+							<p class="alert alert-danger">{{ $err }}</p>
+							@endforeach	
+							@endif
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-1">
-							<input type="text" class="form-control" name="name" placeholder="Full Name" required="required">
-							<i class="flaticon-user"></i>
-						</div>
-						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
-							<input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Your Email" required="required">
+							<input type="email" class="form-control" name="email" placeholder="Email" required="required">
 							<i class="flaticon-envelope"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
-							<input type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password" required="required">
-							<i class="flaticon-padlock"></i>
-						</div>
-						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
-							<input type="password" class="form-control" name="password_confirmation" placeholder="Confirmasi Password" required="required">
-							<i class="flaticon-padlock"></i>
-						</div>
-						<div class="form-group fxt-transformY-50 fxt-transition-delay-4">
 							<div class="fxt-content-between">
-								<button type="submit" class="fxt-btn-fill" id="submitBtn" disabled>Register</button>
-								
-							</div>	
+								<button type="submit" class="fxt-btn-fill">Kirim Email</button>
+								<!-- <div class="checkbox">
+									<input id="checkbox1" type="checkbox">
+									<label for="checkbox1">Keep me logged in</label>
+								</div> -->
+							</div>
 						</div>
-							<div class="checkbox">
-									<input  type="checkbox" id="termsCheck">
-									<label for="termsCheck">Saya setuju dengan ketentuan dan syarat tertentu</label>
-								</div>
 					</form>
 				</div>
 				{{-- <div class="fxt-footer">
 					<ul class="fxt-socials">
-						<li class="fxt-facebook fxt-transformY-50 fxt-transition-delay-6"><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-						<li class="fxt-twitter fxt-transformY-50 fxt-transition-delay-7"><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
-						<li class="fxt-google fxt-transformY-50 fxt-transition-delay-8"><a href="#" title="google"><i class="fab fa-google-plus-g"></i></a></li>
-						<li class="fxt-linkedin fxt-transformY-50 fxt-transition-delay-9"><a href="#" title="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="fxt-facebook fxt-transformY-50 fxt-transition-delay-5"><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="fxt-twitter fxt-transformY-50 fxt-transition-delay-6"><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+						<li class="fxt-google fxt-transformY-50 fxt-transition-delay-7"><a href="#" title="google"><i class="fab fa-google-plus-g"></i></a></li>
+						<li class="fxt-linkedin fxt-transformY-50 fxt-transition-delay-8"><a href="#" title="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
 						<li class="fxt-pinterest fxt-transformY-50 fxt-transition-delay-9"><a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
 					</ul>
 				</div> --}}
@@ -109,24 +96,9 @@
 	<script src="{{ asset('loginuser/affixtheme.com/html/xmee/demo/js/validator.min.js') }}"></script>
 	<!-- Custom Js -->
 	<script src="{{ asset('loginuser/affixtheme.com/html/xmee/demo/js/main.js') }}"></script>
-<script>
-    const termsCheck = document.querySelector('#termsCheck');
-    const submitBtn = document.querySelector('#submitBtn');
-
-    // Memeriksa checkbox setiap kali diperbarui
-    termsCheck.addEventListener('change', function() {
-        if (this.checked) {
-            // Checkbox dicentang, aktifkan tombol submit
-            submitBtn.removeAttribute('disabled');
-        } else {
-            // Checkbox tidak dicentang, nonaktifkan tombol submit
-            submitBtn.setAttribute('disabled', true);
-        }
-    });
-
-</script>
 
 </body>
 
-<!-- Mirrored from affixtheme.com/html/xmee/demo/register-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Feb 2023 02:15:34 GMT -->
+
+<!-- Mirrored from affixtheme.com/html/xmee/demo/login-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Feb 2023 02:15:20 GMT -->
 </html>

@@ -95,20 +95,6 @@
                     </div>
 
                     <div class="mg_login">
-                    @if (Route::has('login'))
-                    @auth
-                        <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
-                        @if (Auth::user()->foto)
-                        <a href="{{route('profil')}}">
-                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}" alt="User Avatar" style="width: 35px;height:35px;border-radius:50%">
-                         </a>
-                                    @else
-                                    <img class="user-avatar rounded-circle" src="{{asset('storage/' . Auth::user()->foto)}}"alt="" style="width: 30px">
-                                    @endif
-                                    @auth
-                                    
-                            Selamat datang {{Auth::user()->name}}
-                            @endauth
                         @if (Route::has('login'))
                             @auth
                                 <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i

@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>User | Login</title>
+	<title>User | Edit Password</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -40,8 +40,7 @@
 				<div class="fxt-intro">
 					<div class="sub-title">Welcome To</div>
 					<h1>CariWisata</h1>
-					<p>Silahkan Login untuk mencari wisata yang ingin kamu kunjungi dengan informasi yang detail.
-						Jika Anda belum mempunyai akun silahkan registrasi terlebih dahulu
+					<p>Silahkan Ubah Password Anda!
 					</p>
 				</div>
 			</div>
@@ -50,7 +49,7 @@
 					<a href="/login" class="fxt-logo"><img src="{{ asset('loginuser/affixtheme.com/html/xmee/demo/img/cariwisata.png') }}" width="250" alt="Logo"></a>
 				</div>
 				<div class="fxt-form">
-					<form action="/passworduser" method="POST">
+					<form action="/mengaturulangpassword" method="POST">
                         @csrf
 						@if (session('sukses'))
                         <p class="alert alert-success">{{ session('sukses') }}</p>
@@ -60,16 +59,16 @@
                         <p class="alert alert-danger">{{ $err }}</p>
                         @endforeach	
 						@endif
+						<input type="hidden" name="token" value="{{$request->route('token')}}">
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
-							<input type="password" class="form-control" name="old_password" placeholder="Password lama" required="required">
-							<i class="flaticon-padlock"></i>
-						</div>
+                            <input type="email" hidden readonly class="form-control" placeholder="Masukkan email kamu" name="email" value="{{ request()->email }}"/>
+                        </div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
-							<input type="password" class="form-control" name="new_password" placeholder="Password baru" required="required">
+							<input type="password" class="form-control" name="password" placeholder="Password baru" required="required">
 							<i class="flaticon-padlock"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
-							<input type="password" class="form-control" name="new_password_confirmation" placeholder="Confirmasi Password baru" required="required">
+							<input type="password" class="form-control" name="password_confirmation" placeholder="Confirmasi Password baru" required="required">
 							<i class="flaticon-padlock"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">

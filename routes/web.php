@@ -16,6 +16,7 @@ use App\Models\Ulasan;
 use App\Models\Wisata;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\RatingController;
@@ -319,8 +320,14 @@ Route::get('nama_kota/search',[HomeController::class,'search']);
 Route::get('/register',[LoginController::class, 'register'])->name('register');
 Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
 
-Route::get('/password',[LoginController::class, 'password'])->name('password');
-Route::post('/passworduser',[LoginController::class, 'passworduser'])->name('passworduser');
+Route::get('/lupapassword', [ForgotPasswordController::class, 'create'])->name('password.create');
+Route::post('/lupapassword', [ForgotPasswordController::class, 'store'])->name('password.store');
+
+Route::get('/mengaturulangpassword{token}', [ForgotPasswordController::class, 'reset'])->name('password.reset');
+Route::post('/mengaturulangpassword', [ForgotPasswordController::class, 'rapli'])->name('password.sendreset');
+
+Route::get('/editpassword', [ForgotPasswordController::class, 'editpw'])->name('password.store');
+Route::post('/updatepassword', [ForgotPasswordController::class, 'updatepassword'])->name('password.store');
 
 Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
 //Akhir login user

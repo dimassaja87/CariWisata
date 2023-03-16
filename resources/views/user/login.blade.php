@@ -75,10 +75,12 @@
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
 							<div class="fxt-content-between">
 								<button type="submit" class="fxt-btn-fill">Log in</button>
-								<!-- <div class="checkbox">
-									<input id="checkbox1" type="checkbox">
-									<label for="checkbox1">Keep me logged in</label>
-								</div> -->
+								<div class="checkbox">
+									<input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} />
+									<label for="remember">
+            							{{ __('Remember me') }}
+        							</label>
+								</div>
 							</div>
 						</div>
 					</form>
