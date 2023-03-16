@@ -88,11 +88,13 @@
                                             @csrf
 
                                             <div class="mb-3">
-                                                <label for="date-field" class="form-label">Foto</label>
-                                                <br><img class="img mb-3"src="{{ asset('foto/fotogalery/' . $data->fotogalery) }}"
-                                                            alt="" style="width: 90px" alt="">
-                                                            <br>
-                                                <input type="file" id="date-field" name="fotogalery" class="form-control"
+                                                <label for="date-field" class="form-label">Foto</label><br>
+                                                @if ($data->fotogalery)
+                                                    <img src="{{ asset('foto/fotogalery/'.$data->fotogalery) }}" class="img-preview img-fluid mb-3 col-sm-5">
+                                                @else
+                                                    <img class="img-preview img-fluid mb-3 col-sm-5">
+                                                @endif
+                                                <input type="file" id="fotogalery" name="fotogalery" class="form-control"
                                                     placeholder="Select Photo"  />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
                                             </div>
@@ -161,9 +163,22 @@
 
     </body>
 
+    <script>
+        function previewImage()
+        {
+            const image = document.querySelector('#fotogalery');
+            const imgPreview = document.querySelector('.img-preview');
 
+            imgPreview.style.display = 'block';
 
-    </body>
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(image.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+    </script>
 
 
     <!-- Mirrored from wrappixel.com/demos/admin-templates/materialart/html/ltr/table-datatable-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Jan 2023 14:20:10 GMT -->

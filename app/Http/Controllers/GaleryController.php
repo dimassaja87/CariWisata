@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
 class GaleryController extends Controller
 {
@@ -33,11 +34,9 @@ class GaleryController extends Controller
 
     public function insertgalery(Request $request)
     {
-        // dd('aa');
-        // $this->validate($request, [
-        //     'nama' => 'required|min:5|max:30',
+        // $request->validate([
+        //     'photo' => 'required|image|mimes:png,jpg,jpeg|max:2048', // maksimal ukuran file 2 MB
         // ]);
-        // dd('bb');
         $data = Galery::create($request->all());
         if ($request->hasFile('fotogalery')) {
             $request->file('fotogalery')->move('foto/fotogalery/', $request->file('fotogalery')->getClientOriginalName());
@@ -61,12 +60,11 @@ class GaleryController extends Controller
     {
         $data = Galery::find($id);
         $data->update($request->all());
-        if ($request->hasFile('fotogalery'))
-        {
-            $destination = 'foto/fotogalery/'.$data->fotogalery;
-            if(File::exists($destination))
+        if ($request->hasFile('fotogalery')) {
+            $destination = 'foto/fotogalery/' . $data->fotogalery;
+            if (File::exists($destination))
             {
-                File::delete($destination);
+                Storage::delete($destination);
             }
             $request->file('fotogalery')->move('foto/fotogalery/', $request->file('fotogalery')->getClientOriginalName());
             $data->fotogalery = $request->file('fotogalery')->getClientOriginalName();
@@ -78,28 +76,34 @@ class GaleryController extends Controller
 
     public function deletegalery($id)
     {
-        $data = Galery::find($id);
+        $data = Galery::findOrFail($id);
+        $destination = 'foto/fotogalery/'.$data->fotogalery;
+        if (File::exists($destination))
+        {
+            File::delete($destination);
+        }
         $data->delete();
         return redirect()->route('galery')->with('success', 'Data Behasil Di Hapus!');
     }
 
-    public function search(Request $request){
-        if($request->has('search')) {
-            $galery = Galery::where('nama','LIKE','%'.$request->search. '%')->get();
-        }else{
+    public function search(Request $request)
+    {
+        if ($request->has('search')) {
+            $galery = Galery::where('nama', 'LIKE', '%' . $request->search . '%')->get();
+        } else {
             $galery = Galery::all();
         }
-        return view('user.galery.bali',['galery' => $galery]);
+        return view('user.galery.bali', ['galery' => $galery]);
     }
 
     //Multiple Delete
     public function multidelete()
-        {
-            Schema::disableForeignKeyConstraints();
-            \App\Models\Galery::truncate();
-            Schema::enableForeignKeyConstraints();
+    {
+        Schema::disableForeignKeyConstraints();
+        \App\Models\Galery::truncate();
+        Schema::enableForeignKeyConstraints();
 
-            toastr()->success('Seluruh Data Berhasil Di Hapus');
-            return redirect()->back()->with('success','Seluruh Data Berhasil Di Hapus');
-        }
+        toastr()->success('Seluruh Data Berhasil Di Hapus');
+        return redirect()->back()->with('success', 'Seluruh Data Berhasil Di Hapus');
+    }
 }

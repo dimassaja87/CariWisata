@@ -63,7 +63,7 @@
 
                             <div class="card-body p-4">
                                 <div class="text-center mt-2">
-                                    <h5 class="text-primary">Selamat Datang Kembali, Admin !</h5>
+                                    <h5 class="text-primary">Selamat Datang !</h5>
                                     <p class="text-muted">Silahkan login!</p>
                                 </div>
                                 <div class="p-2 mt-4">

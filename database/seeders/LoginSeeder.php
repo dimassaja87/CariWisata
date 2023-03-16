@@ -18,7 +18,7 @@ class LoginSeeder extends Seeder
     {
         $adminr2 = [
             [
-                'name' => 'Admin Wisata',
+                'name' => 'Administrator',
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make ('123456789'),
                 'role' => 'Admin',

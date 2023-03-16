@@ -174,7 +174,8 @@
                                 <li role="presentation"
                                     class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}">
                                     <a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide"
-                                        role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a></li>
+                                        role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a>
+                                </li>
                             @endforeach
                         </ul>
                         <!-- Nav tabs End -->
@@ -1276,34 +1277,36 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-                        @foreach ($data->take(6) as $kota_detail )
-                        <div class="col-md-4 col-sm-4">
-                            <div class="mg_hotel_destination fancy-overlay">
-                                <figure>
-                                    <img src="{{ asset('fotosampul/'.$kota->foto_sampul) }}" alt="" />
-                                    <figcaption>
-                                        <a class="view_btn" href="/semarang">{{$kota->nama_kota_detail}}</a>
-                                    </figcaption>
-                                </figure>
-                        @foreach ($data->take(6) as $kota)
+                        @foreach ($data->take(6) as $kota_detail)
                             <div class="col-md-4 col-sm-4">
                                 <div class="mg_hotel_destination fancy-overlay">
                                     <figure>
                                         <img src="{{ asset('fotosampul/' . $kota->foto_sampul) }}" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="/semarang">{{ $kota->nama_kota }}</a>
+                                            <a class="view_btn" href="/semarang">{{ $kota->nama_kota_detail }}</a>
                                         </figcaption>
                                     </figure>
+                                    @foreach ($data->take(6) as $kota)
+                                        <div class="col-md-4 col-sm-4">
+                                            <div class="mg_hotel_destination fancy-overlay">
+                                                <figure>
+                                                    <img src="{{ asset('fotosampul/' . $kota->foto_sampul) }}"
+                                                        alt="" />
+                                                    <figcaption>
+                                                        <a class="view_btn"
+                                                            href="/semarang">{{ $kota->nama_kota }}</a>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    @endforeach
+
+                                    <!-- Hotel Destination End -->
+                                    <!-- Hotel Destination Start -->
+
+                                    <!-- Hotel Destination End -->
                                 </div>
                             </div>
-                        @endforeach
-
-                        <!-- Hotel Destination End -->
-                        <!-- Hotel Destination Start -->
-
-                        <!-- Hotel Destination End -->
-                    </div>
-                </div>
             </section>
             <!-- Destination Section End -->
             <!-- Services Section Start -->
@@ -1351,7 +1354,8 @@
                             @foreach ($data2->take(15) as $Galery)
                                 <div class="masonry-item fancy-overlay">
                                     <figure class="thumb-link"><img
-                                            src="{{ asset('foto/fotogalery/' . $Galery->fotogalery) }}" alt="">
+                                            src="{{ asset('foto/fotogalery/' . $Galery->fotogalery) }}"
+                                            alt="">
                                     </figure>
                                 </div>
                             @endforeach
