@@ -86,7 +86,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>{{ $id_kota->foto_aja }}</h2>
+                    <h2>{{ $id_kota->nama_kota }}</h2>
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>

@@ -27,6 +27,7 @@ use App\Http\Controllers\SelengkapnyaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
 use App\Models\Komen;
+use App\Models\KotaDetail;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +42,7 @@ use App\Models\Komen;
 Route::get('/adminn', function () {
     $jumlahwisata = Wisata::count();
     $jumlahuser = User::count();
-    $jumlahkota = Kota::count();
+    $jumlahkota = KotaDetail::count();
     $jumlahkomentar = Komen::count();
     return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota', 'jumlahkomentar'));
 });

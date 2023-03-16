@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Galery;
 use Illuminate\Http\Request;
-use App\Models\Kota;
 use App\Models\KotaDetail;
 use App\Models\Wisata;
 

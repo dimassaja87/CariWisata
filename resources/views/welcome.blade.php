@@ -172,9 +172,9 @@
                         <ul class="mg_hotel_nav2" role="tablist">
                         @foreach ($data->take(6) as $KotaDetail)
                                 <li role="presentation"
-                                    class="{{ strtolower($KotaDetail->id_kota) == strtolower(request()->KotaDetail) ? 'active' : '' }}">
-                                    <a href="  $KotaDetail->id_kota  }}/{{ $KotaDetail->id }} " aria-controls="worldwide"
-                                        role="tab" data-toggle="tab">{{ $KotaDetail->id_kota }}</a></li>
+                                    class="{{ strtolower($KotaDetail->nama_kota) == strtolower(request()->KotaDetail) ? 'active' : '' }}">
+                                    <a href="  $KotaDetail->nama_kota  }}/{{ $KotaDetail->id }} " aria-controls="worldwide"
+                                        role="tab" data-toggle="tab">{{ $KotaDetail->nama_kota }}</a></li>
                             @endforeach
                         </ul>
                         <!-- Nav tabs End -->
