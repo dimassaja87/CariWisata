@@ -47,8 +47,6 @@ Route::get('/adminn', function () {
     return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota', 'jumlahkomentar'));
 });
 
-Route::get('/selengkapnya/{id}', [Destinasicontroller::class, 'selengkapnya'])->name('selengkapnya');
-
 // Route::post('/nyoba', [NyobaController::class, 'nyoba'])->name('nyoba');
 
 Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
@@ -89,6 +87,7 @@ Route::get('/hubungi', function () {
     return view('user.hubungi');
 });
 
+Route::get('/selengkapnya/{id}', [SelengkapnyaController::class, 'selengkapnya'])->name('selengkapnya');
 
 Route::get('/login', function () {
     return view('user.login');
