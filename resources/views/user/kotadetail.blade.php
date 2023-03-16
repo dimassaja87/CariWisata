@@ -86,7 +86,11 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
+<<<<<<< HEAD:resources/views/user/selengkapnya.blade.php
                     <h2>{{ $id_kota->nama_kota }}</h2>
+=======
+                    <h2>{{ $id_kota->id_kota }}</h2>
+>>>>>>> parent of e4d68eb (pp):resources/views/user/kotadetail.blade.php
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>

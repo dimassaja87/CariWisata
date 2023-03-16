@@ -17,7 +17,16 @@ class DestinasiController extends Controller
         return view('user.destinasi',compact('data1'));
     }
 
+<<<<<<< HEAD
 
+=======
+    public function show($id)
+{
+    $id_kota = KotaDetail::find($id);
+
+    return view('user.destinasi', ['nama_kota' => $id_kota]);
+}
+>>>>>>> parent of e4d68eb (pp)
 
     public function datadestinasi()
     {

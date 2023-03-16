@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Detail Kota | Admin</title>
+    <title>Data Kota | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -305,12 +305,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA DETAIL KOTA</h4>
+                                <h4 class="mb-sm-0">DATA KOTA</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Detail Kota</li>
+                                        <li class="breadcrumb-item active">Data Kota</li>
                                     </ol>
                                 </div>
 
@@ -331,7 +331,7 @@
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
                                                 <div>
-                                                    <a href="/tambahkotadetail" type="button"
+                                                    <a href="/tambahkota" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
                                                 </div>
@@ -353,16 +353,9 @@
                                             <table class="table align-middle table-nowrap" id="customerTable">
                                                 <thead class="table-light">
                                                     <tr>
-                                                        <th scope="col" style="width: 50px;">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    id="checkAll" value="option">
-                                                            </div>
-                                                        </th>
                                                         <th scope="col" style="width: 50px;">#</th>
                                                         <th scope="col">Nama Kota</th>
-                                                        <th scope="col">Foto</th>
-                                                        <th scope="col">Deskripsi</th>
+                                                        <th scope="col">Foto Sampul</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
                                                 </thead>
@@ -374,22 +367,21 @@
                                                         <tr>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td>{{ $row->kotas->nama_kota }}</td>
-                                                            <td class="foto_wisata">
-                                                                <img src="{{ asset('foto/fotoaja/' . $row->foto_aja) }}"
+                                                            <td class="nama_kota">{{ $row->nama_kota }}</td>
+                                                            <td class="foto">
+                                                                <img src="{{ asset('fotosampul/' . $row->foto_sampul) }}"
                                                                     alt="" width="150">
                                                             </td>
-                                                            <td class="detail_kota">{!! $row->detail_kota !!}</td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
-                                                                        <a href="/tampilkotadetail/{{ $row->id }}"
+                                                                        <a href="/tampilkota/{{ $row->id }}"
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
                                                                         <a href="#"
                                                                             data-id="{{ $row->id }}"
-                                                                            data-nama="{{ $row->detail_kota }}"
+                                                                            data-nama="{{ $row->nama_kota }}"
                                                                             class="btn btn-sm btn-danger deletekota">Remove</a>
                                                                     </div>
                                                                 </div>
@@ -1220,18 +1212,18 @@
 </body>
 <script>
     $('.deletekota').click(function() {
-        var kotadetailid = $(this).attr('data-id');
-        var detail_kota = $(this).attr('data-nama');
+        var kotaid = $(this).attr('data-id');
+        var nama_kota = $(this).attr('data-nama');
         swal({
                 title: "Anda yakin?!",
-                text: "Ingin menghapus data dengan nama " + detail_kota + " ",
+                text: "Ingin menghapus data dengan nama " + nama_kota + " ",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletekotadetail/" + kotadetailid + ""
+                    window.location = "/deletekota/" + kotaid + ""
                     swal("Data berhasil dihapus!", {
                         icon: "success",
                     });

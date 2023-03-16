@@ -183,11 +183,17 @@
                     <div class="mg_hotel_destination_tab">
                         <!-- Nav tabs Start -->
                         <ul class="mg_hotel_nav2" role="tablist">
-                        @foreach ($data->take(6) as $KotaDetail)
+                            @foreach ($data as $kota)
                                 <li role="presentation"
+<<<<<<< HEAD
                                     class="{{ strtolower($KotaDetail->nama_kota) == strtolower(request()->KotaDetail) ? 'active' : '' }}">
                                     <a href="  $KotaDetail->nama_kota  }}/{{ $KotaDetail->id }} " aria-controls="worldwide"
                                         role="tab" data-toggle="tab">{{ $KotaDetail->nama_kota }}</a></li>
+=======
+                                    class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}">
+                                    <a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide"
+                                        role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a></li>
+>>>>>>> parent of e4d68eb (pp)
                             @endforeach
                         </ul>
                         <!-- Nav tabs End -->
@@ -1289,18 +1295,30 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-
-                        @foreach ($data->take(6) as $KotaDetail)
+                        @foreach ($data->take(6) as $kota_detail )
+                        <div class="col-md-4 col-sm-4">
+                            <div class="mg_hotel_destination fancy-overlay">
+                                <figure>
+                                    <img src="{{ asset('fotosampul/'.$kota->foto_sampul) }}" alt="" />
+                                    <figcaption>
+                                        <a class="view_btn" href="/semarang">{{$kota->nama_kota_detail}}</a>
+                                    </figcaption>
+                                </figure>
+                        @foreach ($data->take(6) as $kota)
                             <div class="col-md-4 col-sm-4">
                                 <div class="mg_hotel_destination fancy-overlay">
                                     <figure>
-                                        <img src="{{ asset('foto/fotoaja/'. $KotaDetail->foto_aja) }}" alt="" />
+                                        <img src="{{ asset('fotosampul/' . $kota->foto_sampul) }}" alt="" />
                                         <figcaption>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                             <a class="view_btn" href="">{{ $KotaDetail->nama_kota }}</a>
 =======
                                             <a class="view_btn" href="/semarang">{{ $KotaDetail->nama_kota }}</a>
 >>>>>>> parent of d0b8cb6 (udah lagi)
+=======
+                                            <a class="view_btn" href="/semarang">{{ $kota->nama_kota }}</a>
+>>>>>>> parent of e4d68eb (pp)
                                         </figcaption>
                                     </figure>
                                 </div>
