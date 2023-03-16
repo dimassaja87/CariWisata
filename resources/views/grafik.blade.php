@@ -18,7 +18,7 @@
         text: 'Daftar Wisata'
     },
     xAxis: {
-        categories: {!! json_encode($categories) !!},
+        categories: ['jan','Feb','March','Apr','Mei','Jun','July'],
         crosshair: true
     },
     yAxis: {
