@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Charts\SampleChart;
+use App\Models\Kota;
 use App\Models\User;
+use App\Models\Wisata;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use ConsoleTVs\Charts\Facades\Charts;
+// use App\Charts\SampleChart;
 
 class ChartController extends Controller
 {
@@ -26,18 +30,4 @@ class ChartController extends Controller
         }
         return view('admin.charts.chart', compact('data'));
     }
-
-    public function showBarChart()
-    {
-        $chart =  User::create('bar', 'highcharts')
-            ->title('Bar Chart')
-            ->labels(['Jan', 'Feb', 'Mar'])
-            ->values([10, 20, 30]);
-
-        return view('charts.bar', ['chart' => $chart]);
-    }
-    public function nyoba()
-{
-    return view('nyoba');
-}
 }

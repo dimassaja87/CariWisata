@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title> Home</title>
+    <title>Home - Cari Wisata</title>
     <!-- Bootstrap -->
     <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}"
         rel="stylesheet">
@@ -1307,6 +1307,8 @@
                                     <!-- Hotel Destination End -->
                                 </div>
                             </div>
+                        @endforeach
+                    </div>
             </section>
             <!-- Destination Section End -->
             <!-- Services Section Start -->
@@ -1325,7 +1327,7 @@
                         <p>ducate, aid, kriteria katalisator John Lennon. Kebutuhan keanekaragaman yang menyelamatkan
                             jiwa meningkatkan pemberdayaan hak karbon di seluruh dunia. Mengejar aspirasi ini
                             memanfaatkan, aksesibilitas UNICEF, mengurangi perlindungan kota kolaboratif kematian anak.
-                            ekonomi informal non-partisan; evolusi transformatif perubahan iklim manfaat lokal.</p>
+                            ekonomi informal non-partisan evolusi transformatif perubahan iklim manfaat lokal.</p>
                     </div>
                     <!-- Caption End -->
                 </div>
@@ -1508,8 +1510,7 @@
         <!-- iqoniq Footer End-->
         <!-- iqoniq Copyright Start-->
         <div class="mg_copyright">
-            <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ
-                    THEMES</a></p>
+            <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> TADIKA MESRA</a></p>
         </div>
         <!-- iqoniq Copyright End-->
         <!-- register Modal -->

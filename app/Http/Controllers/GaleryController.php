@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class GaleryController extends Controller
 {
@@ -34,18 +35,23 @@ class GaleryController extends Controller
 
     public function insertgalery(Request $request)
     {
-        // $request->validate([
-        //     'photo' => 'required|image|mimes:png,jpg,jpeg|max:2048', // maksimal ukuran file 2 MB
-        // ]);
+        $validator = Validator::make($request->all(), [
+            'fotogalery' => 'required|image||mimes:jpeg,png,jpg,gif,svg|max:2048', // maksimum 2MB
+            
+        ]);
+        if ($validator->fails()) {
+            return redirect()->back()->with('error', 'Data Gagal Ditambahkan!')
+                ->withErrors($validator)
+                ->withInput();
+            }
         $data = Galery::create($request->all());
         if ($request->hasFile('fotogalery')) {
-            $request->file('fotogalery')->move('foto/fotogalery/', $request->file('fotogalery')->getClientOriginalName());
             $data->fotogalery = $request->file('fotogalery')->getClientOriginalName();
-            $data->save();
+            $request->file('fotogalery')->move('foto/fotogalery/', $request->file('fotogalery')->getClientOriginalName());
         }
+        $data->save();
         return redirect()->route('galery')->with('success', 'Data Behasil Ditambahkan!');
     }
-
     public function tampilGalery($id)
     {
         $data = Galery::find($id);
@@ -60,26 +66,24 @@ class GaleryController extends Controller
     {
         $data = Galery::find($id);
         $data->update($request->all());
+
         if ($request->hasFile('fotogalery')) {
             $destination = 'foto/fotogalery/' . $data->fotogalery;
-            if (File::exists($destination))
-            {
-                Storage::delete($destination);
+            if (File::exists($destination)) {
+                File::delete($destination);
             }
             $request->file('fotogalery')->move('foto/fotogalery/', $request->file('fotogalery')->getClientOriginalName());
             $data->fotogalery = $request->file('fotogalery')->getClientOriginalName();
-            $data->update();
         }
-
+        $data->update();
         return redirect()->route('galery')->with('success', 'Data Behasil Di Ubah!');
     }
 
     public function deletegalery($id)
     {
         $data = Galery::findOrFail($id);
-        $destination = 'foto/fotogalery/'.$data->fotogalery;
-        if (File::exists($destination))
-        {
+        $destination = 'foto/fotogalery/' . $data->fotogalery;
+        if (File::exists($destination)) {
             File::delete($destination);
         }
         $data->delete();

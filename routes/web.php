@@ -204,7 +204,7 @@ Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->
 Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
 
 Route::get('/tampildestinasi/{id}',[DestinasiController::class, 'tampildestinasi'])->name('tampildestinasi');
-Route::post('/updatedestinasi{id}',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
+Route::post('/updatedestinasi/{id}',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
 
 Route::get('/deletedestinasi/{id}',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
 
@@ -214,8 +214,8 @@ Route::get('/datawisata',[WisataController::class, 'datawisata'])->name('datawis
 Route::get('/tambahwisata',[WisataController::class, 'tambahwisata'])->name('tambahwisata');
 Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('insertwisata');
 
-Route::get('/tampildetail{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
-Route::post('/updatewisata{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
+Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
+Route::post('/updatewisata/{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
 
 Route::get('/deletedetail/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
 
@@ -237,7 +237,7 @@ Route::get('/tambahgalery',[GaleryController::class, 'tambahgalery'])->name('tam
 Route::post('/insertgalery',[GaleryController::class, 'insertgalery'])->name('insertgalery');
 
 Route::get('/tampilgalery/{id}',[GaleryController::class, 'tampilgalery'])->name('tampilgalery');
-Route::post('/updategalery{id}',[GaleryController::class, 'updategalery'])->name('updategalery');
+Route::post('/updategalery/{id}',[GaleryController::class, 'updategalery'])->name('updategalery');
 
 Route::get('/deletegalery/{id}',[GaleryController::class, 'deletegalery'])->name('deletegalery');
 
@@ -248,7 +248,7 @@ Route::get('/tambahkota',[KotaController::class, 'tambahkota'])->name('tambahkot
 Route::post('/insertkota',[KotaController::class, 'insertkota'])->name('insertkota');
 
 Route::get('/tampilkota/{id}',[KotaController::class, 'tampilkota'])->name('tampilkota');
-Route::post('/updatekota{id}',[KotaController::class, 'updatekota'])->name('updatekota');
+Route::post('/updatekota/{id}',[KotaController::class, 'updatekota'])->name('updatekota');
 
 Route::get('/deletekota/{id}',[KotaController::class, 'deletekota'])->name('deletekota');
 
@@ -274,7 +274,7 @@ Route::get('/tambahrating',[RatingController::class, 'tambahrating'])->name('tam
 Route::post('/insertrating',[RatingController::class, 'insertrating'])->name('insertrating');
 
 Route::get('/tampilrating/{id}',[RatingController::class, 'tampilrating'])->name('tampilrating');
-Route::post('/updaterating{id}',[RatingController::class, 'updaterating'])->name('updaterating');
+Route::post('/updaterating/{id}',[RatingController::class, 'updaterating'])->name('updaterating');
 
 Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating');
 
@@ -323,7 +323,7 @@ Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutus
 //Chart
 Route::get('/chartuser',[ChartController::class, 'index']);
 
-Route::get('bar-chart', [ChartController::class, 'showBarChart']);
+Route::get('chartview', [ChartController::class, 'chartview'])->name('chartview');
 
 //akhir chart
 Route::get('/ayana',[KomenController::class, 'komenayana'])->name('komen');
