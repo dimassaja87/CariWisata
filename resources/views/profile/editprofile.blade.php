@@ -90,11 +90,17 @@
                                         <input type="text" name="email" value="{{Auth::user()->email }}" class="form-control" id="email">
                                         </p>
                                         <p class="text-muted mb-3 w-50">
+                                        <input type="text" name="password" value="{{Auth::user()->password }}" class="form-control" id="password">
+                                        </p>
+                                        <p class="text-muted mb-3 w-50">
                                         <input type="file" name="foto" value="{{Auth::user()->foto }}" class="form-control" id="foto">
                                         </p>
                                         </center>
                                         <div class="modal-footer">
                                         <button type="submit" class="btn btn-primary">Edit Profil</button>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="submit" class="btn btn-danger" href="/password">Edit Password</button>
                                         </div>
                                         </form>
                                     </div>

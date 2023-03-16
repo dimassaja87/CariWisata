@@ -48,13 +48,9 @@
 			<div class="fxt-bg-color">
 				<div class="fxt-header">
 					<a href="/login" class="fxt-logo"><img src="{{ asset('loginuser/affixtheme.com/html/xmee/demo/img/cariwisata.png') }}" width="250" alt="Logo"></a>
-					<div class="fxt-page-switcher">
-						<a href="/login" class="switcher-text switcher-text1 active">Login</a>
-						<a href="/register" class="switcher-text switcher-text2">Register</a>
-					</div>
 				</div>
 				<div class="fxt-form">
-					<form action="/loginuserdua" method="POST">
+					<form action="/passworduser" method="POST">
                         @csrf
 						@if (session('sukses'))
                         <p class="alert alert-success">{{ session('sukses') }}</p>
@@ -64,17 +60,21 @@
                         <p class="alert alert-danger">{{ $err }}</p>
                         @endforeach	
 						@endif
-						<div class="form-group fxt-transformY-50 fxt-transition-delay-1">
-							<input type="email" class="form-control" name="email" placeholder="Email" required="required">
-							<i class="flaticon-envelope"></i>
+						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
+							<input type="password" class="form-control" name="old_password" placeholder="Password lama" required="required">
+							<i class="flaticon-padlock"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
-							<input type="password" class="form-control" name="password" placeholder="Password" required="required">
+							<input type="password" class="form-control" name="new_password" placeholder="Password baru" required="required">
+							<i class="flaticon-padlock"></i>
+						</div>
+						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
+							<input type="password" class="form-control" name="new_password_confirmation" placeholder="Confirmasi Password baru" required="required">
 							<i class="flaticon-padlock"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
 							<div class="fxt-content-between">
-								<button type="submit" class="fxt-btn-fill">Log in</button>
+								<button type="submit" class="fxt-btn-fill">Ubah Password</button>
 								<!-- <div class="checkbox">
 									<input id="checkbox1" type="checkbox">
 									<label for="checkbox1">Keep me logged in</label>
