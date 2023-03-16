@@ -71,7 +71,7 @@ class LoginController extends Controller
         return redirect()->back()->withErrors(['email' => 'Email atau password salah']);
     }
     }
-    
+
     public function logoutuser(){
         Auth::logout();
         request()->session()->invalidate();
@@ -109,7 +109,7 @@ class LoginController extends Controller
         return redirect('/login')->with('sukses','Berhasil Registrasi. Silahkan Login!');
     }
 
-   
+
     public function editprofil()
     {
         return view('profile.editprofile');

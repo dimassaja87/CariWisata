@@ -85,7 +85,7 @@
                         <ul class="dl-menu">
                             <li class="menu-item mg-parent-menu">
                                 <a href="/">Beranda</a>
-                            </li> 
+                            </li>
                             <li><a href="/aboutus">About us</a></li>
                             <li class="menu-item mg-parent-menu"><a href="/destinasi">destinasi</a>
                             </li>

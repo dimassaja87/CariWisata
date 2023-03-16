@@ -57,7 +57,7 @@
 						@if ($errors->any())
 						@foreach($errors->all() as $err)
                         <p class="alert alert-danger">{{ $err }}</p>
-                        @endforeach	
+                        @endforeach
 						@endif
 						<input type="hidden" name="token" value="{{$request->route('token')}}">
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">

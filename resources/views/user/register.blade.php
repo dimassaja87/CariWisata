@@ -57,7 +57,7 @@
 						@if ($errors->any())
 						@foreach($errors->all() as $err)
                         <p class="alert alert-danger">{{ $err }}</p>
-                        @endforeach	
+                        @endforeach
 						@endif
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-1">
 							<input type="text" class="form-control" name="name" placeholder="Full Name" required="required">
@@ -78,8 +78,8 @@
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-4">
 							<div class="fxt-content-between">
 								<button type="submit" class="fxt-btn-fill" id="submitBtn" disabled>Register</button>
-								
-							</div>	
+
+							</div>
 						</div>
 							<div class="checkbox">
 									<input  type="checkbox" id="termsCheck">

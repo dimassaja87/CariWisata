@@ -62,7 +62,7 @@
 						@if ($errors->any())
 						@foreach($errors->all() as $err)
                         <p class="alert alert-danger">{{ $err }}</p>
-                        @endforeach	
+                        @endforeach
 						@endif
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-1">
 							<input type="email" class="form-control" name="email" placeholder="Email" required="required">

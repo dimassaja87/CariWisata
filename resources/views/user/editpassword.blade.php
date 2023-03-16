@@ -57,7 +57,7 @@
 						@if ($errors->any())
 						@foreach($errors->all() as $err)
                         <p class="alert alert-danger">{{ $err }}</p>
-                        @endforeach	
+                        @endforeach
 						@endif
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
 							<input type="password" class="form-control" name="current_password" placeholder="Password lama" required="required">

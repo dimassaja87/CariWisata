@@ -113,8 +113,8 @@
                                         </center>
                                         <div class="flex-shrink-0">
                                             <button type="submit" class="btn btn-primary">Edit Profil</button>
-                                        
-                                       
+
+
                                             <a type="submit" class="btn btn-danger" href="/editpassword">Edit
                                                 Password</a>
                                         </div>

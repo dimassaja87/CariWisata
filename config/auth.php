@@ -97,7 +97,7 @@ return [
             'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,
-            
+
             'terms' => [
                 'provider' => 'users',
                 'table' => 'password_term_resets',
