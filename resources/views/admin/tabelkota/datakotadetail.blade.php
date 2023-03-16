@@ -361,11 +361,7 @@
                                                                     id="checkAll" value="option">
                                                             </div>
                                                         </th>
-<<<<<<< HEAD
-                                                        <th scope="col" style="width: 50px;">#</th>
-=======
                                                         <th scope="col">ID</th>
->>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
                                                         <th scope="col">Nama Kota</th>
                                                         <th scope="col">Foto</th>
                                                         <th scope="col">Deskripsi</th>
@@ -386,7 +382,7 @@
                                                             </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
-                                                            <td>{{ $row->kotas->nama_kota }}</td>
+                                                            <td>{{ $row->nama_kota }}</td>
                                                             <td class="foto_wisata">
                                                                 <img src="{{ asset('foto/fotoaja/' . $row->foto_aja) }}"
                                                                     alt="" width="150">

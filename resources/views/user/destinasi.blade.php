@@ -103,16 +103,12 @@
                                     <figure>
                                         <img src="{{ asset('foto/fotoaja/'.$destinasi->foto_aja) }}" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="/bandung">Selengkapnya</a>
+                                            <a class="view_btn" href="/selengkapnya/{{$destinasi->id}}">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-<<<<<<< HEAD
-                                            <h5><a href="/destinasi">{{$destinasi->kotas->nama_kota}}</a></h5>
-=======
-                                            <h5><a href="/bandung">{{$destinasi->kotas->nama_kota}}</a></h5>
->>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
+                                            <h5><a href="/bandung">{{$destinasi->nama_kota}}</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
                                             <div class="ellipsis">
@@ -136,7 +132,7 @@
                                 <!-- Pagination Start-->
 
                                 <div class="mg_pagination text-center">
-                                {{ $data1->links() }} 
+                                {{ $data1->links() }}
                                 </div>
                                 <!-- Pagination End-->
                             </div>
@@ -303,7 +299,7 @@
             <!-- register Modal end-->
             <!-- register Modal -->
             <div class="modal fade" id="search" tabindex="-1" role="dialog">
-                <div class="modal-dialog login1 login5 login5-1">   
+                <div class="modal-dialog login1 login5 login5-1">
                     <div class="modal-tab">
                         <form action ="{{ route('destinasi') }}" method="get">
                         <div class="mg_input_1">

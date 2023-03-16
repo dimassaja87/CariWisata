@@ -86,7 +86,7 @@
             <!-- Sub Banner Start -->
             <div class="mg_sub_banner">
                 <div class="container">
-                    <h2>{{ $id_kota->nama_kota }}</h2>
+                <h2>{{ $data->nama_kota }}</h2>
                     <ul class="breadcrumb">
                         <li><a href="../top-destinations.html">Destinasi</a></li>
                     </ul>
@@ -108,7 +108,7 @@
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="worldwide">
                                     <!-- Destination Tab Wrap Start -->
-                                    <div class="row">{{ $id_kota->detail_kota }}</div>
+                                    <div class="row">{!! $data->detail_kota !!}</div>
                                     <!-- Destination Tab Wrap End -->
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="usa">

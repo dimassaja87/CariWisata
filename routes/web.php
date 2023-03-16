@@ -22,10 +22,7 @@ use App\Http\Controllers\RatingController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\welcomecontroller;
 use App\Http\Controllers\KotaDetailController;
-<<<<<<< HEAD
 use App\Http\Controllers\NyobaController;
-=======
->>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
 use App\Models\Komen;
@@ -43,17 +40,13 @@ use App\Models\Komen;
 Route::get('/adminn', function () {
     $jumlahwisata = Wisata::count();
     $jumlahuser = User::count();
-    $jumlahkota = Kota::count();
     $jumlahkomentar = Komen::count();
-    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota', 'jumlahkomentar'));
+    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkomentar'));
 });
 
-<<<<<<< HEAD
-// Route::post('/nyoba', [NyobaController::class, 'nyoba'])->name('nyoba');
-=======
 Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
 
->>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
+Route::get('/selengkapnya/{id}', [Destinasicontroller::class, 'selengkapnya'])->name('selengkapnya');
 
 Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 
@@ -389,7 +382,7 @@ Route::get('wisata', function(){
 
 Route::get('komentar', function(){
     return view('grafik.komentar');
-}); 
+});
 
 Route::get('/search', 'DestinasiController@search')->name('search');
 

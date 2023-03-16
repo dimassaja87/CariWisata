@@ -108,19 +108,9 @@
                                                     @csrf
                                                     <div class="mb-3">
                                                         <label for="email-field" class="form-label">Nama Kota</label>
-                                                        <select class="js-example-basic-single form-select form-control"
-                                                            aria-label="Default select example" name="id_kota" required>
-                                                            <option selected>Tidak ada yang dipilih</option>
-                                                            @foreach ($kota as $data)
-<<<<<<< HEAD
-                                                                <option value="{{ $data->id }}">{{ $data->nama_kota }}</option>
-=======
-                                                                <option value="{{ $data->id }}">{{ $data->nama_kota }}
-                                                                </option>
->>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
-                                                            @endforeach
-                                                        </select>
-                                                        <div class="invalid-feedback">Masukkan kota.</div>
+                                                        <input class="js-example-basic-single form-select form-control"
+                                                            aria-label="Default select example" name="nama_kota" required>
+                                                        </input>
                                                     </div>
 
                                                     <div class="mb-3">

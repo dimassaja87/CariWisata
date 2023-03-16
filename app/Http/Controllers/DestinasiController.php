@@ -13,27 +13,16 @@ class DestinasiController extends Controller
 {
     public function destinasi(Request $request)
     {
-        $keyword = $request->keyword;
-        // dd($keyword);
-        $data1 = KotaDetail::where('id_kota','LIKE','%'.$keyword.'%')
-                ->paginate(3);
+        $data1 = KotaDetail::paginate(3);
         return view('user.destinasi',compact('data1'));
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+    public function selengkapnya($id)
+    {
+        $data = KotaDetail::findorfail($id);
+        return view('user.selengkapnya',compact('data'));
+    }
 
-=======
-    public function show($id)
-{
-    $id_kota = KotaDetail::find($id);
-
-    return view('user.destinasi', ['nama_kota' => $id_kota]);
-}
->>>>>>> parent of e4d68eb (pp)
-
-=======
->>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
     public function datadestinasi()
     {
         $data = Destinasi::all();
@@ -62,7 +51,7 @@ class DestinasiController extends Controller
 
         ]);
         if ($request->hasFile('foto_wisata')) {
-            $request->file('foto_wisata')->move('fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
+            $request->file('foto_wisata')->move('foto/fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
             $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->save();
 
@@ -90,7 +79,7 @@ class DestinasiController extends Controller
             {
                 File::delete($destination);
             }
-            $request->file('foto_wisata')->move('fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
+            $request->file('foto_wisata')->move('foto/fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
             $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->update();
         }
