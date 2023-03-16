@@ -83,20 +83,6 @@
                                 <div class="card">
                                     <div class="card-header border-0 align-items-center d-flex">
                                         <h4 class="card-title mb-0 flex-grow-1">Charts</h4>
-                                        <div>
-                                            <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                ALL
-                                            </button>
-                                            <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                1M
-                                            </button>
-                                            <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                6M
-                                            </button>
-                                            <button type="button" class="btn btn-soft-primary btn-sm">
-                                                1Y
-                                            </button>
-                                        </div>
                                     </div><!-- end card header -->
 
                                     <div class="card-header p-0 border-0 bg-soft-light">
@@ -106,24 +92,23 @@
                                     <div class="card-body p-0 pb-2">
                                         <div class="w-100">
                                             <div id="chart-container"></div>
-
                                             <script src="https://code.highcharts.com/highcharts.js"></script>
                                             <script>
                                                 var data = <?php echo json_encode($data); ?>
 
                                                 Highcharts.chart('chart-container', {
                                                     title: {
-                                                        text: 'New User Growth, 2023'
+                                                        text: 'Grafik User'
                                                     },
                                                     subtitle: {
-                                                        text: 'Source: Surfside Media'
+                                                        text: ''
                                                     },
                                                     xAxis: {
                                                         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
                                                     },
                                                     yAxis: {
                                                         title: {
-                                                            text: 'Number of New User'
+                                                            text: 'Jumlah user baru'
                                                         }
                                                     },
                                                     legend: {
@@ -137,7 +122,7 @@
                                                         }
                                                     },
                                                     series: [{
-                                                        name: 'New User',
+                                                        name: 'User baru',
                                                         data: data
                                                     }],
                                                     responsive: {

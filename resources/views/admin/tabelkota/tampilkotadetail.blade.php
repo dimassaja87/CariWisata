@@ -114,12 +114,9 @@
                                                     @csrf
                                                     <div class="mb-3">
                                                         <label for="email-field" class="form-label">Kota</label>
-                                                        <select class="form-select form-control" aria-label="Default select example"
-                                                            name="id_kota" required>
-                                                            @foreach ($kota as $p)
-                                                                <option value="{{ $p->id }}" <?php if($data->id_kota == $p->id) {echo 'selected'; } ?>>{{ $p->nama_kota }}</option>
-                                                            @endforeach
-                                                        </select>
+                                                        <input class="form-select form-control" aria-label="Default select example"
+                                                            name="nama_kota" required>
+                                                        </input>
                                                     </div>
 
                                                     <div class="mb-3">
@@ -202,7 +199,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#summer').DataTable();
+                $('#summer').summernote({});
             });
         </script>
         <!-- JAVASCRIPT -->

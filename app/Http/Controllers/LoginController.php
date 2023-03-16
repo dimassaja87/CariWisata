@@ -33,6 +33,9 @@ class LoginController extends Controller
 
     public function registeradmindua(Request $request)
     {
+        $request->validate([
+            'email' => 'required|unique:users'
+        ]);
         User::create([
             'email' => $request->email,
             'name' => $request->name,
@@ -57,17 +60,38 @@ class LoginController extends Controller
 
     public function loginuserdua(Request $request)
     {
-        if (FacadesAuth::attempt($request->only('email', 'password'))) {
+        if (Auth::attempt($request->only('email', 'password'))) {
+            // dd('aa');
+            // request()->session()->invalidate();
+            // request()->session()->regenerateToken();
             return redirect('/');
         }
 
-        return redirect('login');
+        return redirect('login')->withErrors('password','Email atau Password Salah!');
     }
+    public function password()
+    {
+        return view('user.password');
+    }
+
+    public function passworduser(Request $request)
+    {
+        $request->validate([
+            'old_password' => 'required|current_password',
+            'new_password' => 'required|confirmed',
+        ]);
+        $user = User::find(Auth: id());
+        $user->password = Hash::make($request->new_password);
+        $user->save();
+        $request->session()->regenerate();
+        return back()->with('sukses','Password diubah!');
+        }
+    
     public function logoutuser(){
         Auth::logout();
         request()->session()->invalidate();
-        request()->session()->regenerateToken();
-        return redirect('/');
+            request()->session()->regenerateToken();
+            return redirect('login');
 
     }
 
@@ -78,6 +102,12 @@ class LoginController extends Controller
 
     public function registeruser(Request $request)
     {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|unique:users',
+            'password' => 'required',
+            'password_confirmation' => 'required|same:password',
+        ]);
         User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -87,7 +117,7 @@ class LoginController extends Controller
 
         ]);
 
-        return redirect('/login');
+        return redirect('/login')->with('sukses','Berhasil Registrasi. Silahkan Login!');
     }
 
    
