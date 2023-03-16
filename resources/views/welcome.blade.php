@@ -1283,7 +1283,7 @@
                                     <figure>
                                         <img src="{{ asset('foto/fotoaja/'. $KotaDetail->foto_aja) }}" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="/selengkapnya/{{$welcome->id}}">{{ $KotaDetail->nama_kota }}</a>
+                                            <a class="view_btn" href="">{{ $KotaDetail->nama_kota }}</a>
                                         </figcaption>
                                     </figure>
                                 </div>
