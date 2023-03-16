@@ -14,8 +14,11 @@ class DestinasiController extends Controller
     public function destinasi()
     {
         $data1 = KotaDetail::paginate(3);
-        return view('user.destinasi',compact('data1'));
+        $id_kota = KotaDetail::all();
+        return view('user.destinasi',compact('data1','id_kota'));
     }
+
+   
 
     public function datadestinasi()
     {
@@ -45,7 +48,7 @@ class DestinasiController extends Controller
 
         ]);
         if ($request->hasFile('foto_wisata')) {
-            $request->file('foto_wisata')->move('fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
+            $request->file('foto_wisata')->move('foto/fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
             $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->save();
 
@@ -73,7 +76,7 @@ class DestinasiController extends Controller
             {
                 File::delete($destination);
             }
-            $request->file('foto_wisata')->move('fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
+            $request->file('foto_wisata')->move('foto/fotowisata/', $request->file('foto_wisata')->getClientOriginalName());
             $data->foto_wisata = $request->file('foto_wisata')->getClientOriginalName();
             $data->update();
         }

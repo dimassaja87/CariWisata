@@ -98,14 +98,14 @@
 
                                     </div>
                                     <div class="card-body">
-                                        <form action="{{ route('updatekota', $data->id) }}" method="POST"
+                                        <form action="{{ route('updatedetailwisata', $data->id) }}" method="POST"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="email-field" class="form-label">Nama Wisata</label>
                                                 <select class="form-select form-control" aria-label="Default select example"
-                                                    name="id_kota" required>
-                                                    @foreach ($kota as $x)
+                                                    name="is_wisata" required>
+                                                    @foreach ($wisata as $x)
                                                         <option value="{{ $x->id }}" <?php if($data->id_wisata == $x->id) {echo 'selected'; } ?>>{{ $x->judul_wisata }}</option>
                                                     @endforeach
                                                 </select>
@@ -115,8 +115,8 @@
                                                 <label for="customername-field" class="form-label">Nama
                                                     Kota</label>
                                                     <section>
-                                                        <input id="detail_kota" name="detail_kota" class="snow-editor form-control" style="height: 300px;"
-                                                            placeholder="Masukkan Detail Kota" value="" required />{!! $data->detail_kota !!}
+                                                        <textarea id="detail_kota" name="detail_kota" class="snow-editor form-control" style="height: 300px;"
+                                                            placeholder="Masukkan Detail Kota" value="" required >{!! $data->detail_kota !!}</textarea>
                                                     </section>
                                                 <div class="invalid-feedback">Masukkan detail kota.</div>
                                             </div>
@@ -126,7 +126,7 @@
                                                     <button type="button" class="btn btn-light"
                                                         data-bs-dismiss="modal">Close</button>
                                                     <button type="submit" class="btn btn-success" id="edit-btn">Edit
-                                                        Kota</button>
+                                                        Detail Wisata</button>
                                                     <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                 </div>
                                             </div>
@@ -179,7 +179,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#Jurnal').DataTable();
+                $('#detail_kota').DataTable();
             });
         </script>
                 <!-- JAVASCRIPT -->

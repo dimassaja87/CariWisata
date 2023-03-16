@@ -425,8 +425,6 @@
                                                     <a href="/tambahrating" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
-                                                            class="ri-delete-bin-2-line"></i></button>
                                                 </div>
                                             </div>
                                             <div class="col-sm">
@@ -450,7 +448,7 @@
                                                                     id="checkAll" value="option">
                                                             </div>
                                                         </th>
-                                                        <th scope="col">ID</th>
+                                                        <th scope="col" style="width: 50px;">#</th>
                                                         <th scope="col">Nama Wisata</th>
                                                         <th scope="col">Rating</th>
                                                         <th scope="col">Action</th>
@@ -462,12 +460,6 @@
                                                     @endphp
                                                     @foreach ($data as $row)
                                                         <tr>
-                                                            <th scope="row">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        name="chk_child" value="option1">
-                                                                </div>
-                                                            </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
                                                             <td class="id_wisata">{{ $row->destinasis->nama_wisata }}

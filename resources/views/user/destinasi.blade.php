@@ -103,12 +103,12 @@
                                     <figure>
                                         <img src="{{ asset('foto/fotoaja/'.$destinasi->foto_aja) }}" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="/bandung">Selengkapnya</a>
+                                            <a class="view_btn" href="/selengkapnya/{$}">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="/bandung">{{$destinasi->kotas->nama_kota}}</a></h5>
+                                            <h5><a href="/selengkapnya">{{$destinasi->nama_kota}}</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
                                             <div class="ellipsis">
@@ -132,7 +132,7 @@
                                 <!-- Pagination Start-->
 
                                 <div class="mg_pagination text-center">
-                                {{ $data1->links() }} 
+                                {{ $data1->links() }}
                                 </div>
                                 <!-- Pagination End-->
                             </div>
