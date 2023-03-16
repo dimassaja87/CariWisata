@@ -33,9 +33,6 @@ class LoginController extends Controller
 
     public function registeradmindua(Request $request)
     {
-        $request->validate([
-            'email' => 'required|unique:users'
-        ]);
         User::create([
             'email' => $request->email,
             'name' => $request->name,
@@ -60,23 +57,38 @@ class LoginController extends Controller
 
     public function loginuserdua(Request $request)
     {
-        $credentials = $request->only('email', 'password');
-        $remember = $request->has('remember'); // menentukan apakah remember me diaktifkan atau tidak
+        if (Auth::attempt($request->only('email', 'password'))) {
+            // dd('aa');
+            // request()->session()->invalidate();
+            // request()->session()->regenerateToken();
+            return redirect('/');
+        }
 
-    if (Auth::attempt($credentials, $remember)) {
-        // login berhasil
-        return redirect()->intended('/');
-    } else {
-        // login gagal
-        return redirect()->back()->withErrors(['email' => 'Email atau password salah']);
+        return redirect('login')->withErrors('password','Email atau Password Salah!');
     }
+    public function password()
+    {
+        return view('user.password');
     }
+
+    public function passworduser(Request $request)
+    {
+        $request->validate([
+            'old_password' => 'required|current_password',
+            'new_password' => 'required|confirmed',
+        ]);
+        $user = User::find(Auth: id());
+        $user->password = Hash::make($request->new_password);
+        $user->save();
+        $request->session()->regenerate();
+        return back()->with('sukses','Password diubah!');
+        }
 
     public function logoutuser(){
         Auth::logout();
         request()->session()->invalidate();
-            request()->session()->regenerateToken();
-            return redirect('login');
+        request()->session()->regenerateToken();
+        return redirect('/');
 
     }
 
@@ -90,12 +102,8 @@ class LoginController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|unique:users',
-            'password' => 'required|min:5|max:50',
+            'password' => 'required',
             'password_confirmation' => 'required|same:password',
-        ],[
-            'password.required' => 'Sandi harus diisi',
-            'password.min' => 'Password harus diisi minimal 5',
-            'password.max' => 'Password harus diisi maksimal 50',
         ]);
         User::create([
             'name' => $request->name,
@@ -106,7 +114,7 @@ class LoginController extends Controller
 
         ]);
 
-        return redirect('/login')->with('sukses','Berhasil Registrasi. Silahkan Login!');
+        return redirect('/login');
     }
 
 

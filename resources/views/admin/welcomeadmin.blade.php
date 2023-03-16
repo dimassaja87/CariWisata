@@ -100,7 +100,22 @@
                                                     </h5>
                                                 </div>
                                             </div>
-                                           
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+=======
+>>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
+                                            <div class="d-flex align-items-end justify-content-between mt-4">
+                                                <div>
+                                                    <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
+                                                            class="counter-value" data-target="{{ $jumlahkomentar }}">0</span>
+                                                    </h4>
+                                                </div>
+<<<<<<< HEAD
+>>>>>>> parent of e4d68eb (pp)
+=======
+>>>>>>> parent of def6c1f (Merge branch 'main' of https://github.com/dimassaja87/CariWisata)
                                                 <div class="avatar-sm flex-shrink-0">
                                                     <span class="avatar-title bg-soft-warning rounded fs-3">
                                                         <i class="bx bx-message-dots text-warning"></i>

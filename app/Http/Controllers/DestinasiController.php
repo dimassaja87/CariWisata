@@ -11,14 +11,17 @@ use Illuminate\Support\Facades\File;
 
 class DestinasiController extends Controller
 {
-    public function destinasi()
+    public function destinasi(Request $request)
     {
         $data1 = KotaDetail::paginate(3);
-        $id_kota = KotaDetail::all();
-        return view('user.destinasi',compact('data1','id_kota'));
+        return view('user.destinasi',compact('data1'));
     }
 
-   
+    public function selengkapnya($id)
+    {
+        $data = KotaDetail::findorfail($id);
+        return view('user.selengkapnya',compact('data'));
+    }
 
     public function datadestinasi()
     {

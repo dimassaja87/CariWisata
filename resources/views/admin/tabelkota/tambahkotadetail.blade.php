@@ -111,7 +111,6 @@
                                                         <input class="js-example-basic-single form-select form-control"
                                                             aria-label="Default select example" name="nama_kota" required>
                                                         </input>
-                                                        <div class="invalid-feedback">Masukkan kota.</div>
                                                     </div>
 
                                                     <div class="mb-3">
@@ -126,21 +125,21 @@
                                                         <textarea name="detail_kota" class="summernote form-control" placeholder="Masukkan detail wisata" id="summer"
                                                             required></textarea>
                                                     </div>
-                                                    <div class="modal-footer">
-                                                        <div class="hstack gap-2 justify-content-end">
-                                                            <a href="/kotadetail" type="button" class="btn btn-light"
-                                                                data-bs-dismiss="modal">Close</a>
-                                                            <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                                                Kota</button>
-                                                            <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
+                        <div class="modal-footer">
+                            <div class="hstack gap-2 justify-content-end">
+                                <a href="/detailwisata" type="button" class="btn btn-light"
+                                    data-bs-dismiss="modal">Close</a>
+                                <button type="submit" class="btn btn-success" id="edit-btn">Tambah
+                                    Kota</button>
+                                <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>

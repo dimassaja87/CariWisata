@@ -110,6 +110,15 @@
                                                 <input type="file" name="foto" value="{{ Auth::user()->foto }}"
                                                     class="form-control" id="foto">
                                             </p>
+                                        <h5 class="fs-16 mb-3 w-50">
+                                        <input type="text" name="name" value="{{Auth::user()->name }}" class="form-control" id="name">
+                                        </h5>
+                                        <p class="text-muted mb-3 w-50">
+                                        <input type="text" name="email" value="{{Auth::user()->email }}" class="form-control" id="email">
+                                        </p>
+                                        <p class="text-muted mb-3 w-50">
+                                        <input type="file" name="foto" value="{{Auth::user()->foto }}" class="form-control" id="foto">
+                                        </p>
                                         </center>
                                         <div class="flex-shrink-0">
                                             <button type="submit" class="btn btn-primary">Edit Profil</button>
@@ -119,6 +128,8 @@
                                                 Password</a>
                                         </div>
                                     </form>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

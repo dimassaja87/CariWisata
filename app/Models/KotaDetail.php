@@ -10,6 +10,4 @@ class KotaDetail extends Model
     use HasFactory;
     protected $guarded = [];
 
-
-
 }

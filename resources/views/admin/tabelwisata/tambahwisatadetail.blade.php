@@ -117,10 +117,11 @@
                                                     <div class="mb-3">
                                                         <label for="email-field" class="form-label">Nama Wisata</label>
                                                         <select class="js-example-basic-single form-select form-control"
-                                                            aria-label="Default select example" name="id_wisata" required>
+                                                            aria-label="Default select example" name="id_kota" required>
                                                             <option selected>Tidak ada yang dipilih</option>
                                                             @foreach ($wisata as $data)
-                                                                <option value="{{ $data->id }}">{{ $data->judul_wisata }}</option>
+                                                                <option value="{{ $data->id }}">{{ $data->judul_wisata }}
+                                                                </option>
                                                             @endforeach
                                                         </select>
                                                         <div class="invalid-feedback">Masukkan wisata.</div>
@@ -129,18 +130,9 @@
                                                     <div class="mb-3">
                                                         <label for="customername-field" class="form-label">Deskripsi
                                                             Wisata</label>
-                                                        <textarea id="summernote" name="detail_wisata" class="summernote form-control" height=""
-                                                            placeholder="Masukkan detail wisata" required></textarea>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <div class="hstack gap-2 justify-content-end">
-                                                            <a href="/detailwisata" type="button"
-                                                                class="btn btn-light">Close</a>
-                                                            <button type="submit" class="btn btn-success"
-                                                                id="edit-btn">Tambah
-                                                                Detail Wisata</button>
-                                                            <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                        </div>
+                                                        <input id="summernote" name="detail_wisata"
+                                                            class="summernote form-control" height=""
+                                                            placeholder="Masukkan detail wisata" required />
                                                     </div>
                                             </div>
                                         </div>
@@ -148,6 +140,14 @@
                                 </div>
                             </div>
                         </section>
+                        <div class="modal-footer">
+                            <div class="hstack gap-2 justify-content-end">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success" id="edit-btn">Tambah
+                                    Detail Wisata</button>
+                                <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                            </div>
+                        </div>
                         </form>
                     </div>
                     <!--end col-->
@@ -200,8 +200,7 @@
             });
         </script>
         <!-- JAVASCRIPT -->
-        <script
-            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
         </script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>

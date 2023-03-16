@@ -2,28 +2,32 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\nama;
 use App\Models\Grafik;
+use App\Models\Wisata;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 
 class GrafikController extends Controller
 {
     
     public function index()
 {
-    $grafik=grafik::all();
+    $wisata=Wisata::all();
 
-        $categories = [];
-        
-        foreach ($grafik as $coba) {
-            $coba[] = [
-                'judul' => $grafik->judul,
-                'views' => $grafik->views
-            ];
-        }
-        
+    //data chart
+    $categories = [];
+    foreach($wisata as $mp){
+        $categories[] = [
+            'nama_wisata' => $mp->nama_wisata
+        ];
+    }
+    // dd($categories);
 
-    return view('grafik', ['categories'=>$categories]);
+    return view('grafik', ['wisata'=>$wisata,'categories'=>$categories]);
 }
     
 }
+    
+

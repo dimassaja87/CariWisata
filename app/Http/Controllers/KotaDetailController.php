@@ -28,7 +28,6 @@ class KotaDetailController extends Controller
     {
         $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
-        // $kota = Kota::all();
         return view('admin.tabelkota.tambahkotadetail', compact('data'));
     }
 
@@ -48,13 +47,12 @@ class KotaDetailController extends Controller
         return redirect()->route('kotadetail')->with('success', 'Data Behasil Ditambahkan!');
     }
 
-    public function tampilkotadetail( $id)
+    public function tampilkotadetail(Request $request, $id)
     {
         $data = KotaDetail::findorfail($id);
-
+        $data = KotaDetail::all();
         // $jurusan = Jurusan::all();
         // $destinasi = Destinasi::all();
-        // $kota = Kota::all();
         // dd($data);
 
         return view('admin.tabelkota.tampilkotadetail', compact('data'));
