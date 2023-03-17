@@ -212,7 +212,7 @@ Route::post('/insertdetailwisata',[WisataDetailController::class, 'insertdetailw
 Route::get('/tampildetailwisata/{id}',[WisataDetailController::class, 'tampildetailwisata'])->name('tampildetailwisata')->middleware('auth');
 Route::post('/updatedetailwisata{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata')->middleware('auth');
 
-Route::get('/deletedetailwisata{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata')->middleware('auth');
+Route::get('/deletedetailwisata/{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata')->middleware('auth');
 
 //Data Gallery
 Route::get('/galery',[GaleryController::class, 'galery'])->name('galery')->middleware('auth');
