@@ -16,6 +16,7 @@ use App\Models\Ulasan;
 use App\Models\Wisata;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ChartsController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\RatingController;
@@ -40,12 +41,13 @@ use App\Models\Komen;
 Route::get('/adminn', function () {
     $jumlahwisata = Wisata::count();
     $jumlahuser = User::count();
-    $jumlahkota = Kota::count();
     $jumlahkomentar = Komen::count();
-    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkota', 'jumlahkomentar'));
+    return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkomentar'));
 });
 
-// Route::post('/nyoba', [NyobaController::class, 'nyoba'])->name('nyoba');
+Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
+
+Route::get('/selengkapnya/{id}', [Destinasicontroller::class, 'selengkapnya'])->name('selengkapnya');
 
 Route::get('/', [welcomecontroller::class, 'welcome'])->name('welcome');
 
@@ -217,7 +219,7 @@ Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('in
 Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
 Route::post('/updatewisata/{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
 
-Route::get('/deletedetail/{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+Route::get('/deletedetail{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
 
 //Data Wisata detail
 Route::get('/detailwisata',[WisataDetailController::class, 'detailwisata'])->name('detailwisata');
@@ -226,9 +228,9 @@ Route::get('/tambahdetailwisata',[WisataDetailController::class, 'tambahdetailwi
 Route::post('/insertdetailwisata',[WisataDetailController::class, 'insertdetailwisata'])->name('insertdetailwisata');
 
 Route::get('/tampildetailwisata/{id}',[WisataDetailController::class, 'tampildetailwisata'])->name('tampildetailwisata');
-Route::post('/updatedetailwisata/{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata');
+Route::post('/updatedetailwisata{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata');
 
-Route::get('/deletedetailwisata/{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata');
+Route::get('/deletedetailwisata{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata');
 
 //Data Gallery
 Route::get('/galery',[GaleryController::class, 'galery'])->name('galery');
@@ -261,7 +263,7 @@ Route::get('/tambahkotadetail',[KotaDetailController::class, 'tambahkotadetail']
 Route::post('/insertkotadetail',[KotaDetailController::class, 'insertkotadetail'])->name('insertkotadetail');
 
 Route::get('/tampilkotadetail/{id}',[KotaDetailController::class, 'tampilkotadetail'])->name('tampilkotadetail');
-Route::post('/updatekotadetail/{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail');
+Route::post('/updatekotadetail{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail');
 
 Route::get('/deletekotadetail/{id}',[KotaDetailController::class, 'deletekotadetail'])->name('deletekotadetail');
 
@@ -314,6 +316,15 @@ Route::get('nama_kota/search',[HomeController::class,'search']);
 
 Route::get('/register',[LoginController::class, 'register'])->name('register');
 Route::post('/registeruser',[LoginController::class, 'registeruser'])->name('registeruser');
+
+Route::get('/lupapassword', [ForgotPasswordController::class, 'create'])->name('password.create');
+Route::post('/lupapassword', [ForgotPasswordController::class, 'store'])->name('password.store');
+
+Route::get('/mengaturulangpassword{token}', [ForgotPasswordController::class, 'reset'])->name('password.reset');
+Route::post('/mengaturulangpassword', [ForgotPasswordController::class, 'rapli'])->name('password.sendreset');
+
+Route::get('/editpassword', [ForgotPasswordController::class, 'editpw'])->name('password.store');
+Route::post('/updatepassword', [ForgotPasswordController::class, 'updatepassword'])->name('password.store');
 
 Route::get('/logoutuser',[LoginController::class, 'logoutuser'])->name('logoutuser');
 //Akhir login user
@@ -382,3 +393,7 @@ Route::get('wisata', function(){
 Route::get('komentar', function(){
     return view('grafik.komentar');
 });
+
+Route::get('/search', 'DestinasiController@search')->name('search');
+
+Route::get('/search', 'welcomecontroller@search')->name('search');

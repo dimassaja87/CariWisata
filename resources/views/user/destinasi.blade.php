@@ -72,7 +72,7 @@
                         </div>
                         <!--DL Menu END-->
                         <div class="mg_login">
-                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i class="fa fa-search"></i></a>
+                            <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#search"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <!-- iqoniq Navigation End-->
@@ -103,12 +103,12 @@
                                     <figure>
                                         <img src="{{ asset('foto/fotoaja/'.$destinasi->foto_aja) }}" alt="" />
                                         <figcaption>
-                                            <a class="view_btn" href="/bandung">Selengkapnya</a>
+                                            <a class="view_btn" href="/selengkapnya/{{$destinasi->id}}">Selengkapnya</a>
                                         </figcaption>
                                     </figure>
                                     <div class="text">
                                         <div class="mg_destination_hd">
-                                            <h5><a href="/destinasi">{{$destinasi->kotas->nama_kota}}</a></h5>
+                                            <h5><a href="/bandung">{{$destinasi->nama_kota}}</a></h5>
                                         </div>
                                         <div class="mg_destination_review">
                                             <div class="ellipsis">
@@ -301,8 +301,9 @@
             <div class="modal fade" id="search" tabindex="-1" role="dialog">
                 <div class="modal-dialog login1 login5 login5-1">
                     <div class="modal-tab">
+                        <form action ="{{ route('destinasi') }}" method="get">
                         <div class="mg_input_1">
-                            <input placeholder="Search keyword" type="text">
+                            <input type="search" class="form-control" name="keyword" placeholder="Search keyword" >
                             <label class="search_icon"><input type="submit"></label>
                         </div>
                     </div>

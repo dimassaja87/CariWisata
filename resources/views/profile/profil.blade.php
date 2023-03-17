@@ -148,15 +148,16 @@
                                 <a href="/editprofil" class="btn btn-success"><i
                                         class="ri-edit-box-line align-bottom"></i> Edit Profile</a>
                             </div>
-                            @nbt
+                            &nbsp;
+                            &nbsp;
                             <div class="flex-shrink-0">
                                 <a href="/logoutuser" class="btn btn-danger"><i
                                         class="ri-edit-box-line align-bottom"></i> Logout </a>
-                            </div>
+                            </div>\
                         </div>
                         <!-- Tab panes -->
                         <div class="tab-content pt-4 text-muted">
-                           
+
                                         <div class="tab-pane fade" id="grafik" role="tabpanel">
                                             <div id="chart-container"></div>
                                             <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -195,9 +196,9 @@
                                               series: [ {
                                                   name: 'wisata',
                                                   data: [83, 78, 98, 93, 106, 84, 105, 35, 70, 55, 67, 98]
-                                          
+
                                               }]
-                                          });   
+                                          });
                                           </script>
                                         </div>
                                         <!--end col-->
@@ -290,7 +291,7 @@
                                         <!--end tab-pane-->
                                         <div class="tab-pane fade" id="projects" role="tabpanel">
                                             <div class="card">
-                                               
+
                                                 <div class="card-body col-12">
                                                     <div class="row">
                                                     <h5 class="card-title mb-3">Daftar Wisata</h5>
@@ -314,7 +315,7 @@
                                                     </div>
                                                     @endforeach
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
