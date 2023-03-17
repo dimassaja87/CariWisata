@@ -98,9 +98,9 @@ class DestinasiController extends Controller
 	{
 		if($request->has('search')){
             $search=$request->search;
-            $data = Kota::where('nama_wisata','LIKE','%' . $search .'%')->paginate(5);
+            $data = KotaDetail::where('nama_wisata','LIKE','%' . $search .'%')->paginate(5);
         }else{
-            $data = Kota::paginate(5);
+            $data = KotaDetail::paginate(5);
         }
         return view('user.kota.bali', compact('data'));
 	}

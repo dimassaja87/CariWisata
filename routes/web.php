@@ -27,6 +27,7 @@ use App\Http\Controllers\NyobaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WisataDetailController;
 use App\Models\Komen;
+use App\Models\WisataDetail;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,13 +40,13 @@ use App\Models\Komen;
 |
 */
 Route::get('/adminn', function () {
-    $jumlahwisata = Wisata::count();
+    $jumlahwisata = WisataDetail::count();
     $jumlahuser = User::count();
     $jumlahkomentar = Komen::count();
     return view('admin.welcomeadmin', compact('jumlahwisata', 'jumlahuser', 'jumlahkomentar'));
 });
 
-Route::get('/nyoba', [ChartController::class, 'nyoba'])->name('nyoba');
+// Route::post('/nyoba', [NyobaController::class, 'nyoba'])->name('nyoba');
 
 Route::get('/selengkapnya/{id}', [Destinasicontroller::class, 'selengkapnya'])->name('selengkapnya');
 
@@ -189,119 +190,89 @@ Route::get('/komentar', function(){
 });
 
 //Data User
-Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna');
+Route::get('/pengguna',[PenggunaController::class, 'pengguna'])->name('pengguna')->middleware('auth');
 
-Route::get('/tambahpengguna',[PenggunaController::class, 'tambahpengguna'])->name('tambahpengguna');
-Route::post('/insertpengguna',[PenggunaController::class, 'insertpengguna'])->name('insertpengguna');
+Route::get('/tambahpengguna',[PenggunaController::class, 'tambahpengguna'])->name('tambahpengguna')->middleware('auth');
+Route::post('/insertpengguna',[PenggunaController::class, 'insertpengguna'])->name('insertpengguna')->middleware('auth');
 
-Route::get('/tampilpengguna/{id}',[PenggunaController::class, 'tampilpengguna'])->name('tampilpengguna');
-Route::post('/updatepengguna/{id}',[PenggunaController::class, 'updatepengguna'])->name('updatepengguna');
+Route::get('/tampilpengguna/{id}',[PenggunaController::class, 'tampilpengguna'])->name('tampilpengguna')->middleware('auth');
+Route::post('/updatepengguna/{id}',[PenggunaController::class, 'updatepengguna'])->name('updatepengguna')->middleware('auth');
 
-Route::get('/deletepengguna/{id}',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna');
+Route::get('/deletepengguna/{id}',[PenggunaController::class, 'deletepengguna'])->name('deletepengguna')->middleware('auth');
 
 //Data destinasi
-Route::get('/destinasi/{id}',[DestinasiController::class, 'destinasi'])->name('destinasi');
-Route::get('/datadestinasi',[DestinasiController::class, 'datadestinasi'])->name('datadestinasi');
-Route::get('/tambahdestinasi',[DestinasiController::class, 'tambahdestinasi'])->name('tambahdestinasi');
-Route::post('/insertdestinasi',[DestinasiController::class, 'insertdestinasi'])->name('insertdestinasi');
-
-Route::get('/tampildestinasi/{id}',[DestinasiController::class, 'tampildestinasi'])->name('tampildestinasi');
-Route::post('/updatedestinasi/{id}',[DestinasiController::class, 'updatedestinasi'])->name('updatedestinasi');
-
-Route::get('/deletedestinasi/{id}',[DestinasiController::class, 'deletedestinasi'])->name('deletedestinasi');
-
-//Data Wisata sampul
-Route::get('/datawisata',[WisataController::class, 'datawisata'])->name('datawisata');
-
-Route::get('/tambahwisata',[WisataController::class, 'tambahwisata'])->name('tambahwisata');
-Route::post('/insertwisata',[WisataController::class, 'insertwisata'])->name('insertwisata');
-
-Route::get('/tampilwisata/{id}',[WisataController::class, 'tampilwisata'])->name('tampilwisata');
-Route::post('/updatewisata/{id}',[WisataController::class, 'updatewisata'])->name('updatewisata');
-
-Route::get('/deletedetail{id}',[WisataController::class, 'deletewisata'])->name('deletewisata');
+Route::get('/destinasi',[DestinasiController::class, 'destinasi'])->name('destinasi');
 
 //Data Wisata detail
-Route::get('/detailwisata',[WisataDetailController::class, 'detailwisata'])->name('detailwisata');
+Route::get('/detailwisata',[WisataDetailController::class, 'detailwisata'])->name('detailwisata')->middleware('auth');
 
-Route::get('/tambahdetailwisata',[WisataDetailController::class, 'tambahdetailwisata'])->name('tambahdetailwisata');
-Route::post('/insertdetailwisata',[WisataDetailController::class, 'insertdetailwisata'])->name('insertdetailwisata');
+Route::get('/tambahdetailwisata',[WisataDetailController::class, 'tambahdetailwisata'])->name('tambahdetailwisata')->middleware('auth');
+Route::post('/insertdetailwisata',[WisataDetailController::class, 'insertdetailwisata'])->name('insertdetailwisata')->middleware('auth');
 
-Route::get('/tampildetailwisata/{id}',[WisataDetailController::class, 'tampildetailwisata'])->name('tampildetailwisata');
-Route::post('/updatedetailwisata{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata');
+Route::get('/tampildetailwisata/{id}',[WisataDetailController::class, 'tampildetailwisata'])->name('tampildetailwisata')->middleware('auth');
+Route::post('/updatedetailwisata{id}',[WisataDetailController::class, 'updatedetailwisata'])->name('updatedetailwisata')->middleware('auth');
 
-Route::get('/deletedetailwisata{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata');
+Route::get('/deletedetailwisata{id}',[WisataDetailController::class, 'deletedetailwisata'])->name('deletedetailwisata')->middleware('auth');
 
 //Data Gallery
-Route::get('/galery',[GaleryController::class, 'galery'])->name('galery');
+Route::get('/galery',[GaleryController::class, 'galery'])->name('galery')->middleware('auth');
 
-Route::get('/tambahgalery',[GaleryController::class, 'tambahgalery'])->name('tambahgalery');
-Route::post('/insertgalery',[GaleryController::class, 'insertgalery'])->name('insertgalery');
+Route::get('/tambahgalery',[GaleryController::class, 'tambahgalery'])->name('tambahgalery')->middleware('auth');
+Route::post('/insertgalery',[GaleryController::class, 'insertgalery'])->name('insertgalery')->middleware('auth');
 
-Route::get('/tampilgalery/{id}',[GaleryController::class, 'tampilgalery'])->name('tampilgalery');
-Route::post('/updategalery/{id}',[GaleryController::class, 'updategalery'])->name('updategalery');
+Route::get('/tampilgalery/{id}',[GaleryController::class, 'tampilgalery'])->name('tampilgalery')->middleware('auth');
+Route::post('/updategalery/{id}',[GaleryController::class, 'updategalery'])->name('updategalery')->middleware('auth');
 
-Route::get('/deletegalery/{id}',[GaleryController::class, 'deletegalery'])->name('deletegalery');
+Route::get('/deletegalery/{id}',[GaleryController::class, 'deletegalery'])->name('deletegalery')->middleware('auth');
 
-//Data Kota Relasi
-Route::get('/kota',[KotaController::class, 'kota'])->name('kota');
-
-Route::get('/tambahkota',[KotaController::class, 'tambahkota'])->name('tambahkota');
-Route::post('/insertkota',[KotaController::class, 'insertkota'])->name('insertkota');
-
-Route::get('/tampilkota/{id}',[KotaController::class, 'tampilkota'])->name('tampilkota');
-Route::post('/updatekota/{id}',[KotaController::class, 'updatekota'])->name('updatekota');
-
-Route::get('/deletekota/{id}',[KotaController::class, 'deletekota'])->name('deletekota');
-
-Route::get('/multidelete',[KotaController::class, 'multidelete'])->name('multidelete');
+// Route::get('/multidelete',[KotaController::class, 'multidelete'])->name('multidelete');
 
 //Data Kota Detail
-Route::get('/kotadetail',[KotaDetailController::class, 'kotadetail'])->name('kotadetail');
+Route::get('/kotadetail',[KotaDetailController::class, 'kotadetail'])->name('kotadetail')->middleware('auth');
 
-Route::get('/tambahkotadetail',[KotaDetailController::class, 'tambahkotadetail'])->name('tambahkotadetail');
-Route::post('/insertkotadetail',[KotaDetailController::class, 'insertkotadetail'])->name('insertkotadetail');
+Route::get('/tambahkotadetail',[KotaDetailController::class, 'tambahkotadetail'])->name('tambahkotadetail')->middleware('auth');
+Route::post('/insertkotadetail',[KotaDetailController::class, 'insertkotadetail'])->name('insertkotadetail')->middleware('auth');
 
-Route::get('/tampilkotadetail/{id}',[KotaDetailController::class, 'tampilkotadetail'])->name('tampilkotadetail');
-Route::post('/updatekotadetail{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail');
+Route::get('/tampilkotadetail/{id}',[KotaDetailController::class, 'tampilkotadetail'])->name('tampilkotadetail')->middleware('auth');
+Route::post('/updatekotadetail{id}',[KotaDetailController::class, 'updatekotadetail'])->name('updatekotadetail')->middleware('auth');
 
-Route::get('/deletekotadetail/{id}',[KotaDetailController::class, 'deletekotadetail'])->name('deletekotadetail');
+Route::get('/deletekotadetail/{id}',[KotaDetailController::class, 'deletekotadetail'])->name('deletekotadetail')->middleware('auth');
 
 Route::get('/multidelete',[KotaDetailController::class, 'multidelete'])->name('multidelete');
 
 //Data Rating
-Route::get('/rating',[RatingController::class, 'rating'])->name('rating');
+Route::get('/rating',[RatingController::class, 'rating'])->name('rating')->middleware('auth');
 
-Route::get('/tambahrating',[RatingController::class, 'tambahrating'])->name('tambahrating');
-Route::post('/insertrating',[RatingController::class, 'insertrating'])->name('insertrating');
+Route::get('/tambahrating',[RatingController::class, 'tambahrating'])->name('tambahrating')->middleware('auth');
+Route::post('/insertrating',[RatingController::class, 'insertrating'])->name('insertrating')->middleware('auth');
 
-Route::get('/tampilrating/{id}',[RatingController::class, 'tampilrating'])->name('tampilrating');
-Route::post('/updaterating/{id}',[RatingController::class, 'updaterating'])->name('updaterating');
+Route::get('/tampilrating/{id}',[RatingController::class, 'tampilrating'])->name('tampilrating')->middleware('auth');
+Route::post('/updaterating/{id}',[RatingController::class, 'updaterating'])->name('updaterating')->middleware('auth');
 
-Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating');
+Route::get('/deleterating/{id}',[RatingController::class, 'deleterating'])->name('deleterating')->middleware('auth');
 
  //contactus
- Route::get('kontak', [kontakController::class, 'index3'])->name('kontak');
+ Route::get('kontak', [kontakController::class, 'index3'])->name('kontak')->middleware('auth');
  Route::post('/insertkontak', [kontakController::class, 'insertkontak'])->name('insertkontak');
  Route::get('kontakadmin', [kontakController::class, 'index4'])->name('kontakadmin');
  Route::get('/deletekontak/{id}', [KontakController::class, 'deletekontak'])->name('deletekontak');
 
 //Data Komentar
-Route::get('/ulasan',[KomenController::class, 'ulasan'])->name('ulasan');
+Route::get('/ulasan',[KomenController::class, 'ulasan'])->name('ulasan')->middleware('auth');
 
-Route::get('/tambahulasan',[KomenController::class, 'tambahulasan'])->name('tambahulasan');
-Route::post('/insertulasan',[KomenController::class, 'insertulasan'])->name('insertulasan');
+Route::get('/tambahulasan',[KomenController::class, 'tambahulasan'])->name('tambahulasan')->middleware('auth');
+Route::post('/insertulasan',[KomenController::class, 'insertulasan'])->name('insertulasan')->middleware('auth');
 
-Route::get('/tampilulasan/{id}',[KomenController::class, 'tampilulasan'])->name('tampilulasan');
-Route::post('/updateulasan/{id}',[KomenController::class, 'updateulasan'])->name('updateulasan');
+Route::get('/tampilulasan/{id}',[KomenController::class, 'tampilulasan'])->name('tampilulasan')->middleware('auth');
+Route::post('/updateulasan/{id}',[KomenController::class, 'updateulasan'])->name('updateulasan')->middleware('auth');
 
-Route::get('/deleteulasan/{id}',[KomenController::class, 'deleteulasan'])->name('deleteulasan');
+Route::get('/deleteulasan/{id}',[KomenController::class, 'deleteulasan'])->name('deleteulasan')->middleware('auth');
 
 //Login Admin
 Route::get('/loginadmin',[LoginController::class, 'loginadmin'])->name('loginadmin');
 Route::post('/loginadmindua',[LoginController::class, 'loginadmindua'])->name('loginadmindua');
 
-Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logoutadmin');
+Route::get('/logoutadmin',[LoginController::class, 'logoutadmin'])->name('logoutadmin')->middleware('auth');
 //Akhir login admin
 
 //Login User

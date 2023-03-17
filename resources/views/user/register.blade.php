@@ -40,7 +40,7 @@
 				<div class="fxt-intro">
 					<div class="sub-title">Welcome To</div>
 					<h1>CariWisata</h1>
-					<p>Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. Vesti ulum nec the dumm.</p>
+					<p>Silahkan Registrasi jika Anda belum mempunyai akun, jika sudah silahkan lewati halaman ini</p>
 				</div>
 			</div>
 			<div class="fxt-bg-color">
@@ -64,21 +64,21 @@
 							<i class="flaticon-user"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
-							<input type="email" class="form-control" name="email" placeholder="Your Email" required="required">
+							<input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Your Email" required="required">
 							<i class="flaticon-envelope"></i>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
 							<input type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password" required="required">
 							<i class="flaticon-padlock"></i>
 						</div>
+						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
+							<input type="password" class="form-control" name="password_confirmation" placeholder="Confirmasi Password" required="required">
+							<i class="flaticon-padlock"></i>
+						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-4">
 							<div class="fxt-content-between">
 								<button type="submit" class="fxt-btn-fill" id="submitBtn" disabled>Register</button>
-								<button type="submit" class="fxt-btn-fill">Register</button>
-								<div class="checkbox">
-									<input id="checkbox1" type="checkbox">
-									<label for="checkbox1">I agree the terms of services</label>
-								</div>
+
 							</div>
 						</div>
 							<div class="checkbox">

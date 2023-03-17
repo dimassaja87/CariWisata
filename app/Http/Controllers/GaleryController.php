@@ -37,7 +37,7 @@ class GaleryController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'fotogalery' => 'required|image||mimes:jpeg,png,jpg,gif,svg|max:2048', // maksimum 2MB
-            
+
         ]);
         if ($validator->fails()) {
             return redirect()->back()->with('error', 'Data Gagal Ditambahkan!')
@@ -55,9 +55,6 @@ class GaleryController extends Controller
     public function tampilGalery($id)
     {
         $data = Galery::find($id);
-        // $jurusan = Jurusan::all();
-        // $destinasi = Destinasi::all();
-        // dd($data);
 
         return view('admin.tabelgalery.tampilgalery', compact('data'));
     }

@@ -110,29 +110,63 @@
                                             <div class="card-header">
                                                 <h5 class="card-title mb-0">Tambah Detail Wisata</h5>
                                             </div>
+                                            @if ($errors->any())
+                                                <div class="alert alert-danger">
+                                                    <ul>
+                                                        @foreach ($errors->all() as $error)
+                                                            <li>{{ $error }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            @endif
                                             <div class="card-body">
                                                 <form action="/insertdetailwisata" method="POST"
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="mb-3">
-                                                        <label for="email-field" class="form-label">Nama Wisata</label>
-                                                        <select class="js-example-basic-single form-select form-control"
-                                                            aria-label="Default select example" name="id_kota" required>
+                                                        <label for="customername-field" class="form-label">Nama
+                                                            Kota</label>
+                                                        <select class="form-select form-control" aria-label="Default select example"
+                                                            name="id_kota" required>
                                                             <option selected>Tidak ada yang dipilih</option>
-                                                            @foreach ($wisata as $data)
-                                                                <option value="{{ $data->id }}">{{ $data->judul_wisata }}
-                                                                </option>
+                                                            @foreach ($kotadetail as $hm)
+                                                                <option value="{{ $hm->id }}">{{ $hm->nama_kota }}</option>
                                                             @endforeach
                                                         </select>
-                                                        <div class="invalid-feedback">Masukkan wisata.</div>
+                                                        <div class="invalid-feedback">Masukkan nama kota.</div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="date-field" class="form-label">Nama Wisata</label>
+                                                        <input type="text" id="date-field" name="wisata"
+                                                            class="form-control" placeholder="Masukkan nama wisata"
+                                                            required />
+                                                        <div class="invalid-feedback">Nama wisata</div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="date-field" class="form-label">Foto</label>
+                                                        <input type="file" id="date-field" name="foto"
+                                                            class="form-control" accept="image/*"
+                                                            placeholder="Select Photo" required />
+                                                        <div class="invalid-feedback">Pilih Foto.</div>
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="customername-field" class="form-label">Deskripsi
                                                             Wisata</label>
-                                                        <input id="summernote" name="detail_wisata"
-                                                            class="summernote form-control" height=""
-                                                            placeholder="Masukkan detail wisata" required />
+                                                        <textarea id="summernote" name="detail_wisata" class="summernote form-control" height=""
+                                                            placeholder="Masukkan detail wisata" required></textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div class="hstack gap-2 justify-content-end">
+                                                            <a href="/detailwisata" type="button"
+                                                                class="btn btn-light">Close</a>
+                                                            <button type="submit" class="btn btn-success"
+                                                                id="edit-btn">Tambah
+                                                                Detail Wisata</button>
+                                                            <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                                                        </div>
                                                     </div>
                                             </div>
                                         </div>
@@ -140,14 +174,6 @@
                                 </div>
                             </div>
                         </section>
-                        <div class="modal-footer">
-                            <div class="hstack gap-2 justify-content-end">
-                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-success" id="edit-btn">Tambah
-                                    Detail Wisata</button>
-                                <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                            </div>
-                        </div>
                         </form>
                     </div>
                     <!--end col-->

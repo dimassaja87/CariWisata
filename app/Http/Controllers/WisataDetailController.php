@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\KotaDetail;
 use App\Models\Wisata;
 use App\Models\WisataDetail;
 use Illuminate\Http\Request;
@@ -25,23 +26,22 @@ class WisataDetailController extends Controller
     public function tambahdetailwisata()
     {
         $data = WisataDetail::all();
-        $wisata = Wisata::all();
-        // $jurusan = Jurusan::all();
-        // $destinasi = Destinasi::all();
-        return view('admin.tabelwisata.tambahwisatadetail', compact('data', 'wisata'));
+        $kotadetail = KotaDetail::all();
+        return view('admin.tabelwisata.tambahwisatadetail', compact('data', 'kotadetail'));
     }
 
     public function insertdetailwisata(Request $request)
     {
-        // dd('aa');
-        // $this->validate($request, [
-        //     'nama' => 'required|min:5|max:30',
-        // ]);
-        // dd('bb');
+        $request->validate([
+            'foto' =>  'required|mimes:png,jpg,jpeg',
+        ],[
+            'foto.mimes' => 'foto wajib berformat gambar',
+        ]);
+
         $data = WisataDetail::create($request->all());
-        if ($request->hasFile('detail_wisata')) {
-            $request->file('detail_wisata')->move('foto/detailwisata/', $request->file('detail_wisata')->getClientOriginalName());
-            $data->detail_wisata = $request->file('detail_wisata')->getClientOriginalName();
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('foto/fotowisata/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
         return redirect()->route('detailwisata')->with('success', 'Data Behasil Ditambahkan!');
@@ -50,27 +50,24 @@ class WisataDetailController extends Controller
     public function tampildetailwisata($id)
     {
         $data = WisataDetail::find($id);
-        $wisata = Wisata::all();
-        // $jurusan = Jurusan::all();
-        // $destinasi = Destinasi::all();
-        // dd($data);
+        $kotadetail = KotaDetail::all();
 
-        return view('admin.tabelwisata.tampilwisatadetail', compact('data', 'wisata'));
+        return view('admin.tabelwisata.tampilwisatadetail', compact('data', 'kotadetail'));
     }
 
     public function updatedetailwisata(Request $request, $id)
     {
         $data = WisataDetail::find($id);
         $data->update($request->all());
-        if ($request->hasFile('detail_wisata'))
+        if ($request->hasFile('foto'))
         {
-            $detailwisata = 'foto/detailwisata/'.$data->detail_wisata;
+            $detailwisata = 'foto/fotowisata/'.$data->detail_wisata;
             if(File::exists($detailwisata))
             {
                 File::delete($detailwisata);
             }
-            $request->file('detail_wisata')->move('foto/detailwisata/', $request->file('detail_wisata')->getClientOriginalName());
-            $data->detail_wisata = $request->file('detail_wisata')->getClientOriginalName();
+            $request->file('foto')->move('foto/fotowisata/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
             $data->update();
         }
 

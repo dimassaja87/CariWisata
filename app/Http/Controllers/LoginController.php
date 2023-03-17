@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 
  use Illuminate\Support\Facades\Auth as FacadesAuth;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -77,7 +78,7 @@ class LoginController extends Controller
             'old_password' => 'required|current_password',
             'new_password' => 'required|confirmed',
         ]);
-        $user = User::find(Auth: id());
+        $user = User::find(Auth::id());
         $user->password = Hash::make($request->new_password);
         $user->save();
         $request->session()->regenerate();
@@ -102,7 +103,7 @@ class LoginController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|unique:users',
-            'password' => 'required',
+            'password' => 'required|min:5|max:50',
             'password_confirmation' => 'required|same:password',
         ]);
         User::create([

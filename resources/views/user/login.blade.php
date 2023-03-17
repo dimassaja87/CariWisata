@@ -69,6 +69,7 @@
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-2">
 							<input type="password" class="form-control" name="password" placeholder="Password" required="required">
 							<i class="flaticon-padlock"></i>
+                            <a href="/lupapassword" class="switcher-text3">Lupa Password?</a>
 						</div>
 						<div class="form-group fxt-transformY-50 fxt-transition-delay-3">
 							<div class="fxt-content-between">
@@ -78,8 +79,6 @@
 									<label for="remember">
             							{{ __('Remember me') }}
         							</label>
-									<input id="checkbox1" type="checkbox">
-									<label for="checkbox1">Keep me logged in</label>
 								</div>
 							</div>
 						</div>

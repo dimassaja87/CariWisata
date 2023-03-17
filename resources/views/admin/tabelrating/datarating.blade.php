@@ -301,22 +301,9 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link menu-link" href="#sidebarKota" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
-                                <i class=" bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
+                            <a class="nav-link menu-link" href="/kotadetail" data-bs-toggle="collapse">
+                                <i class="bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarKota">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link menu-link" href="/kota">
-                                             <span data-key="t-tables">Kota</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link menu-link" href="/kotadetail"> <span data-key="t-tables">Kota Detail</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/rating">
@@ -324,28 +311,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/kontakadmin">
-                                <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
+                            <a class="nav-link menu-link" href="/detailwisata">
+                                <i class="bx bxs-tree-alt"></i> <span data-key="t-tables">Data Wisata</span>
                             </a>
-                        </li>
-                        <li>
-                            <a class="nav-link menu-link" href="#sidebarWisata" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarWisata">
-                                <i class="bx bxs-tree-alt"></i> <span data-key="t-charts">Data Wisata</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarWisata">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link menu-link" href="/datawisata">
-                                            <span data-key="t-tables">Wisata</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link menu-link" href="/detailwisata"> <span
-                                                data-key="t-tables">Wisata Detail</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/galery">
@@ -357,6 +325,13 @@
                                 <i class="bx bx-message-dots"></i> <span data-key="t-tables">Data Ulasan</span>
                             </a>
                         </li>
+                        <li class="menu-title"><i class="ri-more-fill"></i> <span
+                            data-key="t-lainnya">Lainnya</span></li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="/kontakadmin">
+                                    <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
+                                </a>
+                            </li>
                         <li>
                             <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
                                 <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>

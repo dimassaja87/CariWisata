@@ -12,8 +12,8 @@ class WisataDetail extends Model
 
     protected $date = ['created_at'];
 
-    public function wisatas()
+    public function kota_details()
     {
-        return $this->belongsTo(Wisata::class, 'id_wisata', 'id');
+        return $this->belongsTo(KotaDetail::class, 'id_kota', 'id');
     }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kota;
 use App\Models\KotaDetail;
+use App\Models\WisataDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
@@ -27,17 +28,12 @@ class KotaDetailController extends Controller
     public function tambahkotadetail()
     {
         $data = KotaDetail::all();
-        // $jurusan = Jurusan::all();
-        return view('admin.tabelkota.tambahkotadetail', compact('data'));
+        $wisatadetail = WisataDetail::all();
+        return view('admin.tabelkota.tambahkotadetail', compact('data', 'wisatadetail'));
     }
 
     public function insertkotadetail(Request $request)
     {
-        // dd('aa');
-        // $this->validate($request, [
-        //     'nama' => 'required|min:5|max:30',
-        // ]);
-        // dd('bb');
         $data = KotaDetail::create($request->all());
         if ($request->hasFile('foto_aja')) {
             $request->file('foto_aja')->move('foto/fotoaja/', $request->file('foto_aja')->getClientOriginalName());
@@ -50,12 +46,9 @@ class KotaDetailController extends Controller
     public function tampilkotadetail(Request $request, $id)
     {
         $data = KotaDetail::findorfail($id);
-        $data = KotaDetail::all();
-        // $jurusan = Jurusan::all();
-        // $destinasi = Destinasi::all();
-        // dd($data);
+        $wisatadetail = WisataDetail::all();
 
-        return view('admin.tabelkota.tampilkotadetail', compact('data'));
+        return view('admin.tabelkota.tampilkotadetail', compact('data', 'wisatadetail'));
     }
 
     public function updatekotadetail(Request $request, $id)

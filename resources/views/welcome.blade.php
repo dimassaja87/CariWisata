@@ -7,50 +7,38 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Home - Cari Wisata</title>
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <title> Home</title>
     <!-- Bootstrap -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
     <!-- Typography CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/typography.css') }}" rel="stylesheet">
     <!-- DL Menu CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/component.css') }}" rel="stylesheet">
     <!-- Date And Time Picker CSS -->
-    <link rel="stylesheet"
-        href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/datetimepicker.css') }}">
     <!-- FontAwesome Icon CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/font-awesome.css') }}" rel="stylesheet">
     <!-- Svg Icon CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/svg.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/svg.css') }}" rel="stylesheet">
     <!-- Slick Slider CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/slick.css') }}" rel="stylesheet">
     <!-- Widget CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/widget.css') }}" rel="stylesheet">
     <!-- Short Code CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/shortcode.css') }}" rel="stylesheet">
     <!-- Custom Style CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/style.css') }}" rel="stylesheet">
     <!-- Color CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/color.css') }}" rel="stylesheet">
     <!-- Responsive CSS -->
-    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}"
-        rel="stylesheet">
+    <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/responsive.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('owl.carousel.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('style.css') }}">
+<link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 
 <body>
@@ -62,9 +50,7 @@
             <div class="mg_nav_wrapper">
                 <!-- iqoniq Logo Start-->
                 <div class="mg_logo">
-                    <a href="#"><img
-                            src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}"
-                            width="220px" alt="" /></a>
+                    <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/logo.png') }}" width="220px" alt="" /></a>
                 </div>
                 <!-- iqoniq Logo End-->
                 <!-- iqoniq Navigation Start-->
@@ -78,7 +64,7 @@
                         <li>
                             <a href="/contactus">contact us</a>
                         </li>
-                    </ul>
+                        </ul>
                     <!--DL Menu Start-->
                     <div id="mg-responsive-navigation" class="dl-menuwrapper">
                         <button class="dl-trigger">Open Menu</button>
@@ -119,13 +105,13 @@
                                         Register</span></a>
                                 </a>
                             @endauth
-                        @endif
+                            @endif
 
+                        </div>
                     </div>
+                    <!-- iqoniq Navigation End-->
                 </div>
-                <!-- iqoniq Navigation End-->
-            </div>
-            <!-- iqoniq Top Navigation Outr Wrap End-->
+                <!-- iqoniq Top Navigation Outr Wrap End-->
         </header>
         <!-- iqoniq Header End-->
         <!-- iqoniq Mina Banner Start-->
@@ -133,20 +119,17 @@
             <div class="mg_slider1">
                 <div>
                     <figure>
-                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner4.jpg') }}"
-                            alt="" />
+                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner4.jpg') }}" alt="" />
                     </figure>
                 </div>
                 <div>
                     <figure>
-                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner5.jpg') }}"
-                            alt="" />
+                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner5.jpg') }}" alt="" />
                     </figure>
                 </div>
                 <div>
                     <figure>
-                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner7.jpg') }}"
-                            alt="" />
+                        <img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/extra-images/banner7.jpg') }}" alt="" />
                     </figure>
                 </div>
             </div>
@@ -169,16 +152,11 @@
                     <div class="mg_hotel_destination_tab">
                         <!-- Nav tabs Start -->
                         <ul class="mg_hotel_nav2" role="tablist">
-                            @foreach ($data->take(6) as $KotaDetail)
+                        @foreach ($data->take(6) as $KotaDetail)
                                 <li role="presentation"
-                                    class="{{ strtolower($kota->nama_kota) == strtolower(request()->kota) ? 'active' : '' }}">
-                                    <a href="  $kota->nama_kota  }}/{{ $kota->id }} " aria-controls="worldwide"
-                                        role="tab" data-toggle="tab">{{ $kota->nama_kota }}</a>
-                                </li>
-                                class="{{ strtolower($KotaDetail->nama_kota) == strtolower(request()->KotaDetail) ? 'active' : '' }}">
-                                <a href="  $KotaDetail->nama_kota  }}/{{ $KotaDetail->id }} "
-                                    aria-controls="worldwide" role="tab"
-                                    data-toggle="tab">{{ $KotaDetail->nama_kota }}</a></li>
+                                    class="{{ strtolower($KotaDetail->nama_kota) == strtolower(request()->KotaDetail) ? 'active' : '' }}">
+                                    <a href="  $KotaDetail->nama_kota  }}/{{ $KotaDetail->id }} " aria-controls="worldwide"
+                                        role="tab" data-toggle="tab">{{ $KotaDetail->nama_kota }}</a></li>
                             @endforeach
                         </ul>
                         <!-- Nav tabs End -->
@@ -190,22 +168,21 @@
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
                                         @foreach ($data1->take(6) as $wisata)
-                                            <div class="col-md-4 col-sm-6">
-                                                <div class="mg_hotel_destination fancy-overlay">
-                                                    <figure>
-                                                        <img src="{{ asset('fotosampul/' . $wisata->sampul_wisata) }}"
-                                                            alt="" />
-                                                        <figcaption>
-                                                            <a class="view_btn" href="/lembang">selengkapnya</a>
-                                                        </figcaption>
-                                                    </figure>
-                                                    <div class="text">
-                                                        <div class="mg_destination_hd">
-                                                            <h5><a href="">{{ $wisata->judul_wisata }}</a></h5>
-                                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="mg_hotel_destination fancy-overlay">
+                                                <figure>
+                                                    <img src="{{ asset('fotosampul/'.$wisata->sampul_wisata) }}" alt="" />
+                                                    <figcaption>
+                                                        <a class="view_btn" href="/lembang">selengkapnya</a>
+                                                    </figcaption>
+                                                </figure>
+                                                <div class="text">
+                                                    <div class="mg_destination_hd">
+                                                        <h5><a href="">{{$wisata->judul_wisata}}</a></h5>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
                                         @endforeach
 
 
@@ -236,17 +213,16 @@
                         <div class="chooseus_slider">
                             <!-- Chooseus Thumb Start -->
                             @foreach ($data1 as $wisata)
-                                <div class="col-md-4">
-                                    <div class="mg_chooseus fancy-overlay">
-                                        <figure>
-                                            <img src="{{ asset('fotosampul/' . $wisata->sampul_wisata) }}"
-                                                alt="">
-                                        </figure>
-                                        <div class="text">
-                                            <h5><a href="#">{{ $wisata->judul_wisata }}</a></h5>
-                                        </div>
+                            <div class="col-md-4">
+                                <div class="mg_chooseus fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('fotosampul/'.$wisata->sampul_wisata) }}" alt="">
+                                    </figure>
+                                    <div class="text">
+                                        <h5><a href="#">{{$wisata->judul_wisata}}</a></h5>
                                     </div>
                                 </div>
+                            </div>
                             @endforeach
                             <!-- Chooseus Thumb End -->
                         </div>
@@ -266,43 +242,25 @@
                     <!-- iqoniq Heading End -->
                     <div class="row">
                         <!-- Hotel Destination Start -->
-                        @foreach ($data->take(6) as $kota_detail)
-                            @foreach ($data->take(6) as $KotaDetail)
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="mg_hotel_destination fancy-overlay">
-                                        <figure>
-                                            <img src="{{ asset('foto/fotoaja/' . $KotaDetail->foto_aja) }}"
-                                                alt="" />
-                                            <figcaption>
-                                                <a class="view_btn"
-                                                    href="/semarang">{{ $kota->nama_kota_detail }}</a>
-                                                <a class="view_btn"
-                                                    href="/selengkapnya/{{ $KotaDetail->id }}">{{ $KotaDetail->nama_kota }}</a>
-                                            </figcaption>
-                                        </figure>
-                                        @foreach ($data->take(6) as $kota)
-                                            <div class="col-md-4 col-sm-4">
-                                                <div class="mg_hotel_destination fancy-overlay">
-                                                    <figure>
-                                                        <img src="{{ asset('fotosampul/' . $kota->foto_sampul) }}"
-                                                            alt="" />
-                                                        <figcaption>
-                                                            <a class="view_btn"
-                                                                href="/semarang">{{ $kota->nama_kota }}</a>
-                                                        </figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        @endforeach
-
-                                        <!-- Hotel Destination End -->
-                                        <!-- Hotel Destination Start -->
-
-                                        <!-- Hotel Destination End -->
-                                    </div>
+                        @foreach ($data->take(6) as $KotaDetail)
+                            <div class="col-md-4 col-sm-4">
+                                <div class="mg_hotel_destination fancy-overlay">
+                                    <figure>
+                                        <img src="{{ asset('foto/fotoaja/'. $KotaDetail->foto_aja) }}" alt="" />
+                                        <figcaption>
+                                            <a class="view_btn" href="/selengkapnya/{{$KotaDetail->id}}">{{ $KotaDetail->nama_kota }}</a>
+                                        </figcaption>
+                                    </figure>
                                 </div>
-                            @endforeach
+                            </div>
+                        @endforeach
+
+                        <!-- Hotel Destination End -->
+                        <!-- Hotel Destination Start -->
+
+                        <!-- Hotel Destination End -->
                     </div>
+                </div>
             </section>
             <!-- Destination Section End -->
             <!-- Services Section Start -->
@@ -318,14 +276,7 @@
                     <!-- iqoniq Heading End -->
                     <!-- Caption Start -->
                     <div class="mg_plan_caption">
-                        <p>ducate, aid, kriteria katalisator John Lennon. Kebutuhan keanekaragaman yang menyelamatkan
-                            jiwa meningkatkan pemberdayaan hak karbon di seluruh dunia. Mengejar aspirasi ini
-                            memanfaatkan, aksesibilitas UNICEF, mengurangi perlindungan kota kolaboratif kematian anak.
-                            ekonomi informal non-partisan evolusi transformatif perubahan iklim manfaat lokal.</p>
-                        <p>ducate, aid, kriteria katalisator John Lennon. Kebutuhan keanekaragaman yang menyelamatkan
-                            jiwa meningkatkan pemberdayaan hak karbon di seluruh dunia. Mengejar aspirasi ini
-                            memanfaatkan, aksesibilitas UNICEF, mengurangi perlindungan kota kolaboratif kematian anak.
-                            ekonomi informal non-partisan; evolusi transformatif perubahan iklim manfaat lokal.</p>
+                        <p>ducate, aid, kriteria katalisator John Lennon. Kebutuhan keanekaragaman yang menyelamatkan jiwa meningkatkan pemberdayaan hak karbon di seluruh dunia. Mengejar aspirasi ini memanfaatkan, aksesibilitas UNICEF, mengurangi perlindungan kota kolaboratif kematian anak. ekonomi informal non-partisan; evolusi transformatif perubahan iklim manfaat lokal.</p>
                     </div>
                     <!-- Caption End -->
                 </div>
@@ -352,17 +303,9 @@
                             <!-- Masonry Item End -->
                             <!-- Masonry Item Start -->
                             @foreach ($data2->take(15) as $Galery)
-                                <div class="masonry-item fancy-overlay">
-                                    <figure class="thumb-link"><img
-                                            src="{{ asset('foto/fotogalery/' . $Galery->fotogalery) }}"
-                                            alt="">
-                                    </figure>
-                                </div>
-                                <div class="masonry-item fancy-overlay">
-                                    <figure class="thumb-link"><img
-                                            src="{{ asset('foto/fotogalery/' . $Galery->fotogalery) }}"
-                                            alt=""></figure>
-                                </div>
+                            <div class="masonry-item fancy-overlay">
+                                <figure class="thumb-link"><img src="{{ asset('foto/fotogalery/'.$Galery->fotogalery) }}" alt=""></figure>
+                            </div>
                             @endforeach
 
                             <!-- Masonry Item End -->
@@ -459,9 +402,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="widget widget_text">
                         <div class="logo">
-                            <a href="#"><img
-                                    src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}"
-                                    alt="" /></a>
+                            <a href="#"><img src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/images/cariwisata.png') }}" alt="" /></a>
                         </div>
                         <div class="text">
                             <p>
@@ -513,58 +454,40 @@
         <!-- iqoniq Footer End-->
         <!-- iqoniq Copyright Start-->
         <div class="mg_copyright">
-            <<<<<<< HEAD <p>Copyrights 2016-17. All rights reserved by:<a target="_blank"
-                    href="http://bilalmghl.com/">
-                    TADIKA MESRA</a></p>
-                =======
-                <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ
-                        THEMES</a></p>
-                >>>>>>> ac861ee604264a3fc36f5e861809c0d8fed526fd
+            <p>Copyrights 2016-17. All rights reserved by:<a target="_blank" href="http://bilalmghl.com/"> IQONIQ THEMES</a></p>
         </div>
         <!-- iqoniq Copyright End-->
         <!-- register Modal -->
         <div class="modal fade" id="search" tabindex="-1" role="dialog">
-            <div class="modal-dialog login1 login5 login5-1">
-                <div class="modal-tab">
-                    <form action="" method="get">
+                <div class="modal-dialog login1 login5 login5-1">
+                    <div class="modal-tab">
+                        <form action="{{ route('welcome') }}" method="get">
                         <div class="mg_input_1">
-                            <input type="text" class="form-control" name="keyword" placeholder="Search keyword">
-                            <div class="modal-dialog login1 login5 login5-1">
-                                <div class="modal-tab">
-                                    <form action="{{ route('welcome') }}" method="get">
-                                        <div class="mg_input_1">
-                                            <input type="search" class="form-control" name="keyword"
-                                                placeholder="Search keyword">
-                                            <label class="search_icon"><input type="submit"></label>
-                                        </div>
-                                </div>
-                            </div>
+                            <input type="search" class="form-control" name="keyword" placeholder="Search keyword" >
+                            <label class="search_icon"><input type="submit"></label>
                         </div>
-                        <!-- register Modal end-->
+                    </div>
                 </div>
-                <!-- iqoniq Wrapper End-->
-                <!-- jQuery -->
-                <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
-                <!-- bootstrap -->
-                <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
-                <!-- Slick Slider -->
-                <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
-                <!-- Masonry -->
-                <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/masonry.min.js') }}"></script>
-                <!-- Date Time Picker -->
-                <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
-                <script
-                    src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}">
-                </script>
-                <!--Dl Menu Script-->
-                <script
-                    src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}">
-                </script>
-                <script
-                    src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}">
-                </script>
-                <!--Custom Script-->
-                <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
+            </div>
+        <!-- register Modal end-->
+    </div>
+    <!-- iqoniq Wrapper End-->
+    <!-- jQuery -->
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.js') }}"></script>
+    <!-- bootstrap -->
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/bootstrap.js') }}"></script>
+    <!-- Slick Slider -->
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/slick.min.js') }}"></script>
+    <!-- Masonry -->
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/masonry.min.js') }}"></script>
+    <!-- Date Time Picker -->
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/scripts.js') }}"></script>
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/jquery.datetimepicker.full.js') }}"></script>
+    <!--Dl Menu Script-->
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/modernizr.custom.js') }}"></script>
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/dl-menu/jquery.dlmenu.js') }}"></script>
+    <!--Custom Script-->
+    <script src="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/js/custom.js') }}"></script>
 </body>
 
 <!-- Mirrored from iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 06:29:18 GMT -->

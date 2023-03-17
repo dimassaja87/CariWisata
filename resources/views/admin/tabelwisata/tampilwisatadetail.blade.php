@@ -9,20 +9,27 @@
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         {{-- Text Editor --}}
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.core.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.bubble.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.snow.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.core.css') }}"
+            rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.bubble.css') }}"
+            rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.snow.css') }}"
+            rel="stylesheet" type="text/css" />
 
         <!-- Layout config Js -->
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/layout.js') }}"></script>
         <!-- Bootstrap Css -->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/bootstrap.min.css') }}" rel="stylesheet"
+            type="text/css" />
         <!-- Icons Css -->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/icons.min.css') }}" rel="stylesheet"
+            type="text/css" />
         <!-- App Css-->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/app.min.css') }}" rel="stylesheet"
+            type="text/css" />
         <!-- custom Css-->
-        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet"
+            type="text/css" />
     </head>
 
     <body>
@@ -98,26 +105,47 @@
 
                                     </div>
                                     <div class="card-body">
-                                        <form action="{{ route('updatekota', $data->id) }}" method="POST"
+                                        <form action="{{ route('updatedetailwisata', $data->id) }}" method="POST"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
-                                                <label for="email-field" class="form-label">Nama Wisata</label>
-                                                <select class="form-select form-control" aria-label="Default select example"
+                                                <label for="customername-field" class="form-label">Nama
+                                                    Kota</label>
+                                                    <select class="form-select form-control" aria-label="Default select example"
                                                     name="id_kota" required>
-                                                    @foreach ($kota as $x)
-                                                        <option value="{{ $x->id }}" <?php if($data->id_wisata == $x->id) {echo 'selected'; } ?>>{{ $x->judul_wisata }}</option>
+                                                    <option selected>Pilih nama kota</option>
+                                                    @foreach ($kotadetail as $ya)
+                                                        <option value="{{ $ya->id }}" <?php if($data->id_kota == $ya->id) {echo 'selected'; } ?>>{{ $ya->nama_kota }}</option>
                                                     @endforeach
                                                 </select>
+                                                <div class="invalid-feedback">Masukkan nama wisata.</div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="customername-field" class="form-label">Nama
+                                                    Wisata</label>
+                                                <input type="text" id="customername-field" name="wisata"
+                                                    class="form-control" placeholder="Enter Name"
+                                                    value="{{ $data->wisata }}" required />
+                                                <div class="invalid-feedback">Masukkan nama wisata</div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="date-field" class="form-label">Foto</label><br>
+                                                <img class="img mb-3"src="{{ asset('foto/fotowisata/' . $data->foto) }}"
+                                                    alt="" style="width: 90px" alt="">
+                                                <input type="file" id="date-field" name="foto"
+                                                    class="form-control" placeholder="Select Photo" />
+                                                <div class="invalid-feedback">Pilih Foto.</div>
                                             </div>
 
                                             <div class="mb-3">
                                                 <label for="customername-field" class="form-label">Nama
                                                     Kota</label>
-                                                    <section>
-                                                        <input id="detail_kota" name="detail_kota" class="snow-editor form-control" style="height: 300px;"
-                                                            placeholder="Masukkan Detail Kota" value="" required />{!! $data->detail_kota !!}
-                                                    </section>
+                                                <section>
+                                                    <textarea id="detail_kota" name="detail_wisata" class="snow-editor form-control" style="height: 300px;"
+                                                        placeholder="Masukkan Detail wisata" value="" required>{!! $data->detail_wisata !!}</textarea>
+                                                </section>
                                                 <div class="invalid-feedback">Masukkan detail kota.</div>
                                             </div>
 
@@ -126,7 +154,7 @@
                                                     <button type="button" class="btn btn-light"
                                                         data-bs-dismiss="modal">Close</button>
                                                     <button type="submit" class="btn btn-success" id="edit-btn">Edit
-                                                        Kota</button>
+                                                        Detail Wisata</button>
                                                     <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                 </div>
                                             </div>
@@ -179,27 +207,33 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#Jurnal').DataTable();
+                $('#detail_kota').DataTable();
             });
         </script>
-                <!-- JAVASCRIPT -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}"></script>
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
+        <!-- JAVASCRIPT -->
+        <script
+            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+        </script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/feather-icons/feather.min.js') }}">
+        </script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/plugins/lord-icon-2.1.0.js') }}">
+        </script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/plugins.js') }}"></script>
 
-    <!-- ckeditor -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
+        <!-- ckeditor -->
+        <script
+            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}">
+        </script>
 
-    <!-- quill js -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.min.js') }}"></script>
+        <!-- quill js -->
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.min.js') }}"></script>
 
-    <!-- init js -->
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
+        <!-- init js -->
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
 
-    <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
 
     </body>
 

@@ -91,10 +91,14 @@
                                         </div>
 
                                         <div class="mb-3">
-                                            <label for="email-field" class="form-label">Rating</label>
-                                            <input type="text" id="email-field" name="rating" class="form-control"
-                                                placeholder="Enter Deskripsi" value="{{ $data->rating }}" required />
-                                            <div class="invalid-feedback">Masukkan rating.</div>
+                                            <select class="form-select form-control" aria-label="Default select example">
+                                                <option selected>Rating</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
                                         </div>
 
                                         <div class="modal-footer">
