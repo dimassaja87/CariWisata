@@ -110,8 +110,10 @@
                                                         <label for="email-field" class="form-label">Nama Kota</label>
                                                         <input class="js-example-basic-single form-select form-control"
                                                             aria-label="Default select example" name="nama_kota" required>
-                                                        </input>
                                                     </div>
+                                                    @error('nama_kota')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
 
                                                     <div class="mb-3">
                                                         <label for="date-field" class="form-label">Foto</label>
@@ -119,6 +121,9 @@
                                                             class="form-control" placeholder="Select Photo" required />
                                                         <div class="invalid-feedback">Pilih Foto.</div>
                                                     </div>
+                                                    @error('foto_aja')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
 
                                                     <div class="mb-3">
                                                         <label for="email-field" class="form-label">Deskripsi</label>

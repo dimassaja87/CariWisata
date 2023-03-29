@@ -81,98 +81,6 @@
                         </button>
 
                         <!-- App Search-->
-                        <form class="app-search d-none d-md-block">
-                            <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
-                                    id="search-options" value="">
-                                <span class="mdi mdi-magnify search-widget-icon"></span>
-                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
-                                    id="search-close-options"></span>
-                            </div>
-                            <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
-                                <div data-simplebar style="max-height: 320px;">
-                                    <!-- item-->
-                                    <div class="dropdown-header">
-                                        <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
-                                    </div>
-
-                                    <div class="dropdown-item bg-transparent text-wrap">
-                                        <a href="/adminn" class="btn btn-soft-secondary btn-sm btn-rounded">how to
-                                            setup <i class="mdi mdi-magnify ms-1"></i></a>
-                                        <a href="/adminn" class="btn btn-soft-secondary btn-sm btn-rounded">buttons
-                                            <i class="mdi mdi-magnify ms-1"></i></a>
-                                    </div>
-                                    <!-- item-->
-                                    <div class="dropdown-header mt-2">
-                                        <h6 class="text-overflow text-muted mb-1 text-uppercase">Pages</h6>
-                                    </div>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"></i>
-                                        <span>Analytics Dashboard</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></i>
-                                        <span>Help Center</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="ri-user-settings-line align-middle fs-18 text-muted me-2"></i>
-                                        <span>My account settings</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <div class="dropdown-header mt-2">
-                                        <h6 class="text-overflow text-muted mb-2 text-uppercase">Members</h6>
-                                    </div>
-
-                                    <div class="notification-list">
-                                        <!-- item -->
-                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
-                                            <div class="d-flex">
-                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-2.jpg') }}"
-                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
-                                                <div class="flex-1">
-                                                    <h6 class="m-0">Angela Bernier</h6>
-                                                    <span class="fs-11 mb-0 text-muted">Manager</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <!-- item -->
-                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
-                                            <div class="d-flex">
-                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-3.jpg') }}"
-                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
-                                                <div class="flex-1">
-                                                    <h6 class="m-0">David Grasso</h6>
-                                                    <span class="fs-11 mb-0 text-muted">Web Designer</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <!-- item -->
-                                        <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
-                                            <div class="d-flex">
-                                                <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/users/avatar-5.jpg') }}"
-                                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
-                                                <div class="flex-1">
-                                                    <h6 class="m-0">Mike Bunch</h6>
-                                                    <span class="fs-11 mb-0 text-muted">React Developer</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="text-center pt-3 pb-1">
-                                    <a href="pages-search-results.html" class="btn btn-primary btn-sm">View All
-                                        Results <i class="ri-arrow-right-line ms-1"></i></a>
-                                </div>
-                            </div>
-                        </form>
                     </div>
 
                     <div class="d-flex align-items-center">
@@ -250,8 +158,8 @@
                 <!-- Dark Logo-->
                 <a href="/adminn" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
@@ -261,12 +169,12 @@
                 <!-- Light Logo-->
                 <a href="/adminn" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -296,13 +204,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/datadestinasi">
-                                <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link menu-link" href="/kotadetail" data-bs-toggle="collapse">
-                                <i class="bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
+                            <a class="nav-link menu-link" href="/kotadetail">
+                                <i class="bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -325,27 +228,17 @@
                                 <i class="bx bx-message-dots"></i> <span data-key="t-tables">Data Ulasan</span>
                             </a>
                         </li>
-                        <li class="menu-title"><i class="ri-more-fill"></i> <span
-                            data-key="t-lainnya">Lainnya</span></li>
-                            <li class="nav-item">
-                                <a class="nav-link menu-link" href="/kontakadmin">
-                                    <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
-                                </a>
-                            </li>
-                        <li>
-                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
-                                <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
+                        <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-lainnya">Lainnya</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/kontakadmin">
+                                <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarCharts">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="/chartuser" class="nav-link" data-key="t-chartjs"> Chartjs </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/barchart" class="nav-link" data-key="t-echarts"> Echarts </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/chartuser">
+                                <i class="ri-pie-chart-line"></i> <span data-key="t-tables">Chart</span>
+                            </a>
                         </li>
                     </ul>
 
@@ -389,124 +282,100 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title mb-0">Add, Edit & Remove</h4>
+                                    <h4 class="card-title mb-0">Remove</h4>
                                 </div><!-- end card header -->
 
                                 <div class="card-body">
                                     <div id="customerList">
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
-                                                <div>
-                                                    <a href="/tambahrating" type="button"
-                                                        class="btn btn-success add-btn" id="create-btn"><i
-                                                            class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <button class="btn btn-soft-danger" onClick="deleteMultiple()"><i
-                                                            class="ri-delete-bin-2-line"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="d-flex justify-content-sm-end">
-                                                    <div class="search-box ms-2">
-                                                        <input type="text" class="form-control search"
-                                                            placeholder="Search...">
-                                                        <i class="ri-search-line search-icon"></i>
+                                                <div class="col-sm">
+                                                    <div class="d-flex justify-content-sm-start">
+                                                        <div class="search-box ms-2">
+                                                            <input type="text" class="form-control search"
+                                                                placeholder="Search...">
+                                                            <i class="ri-search-line search-icon"></i>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="table-responsive table-card mt-3 mb-1">
-                                            <table class="table align-middle table-nowrap" id="customerTable">
-                                                <thead class="table-light">
-                                                    <tr>
-                                                        <th scope="col" style="width: 50px;">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    id="checkAll" value="option">
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">ID</th>
-                                                        <th scope="col">Nama Wisata</th>
-                                                        <th scope="col">Rating</th>
-                                                        <th scope="col">Action</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="list form-check-all">
-                                                    @php
-                                                        $no = 1;
-                                                    @endphp
-                                                    @foreach ($data as $row)
+                                            <div class="table-responsive table-card mt-3 mb-1">
+                                                <table class="table align-middle table-nowrap" id="customerTable">
+                                                    <thead class="table-light">
                                                         <tr>
-                                                            <th scope="row">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        name="chk_child" value="option1">
-                                                                </div>
-                                                            </th>
-                                                            <th scope="row">{{ $no++ }}</>
-                                                            </th>
-                                                            <td class="id_wisata">{{ $row->destinasis->nama_wisata }}
-                                                            </td>
-                                                            <td class="rating">{{ $row->rating }}</td>
-                                                            <td>
-                                                                <div class="d-flex gap-2">
-                                                                    <div class="edit">
-                                                                        <a href="/tampilrating/{{ $row->id }}"
-                                                                            class="btn btn-sm btn-success edit-item-btn">Edit</a>
-                                                                    </div>
-                                                                    <div class="remove">
-                                                                        <a href="#"
-                                                                            data-id="{{ $row->id }}"
-                                                                            data-nama="{{ $row->rating }}"
-                                                                            class="btn btn-sm btn-danger deleterating">Remove</a>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Nama Wisata</th>
+                                                            <th scope="col">Rating</th>
+                                                            <th scope="col">Action</th>
                                                         </tr>
-                                                    @endforeach
-                                                </tbody>
-                                            </table>
-                                            <div class="noresult" style="display: none">
-                                                <div class="text-center">
-                                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
-                                                        trigger="loop" colors="primary:#121331,secondary:#08a88a"
-                                                        style="width:75px;height:75px"></lord-icon>
-                                                    <h5 class="mt-2">Maaf! Tidak Ada Hasil Yang Ditemukan</h5>
-                                                    <p class="text-muted mb-0">Kami telah mencari lebih dari 99+
-                                                        Pengguna, Kami tidak menemukan data apa pun yang Anda cari.</p>
+                                                    </thead>
+                                                    <tbody class="list form-check-all">
+                                                        @php
+                                                            $no = 1;
+                                                        @endphp
+                                                        @foreach ($data as $row)
+                                                            <tr>
+                                                                <th scope="row">{{ $no++ }}</th>
+                                                                <td class="id_wisata">
+                                                                    {{ $row->destinasis->nama_wisata }}</td>
+                                                                <td class="rating">{{ $row->rating }}</td>
+                                                                <td>
+                                                                    <div class="d-flex gap-2">
+                                                                        <div class="remove">
+                                                                            <a href="#"
+                                                                                data-id="{{ $row->id }}"
+                                                                                data-nama="{{ $row->rating }}"
+                                                                                class="btn btn-sm btn-danger deleterating">Remove</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
+                                                <div class="noresult" style="display: none">
+                                                    <div class="text-center">
+                                                        <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
+                                                            trigger="loop" colors="primary:#121331,secondary:#08a88a"
+                                                            style="width:75px;height:75px"></lord-icon>
+                                                        <h5 class="mt-2">Maaf! Tidak Ada Hasil Yang Ditemukan</h5>
+                                                        <p class="text-muted mb-0">Kami telah mencari lebih dari 99+
+                                                            Pengguna, Kami tidak menemukan data apa pun yang Anda cari.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <div class="pagination-wrap hstack gap-2">
+                                                    <a class="page-item pagination-prev disabled" href="#">
+                                                        Previous
+                                                    </a>
+                                                    <ul class="pagination listjs-pagination mb-0"></ul>
+                                                    <a class="page-item pagination-next" href="#">
+                                                        Next
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="d-flex justify-content-end">
-                                            <div class="pagination-wrap hstack gap-2">
-                                                <a class="page-item pagination-prev disabled" href="#">
-                                                    Previous
-                                                </a>
-                                                <ul class="pagination listjs-pagination mb-0"></ul>
-                                                <a class="page-item pagination-next" href="#">
-                                                    Next
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- end card -->
+                                    </div><!-- end card -->
+                                </div>
+                                <!-- end col -->
                             </div>
                             <!-- end col -->
                         </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
+                        <!-- end row -->
 
+                    </div>
+                    <!-- end col -->
                 </div>
                 <!-- end col -->
             </div>
-            <!-- end col -->
-        </div>
-        <!-- end row -->
+            <!-- end row -->
 
-    </div>
-    <!-- container-fluid -->
+        </div>
+        <!-- container-fluid -->
     </div>
     <!-- End Page-content -->
 

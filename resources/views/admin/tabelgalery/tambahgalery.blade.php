@@ -89,10 +89,13 @@
                                             <div class="mb-3">
                                                 <label for="date-field" class="form-label">Foto</label>
                                                 <img class="img-preview img-fluid mb-3 col-sm-5" alt="">
-                                                <input type="file" id="fotogalery" name="fotogalery" class="form-control" multiple
-                                                    placeholder="Pilih Foto" onchange="previewImage()" required />
+                                                <input type="file" id="fotogalery" name="fotogalery" class="form-control"
+                                                    multiple placeholder="Pilih Foto" onchange="previewImage()" required />
                                                 <div class="invalid-feedback">Pilih Foto.</div>
                                             </div>
+                                            @error('fotogalery')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
 
                                             <div class="modal-footer">
                                                 <div class="hstack gap-2 justify-content-end">
@@ -159,8 +162,7 @@
     </body>
 
     <script>
-        function previewImage()
-        {
+        function previewImage() {
             const image = document.querySelector('#fotogalery');
             const imgPreview = document.querySelector('.img-preview');
 

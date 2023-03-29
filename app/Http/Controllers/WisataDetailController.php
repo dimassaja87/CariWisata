@@ -32,19 +32,13 @@ class WisataDetailController extends Controller
 
     public function insertdetailwisata(Request $request)
     {
-        $request->validate([
-            'foto' =>  'required|mimes:png,jpg,jpeg',
-        ],[
-            'foto.mimes' => 'foto wajib berformat gambar',
-        ]);
-
         $data = WisataDetail::create($request->all());
         if ($request->hasFile('foto')) {
-            $request->file('foto')->move('foto/fotowisata/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('foto/detailwisata/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
-        return redirect()->route('detailwisata')->with('success', 'Data Behasil Ditambahkan!');
+        return back()->with('success', 'Data Behasil Ditambahkan!');
     }
 
     public function tampildetailwisata($id)
@@ -61,17 +55,17 @@ class WisataDetailController extends Controller
         $data->update($request->all());
         if ($request->hasFile('foto'))
         {
-            $detailwisata = 'foto/fotowisata/'.$data->detail_wisata;
+            $detailwisata = 'foto/detailwisata/'.$data->foto;
             if(File::exists($detailwisata))
             {
                 File::delete($detailwisata);
             }
-            $request->file('foto')->move('foto/fotowisata/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('foto/detailwisata/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->update();
         }
 
-        return redirect()->route('detailwisata')->with('success', 'Data Behasil Di Ubah!');
+        return back()->with('success', 'Data Behasil Di Ubah!');
     }
 
     public function deletedetailwisata($id)

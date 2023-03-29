@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
-    data-sidebar-image="none" data-preloader="disable">
+    data-sidebar-image="none" data-preloader="enable">
 
 
 <!-- Mirrored from themesbrand.com/velzon/html/default/tables-listjs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 04:46:19 GMT -->
@@ -49,8 +49,8 @@
                         <div class="navbar-brand-box horizontal-logo">
                             <a href="/adminn" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                                        alt="" height="22">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                                        alt="" height="75">
                                 </span>
                                 <span class="logo-lg">
                                     <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
@@ -60,8 +60,8 @@
 
                             <a href="/adminn" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                                        alt="" height="22">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                                        alt="" height="75">
                                 </span>
                                 <span class="logo-lg">
                                     <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png  ') }}"
@@ -159,23 +159,23 @@
                 <!-- Dark Logo-->
                 <a href="/adminn" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <!-- Light Logo-->
                 <a href="/adminn" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -205,13 +205,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/datadestinasi">
-                                <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link menu-link" href="/kotadetail" data-bs-toggle="collapse">
-                                <i class="bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
+                            <a class="nav-link menu-link" href="/kotadetail">
+                                <i class="bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -234,27 +229,17 @@
                                 <i class="bx bx-message-dots"></i> <span data-key="t-tables">Data Ulasan</span>
                             </a>
                         </li>
-                        <li class="menu-title"><i class="ri-more-fill"></i> <span
-                            data-key="t-lainnya">Lainnya</span></li>
-                            <li class="nav-item">
-                                <a class="nav-link menu-link" href="/kontakadmin">
-                                    <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
-                                </a>
-                            </li>
-                        <li>
-                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
-                                <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
+                        <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-lainnya">Lainnya</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/kontakadmin">
+                                <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarCharts">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="/chartuser" class="nav-link" data-key="t-chartjs"> Chartjs </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/barchart" class="nav-link" data-key="t-echarts"> Echarts </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/chartuser">
+                                <i class="ri-pie-chart-line"></i> <span data-key="t-tables">Chart</span>
+                            </a>
                         </li>
                     </ul>
 
@@ -280,7 +265,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA DETAIL WISATA</h4>
+                                <h4 class="mb-sm-0">DATA WISATA</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">

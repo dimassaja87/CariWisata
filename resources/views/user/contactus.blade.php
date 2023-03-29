@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Contact us Iqoniq Travel</title>
+		<title>Contact us - Cari wisata</title>
 		<!-- Bootstrap -->
         <link href="{{ asset('iqoniq/iconic-themes.com/html/iqoniqtravel/iqoniq-travel-light/css/bootstrap.css') }}" rel="stylesheet">
         <!-- Typography CSS -->
@@ -134,7 +134,7 @@
                                         <h5 class="blog_main_title">ALAMAT DAN INFORMASI</h5>
                                         <div class="border-bottom">
                                             <div class="text">
-                                                <p>Website kami ini kita ciptakan untuk mempermudah mencari informasi dari sebuah wisata</p>
+                                                <p>Website ini kami ciptakan untuk mempermudah mencari informasi dari sebuah wisata</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,7 +144,7 @@
                                         <h5 class="blog_main_title">Detail Kontak</h5>
                                         <div class="border-bottom">
                                             <div class="text">
-                                                <div class="mg_contact"><i class="fa fa-map-marker"></i><span>Karang ploso GPA perum regency</span></div>
+                                                <div class="mg_contact"><i class="fa fa-map-marker"></i><span>Perum Permata Regency 1 Blok 10/28, Perum Gpa, Ngijo, Kec. Karang Ploso, Kabupaten Malang, Jawa Timur</span></div>
                                                 <div class="mg_contact"><i class="fa fa-phone"></i><span>0851234567</span></div>
                                                 <div class="mg_contact"><i class="fa fa-envelope-o"></i><a href="mailto:contact@iqoniqtravel.com">cariwisata@gmail.com</a></div>
                                                 <div class="mg_contact"><i class="fa fa-clock-o"></i><span>Senin-Jum'at 8:00-16:00</span></div>

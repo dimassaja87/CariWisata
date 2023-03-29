@@ -126,11 +126,12 @@
                                                     <div class="mb-3">
                                                         <label for="customername-field" class="form-label">Nama
                                                             Kota</label>
-                                                        <select class="form-select form-control" aria-label="Default select example"
-                                                            name="id_kota" required>
+                                                        <select class="form-select form-control"
+                                                            aria-label="Default select example" name="id_kota" required>
                                                             <option selected>Tidak ada yang dipilih</option>
                                                             @foreach ($kotadetail as $hm)
-                                                                <option value="{{ $hm->id }}">{{ $hm->nama_kota }}</option>
+                                                                <option value="{{ $hm->id }}">{{ $hm->nama_kota }}
+                                                                </option>
                                                             @endforeach
                                                         </select>
                                                         <div class="invalid-feedback">Masukkan nama kota.</div>
@@ -143,6 +144,9 @@
                                                             required />
                                                         <div class="invalid-feedback">Nama wisata</div>
                                                     </div>
+                                                    @error('wisata')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
 
                                                     <div class="mb-3">
                                                         <label for="date-field" class="form-label">Foto</label>
@@ -151,6 +155,9 @@
                                                             placeholder="Select Photo" required />
                                                         <div class="invalid-feedback">Pilih Foto.</div>
                                                     </div>
+                                                    @error('foto')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
 
                                                     <div class="mb-3">
                                                         <label for="customername-field" class="form-label">Deskripsi
@@ -158,6 +165,7 @@
                                                         <textarea id="summernote" name="detail_wisata" class="summernote form-control" height=""
                                                             placeholder="Masukkan detail wisata" required></textarea>
                                                     </div>
+
                                                     <div class="modal-footer">
                                                         <div class="hstack gap-2 justify-content-end">
                                                             <a href="/detailwisata" type="button"
@@ -226,7 +234,8 @@
             });
         </script>
         <!-- JAVASCRIPT -->
-        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+        <script
+            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
         </script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>

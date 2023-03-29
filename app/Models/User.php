@@ -52,4 +52,23 @@ class User extends Authenticatable
     {
         return $this->hasMany(kontak ::class,'user_id','id');
     }
+    protected $atributs = [
+        'is_banned' => false,
+    ];
+    
+    public function banned()
+    {
+        $this->is_banned = true;
+        $this->save();
+    }
+     /**
+      * unbanned the user,
+      * @return void
+      */
+      public function unbanned()
+      {
+        $this->is_banned = false;
+        $this->save();
+      }
+     
 }

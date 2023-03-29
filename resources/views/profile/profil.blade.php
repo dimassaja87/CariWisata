@@ -75,6 +75,7 @@
                         <div class="col-auto">
 
                             <div class="avatar-lg p-0 rounded-circle profile-photo-edit">
+
                                 <img src="{{ asset('storage/' . Auth::user()->foto) }}"
                                     class="rounded-circle avatar-lg img-thumbnail user-profile-image"
                                     alt="user-profile-image" />
@@ -99,7 +100,6 @@
                                     <!-- <div class="p-2">
                                             <h4 class="text-white mb-1">24.3K</h4>
                                             <p class="fs-14 mb-0">Followers</p>
-<<<<<<< Updated upstream
                                         </div> -->
                                 </div>
                             </div>
@@ -120,9 +120,9 @@
                             <ul class="nav nav-pills animation-nav profile-nav gap-2 gap-lg-3 flex-grow-1"
                                 role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link fs-14" data-bs-toggle="tab" href="/=#grafik" role="tab">
-                                        <i class="ri-list-unordered d-inline-block d-md-none"></i> <span
-                                            class="d-none d-md-inline-block">Statistik</span>
+                                    <a class="nav-link fs-14" data-bs-toggle="tab" href="#projects" role="tab">
+                                        <i class="ri-price-tag-line d-inline-block d-md-none"></i> <span
+                                            class="d-none d-md-inline-block">Wisata</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -132,20 +132,18 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fs-14" data-bs-toggle="tab" href="#projects" role="tab">
-                                        <i class="ri-price-tag-line d-inline-block d-md-none"></i> <span
-                                            class="d-none d-md-inline-block">Wisata</span>
-                                    </a>
+                                    <a href="/" class="nav-link" data-key="t-echarts">Home</a>
+
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link fs-14" data-bs-toggle="tab" href="#documents" role="tab">
                                         <i class="ri-folder-4-line d-inline-block d-md-none"></i> <span
                                             class="d-none d-md-inline-block">Komentar</span>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                             <div class="flex-shrink-0">
-                                <a href="/editprofil" class="btn btn-success"><i
+                                <a href="/editprofil/{id}" class="btn btn-success"><i
                                         class="ri-edit-box-line align-bottom"></i> Edit Profile</a>
                             </div>
                             &nbsp;
@@ -158,134 +156,244 @@
                         <!-- Tab panes -->
                         <div class="tab-content pt-4 text-muted">
 
-                                        <div class="tab-pane fade" id="grafik" role="tabpanel">
-                                            <div id="chart-container"></div>
-                                            <script src="https://code.highcharts.com/highcharts.js"></script>
-                                            <script>
-                                              Highcharts.chart('chart-container', {
-                                              chart: {
-                                                  type: 'column'
-                                              },
-                                              title: {
-                                                  text: 'Daftar Wisata'
-                                              },
-                                              xAxis: {
-                                                  categories : ['Jan','Feb','March','Apr','Mei','Jun','July','Aug','Sept','Oct','Nov','Dec'],
-                                                  crosshair:true
-                                              },
-                                              yAxis: {
-                                                  min: 0,
-                                                  title: {
-                                                      text: 'Jumlah'
-                                                  }
-                                              },
-                                              tooltip: {
-                                                  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                                                  pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                                                      '<td style="padding:0"><b>{point.y:.1f}tempat</b></td></tr>',
-                                                  footerFormat: '</table>',
-                                                  shared: true,
-                                                  useHTML: true
-                                              },
-                                              plotOptions: {
-                                                  column: {
-                                                      pointPadding: 0.2,
-                                                      borderWidth: 0
-                                                  }
-                                              },
-                                              series: [ {
-                                                  name: 'wisata',
-                                                  data: [83, 78, 98, 93, 106, 84, 105, 35, 70, 55, 67, 98]
+                            <div class="tab-pane fade" id="grafik" role="tabpanel">
 
-                                              }]
-                                          });
-                                          </script>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="tab-pane fade" id="activities" role="tabpanel">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <h5 class="card-title mb-0">Tambah Data Destinasi</h5>
-
+                            </div>
+                            <!--end col-->
+                            <div class="tab-pane fade" id="activities" role="tabpanel">
+                                <section>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="card-title mb-0">Tambah Detail Wisata</h5>
+                                                    </div>
+                                                    @if ($errors->any())
+                                                        <div class="alert alert-danger">
+                                                            <ul>
+                                                                @foreach ($errors->all() as $error)
+                                                                    <li>{{ $error }}</li>
+                                                                @endforeach
+                                                            </ul>
                                                         </div>
-                                                        <div class="card-body">
-                                                            <form action="/insertdestinasi" method="POST"
-                                                                enctype="multipart/form-data">
-                                                                @csrf
-                                                                <div class="mb-3">
-                                                                    <label for="customername-field"
-                                                                        class="form-label">Nama Wisata</label>
-                                                                    <input type="text" id="customername-field"
-                                                                        name="nama_wisata" class="form-control"
-                                                                        placeholder="Masukkan nama wisata" required />
-                                                                    <div class="invalid-feedback">Masukkan nama wisata.
-                                                                    </div>
-                                                                </div>
+                                                    @endif
+                                                    <div class="card-body">
+                                                        <form action="/insertdetailwisata" method="POST"
+                                                            enctype="multipart/form-data">
+                                                            @csrf
+                                                            <div>
+                                                                <input type="hidden" name="id_user"
+                                                                    value="{{ auth()->user()->id }}">
 
-                                                                <div class="mb-3">
-                                                                    <label for="email-field" class="form-label">Lokasi
-                                                                        Wisata</label>
-                                                                    <input type="text" id="email-field"
-                                                                        name="lokasi" class="form-control"
-                                                                        placeholder="Masukkan lokasi wisata"
-                                                                        required />
-                                                                    <div class="invalid-feedback">Masukkan lokasi
-                                                                        wisata.</div>
-                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <input type="hidden" name="nama"
+                                                                    value="{{ auth()->user()->name }}">
 
-                                                                <div class="mb-3">
-                                                                    <label for="email-field" class="form-label">Nama
-                                                                        Kota</label>
-                                                                    <input type="text" id="email-field"
-                                                                        name="id_kota" class="form-control"
-                                                                        placeholder="Masukkan nama kota" />
-                                                                </div>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="customername-field"
+                                                                    class="form-label">Nama
+                                                                    Kota</label>
+                                                                <select class="form-select form-control"
+                                                                    aria-label="Default select example" name="id_kota"
+                                                                    required>
+                                                                    <option selected>Tidak ada yang dipilih</option>
+                                                                    @foreach ($kotadetail as $hm)
+                                                                        <option value="{{ $hm->id }}">
+                                                                            {{ $hm->nama_kota }}</option>
+                                                                    @endforeach
+                                                                </select>
+                                                                <div class="invalid-feedback">Masukkan nama kota.</div>
+                                                            </div>
 
+                                                            <div class="mb-3">
+                                                                <label for="date-field" class="form-label">Nama
+                                                                    Wisata</label>
+                                                                <input type="text" id="date-field" name="wisata"
+                                                                    class="form-control"
+                                                                    placeholder="Masukkan nama wisata" required />
+                                                                <div class="invalid-feedback">Nama wisata</div>
+                                                            </div>
 
-                                                                <div class="mb-3">
-                                                                    <label for="email-field" class="form-label">Harga
-                                                                        Tiket Masuk</label>
-                                                                    <input type="text" id="email-field"
-                                                                        name="htm" class="form-control"
-                                                                        placeholder="Masukkan htm" required />
-                                                                    <div class="invalid-feedback">Masukkan htm.</div>
-                                                                </div>
+                                                            <div class="mb-3">
+                                                                <label for="date-field"
+                                                                    class="form-label">Foto</label>
+                                                                <input type="file" id="date-field" name="foto"
+                                                                    class="form-control" accept="image/*"
+                                                                    placeholder="Select Photo" required />
+                                                                <div class="invalid-feedback">Pilih Foto.</div>
+                                                            </div>
 
-                                                                <div class="mb-3">
-                                                                    <label for="date-field" class="form-label">Foto
-                                                                        Wisata</label>
-                                                                    <input type="file" id="date-field"
-                                                                        name="foto_wisata" class="form-control"
-                                                                        placeholder="Select Photo" required />
-                                                                    <div class="invalid-feedback">Pilih Foto.</div>
-                                                                </div>
+                                                            <div class="mb-3">
+                                                                <label for="customername-field"
+                                                                    class="form-label">Deskripsi
+                                                                    Wisata</label>
+                                                                <textarea id="deskripsi" name="detail_wisata" class="deskripsi form-control" height=""
+                                                                    placeholder="Masukkan detail wisata" required></textarea>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="termsCheck">
+                                                                <label for="termsCheck">Saya setuju dengan <a
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModalScrollable"
+                                                                        class="modal-title"
+                                                                        id="exampleModalScrollableTitle">ketentuan</label>
+                                                                dan syarat tertentu</p>
+                                                            </div>
 
-                                                                <div class="mb-3">
-                                                                    <label for="email-field"
-                                                                        class="form-label">Deskripsi Wisata</label>
-                                                                    <textarea class="summernote form-control" name="deskripsi" placeholder="Masukkan Deskripsi" id="deskripsi" required></textarea>
-                                                                    <div class="invalid-feedback">Masukkan deskripsi.
-                                                                    </div>
+                                                            <div class="modal-footer">
+                                                                <div class="hstack gap-2 justify-content-end">
+                                                                    <a href="/detailwisata" type="button"
+                                                                        class="btn btn-light">Close</a>
+                                                                    <button type="submit" class="btn btn-success"
+                                                                        id="submitBtn" disabled>Tambah
+                                                                        Detail Wisata</button>
+                                                                    <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
                                                                 </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                    <!-- Scrollable modal -->
+                                    {{-- <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">Scrollable Modal</button> --}}
 
-                                                                <div class="modal-footer">
-                                                                    <div class="hstack gap-2 justify-content-end">
-                                                                        <a href="/kota" type="button"
-                                                                            class="btn btn-light">Close</a>
-                                                                        <button type="submit" class="btn btn-success"
-                                                                            id="edit-btn">Tambah
-                                                                            Wisata</button>
-                                                                        <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                                    </div>
-                                                                </div>
-                                                            </form>
+                                    <div class="modal fade" id="exampleModalScrollable" tabindex="-1"
+                                        role="dialog" aria-labelledby="exampleModalScrollableTitle"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalScrollableTitle">Syarat
+                                                        dan Ketentuan Cari Wisata</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="card-text">Cari Wisata dengan ini menetapkan Syarat dan
+                                                        Ketentuan dalam pengaturan pemakaian situs www.CariWisata.com.
+                                                        Yang mendaftar atau menggunakan situs www.CariWisata.com, maka
+                                                        pengguna dianggap telah membaca dan menyetujui semua isi dalam
+                                                        Syarat dan Ketentuan.
+                                                        Apabila ada yang kurang jelas, dapat menghubungi kami di halaman
+                                                        kontak.</p>
+                                                    <h6 class="fs-15">Syarat</h6>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2">
+                                                            <p class="text-muted mb-0">Akses
+                                                                untuk dapat menggunakan dan mengakses KulinerKu,
+                                                                pengguna diharuskan untuk berumur lebih dari 18 tahun.
+                                                                Apabila pengguna berumur kurang dari 18 tahun, maka
+                                                                tidak diijinkan untuk menggunakan dan mengakses
+                                                                KulinerKu.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2 ">
+                                                            <p class="text-muted mb-0">Dilarang untuk menulis dan/atau
+                                                                menjual ulang
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2 ">
+                                                            <p class="text-muted mb-0">Dilarang untuk melakukan
+                                                                penulisan ulang review-review yang di-post oleh Pengguna
+                                                                CariWisata selain Pengguna itu sendiri.
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2 ">
+                                                            <p class="text-muted mb-0">Pengguna diwajibkan untuk
+                                                                melakukan registrasi untuk melakukan post review di
+                                                                CariWisata.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2 ">
+                                                            <p class="text-muted mb-0">Apabila Pengguna melakukan
+                                                                registrasi di CariWisata, Pengguna secara otomatis
+                                                                memberikan kuasa dan ijin kepada Perusahaan untuk dapat
+                                                                melakukan penulisan ulang, pendistribusian, sub-lisensi
+                                                                hal-hal yang Pengguna post di CariWisata, termasuk di
+                                                                dalamnya adalah review.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2 ">
+                                                            <p class="text-muted mb-0">Pengguna menjamin kepada
+                                                                Perusahaan bahwa mereka memiliki hak-hak atas review
+                                                                yang mereka post. Pengguna juga menjamin bahwa review
+                                                                yang mereka post tidak melanggar hukum-hukum yang
+                                                                berlaku, hak-hak orang lain ataupun hak cipta pihak
+                                                                ketiga.</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex mt-2">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2 ">
+                                                            <p class="text-muted mb-0">Perusahaan atau pihak ketiga
+                                                                yang menerima sub-lisensi dari Perusahaan, dapat
+                                                                menggunakan review yang di-post oleh Pengguna CariWisata
+                                                                dengan menggunakan isi dari konten-konten tersebut.
+                                                                Dalam hal ini, perlu diketahui bahwa ada kemungkinan
+                                                                terjadi sedikit perubahan-perubahan terhadap review
+                                                                untuk kenyamanan. Untuk kegiatan-kegiatan seperti ini,
+                                                                Perusahaan menjamin akan menampilkan akun Pengguna yang
+                                                                mem-post review tersebut.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-2">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="ri-checkbox-circle-fill text-success"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-2 ">
+                                                            <p class="text-muted mb-0">Kondisi untuk menggunakan
+                                                                Berpergian Dengan menggunakan CariWisata, Pengguna
+                                                                setuju dengan Syarat dan Ketentuan yang ditentukan.</p>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!--end col-->
-                                            </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                            </div>
+
+                        </div>
+
+                        <div class="d-none code-view">
+                            <pre class="language-markup">
+<code>&lt;!-- Scrollable Modal --&gt;
+                                            </section>
                                             <!--end card-->
                                         </div>
                                         <!--end tab-pane-->
@@ -295,25 +403,48 @@
                                                 <div class="card-body col-12">
                                                     <div class="row">
                                                     <h5 class="card-title mb-3">Daftar Wisata</h5>
-                                                    @foreach($data as $yolaa)
-                                                    <div class="col-xxl-3 col-6">
+                                                    @foreach ($data as $yolaa)
+<div class="col-xxl-3 col-6">
                                                         <div class="card profile-project-card shadow-none profile-project-warning">
                                                             <div class="card-body p-4">
                                                             <div class="d-flex">
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
-                                                                    <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">{{$yolaa->nama_wisata}}</a></h5>
-                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">2 year Ago</span></p>
-                                                                        <p class="text-muted text-truncate mb-0">Lokasi Wisata : <span class="fw-semibold text-dark">{{$yolaa->lokasi}}</span></p>
-                                                                        <p class="text-muted text-truncate mb-0">Deskripsi Destinasi : <span class="fw-semibold text-dark">{{$yolaa->deskripsi}}</span></p>
-                                                                    </div>
-                                                                    <div class="flex-shrink-0 ms-2">
-                                                                        <div class="badge badge-soft-warning fs-10">Inprogress</div>
-                                                                    </div>
+                                                                    <h5 class="fs-14 text-truncate"><a href="#" class="text-dark">{{ $yolaa->wisata }}</a></h5>
+                                                                        <p class="text-muted text-truncate mb-0">Last Update : <span class="fw-semibold text-dark">{{ $yolaa->updated_at }}</span></p>
+                                                                        <p class="text-muted text-truncate mb-0">Kota Wisata : <span class="fw-semibold text-dark">{{ $yolaa->kota_details->nama_kota }}</span></p>
+                                                                        <p class="text-muted text-truncate mb-0">Deskripsi Wisata : <span class="fw-semibold text-dark">{{ $yolaa->detail_wisata }}</span></p>
+                                                                        <p class="text-muted text-truncate mb-0">Foto Wisata : <span class="fw-semibold text-dark"> <img src="{{ asset('foto/detailwisata/' . $yolaa->foto) }}"
+                                                                            alt="" width="150"></span></p>
+                                                                        </div>
+
+                                                                        <div class="d-flex gap-2">
+                                                                            <div class="edit">
+                                                                                <a href="/tampilwisata/{{ $yolaa->id }}"
+                                                                                    class="btn btn-sm btn-success edit-item-btn">Edit</a>
+                                                                            </div>
+                                                                            <div class="remove">
+                                                                                <a href="/deletedetailwisata1/{{ $yolaa->id }}"
+                                                                                    data-id="{{ $yolaa->id }}"
+                                                                                    data-nama="{{ $yolaa->detail_wisata }}"
+                                                                                    class="btn btn-sm btn-danger deletedetailwisata">Remove</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    {{-- <div class="flex-shrink-0 ms-2">
+                                                                        <div class="badge badge-soft-warning fs-10">
+                                                                            @if ($yolaa->status == 0)
+                                                                                <span class="badge bg-warning text-dark">Menunggu Pesrsetujuan</span>
+                                                                            @elseif ($yolaa->status == 2)
+                                                                                <span class="badge bg-danger text-dark">Ditolak</span>
+                                                                            @else
+                                                                                <span class="badge bg-succes text-dark">Disetujui</span>
+                                                                            @endif
+                                                                        </div>
+                                                                    </div> --}}
                                                             </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    @endforeach
+@endforeach
                                                     </div>
 
                                                 </div>
@@ -396,12 +527,25 @@
 
     <script>
         $(document).ready(function() {
-            $('#deskripsi').summernote({
-
-            });
+            $('#deskripsi').summernote();
         });
     </script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+        const termsCheck = document.querySelector('#termsCheck');
+        const submitBtn = document.querySelector('#submitBtn');
+
+        // Memeriksa checkbox setiap kali diperbarui
+        termsCheck.addEventListener('change', function() {
+            if (this.checked) {
+                // Checkbox dicentang, aktifkan tombol submit
+                submitBtn.removeAttribute('disabled');
+            } else {
+                // Checkbox tidak dicentang, nonaktifkan tombol submit
+                submitBtn.setAttribute('disabled', true);
+            }
+        });
+    </script>
 </body>
 
 

@@ -72,9 +72,9 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-xxl-3">
-                        <div class="card mt-n5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6">
+                        <div class="card mt-xl-n5">
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <form method="post" action="/updateprofil/{{ Auth::user()->id }}"
@@ -98,18 +98,6 @@
                                             </div>
                                         </div>
                                         <center>
-                                            <h5 class="fs-16 mb-3 w-50">
-                                                <input type="text" name="name" value="{{ Auth::user()->name }}"
-                                                    class="form-control" id="name">
-                                            </h5>
-                                            <p class="text-muted mb-3 w-50">
-                                                <input type="text" name="email" value="{{ Auth::user()->email }}"
-                                                    class="form-control" id="email">
-                                            </p>
-                                            <p class="text-muted mb-3 w-50">
-                                                <input type="file" name="foto" value="{{ Auth::user()->foto }}"
-                                                    class="form-control" id="foto">
-                                            </p>
                                         <h5 class="fs-16 mb-3 w-50">
                                         <input type="text" name="name" value="{{Auth::user()->name }}" class="form-control" id="name">
                                         </h5>

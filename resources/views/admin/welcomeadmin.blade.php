@@ -133,7 +133,7 @@
                                             <div class="d-flex align-items-end justify-content-between mt-4">
                                                 <div>
                                                     <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span
-                                                            class="counter-value" data-target="999">0</span>
+                                                            class="counter-value" data-target="{{ $jumlahkota }}">0</span>
                                                     </h4>
                                                 </div>
                                                 <div class="avatar-sm flex-shrink-0">
@@ -148,6 +148,14 @@
                             </div> <!-- end row-->
 
                             {{-- @include('admin.charts.chart') --}}
+
+                            {{-- <div class="card">
+                                <div class="card-header">
+                                    <div class="card-body" style="height: 300px;">
+                                        <blockquote class="text-center"><br><br><br><br><br><br>"Kegagalan adalah Sukses yang tertunda" <br class="text-muted">- gembes sadboy</blockquote>
+                                    </div>
+                                </div>
+                            </div> --}}
 
                         </div> <!-- end .h-100-->
 

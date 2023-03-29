@@ -113,13 +113,9 @@
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="mb-3">
-                                                        <label for="email-field" class="form-label">Kota</label>
-                                                        <select class="form-select form-control" aria-label="Default select example"
-                                                            name="id_kota" required>
-                                                            @foreach ($kota as $p)
-                                                                <option value="{{ $p->id }}" <?php if($data->id_kota == $p->id) {echo 'selected'; } ?>>{{ $p->nama_kota }}</option>
-                                                            @endforeach
-                                                        </select>
+                                                        <label for="email-field" class="form-label">Nama Kota</label>
+                                                        <input class="js-example-basic-single form-select form-control"
+                                                            aria-label="Default select example" name="nama_kota" value="{{ $data->nama_kota }}" required>
                                                     </div>
 
                                                     <div class="mb-3">
@@ -127,14 +123,14 @@
                                                         <br><img class="img mb-3"src="{{ asset('foto/fotoaja/' . $data->foto_aja) }}"
                                                                     alt="" style="width: 90px" alt="">
                                                                     <br>
-                                                        <input type="file" id="date-field" name="foto" class="form-control"
+                                                        <input type="file" id="date-field" name="foto_aja" class="form-control"
                                                             placeholder="Select Photo"  />
                                                         <div class="invalid-feedback">Pilih Foto.</div>
                                                     </div>
 
                                                     <div class="mb-3">
                                                         <label for="email-field" class="form-label">Deskripsi</label>
-                                                        <textarea id="summer" name="detail_kota" class="summer form-control" style="height: 300px;"
+                                                        <textarea id="iya" name="detail_kota" class="summer form-control" style="height: 300px;"
                                                             placeholder="Masukkan detail kota" value="" required>{!! $data->detail_kota !!}</textarea>
                                                     </div>
                                             </div>
@@ -202,7 +198,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#summer').DataTable();
+                $('#iya').summernote();
             });
         </script>
         <!-- JAVASCRIPT -->

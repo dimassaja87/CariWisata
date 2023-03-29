@@ -159,23 +159,23 @@
                 <!-- Dark Logo-->
                 <a href="/adminn" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <!-- Light Logo-->
                 <a href="/adminn" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-light.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -205,13 +205,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/datadestinasi">
-                                <i class="ri-map-pin-line"></i> <span data-key="t-tables">Data Destinasi</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link menu-link" href="/kotadetail" data-bs-toggle="collapse">
-                                <i class="bx bxs-city"></i> <span data-key="t-charts">Data Kota</span>
+                            <a class="nav-link menu-link" href="/kotadetail">
+                                <i class="bx bxs-city"></i> <span data-key="t-tables">Data Kota</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -234,27 +229,17 @@
                                 <i class="bx bx-message-dots"></i> <span data-key="t-tables">Data Ulasan</span>
                             </a>
                         </li>
-                        <li class="menu-title"><i class="ri-more-fill"></i> <span
-                            data-key="t-lainnya">Lainnya</span></li>
-                            <li class="nav-item">
-                                <a class="nav-link menu-link" href="/kontakadmin">
-                                    <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
-                                </a>
-                            </li>
-                        <li>
-                            <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
-                                <i class="ri-pie-chart-line"></i> <span data-key="t-charts">Charts</span>
+                        <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-lainnya">Lainnya</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/kontakadmin">
+                                <i class="bx bx-phone"></i> <span data-key="t-tables">Kontak</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarCharts">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="/chartuser" class="nav-link" data-key="t-chartjs"> Chartjs </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/barchart" class="nav-link" data-key="t-echarts"> Echarts </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/chartuser">
+                                <i class="ri-pie-chart-line"></i> <span data-key="t-tables">Chart</span>
+                            </a>
                         </li>
                     </ul>
 
@@ -280,12 +265,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA DETAIL KOTA</h4>
+                                <h4 class="mb-sm-0">DATA KOTA</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Detail Kota</li>
+                                        <li class="breadcrumb-item active">Data Kota</li>
                                     </ol>
                                 </div>
 
@@ -330,13 +315,7 @@
                                             <table class="table align-middle table-nowrap" id="customerTable">
                                                 <thead class="table-light">
                                                     <tr>
-                                                        <th scope="col" style="width: 50px;">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    id="checkAll" value="option">
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">ID</th>
+                                                        <th scope="col">#</th>
                                                         <th scope="col">Nama Kota</th>
                                                         <th scope="col">Foto</th>
                                                         <th scope="col">Deskripsi</th>
@@ -349,12 +328,6 @@
                                                     @endphp
                                                     @foreach ($data as $row)
                                                         <tr>
-                                                            <th scope="row">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        name="ids[{{ $row->id }}]" value="{{ $row->id }}">
-                                                                </div>
-                                                            </th>
                                                             <th scope="row">{{ $no++ }}</>
                                                             </th>
                                                             <td>{{ $row->nama_kota }}</td>
@@ -373,7 +346,7 @@
                                                                         <a href="#"
                                                                             data-id="{{ $row->id }}"
                                                                             data-nama="{{ $row->detail_kota }}"
-                                                                            class="btn btn-sm btn-danger deletekota">Remove</a>
+                                                                            class="btn btn-sm btn-danger deletekotadetail">Remove</a>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -1202,7 +1175,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
-    $('.deletekota').click(function() {
+    $('.deletekotadetail').click(function() {
         var kotadetailid = $(this).attr('data-id');
         var detail_kota = $(this).attr('data-nama');
         swal({

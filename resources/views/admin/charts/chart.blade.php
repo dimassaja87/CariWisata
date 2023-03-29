@@ -63,13 +63,13 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Data Destinasi</h4>
+                                    <h4 class="mb-sm-0">Charts</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Destinasi</a>
+                                            <li class="breadcrumb-item"><a href="">Lainnya</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Tambah Data Destinasi</li>
+                                            <li class="breadcrumb-item active">Chart</li>
                                         </ol>
                                     </div>
 
@@ -83,20 +83,6 @@
                                 <div class="card">
                                     <div class="card-header border-0 align-items-center d-flex">
                                         <h4 class="card-title mb-0 flex-grow-1">Charts</h4>
-                                        <div>
-                                            <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                ALL
-                                            </button>
-                                            <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                1M
-                                            </button>
-                                            <button type="button" class="btn btn-soft-secondary btn-sm">
-                                                6M
-                                            </button>
-                                            <button type="button" class="btn btn-soft-primary btn-sm">
-                                                1Y
-                                            </button>
-                                        </div>
                                     </div><!-- end card header -->
 
                                     <div class="card-header p-0 border-0 bg-soft-light">
@@ -113,17 +99,17 @@
 
                                                 Highcharts.chart('chart-container', {
                                                     title: {
-                                                        text: 'New User Growth, 2023'
+                                                        text: 'Grafik User'
                                                     },
                                                     subtitle: {
-                                                        text: 'Source: Surfside Media'
+                                                        text: ''
                                                     },
                                                     xAxis: {
                                                         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
                                                     },
                                                     yAxis: {
                                                         title: {
-                                                            text: 'Number of New User'
+                                                            text: 'Nomor User baru'
                                                         }
                                                     },
                                                     legend: {
@@ -137,7 +123,7 @@
                                                         }
                                                     },
                                                     series: [{
-                                                        name: 'New User',
+                                                        name: 'User baru',
                                                         data: data
                                                     }],
                                                     responsive: {
@@ -169,14 +155,11 @@
             </div>
             <!-- End Page-content -->
 
-
         </div>
         <!-- end main content-->
 
         </div>
         <!-- END layout-wrapper -->
-
-
 
         <!--start back-to-top-->
         <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
@@ -217,13 +200,5 @@
         </script>
 
     </body>
-
-
-
-    </body>
-
-
-    <!-- Mirrored from wrappixel.com/demos/admin-templates/materialart/html/ltr/table-datatable-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Jan 2023 14:20:10 GMT -->
-
     </html>
 @endsection

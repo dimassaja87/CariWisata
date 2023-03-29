@@ -21,7 +21,7 @@ class LoginSeeder extends Seeder
                 'name' => 'Admin',
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make ('123456789'),
-                'role' => 'Admin',
+                'role' => 'admin',
                 'remember_token' => Str::random (60),
             ],
         ];

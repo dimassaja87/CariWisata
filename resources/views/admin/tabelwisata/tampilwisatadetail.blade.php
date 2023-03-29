@@ -30,6 +30,9 @@
         <!-- custom Css-->
         <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet"
             type="text/css" />
+
+            <!-- include summernote css/js -->
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -140,13 +143,9 @@
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="customername-field" class="form-label">Nama
-                                                    Kota</label>
-                                                <section>
-                                                    <textarea id="detail_kota" name="detail_wisata" class="snow-editor form-control" style="height: 300px;"
-                                                        placeholder="Masukkan Detail wisata" value="" required>{!! $data->detail_wisata !!}</textarea>
-                                                </section>
-                                                <div class="invalid-feedback">Masukkan detail kota.</div>
+                                                <label for="email-field" class="form-label">Deskripsi Wisata</label>
+                                                <textarea id="wisata" name="detail_wisata" class="summer form-control" style="height: 300px;"
+                                                    placeholder="Masukkan detail kota" value="" required>{!! $data->wisata !!}</textarea>
                                             </div>
 
                                             <div class="modal-footer">
@@ -207,7 +206,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#detail_kota').DataTable();
+                $('#wisata').summernote();
             });
         </script>
         <!-- JAVASCRIPT -->
@@ -234,6 +233,9 @@
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
 
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
+
+        {{-- Summernote --}}
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
     </body>
 

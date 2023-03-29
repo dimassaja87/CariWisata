@@ -12,9 +12,8 @@ class welcomecontroller extends Controller
      public function welcome(Request $request)
      {
           $data = KotaDetail::all();
-          $data1 = Wisata::all();
           $data2 = Galery::all();
-          return view('welcome',compact('data','data1','data2'));
+          return view('welcome',compact('data','data2'));
      }
      public function selengkapnya($id)
     {

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pengguna;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Redirect;
@@ -11,7 +12,7 @@ class PenggunaController extends Controller
 {
     public function pengguna()
     {
-        $data = Pengguna::paginate(5);
+        $data = User::paginate(5);
         return view('admin.tabeluser.datauser', compact('data'));
     }
 
@@ -23,7 +24,7 @@ class PenggunaController extends Controller
 
     public function insertpengguna(Request $request)
     {
-        $data = Pengguna::create($request->all());
+        $data = User::create($request->all());
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('fotopengguna/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
@@ -35,33 +36,49 @@ class PenggunaController extends Controller
 
     public function tampilpengguna($id)
     {
-        $data = Pengguna::find($id);
+        $data = User::find($id);
         return view('admin.tabeluser.tampiluser', compact('data'));
     }
 
     public function updatepengguna(Request $request, $id)
     {
-        $data = Pengguna::find($id);
+        $data = User::find($id);
         $data->update($request->all());
-
-        if ($request->hasFile('foto'))
-        {
-            $destination = 'fotopengguna/'.$data->foto;
-            if(File::exists($destination))
-            {
-                File::delete($destination);
-            }
-            $request->file('foto')->move('fotopengguna/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
-            $data->update();
+        if ($request->hasFile('foto')){
+            $data->foto = $request->file('foto')->store('foto','public');
         }
+        $data->save();
+
         return redirect()->route('pengguna')->with('success', 'Data Behasil Di Ubah!');
     }
 
     public function deletepengguna($id)
     {
-        $data = Pengguna::find($id);
+        $data = User::find($id);
         $data->delete();
         return redirect()->route('pengguna')->with('success', 'Data Behasil Di Hapus!');
     }
+    public function unbannedUser($id)
+    {
+        $user = Pengguna ::findorFail($id);
+        $user->unbanned();
+
+        return redirect()->back();
+    }
+    public function bannedUser($id)
+    {
+        $user = User::findorFail($id);
+        $user->banned();
+
+        return redirect()->back();
+    }
+    public function ban(Request $request)
+    {
+        $keyword = $request->keyword;
+        $bannedUser = Pengguna::where('id_banned', true)->get();
+        $data =  Pengguna::where('name','LIKE','%' .$keyword.'%')
+        ->paginate();
+        return view ('admin.tabeluser.ban', compact('data'));
+    }
+
 }

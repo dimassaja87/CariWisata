@@ -86,7 +86,7 @@
                                 <a class="mg_search_btn" data-toggle="modal" data-target="#search" href="#"><i
                                         class="fa fa-search"></i></a>
                                 @if (Auth::user()->foto)
-                                    <a href="{{ route('profil') }}">
+                                    <a href="/profil/{{ Auth::user()->id}}">
                                         <img class="user-avatar rounded-circle"
                                             src="{{ asset('storage/' . Auth::user()->foto) }}" alt="User Avatar"
                                             style="width: 35px;height:35px;border-radius:50%">
@@ -167,7 +167,7 @@
                                 <div class="mg_hotel_destination_wrapper">
                                     <div class="row">
                                         <!-- Hotel Destination Start -->
-                                        @foreach ($data1->take(6) as $wisata)
+                                        @foreach ($data2->take(6) as $wisata)
                                         <div class="col-md-4 col-sm-6">
                                             <div class="mg_hotel_destination fancy-overlay">
                                                 <figure>
@@ -212,7 +212,7 @@
                         <!-- Chooseus Slider Start -->
                         <div class="chooseus_slider">
                             <!-- Chooseus Thumb Start -->
-                            @foreach ($data1 as $wisata)
+                            @foreach ($data2 as $wisata)
                             <div class="col-md-4">
                                 <div class="mg_chooseus fancy-overlay">
                                     <figure>

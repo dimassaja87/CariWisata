@@ -54,23 +54,17 @@ class KotaDetailController extends Controller
     public function updatekotadetail(Request $request, $id)
     {
         $data = KotaDetail::find($id);
-        $data->update([
-            'id_kota' => $request->id_kota,
-            'foto_aja' => $request->foto_aja,
-            'detail_kota' => $request->detail_kota,
-        ]);
-        if ($request->hasFile('foto_aja'))
-        {
-            $fotoaja = 'foto/fotoaja/'.$data->foto_aja;
-            if(File::exists($fotoaja))
-            {
-                File::delete($fotoaja);
+        $data->update($request->all());
+
+        if ($request->hasFile('foto_aja')) {
+            $destination = 'foto/fotoaja/' . $data->foto_aja;
+            if (File::exists($destination)) {
+                File::delete($destination);
             }
             $request->file('foto_aja')->move('foto/fotoaja/', $request->file('foto_aja')->getClientOriginalName());
             $data->foto_aja = $request->file('foto_aja')->getClientOriginalName();
-            $data->update();
         }
-
+        $data->update();
         return redirect()->route('kotadetail')->with('success', 'Data Behasil Di Ubah!');
     }
 
@@ -83,7 +77,7 @@ class KotaDetailController extends Controller
 
     public function search(Request $request){
         if($request->has('search')) {
-            $kota = KotaDetail::where('nama','LIKE','%'.$request->search. '%')->get();
+            $kota = KotaDetail::where('nama_kota','LIKE','%'.$request->search. '%')->get();
         }else{
             $kota = KotaDetail::all();
         }
