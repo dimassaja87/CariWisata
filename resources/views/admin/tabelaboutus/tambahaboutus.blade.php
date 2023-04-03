@@ -4,6 +4,7 @@
     <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
         data-sidebar-image="none" data-preloader="disable">
 
+    <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,8 +32,6 @@
         <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet"
             type="text/css" />
 
-        <!-- include libraries(jQuery, bootstrap) -->
-
         <!-- include summernote css/js -->
         <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
@@ -40,7 +39,6 @@
 
         <!-- Begin page -->
         <div id="layout-wrapper">
-
             <!-- removeNotificationModal -->
             <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -64,7 +62,6 @@
                                     It!</button>
                             </div>
                         </div>
-
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
@@ -78,28 +75,24 @@
             <!-- Start right Content here -->
             <!-- ============================================================== -->
             <div class="main-content">
-
                 <div class="page-content">
                     <div class="container-fluid">
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Detail Wisata</h4>
-
+                                    <h4 class="mb-sm-0">About us</h4>
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Wisata</a>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data About us</a>
                                             </li>
-                                            <li class="breadcrumb-item active">Tambah Detail Wisata</li>
+                                            <li class="breadcrumb-item active">Tambah About us</li>
                                         </ol>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <!-- end page title -->
-
 
                         <section>
                             <div class="container">
@@ -107,88 +100,57 @@
                                     <div class="col-lg-12">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h5 class="card-title mb-0">Tambah Detail Wisata</h5>
+                                                <h5 class="card-title mb-0">Tambah About us</h5>
                                             </div>
-                                            @if ($errors->any())
-                                                <div class="alert alert-danger">
-                                                    <ul>
-                                                        @foreach ($errors->all() as $error)
-                                                            <li>{{ $error }}</li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            @endif
                                             <div class="card-body">
-                                                <form action="/insertdetailwisata" method="POST"
+                                                <form action="/insertaboutus" method="POST"
                                                     enctype="multipart/form-data">
                                                     @csrf
-                                                    <div>
-                                                        <input type="hidden" name="id_user" value="{{ auth()->user()->id }}">
-
-                                                    </div>
-                                                    <div>
-                                                        <input type="hidden" name="nama" value="{{ auth()->user()->name }}">
-                                                    </div>
                                                     <div class="mb-3">
-                                                        <label for="customername-field" class="form-label">Nama
-                                                            Kota</label>
-                                                        <select class="form-select form-control"
-                                                            aria-label="Default select example" name="id_kota" required>
-                                                            <option selected>Tidak ada yang dipilih</option>
-                                                            @foreach ($kotadetail as $hm)
-                                                                <option value="{{ $hm->id }}">{{ $hm->nama_kota }}
-                                                                </option>
-                                                            @endforeach
-                                                        </select>
-                                                        <div class="invalid-feedback">Masukkan nama kota.</div>
+                                                        <label for="email-field" class="form-label">Deskripsi</label>
+                                                        <textarea name="deskripsi" class="form-control" placeholder="Masukkan detail wisata" id="deskripsi"
+                                                            required>
+                                                        </textarea>
                                                     </div>
-
-                                                    <div class="mb-3">
-                                                        <label for="date-field" class="form-label">Nama Wisata</label>
-                                                        <input type="text" id="date-field" name="wisata"
-                                                            class="form-control" placeholder="Masukkan nama wisata"
-                                                            required />
-                                                        <div class="invalid-feedback">Nama wisata</div>
-                                                    </div>
+                                                    @error('deskripsi')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
 
                                                     <div class="mb-3">
                                                         <label for="date-field" class="form-label">Foto</label>
                                                         <input type="file" id="date-field" name="foto"
-                                                            class="form-control" accept="image/*"
-                                                            placeholder="Select Photo" required />
+                                                            class="form-control" placeholder="Select Photo" required />
                                                         <div class="invalid-feedback">Pilih Foto.</div>
                                                     </div>
+                                                    @error('foto')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
 
-                                                    <div class="mb-3">
-                                                        <label for="customername-field" class="form-label">Deskripsi
-                                                            Wisata</label>
-                                                        <textarea id="summernote" name="detail_wisata" class="summernote form-control" height=""
-                                                            placeholder="Masukkan detail wisata" required></textarea>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <div class="hstack gap-2 justify-content-end">
-                                                            <a href="/detailwisata" type="button"
-                                                                class="btn btn-light">Close</a>
-                                                            <button type="submit" class="btn btn-success"
-                                                                id="edit-btn">Tambah
-                                                                Detail Wisata</button>
-                                                            <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                        </div>
-                                                    </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
+                        <div class="modal-footer">
+                            <div class="hstack gap-2 justify-content-end">
+                                <a href="/dataaboutus" type="button" class="btn btn-light"
+                                    data-bs-dismiss="modal">Close</a>
+                                <button type="submit" class="btn btn-success" id="edit-btn">Tambah
+                                    Data</button>
+                                <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                            </div>
+                        </div>
                         </form>
                     </div>
-                    <!--end col-->
                 </div>
-                <!--end row-->
-
             </div>
-            <!-- container-fluid -->
+            <!--end col-->
+        </div>
+        <!--end row-->
+
+        </div>
+        <!-- container-fluid -->
         </div>
         <!-- End Page-content -->
 
@@ -229,7 +191,7 @@
 
         <script>
             $(document).ready(function() {
-                $('#summernote').summernote();
+                $('#deskripsi').summernote({});
             });
         </script>
         <!-- JAVASCRIPT -->
@@ -256,13 +218,11 @@
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
 
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
-        <script src="{{ asset('js/app.js') }}"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
 
     </body>
-
 
     <!-- Mirrored from wrappixel.com/demos/admin-templates/materialart/html/ltr/table-datatable-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Jan 2023 14:20:10 GMT -->
 

@@ -38,7 +38,7 @@ class WisataDetailController extends Controller
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
-        return back()->with('success', 'Data Behasil Ditambahkan!');
+        return redirect()->route('detailwisata')->with('success', 'Data Behasil Ditambahkan!');
     }
 
     public function tampildetailwisata($id)
@@ -65,7 +65,7 @@ class WisataDetailController extends Controller
             $data->update();
         }
 
-        return back()->with('success', 'Data Behasil Di Ubah!');
+        return redirect()->route('detailwisata')->with('success', 'Data Behasil Di Ubah!');
     }
 
     public function deletedetailwisata($id)

@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Data Galery | Admin</title>
+    <title>Data About Us | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -49,8 +49,8 @@
                         <div class="navbar-brand-box horizontal-logo">
                             <a href="/adminn" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
-                                        alt="" height="75">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                                        alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
                                     <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
@@ -60,8 +60,8 @@
 
                             <a href="/adminn" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
-                                        alt="" height="75">
+                                    <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
+                                        alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
                                     <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
@@ -85,7 +85,6 @@
                     </div>
 
                     <div class="d-flex align-items-center">
-
                         <div class="dropdown d-md-none topbar-head-dropdown header-item">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                 id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -159,8 +158,8 @@
                 <!-- Dark Logo-->
                 <a href="/adminn" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
@@ -170,8 +169,8 @@
                 <!-- Light Logo-->
                 <a href="/adminn" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
@@ -265,12 +264,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">DATA GALERY</h4>
+                                <h4 class="mb-sm-0">DATA ABOUT US</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Components</a></li>
-                                        <li class="breadcrumb-item active">Data Galery</li>
+                                        <li class="breadcrumb-item active">Data About us</li>
                                     </ol>
                                 </div>
 
@@ -291,13 +290,13 @@
                                         <div class="row g-4 mb-3">
                                             <div class="col-sm-auto">
                                                 <div>
-                                                    <a href="/tambahgalery" type="button"
+                                                    <a href="/tambahaboutus" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
-                                                            class="ri-add-line align-bottom me-1"></i> Add</a>
+                                                            class="ri-add-line align-bottom me-1"></i>Add</a>
                                                 </div>
                                             </div>
                                             <div class="col-sm">
-                                                <form action="/kota" method="GET">
+                                                <form action="/dataaboutus" method="GET">
                                                     <div class="d-flex justify-content-sm-end">
                                                         <div class="search-box ms-2">
                                                             <input type="search" class="form-control" id="search"
@@ -314,6 +313,7 @@
                                                 <thead class="table-light">
                                                     <tr>
                                                         <th scope="col">#</th>
+                                                        <th scope="col">Deskripsi</th>
                                                         <th scope="col">Foto</th>
                                                         <th scope="col">Action</th>
                                                     </tr>
@@ -324,23 +324,23 @@
                                                     @endphp
                                                     @foreach ($data as $row)
                                                         <tr>
-                                                            <th scope="row">{{ $no++ }}</>
-                                                            </th>
+                                                            <th scope="row">{{ $no++ }}</th>
+                                                            <td class="deskripsi">{!! $row->deskripsi !!}</td>
                                                             <td class="foto">
-                                                                <img src="{{ asset('foto/fotogalery/' . $row->fotogalery) }}"
+                                                                <img src="{{ asset('foto/fotoaboutus/' . $row->foto) }}"
                                                                     alt="" width="150">
                                                             </td>
                                                             <td>
                                                                 <div class="d-flex gap-2">
                                                                     <div class="edit">
-                                                                        <a href="/tampilgalery/{{ $row->id }}"
+                                                                        <a href="/tampilaboutus/{{ $row->id }}"
                                                                             class="btn btn-sm btn-success edit-item-btn">Edit</a>
                                                                     </div>
                                                                     <div class="remove">
                                                                         <a href="#"
                                                                             data-id="{{ $row->id }}"
-                                                                            data-nama="{{ $row->nama_kota }}"
-                                                                            class="btn btn-sm btn-danger deletegalery">Remove</a>
+                                                                            data-nama="{{ $row->dataaboutus }}"
+                                                                            class="btn btn-sm btn-danger deleteaboutus">Remove</a>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -348,16 +348,6 @@
                                                     @endforeach
                                                 </tbody>
                                             </table>
-                                            {{-- <div class="noresult" style="display: none">
-                                                <div class="text-center">
-                                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json"
-                                                        trigger="loop" colors="primary:#121331,secondary:#08a88a"
-                                                        style="width:75px;height:75px"></lord-icon>
-                                                    <h5 class="mt-2">Maaf! Tidak Ada Hasil Yang Ditemukan</h5>
-                                                    <p class="text-muted mb-0">Kami telah mencari lebih dari 99+
-                                                        Pengguna, Kami tidak menemukan data apa pun yang Anda cari.</p>
-                                                </div>
-                                            </div> --}}
                                         </div>
 
                                         <div class="d-flex justify-content-end">
@@ -378,6 +368,101 @@
                         </div>
                         <!-- end col -->
                     </div>
+                    <!-- end row -->
+
+
+                    {{-- <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Add, Edit & Remove</h4>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <div id="customerList">
+                                        <div class="row g-4 mb-3">
+                                            <div class="col-sm-auto">
+                                                <div>
+                                                    <a href="/tambahanggotatim" type="button"
+                                                        class="btn btn-success add-btn" id="create-btn"><i
+                                                            class="ri-add-line align-bottom me-1"></i> Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <form action="/dataanggotatim" method="GET">
+                                                    <div class="d-flex justify-content-sm-end">
+                                                        <div class="search-box ms-2">
+                                                            <input type="search" class="form-control" id="search"
+                                                                name="search" placeholder="Search...">
+                                                            <i class="ri-search-line search-icon"></i>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="table-responsive table-card mt-3 mb-1">
+                                            <table class="table align-middle table-nowrap" id="customerTable">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Foto Anggota</th>
+                                                        <th scope="col">Nama Anggota</th>
+                                                        <th scope="col">Bagian</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list form-check-all">
+                                                    @php
+                                                        $no = 1;
+                                                    @endphp
+                                                    @foreach ($data as $row)
+                                                        <tr>
+                                                            <th scope="row">{{ $no++ }}</th>
+                                                            <td class="foto">
+                                                                <img src="{{ asset('foto/fotoanggota/' . $row->foto_anggota) }}"
+                                                                    alt="" width="150">
+                                                            </td>
+                                                            <td>{{ $row->nama_anggota }}</td>
+                                                            <td>{{ $row->bagian }}</td>
+                                                            <td>
+                                                                <div class="d-flex gap-2">
+                                                                    <div class="edit">
+                                                                        <a href="/tampilanggotatim/{{ $row->id }}"
+                                                                            class="btn btn-sm btn-success edit-item-btn">Edit</a>
+                                                                    </div>
+                                                                    <div class="remove">
+                                                                        <a href="#"
+                                                                            data-id="{{ $row->id }}"
+                                                                            data-nama="{{ $row->nama }}"
+                                                                            class="btn btn-sm btn-danger deletekotadetail">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <div class="pagination-wrap hstack gap-2">
+                                                <a class="page-item pagination-prev disabled" href="#">
+                                                    Previous
+                                                </a>
+                                                <ul class="pagination listjs-pagination mb-0"></ul>
+                                                <a class="page-item pagination-next" href="#">
+                                                    Next
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end card -->
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end col -->
+                    </div> --}}
                     <!-- end row -->
 
                 </div>
@@ -1167,21 +1252,22 @@
 
     {{-- JavaScript --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 <script>
-    $('.deletegalery').click(function() {
-        var galeryid = $(this).attr('data-id');
-        var nama_kota = $(this).attr('data-nama');
+    $('.deleteaboutus').click(function() {
+        var aboutusid = $(this).attr('data-id');
+        var aboutus = $(this).attr('data-nama');
         swal({
                 title: "Anda yakin?!",
-                text: "Ingin menghapus data dengan nama " + nama_kota + " ",
+                text: "Ingin menghapus data dengan nama " + aboutus + " ",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletegalery/" + galeryid + ""
+                    window.location = "/deleteaboutus/" + aboutusid + ""
                     swal("Data berhasil dihapus!", {
                         icon: "success",
                     });

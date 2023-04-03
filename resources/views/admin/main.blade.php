@@ -134,8 +134,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/rating">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Rating</span>
+                            <a class="nav-link menu-link" href="/dataaboutus">
+                                <i class="bx bx-info-circle"></i> <span data-key="t-tables">Data About us</span>
                             </a>
                         </li>
                         <li class="nav-item">

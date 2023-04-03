@@ -157,19 +157,19 @@
                 <!-- Dark Logo-->
                 <a href="/adminn" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-dark.png') }}"
-                            alt="" height="17">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
+                            alt="" height="40">
                     </span>
                 </a>
                 <!-- Light Logo-->
                 <a href="/adminn" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logo-sm.png') }}"
-                            alt="" height="22">
+                        <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/logokecil.png') }}"
+                            alt="" height="75">
                     </span>
                     <span class="logo-lg">
                         <img src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/images/cariwisata.png') }}"
@@ -208,8 +208,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/rating">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Rating</span>
+                            <a class="nav-link menu-link" href="/dataaboutus">
+                                <i class="bx bx-info-circle"></i> <span data-key="t-tables">Data About us</span>
                             </a>
                         </li>
                         <li class="nav-item">

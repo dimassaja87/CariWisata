@@ -210,8 +210,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/rating">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Rating</span>
+                            <a class="nav-link menu-link" href="/dataaboutus">
+                                <i class="bx bx-info-circle"></i> <span data-key="t-tables">Data About us</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -331,7 +331,7 @@
                                                             <td class="id_wisata">{{ $row->kota_details->nama_kota }}
                                                             <td class="wisata">{{ $row->wisata }}</td>
                                                             <td class="foto">
-                                                                <img src="{{ asset('foto/fotowisata/'.$row->foto) }}"
+                                                                <img src="{{ asset('foto/detailwisata/'.$row->foto) }}"
                                                                     alt="" width="150">
                                                             </td>
                                                             <td class="judul_wisata">{!! $row->detail_wisata !!}</td>

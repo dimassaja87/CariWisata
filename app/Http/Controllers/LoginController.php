@@ -30,24 +30,6 @@ class LoginController extends Controller
         return \redirect('loginadmin')->with('error', 'Email atau Password anda salah!');
     }
 
-    public function registeradmin()
-    {
-        return view('admin.loginadmin');
-    }
-
-    public function registeradmindua(Request $request)
-    {
-        User::create([
-            'email' => $request->email,
-            'name' => $request->name,
-            'password' => bcrypt($request->password),
-            'remember_token' => Str::random(60),
-
-        ]);
-
-        return redirect('/loginadmin');
-    }
-
     public function logoutadmin()
     {
         return view('admin.logoutadmin');

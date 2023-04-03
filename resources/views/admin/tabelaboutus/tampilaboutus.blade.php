@@ -4,10 +4,10 @@
     <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
         data-sidebar-image="none" data-preloader="disable">
 
+    <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-
         {{-- Text Editor --}}
         <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/quill/quill.core.css') }}"
             rel="stylesheet" type="text/css" />
@@ -31,10 +31,9 @@
         <link href="{{ asset('admin/themesbrand.com/velzon/html/default/assets/css/custom.min.css') }}" rel="stylesheet"
             type="text/css" />
 
-        <!-- include libraries(jQuery, bootstrap) -->
-
         <!-- include summernote css/js -->
         <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    </head>
 
     <body>
 
@@ -81,17 +80,17 @@
 
                 <div class="page-content">
                     <div class="container-fluid">
+
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Detail Wisata</h4>
+                                    <h4 class="mb-sm-0">Data About us</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data Wisata</a>
-                                            </li>
-                                            <li class="breadcrumb-item active">Tambah Detail Wisata</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Data About us</a></li>
+                                            <li class="breadcrumb-item active">Edit Data About us</li>
                                         </ol>
                                     </div>
 
@@ -107,88 +106,56 @@
                                     <div class="col-lg-12">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h5 class="card-title mb-0">Tambah Detail Wisata</h5>
+                                                <h5 class="card-title mb-0">Edit Data About us</h5>
                                             </div>
-                                            @if ($errors->any())
-                                                <div class="alert alert-danger">
-                                                    <ul>
-                                                        @foreach ($errors->all() as $error)
-                                                            <li>{{ $error }}</li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            @endif
                                             <div class="card-body">
-                                                <form action="/insertdetailwisata" method="POST"
+                                                <form action="{{ route('updateaboutus', $data->id) }}" method="POST"
                                                     enctype="multipart/form-data">
                                                     @csrf
-                                                    <div>
-                                                        <input type="hidden" name="id_user" value="{{ auth()->user()->id }}">
-
-                                                    </div>
-                                                    <div>
-                                                        <input type="hidden" name="nama" value="{{ auth()->user()->name }}">
-                                                    </div>
                                                     <div class="mb-3">
-                                                        <label for="customername-field" class="form-label">Nama
-                                                            Kota</label>
-                                                        <select class="form-select form-control"
-                                                            aria-label="Default select example" name="id_kota" required>
-                                                            <option selected>Tidak ada yang dipilih</option>
-                                                            @foreach ($kotadetail as $hm)
-                                                                <option value="{{ $hm->id }}">{{ $hm->nama_kota }}
-                                                                </option>
-                                                            @endforeach
-                                                        </select>
-                                                        <div class="invalid-feedback">Masukkan nama kota.</div>
+                                                        <label for="email-field" class="form-label">Deskripsi</label>
+                                                        <textarea id="deskripsi" name="deskripsi" class="summer form-control" style="height: 300px;"
+                                                            placeholder="Masukkan deskripsi" value="" required>{!! $data->deskripsi !!}</textarea>
                                                     </div>
+                                                    @error('deskripsi')
+                                                        <div class="alert alert-danger">{{ $message }}</div>
+                                                    @enderror
 
                                                     <div class="mb-3">
-                                                        <label for="date-field" class="form-label">Nama Wisata</label>
-                                                        <input type="text" id="date-field" name="wisata"
-                                                            class="form-control" placeholder="Masukkan nama wisata"
-                                                            required />
-                                                        <div class="invalid-feedback">Nama wisata</div>
-                                                    </div>
-
-                                                    <div class="mb-3">
-                                                        <label for="date-field" class="form-label">Foto</label>
-                                                        <input type="file" id="date-field" name="foto"
-                                                            class="form-control" accept="image/*"
-                                                            placeholder="Select Photo" required />
+                                                        <label for="date-field" class="form-label">Foto</label><br>
+                                                        <img class="img mb-3"src="{{ asset('foto/fotoaboutus/' . $data->foto) }}"
+                                                                    alt="" style="width: 90px" alt="">
+                                                        <input type="file" id="date-field" name="foto" class="form-control"
+                                                            placeholder="Select Photo"  />
                                                         <div class="invalid-feedback">Pilih Foto.</div>
                                                     </div>
 
-                                                    <div class="mb-3">
-                                                        <label for="customername-field" class="form-label">Deskripsi
-                                                            Wisata</label>
-                                                        <textarea id="summernote" name="detail_wisata" class="summernote form-control" height=""
-                                                            placeholder="Masukkan detail wisata" required></textarea>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <div class="hstack gap-2 justify-content-end">
-                                                            <a href="/detailwisata" type="button"
-                                                                class="btn btn-light">Close</a>
-                                                            <button type="submit" class="btn btn-success"
-                                                                id="edit-btn">Tambah
-                                                                Detail Wisata</button>
-                                                            <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
-                                                        </div>
-                                                    </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
+
+                        <div class="modal-footer">
+                            <div class="hstack gap-2 justify-content-end">
+                                <a href="/dataaboutus" type="button" class="btn btn-light">Close</a>
+                                <button type="submit" class="btn btn-success" id="edit-btn">Edit
+                                    Data</button>
+                                <!-- <button type="button" class="btn btn-success" id="edit-btn">Update</button> -->
+                            </div>
+                        </div>
                         </form>
                     </div>
-                    <!--end col-->
                 </div>
-                <!--end row-->
-
             </div>
-            <!-- container-fluid -->
+        </div>
+        <!--end col-->
+        </div>
+        <!--end row-->
+
+        </div>
+        <!-- container-fluid -->
         </div>
         <!-- End Page-content -->
 
@@ -226,15 +193,13 @@
         <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
-
         <script>
             $(document).ready(function() {
-                $('#summernote').summernote();
+                $('#deskripsi').summernote();
             });
         </script>
         <!-- JAVASCRIPT -->
-        <script
-            src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
+        <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}">
         </script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/simplebar/simplebar.min.js') }}"></script>
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/libs/node-waves/waves.min.js') }}"></script>
@@ -256,10 +221,8 @@
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/pages/form-editor.init.js') }}"></script>
 
         <script src="{{ asset('admin/themesbrand.com/velzon/html/default/assets/js/app.js') }}"></script>
-        <script src="{{ asset('js/app.js') }}"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-
 
     </body>
 

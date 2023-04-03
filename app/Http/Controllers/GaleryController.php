@@ -71,8 +71,8 @@ class GaleryController extends Controller
             }
             $request->file('fotogalery')->move('foto/fotogalery/', $request->file('fotogalery')->getClientOriginalName());
             $data->fotogalery = $request->file('fotogalery')->getClientOriginalName();
+            $data->update();
         }
-        $data->update();
         return redirect()->route('galery')->with('success', 'Data Behasil Di Ubah!');
     }
 

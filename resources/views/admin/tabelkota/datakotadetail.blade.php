@@ -210,8 +210,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="/rating">
-                                <i class="bx bx-star"></i> <span data-key="t-tables">Data Rating</span>
+                            <a class="nav-link menu-link" href="/dataaboutus">
+                                <i class="bx bx-info-circle"></i> <span data-key="t-tables">Data About us</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -294,8 +294,6 @@
                                                     <a href="/tambahkotadetail" type="button"
                                                         class="btn btn-success add-btn" id="create-btn"><i
                                                             class="ri-add-line align-bottom me-1"></i> Add</a>
-                                                    <a href="/multidelete" method="GET" id="delete-notification" class="btn btn-soft-danger"><i
-                                                            class="ri-delete-bin-2-line"></i></a>
                                                 </div>
                                             </div>
                                             <div class="col-sm">
